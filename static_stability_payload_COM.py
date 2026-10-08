@@ -85,9 +85,9 @@ def poly(pts, outline, fill, width=3):
     dr.line([mp(x, y) for x, y in pts] + [mp(*pts[0])], fill=outline, width=width, joint="curve")
 
 
-poly(SUP, COLORS["SUP"], COLORS["SUPF"])
 for s in "ABC":
     poly(REG[s]["P"], COLORS[s], COLORS[s + "F"])
+poly(SUP, COLORS["SUP"], COLORS["SUPF"], 5)
 
 for s in "ABC":
     pts = REG[s]["P"]
@@ -104,11 +104,12 @@ ox, oy = mp(0, 0)
 dr.line([ox - 12, oy, ox + 12, oy], fill=(0, 0, 0, 255), width=3)
 dr.line([ox, oy - 12, ox, oy + 12], fill=(0, 0, 0, 255), width=3)
 dr.text((ox + 16, oy - 34), "O (0,0)", font=f_leg, fill=(0, 0, 0, 255))
+OFF = {"A": (12, -12), "B": (12, 16), "C": (12, 44)}
 for s in "ABC":
     rx, ry = REG[s]["Rmm"]
     px, py = mp(rx, ry)
     dr.ellipse([px - 6, py - 6, px + 6, py + 6], fill=(0, 0, 0, 255))
-    dr.text((px + 12, py - 12), "COM %s (%.1f,%.1f)" % (s, rx, ry), font=f_lab, fill=(0, 0, 0, 255))
+    dr.text((px + OFF[s][0], py + OFF[s][1]), "COM %s (%.1f,%.1f)" % (s, rx, ry), font=f_lab, fill=(0, 0, 0, 255))
 
 dr.text((LM + 10, 18), "Static stability: allowed 200-kg payload CoM regions (mm rel O)", font=f_title, fill=(0, 0, 0, 255))
 leg = [("support polygon (C_total space, ref)", COLORS["SUP"]),
@@ -124,7 +125,8 @@ for txt, col in leg:
 note = ("Regions: payload CoM keeping total CoM inside support polygon. "
         "Boundary = tipping onset. NOT a safe working area. "
         "Heavier robot -> larger region (homothety k=(M+200)/200).")
-dr.text((LM + 10, H - 34), note[:118], font=f_lab, fill=(80, 80, 80, 255))
+dr.text((LM + 10, H - 46), note[:118], font=f_lab, fill=(80, 80, 80, 255))
+dr.text((LM + 10, H - 20), "NOT a safe working area: dynamics, CoM truth, stiffness, margin still required.", font=f_lab, fill=(80, 80, 80, 255))
 
 img = Image.alpha_composite(base.convert("RGBA"), ov).convert("RGB")
 img.save("/home/v/projects/робот/static_stability_payload_COM.png")
