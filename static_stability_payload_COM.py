@@ -136,7 +136,7 @@ with open("/home/v/projects/робот/static_stability_payload_COM.txt", "w") a
         f.write("%s M=%.2f k=%.4f area=%.6f verts(mm rel O)=%s COMrobot=%s\n" %
                 (s, m, REG[s]["k"], REG[s]["area"],
                  [(round(x, 2), round(y, 2)) for x, y in REG[s]["P"]],
-                 tuple(round(v, 2) for v in REG[s]["Rmm"])]))
+                 tuple(round(v, 2) for v in REG[s]["Rmm"])))
     f.write("homothety_max_resid=%.2e\n" % max(REG[s]["resid"] for s in "ABC"))
     f.write("B max+X check: %.2f mm (est ~323.5: diff = rounding k to 1.34)\n" %
             max(p[0] for p in REG["B"]["P"]))
