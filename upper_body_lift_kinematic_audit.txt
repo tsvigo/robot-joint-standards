@@ -1,0 +1,37 @@
+=== SEC3 parent>joint>child (from .blend; eulers ~0, constraints 0) ===
+base_link > vertical_lift_joint[prismatic +Z EXPLICIT] > torso_link
+torso_link > atlanto_occipital > atlanto_axial > intervertebral_C2_C7 > head_link
+left: torso > j3 > link3 > j2 > link2 > j1 > shoulder_link > elbow > forearm > radioulnar > rlink > wrist1 > pitch > wrist2 > palm
+right: torso > j3 > link3 > j2 > link2 > j1 > shoulder_link > elbow > forearm > radioulnar > rlink > wrist1 > pitch > wrist2 > palm
+=== SEC4 axes: ONLY vertical_lift_joint has explicit axis [0,0,1]; all revolute AXIS_NOT_EXPLICITLY_ENCODED ===
+=== SEC5 current: all eulers ~0 (identity); MD zero = straight limb; scene pose matches MD zero geometrically ===
+=== SEC6 match table: joint|parent|child|type|axis|current|MDmin|MDmax|zero|status ===
+vertical_lift_joint|base_link|torso_link|prismatic|[0,0,1] EXPLICIT|static frame|-|-|ZERO_UNKNOWN(travel datum)|NO_MD_ENTRY
+left_shoulder_joint_empty_3|chain-verified|chain-verified|revolute|Y MD-only|0|-180|60|MD straight 0|MATCH
+left_shoulder_joint_empty_2|chain-verified|chain-verified|revolute|Z MD-only|0|-90|90|MD straight 0|MATCH
+left_shoulder_joint_empty_1|chain-verified|chain-verified|revolute|X MD-only|0|-90|130|MD straight 0|MATCH
+left_elbow_joint_empty|chain-verified|chain-verified|revolute|Z MD-only|0|-10|150|MD straight 0|MATCH
+left_proximal_radioulnar_joint_empty|chain-verified|chain-verified|revolute|Y MD-only|0|-90|90|MD straight 0|MATCH
+left_wrist_joint_1_empty|chain-verified|chain-verified|revolute|Z MD-only|0|-90|90|MD straight 0|MATCH
+left_wrist_joint_2_empty|chain-verified|chain-verified|revolute|X MD-only|0|-25|45|MD straight 0|MATCH
+right_shoulder_joint_empty_3|chain-verified|chain-verified|revolute|Y MD-only|0|-180|60|MD straight 0|MATCH
+right_shoulder_joint_empty_2|chain-verified|chain-verified|revolute|Z MD-only|0|-90|90|MD straight 0|MATCH
+right_shoulder_joint_empty_1|chain-verified|chain-verified|revolute|X MD-only|0|-90|130|MD straight 0|MATCH
+right_elbow_joint_empty|chain-verified|chain-verified|revolute|Z MD-only|0|-10|150|MD straight 0|MATCH
+right_proximal_radioulnar_joint_empty|chain-verified|chain-verified|revolute|Y MD-only|0|-90|90|MD straight 0|MATCH
+right_wrist_joint_1_empty|chain-verified|chain-verified|revolute|Z MD-only|0|-90|90|MD straight 0|MATCH
+right_wrist_joint_2_empty|chain-verified|chain-verified|revolute|X MD-only|0|-25|45|MD straight 0|MATCH
+atlanto_occipital_joint_empty|chain-verified|chain-verified|revolute|Y MD-only (no yaml)|0|-50|85|MD straight 0|MD_RANGE_ONLY
+atlanto_axial_joint_empty|chain-verified|chain-verified|revolute|Z MD-only (no yaml)|0|-90|90|MD straight 0|MD_RANGE_ONLY
+intervertebral_joints_C2_C7_empty|chain-verified|chain-verified|revolute|X MD-only (no yaml)|0|-45|45|MD straight 0|MD_RANGE_ONLY
+=== SEC7 shoulder order from torso: joint_3(Y) > joint_2(Z) > joint_1(X) > arm; numbers do NOT encode order ===
+=== SEC8 elbow: parent shoulder_link child forearm_link; MD Z -10/+150 applies unambiguously ===
+=== SEC9 radioulnar: parent forearm_link child radioulnar_link; MD Y +-90 applies unambiguously ===
+=== SEC10 wrist: forearm > [radioulnar stage] > wrist_1(Z +-90) > pitch > wrist_2(X -25/+45) > palm ===
+=== SEC11 neck: torso > occipital(C0-C1 Y -50/+85) > axial(C1-C2 Z +-90) > intervertebral(C2-C7 X +-45) > head ===
+=== SEC12 LIFT A:geometric lower=torso-on-base(-774.567 rel current) upper=head-to-stop_top(+427.315) PRESENT ===
+=== SEC12 B:documented: ABSENT (no MD entry; full MD read verified) ===
+=== SEC12 C:software: ABSENT (66/66 nc=0, no limit/constraint/driver props) ===
+=== SEC12 D:mechanical: upper stop_top PRESENT; lower stop REMOVED; catcher PRESENT(-48); base PRESENT ===
+=== SEC12 E:catcher: PRESENT placeholder plate (emergency) ===
+=== SEC14 RELEVANCE: shoulders/elbows/wrists move palms/load XY (tipping); head/neck small levers; lift Z sets height; torso +80mm X offset loads screws asymmetrically ===
