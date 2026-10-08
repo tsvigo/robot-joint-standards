@@ -84,7 +84,11 @@ SHORT = [0, -40, -60, -69.806, -70, -80, -100]
 T3 = {}
 for px in XS:
     for py in YS:
-        T3[(px, py)] = max(SHORT, key=lambda dx: T1[(dx, px, py)][3])
+        def _m(dx, px, py):
+            cx = (MR * (Rabs[0] + dx / 1000.0) + MP * (O[0] + px / 1000.0)) / MT
+            cy = (MR * Rabs[1] + MP * (O[1] + py / 1000.0)) / MT
+            return info(cx, cy)[1]
+        T3[(px, py)] = max(SHORT, key=lambda dx: _m(dx, px, py))
 
 mmA, mmC, mxA, mxC = {}, {}, {}, {}
 for dx in range(-200, 101):
@@ -168,7 +172,7 @@ dr.polygon([mp(a, b) for a, b in SUP], fill=(120, 120, 120, 30))
 dr.line([mp(a, b) for a, b in SUP] + [mp(*SUP[0])], fill=(110, 110, 110, 255), width=4, joint="curve")
 for k, dx in enumerate(DXS7):
     pts = REG[dx][:4]
-    dr.polygon([mp(a, b) for a, b in pts], fill=COLS[k] + (26,))
+    dr.polygon([mp(a, b) for a, b in pts], fill=COLS[k][:3] + (26,))
     dr.line([mp(a, b) for a, b in pts] + [mp(*pts[0])], fill=COLS[k], width=3, joint="curve")
     mx = max(p[0] for p in pts)
     dr.text((mp(mx, 0)[0] + 10, mp(mx, 0)[1] - 60 - k * 2), "DX=%s" % dx, font=fS, fill=COLS[k])
