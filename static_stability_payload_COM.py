@@ -118,7 +118,7 @@ leg = [("support polygon (C_total space, ref)", COLORS["SUP"]),
 ly = H - BM + 44
 for txt, col in leg:
     lx = LM + 10 + (leg.index((txt, col)) % 2) * 700
-    lyy = ly + (leg.index((txt, col)) // 2 * 34
+    lyy = ly + (leg.index((txt, col)) // 2) * 34
     dr.rectangle([lx, lyy, lx + 44, lyy + 22], fill=col)
     dr.text((lx + 54, lyy - 4), txt, font=f_leg, fill=(0, 0, 0, 255))
 note = ("Regions: payload CoM keeping total CoM inside support polygon. "
