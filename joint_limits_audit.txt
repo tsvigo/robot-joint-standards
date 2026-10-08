@@ -1,0 +1,137 @@
+SEC1 MD TABLE: name|type|axis|min|max|units|zero|conf
+ankle_joint_empty|revolute|Y|-55|30|deg|straight limb 0 (prose, no yaml)|medium
+atlanto_axial_joint_empty|revolute|Z|-90|90|deg|straight head 0 (prose, no yaml)|medium
+atlanto_occipital_joint_empty|revolute|Y|-50|85|deg|straight head 0 (prose, no yaml)|medium
+hip_joint_empty|revolute|Y|-130|20|deg|straight limb 0 (prose, no yaml)|medium
+intervertebral_joints_C2_C7_empty|revolute|X|-45|45|deg|straight head 0 (prose, no yaml)|medium
+knee_joint_empty|revolute|Y|-150|10|deg|straight limb 0 (prose, no yaml)|medium
+left_digit2_dip_joint_empty|revolute|Z|0|90|deg|straight finger 0 (yaml+prose)|high
+left_digit2_mcp2_joint_empty|revolute|X|-25|25|deg|straight finger 0 (yaml+prose)|high
+left_digit2_mcp_joint_empty|revolute|Z|0|100|deg|straight finger 0 (yaml+prose)|high
+left_digit2_pip_joint_empty|revolute|Z|0|110|deg|straight finger 0 (yaml+prose)|high
+left_digit3_dip_joint_empty|revolute|Z|0|90|deg|straight finger 0 (yaml+prose)|high
+left_digit3_mcp2_joint_empty|revolute|X|-25|25|deg|straight finger 0 (yaml+prose)|high
+left_digit3_mcp_joint_empty|revolute|Z|0|100|deg|straight finger 0 (yaml+prose)|high
+left_digit3_pip_joint_empty|revolute|Z|0|110|deg|straight finger 0 (yaml+prose)|high
+left_digit4_dip_joint_empty|revolute|Z|0|90|deg|straight finger 0 (yaml+prose)|high
+left_digit4_mcp2_joint_empty|revolute|X|-25|25|deg|straight finger 0 (yaml+prose)|high
+left_digit4_mcp_joint_empty|revolute|Z|0|100|deg|straight finger 0 (yaml+prose)|high
+left_digit4_pip_joint_empty|revolute|Z|0|110|deg|straight finger 0 (yaml+prose)|high
+left_digit5_dip_joint_empty|revolute|Z|0|90|deg|straight finger 0 (yaml+prose)|high
+left_digit5_mcp2_joint_empty|revolute|X|-25|25|deg|straight finger 0 (yaml+prose)|high
+left_digit5_mcp_joint_empty|revolute|Z|0|100|deg|straight finger 0 (yaml+prose)|high
+left_digit5_pip_joint_empty|revolute|Z|0|110|deg|straight finger 0 (yaml+prose)|high
+left_elbow_joint_empty|revolute|Z|-10|150|deg|straight limb 0 (yaml+prose)|high
+left_proximal_radioulnar_joint_empty|revolute|Y|-90|90|deg|straight limb 0 (yaml+prose)|high
+left_shoulder_joint_empty_1|revolute|X|-90|130|deg|straight limb 0 (yaml+prose)|high
+left_shoulder_joint_empty_2|revolute|Z|-90|90|deg|straight limb 0 (yaml+prose)|high
+left_shoulder_joint_empty_3|revolute|Y|-180|60|deg|straight limb 0 (yaml+prose)|high
+left_thumb_cmc_joint_empty_1|revolute|Y|-25|25|deg|straight limb 0 (yaml+prose)|high
+left_thumb_cmc_joint_empty_2|revolute|Z|-40|40|deg|straight limb 0 (yaml+prose)|high
+left_thumb_cmc_joint_empty_3|revolute|X|-60|60|deg|straight limb 0 (yaml+prose)|high
+left_thumb_ip_joint_empty|revolute|Z|0|90|deg|straight limb 0 (yaml+prose)|high
+left_thumb_mcp_joint_empty_1|revolute|Z|-70|70|deg|straight limb 0 (yaml+prose)|high
+left_thumb_mcp_joint_empty_2|revolute|X|-25|25|deg|straight limb 0 (yaml+prose)|high
+left_wrist_joint_1_empty|revolute|Z|-90|90|deg|straight limb 0 (yaml+prose)|high
+left_wrist_joint_2_empty|revolute|X|-25|45|deg|straight limb 0 (yaml+prose)|high
+right_digit2_dip_joint_empty|revolute|Z|0|90|deg|straight finger 0 (yaml+prose)|high
+right_digit2_mcp2_joint_empty|revolute|X|-25|25|deg|straight finger 0 (yaml+prose)|high
+right_digit2_mcp_joint_empty|revolute|Z|0|100|deg|straight finger 0 (yaml+prose)|high
+right_digit2_pip_joint_empty|revolute|Z|0|110|deg|straight finger 0 (yaml+prose)|high
+right_digit3_dip_joint_empty|revolute|Z|0|90|deg|straight finger 0 (yaml+prose)|high
+right_digit3_mcp2_joint_empty|revolute|X|-25|25|deg|straight finger 0 (yaml+prose)|high
+right_digit3_mcp_joint_empty|revolute|Z|0|100|deg|straight finger 0 (yaml+prose)|high
+right_digit3_pip_joint_empty|revolute|Z|0|110|deg|straight finger 0 (yaml+prose)|high
+right_digit4_dip_joint_empty|revolute|Z|0|90|deg|straight finger 0 (yaml+prose)|high
+right_digit4_mcp2_joint_empty|revolute|X|-25|25|deg|straight finger 0 (yaml+prose)|high
+right_digit4_mcp_joint_empty|revolute|Z|0|100|deg|straight finger 0 (yaml+prose)|high
+right_digit4_pip_joint_empty|revolute|Z|0|110|deg|straight finger 0 (yaml+prose)|high
+right_digit5_dip_joint_empty|revolute|Z|0|90|deg|straight finger 0 (yaml+prose)|high
+right_digit5_mcp2_joint_empty|revolute|X|-25|25|deg|straight finger 0 (yaml+prose)|high
+right_digit5_mcp_joint_empty|revolute|Z|0|100|deg|straight finger 0 (yaml+prose)|high
+right_digit5_pip_joint_empty|revolute|Z|0|110|deg|straight finger 0 (yaml+prose)|high
+right_elbow_joint_empty|revolute|Z|-10|150|deg|straight limb 0 (yaml+prose)|high
+right_proximal_radioulnar_joint_empty|revolute|Y|-90|90|deg|straight limb 0 (yaml+prose)|high
+right_shoulder_joint_empty_1|revolute|X|-90|130|deg|straight limb 0 (yaml+prose)|high
+right_shoulder_joint_empty_2|revolute|Z|-90|90|deg|straight limb 0 (yaml+prose)|high
+right_shoulder_joint_empty_3|revolute|Y|-180|60|deg|straight limb 0 (yaml+prose)|high
+right_thumb_cmc_joint_empty_1|revolute|Y|-25|25|deg|straight limb 0 (yaml+prose)|high
+right_thumb_cmc_joint_empty_2|revolute|Z|-40|40|deg|straight limb 0 (yaml+prose)|high
+right_thumb_cmc_joint_empty_3|revolute|X|-60|60|deg|straight limb 0 (yaml+prose)|high
+right_thumb_ip_joint_empty|revolute|Z|0|90|deg|straight limb 0 (yaml+prose)|high
+right_thumb_mcp_joint_empty_1|revolute|Z|-70|70|deg|straight limb 0 (yaml+prose)|high
+right_thumb_mcp_joint_empty_2|revolute|X|-25|25|deg|straight limb 0 (yaml+prose)|high
+right_wrist_joint_1_empty|revolute|Z|-90|90|deg|straight limb 0 (yaml+prose)|high
+right_wrist_joint_2_empty|revolute|X|-25|45|deg|straight limb 0 (yaml+prose)|high
+SEC7 FULL: name|inMD|inBlend|type|axis|current|min|max|blend_limit|stop|status
+ankle_joint_empty|True|False|revolute|Y|-|-55|30|NONE|n/a (no geometry)|MISSING_IN_BLEND
+atlanto_axial_joint_empty|True|True|revolute|Z|0 (identity)|-90|90|NONE|none found|OK
+atlanto_occipital_joint_empty|True|True|revolute|Y|0 (identity)|-50|85|NONE|none found|OK
+hip_joint_empty|True|False|revolute|Y|-|-130|20|NONE|n/a (no geometry)|MISSING_IN_BLEND
+intervertebral_joints_C2_C7_empty|True|True|revolute|X|0 (identity)|-45|45|NONE|none found|OK
+knee_joint_empty|True|False|revolute|Y|-|-150|10|NONE|n/a (no geometry)|MISSING_IN_BLEND
+left_digit2_dip_joint_empty|True|True|revolute|Z|0 (identity)|0|90|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+left_digit2_mcp2_joint_empty|True|True|revolute|X|0 (identity)|-25|25|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+left_digit2_mcp_joint_empty|True|True|revolute|Z|0 (identity)|0|100|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+left_digit2_pip_joint_empty|True|True|revolute|Z|0 (identity)|0|110|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+left_digit3_dip_joint_empty|True|True|revolute|Z|0 (identity)|0|90|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+left_digit3_mcp2_joint_empty|True|True|revolute|X|0 (identity)|-25|25|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+left_digit3_mcp_joint_empty|True|True|revolute|Z|0 (identity)|0|100|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+left_digit3_pip_joint_empty|True|True|revolute|Z|0 (identity)|0|110|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+left_digit4_dip_joint_empty|True|True|revolute|Z|0 (identity)|0|90|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+left_digit4_mcp2_joint_empty|True|True|revolute|X|0 (identity)|-25|25|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+left_digit4_mcp_joint_empty|True|True|revolute|Z|0 (identity)|0|100|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+left_digit4_pip_joint_empty|True|True|revolute|Z|0 (identity)|0|110|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+left_digit5_dip_joint_empty|True|True|revolute|Z|0 (identity)|0|90|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+left_digit5_mcp2_joint_empty|True|True|revolute|X|0 (identity)|-25|25|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+left_digit5_mcp_joint_empty|True|True|revolute|Z|0 (identity)|0|100|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+left_digit5_pip_joint_empty|True|True|revolute|Z|0 (identity)|0|110|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+left_elbow_joint_empty|True|True|revolute|Z|0 (identity)|-10|150|NONE|none found|OK
+left_proximal_radioulnar_joint_empty|True|True|revolute|Y|0 (identity)|-90|90|NONE|none found|OK
+left_shoulder_joint_empty_1|True|True|revolute|X|0 (identity)|-90|130|NONE|none found|OK
+left_shoulder_joint_empty_2|True|True|revolute|Z|0 (identity)|-90|90|NONE|none found|OK
+left_shoulder_joint_empty_3|True|True|revolute|Y|0 (identity)|-180|60|NONE|none found|NEEDS_REVIEW [parent mismatch MD=torso_link scene=torso_link]
+left_thumb_cmc_joint_empty_1|True|True|revolute|Y|0 (identity)|-25|25|NONE|none found|OK
+left_thumb_cmc_joint_empty_2|True|True|revolute|Z|0 (identity)|-40|40|NONE|none found|NEEDS_REVIEW [MD links all cmc joints to palm; scene chains cmc_1>2>3]
+left_thumb_cmc_joint_empty_3|True|True|revolute|X|0 (identity)|-60|60|NONE|none found|NEEDS_REVIEW [MD links all cmc joints to palm; scene chains cmc_1>2>3]
+left_thumb_ip_joint_empty|True|True|revolute|Z|0 (identity)|0|90|NONE|none found|NEEDS_REVIEW [parent mismatch MD=second_phalanx scene=second_phalanx_left_thumb_link]
+left_thumb_mcp_joint_empty_1|True|True|revolute|Z|0 (identity)|-70|70|NONE|none found|NEEDS_REVIEW [parent mismatch MD=third_phalanx scene=third_phalanx_left_thumb_link]
+left_thumb_mcp_joint_empty_2|True|True|revolute|X|0 (identity)|-25|25|NONE|none found|NEEDS_REVIEW [parent mismatch MD=third_phalanx scene=left_thumb_mcp_joint_empty_1]
+left_wrist_joint_1_empty|True|True|revolute|Z|0 (identity)|-90|90|NONE|none found|OK
+left_wrist_joint_2_empty|True|True|revolute|X|0 (identity)|-25|45|NONE|none found|OK
+right_digit2_dip_joint_empty|True|True|revolute|Z|0 (identity)|0|90|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+right_digit2_mcp2_joint_empty|True|True|revolute|X|0 (identity)|-25|25|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+right_digit2_mcp_joint_empty|True|True|revolute|Z|0 (identity)|0|100|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+right_digit2_pip_joint_empty|True|True|revolute|Z|0 (identity)|0|110|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+right_digit3_dip_joint_empty|True|True|revolute|Z|0 (identity)|0|90|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+right_digit3_mcp2_joint_empty|True|True|revolute|X|0 (identity)|-25|25|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+right_digit3_mcp_joint_empty|True|True|revolute|Z|0 (identity)|0|100|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+right_digit3_pip_joint_empty|True|True|revolute|Z|0 (identity)|0|110|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+right_digit4_dip_joint_empty|True|True|revolute|Z|0 (identity)|0|90|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+right_digit4_mcp2_joint_empty|True|True|revolute|X|0 (identity)|-25|25|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+right_digit4_mcp_joint_empty|True|True|revolute|Z|0 (identity)|0|100|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+right_digit4_pip_joint_empty|True|True|revolute|Z|0 (identity)|0|110|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+right_digit5_dip_joint_empty|True|True|revolute|Z|0 (identity)|0|90|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+right_digit5_mcp2_joint_empty|True|True|revolute|X|0 (identity)|-25|25|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+right_digit5_mcp_joint_empty|True|True|revolute|Z|0 (identity)|0|100|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+right_digit5_pip_joint_empty|True|True|revolute|Z|0 (identity)|0|110|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
+right_elbow_joint_empty|True|True|revolute|Z|0 (identity)|-10|150|NONE|none found|OK
+right_proximal_radioulnar_joint_empty|True|True|revolute|Y|0 (identity)|-90|90|NONE|none found|OK
+right_shoulder_joint_empty_1|True|True|revolute|X|0 (identity)|-90|130|NONE|none found|OK
+right_shoulder_joint_empty_2|True|True|revolute|Z|0 (identity)|-90|90|NONE|none found|OK
+right_shoulder_joint_empty_3|True|True|revolute|Y|0 (identity)|-180|60|NONE|none found|NEEDS_REVIEW [parent mismatch MD=torso_link scene=torso_link]
+right_thumb_cmc_joint_empty_1|True|True|revolute|Y|0 (identity)|-25|25|NONE|none found|OK
+right_thumb_cmc_joint_empty_2|True|True|revolute|Z|0 (identity)|-40|40|NONE|none found|NEEDS_REVIEW [MD links all cmc joints to palm; scene chains cmc_1>2>3]
+right_thumb_cmc_joint_empty_3|True|True|revolute|X|0 (identity)|-60|60|NONE|none found|NEEDS_REVIEW [MD links all cmc joints to palm; scene chains cmc_1>2>3]
+right_thumb_ip_joint_empty|True|True|revolute|Z|0 (identity)|0|90|NONE|none found|NEEDS_REVIEW [parent mismatch MD=second_phalanx scene=second_phalanx_right_thumb_link]
+right_thumb_mcp_joint_empty_1|True|True|revolute|Z|0 (identity)|-70|70|NONE|none found|NEEDS_REVIEW [parent mismatch MD=third_phalanx scene=third_phalanx_right_thumb_link]
+right_thumb_mcp_joint_empty_2|True|True|revolute|X|0 (identity)|-25|25|NONE|none found|NEEDS_REVIEW [parent mismatch MD=third_phalanx scene=right_thumb_mcp_joint_empty_1]
+right_wrist_joint_1_empty|True|True|revolute|Z|0 (identity)|-90|90|NONE|none found|OK
+right_wrist_joint_2_empty|True|True|revolute|X|0 (identity)|-25|45|NONE|none found|OK
+vertical_lift_joint|False|True|-|-|-|-|-|NONE|lift-travel-stops|MISSING_IN_MD
+wheel_BL_joint|False|True|-|-|-|-|-|NONE|none found|MISSING_IN_MD
+wheel_BR_joint|False|True|-|-|-|-|-|NONE|none found|MISSING_IN_MD
+wheel_FL_joint|False|True|-|-|-|-|-|NONE|none found|MISSING_IN_MD
+wheel_FR_joint|False|True|-|-|-|-|-|NONE|none found|MISSING_IN_MD
+SEC8 COUNTS
+blend_total=66 md_covered_ok=17 missing_in_md=5 missing_in_blend=3 needs_review=44
