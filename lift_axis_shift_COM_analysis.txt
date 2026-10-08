@@ -1,0 +1,20 @@
+inputs: O=(3.607794,-1.860476) COMrob=(3.6776,-1.867928, B 68.54kg) axis=(3.608398,-1.86476)
+DX COMx_rel COMy_rel nearest_edge margin_mm inside
+0 69.81 -7.45 edge1 189.0 True
+-20 49.81 -7.45 edge1 209.0 True
+-40 29.81 -7.45 edge1 229.0 True
+-60 9.81 -7.45 edge1 249.0 True
+-70 -0.19 -7.45 edge0 249.9 True
+-80 -10.19 -7.45 edge3 248.3 True
+-100 -30.19 -7.45 edge3 228.3 True
+-120 -50.19 -7.45 edge3 208.3 True
+OPT DX=-69.806 COM=(0.000,-7.452)
+TASK5 payload-on-axis totals rel O and margins:
+0 18.27 -5.09 edge1 240.5 True
+-20 13.16 -5.09 edge1 245.6 True
+-40 8.06 -5.09 edge1 250.7 True
+-60 2.95 -5.09 edge0 252.3 True
+-70 0.40 -5.09 edge0 252.3 True
+-80 -2.15 -5.09 edge0 252.3 True
+-100 -7.26 -5.09 edge3 251.2 True
+-120 -12.36 -5.09 edge3 246.1 True
