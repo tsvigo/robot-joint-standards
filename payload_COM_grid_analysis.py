@@ -118,12 +118,12 @@ with open("/home/v/projects/робот/payload_COM_analysis.txt", "w") as f:
         for px in XS:
             for py in YS:
                 t = T1[(dx, px, py)]
-                f.write("%s %d %d %.2f %.2f %s %.1f %d\n" % (dx, px, py, t[0], t[1], t[2], t[3], t[4]))
+                f.write("%s %d %d %.2f %.2f %s %.1f %d\n" % (dx, px, py, t[0], t[1], t[2], t[3] * 1000, t[4]))
     f.write("TASK2 px py dxopt totalx totaly margin edge inside\n")
     for px in XS:
         for py in YS:
             m, dx, tx, ty, bi, inn = T2[(px, py)]
-            f.write("%d %d %d %.2f %.2f %.1f %d %s\n" % (px, py, dx, tx, ty, m, bi, inn))
+            f.write("%d %d %d %.2f %.2f %.1f %d %s\n" % (px, py, dx, tx, ty, m * 1000, bi, inn))
     f.write("TASK4A best_dx=%d margin=%.1f\n" % (bestA, mmA[bestA]))
     f.write("TASK4B area invariant (homothety, same k): check per DX7 below\n")
     f.write("TASK4C best_dx=%d maxoff=%.1f\n" % (bestC, mxC[bestC]))
@@ -207,7 +207,7 @@ for ix, px in enumerate(XS):
             rr = min(1.0, -m / vmax)
             col = (255, int(235 - 160 * rr), int(235 - 160 * rr), 255)
         dr.rectangle([x0, y0, x0 + CW, y0 + CH], fill=col, outline=(90, 90, 90, 255))
-        dr.text((x0 + CW / 2 - 28, y0 + CH / 2 - 12), "%d" % round(m), font=fS, fill=(0, 0, 0, 255))
+        dr.text((x0 + CW / 2 - 28, y0 + CH / 2 - 12), "%d" % round(m * 1000), font=fS, fill=(0, 0, 0, 255))
     dr.text((LM2 + ix * CW + CW / 2 - 24, TM2 + 7 * CH + 8), "%d" % px, font=fTic, fill=(0, 0, 0, 255))
 for iy, py in enumerate(YS):
     dr.text((LM2 - 64, TM2 + (6 - iy) * CH + CH / 2 - 12), "%d" % py, font=fTic, fill=(0, 0, 0, 255))
