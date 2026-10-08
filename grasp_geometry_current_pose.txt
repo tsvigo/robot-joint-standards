@@ -1,0 +1,16 @@
+O=(3.607794,-1.860476) axis=(3.608398,-1.86476,-4.581481)
+LEFT palm mesh=left_palm bbox mn/max:
+  mn=(3.770267,-0.790716,-4.629265) max=(3.814147,-0.683193,-4.521742) dims=43.88x107.524x107.523
+RIGHT palm mesh=right_palm bbox mn/max:
+  mn=(3.764489,-3.074256,-4.614396) max=(3.794598,-2.962129,-4.502268) dims=30.109x112.127x112.127
+P_L inner-face center=(3.792207,-0.790716,-4.575504) normal=(0,-1,0) relO=(+184.413,+1069.760)
+P_R inner-face center=(3.779544,-2.962129,-4.558332) normal=(0,+1,0) relO=(+171.750,-1101.653)
+|PL-PR|=2171.52mm dX=12.66 dY=2171.41 dZ=-17.17
+MID faces=(3.785876,-1.876423,-4.566918) relO=(+178.082,-15.947)
+MID centers=(3.785876,-1.877574,-4.566918) relO=(+178.082,-17.098)
+O->L palm center=1138.56 O->R=1170.39 O->MID=178.90
+fingers L Y span=[-0.6534,-0.4985] (tips outward +Y); R Y span=[-3.2237,-3.0896] (tips outward -Y)
+thumbs L Y=[-0.7677,-0.6147] Z=[-4.498,-4.476]; R Y=[-3.1180,-2.9780] Z=[-4.482,-4.453]
+palms Z: L=[-4.629265,-4.521742] R=[-4.614396,-4.502268]; face Z: L -4.575504 R -4.558332
+grasp markers: NONE found (1 false positive: placeholder~hold); constraints/drivers: none in scene
+orientation L->R dir=(-0.006,-1.000,+0.008): along -Y within 0.5deg; dZ palms=17.17mm
