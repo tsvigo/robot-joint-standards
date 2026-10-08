@@ -127,6 +127,9 @@ for a, b in [("base_link", "vertical_lift_joint"), ("vertical_lift_joint", "tors
              ("torso_link", "atlanto_occipital"), ("atlanto_occipital", "atlanto_axial"),
              ("atlanto_axial", "intervertebral_C2_C7"), ("intervertebral_C2_C7", "head_link")]:
     arrow(XS["c"], a, XS["c"], b)
+for _sx in (XS["L"], XS["R"]):
+    for _r in range(8, 21):
+        dr.line([(_sx, 130 + _r * 122 + 34), (_sx, 130 + (_r + 1) * 122 - 34)], fill=(40, 40, 40, 255), width=2)
 dr.text((XS["c"] - 330, 16), "Upper-body kinematics (parent>child verified)", font=fT, fill=(0, 0, 0, 255))
 dr.text((XS["c"] - 330, 52), "Blue=joints(MD ranges) gray=links orange=lift. Fingers excluded.", font=fS, fill=(80, 80, 80, 255))
 Image.alpha_composite(base.convert("RGBA"), ov).convert("RGB").save(
