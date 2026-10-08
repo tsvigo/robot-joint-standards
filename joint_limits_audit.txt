@@ -90,13 +90,13 @@ left_elbow_joint_empty|True|True|revolute|Z|0 (identity)|-10|150|NONE|none found
 left_proximal_radioulnar_joint_empty|True|True|revolute|Y|0 (identity)|-90|90|NONE|none found|OK
 left_shoulder_joint_empty_1|True|True|revolute|X|0 (identity)|-90|130|NONE|none found|OK
 left_shoulder_joint_empty_2|True|True|revolute|Z|0 (identity)|-90|90|NONE|none found|OK
-left_shoulder_joint_empty_3|True|True|revolute|Y|0 (identity)|-180|60|NONE|none found|NEEDS_REVIEW [parent mismatch MD=torso_link scene=torso_link]
-left_thumb_cmc_joint_empty_1|True|True|revolute|Y|0 (identity)|-25|25|NONE|none found|OK
-left_thumb_cmc_joint_empty_2|True|True|revolute|Z|0 (identity)|-40|40|NONE|none found|NEEDS_REVIEW [MD links all cmc joints to palm; scene chains cmc_1>2>3]
-left_thumb_cmc_joint_empty_3|True|True|revolute|X|0 (identity)|-60|60|NONE|none found|NEEDS_REVIEW [MD links all cmc joints to palm; scene chains cmc_1>2>3]
-left_thumb_ip_joint_empty|True|True|revolute|Z|0 (identity)|0|90|NONE|none found|NEEDS_REVIEW [parent mismatch MD=second_phalanx scene=second_phalanx_left_thumb_link]
-left_thumb_mcp_joint_empty_1|True|True|revolute|Z|0 (identity)|-70|70|NONE|none found|NEEDS_REVIEW [parent mismatch MD=third_phalanx scene=third_phalanx_left_thumb_link]
-left_thumb_mcp_joint_empty_2|True|True|revolute|X|0 (identity)|-25|25|NONE|none found|NEEDS_REVIEW [parent mismatch MD=third_phalanx scene=left_thumb_mcp_joint_empty_1]
+left_shoulder_joint_empty_3|True|True|revolute|Y|0 (identity)|-180|60|NONE|none found|OK
+left_thumb_cmc_joint_empty_1|True|True|revolute|Y|0 (identity)|-25|25|NONE|none found|NEEDS_REVIEW [MD models cmc parallel under palm; scene serial cmc_1>2>3]
+left_thumb_cmc_joint_empty_2|True|True|revolute|Z|0 (identity)|-40|40|NONE|none found|NEEDS_REVIEW [MD models cmc parallel under palm; scene serial cmc_1>2>3]
+left_thumb_cmc_joint_empty_3|True|True|revolute|X|0 (identity)|-60|60|NONE|none found|NEEDS_REVIEW [MD models cmc parallel under palm; scene serial cmc_1>2>3]
+left_thumb_ip_joint_empty|True|True|revolute|Z|0 (identity)|0|90|NONE|none found|OK
+left_thumb_mcp_joint_empty_1|True|True|revolute|Z|0 (identity)|-70|70|NONE|none found|NEEDS_REVIEW [thumb link mismatch]
+left_thumb_mcp_joint_empty_2|True|True|revolute|X|0 (identity)|-25|25|NONE|none found|NEEDS_REVIEW [thumb link mismatch]
 left_wrist_joint_1_empty|True|True|revolute|Z|0 (identity)|-90|90|NONE|none found|OK
 left_wrist_joint_2_empty|True|True|revolute|X|0 (identity)|-25|45|NONE|none found|OK
 right_digit2_dip_joint_empty|True|True|revolute|Z|0 (identity)|0|90|NONE|none found|NEEDS_REVIEW [MD parent_link references deleted metacarpal]
@@ -119,13 +119,13 @@ right_elbow_joint_empty|True|True|revolute|Z|0 (identity)|-10|150|NONE|none foun
 right_proximal_radioulnar_joint_empty|True|True|revolute|Y|0 (identity)|-90|90|NONE|none found|OK
 right_shoulder_joint_empty_1|True|True|revolute|X|0 (identity)|-90|130|NONE|none found|OK
 right_shoulder_joint_empty_2|True|True|revolute|Z|0 (identity)|-90|90|NONE|none found|OK
-right_shoulder_joint_empty_3|True|True|revolute|Y|0 (identity)|-180|60|NONE|none found|NEEDS_REVIEW [parent mismatch MD=torso_link scene=torso_link]
-right_thumb_cmc_joint_empty_1|True|True|revolute|Y|0 (identity)|-25|25|NONE|none found|OK
-right_thumb_cmc_joint_empty_2|True|True|revolute|Z|0 (identity)|-40|40|NONE|none found|NEEDS_REVIEW [MD links all cmc joints to palm; scene chains cmc_1>2>3]
-right_thumb_cmc_joint_empty_3|True|True|revolute|X|0 (identity)|-60|60|NONE|none found|NEEDS_REVIEW [MD links all cmc joints to palm; scene chains cmc_1>2>3]
-right_thumb_ip_joint_empty|True|True|revolute|Z|0 (identity)|0|90|NONE|none found|NEEDS_REVIEW [parent mismatch MD=second_phalanx scene=second_phalanx_right_thumb_link]
-right_thumb_mcp_joint_empty_1|True|True|revolute|Z|0 (identity)|-70|70|NONE|none found|NEEDS_REVIEW [parent mismatch MD=third_phalanx scene=third_phalanx_right_thumb_link]
-right_thumb_mcp_joint_empty_2|True|True|revolute|X|0 (identity)|-25|25|NONE|none found|NEEDS_REVIEW [parent mismatch MD=third_phalanx scene=right_thumb_mcp_joint_empty_1]
+right_shoulder_joint_empty_3|True|True|revolute|Y|0 (identity)|-180|60|NONE|none found|OK
+right_thumb_cmc_joint_empty_1|True|True|revolute|Y|0 (identity)|-25|25|NONE|none found|NEEDS_REVIEW [MD models cmc parallel under palm; scene serial cmc_1>2>3]
+right_thumb_cmc_joint_empty_2|True|True|revolute|Z|0 (identity)|-40|40|NONE|none found|NEEDS_REVIEW [MD models cmc parallel under palm; scene serial cmc_1>2>3]
+right_thumb_cmc_joint_empty_3|True|True|revolute|X|0 (identity)|-60|60|NONE|none found|NEEDS_REVIEW [MD models cmc parallel under palm; scene serial cmc_1>2>3]
+right_thumb_ip_joint_empty|True|True|revolute|Z|0 (identity)|0|90|NONE|none found|OK
+right_thumb_mcp_joint_empty_1|True|True|revolute|Z|0 (identity)|-70|70|NONE|none found|NEEDS_REVIEW [thumb link mismatch]
+right_thumb_mcp_joint_empty_2|True|True|revolute|X|0 (identity)|-25|25|NONE|none found|NEEDS_REVIEW [thumb link mismatch]
 right_wrist_joint_1_empty|True|True|revolute|Z|0 (identity)|-90|90|NONE|none found|OK
 right_wrist_joint_2_empty|True|True|revolute|X|0 (identity)|-25|45|NONE|none found|OK
 vertical_lift_joint|False|True|-|-|-|-|-|NONE|lift-travel-stops|MISSING_IN_MD
@@ -134,4 +134,4 @@ wheel_BR_joint|False|True|-|-|-|-|-|NONE|none found|MISSING_IN_MD
 wheel_FL_joint|False|True|-|-|-|-|-|NONE|none found|MISSING_IN_MD
 wheel_FR_joint|False|True|-|-|-|-|-|NONE|none found|MISSING_IN_MD
 SEC8 COUNTS
-blend_total=66 md_covered_ok=17 missing_in_md=5 missing_in_blend=3 needs_review=44
+blend_total=66 md_covered_ok=19 missing_in_md=5 missing_in_blend=3 needs_review=42

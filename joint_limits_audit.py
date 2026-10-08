@@ -116,19 +116,27 @@ for name in sorted(set(list(MD.keys()) + list(BL.keys()))):
     side = "left" if name.startswith("left_") else ("right" if name.startswith("right_") else None)
     ok = True
     reason = ""
-    if m["link"] is not None:
-        mp, mc = m["link"]
+    ml = m.get("link")
+    if ml is not None:
+        mp, mc = ml
         if "metacarpal" in mp:
             ok, reason = False, "MD parent_link references deleted metacarpal"
-        elif mp == "palm_link" and mc == "third_phalanx":
-            if not (bp == side + "_palm_link"):
-                ok, reason = False, "MD links all cmc joints to palm; scene chains cmc_1>2>3"
+        elif "cmc_joint_empty" in name:
+            ok, reason = False, "MD models cmc parallel under palm; scene serial cmc_1>2>3"
         elif mp in ("proximal-chain", "see-note") or mc in ("proximal-chain", "see-note"):
             ok, reason = False, "MD finger chain order differs from scene (inverted meshes)"
-        else:
-            exp_p = (side + "_" + mp) if side else mp
-            if bp != exp_p:
-                ok, reason = False, "parent mismatch MD=%s scene=%s" % (mp, bp)
+        elif mp == "torso_link":
+            if bp != "torso_link":
+                ok, reason = False, "parent mismatch"
+        elif side and mp in ("shoulder_2_link", "shoulder_3_link", "shoulder_link", "forearm_link", "radioulnar_link", "wrist_pitch_link", "palm_link"):
+            ck = bk[0] if bk else None
+            if bp != side + "_" + mp or ck != side + "_" + mc:
+                ok, reason = False, "link mismatch MD=(%s>%s) scene=(%s>%s)" % (mp, mc, bp, ck)
+        elif side:
+            f = lambda x: x + "_" + side + "_thumb_link"
+            ck = bk[0] if bk else None
+            if bp != f(mp) or ck != f(mc):
+                ok, reason = False, "thumb link mismatch"
     st = "OK" if ok else "NEEDS_REVIEW"
     rows.append((name, True, True, m["type"], m["axis"], "0 (identity)", m["min"], m["max"],
                  "NONE", "none found", st + ("" if ok else " [" + reason + "]")))
