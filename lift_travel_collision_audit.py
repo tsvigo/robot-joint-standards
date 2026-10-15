@@ -204,10 +204,10 @@ def main():
             s = objs[pair[1]]
             mn, mx = m["bbox_min"], m["bbox_max"]
             sn, sx = s["bbox_min"], s["bbox_max"]
-            keys[pair] = {"m_z": [mn[2], mx[2]], "s_z": [sn[2], sx[2]],
-                          "gap_up": sx[2] and (sn[2] - mx[2]), "gap_down": mn[2] - sx[2]}
+            keys[pair[0] + " vs " + pair[1]] = {"m_z": [mn[2], mx[2]], "s_z": [sn[2], sx[2]],
+                          "gap_up": (sn[2] - mx[2]), "gap_down": (mn[2] - sx[2])}
         except Exception as e:
-            keys[pair] = {"err": str(e)}
+            keys[pair[0] + " vs " + pair[1]] = {"err": str(e)}
     out = {"events": sorted(events), "keys": keys,
            "moving_count": len(moving), "static_count": len(static_all)}
     json.dump(out, open("/home/v/.local/state/opencode/tmp/lift_events.json", "w"), indent=1)
