@@ -134,10 +134,24 @@ def main():
     def contacts_pair(m, s, dz_m):
         mn, mx = shifted(m, dz_m)
         return aabb_overlap(mn, mx, s["bbox_min"], s["bbox_max"])
+    # Скользящие пары (направляющая/гайка) — штатный скользящий контакт,
+    # не столкновение; анализируются отдельно как пределы хода.
+    def is_sliding(mname, sname):
+        pairs = [("lift_guide_block_left", "lift_guide_left"),
+                 ("lift_guide_block_right", "lift_guide_right"),
+                 ("lift_guide_block_left", "lift_guide_right"),
+                 ("lift_guide_block_right", "lift_guide_left"),
+                 ("lift_nut_mount_left", "lift_screw_left"),
+                 ("lift_nut_mount_right", "lift_screw_right"),
+                 ("lift_nut_mount_left", "lift_screw_right"),
+                 ("lift_nut_mount_right", "lift_screw_left")]
+        return (mname, sname) in pairs
     # Кандидаты: перебрать все пары moving×static, найти их границы бисекцией
     events = []  # (dz_mm, moving, static)
     for m in moving:
         for s in static_all:
+            if is_sliding(m["name"], s["name"]):
+                continue
             # быстрая проверка: есть ли вообще пересечение в диапазоне [-900,+600]?
             hit_lo = contacts_pair(m, s, -0.9)
             hit_hi = contacts_pair(m, s, 0.6)
