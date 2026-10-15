@@ -146,11 +146,27 @@ def main():
                  ("lift_nut_mount_left", "lift_screw_right"),
                  ("lift_nut_mount_right", "lift_screw_left")]
         return (mname, sname) in pairs
+    # Артефакты нулевого положения (не столкновения):
+    # - датчики головы смонтированы внутри head_link, но parent=None (статичны);
+    # - смежные лифт-компоненты (блок↔винт, гайка↔направляющая) пересекаются
+    #   грубыми proxy-боксами уже в нуле. Исключаются из событий, описываются отдельно.
+    ARTIFACTS = {("head_link", "speaker"), ("head_link", "stereo_microphone_1"),
+                 ("head_link", "stereo_microphone_2"), ("head_link", "ToF_Lens_001"),
+                 ("head_link", "odor_sensor"),
+                 ("lift_guide_block_left", "lift_screw_left"),
+                 ("lift_guide_block_right", "lift_screw_right"),
+                 ("lift_nut_mount_left", "lift_guide_left"),
+                 ("lift_nut_mount_right", "lift_guide_right")}
+    def is_artifact(mname, sname):
+        return (mname, sname) in ARTIFACTS
     # Кандидаты: перебрать все пары moving×static, найти их границы бисекцией
     events = []  # (dz_mm, moving, static)
+    artifacts_at_zero = []
     for m in moving:
         for s in static_all:
             if is_sliding(m["name"], s["name"]):
+                continue
+            if is_artifact(m["name"], s["name"]):
                 continue
             # быстрая проверка: есть ли вообще пересечение в диапазоне [-900,+600]?
             hit_lo = contacts_pair(m, s, -0.9)
