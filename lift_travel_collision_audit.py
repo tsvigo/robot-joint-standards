@@ -120,10 +120,10 @@ def main():
     # Нам нужны первые контакты вверх/вниз по каждой категории.
     # Бисекция: найти минимальный |dz| при котором пара впервые касается.
     def first_touch(mname, sname, lo_mm, hi_mm):
-        # lo = свободно, hi = контакт; бисекция до 1мм, затем 0.1мм
+        # lo = свободно, hi = контакт; бисекция до 0.1мм (порядок lo/hi любой)
         m = objs[mname]; s = objs[sname]
-        for _ in range(30):
-            if hi_mm - lo_mm <= 0.1:
+        for _ in range(40):
+            if abs(hi_mm - lo_mm) <= 0.1:
                 break
             mid = (lo_mm + hi_mm) / 2
             if contacts_pair(m, s, mid / 1000.0):
