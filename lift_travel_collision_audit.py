@@ -98,42 +98,7 @@ def main():
     # ось
     lj = objs["vertical_lift_joint"]
     print("lift parent:", lj["parent"], "props:", lj["props"])
-    # --- грубый скан ---
-    # диапазон скана: -900..+600 мм, шаг 10 мм
-    coarse = list(range(-900, 601, 10))  # мм
-    # предфильтр: для каждого dz список пересекающихся пар
-    def contacts_at(dz_m):
-        res = []
-        for m in moving:
-            mn, mx = shifted(m, dz_m)
-            for s in static_all:
-                if aabb_overlap(mn, mx, s["bbox_min"], s["bbox_max"]):
-                    res.append((m["name"], s["name"]))
-        return res
-    coarse_hits = {}
-    for dz_mm in coarse:
-        c = contacts_at(dz_mm / 1000.0)
-        if c:
-            coarse_hits[dz_mm] = c
-    print(f"coarse hits at {len(coarse_hits)} positions")
-    # --- уточнение границ для критических пар ---
-    # Нам нужны первые контакты вверх/вниз по каждой категории.
-    # Бисекция: найти минимальный |dz| при котором пара впервые касается.
-    def first_touch(mname, sname, lo_mm, hi_mm):
-        # lo = свободно, hi = контакт; бисекция до 0.1мм (порядок lo/hi любой)
-        m = objs[mname]; s = objs[sname]
-        for _ in range(40):
-            if abs(hi_mm - lo_mm) <= 0.1:
-                break
-            mid = (lo_mm + hi_mm) / 2
-            if contacts_pair(m, s, mid / 1000.0):
-                hi_mm = mid
-            else:
-                lo_mm = mid
-        return round(hi_mm, 1)
-    def contacts_pair(m, s, dz_m):
-        mn, mx = shifted(m, dz_m)
-        return aabb_overlap(mn, mx, s["bbox_min"], s["bbox_max"])
+    # --- скан с исключением штатных скользящих пар и артефактов ---
     # Скользящие пары (направляющая/гайка) — штатный скользящий контакт,
     # не столкновение; анализируются отдельно как пределы хода.
     def is_sliding(mname, sname):
@@ -146,10 +111,7 @@ def main():
                  ("lift_nut_mount_left", "lift_screw_right"),
                  ("lift_nut_mount_right", "lift_screw_left")]
         return (mname, sname) in pairs
-    # Артефакты нулевого положения (не столкновения):
-    # - датчики головы смонтированы внутри head_link, но parent=None (статичны);
-    # - смежные лифт-компоненты (блок↔винт, гайка↔направляющая) пересекаются
-    #   грубыми proxy-боксами уже в нуле. Исключаются из событий, описываются отдельно.
+    # Артефакты нулевого положения (не столкновения).
     ARTIFACTS = {("head_link", "speaker"), ("head_link", "stereo_microphone_1"),
                  ("head_link", "stereo_microphone_2"), ("head_link", "ToF_Lens_001"),
                  ("head_link", "odor_sensor"),
@@ -157,31 +119,54 @@ def main():
                  ("lift_guide_block_right", "lift_screw_right"),
                  ("lift_nut_mount_left", "lift_guide_left"),
                  ("lift_nut_mount_right", "lift_guide_right")}
-    def is_artifact(mname, sname):
-        return (mname, sname) in ARTIFACTS
-    # Кандидаты: перебрать все пары moving×static, найти их границы бисекцией
-    events = []  # (dz_mm, moving, static)
-    artifacts_at_zero = []
+    def excluded(mname, sname):
+        return is_sliding(mname, sname) or (mname, sname) in ARTIFACTS
+    def contacts_pair(m, s, dz_m):
+        mn, mx = shifted(m, dz_m)
+        return aabb_overlap(mn, mx, s["bbox_min"], s["bbox_max"])
+    def first_touch(mname, sname, lo_mm, hi_mm):
+        # lo = свободно, hi = контакт; бисекция до 0.1мм (порядок lo/hi любой)
+        m = objs[mname]; s = objs[sname]
+        for _ in range(40):
+            if abs(hi_mm - lo_mm) <= 0.1:
+                break
+            mid = (lo_mm + hi_mm) / 2
+            if contacts_pair(m, s, mid / 1000.0):
+                hi_mm = mid
+            else:
+                lo_mm = mid
+        return round(hi_mm, 1)
+    # Перебор пар: скан от 0 шагами 10мм в каждую сторону, первый переход
+    # свободно→контакт уточняется бисекцией. Ловит и пролётные пары
+    # (контакт в середине диапазона, свободные концы).
+    events = []
     for m in moving:
         for s in static_all:
-            if is_sliding(m["name"], s["name"]):
+            if excluded(m["name"], s["name"]):
                 continue
-            if is_artifact(m["name"], s["name"]):
-                continue
-            # быстрая проверка: есть ли вообще пересечение в диапазоне [-900,+600]?
-            hit_lo = contacts_pair(m, s, -0.9)
-            hit_hi = contacts_pair(m, s, 0.6)
-            hit_0 = contacts_pair(m, s, 0.0)
-            # если в нуле уже контакт — это дубликат/проблема (не должно быть среди отфильтрованных)
-            if hit_0:
+            if contacts_pair(m, s, 0.0):
                 events.append((0.0, m["name"], s["name"], "AT_ZERO"))
                 continue
-            # вниз
-            if hit_lo and not hit_0:
-                lo, hi = 0.0, -900.0
-                # найти переход
-                # сначала грубо шагами 10мм
-                prev = 0.0
+            # вниз: 0 → -900
+            prev = 0.0
+            dz = -10.0
+            while dz >= -900.0:
+                if contacts_pair(m, s, dz / 1000.0):
+                    events.append((first_touch(m["name"], s["name"], prev, dz),
+                                   m["name"], s["name"], "DOWN"))
+                    break
+                prev = dz
+                dz -= 10.0
+            # вверх: 0 → +600
+            prev = 0.0
+            dz = 10.0
+            while dz <= 600.0:
+                if contacts_pair(m, s, dz / 1000.0):
+                    events.append((first_touch(m["name"], s["name"], prev, dz),
+                                   m["name"], s["name"], "UP"))
+                    break
+                prev = dz
+                dz += 10.0
                 for dz in range(0, -901, -10):
                     if contacts_pair(m, s, dz / 1000.0):
                         lo, hi = prev, float(dz)
