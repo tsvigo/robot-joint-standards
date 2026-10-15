@@ -167,22 +167,6 @@ def main():
                     break
                 prev = dz
                 dz += 10.0
-                for dz in range(0, -901, -10):
-                    if contacts_pair(m, s, dz / 1000.0):
-                        lo, hi = prev, float(dz)
-                        break
-                    prev = float(dz)
-                events.append((first_touch(m["name"], s["name"], lo, hi), m["name"], s["name"], "DOWN"))
-            # вверх
-            if hit_hi and not hit_0:
-                prev = 0.0
-                for dz in range(0, 601, 10):
-                    if contacts_pair(m, s, dz / 1000.0):
-                        lo, hi = prev, float(dz)
-                        break
-                    prev = float(dz)
-                # first_touch ожидает lo<hi
-                events.append((first_touch(m["name"], s["name"], lo, hi), m["name"], s["name"], "UP"))
     # сохранить события
     import csv
     with open("/home/v/projects/робот/lift_travel_collision_audit_pairs.csv", "w", newline="") as f:
