@@ -1,0 +1,4491 @@
+{
+ "file": "/home/v/.local/state/opencode/tmp/robot_pose_copy.blend",
+ "blender": "4.2.20 LTS",
+ "drivers_total": 0,
+ "excluded_shells": [
+  "first_phalanx_index_finger_right_hand_link_collision",
+  "first_phalanx_left_thumb_link_collision",
+  "first_phalanx_middle_finger_left_hand_link_collision",
+  "first_phalanx_middle_finger_right_hand_link_collision",
+  "first_phalanx_of_index_finger_of_left_hand_link_collision",
+  "first_phalanx_right_thumb_link_collision",
+  "first_phalanx_ring_finger_left_hand_link_collision",
+  "first_phalanx_ring_finger_right_hand_link_collision",
+  "head_link_collision",
+  "left_forearm_link_collision",
+  "left_palm_link_collision",
+  "left_shoulder_link_collision",
+  "right_forearm_link_collision",
+  "right_palm_link_collision",
+  "right_shoulder_link_collision",
+  "second_phalanx_index_finger_right_hand_link_collision",
+  "second_phalanx_left_thumb_link_collision",
+  "second_phalanx_middle_finger_left_hand_link_collision",
+  "second_phalanx_middle_finger_right_hand_link_collision",
+  "second_phalanx_of_index_finger_of_left_hand_link_collision",
+  "second_phalanx_right_thumb_link_collision",
+  "second_phalanx_ring_finger_left_hand_link_collision",
+  "second_phalanx_ring_finger_right_hand_link_collision",
+  "third_phalanx_index_finger_right_hand_link_collision",
+  "third_phalanx_left_thumb_link_collision",
+  "third_phalanx_middle_finger_right_hand_link_collision",
+  "third_phalanx_of_index_finger_of_left_hand_link_collision",
+  "third_phalanx_of_the_middle_finger_of_the_hand_link_collision",
+  "third_phalanx_right_thumb_link_collision",
+  "third_phalanx_ring_finger_left_hand_link_collision",
+  "third_phalanx_ring_finger_right_hand_link_collision",
+  "wheel_BL_collision",
+  "wheel_BR_collision",
+  "wheel_FL_collision",
+  "wheel_FR_collision"
+ ],
+ "tests": [
+  {
+   "side": "left",
+   "angle_deg": 0.0,
+   "sign": -1.0,
+   "overlaps": [],
+   "min_gaps": [
+    {
+     "moved": "left_forearm_link",
+     "static": "lift_guide_block_right",
+     "gap_m": 0.4169
+    },
+    {
+     "moved": "left_forearm_link",
+     "static": "lift_guide_right",
+     "gap_m": 0.46824
+    },
+    {
+     "moved": "left_forearm_link",
+     "static": "lift_nut_mount_right",
+     "gap_m": 0.4903
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "head_link",
+     "gap_m": 0.21505
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_catcher_placeholder",
+     "gap_m": 0.16855
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_guide_block_left",
+     "gap_m": 0.41063
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_guide_block_right",
+     "gap_m": 0.09346
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_guide_left",
+     "gap_m": 0.47174
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_guide_right",
+     "gap_m": 0.12257
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_nut_mount_left",
+     "gap_m": 0.39603
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_nut_mount_right",
+     "gap_m": 0.12592
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_screw_left",
+     "gap_m": 0.43889
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_screw_right",
+     "gap_m": 0.1765
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "odor_sensor",
+     "gap_m": 0.29221
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "speaker",
+     "gap_m": 0.26493
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "stereo_microphone_1",
+     "gap_m": 0.23077
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "stereo_microphone_2",
+     "gap_m": 0.31893
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "ToF_Lens_001",
+     "gap_m": 0.31939
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "torso_link",
+     "gap_m": 0.15438
+    }
+   ],
+   "palm_dx_m": 0.0,
+   "joints": {
+    "left_shoulder_joint_empty_3": {
+     "T": [
+      3.772350549697876,
+      -1.7109711170196533,
+      -4.561809062957764
+     ],
+     "R": [
+      [
+       1.0,
+       -1.7763568394002505e-15,
+       0.0
+      ],
+      [
+       -1.7763568394002505e-15,
+       0.9999998211860657,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       0.9999998211860657
+      ]
+     ]
+    },
+    "left_shoulder_3_link": {
+     "T": [
+      3.772350549697876,
+      -1.6867364645004272,
+      -4.561553478240967
+     ],
+     "R": [
+      [
+       1.0,
+       -1.776356733521132e-15,
+       0.0
+      ],
+      [
+       -1.7763566276420137e-15,
+       0.9999996423721313,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       0.9999996423721313
+      ]
+     ]
+    },
+    "left_shoulder_joint_empty_2": {
+     "T": [
+      3.772351026535034,
+      -1.6625018119812012,
+      -4.561297416687012
+     ],
+     "R": [
+      [
+       1.0,
+       -1.776356733521132e-15,
+       0.0
+      ],
+      [
+       -1.7763566276420137e-15,
+       0.9999996423721313,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       0.9999996423721313
+      ]
+     ]
+    },
+    "left_shoulder_2_link": {
+     "T": [
+      3.7723512649536133,
+      -1.6367363929748535,
+      -4.561041831970215
+     ],
+     "R": [
+      [
+       1.0,
+       -1.776356733521132e-15,
+       0.0
+      ],
+      [
+       -1.7763564158837768e-15,
+       0.9999995231628418,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       0.9999995231628418
+      ]
+     ]
+    },
+    "left_shoulder_joint_empty_1": {
+     "T": [
+      3.772350549697876,
+      -1.6109710931777954,
+      -4.560787677764893
+     ],
+     "R": [
+      [
+       0.9991433024406433,
+       1.4903351441830637e-08,
+       0.0
+      ],
+      [
+       -1.4888390076350788e-08,
+       1.0001466274261475,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0024309158325195
+      ]
+     ]
+    },
+    "left_shoulder_link": {
+     "T": [
+      3.792201280593872,
+      -1.3725031614303589,
+      -4.561741828918457
+     ],
+     "R": [
+      [
+       1.2541680335998535,
+       1.8697928538813358e-08,
+       0.0
+      ],
+      [
+       -1.8688552927415003e-08,
+       1.2547965049743652,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2562288045883179
+      ]
+     ]
+    },
+    "left_elbow_joint_empty": {
+     "T": [
+      3.792201280593872,
+      -1.2093570232391357,
+      -4.5593390464782715
+     ],
+     "R": [
+      [
+       1.2536306381225586,
+       1.8699303439007053e-08,
+       0.0
+      ],
+      [
+       -1.868053978171247e-08,
+       1.254888892173767,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2577552795410156
+      ]
+     ]
+    },
+    "left_forearm_link": {
+     "T": [
+      3.7922041416168213,
+      -1.027197003364563,
+      -4.5614142417907715
+     ],
+     "R": [
+      [
+       1.2536311149597168,
+       1.8699303439007053e-08,
+       0.0
+      ],
+      [
+       -1.8680545110782987e-08,
+       1.2548890113830566,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.257754921913147
+      ]
+     ]
+    },
+    "left_proximal_radioulnar_joint_empty": {
+     "T": [
+      3.7911641597747803,
+      -0.9574815034866333,
+      -4.560871601104736
+     ],
+     "R": [
+      [
+       1.2536306381225586,
+       1.8699306991720732e-08,
+       0.0
+      ],
+      [
+       -1.868053800535563e-08,
+       1.2548890113830566,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.257754921913147
+      ]
+     ]
+    },
+    "left_radioulnar_link": {
+     "T": [
+      3.7911641597747803,
+      -0.9574816226959229,
+      -4.5608720779418945
+     ],
+     "R": [
+      [
+       1.253630518913269,
+       1.8699306991720732e-08,
+       0.0
+      ],
+      [
+       -1.868053622899879e-08,
+       1.2548891305923462,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2577550411224365
+      ]
+     ]
+    },
+    "left_wrist_joint_1_empty": {
+     "T": [
+      3.7922019958496094,
+      -0.8475697636604309,
+      -4.559118747711182
+     ],
+     "R": [
+      [
+       1.2530951499938965,
+       1.870067833920075e-08,
+       0.0
+      ],
+      [
+       -1.8672558610433043e-08,
+       1.254981279373169,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.259283185005188
+      ]
+     ]
+    },
+    "left_wrist_pitch_link": {
+     "T": [
+      3.7922022342681885,
+      -0.84757000207901,
+      -4.559118747711182
+     ],
+     "R": [
+      [
+       1.253095030784607,
+       1.870068011555759e-08,
+       0.0
+      ],
+      [
+       -1.8672558610433043e-08,
+       1.254981279373169,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2592830657958984
+      ]
+     ]
+    },
+    "left_wrist_joint_2_empty": {
+     "T": [
+      3.7922072410583496,
+      -0.8110888600349426,
+      -4.568343639373779
+     ],
+     "R": [
+      [
+       1.2530956268310547,
+       1.8700681891914428e-08,
+       0.0
+      ],
+      [
+       -1.86725657158604e-08,
+       1.2549813985824585,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2592833042144775
+      ]
+     ]
+    },
+    "left_palm_link": {
+     "T": [
+      3.792248249053955,
+      -0.7369166016578674,
+      -4.5754547119140625
+     ],
+     "R": [
+      [
+       1.253631830215454,
+       1.8699305215363893e-08,
+       0.0
+      ],
+      [
+       -1.8680555768924023e-08,
+       1.2548891305923462,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.5864530801773071
+      ]
+     ]
+    }
+   },
+   "moved_mesh_count": 18
+  },
+  {
+   "side": "left",
+   "angle_deg": 30.0,
+   "sign": -1.0,
+   "overlaps": [],
+   "min_gaps": [
+    {
+     "moved": "left_forearm_link",
+     "static": "lift_catcher_placeholder",
+     "gap_m": 0.58392
+    },
+    {
+     "moved": "left_forearm_link",
+     "static": "lift_guide_block_right",
+     "gap_m": 0.48878
+    },
+    {
+     "moved": "left_forearm_link",
+     "static": "lift_guide_right",
+     "gap_m": 0.53537
+    },
+    {
+     "moved": "left_forearm_link",
+     "static": "lift_nut_mount_right",
+     "gap_m": 0.54578
+    },
+    {
+     "moved": "left_forearm_link",
+     "static": "lift_screw_right",
+     "gap_m": 0.59643
+    },
+    {
+     "moved": "left_forearm_link",
+     "static": "stereo_microphone_1",
+     "gap_m": 0.61674
+    },
+    {
+     "moved": "left_forearm_link",
+     "static": "torso_link",
+     "gap_m": 0.50436
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "head_link",
+     "gap_m": 0.19404
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_catcher_placeholder",
+     "gap_m": 0.20346
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_guide_block_left",
+     "gap_m": 0.41716
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_guide_block_right",
+     "gap_m": 0.13789
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_guide_left",
+     "gap_m": 0.47587
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_guide_right",
+     "gap_m": 0.16394
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_nut_mount_left",
+     "gap_m": 0.40444
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_nut_mount_right",
+     "gap_m": 0.16276
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_screw_left",
+     "gap_m": 0.45436
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_screw_right",
+     "gap_m": 0.21257
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "odor_sensor",
+     "gap_m": 0.26149
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "speaker",
+     "gap_m": 0.23765
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "stereo_microphone_1",
+     "gap_m": 0.24083
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "stereo_microphone_2",
+     "gap_m": 0.33521
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "ToF_Lens_001",
+     "gap_m": 0.29236
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "torso_link",
+     "gap_m": 0.11245
+    }
+   ],
+   "palm_dx_m": 0.4601273536682129,
+   "joints": {
+    "left_shoulder_joint_empty_3": {
+     "T": [
+      3.772350549697876,
+      -1.7109711170196533,
+      -4.561809062957764
+     ],
+     "R": [
+      [
+       1.0,
+       -1.7763568394002505e-15,
+       0.0
+      ],
+      [
+       -1.7763568394002505e-15,
+       0.9999998211860657,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       0.9999998211860657
+      ]
+     ]
+    },
+    "left_shoulder_3_link": {
+     "T": [
+      3.772350549697876,
+      -1.6867364645004272,
+      -4.561553478240967
+     ],
+     "R": [
+      [
+       1.0,
+       -1.776356733521132e-15,
+       0.0
+      ],
+      [
+       -1.7763566276420137e-15,
+       0.9999996423721313,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       0.9999996423721313
+      ]
+     ]
+    },
+    "left_shoulder_joint_empty_2": {
+     "T": [
+      3.772351026535034,
+      -1.6625018119812012,
+      -4.561297416687012
+     ],
+     "R": [
+      [
+       0.8660253882408142,
+       0.5,
+       0.0
+      ],
+      [
+       -0.4999998211860657,
+       0.8660250902175903,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       0.9999996423721313
+      ]
+     ]
+    },
+    "left_shoulder_2_link": {
+     "T": [
+      3.785233974456787,
+      -1.640188455581665,
+      -4.561041831970215
+     ],
+     "R": [
+      [
+       0.8660253882408142,
+       0.4999999403953552,
+       0.0
+      ],
+      [
+       -0.4999998211860657,
+       0.8660249710083008,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       0.9999995231628418
+      ]
+     ]
+    },
+    "left_shoulder_joint_empty_1": {
+     "T": [
+      3.7981159687042236,
+      -1.6178747415542603,
+      -4.560787677764893
+     ],
+     "R": [
+      [
+       0.8652834892272949,
+       0.5000734925270081,
+       0.0
+      ],
+      [
+       -0.49957147240638733,
+       0.8661523461341858,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0024309158325195
+      ]
+     ]
+    },
+    "left_shoulder_link": {
+     "T": [
+      3.9345409870147705,
+      -1.421281337738037,
+      -4.561741828918457
+     ],
+     "R": [
+      [
+       1.0861413478851318,
+       0.6273984909057617,
+       0.0
+      ],
+      [
+       -0.6270838379859924,
+       1.0866856575012207,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2562288045883179
+      ]
+     ]
+    },
+    "left_elbow_joint_empty": {
+     "T": [
+      4.016114234924316,
+      -1.2799928188323975,
+      -4.5593390464782715
+     ],
+     "R": [
+      [
+       1.0856759548187256,
+       0.6274446845054626,
+       0.0
+      ],
+      [
+       -0.626815140247345,
+       1.0867656469345093,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2577552795410156
+      ]
+     ]
+    },
+    "left_forearm_link": {
+     "T": [
+      4.107196807861328,
+      -1.122239112854004,
+      -4.5614142417907715
+     ],
+     "R": [
+      [
+       1.0856763124465942,
+       0.6274447441101074,
+       0.0
+      ],
+      [
+       -0.6268153786659241,
+       1.0867657661437988,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.257754921913147
+      ]
+     ]
+    },
+    "left_proximal_radioulnar_joint_empty": {
+     "T": [
+      4.1411542892456055,
+      -1.0613441467285156,
+      -4.560871601104736
+     ],
+     "R": [
+      [
+       1.0856759548187256,
+       0.6274447441101074,
+       0.0
+      ],
+      [
+       -0.626815140247345,
+       1.0867657661437988,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.257754921913147
+      ]
+     ]
+    },
+    "left_radioulnar_link": {
+     "T": [
+      4.1411542892456055,
+      -1.0613442659378052,
+      -4.5608720779418945
+     ],
+     "R": [
+      [
+       1.085675835609436,
+       0.6274448037147522,
+       0.0
+      ],
+      [
+       -0.6268150806427002,
+       1.0867658853530884,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2577550411224365
+      ]
+     ]
+    },
+    "left_wrist_joint_1_empty": {
+     "T": [
+      4.197009086608887,
+      -0.9666767120361328,
+      -4.559118747711182
+     ],
+     "R": [
+      [
+       1.085212230682373,
+       0.6274908781051636,
+       0.0
+      ],
+      [
+       -0.6265473961830139,
+       1.0868457555770874,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.259283185005188
+      ]
+     ]
+    },
+    "left_wrist_pitch_link": {
+     "T": [
+      4.197009563446045,
+      -0.9666771292686462,
+      -4.559118747711182
+     ],
+     "R": [
+      [
+       1.0852121114730835,
+       0.6274908781051636,
+       0.0
+      ],
+      [
+       -0.6265473365783691,
+       1.0868457555770874,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2592830657958984
+      ]
+     ]
+    },
+    "left_wrist_joint_2_empty": {
+     "T": [
+      4.215254306793213,
+      -0.9350860118865967,
+      -4.568343639373779
+     ],
+     "R": [
+      [
+       1.0852125883102417,
+       0.6274909377098083,
+       0.0
+      ],
+      [
+       -0.626547634601593,
+       1.086845874786377,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2592833042144775
+      ]
+     ]
+    },
+    "left_palm_link": {
+     "T": [
+      4.252375602722168,
+      -0.8708713054656982,
+      -4.5754547119140625
+     ],
+     "R": [
+      [
+       1.085676908493042,
+       0.6274448037147522,
+       0.0
+      ],
+      [
+       -0.6268157362937927,
+       1.0867658853530884,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.5864530801773071
+      ]
+     ]
+    }
+   },
+   "moved_mesh_count": 18
+  },
+  {
+   "side": "left",
+   "angle_deg": 60.0,
+   "sign": -1.0,
+   "overlaps": [],
+   "min_gaps": [
+    {
+     "moved": "left_forearm_link",
+     "static": "head_link",
+     "gap_m": 0.54036
+    },
+    {
+     "moved": "left_forearm_link",
+     "static": "odor_sensor",
+     "gap_m": 0.57723
+    },
+    {
+     "moved": "left_forearm_link",
+     "static": "speaker",
+     "gap_m": 0.56585
+    },
+    {
+     "moved": "left_forearm_link",
+     "static": "stereo_microphone_1",
+     "gap_m": 0.58705
+    },
+    {
+     "moved": "left_forearm_link",
+     "static": "stereo_microphone_2",
+     "gap_m": 0.67579
+    },
+    {
+     "moved": "left_forearm_link",
+     "static": "ToF_Lens_001",
+     "gap_m": 0.59574
+    },
+    {
+     "moved": "left_forearm_link",
+     "static": "torso_link",
+     "gap_m": 0.45012
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "head_link",
+     "gap_m": 0.15289
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_catcher_placeholder",
+     "gap_m": 0.22747
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_guide_block_left",
+     "gap_m": 0.37526
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_guide_block_right",
+     "gap_m": 0.17708
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_guide_left",
+     "gap_m": 0.4324
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_guide_right",
+     "gap_m": 0.19615
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_nut_mount_left",
+     "gap_m": 0.36332
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_nut_mount_right",
+     "gap_m": 0.18935
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_screw_left",
+     "gap_m": 0.41395
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_screw_right",
+     "gap_m": 0.23596
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "odor_sensor",
+     "gap_m": 0.21742
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "right_shoulder_link",
+     "gap_m": 0.47715
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "speaker",
+     "gap_m": 0.19246
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "stereo_microphone_1",
+     "gap_m": 0.21226
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "stereo_microphone_2",
+     "gap_m": 0.30554
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "ToF_Lens_001",
+     "gap_m": 0.25296
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "torso_link",
+     "gap_m": 0.06255
+    }
+   ],
+   "palm_dx_m": 0.7916321754455566,
+   "joints": {
+    "left_shoulder_joint_empty_3": {
+     "T": [
+      3.772350549697876,
+      -1.7109711170196533,
+      -4.561809062957764
+     ],
+     "R": [
+      [
+       1.0,
+       -1.7763568394002505e-15,
+       0.0
+      ],
+      [
+       -1.7763568394002505e-15,
+       0.9999998211860657,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       0.9999998211860657
+      ]
+     ]
+    },
+    "left_shoulder_3_link": {
+     "T": [
+      3.772350549697876,
+      -1.6867364645004272,
+      -4.561553478240967
+     ],
+     "R": [
+      [
+       1.0,
+       -1.776356733521132e-15,
+       0.0
+      ],
+      [
+       -1.7763566276420137e-15,
+       0.9999996423721313,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       0.9999996423721313
+      ]
+     ]
+    },
+    "left_shoulder_joint_empty_2": {
+     "T": [
+      3.772351026535034,
+      -1.6625018119812012,
+      -4.561297416687012
+     ],
+     "R": [
+      [
+       0.4999999701976776,
+       0.866025447845459,
+       0.0
+      ],
+      [
+       -0.8660251498222351,
+       0.4999997913837433,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       0.9999996423721313
+      ]
+     ]
+    },
+    "left_shoulder_2_link": {
+     "T": [
+      3.7946646213531494,
+      -1.6496193408966064,
+      -4.561041831970215
+     ],
+     "R": [
+      [
+       0.4999999701976776,
+       0.8660253286361694,
+       0.0
+      ],
+      [
+       -0.8660251498222351,
+       0.4999997317790985,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       0.9999995231628418
+      ]
+     ]
+    },
+    "left_shoulder_joint_empty_1": {
+     "T": [
+      3.8169777393341064,
+      -1.6367360353469849,
+      -4.560787677764893
+     ],
+     "R": [
+      [
+       0.49957162141799927,
+       0.8661527037620544,
+       0.0
+      ],
+      [
+       -0.8652832508087158,
+       0.500073254108429,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0024309158325195
+      ]
+     ]
+    },
+    "left_shoulder_link": {
+     "T": [
+      4.033422470092773,
+      -1.5346932411193848,
+      -4.561741828918457
+     ],
+     "R": [
+      [
+       0.6270840167999268,
+       1.0866860151290894,
+       0.0
+      ],
+      [
+       -1.0861409902572632,
+       0.6273981928825378,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2562288045883179
+      ]
+     ]
+    },
+    "left_elbow_joint_empty": {
+     "T": [
+      4.174711227416992,
+      -1.453120231628418,
+      -4.5593390464782715
+     ],
+     "R": [
+      [
+       0.6268153190612793,
+       1.086766004562378,
+       0.0
+      ],
+      [
+       -1.085675597190857,
+       0.6274443864822388,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2577552795410156
+      ]
+     ]
+    },
+    "left_forearm_link": {
+     "T": [
+      4.332468032836914,
+      -1.3620429039001465,
+      -4.5614142417907715
+     ],
+     "R": [
+      [
+       0.6268155574798584,
+       1.0867661237716675,
+       0.0
+      ],
+      [
+       -1.0856759548187256,
+       0.6274444460868835,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.257754921913147
+      ]
+     ]
+    },
+    "left_proximal_radioulnar_joint_empty": {
+     "T": [
+      4.3923234939575195,
+      -1.326284408569336,
+      -4.560871601104736
+     ],
+     "R": [
+      [
+       0.6268153190612793,
+       1.0867661237716675,
+       0.0
+      ],
+      [
+       -1.085675597190857,
+       0.6274444460868835,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.257754921913147
+      ]
+     ]
+    },
+    "left_radioulnar_link": {
+     "T": [
+      4.3923234939575195,
+      -1.326284408569336,
+      -4.5608720779418945
+     ],
+     "R": [
+      [
+       0.6268152594566345,
+       1.086766242980957,
+       0.0
+      ],
+      [
+       -1.0856754779815674,
+       0.6274445056915283,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2577550411224365
+      ]
+     ]
+    },
+    "left_wrist_joint_1_empty": {
+     "T": [
+      4.488028526306152,
+      -1.272227168083191,
+      -4.559118747711182
+     ],
+     "R": [
+      [
+       0.6265475749969482,
+       1.086846113204956,
+       0.0
+      ],
+      [
+       -1.0852118730545044,
+       0.6274905800819397,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.259283185005188
+      ]
+     ]
+    },
+    "left_wrist_pitch_link": {
+     "T": [
+      4.488028526306152,
+      -1.2722275257110596,
+      -4.559118747711182
+     ],
+     "R": [
+      [
+       0.6265475153923035,
+       1.086846113204956,
+       0.0
+      ],
+      [
+       -1.0852117538452148,
+       0.6274905800819397,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2592830657958984
+      ]
+     ]
+    },
+    "left_wrist_joint_2_empty": {
+     "T": [
+      4.519624710083008,
+      -1.2539912462234497,
+      -4.568343639373779
+     ],
+     "R": [
+      [
+       0.6265478134155273,
+       1.0868462324142456,
+       0.0
+      ],
+      [
+       -1.085212230682373,
+       0.6274906396865845,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2592833042144775
+      ]
+     ]
+    },
+    "left_palm_link": {
+     "T": [
+      4.583880424499512,
+      -1.2169404029846191,
+      -4.5754547119140625
+     ],
+     "R": [
+      [
+       0.626815915107727,
+       1.086766242980957,
+       0.0
+      ],
+      [
+       -1.0856765508651733,
+       0.6274445056915283,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.5864530801773071
+      ]
+     ]
+    }
+   },
+   "moved_mesh_count": 18
+  },
+  {
+   "side": "left",
+   "angle_deg": 85.0,
+   "sign": -1.0,
+   "overlaps": [],
+   "min_gaps": [
+    {
+     "moved": "left_forearm_link",
+     "static": "head_link",
+     "gap_m": 0.48749
+    },
+    {
+     "moved": "left_forearm_link",
+     "static": "odor_sensor",
+     "gap_m": 0.50274
+    },
+    {
+     "moved": "left_forearm_link",
+     "static": "right_shoulder_link",
+     "gap_m": 0.63155
+    },
+    {
+     "moved": "left_forearm_link",
+     "static": "speaker",
+     "gap_m": 0.4962
+    },
+    {
+     "moved": "left_forearm_link",
+     "static": "ToF_Lens_001",
+     "gap_m": 0.52262
+    },
+    {
+     "moved": "left_forearm_link",
+     "static": "torso_link",
+     "gap_m": 0.40927
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "head_link",
+     "gap_m": 0.11195
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_catcher_placeholder",
+     "gap_m": 0.23706
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_guide_block_left",
+     "gap_m": 0.33134
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_guide_block_right",
+     "gap_m": 0.19876
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_guide_left",
+     "gap_m": 0.38778
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_guide_right",
+     "gap_m": 0.21373
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_nut_mount_left",
+     "gap_m": 0.31976
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_nut_mount_right",
+     "gap_m": 0.20211
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_screw_left",
+     "gap_m": 0.37056
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "lift_screw_right",
+     "gap_m": 0.23932
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "odor_sensor",
+     "gap_m": 0.17732
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "right_shoulder_link",
+     "gap_m": 0.43333
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "speaker",
+     "gap_m": 0.14937
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "stereo_microphone_1",
+     "gap_m": 0.18173
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "stereo_microphone_2",
+     "gap_m": 0.26718
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "ToF_Lens_001",
+     "gap_m": 0.21841
+    },
+    {
+     "moved": "left_shoulder_link",
+     "static": "torso_link",
+     "gap_m": 0.01757
+    }
+   ],
+   "palm_dx_m": 0.903900146484375,
+   "joints": {
+    "left_shoulder_joint_empty_3": {
+     "T": [
+      3.772350549697876,
+      -1.7109711170196533,
+      -4.561809062957764
+     ],
+     "R": [
+      [
+       1.0,
+       -1.7763568394002505e-15,
+       0.0
+      ],
+      [
+       -1.7763568394002505e-15,
+       0.9999998211860657,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       0.9999998211860657
+      ]
+     ]
+    },
+    "left_shoulder_3_link": {
+     "T": [
+      3.772350549697876,
+      -1.6867364645004272,
+      -4.561553478240967
+     ],
+     "R": [
+      [
+       1.0,
+       -1.776356733521132e-15,
+       0.0
+      ],
+      [
+       -1.7763566276420137e-15,
+       0.9999996423721313,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       0.9999996423721313
+      ]
+     ]
+    },
+    "left_shoulder_joint_empty_2": {
+     "T": [
+      3.772351026535034,
+      -1.6625018119812012,
+      -4.561297416687012
+     ],
+     "R": [
+      [
+       0.08715580403804779,
+       0.9961947202682495,
+       0.0
+      ],
+      [
+       -0.9961943626403809,
+       0.0871557742357254,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       0.9999996423721313
+      ]
+     ]
+    },
+    "left_shoulder_2_link": {
+     "T": [
+      3.798018455505371,
+      -1.6602563858032227,
+      -4.561041831970215
+     ],
+     "R": [
+      [
+       0.08715580403804779,
+       0.99619460105896,
+       0.0
+      ],
+      [
+       -0.9961943626403809,
+       0.0871557667851448,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       0.9999995231628418
+      ]
+     ]
+    },
+    "left_shoulder_joint_empty_1": {
+     "T": [
+      3.823685646057129,
+      -1.6580101251602173,
+      -4.560787677764893
+     ],
+     "R": [
+      [
+       0.08708111941814423,
+       0.9963411688804626,
+       0.0
+      ],
+      [
+       -0.9953409433364868,
+       0.08716857433319092,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0024309158325195
+      ]
+     ]
+    },
+    "left_shoulder_link": {
+     "T": [
+      4.062976360321045,
+      -1.6570019721984863,
+      -4.561741828918457
+     ],
+     "R": [
+      [
+       0.10930799692869186,
+       1.2500221729278564,
+       0.0
+      ],
+      [
+       -1.2493951320648193,
+       0.10936277359724045,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2562288045883179
+      ]
+     ]
+    },
+    "left_elbow_joint_empty": {
+     "T": [
+      4.225502014160156,
+      -1.6427831649780273,
+      -4.5593390464782715
+     ],
+     "R": [
+      [
+       0.109261155128479,
+       1.2501142024993896,
+       0.0
+      ],
+      [
+       -1.2488597631454468,
+       0.10937082022428513,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2577552795410156
+      ]
+     ]
+    },
+    "left_forearm_link": {
+     "T": [
+      4.40696907043457,
+      -1.6269102096557617,
+      -4.5614142417907715
+     ],
+     "R": [
+      [
+       0.10926119238138199,
+       1.2501143217086792,
+       0.0
+      ],
+      [
+       -1.248860239982605,
+       0.10937082767486572,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.257754921913147
+      ]
+     ]
+    },
+    "left_proximal_radioulnar_joint_empty": {
+     "T": [
+      4.4763288497924805,
+      -1.619798183441162,
+      -4.560871601104736
+     ],
+     "R": [
+      [
+       0.10926114767789841,
+       1.2501143217086792,
+       0.0
+      ],
+      [
+       -1.2488597631454468,
+       0.10937081277370453,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.257754921913147
+      ]
+     ]
+    },
+    "left_radioulnar_link": {
+     "T": [
+      4.4763288497924805,
+      -1.619798183441162,
+      -4.5608720779418945
+     ],
+     "R": [
+      [
+       0.10926114022731781,
+       1.2501144409179688,
+       0.0
+      ],
+      [
+       -1.2488596439361572,
+       0.10937082767486572,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2577550411224365
+      ]
+     ]
+    },
+    "left_wrist_joint_1_empty": {
+     "T": [
+      4.585912704467773,
+      -1.6112525463104248,
+      -4.559118747711182
+     ],
+     "R": [
+      [
+       0.10921447724103928,
+       1.2502062320709229,
+       0.0
+      ],
+      [
+       -1.248326301574707,
+       0.1093788668513298,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.259283185005188
+      ]
+     ]
+    },
+    "left_wrist_pitch_link": {
+     "T": [
+      4.585912227630615,
+      -1.611252784729004,
+      -4.559118747711182
+     ],
+     "R": [
+      [
+       0.10921446979045868,
+       1.2502062320709229,
+       0.0
+      ],
+      [
+       -1.2483261823654175,
+       0.1093788743019104,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2592830657958984
+      ]
+     ]
+    },
+    "left_wrist_joint_2_empty": {
+     "T": [
+      4.622254848480225,
+      -1.6080783605575562,
+      -4.568343639373779
+     ],
+     "R": [
+      [
+       0.10921452194452286,
+       1.2502063512802124,
+       0.0
+      ],
+      [
+       -1.2483267784118652,
+       0.1093788892030716,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2592833042144775
+      ]
+     ]
+    },
+    "left_palm_link": {
+     "T": [
+      4.69614839553833,
+      -1.601654052734375,
+      -4.5754547119140625
+     ],
+     "R": [
+      [
+       0.10926125198602676,
+       1.2501143217086792,
+       0.0
+      ],
+      [
+       -1.2488608360290527,
+       0.10937084257602692,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.5864530801773071
+      ]
+     ]
+    }
+   },
+   "moved_mesh_count": 18
+  },
+  {
+   "side": "right",
+   "angle_deg": 0.0,
+   "sign": 1.0,
+   "overlaps": [],
+   "min_gaps": [
+    {
+     "moved": "right_forearm_link",
+     "static": "lift_guide_block_left",
+     "gap_m": 0.45988
+    },
+    {
+     "moved": "right_forearm_link",
+     "static": "lift_guide_left",
+     "gap_m": 0.5024
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "head_link",
+     "gap_m": 0.21888
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_catcher_placeholder",
+     "gap_m": 0.16721
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_guide_block_left",
+     "gap_m": 0.08083
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_guide_block_right",
+     "gap_m": 0.42072
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_guide_left",
+     "gap_m": 0.1114
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_guide_right",
+     "gap_m": 0.4729
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_nut_mount_left",
+     "gap_m": 0.12532
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_nut_mount_right",
+     "gap_m": 0.40599
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_screw_left",
+     "gap_m": 0.17529
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_screw_right",
+     "gap_m": 0.44729
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "odor_sensor",
+     "gap_m": 0.29705
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "speaker",
+     "gap_m": 0.27002
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "stereo_microphone_1",
+     "gap_m": 0.31755
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "stereo_microphone_2",
+     "gap_m": 0.23137
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "ToF_Lens_001",
+     "gap_m": 0.3291
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "torso_link",
+     "gap_m": 0.15903
+    }
+   ],
+   "palm_dx_m": 0.0,
+   "joints": {
+    "right_shoulder_joint_empty_3": {
+     "T": [
+      3.7796642780303955,
+      -2.0147459506988525,
+      -4.558747291564941
+     ],
+     "R": [
+      [
+       0.9991433024406433,
+       1.4903354994544316e-08,
+       0.0
+      ],
+      [
+       -1.4888395405421306e-08,
+       1.0001472234725952,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0024315118789673
+      ]
+     ]
+    },
+    "right_shoulder_3_link": {
+     "T": [
+      3.7796642780303955,
+      -2.038980484008789,
+      -4.558492183685303
+     ],
+     "R": [
+      [
+       0.9991433024406433,
+       1.4903354994544316e-08,
+       0.0
+      ],
+      [
+       -1.4888395405421306e-08,
+       1.0001472234725952,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0024315118789673
+      ]
+     ]
+    },
+    "right_shoulder_joint_empty_2": {
+     "T": [
+      3.7796645164489746,
+      -2.0632152557373047,
+      -4.558236122131348
+     ],
+     "R": [
+      [
+       0.9991433024406433,
+       1.4903356770901155e-08,
+       0.0
+      ],
+      [
+       -1.4888395405421306e-08,
+       1.0001473426818848,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0024316310882568
+      ]
+     ]
+    },
+    "right_shoulder_2_link": {
+     "T": [
+      3.7796642780303955,
+      -2.0889804363250732,
+      -4.557981014251709
+     ],
+     "R": [
+      [
+       0.9991433024406433,
+       1.4903356770901155e-08,
+       0.0
+      ],
+      [
+       -1.4888395405421306e-08,
+       1.0001473426818848,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0024316310882568
+      ]
+     ]
+    },
+    "right_shoulder_joint_empty_1": {
+     "T": [
+      3.7796642780303955,
+      -2.114745855331421,
+      -4.55772590637207
+     ],
+     "R": [
+      [
+       0.9991433024406433,
+       1.4903356770901155e-08,
+       0.0
+      ],
+      [
+       -1.4888395405421306e-08,
+       1.0001473426818848,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0024316310882568
+      ]
+     ]
+    },
+    "right_shoulder_link": {
+     "T": [
+      3.7795374393463135,
+      -2.3708152770996094,
+      -4.559963703155518
+     ],
+     "R": [
+      [
+       1.2541680335998535,
+       1.8697935644240715e-08,
+       0.0
+      ],
+      [
+       -1.868855825648552e-08,
+       1.2547974586486816,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2562296390533447
+      ]
+     ]
+    },
+    "right_elbow_joint_empty": {
+     "T": [
+      3.7795374393463135,
+      -2.544408082962036,
+      -4.557244777679443
+     ],
+     "R": [
+      [
+       1.2536306381225586,
+       1.869931054443441e-08,
+       0.0
+      ],
+      [
+       -1.8680550439853505e-08,
+       1.2548898458480835,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2577561140060425
+      ]
+     ]
+    },
+    "right_forearm_link": {
+     "T": [
+      3.799517869949341,
+      -2.757077217102051,
+      -4.553149223327637
+     ],
+     "R": [
+      [
+       1.2536312341690063,
+       1.869930876807757e-08,
+       0.0
+      ],
+      [
+       -1.8680559321637702e-08,
+       1.254889726638794,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2577557563781738
+      ]
+     ]
+    },
+    "right_proximal_radioulnar_joint_empty": {
+     "T": [
+      3.778484582901001,
+      -2.8206946849823,
+      -4.552513122558594
+     ],
+     "R": [
+      [
+       1.2541680335998535,
+       -8.882436412370638e-15,
+       0.0
+      ],
+      [
+       -1.7755965214509713e-15,
+       1.2547968626022339,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2562294006347656
+      ]
+     ]
+    },
+    "right_radioulnar_link": {
+     "T": [
+      3.7784841060638428,
+      -2.8206944465637207,
+      -4.5525126457214355
+     ],
+     "R": [
+      [
+       1.254167914390564,
+       -8.672914342537814e-15,
+       0.0
+      ],
+      [
+       -4.522545545220349e-16,
+       1.2547969818115234,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2562295198440552
+      ]
+     ]
+    },
+    "right_wrist_joint_1_empty": {
+     "T": [
+      3.779534101486206,
+      -2.9137914180755615,
+      -4.549998760223389
+     ],
+     "R": [
+      [
+       1.2536306381225586,
+       1.8689931380322378e-08,
+       0.0
+      ],
+      [
+       -1.8689931380322378e-08,
+       1.2548892498016357,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2577555179595947
+      ]
+     ]
+    },
+    "right_wrist_pitch_link": {
+     "T": [
+      3.779534101486206,
+      -2.9137918949127197,
+      -4.549999237060547
+     ],
+     "R": [
+      [
+       1.2536307573318481,
+       1.8689929603965538e-08,
+       0.0
+      ],
+      [
+       -1.8689931380322378e-08,
+       1.2548894882202148,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.257755994796753
+      ]
+     ]
+    },
+    "right_wrist_joint_2_empty": {
+     "T": [
+      3.7795393466949463,
+      -2.94645357131958,
+      -4.550827980041504
+     ],
+     "R": [
+      [
+       1.2530955076217651,
+       1.8691308056872913e-08,
+       0.0
+      ],
+      [
+       -1.8681951985399792e-08,
+       1.2549819946289062,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2592839002609253
+      ]
+     ]
+    },
+    "right_palm_link": {
+     "T": [
+      3.77954363822937,
+      -3.0181925296783447,
+      -4.5583319664001465
+     ],
+     "R": [
+      [
+       1.2536320686340332,
+       1.8689936709392896e-08,
+       0.0
+      ],
+      [
+       -1.868995092024761e-08,
+       1.2548898458480835,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2577557563781738
+      ]
+     ]
+    }
+   },
+   "moved_mesh_count": 18
+  },
+  {
+   "side": "right",
+   "angle_deg": 30.0,
+   "sign": 1.0,
+   "overlaps": [],
+   "min_gaps": [
+    {
+     "moved": "right_forearm_link",
+     "static": "lift_catcher_placeholder",
+     "gap_m": 0.6304
+    },
+    {
+     "moved": "right_forearm_link",
+     "static": "lift_guide_block_left",
+     "gap_m": 0.53363
+    },
+    {
+     "moved": "right_forearm_link",
+     "static": "lift_guide_left",
+     "gap_m": 0.57451
+    },
+    {
+     "moved": "right_forearm_link",
+     "static": "lift_nut_mount_left",
+     "gap_m": 0.59305
+    },
+    {
+     "moved": "right_forearm_link",
+     "static": "lift_screw_left",
+     "gap_m": 0.64348
+    },
+    {
+     "moved": "right_forearm_link",
+     "static": "torso_link",
+     "gap_m": 0.54716
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "head_link",
+     "gap_m": 0.20227
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_catcher_placeholder",
+     "gap_m": 0.2111
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_guide_block_left",
+     "gap_m": 0.13398
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_guide_block_right",
+     "gap_m": 0.43359
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_guide_left",
+     "gap_m": 0.1625
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_guide_right",
+     "gap_m": 0.48481
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_nut_mount_left",
+     "gap_m": 0.17047
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_nut_mount_right",
+     "gap_m": 0.42064
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_screw_left",
+     "gap_m": 0.22079
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_screw_right",
+     "gap_m": 0.46993
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "odor_sensor",
+     "gap_m": 0.27076
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "speaker",
+     "gap_m": 0.24767
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "stereo_microphone_1",
+     "gap_m": 0.34359
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "stereo_microphone_2",
+     "gap_m": 0.24483
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "ToF_Lens_001",
+     "gap_m": 0.30497
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "torso_link",
+     "gap_m": 0.12353
+    }
+   ],
+   "palm_dx_m": 0.47702527046203613,
+   "joints": {
+    "right_shoulder_joint_empty_3": {
+     "T": [
+      3.7796642780303955,
+      -2.0147459506988525,
+      -4.558747291564941
+     ],
+     "R": [
+      [
+       0.9991433024406433,
+       1.4903354994544316e-08,
+       0.0
+      ],
+      [
+       -1.4888395405421306e-08,
+       1.0001472234725952,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0024315118789673
+      ]
+     ]
+    },
+    "right_shoulder_3_link": {
+     "T": [
+      3.7796642780303955,
+      -2.038980484008789,
+      -4.558492183685303
+     ],
+     "R": [
+      [
+       0.9991433024406433,
+       1.4903354994544316e-08,
+       0.0
+      ],
+      [
+       -1.4888395405421306e-08,
+       1.0001472234725952,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0024315118789673
+      ]
+     ]
+    },
+    "right_shoulder_joint_empty_2": {
+     "T": [
+      3.7796645164489746,
+      -2.0632152557373047,
+      -4.558236122131348
+     ],
+     "R": [
+      [
+       0.8652834892272949,
+       -0.49957171082496643,
+       0.0
+      ],
+      [
+       0.5000736117362976,
+       0.8661530017852783,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0024316310882568
+      ]
+     ]
+    },
+    "right_shoulder_2_link": {
+     "T": [
+      3.792534112930298,
+      -2.08552885055542,
+      -4.557981014251709
+     ],
+     "R": [
+      [
+       0.8652834892272949,
+       -0.49957171082496643,
+       0.0
+      ],
+      [
+       0.5000736117362976,
+       0.8661530017852783,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0024316310882568
+      ]
+     ]
+    },
+    "right_shoulder_joint_empty_1": {
+     "T": [
+      3.8054039478302,
+      -2.107842445373535,
+      -4.55772590637207
+     ],
+     "R": [
+      [
+       0.8652834892272949,
+       -0.49957171082496643,
+       0.0
+      ],
+      [
+       0.5000736117362976,
+       0.8661530017852783,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0024316310882568
+      ]
+     ]
+    },
+    "right_shoulder_link": {
+     "T": [
+      3.9332005977630615,
+      -2.3296685218811035,
+      -4.559963703155518
+     ],
+     "R": [
+      [
+       1.0861413478851318,
+       -0.626768946647644,
+       0.0
+      ],
+      [
+       0.6277140974998474,
+       1.0866864919662476,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2562296390533447
+      ]
+     ]
+    },
+    "right_elbow_joint_empty": {
+     "T": [
+      4.019909858703613,
+      -2.480004072189331,
+      -4.557244777679443
+     ],
+     "R": [
+      [
+       1.0856760740280151,
+       -0.626815140247345,
+       0.0
+      ],
+      [
+       0.6274451613426208,
+       1.0867664813995361,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2577561140060425
+      ]
+     ]
+    },
+    "right_forearm_link": {
+     "T": [
+      4.143441200256348,
+      -2.6541810035705566,
+      -4.553149223327637
+     ],
+     "R": [
+      [
+       1.0856765508651733,
+       -0.6268150806427002,
+       0.0
+      ],
+      [
+       0.6274454593658447,
+       1.0867663621902466,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2577557563781738
+      ]
+     ]
+    },
+    "right_proximal_radioulnar_joint_empty": {
+     "T": [
+      4.157002925872803,
+      -2.7198023796081543,
+      -4.552513122558594
+     ],
+     "R": [
+      [
+       1.0861413478851318,
+       -0.6267686486244202,
+       0.0
+      ],
+      [
+       0.6277140974998474,
+       1.0866858959197998,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2562294006347656
+      ]
+     ]
+    },
+    "right_radioulnar_link": {
+     "T": [
+      4.157001972198486,
+      -2.7198026180267334,
+      -4.5525126457214355
+     ],
+     "R": [
+      [
+       1.0861412286758423,
+       -0.6267687082290649,
+       0.0
+      ],
+      [
+       0.6277140378952026,
+       1.0866860151290894,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2562295198440552
+      ]
+     ]
+    },
+    "right_wrist_joint_1_empty": {
+     "T": [
+      4.204412937164307,
+      -2.7999017238616943,
+      -4.549998760223389
+     ],
+     "R": [
+      [
+       1.0856759548187256,
+       -0.6268148422241211,
+       0.0
+      ],
+      [
+       0.6274451613426208,
+       1.086766004562378,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2577555179595947
+      ]
+     ]
+    },
+    "right_wrist_pitch_link": {
+     "T": [
+      4.204413414001465,
+      -2.7999019622802734,
+      -4.549999237060547
+     ],
+     "R": [
+      [
+       1.0856760740280151,
+       -0.6268149614334106,
+       0.0
+      ],
+      [
+       0.6274452209472656,
+       1.086766242980957,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.257755994796753
+      ]
+     ]
+    },
+    "right_wrist_joint_2_empty": {
+     "T": [
+      4.22073221206665,
+      -2.8281853199005127,
+      -4.550827980041504
+     ],
+     "R": [
+      [
+       1.0852125883102417,
+       -0.6268611550331116,
+       0.0
+      ],
+      [
+       0.627177357673645,
+       1.0868463516235352,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2592839002609253
+      ]
+     ]
+    },
+    "right_palm_link": {
+     "T": [
+      4.256568908691406,
+      -2.8903112411499023,
+      -4.5583319664001465
+     ],
+     "R": [
+      [
+       1.085677146911621,
+       -0.626815140247345,
+       0.0
+      ],
+      [
+       0.6274458765983582,
+       1.0867666006088257,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2577557563781738
+      ]
+     ]
+    }
+   },
+   "moved_mesh_count": 18
+  },
+  {
+   "side": "right",
+   "angle_deg": 60.0,
+   "sign": 1.0,
+   "overlaps": [],
+   "min_gaps": [
+    {
+     "moved": "right_forearm_link",
+     "static": "head_link",
+     "gap_m": 0.58696
+    },
+    {
+     "moved": "right_forearm_link",
+     "static": "odor_sensor",
+     "gap_m": 0.62352
+    },
+    {
+     "moved": "right_forearm_link",
+     "static": "speaker",
+     "gap_m": 0.61316
+    },
+    {
+     "moved": "right_forearm_link",
+     "static": "stereo_microphone_1",
+     "gap_m": 0.72084
+    },
+    {
+     "moved": "right_forearm_link",
+     "static": "stereo_microphone_2",
+     "gap_m": 0.63121
+    },
+    {
+     "moved": "right_forearm_link",
+     "static": "ToF_Lens_001",
+     "gap_m": 0.6442
+    },
+    {
+     "moved": "right_forearm_link",
+     "static": "torso_link",
+     "gap_m": 0.49685
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "head_link",
+     "gap_m": 0.16694
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "left_shoulder_link",
+     "gap_m": 0.48694
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_catcher_placeholder",
+     "gap_m": 0.24325
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_guide_block_left",
+     "gap_m": 0.18153
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_guide_block_right",
+     "gap_m": 0.39819
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_guide_left",
+     "gap_m": 0.20426
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_guide_right",
+     "gap_m": 0.44814
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_nut_mount_left",
+     "gap_m": 0.20453
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_nut_mount_right",
+     "gap_m": 0.38605
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_screw_left",
+     "gap_m": 0.25315
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_screw_right",
+     "gap_m": 0.43633
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "odor_sensor",
+     "gap_m": 0.23118
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "speaker",
+     "gap_m": 0.20781
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "stereo_microphone_1",
+     "gap_m": 0.31745
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "stereo_microphone_2",
+     "gap_m": 0.22173
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "ToF_Lens_001",
+     "gap_m": 0.26875
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "torso_link",
+     "gap_m": 0.07855
+    }
+   ],
+   "palm_dx_m": 0.8262646198272705,
+   "joints": {
+    "right_shoulder_joint_empty_3": {
+     "T": [
+      3.7796642780303955,
+      -2.0147459506988525,
+      -4.558747291564941
+     ],
+     "R": [
+      [
+       0.9991433024406433,
+       1.4903354994544316e-08,
+       0.0
+      ],
+      [
+       -1.4888395405421306e-08,
+       1.0001472234725952,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0024315118789673
+      ]
+     ]
+    },
+    "right_shoulder_3_link": {
+     "T": [
+      3.7796642780303955,
+      -2.038980484008789,
+      -4.558492183685303
+     ],
+     "R": [
+      [
+       0.9991433024406433,
+       1.4903354994544316e-08,
+       0.0
+      ],
+      [
+       -1.4888395405421306e-08,
+       1.0001472234725952,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0024315118789673
+      ]
+     ]
+    },
+    "right_shoulder_joint_empty_2": {
+     "T": [
+      3.7796645164489746,
+      -2.0632152557373047,
+      -4.558236122131348
+     ],
+     "R": [
+      [
+       0.49957162141799927,
+       -0.8652836680412292,
+       0.0
+      ],
+      [
+       0.8661529421806335,
+       0.5000736117362976,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0024316310882568
+      ]
+     ]
+    },
+    "right_shoulder_2_link": {
+     "T": [
+      3.801955461502075,
+      -2.0760982036590576,
+      -4.557981014251709
+     ],
+     "R": [
+      [
+       0.49957162141799927,
+       -0.8652836680412292,
+       0.0
+      ],
+      [
+       0.8661529421806335,
+       0.5000736117362976,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0024316310882568
+      ]
+     ]
+    },
+    "right_shoulder_joint_empty_1": {
+     "T": [
+      3.824246644973755,
+      -2.0889809131622314,
+      -4.55772590637207
+     ],
+     "R": [
+      [
+       0.49957162141799927,
+       -0.8652836680412292,
+       0.0
+      ],
+      [
+       0.8661529421806335,
+       0.5000736117362976,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0024316310882568
+      ]
+     ]
+    },
+    "right_shoulder_link": {
+     "T": [
+      4.045722961425781,
+      -2.217125177383423,
+      -4.559963703155518
+     ],
+     "R": [
+      [
+       0.6270840167999268,
+       -1.085595726966858,
+       0.0
+      ],
+      [
+       1.0872328281402588,
+       0.6273986101150513,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2562296390533447
+      ]
+     ]
+    },
+    "right_elbow_joint_empty": {
+     "T": [
+      4.195908069610596,
+      -2.303921699523926,
+      -4.557244777679443
+     ],
+     "R": [
+      [
+       0.6268153190612793,
+       -1.0856757164001465,
+       0.0
+      ],
+      [
+       1.0867669582366943,
+       0.6274448037147522,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2577561140060425
+      ]
+     ]
+    },
+    "right_forearm_link": {
+     "T": [
+      4.389890193939209,
+      -2.3929355144500732,
+      -4.553149223327637
+     ],
+     "R": [
+      [
+       0.6268156170845032,
+       -1.085675597190857,
+       0.0
+      ],
+      [
+       1.0867674350738525,
+       0.6274447441101074,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2577557563781738
+      ]
+     ]
+    },
+    "right_proximal_radioulnar_joint_empty": {
+     "T": [
+      4.434412479400635,
+      -2.4429774284362793,
+      -4.552513122558594
+     ],
+     "R": [
+      [
+       0.6270840167999268,
+       -1.0855952501296997,
+       0.0
+      ],
+      [
+       1.0872328281402588,
+       0.6273983120918274,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2562294006347656
+      ]
+     ]
+    },
+    "right_radioulnar_link": {
+     "T": [
+      4.434412002563477,
+      -2.4429779052734375,
+      -4.5525126457214355
+     ],
+     "R": [
+      [
+       0.627083957195282,
+       -1.0855953693389893,
+       0.0
+      ],
+      [
+       1.0872327089309692,
+       0.6273983716964722,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2562295198440552
+      ]
+     ]
+    },
+    "right_wrist_joint_1_empty": {
+     "T": [
+      4.5154805183410645,
+      -2.4886162281036377,
+      -4.549998760223389
+     ],
+     "R": [
+      [
+       0.6268153190612793,
+       -1.0856752395629883,
+       0.0
+      ],
+      [
+       1.0867669582366943,
+       0.6274445056915283,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2577555179595947
+      ]
+     ]
+    },
+    "right_wrist_pitch_link": {
+     "T": [
+      4.5154805183410645,
+      -2.4886162281036377,
+      -4.549999237060547
+     ],
+     "R": [
+      [
+       0.6268153786659241,
+       -1.0856754779815674,
+       0.0
+      ],
+      [
+       1.0867670774459839,
+       0.6274446249008179,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.257755994796753
+      ]
+     ]
+    },
+    "right_wrist_joint_2_empty": {
+     "T": [
+      4.543740749359131,
+      -2.5049426555633545,
+      -4.550827980041504
+     ],
+     "R": [
+      [
+       0.6265477538108826,
+       -1.085755467414856,
+       0.0
+      ],
+      [
+       1.0863031148910522,
+       0.6274908781051636,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2592839002609253
+      ]
+     ]
+    },
+    "right_palm_link": {
+     "T": [
+      4.605808258056641,
+      -2.540808916091919,
+      -4.5583319664001465
+     ],
+     "R": [
+      [
+       0.6268160343170166,
+       -1.085675835609436,
+       0.0
+      ],
+      [
+       1.0867682695388794,
+       0.6274448037147522,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2577557563781738
+      ]
+     ]
+    }
+   },
+   "moved_mesh_count": 18
+  },
+  {
+   "side": "right",
+   "angle_deg": 85.0,
+   "sign": 1.0,
+   "overlaps": [],
+   "min_gaps": [
+    {
+     "moved": "right_forearm_link",
+     "static": "left_shoulder_link",
+     "gap_m": 0.66609
+    },
+    {
+     "moved": "right_forearm_link",
+     "static": "torso_link",
+     "gap_m": 0.45823
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "head_link",
+     "gap_m": 0.12948
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "left_shoulder_link",
+     "gap_m": 0.44247
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_catcher_placeholder",
+     "gap_m": 0.25086
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_guide_block_left",
+     "gap_m": 0.21265
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_guide_block_right",
+     "gap_m": 0.35776
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_guide_left",
+     "gap_m": 0.22918
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_guide_right",
+     "gap_m": 0.40691
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_nut_mount_left",
+     "gap_m": 0.22134
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_nut_mount_right",
+     "gap_m": 0.3461
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_screw_left",
+     "gap_m": 0.25348
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "lift_screw_right",
+     "gap_m": 0.39666
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "odor_sensor",
+     "gap_m": 0.19215
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "speaker",
+     "gap_m": 0.16702
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "stereo_microphone_1",
+     "gap_m": 0.2828
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "stereo_microphone_2",
+     "gap_m": 0.19408
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "ToF_Lens_001",
+     "gap_m": 0.23394
+    },
+    {
+     "moved": "right_shoulder_link",
+     "static": "torso_link",
+     "gap_m": 0.03709
+    }
+   ],
+   "palm_dx_m": 0.9504969120025635,
+   "joints": {
+    "right_shoulder_joint_empty_3": {
+     "T": [
+      3.7796642780303955,
+      -2.0147459506988525,
+      -4.558747291564941
+     ],
+     "R": [
+      [
+       0.9991433024406433,
+       1.4903354994544316e-08,
+       0.0
+      ],
+      [
+       -1.4888395405421306e-08,
+       1.0001472234725952,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0024315118789673
+      ]
+     ]
+    },
+    "right_shoulder_3_link": {
+     "T": [
+      3.7796642780303955,
+      -2.038980484008789,
+      -4.558492183685303
+     ],
+     "R": [
+      [
+       0.9991433024406433,
+       1.4903354994544316e-08,
+       0.0
+      ],
+      [
+       -1.4888395405421306e-08,
+       1.0001472234725952,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0024315118789673
+      ]
+     ]
+    },
+    "right_shoulder_joint_empty_2": {
+     "T": [
+      3.7796645164489746,
+      -2.0632152557373047,
+      -4.558236122131348
+     ],
+     "R": [
+      [
+       0.08708114922046661,
+       -0.995341420173645,
+       0.0
+      ],
+      [
+       0.9963414072990417,
+       0.08716865628957748,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0024316310882568
+      ]
+     ]
+    },
+    "right_shoulder_2_link": {
+     "T": [
+      3.8053059577941895,
+      -2.0654611587524414,
+      -4.557981014251709
+     ],
+     "R": [
+      [
+       0.08708114922046661,
+       -0.995341420173645,
+       0.0
+      ],
+      [
+       0.9963414072990417,
+       0.08716865628957748,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0024316310882568
+      ]
+     ]
+    },
+    "right_shoulder_joint_empty_1": {
+     "T": [
+      3.8309476375579834,
+      -2.067706823348999,
+      -4.55772590637207
+     ],
+     "R": [
+      [
+       0.08708114922046661,
+       -0.995341420173645,
+       0.0
+      ],
+      [
+       0.9963414072990417,
+       0.08716865628957748,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0024316310882568
+      ]
+     ]
+    },
+    "right_shoulder_link": {
+     "T": [
+      4.085775375366211,
+      -2.090150833129883,
+      -4.559963703155518
+     ],
+     "R": [
+      [
+       0.10930804163217545,
+       -1.2487678527832031,
+       0.0
+      ],
+      [
+       1.2506508827209473,
+       0.1093628853559494,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2562296390533447
+      ]
+     ]
+    },
+    "right_elbow_joint_empty": {
+     "T": [
+      4.258533954620361,
+      -2.1052799224853516,
+      -4.557244777679443
+     ],
+     "R": [
+      [
+       0.10926120728254318,
+       -1.2488598823547363,
+       0.0
+      ],
+      [
+       1.2501150369644165,
+       0.10937093943357468,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2577561140060425
+      ]
+     ]
+    },
+    "right_forearm_link": {
+     "T": [
+      4.471922397613525,
+      -2.103890895843506,
+      -4.553149223327637
+     ],
+     "R": [
+      [
+       0.10926125198602676,
+       -1.2488596439361572,
+       0.0
+      ],
+      [
+       1.2501155138015747,
+       0.10937092453241348,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2577557563781738
+      ]
+     ]
+    },
+    "right_proximal_radioulnar_joint_empty": {
+     "T": [
+      4.533400535583496,
+      -2.1304092407226562,
+      -4.552513122558594
+     ],
+     "R": [
+      [
+       0.10930801182985306,
+       -1.2487671375274658,
+       0.0
+      ],
+      [
+       1.2506506443023682,
+       0.10936280339956284,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2562294006347656
+      ]
+     ]
+    },
+    "right_radioulnar_link": {
+     "T": [
+      4.533400535583496,
+      -2.1304097175598145,
+      -4.5525126457214355
+     ],
+     "R": [
+      [
+       0.10930800437927246,
+       -1.2487672567367554,
+       0.0
+      ],
+      [
+       1.2506505250930786,
+       0.10936281830072403,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2562295198440552
+      ]
+     ]
+    },
+    "right_wrist_joint_1_empty": {
+     "T": [
+      4.626141548156738,
+      -2.137476682662964,
+      -4.549998760223389
+     ],
+     "R": [
+      [
+       0.10926119238138199,
+       -1.248859167098999,
+       0.0
+      ],
+      [
+       1.2501147985458374,
+       0.1093708872795105,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2577555179595947
+      ]
+     ]
+    },
+    "right_wrist_pitch_link": {
+     "T": [
+      4.626141548156738,
+      -2.137476682662964,
+      -4.549999237060547
+     ],
+     "R": [
+      [
+       0.10926120728254318,
+       -1.2488594055175781,
+       0.0
+      ],
+      [
+       1.250114917755127,
+       0.10937091708183289,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.257755994796753
+      ]
+     ]
+    },
+    "right_wrist_joint_2_empty": {
+     "T": [
+      4.658646583557129,
+      -2.1403181552886963,
+      -4.550827980041504
+     ],
+     "R": [
+      [
+       0.10921455919742584,
+       -1.2489514350891113,
+       0.0
+      ],
+      [
+       1.249581217765808,
+       0.10937897861003876,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2592839002609253
+      ]
+     ]
+    },
+    "right_palm_link": {
+     "T": [
+      4.730040550231934,
+      -2.146566390991211,
+      -4.5583319664001465
+     ],
+     "R": [
+      [
+       0.10926132649183273,
+       -1.2488597631454468,
+       0.0
+      ],
+      [
+       1.250116229057312,
+       0.10937094688415527,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.2577557563781738
+      ]
+     ]
+    }
+   },
+   "moved_mesh_count": 18
+  }
+ ],
+ "baseline_bounds": {
+  "AXLE_GUIDE_BL": [
+   [
+    3.27772855758667,
+    -1.6730422973632812,
+    -5.564299583435059
+   ],
+   [
+    3.419149875640869,
+    -1.531620979309082,
+    -5.544299125671387
+   ]
+  ],
+  "AXLE_GUIDE_BR": [
+   [
+    3.27772855758667,
+    -2.1926097869873047,
+    -5.564299583435059
+   ],
+   [
+    3.419149875640869,
+    -2.0511884689331055,
+    -5.544299125671387
+   ]
+  ],
+  "AXLE_GUIDE_FL": [
+   [
+    3.797618865966797,
+    -1.6738722324371338,
+    -5.564299583435059
+   ],
+   [
+    3.939040184020996,
+    -1.5324509143829346,
+    -5.544299125671387
+   ]
+  ],
+  "AXLE_GUIDE_FR": [
+   [
+    3.8006160259246826,
+    -2.1876299381256104,
+    -5.564299583435059
+   ],
+   [
+    3.942037343978882,
+    -2.046208620071411,
+    -5.544299125671387
+   ]
+  ],
+  "base_link": [
+   [
+    3.27339506149292,
+    -2.19535231590271,
+    -5.562047958374023
+   ],
+   [
+    3.9433951377868652,
+    -1.5253523588180542,
+    -5.386048316955566
+   ]
+  ],
+  "first_phalanx_left_thumb_link": [
+   [
+    3.78208065032959,
+    -0.6486562490463257,
+    -4.491172790527344
+   ],
+   [
+    3.802421808242798,
+    -0.6146571040153503,
+    -4.476151466369629
+   ]
+  ],
+  "first_phalanx_right_thumb_link": [
+   [
+    3.7691445350646973,
+    -3.1179943084716797,
+    -4.473640441894531
+   ],
+   [
+    3.7899341583251953,
+    -3.0840024948120117,
+    -4.45905065536499
+   ]
+  ],
+  "head_link": [
+   [
+    3.6365883350372314,
+    -1.9365606307983398,
+    -4.4825615882873535
+   ],
+   [
+    3.7801172733306885,
+    -1.792959451675415,
+    -4.338796138763428
+   ]
+  ],
+  "left_digit2_distal_phalanx": [
+   [
+    3.7820825576782227,
+    -0.6474575996398926,
+    -4.542698860168457
+   ],
+   [
+    3.8024239540100098,
+    -0.5994576215744019,
+    -4.527682304382324
+   ]
+  ],
+  "left_digit2_middle_phalanx": [
+   [
+    3.7820794582366943,
+    -0.5853742957115173,
+    -4.541834354400635
+   ],
+   [
+    3.8024208545684814,
+    -0.5553743243217468,
+    -4.526817798614502
+   ]
+  ],
+  "left_digit2_proximal_phalanx": [
+   [
+    3.7820796966552734,
+    -0.5460978150367737,
+    -4.542171478271484
+   ],
+   [
+    3.802421808242798,
+    -0.524141252040863,
+    -4.527125358581543
+   ]
+  ],
+  "left_digit3_distal_phalanx": [
+   [
+    3.782076835632324,
+    -0.6514957547187805,
+    -4.574179172515869
+   ],
+   [
+    3.8024182319641113,
+    -0.5974957942962646,
+    -4.559162616729736
+   ]
+  ],
+  "left_digit3_middle_phalanx": [
+   [
+    3.7820777893066406,
+    -0.5792503356933594,
+    -4.574061393737793
+   ],
+   [
+    3.8024191856384277,
+    -0.5452503561973572,
+    -4.55904483795166
+   ]
+  ],
+  "left_digit3_proximal_phalanx": [
+   [
+    3.782076597213745,
+    -0.5225109457969666,
+    -4.5736517906188965
+   ],
+   [
+    3.8024184703826904,
+    -0.4985211491584778,
+    -4.558619499206543
+   ]
+  ],
+  "left_digit4_distal_phalanx": [
+   [
+    3.7820816040039062,
+    -0.6533589959144592,
+    -4.604705333709717
+   ],
+   [
+    3.8024230003356934,
+    -0.603359043598175,
+    -4.589688777923584
+   ]
+  ],
+  "left_digit4_middle_phalanx": [
+   [
+    3.782078742980957,
+    -0.5831077098846436,
+    -4.605324745178223
+   ],
+   [
+    3.802420139312744,
+    -0.5511077046394348,
+    -4.59030818939209
+   ]
+  ],
+  "left_digit4_proximal_phalanx": [
+   [
+    3.782076597213745,
+    -0.5371954441070557,
+    -4.604709148406982
+   ],
+   [
+    3.8024184703826904,
+    -0.5151971578598022,
+    -4.589685440063477
+   ]
+  ],
+  "left_digit5_distal_phalanx": [
+   [
+    3.782073736190796,
+    -0.6475128531455994,
+    -4.627709865570068
+   ],
+   [
+    3.8024322986602783,
+    -0.6055128574371338,
+    -4.612729549407959
+   ]
+  ],
+  "left_digit5_middle_phalanx": [
+   [
+    3.7820732593536377,
+    -0.5941800475120544,
+    -4.6288533210754395
+   ],
+   [
+    3.80243182182312,
+    -0.5681800246238708,
+    -4.61387300491333
+   ]
+  ],
+  "left_digit5_proximal_phalanx": [
+   [
+    3.782071590423584,
+    -0.5575249195098877,
+    -4.628235816955566
+   ],
+   [
+    3.8024301528930664,
+    -0.5375248789787292,
+    -4.613252639770508
+   ]
+  ],
+  "left_forearm_link": [
+   [
+    3.745638370513916,
+    -1.183955192565918,
+    -4.608505725860596
+   ],
+   [
+    3.8387701511383057,
+    -0.8712971806526184,
+    -4.514576435089111
+   ]
+  ],
+  "left_palm_link": [
+   [
+    3.7702672481536865,
+    -0.7907161712646484,
+    -4.629265308380127
+   ],
+   [
+    3.8141467571258545,
+    -0.6831926703453064,
+    -4.52174186706543
+   ]
+  ],
+  "left_shoulder_link": [
+   [
+    3.745615005493164,
+    -1.580377221107483,
+    -4.608569145202637
+   ],
+   [
+    3.8387866020202637,
+    -1.2203083038330078,
+    -4.515045166015625
+   ]
+  ],
+  "lift_brake": [
+   [
+    3.743337869644165,
+    -1.8853541612625122,
+    -5.444011688232422
+   ],
+   [
+    3.793316602706909,
+    -1.8353503942489624,
+    -5.393950462341309
+   ]
+  ],
+  "lift_catcher_placeholder": [
+   [
+    3.5883960723876953,
+    -2.0303523540496826,
+    -4.689047813415527
+   ],
+   [
+    3.6283960342407227,
+    -1.690352439880371,
+    -4.659048080444336
+   ]
+  ],
+  "lift_guide_block_left": [
+   [
+    3.5633978843688965,
+    -2.130352258682251,
+    -4.596480369567871
+   ],
+   [
+    3.653398036956787,
+    -1.9803521633148193,
+    -4.526480674743652
+   ]
+  ],
+  "lift_guide_block_right": [
+   [
+    3.5633978843688965,
+    -1.7403522729873657,
+    -4.596480369567871
+   ],
+   [
+    3.653398036956787,
+    -1.590352177619934,
+    -4.526480674743652
+   ]
+  ],
+  "lift_guide_left": [
+   [
+    3.5784108638763428,
+    -2.0897762775421143,
+    -5.474048137664795
+   ],
+   [
+    3.638385057449341,
+    -2.0397727489471436,
+    -3.8721039295196533
+   ]
+  ],
+  "lift_guide_right": [
+   [
+    3.5784108638763428,
+    -1.6897468566894531,
+    -5.474048137664795
+   ],
+   [
+    3.638385057449341,
+    -1.6397430896759033,
+    -3.8721039295196533
+   ]
+  ],
+  "lift_motor": [
+   [
+    3.698357343673706,
+    -1.9203567504882812,
+    -5.554145336151123
+   ],
+   [
+    3.838297128677368,
+    -1.8003478050231934,
+    -5.433999538421631
+   ]
+  ],
+  "lift_nut_mount_left": [
+   [
+    3.5633981227874756,
+    -2.0553524494171143,
+    -4.596480369567871
+   ],
+   [
+    3.653398275375366,
+    -1.9653524160385132,
+    -4.526480674743652
+   ]
+  ],
+  "lift_nut_mount_right": [
+   [
+    3.5633981227874756,
+    -1.755352258682251,
+    -4.596480369567871
+   ],
+   [
+    3.653398275375366,
+    -1.6653523445129395,
+    -4.526480674743652
+   ]
+  ],
+  "lift_screw_left": [
+   [
+    3.5959036350250244,
+    -2.02286434173584,
+    -5.474048137664795
+   ],
+   [
+    3.6208927631378174,
+    -1.997862458229065,
+    -3.9722254276275635
+   ]
+  ],
+  "lift_screw_right": [
+   [
+    3.5959036350250244,
+    -1.7228420972824097,
+    -5.474048137664795
+   ],
+   [
+    3.6208927631378174,
+    -1.6978403329849243,
+    -3.9722254276275635
+   ]
+  ],
+  "lift_stop_top": [
+   [
+    3.5733959674835205,
+    -2.0953524112701416,
+    -3.9114811420440674
+   ],
+   [
+    3.6433961391448975,
+    -1.625352382659912,
+    -3.8814809322357178
+   ]
+  ],
+  "lift_sync_shaft": [
+   [
+    3.5964033603668213,
+    -2.110370635986328,
+    -5.516098976135254
+   ],
+   [
+    3.6203930377960205,
+    -1.610333800315857,
+    -5.492070198059082
+   ]
+  ],
+  "odor_sensor": [
+   [
+    3.78035306930542,
+    -1.8738903999328613,
+    -4.426595687866211
+   ],
+   [
+    3.790349006652832,
+    -1.853888988494873,
+    -4.406571388244629
+   ]
+  ],
+  "right_digit2_distal_phalanx": [
+   [
+    3.7691450119018555,
+    -3.142125368118286,
+    -4.519322395324707
+   ],
+   [
+    3.7899346351623535,
+    -3.094125509262085,
+    -4.504776954650879
+   ]
+  ],
+  "right_digit2_middle_phalanx": [
+   [
+    3.7691447734832764,
+    -3.1826999187469482,
+    -4.518762111663818
+   ],
+   [
+    3.7899343967437744,
+    -3.1526999473571777,
+    -4.50421667098999
+   ]
+  ],
+  "right_digit2_proximal_phalanx": [
+   [
+    3.7691426277160645,
+    -3.2131810188293457,
+    -4.519322872161865
+   ],
+   [
+    3.7899327278137207,
+    -3.1915876865386963,
+    -4.504466533660889
+   ]
+  ],
+  "right_digit3_distal_phalanx": [
+   [
+    3.7691471576690674,
+    -3.1467394828796387,
+    -4.549481391906738
+   ],
+   [
+    3.7899367809295654,
+    -3.0927395820617676,
+    -4.53493595123291
+   ]
+  ],
+  "right_digit3_middle_phalanx": [
+   [
+    3.7691454887390137,
+    -3.1895391941070557,
+    -4.549627304077148
+   ],
+   [
+    3.7899351119995117,
+    -3.1555392742156982,
+    -4.53508186340332
+   ]
+  ],
+  "right_digit3_proximal_phalanx": [
+   [
+    3.76914381980896,
+    -3.223684072494507,
+    -4.550899028778076
+   ],
+   [
+    3.789933919906616,
+    -3.199840545654297,
+    -4.536200046539307
+   ]
+  ],
+  "right_digit4_distal_phalanx": [
+   [
+    3.7691471576690674,
+    -3.142385721206665,
+    -4.578530788421631
+   ],
+   [
+    3.7899367809295654,
+    -3.092385768890381,
+    -4.563985347747803
+   ]
+  ],
+  "right_digit4_middle_phalanx": [
+   [
+    3.769145965576172,
+    -3.1824793815612793,
+    -4.57974100112915
+   ],
+   [
+    3.78993558883667,
+    -3.150479316711426,
+    -4.565195560455322
+   ]
+  ],
+  "right_digit4_proximal_phalanx": [
+   [
+    3.7691457271575928,
+    -3.2152817249298096,
+    -4.5810112953186035
+   ],
+   [
+    3.78993558883667,
+    -3.1933796405792236,
+    -4.566389083862305
+   ]
+  ],
+  "right_digit5_distal_phalanx": [
+   [
+    3.7691447734832764,
+    -3.131551742553711,
+    -4.606287002563477
+   ],
+   [
+    3.7899434566497803,
+    -3.0895516872406006,
+    -4.591758728027344
+   ]
+  ],
+  "right_digit5_middle_phalanx": [
+   [
+    3.769144296646118,
+    -3.166351318359375,
+    -4.606433868408203
+   ],
+   [
+    3.789942979812622,
+    -3.1403512954711914,
+    -4.59190559387207
+   ]
+  ],
+  "right_digit5_proximal_phalanx": [
+   [
+    3.76914119720459,
+    -3.1953322887420654,
+    -4.606996536254883
+   ],
+   [
+    3.7899394035339355,
+    -3.1753320693969727,
+    -4.5924296379089355
+   ]
+  ],
+  "right_forearm_link": [
+   [
+    3.7295897006988525,
+    -2.899867296218872,
+    -4.603165626525879
+   ],
+   [
+    3.829493522644043,
+    -2.583827257156372,
+    -4.50267219543457
+   ]
+  ],
+  "right_palm_link": [
+   [
+    3.764488935470581,
+    -3.07425594329834,
+    -4.614395618438721
+   ],
+   [
+    3.79459810256958,
+    -2.9621291160583496,
+    -4.502268314361572
+   ]
+  ],
+  "right_shoulder_link": [
+   [
+    3.7295639514923096,
+    -2.5246944427490234,
+    -4.610135078430176
+   ],
+   [
+    3.8295109272003174,
+    -2.1537742614746094,
+    -4.509555339813232
+   ]
+  ],
+  "second_phalanx_left_thumb_link": [
+   [
+    3.7820804119110107,
+    -0.7015708088874817,
+    -4.489703178405762
+   ],
+   [
+    3.802422285079956,
+    -0.6615721583366394,
+    -4.474677085876465
+   ]
+  ],
+  "second_phalanx_right_thumb_link": [
+   [
+    3.769145965576172,
+    -3.0729687213897705,
+    -4.473769187927246
+   ],
+   [
+    3.789935827255249,
+    -3.0330121517181396,
+    -4.459127902984619
+   ]
+  ],
+  "speaker": [
+   [
+    3.7358429431915283,
+    -1.8889631032943726,
+    -4.479758262634277
+   ],
+   [
+    3.7858216762542725,
+    -1.8389593362808228,
+    -4.429697036743164
+   ]
+  ],
+  "stereo_microphone_1": [
+   [
+    3.6511528491973877,
+    -1.8636358976364136,
+    -4.405558109283447
+   ],
+   [
+    3.735760450363159,
+    -1.7789860963821411,
+    -4.3868842124938965
+   ]
+  ],
+  "stereo_microphone_2": [
+   [
+    3.651153326034546,
+    -1.9504321813583374,
+    -4.405559062957764
+   ],
+   [
+    3.7357609272003174,
+    -1.865782380104065,
+    -4.386885166168213
+   ]
+  ],
+  "third_phalanx_left_thumb_link": [
+   [
+    3.7764198780059814,
+    -0.7676969766616821,
+    -4.4982147216796875
+   ],
+   [
+    3.808084487915039,
+    -0.7277315855026245,
+    -4.468234062194824
+   ]
+  ],
+  "third_phalanx_right_thumb_link": [
+   [
+    3.758359909057617,
+    -3.0176424980163574,
+    -4.482397556304932
+   ],
+   [
+    3.800724506378174,
+    -2.977966070175171,
+    -4.453310489654541
+   ]
+  ],
+  "ToF_Lens_001": [
+   [
+    3.7803566455841064,
+    -1.8632433414459229,
+    -4.363319396972656
+   ],
+   [
+    3.7853543758392334,
+    -1.8582429885864258,
+    -4.35831356048584
+   ]
+  ],
+  "torso_link": [
+   [
+    3.528397798538208,
+    -1.9947597980499268,
+    -4.611481189727783
+   ],
+   [
+    3.848397731781006,
+    -1.73475980758667,
+    -4.511480808258057
+   ]
+  ],
+  "wheel_BL": [
+   [
+    3.2744317054748535,
+    -1.6775765419006348,
+    -5.608624458312988
+   ],
+   [
+    3.4252352714538574,
+    -1.5266971588134766,
+    -5.501792907714844
+   ]
+  ],
+  "wheel_BR": [
+   [
+    3.27337646484375,
+    -2.193524122238159,
+    -5.608625411987305
+   ],
+   [
+    3.424180030822754,
+    -2.042644739151001,
+    -5.50179386138916
+   ]
+  ],
+  "wheel_FL": [
+   [
+    3.790768623352051,
+    -1.678864598274231,
+    -5.608624458312988
+   ],
+   [
+    3.9415721893310547,
+    -1.5279852151870728,
+    -5.501792907714844
+   ]
+  ],
+  "wheel_FR": [
+   [
+    3.7915754318237305,
+    -2.1930782794952393,
+    -5.608624458312988
+   ],
+   [
+    3.9423789978027344,
+    -2.042198896408081,
+    -5.501792907714844
+   ]
+  ]
+ },
+ "combined_85": {
+  "angle_deg": 85.0,
+  "overlaps": [],
+  "cross_overlaps": [],
+  "hands": {
+   "left": {
+    "T": [
+     4.69614839553833,
+     -1.601654052734375,
+     -4.5754547119140625
+    ]
+   },
+   "right": {
+    "T": [
+     4.730040550231934,
+     -2.146566390991211,
+     -4.5583319664001465
+    ]
+   }
+  }
+ }
+}

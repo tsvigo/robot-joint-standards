@@ -1,0 +1,94 @@
+record_type,side,id,parent,child,role,axis_md,limit_lower_deg,limit_upper_deg,x_m,y_m,z_m,dim_x_mm,dim_y_mm,dim_z_mm,mass_kg,vol_world_m3,density_implied_kg_m3,note
+scene,both,scene,,,единицы и СК,,,,,,,,,,,,,"unit_system=METRIC; scale_length=1.0; frame=1; gravity=[0.0, 0.0, -9.8100004196167]; СК Blender Z-up; +X — вперёд, +Y — влево, Z — вверх"
+joint,left,left_shoulder_joint_empty_3,left_torso_link,left_shoulder_3_link,внутренняя/наружная ротация руки,Y,-180,60,3.772351,-1.710971,-4.561809,,,,,,,"ось: Y (MD robot_joints.md, right_shoulder_joint_empty_3 (строки 135-168)); мировая ось=(-0.0000, 1.0000, 0.0000); фрейм в сцене identity (откл. 1.78e-15)"
+joint,left,left_shoulder_joint_empty_2,left_shoulder_3_link,left_shoulder_2_link,сгибание/разгибание руки (горизонтальная маховая ось),Z,-90,90,3.772351,-1.662502,-4.561297,,,,,,,"ось: Z (MD robot_joints.md, right_shoulder_joint_empty_2 (строки 98-131)); мировая ось=(0.0000, 0.0000, 1.0000); фрейм в сцене identity (откл. 1.78e-15)"
+joint,left,left_shoulder_joint_empty_1,left_shoulder_2_link,left_shoulder_link,отведение/приведение руки,X,-90,130,3.772351,-1.610971,-4.560788,,,,,,,"ось: X (MD robot_joints.md, right_shoulder_joint_empty_1 (строки 61-94)); мировая ось=(1.0000, -0.0000, 0.0000); фрейм в сцене identity (откл. 1.49e-08)"
+joint,left,left_elbow_joint_empty,left_shoulder_link,left_forearm_link,сгибание предплечья,Z,-10,150,3.792201,-1.209357,-4.559339,,,,,,,"ось: Z (MD robot_joints.md, right_elbow_joint_empty (строки 172-204)); мировая ось=(0.0000, 0.0000, 1.0000); фрейм в сцене identity (откл. 1.49e-08)"
+joint,left,left_proximal_radioulnar_joint_empty,left_forearm_link,left_radioulnar_link,пронация/супинация предплечья,Y,-90,90,3.791164,-0.957482,-4.560872,,,,,,,"ось: Y (MD robot_joints.md, right_proximal_radioulnar_joint_empty (строки 206-235)); мировая ось=(0.0000, 1.0000, 0.0000); фрейм в сцене identity (откл. 1.49e-08)"
+joint,left,left_wrist_joint_1_empty,left_radioulnar_link,left_wrist_pitch_link,сгибание кисти (сустав 1),Z,-90,90,3.792202,-0.847570,-4.559119,,,,,,,"ось: Z (MD robot_joints.md, right_wrist_joint_1_empty (строки 241-273)); мировая ось=(0.0000, 0.0000, 1.0000); фрейм в сцене identity (откл. 1.49e-08)"
+joint,left,left_wrist_joint_2_empty,left_wrist_pitch_link,left_palm_link,отведение/приведение кисти (сустав 2),X,-25,45,3.792207,-0.811089,-4.568344,,,,,,,"ось: X (MD robot_joints.md, right_wrist_joint_2_empty (строки 275-307)); мировая ось=(1.0000, -0.0000, 0.0000); фрейм в сцене identity (откл. 1.49e-08)"
+joint,right,right_shoulder_joint_empty_3,right_torso_link,right_shoulder_3_link,внутренняя/наружная ротация руки,Y,-180,60,3.779664,-2.014746,-4.558747,,,,,,,"ось: Y (MD robot_joints.md, right_shoulder_joint_empty_3 (строки 135-168)); мировая ось=(0.0000, 1.0000, 0.0000); фрейм в сцене identity (откл. 1.49e-08)"
+joint,right,right_shoulder_joint_empty_2,right_shoulder_3_link,right_shoulder_2_link,сгибание/разгибание руки (горизонтальная маховая ось),Z,-90,90,3.779665,-2.063215,-4.558236,,,,,,,"ось: Z (MD robot_joints.md, right_shoulder_joint_empty_2 (строки 98-131)); мировая ось=(0.0000, 0.0000, 1.0000); фрейм в сцене identity (откл. 1.49e-08)"
+joint,right,right_shoulder_joint_empty_1,right_shoulder_2_link,right_shoulder_link,отведение/приведение руки,X,-90,130,3.779664,-2.114746,-4.557726,,,,,,,"ось: X (MD robot_joints.md, right_shoulder_joint_empty_1 (строки 61-94)); мировая ось=(1.0000, -0.0000, 0.0000); фрейм в сцене identity (откл. 1.49e-08)"
+joint,right,right_elbow_joint_empty,right_shoulder_link,right_forearm_link,сгибание предплечья,Z,-10,150,3.779537,-2.544408,-4.557245,,,,,,,"ось: Z (MD robot_joints.md, right_elbow_joint_empty (строки 172-204)); мировая ось=(0.0000, 0.0000, 1.0000); фрейм в сцене identity (откл. 1.49e-08)"
+joint,right,right_proximal_radioulnar_joint_empty,right_forearm_link,right_radioulnar_link,пронация/супинация предплечья,Y,-90,90,3.778485,-2.820695,-4.552513,,,,,,,"ось: Y (MD robot_joints.md, right_proximal_radioulnar_joint_empty (строки 206-235)); мировая ось=(-0.0000, 1.0000, 0.0000); фрейм в сцене identity (откл. 7.08e-15)"
+joint,right,right_wrist_joint_1_empty,right_radioulnar_link,right_wrist_pitch_link,сгибание кисти (сустав 1),Z,-90,90,3.779534,-2.913791,-4.549999,,,,,,,"ось: Z (MD robot_joints.md, right_wrist_joint_1_empty (строки 241-273)); мировая ось=(0.0000, 0.0000, 1.0000); фрейм в сцене identity (откл. 1.49e-08)"
+joint,right,right_wrist_joint_2_empty,right_wrist_pitch_link,right_palm_link,отведение/приведение кисти (сустав 2),X,-25,45,3.779539,-2.946454,-4.550828,,,,,,,"ось: X (MD robot_joints.md, right_wrist_joint_2_empty (строки 275-307)); мировая ось=(1.0000, -0.0000, 0.0000); фрейм в сцене identity (откл. 1.49e-08)"
+link,left,left_shoulder_3_link,,,"пустой фрейм (dummy-линк, меша нет)",,,,3.772351,-1.686736,-4.561553,,,,,,,тип=EMPTY; свойства масс отсутствуют
+link,left,left_shoulder_2_link,,,"пустой фрейм (dummy-линк, меша нет)",,,,3.772351,-1.636736,-4.561042,,,,,,,тип=EMPTY; свойства масс отсутствуют
+link,left,left_shoulder_link,,,плечо (mesh-бокс),,,,3.792201,-1.372503,-4.561742,93.2,360.1,93.5,2.7227,0.003126485,870.9,тип=MESH
+link,left,left_forearm_link,,,предплечье (mesh-бокс),,,,3.792204,-1.027197,-4.561414,93.1,312.7,93.9,2.7227,0.002712242,1003.9,тип=MESH
+link,left,left_radioulnar_link,,,"пустой фрейм (dummy-линк, меша нет)",,,,3.791164,-0.957482,-4.560872,,,,,,,тип=EMPTY; свойства масс отсутствуют
+link,left,left_wrist_pitch_link,,,"пустой фрейм (dummy-линк, меша нет)",,,,3.792202,-0.847570,-4.559119,,,,,,,тип=EMPTY; свойства масс отсутствуют
+link,left,left_palm_link,,,ладонь (mesh-бокс),,,,3.792248,-0.736917,-4.575455,43.9,107.5,107.5,0.3355,0.000507082,661.6,тип=MESH
+link,right,right_shoulder_3_link,,,"пустой фрейм (dummy-линк, меша нет)",,,,3.779664,-2.038980,-4.558492,,,,,,,тип=EMPTY; свойства масс отсутствуют
+link,right,right_shoulder_2_link,,,"пустой фрейм (dummy-линк, меша нет)",,,,3.779664,-2.088980,-4.557981,,,,,,,тип=EMPTY; свойства масс отсутствуют
+link,right,right_shoulder_link,,,плечо (mesh-бокс),,,,3.779537,-2.370815,-4.559964,99.9,370.9,100.6,3.3610,0.003708280,906.4,тип=MESH
+link,right,right_forearm_link,,,предплечье (mesh-бокс),,,,3.799518,-2.757077,-4.553149,99.9,316.0,100.5,3.3610,0.003160880,1063.3,тип=MESH
+link,right,right_radioulnar_link,,,"пустой фрейм (dummy-линк, меша нет)",,,,3.778484,-2.820694,-4.552513,,,,,,,тип=EMPTY; свойства масс отсутствуют
+link,right,right_wrist_pitch_link,,,"пустой фрейм (dummy-линк, меша нет)",,,,3.779534,-2.913792,-4.549999,,,,,,,тип=EMPTY; свойства масс отсутствуют
+link,right,right_palm_link,,,ладонь (mesh-бокс),,,,3.779544,-3.018193,-4.558332,30.1,112.1,112.1,0.5663,0.000378546,1496.0,тип=MESH
+hand_part,left,left_palm_link,,,ладонь,,,,3.792248,-0.736917,-4.575455,43.9,107.5,107.5,0.33547,,,bbox-габарит; coords = origin объекта
+hand_part,left,left_digit2_proximal_phalanx,,,"концевое звено пальца ""digit2_mcp""",,,,3.792251,-0.516540,-4.534664,20.3,22.0,15.0,0.01883,,,bbox-габарит; coords = origin объекта
+hand_part,left,left_digit3_proximal_phalanx,,,"концевое звено пальца ""digit3_mcp""",,,,3.792248,-0.500912,-4.566144,20.3,24.0,15.0,0.01883,,,bbox-габарит; coords = origin объекта
+hand_part,left,left_digit4_proximal_phalanx,,,"концевое звено пальца ""digit4_mcp""",,,,3.792248,-0.509648,-4.597201,20.3,22.0,15.0,0.01883,,,bbox-габарит; coords = origin объекта
+hand_part,left,left_digit5_proximal_phalanx,,,"концевое звено пальца ""digit5_mcp""",,,,3.792251,-0.526717,-4.620745,20.4,20.0,15.0,,,,bbox-габарит; coords = origin объекта
+hand_part,left,first_phalanx_left_thumb_link,,,"концевое звено пальца ""thumb_cmc""",,,,3.792252,-0.613397,-4.483665,20.3,34.0,15.0,0.00697,,,bbox-габарит; coords = origin объекта
+hand_part,right,right_palm_link,,,ладонь,,,,3.779544,-3.018193,-4.558332,30.1,112.1,112.1,0.56631,,,bbox-габарит; coords = origin объекта
+hand_part,right,right_digit2_proximal_phalanx,,,"концевое звено пальца ""digit2_mcp""",,,,3.779538,-3.191701,-4.512050,20.8,21.6,14.9,0.01806,,,bbox-габарит; coords = origin объекта
+hand_part,right,right_digit3_proximal_phalanx,,,"концевое звено пальца ""digit3_mcp""",,,,3.779539,-3.211762,-4.543550,20.8,23.8,14.7,0.01806,,,bbox-габарит; coords = origin объекта
+hand_part,right,right_digit4_proximal_phalanx,,,"концевое звено пальца ""digit4_mcp""",,,,3.779541,-3.204331,-4.573700,20.8,21.9,14.6,0.01806,,,bbox-габарит; coords = origin объекта
+hand_part,right,right_digit5_proximal_phalanx,,,"концевое звено пальца ""digit5_mcp""",,,,3.779540,-3.185332,-4.599713,20.8,20.0,14.6,,,,bbox-габарит; coords = origin объекта
+hand_part,right,first_phalanx_right_thumb_link,,,"концевое звено пальца ""thumb_cmc""",,,,3.779539,-3.117640,-4.466368,20.8,34.0,14.6,0.01806,,,bbox-габарит; coords = origin объекта
+grip_point,left,K1,,,"центр внутренней грани ладони (грань, обращённая к другой кисти)",,,,3.792207,-0.790716,-4.575504,,,,,,,"palm-local=(-0.000033, -0.042872, -0.000031); тестовая точка (не задана конструкцией)"
+grip_point,left,K2,,,геометрический центр ладони (центр bbox),,,,3.792207,-0.736954,-4.575504,,,,,,,"palm-local=(-0.000033, -0.000030, -0.000031); тестовая точка (не задана конструкцией)"
+grip_point,left,K3,,,центроид кончиков пальцев 2-5 (без большого),,,,3.792249,-0.518846,-4.579681,,,,,,,"palm-local=(0.000001, 0.173777, -0.002664); тестовая точка (не задана конструкцией)"
+grip_point,left,K3t,,,центроид кончиков всех 5 пальцев,,,,3.792250,-0.538008,-4.560478,,,,,,,"palm-local=(0.000001, 0.158507, 0.009441); тестовая точка (не задана конструкцией)"
+grip_point,right,K1,,,"центр внутренней грани ладони (грань, обращённая к другой кисти)",,,,3.779544,-2.962129,-4.558332,,,,,,,"palm-local=(-0.000000, 0.044676, 0.000000); тестовая точка (не задана конструкцией)"
+grip_point,right,K2,,,геометрический центр ладони (центр bbox),,,,3.779544,-3.018193,-4.558332,,,,,,,"palm-local=(-0.000000, -0.000000, 0.000000); тестовая точка (не задана конструкцией)"
+grip_point,right,K3,,,центроид кончиков пальцев 2-5 (без большого),,,,3.779539,-3.211870,-4.557214,,,,,,,"palm-local=(-0.000003, -0.154338, 0.000889); тестовая точка (не задана конструкцией)"
+grip_point,right,K3t,,,центроид кончиков всех 5 пальцев,,,,3.779539,-3.193095,-4.539041,,,,,,,"palm-local=(-0.000003, -0.139376, 0.015338); тестовая точка (не задана конструкцией)"
+distance,left,j3 → j2,,,,,,,,,,48.5,48.5,0.5,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,left,j2 → j1,,,,,,,,,,51.5,51.5,0.5,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,left,j1 → локоть,,,,,,,,,,402.1,402.1,1.4,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,left,локоть → лучелоктевой,,,,,,,,,,251.9,251.9,1.5,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,left,лучелоктевой → запястье-1,,,,,,,,,,109.9,109.9,1.8,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,left,запястье-1 → запястье-2,,,,,,,,,,37.6,36.5,9.2,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,left,j1 → запястье-2 (плечо–кисть),,,,,,,,,,800.2,800.1,7.6,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,left,j3 → запястье-2,,,,,,,,,,900.1,900.1,6.5,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,left,запястье-2 → origin ладони,,,,,,,,,,74.5,74.2,7.1,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,left,j1 → K1,,,,,,,,,,820.6,820.5,14.7,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,left,запястье-2 → K1,,,,,,,,,,21.6,20.4,7.2,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,left,K1 → ось лифта (гориз.),,,,,,,,,,,1089.7,,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,left,j1 → K2,,,,,,,,,,874.4,874.2,14.7,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,left,запястье-2 → K2,,,,,,,,,,74.5,74.1,7.2,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,left,K2 → ось лифта (гориз.),,,,,,,,,,,1142.7,,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,left,j1 → K3,,,,,,,,,,1092.5,1092.3,18.9,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,left,запястье-2 → K3,,,,,,,,,,292.5,292.2,11.3,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,left,K3 → ось лифта (гориз.),,,,,,,,,,,1358.4,,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,left,j1 → K3t,,,,,,,,,,1073.1,1073.1,0.3,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,left,запястье-2 → K3t,,,,,,,,,,273.2,273.1,7.9,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,left,K3t → ось лифта (гориз.),,,,,,,,,,,1339.4,,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,right,j3 → j2,,,,,,,,,,48.5,48.5,0.5,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,right,j2 → j1,,,,,,,,,,51.5,51.5,0.5,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,right,j1 → локоть,,,,,,,,,,429.7,429.7,0.5,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,right,локоть → лучелоктевой,,,,,,,,,,276.3,276.3,4.7,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,right,лучелоктевой → запястье-1,,,,,,,,,,93.1,93.1,2.5,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,right,запястье-1 → запястье-2,,,,,,,,,,32.7,32.7,0.8,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,right,j1 → запястье-2 (плечо–кисть),,,,,,,,,,831.7,831.7,6.9,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,right,j3 → запястье-2,,,,,,,,,,931.7,931.7,7.9,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,right,запястье-2 → origin ладони,,,,,,,,,,72.1,71.7,7.5,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,right,j1 → K1,,,,,,,,,,847.4,847.4,0.6,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,right,запястье-2 → K1,,,,,,,,,,17.4,15.7,7.5,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,right,K1 → ось лифта (гориз.),,,,,,,,,,,1110.6,,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,right,j1 → K2,,,,,,,,,,903.4,903.4,0.6,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,right,запястье-2 → K2,,,,,,,,,,72.1,71.7,7.5,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,right,K2 → ось лифта (гориз.),,,,,,,,,,,1166.1,,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,right,j1 → K3,,,,,,,,,,1097.1,1097.1,0.5,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,right,запястье-2 → K3,,,,,,,,,,265.5,265.4,6.4,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,right,K3 → ось лифта (гориз.),,,,,,,,,,,1357.9,,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,right,j1 → K3t,,,,,,,,,,1078.5,1078.3,18.7,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,right,запястье-2 → K3t,,,,,,,,,,246.9,246.6,11.8,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,right,K3t → ось лифта (гориз.),,,,,,,,,,,1339.3,,,,,"расстояние, мм: dim_x=3D, dim_y=гориз.(XY), dim_z=верт.(Z)"
+distance,both,K1 (левая) ↔ K1 (правая),,,,,,,,,,2171.5,,,,,,"расстояние между кистями, мм"
+distance,both,K2 (левая) ↔ K2 (правая),,,,,,,,,,2281.3,,,,,,"расстояние между кистями, мм"
