@@ -1,0 +1,205 @@
+LIFT TRAVEL COLLISION AUDIT (READ-ONLY)
+Файл: robot_scaled_4-2-21-LTS-ARCH-02-MANUAL-01.blend
+Blender: 4.2.20 LTS (/home/v/Apps/Blender/4.2-LTS/blender)
+SHA до: 1ae88879af076b1a0a1cfc6499d04a037dbb2103d2a7cb6440708289829cd280
+Метод: headless read-only дамп (без save) + сдвиг AABB движущегося поддерева по +Z;
+грубый скан 10мм, уточнение бисекцией до 0.1мм; AABB-предфильтр всех пар, для
+осе выровненных боксов AABB=точное пересечение (проверено, off-diag<1e-6 кроме 5 дальних);
+5 неосе выровненных (AXLE_GUIDE_* 0.064, sync_shaft масштаб) далеки от траектории.
+Критерий контакта: пересечение замкнутых AABB (touch=контакт), допуск 1e-9м.
+robot_joints.md: 1957 строк, записей лифта НЕТ (grep vertical_lift/lift_stop/lift_catcher/lift_screw/lift_nut/lift_guide пуст) -> MD-лимиты ABSENT.
+
+== 1. КИНЕМАТИКА (только из .blend) ==
+PARENT -> JOINT -> CHILD: base_link -> vertical_lift_joint -> torso_link
+joint/type=prismatic EXPLICIT; joint/axis=[0,0,1] EXPLICIT (Phobos IDPropertyArray)
+world pos: 3.608398, -1.864760, -4.581481; rotation ~identity -> движение world +Z
+constraints=0, drivers=0 (проверено headless); travel-датум НЕ закодирован (static frame)
+Движущиеся объекты: 114 всего (114 с Empty/link/camera); MESH движущихся: 42
+Неподвижные MESH (без 35 collision-дубликатов phobostype=4 parent=None): 23
+Винты lift_screw_* parent=base_link (вращаются, по Z НЕ едут) -> НЕ входят в поступательную массу. Верно.
+
+== 2. РЕЕСТР ГЕОМЕТРИИ (mesh: имя | parent | движ | размеры XYZ м | zmin/zmax | вершины | статус) ==
+STA | AXLE_GUIDE_BL | None | 0.020x0.020x0.180 | -5.564/-5.544 | 64 | mesh
+STA | AXLE_GUIDE_BR | None | 0.020x0.020x0.180 | -5.564/-5.544 | 64 | mesh
+STA | AXLE_GUIDE_FL | None | 0.020x0.020x0.180 | -5.564/-5.544 | 64 | mesh
+STA | AXLE_GUIDE_FR | None | 0.020x0.020x0.180 | -5.564/-5.544 | 64 | mesh
+STA | ToF_Lens_001 | None | 0.005x0.005x0.005 | -4.363/-4.358 | 64 | mesh
+STA | base_link | None | 0.670x0.670x0.176 | -5.562/-5.386 | 8 | mesh
+STA | first_phalanx_index_finger_right_hand_link_collision | None | 0.021x0.044x0.015 | -4.539/-4.525 | 8 | DUP-COLL
+MOV | first_phalanx_left_thumb_link | left_thumb_ip_joint_empty | 0.020x0.034x0.015 | -4.491/-4.476 | 8 | mesh
+STA | first_phalanx_left_thumb_link_collision | None | 0.020x0.045x0.015 | -4.479/-4.464 | 8 | DUP-COLL
+STA | first_phalanx_middle_finger_left_hand_link_collision | None | 0.020x0.045x0.015 | -4.557/-4.542 | 8 | DUP-COLL
+STA | first_phalanx_middle_finger_right_hand_link_collision | None | 0.021x0.044x0.015 | -4.571/-4.556 | 8 | DUP-COLL
+STA | first_phalanx_of_index_finger_of_left_hand_link_collision | None | 0.020x0.045x0.015 | -4.530/-4.514 | 8 | DUP-COLL
+MOV | first_phalanx_right_thumb_link | right_thumb_ip_joint_empty | 0.021x0.034x0.015 | -4.474/-4.459 | 8 | mesh
+STA | first_phalanx_right_thumb_link_collision | None | 0.021x0.044x0.015 | -4.489/-4.474 | 8 | DUP-COLL
+STA | first_phalanx_ring_finger_left_hand_link_collision | None | 0.020x0.045x0.015 | -4.597/-4.582 | 8 | DUP-COLL
+STA | first_phalanx_ring_finger_right_hand_link_collision | None | 0.021x0.044x0.015 | -4.607/-4.592 | 8 | DUP-COLL
+MOV | head_link | intervertebral_joints_C2_C7_empty | 0.144x0.144x0.144 | -4.483/-4.339 | 8 | mesh
+STA | head_link_collision | None | 0.144x0.144x0.144 | -4.483/-4.339 | 8 | DUP-COLL
+MOV | left_digit2_distal_phalanx | left_digit2_mcp2_joint_empty | 0.020x0.048x0.015 | -4.543/-4.528 | 8 | mesh
+MOV | left_digit2_middle_phalanx | left_digit2_pip_joint_empty | 0.020x0.030x0.015 | -4.542/-4.527 | 8 | mesh
+MOV | left_digit2_proximal_phalanx | left_digit2_dip_joint_empty | 0.020x0.022x0.015 | -4.542/-4.527 | 8 | mesh
+MOV | left_digit3_distal_phalanx | left_digit3_mcp2_joint_empty | 0.020x0.054x0.015 | -4.574/-4.559 | 8 | mesh
+MOV | left_digit3_middle_phalanx | left_digit3_pip_joint_empty | 0.020x0.034x0.015 | -4.574/-4.559 | 8 | mesh
+MOV | left_digit3_proximal_phalanx | left_digit3_dip_joint_empty | 0.020x0.024x0.015 | -4.574/-4.559 | 8 | mesh
+MOV | left_digit4_distal_phalanx | left_digit4_mcp2_joint_empty | 0.020x0.050x0.015 | -4.605/-4.590 | 8 | mesh
+MOV | left_digit4_middle_phalanx | left_digit4_pip_joint_empty | 0.020x0.032x0.015 | -4.605/-4.590 | 8 | mesh
+MOV | left_digit4_proximal_phalanx | left_digit4_dip_joint_empty | 0.020x0.022x0.015 | -4.605/-4.590 | 8 | mesh
+MOV | left_digit5_distal_phalanx | left_digit5_mcp2_joint_empty | 0.020x0.042x0.015 | -4.628/-4.613 | 8 | mesh
+MOV | left_digit5_middle_phalanx | left_digit5_pip_joint_empty | 0.020x0.026x0.015 | -4.629/-4.614 | 8 | mesh
+MOV | left_digit5_proximal_phalanx | left_digit5_dip_joint_empty | 0.020x0.020x0.015 | -4.628/-4.613 | 8 | mesh
+MOV | left_forearm_link | left_elbow_joint_empty | 0.093x0.313x0.094 | -4.609/-4.515 | 8 | mesh
+STA | left_forearm_link_collision | None | 0.093x0.229x0.093 | -4.612/-4.519 | 8 | DUP-COLL
+MOV | left_palm_link | left_wrist_joint_2_empty | 0.044x0.108x0.108 | -4.629/-4.522 | 8 | mesh
+STA | left_palm_link_collision | None | 0.044x0.066x0.085 | -4.601/-4.516 | 8 | DUP-COLL
+MOV | left_shoulder_link | left_shoulder_joint_empty_1 | 0.093x0.360x0.094 | -4.609/-4.515 | 8 | mesh
+STA | left_shoulder_link_collision | None | 0.093x0.229x0.093 | -4.608/-4.515 | 8 | DUP-COLL
+STA | lift_brake | base_link | 0.050x0.050x0.050 | -5.444/-5.394 | 8 | mesh
+STA | lift_catcher_placeholder | base_link | 0.040x0.340x0.030 | -4.689/-4.659 | 8 | mesh
+MOV | lift_guide_block_left | torso_link | 0.090x0.150x0.070 | -4.596/-4.526 | 8 | mesh
+MOV | lift_guide_block_right | torso_link | 0.090x0.150x0.070 | -4.596/-4.526 | 8 | mesh
+STA | lift_guide_left | base_link | 0.060x0.050x1.602 | -5.474/-3.872 | 8 | mesh
+STA | lift_guide_right | base_link | 0.060x0.050x1.602 | -5.474/-3.872 | 8 | mesh
+STA | lift_motor | base_link | 0.140x0.120x0.120 | -5.554/-5.434 | 8 | mesh
+MOV | lift_nut_mount_left | torso_link | 0.090x0.090x0.070 | -4.596/-4.526 | 8 | mesh
+MOV | lift_nut_mount_right | torso_link | 0.090x0.090x0.070 | -4.596/-4.526 | 8 | mesh
+STA | lift_screw_left | base_link | 0.025x0.025x1.502 | -5.474/-3.972 | 32 | mesh
+STA | lift_screw_right | base_link | 0.025x0.025x1.502 | -5.474/-3.972 | 32 | mesh
+STA | lift_stop_top | base_link | 0.070x0.470x0.030 | -3.911/-3.881 | 16 | mesh
+STA | lift_sync_shaft | base_link | 0.024x0.024x0.500 | -5.516/-5.492 | 32 | mesh
+STA | odor_sensor | None | 0.010x0.020x0.020 | -4.427/-4.407 | 64 | mesh
+MOV | right_digit2_distal_phalanx | right_digit2_mcp2_joint_empty | 0.021x0.048x0.015 | -4.519/-4.505 | 8 | mesh
+MOV | right_digit2_middle_phalanx | right_digit2_pip_joint_empty | 0.021x0.030x0.015 | -4.519/-4.504 | 8 | mesh
+MOV | right_digit2_proximal_phalanx | right_digit2_dip_joint_empty | 0.021x0.022x0.015 | -4.519/-4.504 | 8 | mesh
+MOV | right_digit3_distal_phalanx | right_digit3_mcp2_joint_empty | 0.021x0.054x0.015 | -4.549/-4.535 | 8 | mesh
+MOV | right_digit3_middle_phalanx | right_digit3_pip_joint_empty | 0.021x0.034x0.015 | -4.550/-4.535 | 8 | mesh
+MOV | right_digit3_proximal_phalanx | right_digit3_dip_joint_empty | 0.021x0.024x0.015 | -4.551/-4.536 | 8 | mesh
+MOV | right_digit4_distal_phalanx | right_digit4_mcp2_joint_empty | 0.021x0.050x0.015 | -4.579/-4.564 | 8 | mesh
+MOV | right_digit4_middle_phalanx | right_digit4_pip_joint_empty | 0.021x0.032x0.015 | -4.580/-4.565 | 8 | mesh
+MOV | right_digit4_proximal_phalanx | right_digit4_dip_joint_empty | 0.021x0.022x0.015 | -4.581/-4.566 | 8 | mesh
+MOV | right_digit5_distal_phalanx | right_digit5_mcp2_joint_empty | 0.021x0.042x0.015 | -4.606/-4.592 | 8 | mesh
+MOV | right_digit5_middle_phalanx | right_digit5_pip_joint_empty | 0.021x0.026x0.015 | -4.606/-4.592 | 8 | mesh
+MOV | right_digit5_proximal_phalanx | right_digit5_dip_joint_empty | 0.021x0.020x0.015 | -4.607/-4.592 | 8 | mesh
+MOV | right_forearm_link | right_elbow_joint_empty | 0.100x0.316x0.100 | -4.603/-4.503 | 8 | mesh
+STA | right_forearm_link_collision | None | 0.100x0.246x0.100 | -4.616/-4.516 | 8 | DUP-COLL
+MOV | right_palm_link | right_wrist_joint_2_empty | 0.030x0.112x0.112 | -4.614/-4.502 | 8 | mesh
+STA | right_palm_link_collision | None | 0.028x0.055x0.079 | -4.605/-4.526 | 8 | DUP-COLL
+MOV | right_shoulder_link | right_shoulder_joint_empty_1 | 0.100x0.371x0.101 | -4.610/-4.510 | 8 | mesh
+STA | right_shoulder_link_collision | None | 0.100x0.246x0.100 | -4.611/-4.511 | 8 | DUP-COLL
+STA | second_phalanx_index_finger_right_hand_link_collision | None | 0.021x0.044x0.015 | -4.539/-4.525 | 8 | DUP-COLL
+MOV | second_phalanx_left_thumb_link | left_thumb_mcp_joint_empty_2 | 0.020x0.040x0.015 | -4.490/-4.475 | 8 | mesh
+STA | second_phalanx_left_thumb_link_collision | None | 0.020x0.045x0.015 | -4.477/-4.462 | 8 | DUP-COLL
+STA | second_phalanx_middle_finger_left_hand_link_collision | None | 0.020x0.045x0.015 | -4.557/-4.542 | 8 | DUP-COLL
+STA | second_phalanx_middle_finger_right_hand_link_collision | None | 0.021x0.044x0.015 | -4.571/-4.556 | 8 | DUP-COLL
+STA | second_phalanx_of_index_finger_of_left_hand_link_collision | None | 0.020x0.045x0.015 | -4.529/-4.514 | 8 | DUP-COLL
+MOV | second_phalanx_right_thumb_link | right_thumb_mcp_joint_empty_2 | 0.021x0.040x0.015 | -4.474/-4.459 | 8 | mesh
+STA | second_phalanx_right_thumb_link_collision | None | 0.021x0.044x0.015 | -4.489/-4.475 | 8 | DUP-COLL
+STA | second_phalanx_ring_finger_left_hand_link_collision | None | 0.020x0.045x0.015 | -4.597/-4.582 | 8 | DUP-COLL
+STA | second_phalanx_ring_finger_right_hand_link_collision | None | 0.021x0.044x0.015 | -4.607/-4.592 | 8 | DUP-COLL
+STA | speaker | None | 0.050x0.050x0.050 | -4.480/-4.430 | 64 | mesh
+STA | stereo_microphone_1 | None | 0.085x0.085x0.019 | -4.406/-4.387 | 64 | mesh
+STA | stereo_microphone_2 | None | 0.085x0.085x0.019 | -4.406/-4.387 | 64 | mesh
+STA | third_phalanx_index_finger_right_hand_link_collision | None | 0.021x0.044x0.015 | -4.539/-4.525 | 8 | DUP-COLL
+MOV | third_phalanx_left_thumb_link | left_thumb_cmc_joint_empty_3 | 0.032x0.040x0.030 | -4.498/-4.468 | 8 | mesh
+STA | third_phalanx_left_thumb_link_collision | None | 0.032x0.027x0.030 | -4.495/-4.465 | 8 | DUP-COLL
+STA | third_phalanx_middle_finger_right_hand_link_collision | None | 0.021x0.044x0.015 | -4.571/-4.556 | 8 | DUP-COLL
+STA | third_phalanx_of_index_finger_of_left_hand_link_collision | None | 0.020x0.045x0.015 | -4.530/-4.514 | 8 | DUP-COLL
+STA | third_phalanx_of_the_middle_finger_of_the_hand_link_collision | None | 0.020x0.045x0.015 | -4.559/-4.544 | 8 | DUP-COLL
+MOV | third_phalanx_right_thumb_link | right_thumb_cmc_joint_empty_3 | 0.042x0.040x0.029 | -4.482/-4.453 | 8 | mesh
+STA | third_phalanx_right_thumb_link_collision | None | 0.042x0.026x0.029 | -4.503/-4.474 | 8 | DUP-COLL
+STA | third_phalanx_ring_finger_left_hand_link_collision | None | 0.020x0.045x0.015 | -4.597/-4.582 | 8 | DUP-COLL
+STA | third_phalanx_ring_finger_right_hand_link_collision | None | 0.021x0.044x0.015 | -4.607/-4.592 | 8 | DUP-COLL
+MOV | torso_link | vertical_lift_joint | 0.320x0.260x0.100 | -4.611/-4.511 | 8 | mesh
+STA | wheel_BL | wheel_BL_joint | 0.151x0.151x0.107 | -5.609/-5.502 | 64 | mesh
+STA | wheel_BL_collision | None | 0.151x0.151x0.107 | -5.609/-5.502 | 8 | DUP-COLL
+STA | wheel_BR | wheel_BR_joint | 0.151x0.151x0.107 | -5.609/-5.502 | 64 | mesh
+STA | wheel_BR_collision | None | 0.151x0.151x0.107 | -5.609/-5.502 | 8 | DUP-COLL
+STA | wheel_FL | wheel_FL_joint | 0.151x0.151x0.107 | -5.609/-5.502 | 64 | mesh
+STA | wheel_FL_collision | None | 0.151x0.151x0.107 | -5.609/-5.502 | 8 | DUP-COLL
+STA | wheel_FR | wheel_FR_joint | 0.151x0.151x0.107 | -5.609/-5.502 | 64 | mesh
+STA | wheel_FR_collision | None | 0.151x0.151x0.107 | -5.609/-5.502 | 8 | DUP-COLL
+
+Классификация: все критические meshes — 8 вершин (боксы) = SIMPLIFIED_SOLID/proxy;
+catcher — тонкая пластина 40x340x30мм = PLACEHOLDER; stop_top — пластина 70x470x30мм;
+направляющие/винты — боксы 1.6/1.5м; датчики головы (speaker/mics/ToF/odor) parent=None статичны внутри движущейся головы = SENSOR_MOUNT_ARTIFACT.
+
+== 3-6. ГРАНИЦЫ И СОБЫТИЯ (мм от текущей позы; + вверх) ==
+limit event | lift | moving | other | type | conf | evidence
+lift_guide_block_left vs lift_sync_shaft | -895.6 | lift_guide_block_left | lift_sync_shaft | UNINTENDED_COLLISION | MEDIUM | AABB-bisection 0.1mm
+lift_guide_block_right vs lift_sync_shaft | -895.6 | lift_guide_block_right | lift_sync_shaft | UNINTENDED_COLLISION | MEDIUM | AABB-bisection 0.1mm
+lift_nut_mount_left vs lift_sync_shaft | -895.6 | lift_nut_mount_left | lift_sync_shaft | UNINTENDED_COLLISION | MEDIUM | AABB-bisection 0.1mm
+lift_nut_mount_right vs lift_sync_shaft | -895.6 | lift_nut_mount_right | lift_sync_shaft | UNINTENDED_COLLISION | MEDIUM | AABB-bisection 0.1mm
+left_shoulder_link vs wheel_FL | -893.3 | left_shoulder_link | wheel_FL | UNINTENDED_COLLISION | MEDIUM | AABB-bisection 0.1mm
+right_shoulder_link vs wheel_FR | -891.7 | right_shoulder_link | wheel_FR | UNINTENDED_COLLISION | MEDIUM | AABB-bisection 0.1mm
+torso_link vs lift_sync_shaft | -880.6 | torso_link | lift_sync_shaft | UNINTENDED_COLLISION | MEDIUM | AABB-bisection 0.1mm
+torso_link vs lift_motor | -822.6 | torso_link | lift_motor | UNINTENDED_COLLISION | MEDIUM | AABB-bisection 0.1mm
+lift_guide_block_left vs base_link | -789.6 | lift_guide_block_left | base_link | UNINTENDED_COLLISION | MEDIUM | AABB-bisection 0.1mm
+lift_guide_block_right vs base_link | -789.6 | lift_guide_block_right | base_link | UNINTENDED_COLLISION | MEDIUM | AABB-bisection 0.1mm
+lift_nut_mount_left vs base_link | -789.6 | lift_nut_mount_left | base_link | UNINTENDED_COLLISION | MEDIUM | AABB-bisection 0.1mm
+lift_nut_mount_right vs base_link | -789.6 | lift_nut_mount_right | base_link | UNINTENDED_COLLISION | MEDIUM | AABB-bisection 0.1mm
+torso_link vs lift_brake | -782.5 | torso_link | lift_brake | UNINTENDED_COLLISION | MEDIUM | AABB-bisection 0.1mm
+left_shoulder_link vs base_link | -777.5 | left_shoulder_link | base_link | UNINTENDED_COLLISION | MEDIUM | AABB-bisection 0.1mm
+right_shoulder_link vs base_link | -775.9 | right_shoulder_link | base_link | UNINTENDED_COLLISION | MEDIUM | AABB-bisection 0.1mm
+torso_link vs base_link | -774.6 | torso_link | base_link | UNINTENDED_COLLISION | HIGH | AABB-bisection 0.1mm
+lift_guide_block_left vs lift_catcher_placeholder | -62.6 | lift_guide_block_left | lift_catcher_placeholder | PLACEHOLDER_CONTACT | MEDIUM | AABB-bisection 0.1mm
+lift_guide_block_right vs lift_catcher_placeholder | -62.6 | lift_guide_block_right | lift_catcher_placeholder | UNINTENDED_COLLISION | MEDIUM | AABB-bisection 0.1mm
+lift_nut_mount_left vs lift_catcher_placeholder | -62.6 | lift_nut_mount_left | lift_catcher_placeholder | UNINTENDED_COLLISION | MEDIUM | AABB-bisection 0.1mm
+lift_nut_mount_right vs lift_catcher_placeholder | -62.6 | lift_nut_mount_right | lift_catcher_placeholder | UNINTENDED_COLLISION | MEDIUM | AABB-bisection 0.1mm
+torso_link vs lift_catcher_placeholder | -47.6 | torso_link | lift_catcher_placeholder | PLACEHOLDER_CONTACT | HIGH | AABB-bisection 0.1mm
+head_link vs lift_stop_top | 427.3 | head_link | lift_stop_top | UNINTENDED_COLLISION | HIGH | AABB-bisection 0.1mm
+torso_link vs lift_stop_top | 600.0 | torso_link | lift_stop_top | INTENDED_HARD_STOP (shadowed: голова раньше) | HIGH | AABB-bisection 0.1mm
+
+Направляющие (аналитически, блок должен оставаться внутри рельса):
+блок Z [-4.5965,-4.5265], рельс Z [-5.4740,-3.8721] -> выход вниз -877.5мм, вверх +654.4мм = GUIDE_TRAVEL_LIMIT (раньше наступают столкновения).
+Гайка на винте: гайка Z [-4.5965,-4.5265], винт Z [-5.4740,-3.9722] -> вниз -877.5мм, вверх +554.3мм = SCREW_NUT_TRAVEL_LIMIT (раньше столкновения).
+Кабели/крепёж/крышки/тормоз-геометрия: в модели ОТСУТСТВУЮТ -> CABLE_OR_SERVICE_CLEARANCE N/A.
+
+== 7. ПОГРЕШНОСТИ ==
+Визуальные meshes = условные боксы (не функциональные поверхности) -> CLEARANCE_MARGIN_UNDEFINED.
+Зазоры направляющих: боксы грубы (блок 90x150мм на рельсе 60x50мм — взаимопроникновение proxy) -> точный зазор UNKNOWN.
+Не смоделированы: крепёж, кабели, кожухи, датчики концов, тормозной путь, концевики.
+Погрешность метода: бисекция 0.1мм; AABB для боксов точна; краевой контакт головы со стопом (перекрытие X всего ~7мм) -> MEDIUM-HIGH.
+
+== 8. ВЕРХ (критично) ==
+1. Первым вверх ограничивает ГОЛОВА: head_link vs lift_stop_top +427.3мм (UNINTENDED_COLLISION).
+2. Первый нежелательный контакт вверх: +427.3мм.
+3. lift_stop_top должен встречать каретку (torso) на +600.0мм (полное XY-перекрытие), но голова на 172.7мм выше торса и встречает стоп раньше.
+4. Запаса между опасным столкновением и штатным стопом НЕТ (опасное = раньше штатного).
+5. ДА: голова встречает препятствие раньше каретки -> критическая проблема геометрии; голову упором НЕ считать.
+
+== 9. НИЗ И CATCHER ==
+Вниз первым: torso vs lift_catcher_placeholder -47.6мм (PLACEHOLDER_CONTACT).
+Намеренного нижнего упора НЕТ (удалён). Контакт с основанием: torso vs base_link -774.6мм.
+Catcher: пластина 40x340x30 на Z-4.674, parent=base_link, висит на 712мм выше верха базы без кронштейнов -> силовой путь НЕ подтверждён = LOAD_PATH_UNVERIFIED.
+Способность держать массу/энергию падения: НЕ подтверждается (нужны прочность/энергия/тормозной путь).
+
+== 10. ЧЕТЫРЕ РЕЗУЛЬТАТА ==
+A. Геометрический диапазон (без ЛЮБЫХ пересечений, включая placeholder): [-47.6, +427.3]мм, ход 474.9мм.
+B. Диапазон без опасных столкновений (placeholder исключён; голова/основание/направляющие/винты): [-774.6, +427.3]мм, ход 1201.9мм.
+C. Предварительная рабочая зона: WORKING_RANGE_NOT_ESTABLISHED (proxy-геометрия, CLEARANCE_MARGIN_UNDEFINED, нет софт-лимитов/датчиков, нет нижнего упора, верхний стоп бьёт в голову).
+D. Защитные пределы: soft-upper ABSENT | soft-lower ABSENT | верхний мех-упор PRESENT (stop_top, но бьёт в голову) | нижний мех-упор ABSENT | ловитель PLACEHOLDER (LOAD_PATH_UNVERIFIED) | датчики концов UNKNOWN/ABSENT.
+
+== 11. СВОДКА ==
+Current lift reference | static frame (3.608398,-1.864760,-4.581481), ход НЕ закодирован | Blender | high
+Geometric lower bound | -47.6мм (placeholder) / -774.6мм hard (torso-base) | geometry | high
+Geometric upper bound | +427.3мм (head-stop_top) | geometry | high (contact) / medium (intent)
+First upward collision | +427.3 head vs stop_top | geometry | high
+First downward collision | -47.6 torso vs catcher PH; hard -774.6 torso vs base | geometry | high
+Upper stop contact | +427.3 head (факт); +600.0 torso (затенено) | geometry | high/medium
+Lower stop contact | ABSENT (удалён) | geometry+history | high
+Catcher contact | -47.6 torso (и -62.6 блоки/гайки) | geometry | high; LOAD_PATH_UNVERIFIED
+Software travel limits | ABSENT (0 constr/0 drivers/MD пуст) | Blender+MD | high
+Recommended working range | WORKING_RANGE_NOT_ESTABLISHED | assessment | high
+
+== 14. ИНЖЕНЕРНЫЕ ОТВЕТЫ ==
+1. Границы -774.567/+427.315 ПОДТВЕРЖДЕНЫ до 0.1мм (torso-base 774.567; head-stop 427.315).
+2. Вверх первым ограничивает ГОЛОВА о lift_stop_top (+427.3, UNINTENDED).
+3. Вниз первым — CATCHER-placeholder (-47.6); первым жёстким — ОСНОВАНИЕ (-774.6).
+4. stop_top фактически контактирует с КРОМКОЙ ГОЛОВЫ (+427.3, перекрытие X ~7мм); с торсом встретился бы на +600.
+5. Полноценного нижнего упора НЕТ.
+6. Catcher реальным ловителем считать НЕЛЬЗЯ (пластина, LOAD_PATH_UNVERIFIED, нет расчётов).
+7. Рабочий ход: WORKING_RANGE_NOT_ESTABLISHED.
+8. Критично не хватает: нижний упор; перенос/переконструирование верхнего стопа на каретку (не голову); софт-лимиты+датчики; немешед proxy->реальная геометрия; крепёж/кабели/тормоз; привязка датчиков головы к голове; детальная геометрия пары блок-рельс/гайка-винт; методика запасов.
+
+Воспроизводимость: скрипт lift_travel_collision_audit.py (скан 10мм, бисекция 0.1мм) + пары CSV + график PNG. .blend только читался.
