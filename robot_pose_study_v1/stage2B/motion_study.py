@@ -537,7 +537,14 @@ def plan_transition(
                 )
             )
     valid = [candidate for candidate in candidates if candidate["status"] == "valid"]
-    selected = max(valid, key=candidate_key) if valid else None
+    preferred = [
+        candidate
+        for candidate in valid
+        if candidate.get("max_joint_step_deg") is not None
+        and candidate["max_joint_step_deg"] <= MAX_PREFERRED_JOINT_STEP_DEG
+    ]
+    pool = preferred or valid
+    selected = max(pool, key=candidate_key) if pool else None
     return {
         "status": "valid" if selected is not None else "not_found",
         "selected": selected,
