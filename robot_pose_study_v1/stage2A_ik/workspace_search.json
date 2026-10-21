@@ -145,7 +145,7 @@
   "summary": {
     "5d_grid": {
       "rows": 960,
-      "reachable": 460,
+      "reachable": 461,
       "collision_free": 957,
       "by_approach": {
         "lateral": 480,
@@ -7075,30 +7075,30 @@
       "mode": "5d",
       "lift_m": 0.0,
       "finger": null,
-      "reachable": false,
+      "reachable": true,
       "collision_free": true,
-      "position_error_mm": 0.008888809938796639,
-      "orientation_error_deg": 0.0007236027570473192,
-      "normal_error_deg": 0.0007236027570473192,
-      "min_margin_deg": 0.033326893444424854,
-      "condition": 35.96598371831986,
+      "position_error_mm": 0.00028900447429635283,
+      "orientation_error_deg": 2.7927665490801753e-05,
+      "normal_error_deg": 2.7927665490801753e-05,
+      "min_margin_deg": 2.6409908384278964,
+      "condition": 37.08722142241408,
       "rank": 5,
-      "solution_count": 0,
-      "raw_solution_count": 13,
+      "solution_count": 7,
+      "raw_solution_count": 32,
       "q_deg": {
-        "sh3": 57.37060762528568,
-        "sh2": -88.90161848363948,
-        "sh1": 43.53660351742081,
-        "el": -4.00118076853653,
-        "rad": -89.96667310655558,
-        "w1": -13.858893407208098,
-        "w2": -19.91367912603352
+        "sh3": -25.34496767639834,
+        "sh2": -87.3590091615721,
+        "sh1": -44.51697723296159,
+        "el": -7.329661567304998,
+        "rad": -86.27326405803308,
+        "w1": -18.876356069185785,
+        "w2": -11.792952847549998
       },
-      "clearance_arm_torso_m": 0.08473731693602289,
-      "clearance_arm_base_m": 0.6786481459499234,
-      "clearance_arm_bed_m": 0.07493352221859155,
+      "clearance_arm_torso_m": 0.09887317749529297,
+      "clearance_arm_base_m": 0.7140480070992632,
+      "clearance_arm_bed_m": 0.07493465751774579,
       "clearance_arm_arm_m": 0.18387828919323762,
-      "clearance_min_m": 0.07493352221859155
+      "clearance_min_m": 0.07493465751774579
     },
     {
       "kind": "5d_grid",
@@ -46776,7 +46776,9 @@
       "clearance_arm_base_m": 0.6820697553323459,
       "clearance_arm_bed_m": 0.04806403089423121,
       "clearance_arm_arm_m": 0.18387828919323806,
-      "clearance_min_m": 0.04806403089423121
+      "clearance_min_m": 0.04806403089423121,
+      "clearance_arm_arm_distal_m": 0.39805736644134476,
+      "clearance_arm_arm_pair": "upper_arm-upper_arm"
     },
     {
       "kind": "lift",
@@ -46926,7 +46928,9 @@
       "clearance_arm_base_m": 0.6813634527897434,
       "clearance_arm_bed_m": 0.04806403070865166,
       "clearance_arm_arm_m": 0.18387828919323806,
-      "clearance_min_m": 0.04806403070865166
+      "clearance_min_m": 0.04806403070865166,
+      "clearance_arm_arm_distal_m": 0.3965692322000798,
+      "clearance_arm_arm_pair": "upper_arm-upper_arm"
     },
     {
       "kind": "joint_pose",
@@ -46968,7 +46972,9 @@
       "clearance_arm_base_m": 0.6906832561443262,
       "clearance_arm_bed_m": 0.0680640414131836,
       "clearance_arm_arm_m": 0.1801483817610501,
-      "clearance_min_m": 0.0680640414131836
+      "clearance_min_m": 0.0680640414131836,
+      "clearance_arm_arm_distal_m": 0.1801483817610501,
+      "clearance_arm_arm_pair": "hand-hand"
     },
     {
       "kind": "lift",
@@ -47046,7 +47052,9 @@
       "clearance_arm_base_m": 0.7543389804381468,
       "clearance_arm_bed_m": 0.31806404236389957,
       "clearance_arm_arm_m": 0.0402620178919304,
-      "clearance_min_m": 0.0402620178919304
+      "clearance_min_m": 0.0402620178919304,
+      "clearance_arm_arm_distal_m": 0.0402620178919304,
+      "clearance_arm_arm_pair": "hand-hand"
     },
     {
       "kind": "joint_pose",
@@ -47088,7 +47096,9 @@
       "clearance_arm_base_m": 0.7100796208426213,
       "clearance_arm_bed_m": 0.04806403489454418,
       "clearance_arm_arm_m": 0.18387828919323762,
-      "clearance_min_m": 0.04806403489454418
+      "clearance_min_m": 0.04806403489454418,
+      "clearance_arm_arm_distal_m": 0.3401031588392849,
+      "clearance_arm_arm_pair": "hand-hand"
     },
     {
       "kind": "joint_pose",
@@ -47172,7 +47182,9 @@
       "clearance_arm_base_m": 0.7073527502209062,
       "clearance_arm_bed_m": 0.048064037150307756,
       "clearance_arm_arm_m": 0.18387828919323762,
-      "clearance_min_m": 0.048064037150307756
+      "clearance_min_m": 0.048064037150307756,
+      "clearance_arm_arm_distal_m": 0.34010901260825754,
+      "clearance_arm_arm_pair": "hand-hand"
     },
     {
       "kind": "joint_pose",
@@ -47294,7 +47306,9 @@
       },
       "collision_free": true,
       "clearance_arm_arm_m": 0.18387828919323806,
-      "clearance_min_m": 0.048064036983013134
+      "clearance_min_m": 0.048064036983013134,
+      "clearance_arm_arm_distal_m": 0.40464947906387944,
+      "clearance_arm_arm_pair": "upper_arm-upper_arm"
     },
     {
       "kind": "joint_pose",
@@ -47535,6 +47549,17 @@
       "clearance_arm_bed_m": null,
       "clearance_arm_arm_m": null,
       "clearance_min_m": null
+    }
+  ],
+  "refinements": [
+    {
+      "case": "P7 lateral L H0.7 W1.0 c0.15",
+      "reachable": true,
+      "position_error_mm": 0.00028900447429635283,
+      "normal_error_deg": 2.7927665490801753e-05,
+      "min_margin_deg": 2.6409908384278964,
+      "condition": 37.08722142241408,
+      "solution_count": 7
     }
   ]
 }
