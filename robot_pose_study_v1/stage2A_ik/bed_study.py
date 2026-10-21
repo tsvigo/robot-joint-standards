@@ -293,7 +293,12 @@ def arm_segments(side: str, q_deg: dict[str, float], lift_m: float) -> list[dict
         "wrist1": f"{prefix}_wrist_joint_1_empty",
         "palm": f"{prefix}_palm_link",
     }
-    points = {key: mats[name][:3, 3].copy() for key, name in names.items()}
+    # fk() returns Blender world matrices.  Targets and boxes are expressed
+    # relative to the floor origin O, so convert the joint points explicitly.
+    points = {
+        key: mats[name][:3, 3].copy() - fk_model.FLOOR_ORIGIN
+        for key, name in names.items()
+    }
     return [
         {"label": "shoulder", "p0": points["shoulder3"], "p1": points["shoulder1"], "radius": 0.060},
         {"label": "upper_arm", "p0": points["shoulder1"], "p1": points["elbow"], "radius": 0.047},
@@ -327,7 +332,8 @@ def bed_box(bed: dict[str, Any]) -> dict[str, float]:
 def torso_box(q_deg: dict[str, float], lift_m: float) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
     mats = fk_model.fk("L", q_deg, lift_m)
     matrix = mats["torso_link"]
-    center = matrix[:3, 3].copy()
+    # Same floor-relative conversion as for the arm joint points.
+    center = matrix[:3, 3].copy() - fk_model.FLOOR_ORIGIN
     rotation = fk_model.orthonormalize(matrix)
     half = np.array([0.16, 0.13, 0.05], dtype=float)
     return center, rotation, half
