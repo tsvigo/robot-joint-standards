@@ -204,7 +204,7 @@ def operation_sequence(operation: str, side: str, geom: dict[str, Any]) -> list[
 
 
 def static_solve(side: str, target: dict[str, Any], seed: int) -> dict[str, Any]:
-    return bed.solve_bed_target(
+    result = bed.solve_bed_target(
         side,
         target,
         MODE,
@@ -212,6 +212,18 @@ def static_solve(side: str, target: dict[str, Any], seed: int) -> dict[str, Any]
         seed,
         random_count=STATIC_RANDOM_COUNT,
     )
+    if not result.get("reachable"):
+        retry = bed.solve_bed_target(
+            side,
+            target,
+            MODE,
+            LIFT_M,
+            seed + 1,
+            random_count=STATIC_RETRY_RANDOM_COUNT,
+        )
+        if retry.get("reachable"):
+            return retry
+    return result
 
 
 def pick_reference(result: dict[str, Any], side: str, geom: dict[str, Any]) -> dict[str, Any] | None:
