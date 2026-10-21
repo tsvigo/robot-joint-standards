@@ -282,6 +282,8 @@ def summarize_samples(
     other_q: dict[str, float] | None,
 ) -> dict[str, Any]:
     evaluated = [evaluate_sample(side, sample["q_deg"], target, geom, other_q) for sample in samples]
+    for index, sample in enumerate(samples):
+        evaluated[index]["t"] = sample.get("t")
     clearances = [sample["clearance_min_m"] for sample in evaluated if sample["clearance_min_m"] is not None]
     margins = [sample["min_margin_deg"] for sample in evaluated]
     conditions = [sample["condition"] for sample in evaluated if sample["condition"] is not None]
