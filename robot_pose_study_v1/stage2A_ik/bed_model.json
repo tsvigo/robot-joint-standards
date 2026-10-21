@@ -1,0 +1,4149 @@
+{
+  "meta": {
+    "purpose": "first small-sample reachability and simplified-collision check over a parametric bed",
+    "not_a_safety_classification": true,
+    "patient_model": "absent; bed-relative placeholder targets",
+    "bed": {
+      "length_m": 2.0,
+      "heights_m": [
+        0.6,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "widths_m": [
+        0.9,
+        1.0,
+        1.2
+      ],
+      "clearances_m": [
+        0.05,
+        0.1,
+        0.15,
+        0.2
+      ],
+      "length_assumption": "2.0 m is an assumption, not a measured bed"
+    },
+    "robot_base": {
+      "half_x_m": 0.335,
+      "half_y_m": 0.335,
+      "z_min_m": 0.0466,
+      "z_max_m": 0.2226,
+      "clearance_definition": "gap between base front face and bed near side"
+    },
+    "target_heights": {
+      "approach_above_surface_m": 0.08,
+      "diaper_above_surface_m": 0.1,
+      "feeding_above_surface_m": 0.35
+    },
+    "collision_model": {
+      "type": "temporary capsules for arm links, oriented box for torso, AABB for base and bed",
+      "radii_m": {
+        "shoulder": 0.06,
+        "upper_arm": 0.047,
+        "forearm": 0.047,
+        "hand": 0.03
+      },
+      "torso_half_dims_m": [
+        0.16,
+        0.13,
+        0.05
+      ],
+      "sampling": "21 points per capsule segment for box distances",
+      "limitations": [
+        "not the original collision meshes",
+        "no patient, bedding, rails, frame or soft contacts",
+        "arm-arm check uses the other arm at P0, not a joint solution",
+        "negative clearance means overlap in the simplified model"
+      ]
+    },
+    "ik": {
+      "source": "stage2A_ik/ik_study.py",
+      "modes": [
+        "6d",
+        "5d"
+      ],
+      "random_starts_per_target": 6,
+      "seed_poses": [
+        "P0",
+        "forward_bent",
+        "folded",
+        "zero"
+      ],
+      "nullspace_sampling": "+/-3 and +/-6 degrees along each analysis null-space direction"
+    }
+  },
+  "configurations": [
+    {
+      "approach": "lateral",
+      "height_m": 0.7,
+      "width_m": 1.0,
+      "clearance_m": 0.1,
+      "poses": [
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P9"
+      ],
+      "modes": [
+        "6d",
+        "5d"
+      ]
+    },
+    {
+      "approach": "frontal",
+      "height_m": 0.7,
+      "width_m": 1.0,
+      "clearance_m": 0.1,
+      "poses": [
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P9"
+      ],
+      "modes": [
+        "6d",
+        "5d"
+      ]
+    },
+    {
+      "approach": "lateral",
+      "height_m": 0.6,
+      "width_m": 0.9,
+      "clearance_m": 0.1,
+      "poses": [
+        "P4",
+        "P5"
+      ],
+      "modes": [
+        "5d"
+      ]
+    },
+    {
+      "approach": "lateral",
+      "height_m": 0.6,
+      "width_m": 1.0,
+      "clearance_m": 0.1,
+      "poses": [
+        "P4",
+        "P5"
+      ],
+      "modes": [
+        "5d"
+      ]
+    },
+    {
+      "approach": "lateral",
+      "height_m": 0.6,
+      "width_m": 1.2,
+      "clearance_m": 0.1,
+      "poses": [
+        "P4",
+        "P5"
+      ],
+      "modes": [
+        "5d"
+      ]
+    },
+    {
+      "approach": "lateral",
+      "height_m": 0.7,
+      "width_m": 0.9,
+      "clearance_m": 0.1,
+      "poses": [
+        "P4",
+        "P5"
+      ],
+      "modes": [
+        "5d"
+      ]
+    },
+    {
+      "approach": "lateral",
+      "height_m": 0.7,
+      "width_m": 1.0,
+      "clearance_m": 0.1,
+      "poses": [
+        "P4",
+        "P5"
+      ],
+      "modes": [
+        "5d"
+      ]
+    },
+    {
+      "approach": "lateral",
+      "height_m": 0.7,
+      "width_m": 1.2,
+      "clearance_m": 0.1,
+      "poses": [
+        "P4",
+        "P5"
+      ],
+      "modes": [
+        "5d"
+      ]
+    },
+    {
+      "approach": "lateral",
+      "height_m": 0.8,
+      "width_m": 0.9,
+      "clearance_m": 0.1,
+      "poses": [
+        "P4",
+        "P5"
+      ],
+      "modes": [
+        "5d"
+      ]
+    },
+    {
+      "approach": "lateral",
+      "height_m": 0.8,
+      "width_m": 1.0,
+      "clearance_m": 0.1,
+      "poses": [
+        "P4",
+        "P5"
+      ],
+      "modes": [
+        "5d"
+      ]
+    },
+    {
+      "approach": "lateral",
+      "height_m": 0.8,
+      "width_m": 1.2,
+      "clearance_m": 0.1,
+      "poses": [
+        "P4",
+        "P5"
+      ],
+      "modes": [
+        "5d"
+      ]
+    },
+    {
+      "approach": "lateral",
+      "height_m": 0.9,
+      "width_m": 0.9,
+      "clearance_m": 0.1,
+      "poses": [
+        "P4",
+        "P5"
+      ],
+      "modes": [
+        "5d"
+      ]
+    },
+    {
+      "approach": "lateral",
+      "height_m": 0.9,
+      "width_m": 1.0,
+      "clearance_m": 0.1,
+      "poses": [
+        "P4",
+        "P5"
+      ],
+      "modes": [
+        "5d"
+      ]
+    },
+    {
+      "approach": "lateral",
+      "height_m": 0.9,
+      "width_m": 1.2,
+      "clearance_m": 0.1,
+      "poses": [
+        "P4",
+        "P5"
+      ],
+      "modes": [
+        "5d"
+      ]
+    },
+    {
+      "approach": "lateral",
+      "height_m": 0.7,
+      "width_m": 1.0,
+      "clearance_m": 0.05,
+      "poses": [
+        "P4",
+        "P5"
+      ],
+      "modes": [
+        "5d"
+      ]
+    },
+    {
+      "approach": "lateral",
+      "height_m": 0.7,
+      "width_m": 1.0,
+      "clearance_m": 0.15,
+      "poses": [
+        "P4",
+        "P5"
+      ],
+      "modes": [
+        "5d"
+      ]
+    },
+    {
+      "approach": "lateral",
+      "height_m": 0.7,
+      "width_m": 1.0,
+      "clearance_m": 0.2,
+      "poses": [
+        "P4",
+        "P5"
+      ],
+      "modes": [
+        "5d"
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "pose": "P4",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        1.315,
+        0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P6",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        0.885,
+        0.35,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P7",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        0.9850000000000001,
+        0.12,
+        0.7999999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P9",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        0.7350000000000001,
+        0.8,
+        1.0499999999999998
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        -0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        1.315,
+        -0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P6",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        0.885,
+        -0.35,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P7",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        0.9850000000000001,
+        -0.12,
+        0.7999999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P9",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        0.7350000000000001,
+        0.7,
+        1.0499999999999998
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "L",
+      "approach": "frontal",
+      "position_floor": [
+        0.555,
+        0.2,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 2.435,
+        "y_min": -0.5,
+        "y_max": 0.5,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "L",
+      "approach": "frontal",
+      "position_floor": [
+        2.315,
+        0.2,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 2.435,
+        "y_min": -0.5,
+        "y_max": 0.5,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P6",
+      "side": "L",
+      "approach": "frontal",
+      "position_floor": [
+        0.935,
+        0.2,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 2.435,
+        "y_min": -0.5,
+        "y_max": 0.5,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P7",
+      "side": "L",
+      "approach": "frontal",
+      "position_floor": [
+        1.235,
+        0.1,
+        0.7999999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 2.435,
+        "y_min": -0.5,
+        "y_max": 0.5,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P9",
+      "side": "L",
+      "approach": "frontal",
+      "position_floor": [
+        2.1350000000000002,
+        0.1,
+        1.0499999999999998
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 2.435,
+        "y_min": -0.5,
+        "y_max": 0.5,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "R",
+      "approach": "frontal",
+      "position_floor": [
+        0.555,
+        -0.2,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 2.435,
+        "y_min": -0.5,
+        "y_max": 0.5,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "R",
+      "approach": "frontal",
+      "position_floor": [
+        2.315,
+        -0.2,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 2.435,
+        "y_min": -0.5,
+        "y_max": 0.5,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P6",
+      "side": "R",
+      "approach": "frontal",
+      "position_floor": [
+        0.935,
+        -0.2,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 2.435,
+        "y_min": -0.5,
+        "y_max": 0.5,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P7",
+      "side": "R",
+      "approach": "frontal",
+      "position_floor": [
+        1.235,
+        -0.1,
+        0.7999999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 2.435,
+        "y_min": -0.5,
+        "y_max": 0.5,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P9",
+      "side": "R",
+      "approach": "frontal",
+      "position_floor": [
+        2.1350000000000002,
+        -0.1,
+        1.0499999999999998
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 2.435,
+        "y_min": -0.5,
+        "y_max": 0.5,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        0.25,
+        0.6799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.6,
+        "z_top": 0.6,
+        "width_m": 0.9,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.335,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        1.2149999999999999,
+        0.25,
+        0.6799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.6,
+        "z_top": 0.6,
+        "width_m": 0.9,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.335,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        -0.25,
+        0.6799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.6,
+        "z_top": 0.6,
+        "width_m": 0.9,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.335,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        1.2149999999999999,
+        -0.25,
+        0.6799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.6,
+        "z_top": 0.6,
+        "width_m": 0.9,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.335,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        0.25,
+        0.6799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.6,
+        "z_top": 0.6,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        1.315,
+        0.25,
+        0.6799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.6,
+        "z_top": 0.6,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        -0.25,
+        0.6799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.6,
+        "z_top": 0.6,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        1.315,
+        -0.25,
+        0.6799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.6,
+        "z_top": 0.6,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        0.25,
+        0.6799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.6,
+        "z_top": 0.6,
+        "width_m": 1.2,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.635,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        1.5150000000000001,
+        0.25,
+        0.6799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.6,
+        "z_top": 0.6,
+        "width_m": 1.2,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.635,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        -0.25,
+        0.6799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.6,
+        "z_top": 0.6,
+        "width_m": 1.2,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.635,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        1.5150000000000001,
+        -0.25,
+        0.6799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.6,
+        "z_top": 0.6,
+        "width_m": 1.2,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.635,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 0.9,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.335,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        1.2149999999999999,
+        0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 0.9,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.335,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        -0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 0.9,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.335,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        1.2149999999999999,
+        -0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 0.9,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.335,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        1.315,
+        0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        -0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        1.315,
+        -0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.2,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.635,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        1.5150000000000001,
+        0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.2,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.635,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        -0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.2,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.635,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        1.5150000000000001,
+        -0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.2,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.635,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        0.25,
+        0.88
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.8,
+        "z_top": 0.8,
+        "width_m": 0.9,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.335,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        1.2149999999999999,
+        0.25,
+        0.88
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.8,
+        "z_top": 0.8,
+        "width_m": 0.9,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.335,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        -0.25,
+        0.88
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.8,
+        "z_top": 0.8,
+        "width_m": 0.9,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.335,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        1.2149999999999999,
+        -0.25,
+        0.88
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.8,
+        "z_top": 0.8,
+        "width_m": 0.9,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.335,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        0.25,
+        0.88
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.8,
+        "z_top": 0.8,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        1.315,
+        0.25,
+        0.88
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.8,
+        "z_top": 0.8,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        -0.25,
+        0.88
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.8,
+        "z_top": 0.8,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        1.315,
+        -0.25,
+        0.88
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.8,
+        "z_top": 0.8,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        0.25,
+        0.88
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.8,
+        "z_top": 0.8,
+        "width_m": 1.2,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.635,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        1.5150000000000001,
+        0.25,
+        0.88
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.8,
+        "z_top": 0.8,
+        "width_m": 1.2,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.635,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        -0.25,
+        0.88
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.8,
+        "z_top": 0.8,
+        "width_m": 1.2,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.635,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        1.5150000000000001,
+        -0.25,
+        0.88
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.8,
+        "z_top": 0.8,
+        "width_m": 1.2,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.635,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        0.25,
+        0.98
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.9,
+        "z_top": 0.9,
+        "width_m": 0.9,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.335,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        1.2149999999999999,
+        0.25,
+        0.98
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.9,
+        "z_top": 0.9,
+        "width_m": 0.9,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.335,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        -0.25,
+        0.98
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.9,
+        "z_top": 0.9,
+        "width_m": 0.9,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.335,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        1.2149999999999999,
+        -0.25,
+        0.98
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.9,
+        "z_top": 0.9,
+        "width_m": 0.9,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.335,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        0.25,
+        0.98
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.9,
+        "z_top": 0.9,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        1.315,
+        0.25,
+        0.98
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.9,
+        "z_top": 0.9,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        -0.25,
+        0.98
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.9,
+        "z_top": 0.9,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        1.315,
+        -0.25,
+        0.98
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.9,
+        "z_top": 0.9,
+        "width_m": 1.0,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        0.25,
+        0.98
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.9,
+        "z_top": 0.9,
+        "width_m": 1.2,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.635,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        1.5150000000000001,
+        0.25,
+        0.98
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.9,
+        "z_top": 0.9,
+        "width_m": 1.2,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.635,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        0.555,
+        -0.25,
+        0.98
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.9,
+        "z_top": 0.9,
+        "width_m": 1.2,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.635,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        1.5150000000000001,
+        -0.25,
+        0.98
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.9,
+        "z_top": 0.9,
+        "width_m": 1.2,
+        "clearance_m": 0.1,
+        "x_near": 0.43500000000000005,
+        "x_far": 1.635,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        0.505,
+        0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.05,
+        "x_near": 0.385,
+        "x_far": 1.385,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        1.2650000000000001,
+        0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.05,
+        "x_near": 0.385,
+        "x_far": 1.385,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        0.505,
+        -0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.05,
+        "x_near": 0.385,
+        "x_far": 1.385,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        1.2650000000000001,
+        -0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.05,
+        "x_near": 0.385,
+        "x_far": 1.385,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        0.605,
+        0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.15,
+        "x_near": 0.485,
+        "x_far": 1.4849999999999999,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        1.3649999999999998,
+        0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.15,
+        "x_near": 0.485,
+        "x_far": 1.4849999999999999,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        0.605,
+        -0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.15,
+        "x_near": 0.485,
+        "x_far": 1.4849999999999999,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        1.3649999999999998,
+        -0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.15,
+        "x_near": 0.485,
+        "x_far": 1.4849999999999999,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        0.655,
+        0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.2,
+        "x_near": 0.535,
+        "x_far": 1.5350000000000001,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "L",
+      "approach": "lateral",
+      "position_floor": [
+        1.415,
+        0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.2,
+        "x_near": 0.535,
+        "x_far": 1.5350000000000001,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P4",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        0.655,
+        -0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.2,
+        "x_near": 0.535,
+        "x_far": 1.5350000000000001,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    },
+    {
+      "pose": "P5",
+      "side": "R",
+      "approach": "lateral",
+      "position_floor": [
+        1.415,
+        -0.25,
+        0.7799999999999999
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "finger": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "bed": {
+        "height_m": 0.7,
+        "z_top": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.2,
+        "x_near": 0.535,
+        "x_far": 1.5350000000000001,
+        "y_min": -1.0,
+        "y_max": 1.0,
+        "length_m": 2.0
+      }
+    }
+  ]
+}
