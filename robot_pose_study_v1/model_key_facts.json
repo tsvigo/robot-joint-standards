@@ -1,0 +1,249 @@
+{
+ "file": "/home/v/projects/робот/robot_scaled_4-2-21-LTS-ARCH-02-MANUAL-01.blend",
+ "sha256": "1ae88879af076b1a0a1cfc6499d04a037dbb2103d2a7cb6440708289829cd280",
+ "dump_blender_version": "4.2.20 LTS",
+ "scene": {
+  "name": "Scene",
+  "frame": 1,
+  "unit_system": "METRIC",
+  "scale_length": 1.0,
+  "gravity": [
+   0.0,
+   0.0,
+   -9.8100004196167
+  ]
+ },
+ "counts": {
+  "objects": 182,
+  "meshes": 100,
+  "empties": 75,
+  "cameras": 5,
+  "lights": 2,
+  "joints": 66,
+  "by_category": {
+   "neck": 3,
+   "finger": 44,
+   "arm": 14,
+   "lift": 1,
+   "wheel": 4
+  },
+  "collision_meshes": 35,
+  "parentless_meshes": 45
+ },
+ "geometry": {
+  "floor_z": -5.6086,
+  "base": {
+   "dims": [
+    0.67,
+    0.67,
+    0.176
+   ],
+   "bbox": [
+    [
+     3.273395,
+     -2.195352,
+     -5.562048
+    ],
+    [
+     3.943395,
+     -1.525352,
+     -5.386048
+    ]
+   ]
+  },
+  "torso": {
+   "dims": [
+    0.32,
+    0.26,
+    0.1
+   ],
+   "bbox": [
+    [
+     3.528398,
+     -1.99476,
+     -4.611481
+    ],
+    [
+     3.848398,
+     -1.73476,
+     -4.511481
+    ]
+   ]
+  },
+  "head": {
+   "dims": [
+    0.143529,
+    0.143601,
+    0.143765
+   ],
+   "bbox": [
+    [
+     3.636588,
+     -1.936561,
+     -4.482562
+    ],
+    [
+     3.780117,
+     -1.792959,
+     -4.338796
+    ]
+   ]
+  },
+  "visual_bbox": {
+   "min": [
+    3.273376,
+    -3.223684,
+    -5.608625
+   ],
+   "max": [
+    3.943395,
+    -0.498521,
+    -3.872104
+   ]
+  },
+  "height_head_m": 1.2698,
+  "height_guides_m": 1.7365,
+  "armspan_palm_mm": 2171.52,
+  "shoulder_rel_O_mm": {
+   "left": [
+    164.206,
+    149.476,
+    1046.6
+   ],
+   "right": [
+    172.206,
+    -154.524,
+    1049.6000000000001
+   ]
+  },
+  "arm_shoulder3_to_palm_m": {
+   "left": 0.9744,
+   "right": 1.0032
+  },
+  "palm_dims_mm": {
+   "left": [
+    43.88,
+    107.52,
+    107.52
+   ],
+   "right": [
+    30.11,
+    112.13,
+    112.13
+   ]
+  }
+ },
+ "lift": {
+  "world": [
+   3.608398,
+   -1.86476,
+   -4.581481
+  ],
+  "axis": "[0,0,1] explicit",
+  "travel_lower_mm": -774.567,
+  "travel_upper_mm": 427.315,
+  "first_down_contact_mm": -47.6,
+  "first_down_contact_source": "lift_catcher_placeholder",
+  "upper_contact_source": "head vs lift_stop_top",
+  "parts": [
+   "lift_motor",
+   "lift_brake",
+   "lift_screw_left",
+   "lift_screw_right",
+   "lift_guide_left",
+   "lift_guide_right",
+   "lift_sync_shaft",
+   "lift_stop_top",
+   "lift_catcher_placeholder"
+  ]
+ },
+ "wheels": {
+  "centers": {
+   "wheel_BL_joint": [
+    3.349834,
+    -1.602137,
+    -5.555208
+   ],
+   "wheel_BR_joint": [
+    3.348779,
+    -2.118084,
+    -5.555209
+   ],
+   "wheel_FL_joint": [
+    3.866171,
+    -1.603425,
+    -5.555208
+   ],
+   "wheel_FR_joint": [
+    3.866978,
+    -2.117639,
+    -5.555209
+   ]
+  },
+  "dims_mm": {
+   "wheel_BL": [
+    150.8,
+    150.9,
+    106.8
+   ]
+  },
+  "support_polygon": [
+   [
+    3.348778,
+    -2.118084
+   ],
+   [
+    3.866977,
+    -2.117639
+   ],
+   [
+    3.86617,
+    -1.603425
+   ],
+   [
+    3.349833,
+    -1.602137
+   ]
+  ],
+  "support_sides_mm": [
+   518.2,
+   514.2,
+   516.3,
+   515.9
+  ],
+  "support_area_m2": 0.266435,
+  "note": "AABB 151x151x107 mm => vertical axis; joint type/axis/drive not encoded"
+ },
+ "mass_stored": {
+  "objects_with_mass": 41,
+  "total_kg": 245.076,
+  "base_kg": 213.134,
+  "wheels_kg": 10.232,
+  "upper_excluding_base_wheels_kg": 21.71,
+  "com_all_zero": true,
+  "torso_mass_absent": true,
+  "lift_mass_absent": true
+ },
+ "detached": {
+  "cameras": [
+   "Camera",
+   "Camera_001",
+   "Camera_Left",
+   "Camera_Right",
+   "fisheye_camera"
+  ],
+  "lights": [
+   "Light",
+   "Light_001"
+  ],
+  "sensor_like": [
+   "odor_sensor",
+   "speaker",
+   "stereo_microphone_1",
+   "stereo_microphone_2",
+   "ToF_Lens_001"
+  ]
+ },
+ "bed_patient_objects": [],
+ "scale_anomalies_count": 133
+}
