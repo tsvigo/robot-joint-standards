@@ -4,6 +4,11 @@ This is kinematic reachability and a simplified collision check, not a safety cl
 Patient is absent; targets are bed-relative placeholders. Bed length 2.0 m is an assumption.
 Collision geometry is temporary capsules/boxes, not the original collision meshes.
 
+> **Important:** the `collision-free` column below counts all 100 rows, including
+> unreachable targets whose best residual pose is not a successful working pose.
+> For successful poses use `reachable and collision-free` = **35**. See
+> `control_report.md` for the corrected interpretation.
+
 ## Summary
 
 - rows: 100
