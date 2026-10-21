@@ -5,7 +5,7 @@
     "position_units": "m/rad",
     "orientation_units": "rad/rad",
     "normal_units": "dimensionless/rad after projection onto the normal tangent plane",
-    "condition_number": "sigma_max/sigma_min of the scaled task Jacobian",
+    "condition_number": "sigma_max/sigma_min of the scaled analysis Jacobian",
     "condition_scaling": {
       "position_rows": "divided by L_norm = 0.5 m",
       "orientation_rows": "unchanged (rad/rad)",
@@ -87,7 +87,7 @@
       },
       "rows": 5,
       "max_abs_error": 7.181100150285835e-10,
-      "relative_frobenius_error": 5.506126103213072e-10,
+      "relative_frobenius_error": 5.506126103339998e-10,
       "passed": true
     },
     {
@@ -267,7 +267,7 @@
       },
       "rows": 5,
       "max_abs_error": 1.1515677855733486e-09,
-      "relative_frobenius_error": 8.587063319804875e-10,
+      "relative_frobenius_error": 8.587063308300026e-10,
       "passed": true
     },
     {
@@ -519,7 +519,7 @@
       },
       "rows": 5,
       "max_abs_error": 2.1508966829841825e-09,
-      "relative_frobenius_error": 1.1314372670053227e-09,
+      "relative_frobenius_error": 1.1314372655734098e-09,
       "passed": true
     }
   ],

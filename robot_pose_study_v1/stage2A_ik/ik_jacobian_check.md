@@ -1,7 +1,7 @@
 # IK Jacobian finite-difference check
 
 Central difference, h = 1e-6 rad. Position rows: m/rad; orientation rows: rad/rad.
-Conditioning uses the scaled Jacobian: position rows divided by L_norm = 0.5 m.
+Conditioning uses the scaled analysis Jacobian: position rows divided by L_norm = 0.5 m.
 
 | side | config | mode | max abs error | relative Frobenius | pass |
 |---|---|---|---:|---:|---|

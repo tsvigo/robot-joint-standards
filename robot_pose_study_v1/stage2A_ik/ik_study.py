@@ -6,6 +6,10 @@ The module implements two task modes:
 * ``5d``: contact-face position + palm normal direction (5 constraints),
   leaving rotation about the normal free.
 
+The 5D solver uses a three-component normal residual and a 5x7 analysis
+Jacobian.  The three-component residual distinguishes ``n`` from ``-n``;
+the analysis Jacobian projects the normal velocity onto the tangent plane.
+
 The solver uses damped least squares in a scaled task space, joint-limit
 clamping, a null-space term that pushes joints away from limits, multiple
 initial guesses, and null-space sampling to collect several solutions.
@@ -170,7 +174,12 @@ def task_metrics(
     target: dict[str, Any],
     mode: str,
 ) -> dict[str, Any]:
-    """Task error, scaled Jacobian, conditioning and limit metrics."""
+    """Task error, scaled Jacobian, conditioning and limit metrics.
+
+    For 5D the solver uses a 6-row residual (position + signed normal
+    difference), while conditioning is computed from a 5x7 analysis
+    Jacobian (position + normal velocity projected on the tangent plane).
+    """
     geometry = fk_model.palm_geometry(side, q_deg, lift_m, geometry=PALM_GEOMETRY)
     jacobian, _axes, _point = fk_model.jacobian(
         side, q_deg, lift_m, point_local=geometry["face_local"]
@@ -179,33 +188,40 @@ def task_metrics(
     position_error = np.asarray(target["position_floor"], dtype=float) - geometry["face_floor"]
     normal_target = normalize(np.asarray(target["normal"], dtype=float))
     normal_current = geometry["normal"]
-    normal_angle_deg = math.degrees(
-        math.acos(float(np.clip(np.dot(normal_target, normal_current), -1.0, 1.0)))
-    )
+    normal_dot = float(np.clip(np.dot(normal_target, normal_current), -1.0, 1.0))
+    normal_angle_deg = math.degrees(math.acos(normal_dot))
 
     if mode == "6d":
         rotation_target = fk_model.orthonormalize(np.asarray(target["rotation"], dtype=float))
         rotation_current = fk_model.orthonormalize(geometry["matrix"])
         orientation_error = rotation_vector(rotation_target @ rotation_current.T)
         task_jacobian = np.vstack([jacobian[:3, :], jacobian[3:, :]])
+        analysis_jacobian = task_jacobian
         error = np.r_[position_error, orientation_error]
-        scale = np.array([1.0 / L_NORM_M] * 3 + [1.0] * 3, dtype=float)
+        solver_scale = np.array([1.0 / L_NORM_M] * 3 + [1.0] * 3, dtype=float)
+        analysis_scale = solver_scale
         orientation_error_deg = math.degrees(float(np.linalg.norm(orientation_error)))
+        signed_valid = True
     elif mode == "5d":
         t1, t2 = tangent_basis(normal_target)
         normal_error = normal_target - normal_current
-        tangent_error = np.array([float(t1 @ normal_error), float(t2 @ normal_error)])
-        normal_jacobian = np.vstack([t1, t2]) @ (-skew(normal_current)) @ jacobian[3:, :]
+        normal_jacobian = (-skew(normal_current)) @ jacobian[3:, :]
         task_jacobian = np.vstack([jacobian[:3, :], normal_jacobian])
-        error = np.r_[position_error, tangent_error]
-        scale = np.array([1.0 / L_NORM_M] * 3 + [1.0, 1.0], dtype=float)
+        analysis_jacobian = np.vstack(
+            [jacobian[:3, :], t1 @ normal_jacobian, t2 @ normal_jacobian]
+        )
+        error = np.r_[position_error, normal_error]
+        solver_scale = np.array([1.0 / L_NORM_M] * 3 + [1.0] * 3, dtype=float)
+        analysis_scale = np.array([1.0 / L_NORM_M] * 3 + [1.0, 1.0], dtype=float)
         orientation_error_deg = normal_angle_deg
+        signed_valid = bool(normal_dot >= -1e-12)
     else:
         raise ValueError(f"unknown IK mode: {mode!r}")
 
-    scaled_jacobian = task_jacobian * scale[:, None]
-    scaled_error = error * scale
-    singular = np.linalg.svd(scaled_jacobian, compute_uv=False)
+    scaled_jacobian = task_jacobian * solver_scale[:, None]
+    scaled_analysis_jacobian = analysis_jacobian * analysis_scale[:, None]
+    scaled_error = error * solver_scale
+    singular = np.linalg.svd(scaled_analysis_jacobian, compute_uv=False)
     sigma_max = float(singular[0]) if len(singular) else 0.0
     sigma_min = float(singular[-1]) if len(singular) else 0.0
     rank = int(np.sum(singular > 1e-9 * sigma_max)) if sigma_max > 0.0 else 0
@@ -219,10 +235,13 @@ def task_metrics(
         "position_error": position_error,
         "orientation_error_deg": orientation_error_deg,
         "normal_error_deg": normal_angle_deg,
+        "signed_valid": signed_valid,
         "task_error": error,
         "task_error_norm": float(np.linalg.norm(scaled_error)),
         "task_jacobian": task_jacobian,
+        "analysis_jacobian": analysis_jacobian,
         "scaled_jacobian": scaled_jacobian,
+        "analysis_scaled_jacobian": scaled_analysis_jacobian,
         "singular_values_scaled": [float(value) for value in singular],
         "sigma_min_scaled": sigma_min,
         "sigma_max_scaled": sigma_max,
@@ -249,6 +268,20 @@ def solve_once(
 ) -> dict[str, Any]:
     """Damped least-squares IK from one initial guess."""
     q = clip_q(side, q0_deg)
+
+    # A normal exactly opposite to the target is a stationary point of the
+    # signed normal residual.  Kick w1 away from that point before iterating.
+    if mode == "5d":
+        initial = task_metrics(side, q_dict(q), lift_m, target, mode)
+        if float(np.dot(np.asarray(target["normal"]), initial["geometry"]["normal"])) < -0.9:
+            kick = q.copy()
+            delta = 30.0
+            if kick[5] + delta <= UPPER[side][5]:
+                kick[5] += delta
+            else:
+                kick[5] -= delta
+            q = clip_q(side, kick)
+
     damping = 1e-3
     no_improve = 0
     best_q = q.copy()
@@ -319,6 +352,15 @@ def result_from_metrics(
     start: str,
 ) -> dict[str, Any]:
     position_error_mm = float(np.linalg.norm(metrics["position_error"]) * 1000.0)
+    converged = bool(
+        metrics["task_error_norm"] <= IK_ACCEPT_TOL
+        and position_error_mm <= 0.01
+        and metrics["within_limits"]
+    )
+    if mode == "6d":
+        converged = converged and metrics["orientation_error_deg"] <= 0.01
+    else:
+        converged = converged and metrics["normal_error_deg"] <= 0.01 and metrics["signed_valid"]
     return {
         "side": side,
         "mode": mode,
@@ -327,8 +369,9 @@ def result_from_metrics(
         "position_error_mm": position_error_mm,
         "orientation_error_deg": float(metrics["orientation_error_deg"]),
         "normal_error_deg": float(metrics["normal_error_deg"]),
+        "signed_valid": bool(metrics["signed_valid"]),
         "task_error_norm": float(metrics["task_error_norm"]),
-        "converged": bool(metrics["task_error_norm"] <= IK_ACCEPT_TOL),
+        "converged": converged,
         "within_limits": bool(metrics["within_limits"]),
         "min_margin": metrics["min_margin"],
         "min_margin_deg": float(metrics["min_margin"]["margin_deg"]),
@@ -403,6 +446,10 @@ def make_starts(
         values = lower + 0.05 * span + rng.random(len(JOINT_KEYS)) * 0.90 * span
         values[3] = rng.uniform(20.0, 120.0)  # elbow bias
         starts.append((f"random{index}", values))
+    for delta in (-120.0, -60.0, 60.0, 120.0):
+        values = q_array(side, known_q)
+        values[5] = float(np.clip(values[5] + delta, lower[5], upper[5]))
+        starts.append((f"w1{delta:+.0f}", values))
     return starts
 
 
@@ -425,10 +472,11 @@ def solve_target(
     known_result = result_from_q(side, known_q, lift_m, target, mode, "known-exact")
     raw_solutions.append(known_result)
 
-    anchor = min(raw_solutions, key=solution_sort_key)
+    valid_raw = [solution for solution in raw_solutions if solution["converged"]]
+    anchor = min(valid_raw or raw_solutions, key=solution_sort_key)
     anchor_values = q_array(side, anchor["q_deg"])
     anchor_metrics = task_metrics(side, q_dict(anchor_values), lift_m, target, mode)
-    directions = nullspace_directions(anchor_metrics["scaled_jacobian"])
+    directions = nullspace_directions(anchor_metrics["analysis_scaled_jacobian"])
     for column in range(directions.shape[1]):
         for delta_deg in (-6.0, -3.0, 3.0, 6.0):
             start_values = clip_q(side, anchor_values + delta_deg * directions[:, column])
@@ -436,13 +484,16 @@ def solve_target(
             result["start"] = f"null{column}{delta_deg:+.0f}"
             raw_solutions.append(result)
 
-    solutions = dedupe_solutions(raw_solutions)
-    solutions.sort(key=solution_sort_key)
+    valid_solutions = dedupe_solutions(
+        [solution for solution in raw_solutions if solution["converged"]]
+    )
+    valid_solutions.sort(key=solution_sort_key)
+    best = valid_solutions[0] if valid_solutions else known_result
     random_converged = sum(
         1 for solution in raw_solutions
         if solution["start"].startswith("random") and solution["converged"]
     )
-    best = solutions[0] if solutions else None
+    random_start_count = sum(1 for label, _values in starts if label.startswith("random"))
     return {
         "side": side,
         "mode": mode,
@@ -450,11 +501,11 @@ def solve_target(
         "known_q_deg": {key: float(known_q.get(key, 0.0)) for key in JOINT_KEYS},
         "known_result": known_result,
         "best": best,
-        "solutions": solutions,
-        "solution_count": len(solutions),
+        "solutions": valid_solutions if valid_solutions else [known_result],
+        "solution_count": len(valid_solutions),
         "raw_solution_count": len(raw_solutions),
         "random_converged": random_converged,
-        "random_start_count": len(starts) - 2,
+        "random_start_count": random_start_count,
     }
 
 
@@ -533,7 +584,7 @@ def run_jacobian_check() -> dict[str, Any]:
         for mode in ("6d", "5d"):
             metrics = task_metrics(side, q_deg, 0.0, target, mode)
             finite = fd_jacobian(side, q_deg, 0.0, mode, target)
-            analytic = metrics["task_jacobian"]
+            analytic = metrics["analysis_jacobian"]
             difference = analytic - finite
             max_abs = float(np.max(np.abs(difference)))
             relative = float(np.linalg.norm(difference) / max(np.linalg.norm(finite), 1e-15))
@@ -557,7 +608,7 @@ def run_jacobian_check() -> dict[str, Any]:
             "position_units": "m/rad",
             "orientation_units": "rad/rad",
             "normal_units": "dimensionless/rad after projection onto the normal tangent plane",
-            "condition_number": "sigma_max/sigma_min of the scaled task Jacobian",
+            "condition_number": "sigma_max/sigma_min of the scaled analysis Jacobian",
             "condition_scaling": {
                 "position_rows": "divided by L_norm = 0.5 m",
                 "orientation_rows": "unchanged (rad/rad)",
@@ -584,7 +635,7 @@ def run_jacobian_check() -> dict[str, Any]:
         "# IK Jacobian finite-difference check",
         "",
         "Central difference, h = 1e-6 rad. Position rows: m/rad; orientation rows: rad/rad.",
-        "Conditioning uses the scaled Jacobian: position rows divided by L_norm = 0.5 m.",
+        "Conditioning uses the scaled analysis Jacobian: position rows divided by L_norm = 0.5 m.",
         "",
         "| side | config | mode | max abs error | relative Frobenius | pass |",
         "|---|---|---|---:|---:|---|",
@@ -641,6 +692,7 @@ def run_control_validation() -> dict[str, Any]:
         1 for row in rows
         if row["known_result"]["position_error_mm"] <= 1e-6
         and row["known_result"]["orientation_error_deg"] <= 1e-6
+        and row["known_result"]["signed_valid"]
     )
     best_position = max(row["best"]["position_error_mm"] for row in rows if row["best"])
     best_orientation = max(row["best"]["orientation_error_deg"] for row in rows if row["best"])
@@ -664,10 +716,12 @@ def run_control_validation() -> dict[str, Any]:
             },
             "acceptance": {
                 "scaled_task_error": IK_ACCEPT_TOL,
+                "position_error_mm": 0.01,
+                "orientation_error_deg": 0.01,
                 "note": "acceptance for the solver; not a safety or performance threshold",
             },
             "random_starts_per_target": 10,
-            "nullspace_sampling": "anchor solution, +/-3 and +/-6 degrees along each null-space direction",
+            "nullspace_sampling": "anchor solution, +/-3 and +/-6 degrees along each analysis null-space direction",
         },
         "summary": {
             "rows": len(rows),
@@ -691,7 +745,7 @@ def run_control_validation() -> dict[str, Any]:
         "",
         "Targets are generated by the rigidified FK from the known control-pose joint angles.",
         "6D = position + full orientation; 5D = position + palm normal.",
-        "Conditioning uses the scaled Jacobian; position rows divided by L_norm = 0.5 m.",
+        "Conditioning uses the scaled analysis Jacobian; position rows divided by L_norm = 0.5 m.",
         "",
         "| pose | side | mode | known pos mm | known ori deg | best pos mm | best ori deg | solutions | random converged | best margin | best cond |",
         "|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|",
