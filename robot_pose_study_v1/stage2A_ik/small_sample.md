@@ -7,16 +7,16 @@ Collision geometry is temporary capsules/boxes, not the original collision meshe
 ## Summary
 
 - rows: 100
-- reachable: 34
+- reachable: 35
 - collision-free in simplified model: 100
-- reachable and collision-free: 34
+- reachable and collision-free: 35
 
 ### By approach
 
 | approach | rows | reachable | collision-free |
 |---|---:|---:|---:|
 | frontal | 20 | 5 | 20 |
-| lateral | 80 | 29 | 80 |
+| lateral | 80 | 30 | 80 |
 
 ### By pose
 
@@ -26,21 +26,21 @@ Collision geometry is temporary capsules/boxes, not the original collision meshe
 | P5 | 38 | 0 | 38 |
 | P6 | 8 | 8 | 8 |
 | P7 | 8 | 2 | 8 |
-| P9 | 8 | 2 | 8 |
+| P9 | 8 | 3 | 8 |
 
 ### By mode
 
 | mode | rows | reachable | collision-free |
 |---|---:|---:|---:|
-| 5d | 80 | 29 | 80 |
+| 5d | 80 | 30 | 80 |
 | 6d | 20 | 5 | 20 |
 
 ### By side
 
 | side | rows | reachable | collision-free |
 |---|---:|---:|---:|
-| L | 50 | 23 | 50 |
-| R | 50 | 11 | 50 |
+| L | 50 | 22 | 50 |
+| R | 50 | 13 | 50 |
 
 ## First rows
 
@@ -54,8 +54,8 @@ Collision geometry is temporary capsules/boxes, not the original collision meshe
 | lateral | 0.7 | 1.0 | 0.10 | P6 | L | 5d | yes | yes | 0.000 | 0.000 | 11.6 | 7.78e+00 | 0.055 |
 | lateral | 0.7 | 1.0 | 0.10 | P7 | L | 6d | no | yes | 285.573 | 21.897 | 0.0 | 1.89e+01 | 0.088 |
 | lateral | 0.7 | 1.0 | 0.10 | P7 | L | 5d | yes | yes | 0.004 | 0.000 | 1.5 | 4.33e+01 | 0.075 |
-| lateral | 0.7 | 1.0 | 0.10 | P9 | L | 6d | yes | yes | 0.000 | 0.000 | 19.6 | 1.03e+01 | 0.118 |
-| lateral | 0.7 | 1.0 | 0.10 | P9 | L | 5d | yes | yes | 0.000 | 0.000 | 33.8 | 8.87e+00 | 0.122 |
+| lateral | 0.7 | 1.0 | 0.10 | P9 | L | 6d | no | yes | 235.550 | 31.773 | 0.0 | 5.68e+00 | 0.088 |
+| lateral | 0.7 | 1.0 | 0.10 | P9 | L | 5d | yes | yes | 0.000 | 0.000 | 11.8 | 3.65e+00 | 0.137 |
 | lateral | 0.7 | 1.0 | 0.10 | P4 | R | 6d | no | yes | 112.891 | 4.549 | 0.0 | 5.01e+00 | 0.101 |
 | lateral | 0.7 | 1.0 | 0.10 | P4 | R | 5d | no | yes | 61.078 | 2.098 | 0.0 | 4.41e+00 | 0.093 |
 | lateral | 0.7 | 1.0 | 0.10 | P5 | R | 6d | no | yes | 220.125 | 0.528 | 0.7 | 3.47e+03 | 0.101 |
@@ -64,8 +64,8 @@ Collision geometry is temporary capsules/boxes, not the original collision meshe
 | lateral | 0.7 | 1.0 | 0.10 | P6 | R | 5d | yes | yes | 0.000 | 0.000 | 10.6 | 5.16e+00 | 0.048 |
 | lateral | 0.7 | 1.0 | 0.10 | P7 | R | 6d | no | yes | 129.395 | 18.458 | 0.0 | 6.20e+00 | 0.124 |
 | lateral | 0.7 | 1.0 | 0.10 | P7 | R | 5d | yes | yes | 0.000 | 0.000 | 6.1 | 8.25e+00 | 0.068 |
-| lateral | 0.7 | 1.0 | 0.10 | P9 | R | 6d | no | yes | 433.624 | 4.252 | 0.0 | 5.23e+00 | 0.114 |
-| lateral | 0.7 | 1.0 | 0.10 | P9 | R | 5d | no | yes | 393.471 | 9.378 | 0.0 | 9.42e+00 | 0.047 |
+| lateral | 0.7 | 1.0 | 0.10 | P9 | R | 6d | yes | yes | 0.001 | 0.000 | 0.0 | 4.39e+00 | 0.146 |
+| lateral | 0.7 | 1.0 | 0.10 | P9 | R | 5d | yes | yes | 0.000 | 0.000 | 21.3 | 3.85e+00 | 0.134 |
 | frontal | 0.7 | 1.0 | 0.10 | P4 | L | 6d | no | yes | 49.454 | 5.374 | 0.0 | 7.71e+00 | 0.076 |
 | frontal | 0.7 | 1.0 | 0.10 | P4 | L | 5d | yes | yes | 0.000 | 0.000 | 7.2 | 6.09e+00 | 0.055 |
 | frontal | 0.7 | 1.0 | 0.10 | P5 | L | 6d | no | yes | 1239.670 | 3.899 | 0.0 | 1.86e+02 | 0.108 |
@@ -89,7 +89,7 @@ Collision geometry is temporary capsules/boxes, not the original collision meshe
 
 ## Unreachable rows
 
-Count: 66
+Count: 65
 
 ## Reachable but simplified-collision rows
 
