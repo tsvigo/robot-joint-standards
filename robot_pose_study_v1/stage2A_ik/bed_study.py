@@ -163,6 +163,7 @@ def make_targets(approach: str, bed: dict[str, Any], side: str) -> dict[str, dic
             "rotation": rotation.tolist(),
             "bed": {
                 "height_m": bed["height_m"],
+                "z_top": bed["z_top"],
                 "width_m": bed["width_m"],
                 "clearance_m": bed["clearance_m"],
                 "x_near": bed["x_near"],
