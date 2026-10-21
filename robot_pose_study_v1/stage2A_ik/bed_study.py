@@ -133,13 +133,15 @@ def make_targets(approach: str, bed: dict[str, Any], side: str) -> dict[str, dic
     length = bed["length_m"]
 
     if approach == "lateral":
-        y_head = y_max - 0.25
         raw = {
             "P4": (x_near + 0.12, sign * 0.25, height + APPROACH_Z_M, DOWN, PLUS_X),
             "P5": (x_far - 0.12, sign * 0.25, height + APPROACH_Z_M, DOWN, PLUS_X),
             "P6": (x_near + 0.45 * width, sign * 0.35, height + APPROACH_Z_M, DOWN, PLUS_X),
             "P7": (x_near + 0.55 * width, sign * 0.12, height + DIAPER_Z_M, DOWN, PLUS_Y),
-            "P9": (x_near + 0.30 * width, y_head + sign * 0.05, height + FEEDING_Z_M, DOWN, PLUS_Y),
+            # Feeding zone: head end of the bed, near the centre line, not the
+            # lateral edge.  y_head was too far sideways and caused a false
+            # cross-body reach in the first sample.
+            "P9": (x_near + 0.30 * width, sign * 0.05, height + FEEDING_Z_M, DOWN, PLUS_Y),
         }
     else:
         raw = {
