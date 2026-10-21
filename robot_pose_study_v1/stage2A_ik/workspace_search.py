@@ -538,9 +538,13 @@ def summarize(rows: list[dict[str, Any]]) -> dict[str, Any]:
     result: dict[str, Any] = {}
     for kind in sorted({row["kind"] for row in rows}):
         subset = [row for row in rows if row["kind"] == kind]
+        if kind in ("joint_pose", "p8_geometric"):
+            reachable_count = sum(1 for row in subset if row.get("both_reachable") is True)
+        else:
+            reachable_count = sum(1 for row in subset if row.get("reachable") is True)
         result[kind] = {
             "rows": len(subset),
-            "reachable": sum(1 for row in subset if row.get("reachable") is True),
+            "reachable": reachable_count,
             "collision_free": sum(1 for row in subset if row.get("collision_free") is True),
             "by_approach": dict(Counter(row.get("approach") for row in subset)),
             "by_side": dict(Counter(row.get("side") for row in subset)),
