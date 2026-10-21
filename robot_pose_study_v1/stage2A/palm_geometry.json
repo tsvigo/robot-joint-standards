@@ -1,0 +1,26 @@
+{
+  "source": "Blender 5.0.1, read-only bound_box of left_palm_link/right_palm_link; world matrices from arm_load_audit/arm_dump.json",
+  "note": "Thin palm axis is local X. The contact face is the X-min face on the left and the X-max face on the right. Palm side is defined by the mcp flexion direction: left mcp +Z with finger +Y flexes toward -X; right mcp +Z with finger -Y flexes toward +X.",
+  "L": {
+    "local_bbox": [
+      [-0.017533766105771065, -0.04287196695804596, -0.03391885757446289],
+      [0.017467986792325974, 0.04281167685985565, 0.033857107162475586]
+    ],
+    "world_dims_m": [0.04387931525707245, 0.10752347111701965, 0.10752338916063309],
+    "world_scale": [1.2536318469829075, 1.2548891297415166, 1.586453058038241],
+    "normal_local": [-1.0, 0.0, 0.0],
+    "finger_local": [0.0, 1.0, 0.0],
+    "thumb_local": [0.0, 0.0, 1.0]
+  },
+  "R": {
+    "local_bbox": [
+      [-0.012008863501250744, -0.04467588663101196, -0.04457417130470276],
+      [0.012008709833025932, 0.044676005840301514, 0.044574350118637085]
+    ],
+    "world_dims_m": [0.03010919876396656, 0.11212678253650665, 0.11212706565856934],
+    "world_scale": [1.253632084710751, 1.2548898422103687, 1.2577557758311657],
+    "normal_local": [1.0, 0.0, 0.0],
+    "finger_local": [0.0, -1.0, 0.0],
+    "thumb_local": [0.0, 0.0, 1.0]
+  }
+}
