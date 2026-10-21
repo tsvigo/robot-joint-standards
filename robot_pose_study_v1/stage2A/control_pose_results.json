@@ -1,0 +1,2880 @@
+{
+  "meta": {
+    "stage": "2A",
+    "scope": "kinematics, limits, singular values only; no forces, no collisions, no safety classification",
+    "generated_utc": "2026-10-21T04:03:19+00:00",
+    "source_file": "/home/v/projects/робот/robot_scaled_4-2-21-LTS-ARCH-02-MANUAL-01.blend",
+    "source_sha256": "1ae88879af076b1a0a1cfc6499d04a037dbb2103d2a7cb6440708289829cd280",
+    "blender_version": "5.0.1",
+    "fk_model": "fk_model.py",
+    "floor_origin_m": [
+      3.608395,
+      -1.860352,
+      -5.608625
+    ],
+    "base_origin_height_m": 0.13457686233520505,
+    "joint_limits_deg": {
+      "L": {
+        "sh3": [
+          -180.0,
+          60.0
+        ],
+        "sh2": [
+          -90.0,
+          90.0
+        ],
+        "sh1": [
+          -90.0,
+          130.0
+        ],
+        "el": [
+          -10.0,
+          150.0
+        ],
+        "rad": [
+          -90.0,
+          90.0
+        ],
+        "w1": [
+          -90.0,
+          90.0
+        ],
+        "w2": [
+          -25.0,
+          45.0
+        ]
+      },
+      "R": {
+        "sh3": [
+          -180.0,
+          60.0
+        ],
+        "sh2": [
+          -90.0,
+          90.0
+        ],
+        "sh1": [
+          -90.0,
+          130.0
+        ],
+        "el": [
+          -10.0,
+          150.0
+        ],
+        "rad": [
+          -90.0,
+          90.0
+        ],
+        "w1": [
+          -90.0,
+          90.0
+        ],
+        "w2": [
+          -25.0,
+          45.0
+        ]
+      }
+    },
+    "validation_tolerance": {
+      "position_mm": 1.2,
+      "rotation_deg": 0.02
+    }
+  },
+  "validation": {
+    "poses": 12,
+    "rows": 24,
+    "max_position_error_mm": 0.9591582104129979,
+    "max_rotation_error_deg": 0.011166740633979415,
+    "passed": true
+  },
+  "poses": [
+    {
+      "pose": "P0",
+      "side": "L",
+      "lift_mm": 0.0,
+      "q_deg": {},
+      "palm_center_floor_m": [
+        0.18385324905395528,
+        1.1234353983421326,
+        1.0331702880859375
+      ],
+      "contact_face_center_floor_m": [
+        0.16187236175964426,
+        1.1233975699752223,
+        1.0331213060202877
+      ],
+      "normal": [
+        -1.0,
+        1.490115552881438e-08,
+        0.0
+      ],
+      "finger": [
+        1.490115552881438e-08,
+        0.9999999999999999,
+        0.0
+      ],
+      "angle_to_down_deg": 90.0,
+      "min_margin": {
+        "joint": "el",
+        "q_deg": 0.0,
+        "margin_deg": 10.0,
+        "nearest": "lower"
+      },
+      "margins": [
+        {
+          "joint": "sh3",
+          "q_deg": 0.0,
+          "lower_deg": -180.0,
+          "upper_deg": 60.0,
+          "margin_deg": 60.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh2",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "sh1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 130.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "el",
+          "q_deg": 0.0,
+          "lower_deg": -10.0,
+          "upper_deg": 150.0,
+          "margin_deg": 10.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "rad",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w2",
+          "q_deg": 0.0,
+          "lower_deg": -25.0,
+          "upper_deg": 45.0,
+          "margin_deg": 25.0,
+          "nearest": "lower"
+        }
+      ],
+      "s": [
+        1.9573994004231319,
+        1.5860727888384618,
+        1.4143020149060852,
+        0.5111100429481964,
+        0.5044877508246283,
+        0.007178549309267761
+      ],
+      "s_min": 0.007178549309267761,
+      "s_max": 1.9573994004231319,
+      "cond": 272.6733934802203,
+      "rank": 6,
+      "face_cond": 272.78523235246337,
+      "shoulder_s": [
+        1.0000000074505797,
+        1.0,
+        0.9999999925494203
+      ],
+      "shoulder_rank": 3,
+      "gt_position_error_mm": 0.00011920928955078125,
+      "gt_rotation_error_deg": 1.7075472925031877e-06,
+      "within_limits": true,
+      "notes": "Исходная; ладони ±X; правый локоть почти выпрямлен."
+    },
+    {
+      "pose": "P0",
+      "side": "R",
+      "lift_mm": 0.0,
+      "q_deg": {},
+      "palm_center_floor_m": [
+        0.17114863822937032,
+        -1.1578405296783447,
+        1.0502930335998535
+      ],
+      "contact_face_center_floor_m": [
+        0.1862031419789738,
+        -1.1578404551055235,
+        1.050293146051981
+      ],
+      "normal": [
+        1.0,
+        -1.4901160485718767e-08,
+        0.0
+      ],
+      "finger": [
+        -1.4901160485718767e-08,
+        -1.0,
+        0.0
+      ],
+      "angle_to_down_deg": 90.0,
+      "min_margin": {
+        "joint": "el",
+        "q_deg": 0.0,
+        "margin_deg": 10.0,
+        "nearest": "lower"
+      },
+      "margins": [
+        {
+          "joint": "sh3",
+          "q_deg": 0.0,
+          "lower_deg": -180.0,
+          "upper_deg": 60.0,
+          "margin_deg": 60.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh2",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "sh1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 130.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "el",
+          "q_deg": 0.0,
+          "lower_deg": -10.0,
+          "upper_deg": 150.0,
+          "margin_deg": 10.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "rad",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w2",
+          "q_deg": 0.0,
+          "lower_deg": -25.0,
+          "upper_deg": 45.0,
+          "margin_deg": 25.0,
+          "nearest": "lower"
+        }
+      ],
+      "s": [
+        1.9659508491068824,
+        1.5969117075799122,
+        1.4142167850880334,
+        0.5314273950198101,
+        0.5208581213256073,
+        4.3833175350169896e-05
+      ],
+      "s_min": 4.3833175350169896e-05,
+      "s_max": 1.9659508491068824,
+      "cond": 44850.751363584764,
+      "rank": 6,
+      "face_cond": 44859.6963210244,
+      "shoulder_s": [
+        1.0000000000000002,
+        1.0,
+        0.9999999999999999
+      ],
+      "shoulder_rank": 3,
+      "gt_position_error_mm": 0.0002384185791015625,
+      "gt_rotation_error_deg": 1.2074182697257333e-06,
+      "within_limits": true,
+      "notes": "Исходная; ладони ±X; правый локоть почти выпрямлен."
+    },
+    {
+      "pose": "palmdown0",
+      "side": "L",
+      "lift_mm": 0.0,
+      "q_deg": {
+        "sh3": -45.0,
+        "rad": -45.0
+      },
+      "palm_center_floor_m": [
+        0.19117900846183122,
+        1.1234353981932061,
+        1.0618661422561235
+      ],
+      "contact_face_center_floor_m": [
+        0.19122799052708217,
+        1.1233975697298453,
+        1.0398852549619768
+      ],
+      "normal": [
+        -3.223641074739037e-16,
+        1.0536706451161473e-08,
+        -1.0
+      ],
+      "finger": [
+        1.0536709644599892e-08,
+        0.9999999999999999,
+        1.0536706451161468e-08
+      ],
+      "angle_to_down_deg": 0.0,
+      "min_margin": {
+        "joint": "el",
+        "q_deg": 0.0,
+        "margin_deg": 10.0,
+        "nearest": "lower"
+      },
+      "margins": [
+        {
+          "joint": "sh3",
+          "q_deg": -45.0,
+          "lower_deg": -180.0,
+          "upper_deg": 60.0,
+          "margin_deg": 105.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh2",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "sh1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 130.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "el",
+          "q_deg": 0.0,
+          "lower_deg": -10.0,
+          "upper_deg": 150.0,
+          "margin_deg": 10.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "rad",
+          "q_deg": -45.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 45.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w2",
+          "q_deg": 0.0,
+          "lower_deg": -25.0,
+          "upper_deg": 45.0,
+          "margin_deg": 25.0,
+          "nearest": "lower"
+        }
+      ],
+      "s": [
+        1.9534551759013807,
+        1.5912734419685137,
+        1.4142476270851554,
+        0.5277401825482645,
+        0.48700348068413285,
+        0.005214348616791631
+      ],
+      "s_min": 0.005214348616791631,
+      "s_max": 1.9534551759013807,
+      "cond": 374.63071985841526,
+      "rank": 6,
+      "face_cond": 374.73086294894534,
+      "shoulder_s": [
+        1.000000007450577,
+        1.0,
+        0.9999999925494232
+      ],
+      "shoulder_rank": 3,
+      "gt_position_error_mm": 0.0014202885202744954,
+      "gt_rotation_error_deg": 3.4150945850063763e-06,
+      "within_limits": true,
+      "notes": "Ладонь −Z; roll распределён sh3/rad ±45; правый локоть почти выпрямлен."
+    },
+    {
+      "pose": "palmdown0",
+      "side": "R",
+      "lift_mm": 0.0,
+      "q_deg": {
+        "sh3": 45.0,
+        "rad": 45.0
+      },
+      "palm_center_floor_m": [
+        0.16902448256307467,
+        -1.1578405297126262,
+        1.0540610361388403
+      ],
+      "contact_face_center_floor_m": [
+        0.16902459501520273,
+        -1.1578404549811803,
+        1.0390065323892381
+      ],
+      "normal": [
+        2.3429907422071513e-16,
+        -4.364447943371107e-09,
+        -1.0
+      ],
+      "finger": [
+        -4.364450067231486e-09,
+        -1.0,
+        4.3644479433711035e-09
+      ],
+      "angle_to_down_deg": 0.0,
+      "min_margin": {
+        "joint": "el",
+        "q_deg": 0.0,
+        "margin_deg": 10.0,
+        "nearest": "lower"
+      },
+      "margins": [
+        {
+          "joint": "sh3",
+          "q_deg": 45.0,
+          "lower_deg": -180.0,
+          "upper_deg": 60.0,
+          "margin_deg": 15.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh2",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "sh1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 130.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "el",
+          "q_deg": 0.0,
+          "lower_deg": -10.0,
+          "upper_deg": 150.0,
+          "margin_deg": 10.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "rad",
+          "q_deg": 45.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 45.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "w1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w2",
+          "q_deg": 0.0,
+          "lower_deg": -25.0,
+          "upper_deg": 45.0,
+          "margin_deg": 25.0,
+          "nearest": "lower"
+        }
+      ],
+      "s": [
+        1.9622870626068383,
+        1.6014780989657642,
+        1.4142148288841476,
+        0.5457010455717517,
+        0.5057404587859287,
+        0.0003933298256016413
+      ],
+      "s_min": 0.0003933298256016413,
+      "s_max": 1.9622870626068383,
+      "cond": 4988.909904315809,
+      "rank": 6,
+      "face_cond": 4989.643306606952,
+      "shoulder_s": [
+        1.0000000000000004,
+        1.0000000000000002,
+        0.9999999999999999
+      ],
+      "shoulder_rank": 3,
+      "gt_position_error_mm": 0.0031098698461590815,
+      "gt_rotation_error_deg": 0.0,
+      "within_limits": true,
+      "notes": "Ладонь −Z; roll распределён sh3/rad ±45; правый локоть почти выпрямлен."
+    },
+    {
+      "pose": "forward",
+      "side": "L",
+      "lift_mm": 0.0,
+      "q_deg": {
+        "sh2": -90.0
+      },
+      "palm_center_floor_m": [
+        1.0895412368583681,
+        0.17795296549987794,
+        1.0331702880859375
+      ],
+      "contact_face_center_floor_m": [
+        1.089503408491458,
+        0.19993385279418918,
+        1.0331213060202877
+      ],
+      "normal": [
+        1.4901155428520836e-08,
+        1.0,
+        0.0
+      ],
+      "finger": [
+        1.0,
+        -1.4901155095284082e-08,
+        0.0
+      ],
+      "angle_to_down_deg": 90.0,
+      "min_margin": {
+        "joint": "sh2",
+        "q_deg": -90.0,
+        "margin_deg": 0.0,
+        "nearest": "lower"
+      },
+      "margins": [
+        {
+          "joint": "sh3",
+          "q_deg": 0.0,
+          "lower_deg": -180.0,
+          "upper_deg": 60.0,
+          "margin_deg": 60.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh2",
+          "q_deg": -90.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 0.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "sh1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 130.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "el",
+          "q_deg": 0.0,
+          "lower_deg": -10.0,
+          "upper_deg": 150.0,
+          "margin_deg": 10.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "rad",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w2",
+          "q_deg": 0.0,
+          "lower_deg": -25.0,
+          "upper_deg": 45.0,
+          "margin_deg": 25.0,
+          "nearest": "lower"
+        }
+      ],
+      "s": [
+        2.075882683201874,
+        1.9573668638541513,
+        1.0001021727346902,
+        0.563332843817732,
+        0.511097406747264,
+        0.0072509055778597585
+      ],
+      "s_min": 0.0072509055778597585,
+      "s_max": 2.075882683201874,
+      "cond": 286.2928858900698,
+      "rank": 6,
+      "face_cond": 286.4009936378118,
+      "shoulder_s": [
+        1.414213562373095,
+        1.0,
+        1.0536710636135654e-08
+      ],
+      "shoulder_rank": 2,
+      "gt_position_error_mm": 0.0007372687385590661,
+      "gt_rotation_error_deg": 0.0,
+      "within_limits": true,
+      "notes": "sh2 на пределе ±90; плечевой gimbal lock; полный 6x7 ранг 6."
+    },
+    {
+      "pose": "forward",
+      "side": "R",
+      "lift_mm": 0.0,
+      "q_deg": {
+        "sh2": 90.0
+      },
+      "palm_center_floor_m": [
+        1.1262467903900149,
+        -0.20298413395690962,
+        1.0502930335998535
+      ],
+      "contact_face_center_floor_m": [
+        1.1262467158171932,
+        -0.18792963020730613,
+        1.050293146051981
+      ],
+      "normal": [
+        1.4901160633899758e-08,
+        1.0,
+        0.0
+      ],
+      "finger": [
+        1.0,
+        -1.4901160190317084e-08,
+        0.0
+      ],
+      "angle_to_down_deg": 90.0,
+      "min_margin": {
+        "joint": "sh2",
+        "q_deg": 90.0,
+        "margin_deg": 0.0,
+        "nearest": "upper"
+      },
+      "margins": [
+        {
+          "joint": "sh3",
+          "q_deg": 0.0,
+          "lower_deg": -180.0,
+          "upper_deg": 60.0,
+          "margin_deg": 60.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh2",
+          "q_deg": 90.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 0.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 130.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "el",
+          "q_deg": 0.0,
+          "lower_deg": -10.0,
+          "upper_deg": 150.0,
+          "margin_deg": 10.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "rad",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w2",
+          "q_deg": 0.0,
+          "lower_deg": -25.0,
+          "upper_deg": 45.0,
+          "margin_deg": 25.0,
+          "nearest": "lower"
+        }
+      ],
+      "s": [
+        2.097163444432788,
+        1.9659506028492324,
+        1.0000169654083184,
+        0.5790567520475632,
+        0.5314057288325756,
+        0.00040913148492627906
+      ],
+      "s_min": 0.00040913148492627906,
+      "s_max": 2.097163444432788,
+      "cond": 5125.891117401227,
+      "rank": 6,
+      "face_cond": 5126.542393126861,
+      "shoulder_s": [
+        1.4142135623730954,
+        1.0,
+        3.925231088218936e-16
+      ],
+      "shoulder_rank": 2,
+      "gt_position_error_mm": 0.9591582104129979,
+      "gt_rotation_error_deg": 4.00455336570039e-06,
+      "within_limits": true,
+      "notes": "sh2 на пределе ±90; плечевой gimbal lock; полный 6x7 ранг 6."
+    },
+    {
+      "pose": "backward",
+      "side": "L",
+      "lift_mm": 0.0,
+      "q_deg": {
+        "sh2": 90.0
+      },
+      "palm_center_floor_m": [
+        -0.7616291837882994,
+        0.21774741053771973,
+        1.0331702880859375
+      ],
+      "contact_face_center_floor_m": [
+        -0.7615913554213893,
+        0.19576652324340849,
+        1.0331213060202877
+      ],
+      "normal": [
+        -1.4901155673613657e-08,
+        -1.0,
+        0.0
+      ],
+      "finger": [
+        -1.0,
+        1.490115545140318e-08,
+        0.0
+      ],
+      "angle_to_down_deg": 90.0,
+      "min_margin": {
+        "joint": "sh2",
+        "q_deg": 90.0,
+        "margin_deg": 0.0,
+        "nearest": "upper"
+      },
+      "margins": [
+        {
+          "joint": "sh3",
+          "q_deg": 0.0,
+          "lower_deg": -180.0,
+          "upper_deg": 60.0,
+          "margin_deg": 60.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh2",
+          "q_deg": 90.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 0.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 130.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "el",
+          "q_deg": 0.0,
+          "lower_deg": -10.0,
+          "upper_deg": 150.0,
+          "margin_deg": 10.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "rad",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w2",
+          "q_deg": 0.0,
+          "lower_deg": -25.0,
+          "upper_deg": 45.0,
+          "margin_deg": 25.0,
+          "nearest": "lower"
+        }
+      ],
+      "s": [
+        2.0758823280994165,
+        1.9573668638540211,
+        1.0001021727346995,
+        0.563332585444904,
+        0.511097406747131,
+        0.007250904793798762
+      ],
+      "s_min": 0.007250904793798762,
+      "s_max": 2.0758823280994165,
+      "cond": 286.29286787419784,
+      "rank": 6,
+      "face_cond": 286.40097561389496,
+      "shoulder_s": [
+        1.414213562373095,
+        1.0,
+        1.05367107931449e-08
+      ],
+      "shoulder_rank": 2,
+      "gt_position_error_mm": 0.0007748603820800781,
+      "gt_rotation_error_deg": 4.00455336570039e-06,
+      "within_limits": true,
+      "notes": "sh2 на пределе ±90; обратный вылет; плечевой gimbal lock."
+    },
+    {
+      "pose": "backward",
+      "side": "R",
+      "lift_mm": 0.0,
+      "q_deg": {
+        "sh2": -90.0
+      },
+      "palm_center_floor_m": [
+        -0.7837077574920648,
+        -0.2027423775177002,
+        1.0502930335998535
+      ],
+      "contact_face_center_floor_m": [
+        -0.7837076829192435,
+        -0.21779688126730368,
+        1.050293146051981
+      ],
+      "normal": [
+        -1.4901160328202844e-08,
+        -1.0,
+        0.0
+      ],
+      "finger": [
+        -1.0,
+        1.4901160106660788e-08,
+        0.0
+      ],
+      "angle_to_down_deg": 90.0,
+      "min_margin": {
+        "joint": "sh2",
+        "q_deg": -90.0,
+        "margin_deg": 0.0,
+        "nearest": "lower"
+      },
+      "margins": [
+        {
+          "joint": "sh3",
+          "q_deg": 0.0,
+          "lower_deg": -180.0,
+          "upper_deg": 60.0,
+          "margin_deg": 60.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh2",
+          "q_deg": -90.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 0.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "sh1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 130.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "el",
+          "q_deg": 0.0,
+          "lower_deg": -10.0,
+          "upper_deg": 150.0,
+          "margin_deg": 10.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "rad",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w2",
+          "q_deg": 0.0,
+          "lower_deg": -25.0,
+          "upper_deg": 45.0,
+          "margin_deg": 25.0,
+          "nearest": "lower"
+        }
+      ],
+      "s": [
+        2.0971632611402873,
+        1.9659506028492328,
+        1.0000169654083224,
+        0.5790566270944132,
+        0.5314057288325754,
+        0.0004091343089978872
+      ],
+      "s_min": 0.0004091343089978872,
+      "s_max": 2.0971632611402873,
+      "cond": 5125.855287660848,
+      "rank": 6,
+      "face_cond": 5126.506558822694,
+      "shoulder_s": [
+        1.4142135623730951,
+        1.0,
+        1.1698100408045759e-24
+      ],
+      "shoulder_rank": 2,
+      "gt_position_error_mm": 0.9584426879878372,
+      "gt_rotation_error_deg": 0.0,
+      "within_limits": true,
+      "notes": "sh2 на пределе ±90; обратный вылет; плечевой gimbal lock."
+    },
+    {
+      "pose": "forward_bent",
+      "side": "L",
+      "lift_mm": 0.0,
+      "q_deg": {
+        "sh2": -75.0,
+        "el": 45.0
+      },
+      "palm_center_floor_m": [
+        0.8430587915000922,
+        0.7050807391143403,
+        1.0331702880859375
+      ],
+      "contact_face_center_floor_m": [
+        0.8240038705220405,
+        0.716038422434768,
+        1.0331213060202877
+      ],
+      "normal": [
+        -0.8660253963338608,
+        0.5000000129047794,
+        0.0
+      ],
+      "finger": [
+        0.5000000129047794,
+        0.8660253963338608,
+        0.0
+      ],
+      "angle_to_down_deg": 90.0,
+      "min_margin": {
+        "joint": "sh2",
+        "q_deg": -75.0,
+        "margin_deg": 15.0,
+        "nearest": "lower"
+      },
+      "margins": [
+        {
+          "joint": "sh3",
+          "q_deg": 0.0,
+          "lower_deg": -180.0,
+          "upper_deg": 60.0,
+          "margin_deg": 60.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh2",
+          "q_deg": -75.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 15.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "sh1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 130.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "el",
+          "q_deg": 45.0,
+          "lower_deg": -10.0,
+          "upper_deg": 150.0,
+          "margin_deg": 55.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "rad",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w2",
+          "q_deg": 0.0,
+          "lower_deg": -25.0,
+          "upper_deg": 45.0,
+          "margin_deg": 25.0,
+          "nearest": "lower"
+        }
+      ],
+      "s": [
+        1.9342375177987918,
+        1.923925552227316,
+        1.0188412323375278,
+        0.4844243883687698,
+        0.4794907430728055,
+        0.1309564605457501
+      ],
+      "s_min": 0.1309564605457501,
+      "s_max": 1.9342375177987918,
+      "cond": 14.770080908860995,
+      "rank": 6,
+      "face_cond": 14.726523276343059,
+      "shoulder_s": [
+        1.4021147706752726,
+        1.0,
+        0.18459190083594665
+      ],
+      "shoulder_rank": 3,
+      "gt_position_error_mm": 0.0009901834865470025,
+      "gt_rotation_error_deg": 3.6222548091772e-06,
+      "within_limits": true,
+      "notes": "Компромисс sh2 ±75, el 45; лучше обусловлен; ориентация не решена."
+    },
+    {
+      "pose": "forward_bent",
+      "side": "R",
+      "lift_mm": 0.0,
+      "q_deg": {
+        "sh2": 75.0,
+        "el": 45.0
+      },
+      "palm_center_floor_m": [
+        1.0463394730487812,
+        -0.09063027909682564,
+        1.0502930335998535
+      ],
+      "contact_face_center_floor_m": [
+        1.038812156592022,
+        -0.07759273369471176,
+        1.050293146051981
+      ],
+      "normal": [
+        -0.4999999870952163,
+        0.8660254112350189,
+        0.0
+      ],
+      "finger": [
+        0.866025411235019,
+        0.4999999870952163,
+        0.0
+      ],
+      "angle_to_down_deg": 90.0,
+      "min_margin": {
+        "joint": "sh2",
+        "q_deg": 75.0,
+        "margin_deg": 15.0,
+        "nearest": "upper"
+      },
+      "margins": [
+        {
+          "joint": "sh3",
+          "q_deg": 0.0,
+          "lower_deg": -180.0,
+          "upper_deg": 60.0,
+          "margin_deg": 60.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh2",
+          "q_deg": 75.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 15.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 130.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "el",
+          "q_deg": 45.0,
+          "lower_deg": -10.0,
+          "upper_deg": 150.0,
+          "margin_deg": 55.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "rad",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w2",
+          "q_deg": 0.0,
+          "lower_deg": -25.0,
+          "upper_deg": 45.0,
+          "margin_deg": 25.0,
+          "nearest": "lower"
+        }
+      ],
+      "s": [
+        2.0064595090832475,
+        1.9349054627175373,
+        1.0183998012592588,
+        0.541016222657582,
+        0.503170914152857,
+        0.12911586860278226
+      ],
+      "s_min": 0.12911586860278226,
+      "s_max": 2.0064595090832475,
+      "cond": 15.53999156568437,
+      "rank": 6,
+      "face_cond": 15.5012668200509,
+      "shoulder_s": [
+        1.4021147692999558,
+        1.0,
+        0.18459191128251473
+      ],
+      "shoulder_rank": 3,
+      "gt_position_error_mm": 0.8561332805418568,
+      "gt_rotation_error_deg": 3.507752689527861e-05,
+      "within_limits": true,
+      "notes": "Компромисс sh2 ±75, el 45; лучше обусловлен; ориентация не решена."
+    },
+    {
+      "pose": "el90",
+      "side": "L",
+      "lift_mm": 0.0,
+      "q_deg": {
+        "el": 90.0
+      },
+      "palm_center_floor_m": [
+        -0.28863414098739604,
+        0.6510419452209473,
+        1.0331702880859375
+      ],
+      "contact_face_center_floor_m": [
+        -0.288596312620486,
+        0.629061057926636,
+        1.0331213060202877
+      ],
+      "normal": [
+        -1.4901155673613657e-08,
+        -1.0,
+        0.0
+      ],
+      "finger": [
+        -1.0,
+        1.490115545140318e-08,
+        0.0
+      ],
+      "angle_to_down_deg": 90.0,
+      "min_margin": {
+        "joint": "w2",
+        "q_deg": 0.0,
+        "margin_deg": 25.0,
+        "nearest": "lower"
+      },
+      "margins": [
+        {
+          "joint": "sh3",
+          "q_deg": 0.0,
+          "lower_deg": -180.0,
+          "upper_deg": 60.0,
+          "margin_deg": 60.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh2",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "sh1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 130.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "el",
+          "q_deg": 90.0,
+          "lower_deg": -10.0,
+          "upper_deg": 150.0,
+          "margin_deg": 60.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "rad",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w2",
+          "q_deg": 0.0,
+          "lower_deg": -25.0,
+          "upper_deg": 45.0,
+          "margin_deg": 25.0,
+          "nearest": "lower"
+        }
+      ],
+      "s": [
+        1.85542928974057,
+        1.4953755310650336,
+        1.4143049810163382,
+        0.3895521572875439,
+        0.36846949649766353,
+        0.2268389698539177
+      ],
+      "s_min": 0.2268389698539177,
+      "s_max": 1.85542928974057,
+      "cond": 8.17949971707,
+      "rank": 6,
+      "face_cond": 8.17525528157232,
+      "shoulder_s": [
+        1.0000000074505797,
+        1.0,
+        0.9999999925494203
+      ],
+      "shoulder_rank": 3,
+      "gt_position_error_mm": 0.0007177349673981843,
+      "gt_rotation_error_deg": 4.182619578303747e-06,
+      "within_limits": true,
+      "notes": "Лучшая обусловленность; ладонь ±Y, не контактная ориентация."
+    },
+    {
+      "pose": "el90",
+      "side": "R",
+      "lift_mm": 0.0,
+      "q_deg": {
+        "el": 90.0
+      },
+      "palm_center_floor_m": [
+        0.6449268860626223,
+        -0.6840498840789799,
+        1.0502930335998535
+      ],
+      "contact_face_center_floor_m": [
+        0.6449268114898006,
+        -0.6689953803293764,
+        1.050293146051981
+      ],
+      "normal": [
+        1.4901160633899758e-08,
+        1.0,
+        0.0
+      ],
+      "finger": [
+        1.0,
+        -1.4901160190317084e-08,
+        0.0
+      ],
+      "angle_to_down_deg": 90.0,
+      "min_margin": {
+        "joint": "w2",
+        "q_deg": 0.0,
+        "margin_deg": 25.0,
+        "nearest": "lower"
+      },
+      "margins": [
+        {
+          "joint": "sh3",
+          "q_deg": 0.0,
+          "lower_deg": -180.0,
+          "upper_deg": 60.0,
+          "margin_deg": 60.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh2",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "sh1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 130.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "el",
+          "q_deg": 90.0,
+          "lower_deg": -10.0,
+          "upper_deg": 150.0,
+          "margin_deg": 60.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "rad",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w2",
+          "q_deg": 0.0,
+          "lower_deg": -25.0,
+          "upper_deg": 45.0,
+          "margin_deg": 25.0,
+          "nearest": "lower"
+        }
+      ],
+      "s": [
+        1.8616796952750159,
+        1.5035286863214974,
+        1.4142196240442657,
+        0.4155517036516721,
+        0.3918015079225311,
+        0.22977973850514438
+      ],
+      "s_min": 0.22977973850514438,
+      "s_max": 1.8616796952750159,
+      "cond": 8.10201851297405,
+      "rank": 6,
+      "face_cond": 8.097786058677162,
+      "shoulder_s": [
+        1.0000000000000002,
+        1.0,
+        0.9999999999999999
+      ],
+      "shoulder_rank": 3,
+      "gt_position_error_mm": 0.0007539457468832588,
+      "gt_rotation_error_deg": 3.818191820832846e-06,
+      "within_limits": true,
+      "notes": "Лучшая обусловленность; ладонь ±Y, не контактная ориентация."
+    },
+    {
+      "pose": "lowered_sym",
+      "side": "L",
+      "lift_mm": 0.0,
+      "q_deg": {
+        "sh1": -21.0,
+        "w2": -25.0
+      },
+      "palm_center_floor_m": [
+        0.1838532478082362,
+        1.0398365913349463,
+        0.6958362449034103
+      ],
+      "contact_face_center_floor_m": [
+        0.16187236051357212,
+        1.0397750788939186,
+        0.6958294307870174
+      ],
+      "normal": [
+        -1.0,
+        1.4901156074061522e-08,
+        2.2854643406430556e-15
+      ],
+      "finger": [
+        1.0351211152337305e-08,
+        0.6946583704589971,
+        -0.7193398003386513
+      ],
+      "angle_to_down_deg": 90.00000000000014,
+      "min_margin": {
+        "joint": "w2",
+        "q_deg": -25.0,
+        "margin_deg": 0.0,
+        "nearest": "lower"
+      },
+      "margins": [
+        {
+          "joint": "sh3",
+          "q_deg": 0.0,
+          "lower_deg": -180.0,
+          "upper_deg": 60.0,
+          "margin_deg": 60.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh2",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "sh1",
+          "q_deg": -21.0,
+          "lower_deg": -90.0,
+          "upper_deg": 130.0,
+          "margin_deg": 69.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "el",
+          "q_deg": 0.0,
+          "lower_deg": -10.0,
+          "upper_deg": 150.0,
+          "margin_deg": 10.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "rad",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w2",
+          "q_deg": -25.0,
+          "lower_deg": -25.0,
+          "upper_deg": 45.0,
+          "margin_deg": 0.0,
+          "nearest": "lower"
+        }
+      ],
+      "s": [
+        1.9482823672380993,
+        1.580515132182648,
+        1.414787431222629,
+        0.511011508564858,
+        0.506595791290941,
+        0.007222276070482704
+      ],
+      "s_min": 0.007222276070482704,
+      "s_max": 1.9482823672380993,
+      "cond": 269.76016261697475,
+      "rank": 6,
+      "face_cond": 269.8678406855183,
+      "shoulder_s": [
+        1.0000000074505797,
+        1.0,
+        0.9999999925494203
+      ],
+      "shoulder_rank": 3,
+      "gt_position_error_mm": 0.10906289631198497,
+      "gt_rotation_error_deg": 0.008633040467835782,
+      "within_limits": true,
+      "notes": "Симметричное опускание L sh1 −21 / R sh1 +21; ладони ±X; ориентация не решена."
+    },
+    {
+      "pose": "lowered_sym",
+      "side": "R",
+      "lift_mm": 0.0,
+      "q_deg": {
+        "sh1": 21.0,
+        "w2": 25.0
+      },
+      "palm_center_floor_m": [
+        0.171148639422543,
+        -1.0777680471227102,
+        0.7024640789151251
+      ],
+      "contact_face_center_floor_m": [
+        0.1862031431721447,
+        -1.0777680762798643,
+        0.7024642108355046
+      ],
+      "normal": [
+        1.0,
+        -1.4901160025069641e-08,
+        -5.132542617029995e-16
+      ],
+      "finger": [
+        -1.0351215910167849e-08,
+        -0.6946583704589974,
+        -0.7193398003386511
+      ],
+      "angle_to_down_deg": 89.99999999999997,
+      "min_margin": {
+        "joint": "el",
+        "q_deg": 0.0,
+        "margin_deg": 10.0,
+        "nearest": "lower"
+      },
+      "margins": [
+        {
+          "joint": "sh3",
+          "q_deg": 0.0,
+          "lower_deg": -180.0,
+          "upper_deg": 60.0,
+          "margin_deg": 60.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh2",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "sh1",
+          "q_deg": 21.0,
+          "lower_deg": -90.0,
+          "upper_deg": 130.0,
+          "margin_deg": 109.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "el",
+          "q_deg": 0.0,
+          "lower_deg": -10.0,
+          "upper_deg": 150.0,
+          "margin_deg": 10.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "rad",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w2",
+          "q_deg": 25.0,
+          "lower_deg": -25.0,
+          "upper_deg": 45.0,
+          "margin_deg": 20.0,
+          "nearest": "upper"
+        }
+      ],
+      "s": [
+        1.9565870701604675,
+        1.5908565192555921,
+        1.4144542524612307,
+        0.5316237432785803,
+        0.5231935306374603,
+        4.376494135416759e-05
+      ],
+      "s_min": 4.376494135416759e-05,
+      "s_max": 1.9565870701604675,
+      "cond": 44706.7220843916,
+      "rank": 6,
+      "face_cond": 44715.674465073615,
+      "shoulder_s": [
+        1.0000000000000002,
+        1.0,
+        0.9999999999999999
+      ],
+      "shoulder_rank": 3,
+      "gt_position_error_mm": 0.7995968670986071,
+      "gt_rotation_error_deg": 4.829673078902934e-06,
+      "within_limits": true,
+      "notes": "Симметричное опускание L sh1 −21 / R sh1 +21; ладони ±X; ориентация не решена."
+    },
+    {
+      "pose": "p4pos_old",
+      "side": "L",
+      "lift_mm": 0.0,
+      "q_deg": {
+        "sh1": -21.0,
+        "w2": -25.0
+      },
+      "palm_center_floor_m": [
+        0.1838532478082362,
+        1.0398365913349463,
+        0.6958362449034103
+      ],
+      "contact_face_center_floor_m": [
+        0.16187236051357212,
+        1.0397750788939186,
+        0.6958294307870174
+      ],
+      "normal": [
+        -1.0,
+        1.4901156074061522e-08,
+        2.2854643406430556e-15
+      ],
+      "finger": [
+        1.0351211152337305e-08,
+        0.6946583704589971,
+        -0.7193398003386513
+      ],
+      "angle_to_down_deg": 90.00000000000014,
+      "min_margin": {
+        "joint": "w2",
+        "q_deg": -25.0,
+        "margin_deg": 0.0,
+        "nearest": "lower"
+      },
+      "margins": [
+        {
+          "joint": "sh3",
+          "q_deg": 0.0,
+          "lower_deg": -180.0,
+          "upper_deg": 60.0,
+          "margin_deg": 60.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh2",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "sh1",
+          "q_deg": -21.0,
+          "lower_deg": -90.0,
+          "upper_deg": 130.0,
+          "margin_deg": 69.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "el",
+          "q_deg": 0.0,
+          "lower_deg": -10.0,
+          "upper_deg": 150.0,
+          "margin_deg": 10.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "rad",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w2",
+          "q_deg": -25.0,
+          "lower_deg": -25.0,
+          "upper_deg": 45.0,
+          "margin_deg": 0.0,
+          "nearest": "lower"
+        }
+      ],
+      "s": [
+        1.9482823672380993,
+        1.580515132182648,
+        1.414787431222629,
+        0.511011508564858,
+        0.506595791290941,
+        0.007222276070482704
+      ],
+      "s_min": 0.007222276070482704,
+      "s_max": 1.9482823672380993,
+      "cond": 269.76016261697475,
+      "rank": 6,
+      "face_cond": 269.8678406855183,
+      "shoulder_s": [
+        1.0000000074505797,
+        1.0,
+        0.9999999925494203
+      ],
+      "shoulder_rank": 3,
+      "gt_position_error_mm": 0.10906289631198497,
+      "gt_rotation_error_deg": 0.008633040467835782,
+      "within_limits": true,
+      "notes": "Старый кандидат P4; правая рука поднята; ладонь не вниз."
+    },
+    {
+      "pose": "p4pos_old",
+      "side": "R",
+      "lift_mm": 0.0,
+      "q_deg": {
+        "sh1": -21.0,
+        "w2": -25.0
+      },
+      "palm_center_floor_m": [
+        0.17114863933534386,
+        -1.083619887790251,
+        1.4017882324803246
+      ],
+      "contact_face_center_floor_m": [
+        0.18620314308494823,
+        -1.0836197551648226,
+        1.4017882567915683
+      ],
+      "normal": [
+        1.0,
+        -1.4901160025069641e-08,
+        5.132542617029995e-16
+      ],
+      "finger": [
+        -1.0351215910167849e-08,
+        -0.6946583704589974,
+        0.7193398003386511
+      ],
+      "angle_to_down_deg": 90.00000000000004,
+      "min_margin": {
+        "joint": "w2",
+        "q_deg": -25.0,
+        "margin_deg": 0.0,
+        "nearest": "lower"
+      },
+      "margins": [
+        {
+          "joint": "sh3",
+          "q_deg": 0.0,
+          "lower_deg": -180.0,
+          "upper_deg": 60.0,
+          "margin_deg": 60.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh2",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "sh1",
+          "q_deg": -21.0,
+          "lower_deg": -90.0,
+          "upper_deg": 130.0,
+          "margin_deg": 69.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "el",
+          "q_deg": 0.0,
+          "lower_deg": -10.0,
+          "upper_deg": 150.0,
+          "margin_deg": 10.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "rad",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w2",
+          "q_deg": -25.0,
+          "lower_deg": -25.0,
+          "upper_deg": 45.0,
+          "margin_deg": 0.0,
+          "nearest": "lower"
+        }
+      ],
+      "s": [
+        1.9620480157924503,
+        1.5949468636850705,
+        1.4143750429516422,
+        0.5304814541761301,
+        0.5216200000724207,
+        4.43143458275517e-05
+      ],
+      "s_min": 4.43143458275517e-05,
+      "s_max": 1.9620480157924503,
+      "cond": 44275.684976321594,
+      "rank": 6,
+      "face_cond": 44284.5307158783,
+      "shoulder_s": [
+        1.0000000000000002,
+        1.0,
+        0.9999999999999999
+      ],
+      "shoulder_rank": 3,
+      "gt_position_error_mm": 0.7973649190053866,
+      "gt_rotation_error_deg": 4.829673078902934e-06,
+      "within_limits": true,
+      "notes": "Старый кандидат P4; правая рука поднята; ладонь не вниз."
+    },
+    {
+      "pose": "p6pos_old",
+      "side": "L",
+      "lift_mm": 0.0,
+      "q_deg": {
+        "sh1": -21.0,
+        "el": 20.0,
+        "w1": 90.0,
+        "w2": -25.0
+      },
+      "palm_center_floor_m": [
+        -0.03457306351112521,
+        0.8933445763929833,
+        0.7520692621089022
+      ],
+      "contact_face_center_floor_m": [
+        -0.027003488430572986,
+        0.8740685906588677,
+        0.759438193072846
+      ],
+      "normal": [
+        0.3420201302532035,
+        -0.8772786427860769,
+        0.336755717713895
+      ],
+      "finger": [
+        -0.8516507462081714,
+        -0.44083990464641365,
+        -0.28346284580947445
+      ],
+      "angle_to_down_deg": 109.67933764978049,
+      "min_margin": {
+        "joint": "w1",
+        "q_deg": 90.0,
+        "margin_deg": 0.0,
+        "nearest": "upper"
+      },
+      "margins": [
+        {
+          "joint": "sh3",
+          "q_deg": 0.0,
+          "lower_deg": -180.0,
+          "upper_deg": 60.0,
+          "margin_deg": 60.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh2",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "sh1",
+          "q_deg": -21.0,
+          "lower_deg": -90.0,
+          "upper_deg": 130.0,
+          "margin_deg": 69.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "el",
+          "q_deg": 20.0,
+          "lower_deg": -10.0,
+          "upper_deg": 150.0,
+          "margin_deg": 30.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "rad",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w1",
+          "q_deg": 90.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 0.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "w2",
+          "q_deg": -25.0,
+          "lower_deg": -25.0,
+          "upper_deg": 45.0,
+          "margin_deg": 0.0,
+          "nearest": "lower"
+        }
+      ],
+      "s": [
+        1.866018517487083,
+        1.7336004502111957,
+        1.2415918242016808,
+        0.5280382830624792,
+        0.09244329017705508,
+        0.06327864996302368
+      ],
+      "s_min": 0.06327864996302368,
+      "s_max": 1.866018517487083,
+      "cond": 29.488911640458106,
+      "rank": 6,
+      "face_cond": 29.24791401046846,
+      "shoulder_s": [
+        1.0000000074505797,
+        1.0,
+        0.9999999925494203
+      ],
+      "shoulder_rank": 3,
+      "gt_position_error_mm": 0.1409784121228609,
+      "gt_rotation_error_deg": 0.011166740633979415,
+      "within_limits": true,
+      "notes": "Старый кандидат P6; не ладонь вниз; w1 на лимите."
+    },
+    {
+      "pose": "p6pos_old",
+      "side": "R",
+      "lift_mm": 0.0,
+      "q_deg": {
+        "sh1": -21.0,
+        "el": 20.0,
+        "w1": 90.0,
+        "w2": -25.0
+      },
+      "palm_center_floor_m": [
+        0.39224157202411636,
+        -0.9364610024751585,
+        1.3452992277073026
+      ],
+      "contact_face_center_floor_m": [
+        0.38709252033147523,
+        -0.923254019482618,
+        1.3402296172620822
+      ],
+      "normal": [
+        -0.3420201302531991,
+        0.8772786427860788,
+        -0.33675571771389456
+      ],
+      "finger": [
+        0.8516507462081729,
+        0.44083990464640954,
+        0.283462845809476
+      ],
+      "angle_to_down_deg": 70.32066235021954,
+      "min_margin": {
+        "joint": "w1",
+        "q_deg": 90.0,
+        "margin_deg": 0.0,
+        "nearest": "upper"
+      },
+      "margins": [
+        {
+          "joint": "sh3",
+          "q_deg": 0.0,
+          "lower_deg": -180.0,
+          "upper_deg": 60.0,
+          "margin_deg": 60.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh2",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "sh1",
+          "q_deg": -21.0,
+          "lower_deg": -90.0,
+          "upper_deg": 130.0,
+          "margin_deg": 69.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "el",
+          "q_deg": 20.0,
+          "lower_deg": -10.0,
+          "upper_deg": 150.0,
+          "margin_deg": 30.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "rad",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w1",
+          "q_deg": 90.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 0.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "w2",
+          "q_deg": -25.0,
+          "lower_deg": -25.0,
+          "upper_deg": 45.0,
+          "margin_deg": 0.0,
+          "nearest": "lower"
+        }
+      ],
+      "s": [
+        1.8777223909380092,
+        1.7341591765983102,
+        1.265237910703447,
+        0.5505192635832067,
+        0.08670706483361504,
+        0.058462527900184365
+      ],
+      "s_min": 0.058462527900184365,
+      "s_max": 1.8777223909380092,
+      "cond": 32.118392043257636,
+      "rank": 6,
+      "face_cond": 31.932031279082512,
+      "shoulder_s": [
+        1.0000000000000002,
+        1.0,
+        0.9999999999999999
+      ],
+      "shoulder_rank": 3,
+      "gt_position_error_mm": 0.6811245517913247,
+      "gt_rotation_error_deg": 1.1000103948581645e-05,
+      "within_limits": true,
+      "notes": "Старый кандидат P6; не ладонь вниз; w1 на лимите."
+    },
+    {
+      "pose": "folded",
+      "side": "L",
+      "lift_mm": 0.0,
+      "q_deg": {
+        "sh2": -75.0,
+        "el": 150.0
+      },
+      "palm_center_floor_m": [
+        0.1504676565735963,
+        0.418280763310485,
+        1.0331702880859375
+      ],
+      "contact_face_center_floor_m": [
+        0.14481512371014116,
+        0.3970390658863592,
+        1.0331213060202877
+      ],
+      "normal": [
+        -0.25881905949593165,
+        -0.9659258224323654,
+        0.0
+      ],
+      "finger": [
+        -0.9659258224323654,
+        0.25881905949593187,
+        0.0
+      ],
+      "angle_to_down_deg": 90.0,
+      "min_margin": {
+        "joint": "el",
+        "q_deg": 150.0,
+        "margin_deg": 0.0,
+        "nearest": "upper"
+      },
+      "margins": [
+        {
+          "joint": "sh3",
+          "q_deg": 0.0,
+          "lower_deg": -180.0,
+          "upper_deg": 60.0,
+          "margin_deg": 60.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh2",
+          "q_deg": -75.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 15.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "sh1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 130.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "el",
+          "q_deg": 150.0,
+          "lower_deg": -10.0,
+          "upper_deg": 150.0,
+          "margin_deg": 0.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "rad",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w2",
+          "q_deg": 0.0,
+          "lower_deg": -25.0,
+          "upper_deg": 45.0,
+          "margin_deg": 25.0,
+          "nearest": "lower"
+        }
+      ],
+      "s": [
+        1.77786908469078,
+        1.7230371868865653,
+        1.0174283173349348,
+        0.326395282627549,
+        0.13062950978591367,
+        0.04676797684226927
+      ],
+      "s_min": 0.04676797684226927,
+      "s_max": 1.77786908469078,
+      "cond": 38.01466740130456,
+      "rank": 6,
+      "face_cond": 37.96508308925823,
+      "shoulder_s": [
+        1.4021147706752726,
+        1.0,
+        0.18459190083594665
+      ],
+      "shoulder_rank": 3,
+      "gt_position_error_mm": 0.0013047978425232813,
+      "gt_rotation_error_deg": 4.829673078902934e-06,
+      "within_limits": true,
+      "notes": "Складная; el на верхнем лимите; столкновения не проверены."
+    },
+    {
+      "pose": "folded",
+      "side": "R",
+      "lift_mm": 0.0,
+      "q_deg": {
+        "sh2": 75.0,
+        "el": 150.0
+      },
+      "palm_center_floor_m": [
+        0.3010126273499685,
+        0.007483940976390935,
+        1.0502930335998535
+      ],
+      "contact_face_center_floor_m": [
+        0.29036753839217333,
+        -0.0031612534432996497,
+        1.050293146051981
+      ],
+      "normal": [
+        -0.707106791723259,
+        -0.7071067706498361,
+        0.0
+      ],
+      "finger": [
+        -0.7071067706498361,
+        0.707106791723259,
+        0.0
+      ],
+      "angle_to_down_deg": 90.0,
+      "min_margin": {
+        "joint": "el",
+        "q_deg": 150.0,
+        "margin_deg": 0.0,
+        "nearest": "upper"
+      },
+      "margins": [
+        {
+          "joint": "sh3",
+          "q_deg": 0.0,
+          "lower_deg": -180.0,
+          "upper_deg": 60.0,
+          "margin_deg": 60.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh2",
+          "q_deg": 75.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 15.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 130.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "el",
+          "q_deg": 150.0,
+          "lower_deg": -10.0,
+          "upper_deg": 150.0,
+          "margin_deg": 0.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "rad",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w2",
+          "q_deg": 0.0,
+          "lower_deg": -25.0,
+          "upper_deg": 45.0,
+          "margin_deg": 25.0,
+          "nearest": "lower"
+        }
+      ],
+      "s": [
+        1.776896488951094,
+        1.7229918959658428,
+        1.0184961409912157,
+        0.3433629925138755,
+        0.1459546277120883,
+        0.12766783648218674
+      ],
+      "s_min": 0.12766783648218674,
+      "s_max": 1.776896488951094,
+      "cond": 13.918121728326,
+      "rank": 6,
+      "face_cond": 13.892159220657323,
+      "shoulder_s": [
+        1.4021147692999558,
+        1.0,
+        0.18459191128251473
+      ],
+      "shoulder_rank": 3,
+      "gt_position_error_mm": 0.24136353202775532,
+      "gt_rotation_error_deg": 2.3193747562800386e-05,
+      "within_limits": true,
+      "notes": "Складная; el на верхнем лимите; столкновения не проверены."
+    },
+    {
+      "pose": "lift100",
+      "side": "L",
+      "lift_mm": 100.0,
+      "q_deg": {},
+      "palm_center_floor_m": [
+        0.18385324905395528,
+        1.1234353983421326,
+        1.1331702880859371
+      ],
+      "contact_face_center_floor_m": [
+        0.16187236175964426,
+        1.1233975699752223,
+        1.1331213060202874
+      ],
+      "normal": [
+        -1.0,
+        1.490115552881438e-08,
+        0.0
+      ],
+      "finger": [
+        1.490115552881438e-08,
+        0.9999999999999999,
+        0.0
+      ],
+      "angle_to_down_deg": 90.0,
+      "min_margin": {
+        "joint": "el",
+        "q_deg": 0.0,
+        "margin_deg": 10.0,
+        "nearest": "lower"
+      },
+      "margins": [
+        {
+          "joint": "sh3",
+          "q_deg": 0.0,
+          "lower_deg": -180.0,
+          "upper_deg": 60.0,
+          "margin_deg": 60.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh2",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "sh1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 130.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "el",
+          "q_deg": 0.0,
+          "lower_deg": -10.0,
+          "upper_deg": 150.0,
+          "margin_deg": 10.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "rad",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w2",
+          "q_deg": 0.0,
+          "lower_deg": -25.0,
+          "upper_deg": 45.0,
+          "margin_deg": 25.0,
+          "nearest": "lower"
+        }
+      ],
+      "s": [
+        1.9573994004231319,
+        1.5860727888384618,
+        1.4143020149060852,
+        0.5111100429481964,
+        0.5044877508246283,
+        0.007178549309267761
+      ],
+      "s_min": 0.007178549309267761,
+      "s_max": 1.9573994004231319,
+      "cond": 272.6733934802203,
+      "rank": 6,
+      "face_cond": 272.78523235246337,
+      "shoulder_s": [
+        1.0000000074505797,
+        1.0,
+        0.9999999925494203
+      ],
+      "shoulder_rank": 3,
+      "gt_position_error_mm": 0.0001526623780280153,
+      "gt_rotation_error_deg": 1.7075472925031877e-06,
+      "within_limits": true,
+      "notes": "Тестовая точка лифта +100 мм; рабочий диапазон не задан."
+    },
+    {
+      "pose": "lift100",
+      "side": "R",
+      "lift_mm": 100.0,
+      "q_deg": {},
+      "palm_center_floor_m": [
+        0.17114863822937032,
+        -1.1578405296783447,
+        1.1502930335998531
+      ],
+      "contact_face_center_floor_m": [
+        0.1862031419789738,
+        -1.1578404551055235,
+        1.1502931460519807
+      ],
+      "normal": [
+        1.0,
+        -1.4901160485718767e-08,
+        0.0
+      ],
+      "finger": [
+        -1.4901160485718767e-08,
+        -1.0,
+        0.0
+      ],
+      "angle_to_down_deg": 90.0,
+      "min_margin": {
+        "joint": "el",
+        "q_deg": 0.0,
+        "margin_deg": 10.0,
+        "nearest": "lower"
+      },
+      "margins": [
+        {
+          "joint": "sh3",
+          "q_deg": 0.0,
+          "lower_deg": -180.0,
+          "upper_deg": 60.0,
+          "margin_deg": 60.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh2",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "sh1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 130.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "el",
+          "q_deg": 0.0,
+          "lower_deg": -10.0,
+          "upper_deg": 150.0,
+          "margin_deg": 10.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "rad",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w2",
+          "q_deg": 0.0,
+          "lower_deg": -25.0,
+          "upper_deg": 45.0,
+          "margin_deg": 25.0,
+          "nearest": "lower"
+        }
+      ],
+      "s": [
+        1.9659508491068824,
+        1.5969117075799122,
+        1.4142167850880334,
+        0.5314273950198101,
+        0.5208581213256073,
+        4.3833175350169896e-05
+      ],
+      "s_min": 4.3833175350169896e-05,
+      "s_max": 1.9659508491068824,
+      "cond": 44850.751363584764,
+      "rank": 6,
+      "face_cond": 44859.6963210244,
+      "shoulder_s": [
+        1.0000000000000002,
+        1.0,
+        0.9999999999999999
+      ],
+      "shoulder_rank": 3,
+      "gt_position_error_mm": 0.00025678466817700523,
+      "gt_rotation_error_deg": 1.2074182697257333e-06,
+      "within_limits": true,
+      "notes": "Тестовая точка лифта +100 мм; рабочий диапазон не задан."
+    },
+    {
+      "pose": "liftm50",
+      "side": "L",
+      "lift_mm": -50.0,
+      "q_deg": {},
+      "palm_center_floor_m": [
+        0.18385324905395528,
+        1.1234353983421326,
+        0.9831702880859376
+      ],
+      "contact_face_center_floor_m": [
+        0.16187236175964426,
+        1.1233975699752223,
+        0.9831213060202879
+      ],
+      "normal": [
+        -1.0,
+        1.490115552881438e-08,
+        0.0
+      ],
+      "finger": [
+        1.490115552881438e-08,
+        0.9999999999999999,
+        0.0
+      ],
+      "angle_to_down_deg": 90.0,
+      "min_margin": {
+        "joint": "el",
+        "q_deg": 0.0,
+        "margin_deg": 10.0,
+        "nearest": "lower"
+      },
+      "margins": [
+        {
+          "joint": "sh3",
+          "q_deg": 0.0,
+          "lower_deg": -180.0,
+          "upper_deg": 60.0,
+          "margin_deg": 60.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh2",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "sh1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 130.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "el",
+          "q_deg": 0.0,
+          "lower_deg": -10.0,
+          "upper_deg": 150.0,
+          "margin_deg": 10.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "rad",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w2",
+          "q_deg": 0.0,
+          "lower_deg": -25.0,
+          "upper_deg": 45.0,
+          "margin_deg": 25.0,
+          "nearest": "lower"
+        }
+      ],
+      "s": [
+        1.9573994004231319,
+        1.5860727888384618,
+        1.4143020149060852,
+        0.5111100429481964,
+        0.5044877508246283,
+        0.007178549309267761
+      ],
+      "s_min": 0.007178549309267761,
+      "s_max": 1.9573994004231319,
+      "cond": 272.6733934802203,
+      "rank": 6,
+      "face_cond": 272.78523235246337,
+      "shoulder_s": [
+        1.0000000074505797,
+        1.0,
+        0.9999999925494203
+      ],
+      "shoulder_rank": 3,
+      "gt_position_error_mm": 0.0002249236378282233,
+      "gt_rotation_error_deg": 1.7075472925031877e-06,
+      "within_limits": true,
+      "notes": "Тестовая точка −50 мм; на 2.4 мм ниже первого контакта placeholder; не рабочая поза."
+    },
+    {
+      "pose": "liftm50",
+      "side": "R",
+      "lift_mm": -50.0,
+      "q_deg": {},
+      "palm_center_floor_m": [
+        0.17114863822937032,
+        -1.1578405296783447,
+        1.0002930335998537
+      ],
+      "contact_face_center_floor_m": [
+        0.1862031419789738,
+        -1.1578404551055235,
+        1.0002931460519813
+      ],
+      "normal": [
+        1.0,
+        -1.4901160485718767e-08,
+        0.0
+      ],
+      "finger": [
+        -1.4901160485718767e-08,
+        -1.0,
+        0.0
+      ],
+      "angle_to_down_deg": 90.0,
+      "min_margin": {
+        "joint": "el",
+        "q_deg": 0.0,
+        "margin_deg": 10.0,
+        "nearest": "lower"
+      },
+      "margins": [
+        {
+          "joint": "sh3",
+          "q_deg": 0.0,
+          "lower_deg": -180.0,
+          "upper_deg": 60.0,
+          "margin_deg": 60.0,
+          "nearest": "upper"
+        },
+        {
+          "joint": "sh2",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "sh1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 130.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "el",
+          "q_deg": 0.0,
+          "lower_deg": -10.0,
+          "upper_deg": 150.0,
+          "margin_deg": 10.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "rad",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w1",
+          "q_deg": 0.0,
+          "lower_deg": -90.0,
+          "upper_deg": 90.0,
+          "margin_deg": 90.0,
+          "nearest": "lower"
+        },
+        {
+          "joint": "w2",
+          "q_deg": 0.0,
+          "lower_deg": -25.0,
+          "upper_deg": 45.0,
+          "margin_deg": 25.0,
+          "nearest": "lower"
+        }
+      ],
+      "s": [
+        1.9659508491068824,
+        1.5969117075799122,
+        1.4142167850880334,
+        0.5314273950198101,
+        0.5208581213256073,
+        4.3833175350169896e-05
+      ],
+      "s_min": 4.3833175350169896e-05,
+      "s_max": 1.9659508491068824,
+      "cond": 44850.751363584764,
+      "rank": 6,
+      "face_cond": 44859.6963210244,
+      "shoulder_s": [
+        1.0000000000000002,
+        1.0,
+        0.9999999999999999
+      ],
+      "shoulder_rank": 3,
+      "gt_position_error_mm": 0.0003053247566108713,
+      "gt_rotation_error_deg": 1.2074182697257333e-06,
+      "within_limits": true,
+      "notes": "Тестовая точка −50 мм; на 2.4 мм ниже первого контакта placeholder; не рабочая поза."
+    }
+  ]
+}
