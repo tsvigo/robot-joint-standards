@@ -498,8 +498,8 @@ def candidate_key(candidate: dict[str, Any]) -> tuple[float, float, float, float
     condition = candidate.get("max_condition")
     length = candidate.get("path_length_deg")
     return (
-        float(clearance) if clearance is not None else -math.inf,
         float(margin) if margin is not None else -math.inf,
+        float(clearance) if clearance is not None else -math.inf,
         -float(condition) if condition is not None else -math.inf,
         -float(length) if length is not None else -math.inf,
     )
