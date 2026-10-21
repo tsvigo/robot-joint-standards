@@ -733,13 +733,17 @@ def plan_bimanual(operation: str, left: dict[str, Any], right: dict[str, Any], g
     candidates.append(summarize_bimanual(shifted, "phase_shift_0.2"))
 
     valid = [candidate for candidate in candidates if candidate["status"] == "valid"]
-    selected = max(
-        valid,
-        key=lambda candidate: (
-            candidate["min_clearance_m"] if candidate["min_clearance_m"] is not None else -math.inf,
-            candidate["min_arm_arm_m"] if candidate["min_arm_arm_m"] is not None else -math.inf,
-        ),
-    ) if valid else None
+    synchronized = [candidate for candidate in valid if candidate["mode"] == "synchronized"]
+    if synchronized:
+        selected = synchronized[0]
+    else:
+        selected = max(
+            valid,
+            key=lambda candidate: (
+                candidate["min_clearance_m"] if candidate["min_clearance_m"] is not None else -math.inf,
+                candidate["min_arm_arm_m"] if candidate["min_arm_arm_m"] is not None else -math.inf,
+            ),
+        ) if valid else None
     return {
         "operation": operation,
         "status": "valid" if selected is not None else "not_found",
