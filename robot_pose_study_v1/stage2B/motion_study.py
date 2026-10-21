@@ -478,12 +478,14 @@ def plan_joint_lerp(
     return path_summary(side, samples, start_target, geom, other_q, method)
 
 
-def candidate_key(candidate: dict[str, Any]) -> tuple[float, float, float]:
+def candidate_key(candidate: dict[str, Any]) -> tuple[float, float, float, float]:
     clearance = candidate.get("min_clearance_m")
+    margin = candidate.get("min_margin_deg")
     condition = candidate.get("max_condition")
     length = candidate.get("path_length_deg")
     return (
         float(clearance) if clearance is not None else -math.inf,
+        float(margin) if margin is not None else -math.inf,
         -float(condition) if condition is not None else -math.inf,
         -float(length) if length is not None else -math.inf,
     )
