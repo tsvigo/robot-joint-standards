@@ -1,0 +1,5 @@
+[phase] distal=0.1801 m palm_dist=0.2399 m arm_arm=0.1801 m margin=3.58 deg cond=38.94 speed_ratio=0.95 stage_mismatch=0% collision_free=True
+        path L/R=0.726/0.726 m steps L/R=3.19/4.72 deg
+[stage] distal=0.1801 m palm_dist=0.2399 m arm_arm=0.1801 m margin=3.58 deg cond=38.94 speed_ratio=0.95 stage_mismatch=0% collision_free=True
+        path L/R=0.726/0.726 m steps L/R=4.91/7.25 deg
+written: /home/v/projects/робот/robot_pose_study_v1/stage2B/stage2b1/stage2b1_bilateral_P7_c0.10_strict_6d.json

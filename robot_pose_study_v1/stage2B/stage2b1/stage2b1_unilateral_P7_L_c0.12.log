@@ -1,0 +1,12 @@
+[as_is] status=valid seconds=227.2
+  S0_ready->S1_above   joint_lerp         n=130 ori=10.080 pos=  77.24mm margin=  0.07 cond=43.78 clr=  85.5mm end=0.003mm/0.0003deg
+  S1_above->S2_contact joint_lerp_alt2    n= 77 ori= 3.615 pos=  57.96mm margin=  0.07 cond=43.78 clr=  74.9mm end=0.000mm/0.0000deg
+  S2_contact->S3_manip   task_space         n= 11 ori= 0.000 pos=   0.00mm margin=  1.39 cond=21.41 clr=  74.9mm end=0.000mm/0.0000deg
+  S3_manip->S4_lift    task_space         n= 11 ori= 0.000 pos=   0.00mm margin= 14.26 cond=20.18 clr=  74.9mm end=0.000mm/0.0000deg
+  S4_lift->S5_ready   joint_lerp         n=101 ori= 7.363 pos=  46.83mm margin= 13.95 cond=14.97 clr= 110.4mm end=0.000mm/0.0000deg
+[strict_6d] status=not_found seconds=115.3
+  S0_ready->S1_above FAILED: no_candidate_passed_strict_6d
+     task_space         invalid  ori=None pos=None
+     via_lift           valid    ori=2.829398007221911e-06 pos=123.23868483127698
+     joint_lerp         valid    ori=10.07984080134793 pos=77.24383446319302
+written: /home/v/projects/робот/robot_pose_study_v1/stage2B/stage2b1/stage2b1_unilateral_P7_L_c0.12.json

@@ -1,0 +1,4364 @@
+{
+  "metadata": {
+    "stage": "2B.1",
+    "kind": "static_ik_sweep",
+    "created_utc": "2026-10-22T05:29:59.383764+00:00",
+    "mode": "6d",
+    "approach": "lateral",
+    "height_m": 0.7,
+    "width_m": 1.0,
+    "clearances_m": [
+      0.05,
+      0.1,
+      0.12,
+      0.15,
+      0.2
+    ],
+    "operations": [
+      "P6",
+      "P7"
+    ],
+    "sides": [
+      "L",
+      "R"
+    ],
+    "p7_finger_yaw_deg": 80.0,
+    "script_sha256": "6f67c0a8826517a667cd7a6fe3b15c8e294cc92641ea5de920d8e4488816262b",
+    "git_head": "13f833a428acab2059ef1825a352f2fa23585b66",
+    "definitions": {
+      "position_error_mm": "static IK residual to the commanded point",
+      "orientation_error_deg": "static IK residual of the full 6D rotation",
+      "arm_arm_parked_m": "clearance to the other arm parked at P0",
+      "arm_arm_same_state_m": "clearance when both arms hold the same named state"
+    },
+    "seconds": 270.0
+  },
+  "cases": [
+    {
+      "operation": "P6",
+      "side": "L",
+      "clearance_m": 0.05,
+      "finger": null,
+      "bed": {
+        "x_near": 0.385,
+        "x_far": 1.385,
+        "height_m": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.05
+      },
+      "seconds": 45.5,
+      "states": [
+        {
+          "label": "S0_ready",
+          "reachable": true,
+          "position_floor": [
+            0.6499999999999999,
+            0.35,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": -129.79092613033464,
+            "sh2": -5.136108890051317,
+            "sh1": -68.66243502857878,
+            "el": 112.89455944743568,
+            "rad": 31.589457619661463,
+            "w1": -71.20196928047179,
+            "w2": 10.462968588037375
+          },
+          "position_error_mm": 1.738900862856895e-07,
+          "orientation_error_deg": 9.850254521960996e-09,
+          "min_margin_deg": 18.798030719528214,
+          "min_margin_joint": "w1",
+          "condition": 5.543376024333253,
+          "within_limits": true,
+          "arm_bed_m": 0.22493463575603195,
+          "arm_torso_m": 0.11476994794931743,
+          "arm_base_m": 0.7312329663685398,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S1_above",
+          "reachable": true,
+          "position_floor": [
+            0.835,
+            0.35,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": -111.75018928792558,
+            "sh2": -3.567751166141858,
+            "sh1": -79.45560933988365,
+            "el": 77.04609569804055,
+            "rad": 1.098404130204869,
+            "w1": -55.02285515472444,
+            "w2": -10.2074952053968
+          },
+          "position_error_mm": 6.169723611685421e-07,
+          "orientation_error_deg": 7.343871610225987e-08,
+          "min_margin_deg": 10.544390660116349,
+          "min_margin_joint": "sh1",
+          "condition": 5.843564172305761,
+          "within_limits": true,
+          "arm_bed_m": 0.1749346350603282,
+          "arm_torso_m": 0.10960811166921723,
+          "arm_base_m": 0.7533004264835828,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S2_grasp",
+          "reachable": true,
+          "position_floor": [
+            0.835,
+            0.35,
+            0.7799999999999999
+          ],
+          "q_deg": {
+            "sh3": -117.51040374134598,
+            "sh2": 30.445409317442056,
+            "sh1": -48.252631965814125,
+            "el": 70.41919565011949,
+            "rad": 65.05599011628817,
+            "w1": -44.84600219476804,
+            "w2": 23.704489898779272
+          },
+          "position_error_mm": 9.603070212533517e-07,
+          "orientation_error_deg": 5.6554465728160546e-08,
+          "min_margin_deg": 21.295510101220728,
+          "min_margin_joint": "w2",
+          "condition": 6.736099195616617,
+          "within_limits": true,
+          "arm_bed_m": 0.054934635388618355,
+          "arm_torso_m": 0.1359603945834414,
+          "arm_base_m": 0.6562992125092526,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S3_tension",
+          "reachable": true,
+          "position_floor": [
+            0.7849999999999999,
+            0.35,
+            0.7799999999999999
+          ],
+          "q_deg": {
+            "sh3": -116.00562406521406,
+            "sh2": 23.659609426727407,
+            "sh1": -50.426438108534484,
+            "el": 79.72128879549805,
+            "rad": 65.55476474518213,
+            "w1": -52.25001579500329,
+            "w2": 28.352689920240774
+          },
+          "position_error_mm": 6.205008798301006e-07,
+          "orientation_error_deg": 4.0886788424261935e-08,
+          "min_margin_deg": 16.647310079759226,
+          "min_margin_joint": "w2",
+          "condition": 6.51878505769066,
+          "within_limits": true,
+          "arm_bed_m": 0.05493463544276349,
+          "arm_torso_m": 0.13710702202087754,
+          "arm_base_m": 0.6305672315631384,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S4_lift",
+          "reachable": true,
+          "position_floor": [
+            0.7849999999999999,
+            0.35,
+            0.8799999999999999
+          ],
+          "q_deg": {
+            "sh3": -112.93895832598034,
+            "sh2": -3.5066315620342534,
+            "sh1": -77.90623847133978,
+            "el": 86.56195608013253,
+            "rad": 3.4005974939061643,
+            "w1": -63.37772255427818,
+            "w2": -9.452788974624472
+          },
+          "position_error_mm": 3.4006057454273547e-07,
+          "orientation_error_deg": 7.168045599367231e-08,
+          "min_margin_deg": 12.093761528660224,
+          "min_margin_joint": "sh1",
+          "condition": 5.243978708654355,
+          "within_limits": true,
+          "arm_bed_m": 0.15493463530517543,
+          "arm_torso_m": 0.11094800374080131,
+          "arm_base_m": 0.7123582108133912,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S5_ready",
+          "reachable": true,
+          "position_floor": [
+            0.6499999999999999,
+            0.35,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": -128.34239006413125,
+            "sh2": -8.422806699410875,
+            "sh1": -74.95789971547353,
+            "el": 113.5100664276199,
+            "rad": 10.609397444561656,
+            "w1": -74.22489762919093,
+            "w2": -6.739772524556312
+          },
+          "position_error_mm": 1.0880537398414608e-07,
+          "orientation_error_deg": 5.2101948608960946e-08,
+          "min_margin_deg": 15.04210028452647,
+          "min_margin_joint": "sh1",
+          "condition": 4.814147978678878,
+          "within_limits": true,
+          "arm_bed_m": 0.22493463563933952,
+          "arm_torso_m": 0.10692453837906622,
+          "arm_base_m": 0.729960638007865,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        }
+      ]
+    },
+    {
+      "operation": "P6",
+      "side": "R",
+      "clearance_m": 0.05,
+      "finger": null,
+      "bed": {
+        "x_near": 0.385,
+        "x_far": 1.385,
+        "height_m": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.05
+      },
+      "seconds": 49.5,
+      "states": [
+        {
+          "label": "S0_ready",
+          "reachable": true,
+          "position_floor": [
+            0.6499999999999999,
+            -0.35,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": 48.87972311561008,
+            "sh2": -2.7122015355822433,
+            "sh1": -67.13714542288774,
+            "el": 119.60636106993437,
+            "rad": 53.10619835024597,
+            "w1": -73.8341718093863,
+            "w2": 32.74356240684901
+          },
+          "position_error_mm": 3.5783868909704874e-07,
+          "orientation_error_deg": 1.7875584918031322e-08,
+          "min_margin_deg": 11.120276884389916,
+          "min_margin_joint": "sh3",
+          "condition": 7.390589999273266,
+          "within_limits": true,
+          "arm_bed_m": 0.21806404226998394,
+          "arm_torso_m": 0.12125156720496318,
+          "arm_base_m": 0.7264487122643706,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S1_above",
+          "reachable": true,
+          "position_floor": [
+            0.835,
+            -0.35,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": 48.79407636678505,
+            "sh2": 23.87599507219463,
+            "sh1": -49.083598381332656,
+            "el": 88.46974320739047,
+            "rad": 64.42456189926776,
+            "w1": -42.82415976360528,
+            "w2": 31.99582506882503
+          },
+          "position_error_mm": 1.1130563223868132e-07,
+          "orientation_error_deg": 1.2472566223633315e-08,
+          "min_margin_deg": 11.205923633214951,
+          "min_margin_joint": "sh3",
+          "condition": 5.729870105358475,
+          "within_limits": true,
+          "arm_bed_m": 0.16806404208550768,
+          "arm_torso_m": 0.14252918319585295,
+          "arm_base_m": 0.752258512194818,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S2_grasp",
+          "reachable": true,
+          "position_floor": [
+            0.835,
+            -0.35,
+            0.7799999999999999
+          ],
+          "q_deg": {
+            "sh3": 52.18033935285937,
+            "sh2": 34.025055100806334,
+            "sh1": -36.286157056084136,
+            "el": 81.51038438737277,
+            "rad": 82.22725596757478,
+            "w1": -40.282254864752844,
+            "w2": 36.59589889381839
+          },
+          "position_error_mm": 4.06723572319285e-05,
+          "orientation_error_deg": 1.9038251440587579e-06,
+          "min_margin_deg": 7.772744032425223,
+          "min_margin_joint": "rad",
+          "condition": 6.229409970454626,
+          "within_limits": true,
+          "arm_bed_m": 0.04806402963442295,
+          "arm_torso_m": 0.14584570298391708,
+          "arm_base_m": 0.6527457863413325,
+          "arm_arm_parked_m": 0.18387828919323806,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S3_tension",
+          "reachable": true,
+          "position_floor": [
+            0.7849999999999999,
+            -0.35,
+            0.7799999999999999
+          ],
+          "q_deg": {
+            "sh3": 55.980969778454224,
+            "sh2": 27.56703253563683,
+            "sh1": -40.856055623610125,
+            "el": 89.5799276142779,
+            "rad": 83.12758246040714,
+            "w1": -47.237663469229346,
+            "w2": 42.40392177019851
+          },
+          "position_error_mm": 4.6134515312236474e-05,
+          "orientation_error_deg": 2.193387067851851e-06,
+          "min_margin_deg": 2.596078229801492,
+          "min_margin_joint": "w2",
+          "condition": 6.384796595163799,
+          "within_limits": true,
+          "arm_bed_m": 0.04806402430609673,
+          "arm_torso_m": 0.14636061538107598,
+          "arm_base_m": 0.6264778362424657,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S4_lift",
+          "reachable": true,
+          "position_floor": [
+            0.7849999999999999,
+            -0.35,
+            0.8799999999999999
+          ],
+          "q_deg": {
+            "sh3": 52.133396266741634,
+            "sh2": 18.19006647288872,
+            "sh1": -52.0319655580325,
+            "el": 95.91187158196287,
+            "rad": 66.11336965486572,
+            "w1": -51.28143697545074,
+            "w2": 36.346468456477275
+          },
+          "position_error_mm": 3.736307599279747e-05,
+          "orientation_error_deg": 3.6772568529507493e-06,
+          "min_margin_deg": 7.866603733258366,
+          "min_margin_joint": "sh3",
+          "condition": 6.051935532355279,
+          "within_limits": true,
+          "arm_bed_m": 0.14806401952854736,
+          "arm_torso_m": 0.14115867939873034,
+          "arm_base_m": 0.7122226964507219,
+          "arm_arm_parked_m": 0.18387828919323806,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S5_ready",
+          "reachable": true,
+          "position_floor": [
+            0.6499999999999999,
+            -0.35,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": 48.87972311561008,
+            "sh2": -2.7122015355822433,
+            "sh1": -67.13714542288774,
+            "el": 119.60636106993437,
+            "rad": 53.10619835024597,
+            "w1": -73.8341718093863,
+            "w2": 32.74356240684901
+          },
+          "position_error_mm": 3.5783868909704874e-07,
+          "orientation_error_deg": 1.7875584918031322e-08,
+          "min_margin_deg": 11.120276884389916,
+          "min_margin_joint": "sh3",
+          "condition": 7.390589999273266,
+          "within_limits": true,
+          "arm_bed_m": 0.21806404226998394,
+          "arm_torso_m": 0.12125156720496318,
+          "arm_base_m": 0.7264487122643706,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        }
+      ]
+    },
+    {
+      "operation": "P6",
+      "side": "L",
+      "clearance_m": 0.1,
+      "finger": null,
+      "bed": {
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "height_m": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1
+      },
+      "seconds": 46.3,
+      "states": [
+        {
+          "label": "S0_ready",
+          "reachable": true,
+          "position_floor": [
+            0.7,
+            0.35,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": -126.40409510076232,
+            "sh2": -6.830630850860022,
+            "sh1": -76.47121687746946,
+            "el": 105.17668880541825,
+            "rad": 7.064638848731294,
+            "w1": -68.15417882768885,
+            "w2": -8.340762857420621
+          },
+          "position_error_mm": 1.3520200348011048e-07,
+          "orientation_error_deg": 7.642501425855199e-08,
+          "min_margin_deg": 13.528783122530541,
+          "min_margin_joint": "sh1",
+          "condition": 4.718049601166608,
+          "within_limits": true,
+          "arm_bed_m": 0.22493463549806586,
+          "arm_torso_m": 0.10660655808665899,
+          "arm_base_m": 0.7444582261951984,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S1_above",
+          "reachable": true,
+          "position_floor": [
+            0.885,
+            0.35,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": -130.18710771890997,
+            "sh2": 32.882778060881506,
+            "sh1": -46.74444790042441,
+            "el": 68.25981057960962,
+            "rad": 61.14058992414604,
+            "w1": -31.810587895747105,
+            "w2": 20.036412304471988
+          },
+          "position_error_mm": 1.3475086751187475e-06,
+          "orientation_error_deg": 7.935733274942577e-08,
+          "min_margin_deg": 24.963587695528012,
+          "min_margin_joint": "w2",
+          "condition": 6.59975794485997,
+          "within_limits": true,
+          "arm_bed_m": 0.17493463532314196,
+          "arm_torso_m": 0.13687190470785549,
+          "arm_base_m": 0.7421840008007217,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S2_grasp",
+          "reachable": true,
+          "position_floor": [
+            0.885,
+            0.35,
+            0.7799999999999999
+          ],
+          "q_deg": {
+            "sh3": -115.06753644623701,
+            "sh2": 35.28421137733325,
+            "sh1": -50.57780159198725,
+            "el": 59.17260526403336,
+            "rad": 60.90490829978402,
+            "w1": -39.604834752158204,
+            "w2": 17.398524269577948
+          },
+          "position_error_mm": 1.1211116432999648e-06,
+          "orientation_error_deg": 6.779747114491821e-08,
+          "min_margin_deg": 27.601475730422052,
+          "min_margin_joint": "w2",
+          "condition": 7.792582603456204,
+          "within_limits": true,
+          "arm_bed_m": 0.054934635412496144,
+          "arm_torso_m": 0.13178590164114518,
+          "arm_base_m": 0.6839931817059992,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S3_tension",
+          "reachable": true,
+          "position_floor": [
+            0.835,
+            0.35,
+            0.7799999999999999
+          ],
+          "q_deg": {
+            "sh3": -99.22228607602887,
+            "sh2": 4.621979348265423,
+            "sh1": -74.7556428320159,
+            "el": 68.63848038907942,
+            "rad": 13.83007797139379,
+            "w1": -60.17729671764332,
+            "w2": -2.353013298188269
+          },
+          "position_error_mm": 1.6334499286078827e-07,
+          "orientation_error_deg": 1.5697176708597656e-08,
+          "min_margin_deg": 15.244357167984106,
+          "min_margin_joint": "sh1",
+          "condition": 6.4263559193103115,
+          "within_limits": true,
+          "arm_bed_m": 0.05493463556996041,
+          "arm_torso_m": 0.11868402059365558,
+          "arm_base_m": 0.6514775885239315,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S4_lift",
+          "reachable": true,
+          "position_floor": [
+            0.835,
+            0.35,
+            0.8799999999999999
+          ],
+          "q_deg": {
+            "sh3": -116.7253491594092,
+            "sh2": 13.253188642316115,
+            "sh1": -64.80241275721265,
+            "el": 76.76797258819875,
+            "rad": 36.43996464504314,
+            "w1": -50.63443547756264,
+            "w2": 11.671624726364998
+          },
+          "position_error_mm": 8.250701800555481e-08,
+          "orientation_error_deg": 6.249290627853922e-09,
+          "min_margin_deg": 25.19758724278735,
+          "min_margin_joint": "sh1",
+          "condition": 5.984953628379557,
+          "within_limits": true,
+          "arm_bed_m": 0.15493463572873262,
+          "arm_torso_m": 0.12686321617515978,
+          "arm_base_m": 0.7382716744475907,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S5_ready",
+          "reachable": true,
+          "position_floor": [
+            0.7,
+            0.35,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": -127.91142327091723,
+            "sh2": -3.104549942248544,
+            "sh1": -70.86691755496693,
+            "el": 104.97039386234891,
+            "rad": 23.47210141549022,
+            "w1": -66.15434046469531,
+            "w2": 4.571738803835061
+          },
+          "position_error_mm": 1.3599349521519138e-07,
+          "orientation_error_deg": 9.403409451390847e-09,
+          "min_margin_deg": 19.133082445033068,
+          "min_margin_joint": "sh1",
+          "condition": 5.041428786018244,
+          "within_limits": true,
+          "arm_bed_m": 0.2249346357018957,
+          "arm_torso_m": 0.11385854033943786,
+          "arm_base_m": 0.7453520721084728,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        }
+      ]
+    },
+    {
+      "operation": "P6",
+      "side": "R",
+      "clearance_m": 0.1,
+      "finger": null,
+      "bed": {
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "height_m": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1
+      },
+      "seconds": 49.3,
+      "states": [
+        {
+          "label": "S0_ready",
+          "reachable": true,
+          "position_floor": [
+            0.7,
+            -0.35,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": 47.5926831068173,
+            "sh2": 3.7080575844565153,
+            "sh1": -62.60838079759161,
+            "el": 112.27388521971034,
+            "rad": 54.18487534381299,
+            "w1": -64.22078796560947,
+            "w2": 32.52972224858937
+          },
+          "position_error_mm": 2.9648963803081134e-07,
+          "orientation_error_deg": 2.157194090662554e-08,
+          "min_margin_deg": 12.407316893182703,
+          "min_margin_joint": "sh3",
+          "condition": 6.522043864527734,
+          "within_limits": true,
+          "arm_bed_m": 0.2180640422671018,
+          "arm_torso_m": 0.12790856641746912,
+          "arm_base_m": 0.7418081915858541,
+          "arm_arm_parked_m": 0.18387828919323806,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S1_above",
+          "reachable": true,
+          "position_floor": [
+            0.885,
+            -0.35,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": 41.96650728644899,
+            "sh2": 34.28683128436623,
+            "sh1": -38.18464864921991,
+            "el": 79.78833749637252,
+            "rad": 72.42236784791916,
+            "w1": -30.98056465894464,
+            "w2": 30.8219382167829
+          },
+          "position_error_mm": 3.4374028884844963e-07,
+          "orientation_error_deg": 2.7185795715473865e-08,
+          "min_margin_deg": 14.1780617832171,
+          "min_margin_joint": "w2",
+          "condition": 5.851586386987394,
+          "within_limits": true,
+          "arm_bed_m": 0.16806404199237418,
+          "arm_torso_m": 0.1461382948731852,
+          "arm_base_m": 0.7486255041002905,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S2_grasp",
+          "reachable": true,
+          "position_floor": [
+            0.885,
+            -0.35,
+            0.7799999999999999
+          ],
+          "q_deg": {
+            "sh3": 50.56011595920528,
+            "sh2": 39.67337189102025,
+            "sh1": -34.5942416635485,
+            "el": 72.23221364743132,
+            "rad": 80.2218389442596,
+            "w1": -35.44106141125705,
+            "w2": 30.590543348226756
+          },
+          "position_error_mm": 4.545639972982119e-05,
+          "orientation_error_deg": 2.2080395640073178e-06,
+          "min_margin_deg": 9.439884040794723,
+          "min_margin_joint": "sh3",
+          "condition": 6.654540486040321,
+          "within_limits": true,
+          "arm_bed_m": 0.04806403070865166,
+          "arm_torso_m": 0.14349831683410197,
+          "arm_base_m": 0.6813634527897434,
+          "arm_arm_parked_m": 0.18387828919323806,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S3_tension",
+          "reachable": true,
+          "position_floor": [
+            0.835,
+            -0.35,
+            0.7799999999999999
+          ],
+          "q_deg": {
+            "sh3": 52.18033935285937,
+            "sh2": 34.025055100806334,
+            "sh1": -36.286157056084136,
+            "el": 81.51038438737277,
+            "rad": 82.22725596757478,
+            "w1": -40.282254864752844,
+            "w2": 36.59589889381839
+          },
+          "position_error_mm": 4.06723572319285e-05,
+          "orientation_error_deg": 1.9038251440587579e-06,
+          "min_margin_deg": 7.772744032425223,
+          "min_margin_joint": "rad",
+          "condition": 6.229409970454626,
+          "within_limits": true,
+          "arm_bed_m": 0.04806402963442295,
+          "arm_torso_m": 0.14584570298391708,
+          "arm_base_m": 0.6527457863413325,
+          "arm_arm_parked_m": 0.18387828919323806,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S4_lift",
+          "reachable": true,
+          "position_floor": [
+            0.835,
+            -0.35,
+            0.8799999999999999
+          ],
+          "q_deg": {
+            "sh3": 48.51893513626556,
+            "sh2": 26.375775825141496,
+            "sh1": -45.47137932556454,
+            "el": 87.69771903763471,
+            "rad": 69.27148502761223,
+            "w1": -41.380025036585074,
+            "w2": 33.91473612873105
+          },
+          "position_error_mm": 1.6218771313322488e-07,
+          "orientation_error_deg": 1.7096778135124357e-08,
+          "min_margin_deg": 11.08526387126895,
+          "min_margin_joint": "w2",
+          "condition": 5.774109887999838,
+          "within_limits": true,
+          "arm_bed_m": 0.14806404204894624,
+          "arm_torso_m": 0.1444787149394689,
+          "arm_base_m": 0.7361918603333877,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S5_ready",
+          "reachable": true,
+          "position_floor": [
+            0.7,
+            -0.35,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": 47.84949467727474,
+            "sh2": 3.292959366583047,
+            "sh1": -63.24957233965213,
+            "el": 112.28404039386146,
+            "rad": 53.018684308723365,
+            "w1": -64.80324247319841,
+            "w2": 31.674800053267436
+          },
+          "position_error_mm": 2.8601140353227975e-07,
+          "orientation_error_deg": 2.1351808871175537e-08,
+          "min_margin_deg": 12.150505322725259,
+          "min_margin_joint": "sh3",
+          "condition": 6.4765126063790985,
+          "within_limits": true,
+          "arm_bed_m": 0.2180640422607078,
+          "arm_torso_m": 0.1271954443992379,
+          "arm_base_m": 0.7417118078330361,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        }
+      ]
+    },
+    {
+      "operation": "P6",
+      "side": "L",
+      "clearance_m": 0.12,
+      "finger": null,
+      "bed": {
+        "x_near": 0.455,
+        "x_far": 1.455,
+        "height_m": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.12
+      },
+      "seconds": 52.5,
+      "states": [
+        {
+          "label": "S0_ready",
+          "reachable": true,
+          "position_floor": [
+            0.72,
+            0.35,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": -130.62925655039612,
+            "sh2": 4.3969267050505,
+            "sh1": -62.39511286630312,
+            "el": 101.24873592532239,
+            "rad": 42.034206137649015,
+            "w1": -58.154186602554624,
+            "w2": 18.259121671175826
+          },
+          "position_error_mm": 1.7061948219319046e-08,
+          "orientation_error_deg": 5.174348318817694e-09,
+          "min_margin_deg": 26.740878328824174,
+          "min_margin_joint": "w2",
+          "condition": 5.540398637046749,
+          "within_limits": true,
+          "arm_bed_m": 0.224934635720408,
+          "arm_torso_m": 0.1247455565205725,
+          "arm_base_m": 0.7537492483359584,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S1_above",
+          "reachable": true,
+          "position_floor": [
+            0.905,
+            0.35,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": -113.88283810557469,
+            "sh2": 18.207196060231233,
+            "sh1": -66.69962408275107,
+            "el": 61.40786670217301,
+            "rad": 33.31253477918853,
+            "w1": -39.70208734587976,
+            "w2": 7.057379982875496
+          },
+          "position_error_mm": 3.028163713008732e-08,
+          "orientation_error_deg": 4.899002739155651e-09,
+          "min_margin_deg": 23.300375917248928,
+          "min_margin_joint": "sh1",
+          "condition": 7.356822290415315,
+          "within_limits": true,
+          "arm_bed_m": 0.17493463572550455,
+          "arm_torso_m": 0.1252782311498506,
+          "arm_base_m": 0.749080085080982,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S2_grasp",
+          "reachable": true,
+          "position_floor": [
+            0.905,
+            0.35,
+            0.7799999999999999
+          ],
+          "q_deg": {
+            "sh3": -101.00667862985985,
+            "sh2": 23.19487161349868,
+            "sh1": -66.59395349841135,
+            "el": 51.76210074536885,
+            "rad": 36.81087495731218,
+            "w1": -44.05041773634304,
+            "w2": 6.660577788425216
+          },
+          "position_error_mm": 8.286315176232557e-08,
+          "orientation_error_deg": 8.470073789235263e-09,
+          "min_margin_deg": 23.406046501588648,
+          "min_margin_joint": "sh1",
+          "condition": 8.843716952401701,
+          "within_limits": true,
+          "arm_bed_m": 0.05493463571623895,
+          "arm_torso_m": 0.12404381757325748,
+          "arm_base_m": 0.6940384528775545,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S3_tension",
+          "reachable": true,
+          "position_floor": [
+            0.855,
+            0.35,
+            0.7799999999999999
+          ],
+          "q_deg": {
+            "sh3": -126.8647006739849,
+            "sh2": 38.69895688899311,
+            "sh1": -36.685568857054626,
+            "el": 67.34317645869321,
+            "rad": 75.54207427642471,
+            "w1": -36.34664350718459,
+            "w2": 24.646971380007948
+          },
+          "position_error_mm": 1.6717821504769033e-06,
+          "orientation_error_deg": 9.540186192558434e-08,
+          "min_margin_deg": 14.457925723575286,
+          "min_margin_joint": "rad",
+          "condition": 6.821760884983734,
+          "within_limits": true,
+          "arm_bed_m": 0.054934635353916336,
+          "arm_torso_m": 0.13804023323850134,
+          "arm_base_m": 0.6680109991944303,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S4_lift",
+          "reachable": true,
+          "position_floor": [
+            0.855,
+            0.35,
+            0.8799999999999999
+          ],
+          "q_deg": {
+            "sh3": -119.1125089346673,
+            "sh2": 19.958570748837364,
+            "sh1": -59.92520423095639,
+            "el": 72.76554637690164,
+            "rad": 44.95383329959454,
+            "w1": -44.73732858642008,
+            "w2": 15.217740200317918
+          },
+          "position_error_mm": 2.0656444832172824e-07,
+          "orientation_error_deg": 1.4236157963581719e-08,
+          "min_margin_deg": 29.78225979968208,
+          "min_margin_joint": "w2",
+          "condition": 6.293533121966241,
+          "within_limits": true,
+          "arm_bed_m": 0.15493463562634874,
+          "arm_torso_m": 0.13072770188330718,
+          "arm_base_m": 0.7483516605282845,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S5_ready",
+          "reachable": true,
+          "position_floor": [
+            0.72,
+            0.35,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": -130.7656706195477,
+            "sh2": 4.606382049026628,
+            "sh1": -62.10458712055176,
+            "el": 101.24144031656166,
+            "rad": 42.581494186219956,
+            "w1": -57.93099951114033,
+            "w2": 18.637857671174174
+          },
+          "position_error_mm": 1.42237262925884e-07,
+          "orientation_error_deg": 6.4662150025849995e-09,
+          "min_margin_deg": 26.362142328825826,
+          "min_margin_joint": "w2",
+          "condition": 5.5534646541574695,
+          "within_limits": true,
+          "arm_bed_m": 0.22493463573458777,
+          "arm_torso_m": 0.1250662674698944,
+          "arm_base_m": 0.7538071243762723,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        }
+      ]
+    },
+    {
+      "operation": "P6",
+      "side": "R",
+      "clearance_m": 0.12,
+      "finger": null,
+      "bed": {
+        "x_near": 0.455,
+        "x_far": 1.455,
+        "height_m": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.12
+      },
+      "seconds": 45.9,
+      "states": [
+        {
+          "label": "S0_ready",
+          "reachable": true,
+          "position_floor": [
+            0.72,
+            -0.35,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": 47.49055932759192,
+            "sh2": 5.788167978074211,
+            "sh1": -61.61844163020177,
+            "el": 109.23271689452402,
+            "rad": 53.472464202604634,
+            "w1": -61.242457280678764,
+            "w2": 31.44802346466923
+          },
+          "position_error_mm": 2.7060113833404084e-07,
+          "orientation_error_deg": 2.2671978441965674e-08,
+          "min_margin_deg": 12.509440672408083,
+          "min_margin_joint": "sh3",
+          "condition": 6.20922115651742,
+          "within_limits": true,
+          "arm_bed_m": 0.21806404225329062,
+          "arm_torso_m": 0.1295628989917117,
+          "arm_base_m": 0.748628776596427,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S1_above",
+          "reachable": true,
+          "position_floor": [
+            0.905,
+            -0.35,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": 42.31670283180181,
+            "sh2": 36.363812949599456,
+            "sh1": -38.278692290868186,
+            "el": 75.75339636693053,
+            "rad": 71.7037098670103,
+            "w1": -29.330094903300093,
+            "w2": 28.733255251186858
+          },
+          "position_error_mm": 4.1603668370094316e-07,
+          "orientation_error_deg": 3.0411686687192087e-08,
+          "min_margin_deg": 16.266744748813142,
+          "min_margin_joint": "w2",
+          "condition": 6.1170294122671836,
+          "within_limits": true,
+          "arm_bed_m": 0.1680640419723946,
+          "arm_torso_m": 0.1452722337890438,
+          "arm_base_m": 0.7474637663989614,
+          "arm_arm_parked_m": 0.18387828919323806,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S2_grasp",
+          "reachable": true,
+          "position_floor": [
+            0.905,
+            -0.35,
+            0.7799999999999999
+          ],
+          "q_deg": {
+            "sh3": 50.32706740142589,
+            "sh2": 41.94162199002157,
+            "sh1": -34.38361703849394,
+            "el": 68.12374566847907,
+            "rad": 79.33688751206304,
+            "w1": -33.72147437155696,
+            "w2": 28.080874568585635
+          },
+          "position_error_mm": 4.28578283630748e-05,
+          "orientation_error_deg": 2.1319828957759067e-06,
+          "min_margin_deg": 9.672932598574107,
+          "min_margin_joint": "sh3",
+          "condition": 6.988154026678045,
+          "within_limits": true,
+          "arm_bed_m": 0.04806403224934634,
+          "arm_torso_m": 0.14216365786585106,
+          "arm_base_m": 0.6930631000631032,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S3_tension",
+          "reachable": true,
+          "position_floor": [
+            0.855,
+            -0.35,
+            0.7799999999999999
+          ],
+          "q_deg": {
+            "sh3": 51.607748890581554,
+            "sh2": 36.17193143963151,
+            "sh1": -35.73387802216194,
+            "el": 77.92596523978597,
+            "rad": 81.20289231147993,
+            "w1": -38.4173832287268,
+            "w2": 34.1726903455834
+          },
+          "position_error_mm": 4.272030565379408e-05,
+          "orientation_error_deg": 2.02108927291716e-06,
+          "min_margin_deg": 8.392251109418446,
+          "min_margin_joint": "sh3",
+          "condition": 6.34337080880757,
+          "within_limits": true,
+          "arm_bed_m": 0.04806402987850682,
+          "arm_torso_m": 0.14499161624352042,
+          "arm_base_m": 0.6639129915734389,
+          "arm_arm_parked_m": 0.18387828919323806,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S4_lift",
+          "reachable": true,
+          "position_floor": [
+            0.855,
+            -0.35,
+            0.8799999999999999
+          ],
+          "q_deg": {
+            "sh3": 42.0815629778603,
+            "sh2": 32.64020484696133,
+            "sh1": -36.03845174616239,
+            "el": 84.67058060238647,
+            "rad": 76.43272218221206,
+            "w1": -33.264176779519026,
+            "w2": 34.51532403992758
+          },
+          "position_error_mm": 3.499730279085679e-07,
+          "orientation_error_deg": 2.8758557230177905e-08,
+          "min_margin_deg": 10.484675960072423,
+          "min_margin_joint": "w2",
+          "condition": 5.643640234577841,
+          "within_limits": true,
+          "arm_bed_m": 0.148064041996748,
+          "arm_torso_m": 0.14768508674509934,
+          "arm_base_m": 0.7467176348389809,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S5_ready",
+          "reachable": true,
+          "position_floor": [
+            0.72,
+            -0.35,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": 47.49055932759192,
+            "sh2": 5.788167978074211,
+            "sh1": -61.61844163020177,
+            "el": 109.23271689452402,
+            "rad": 53.472464202604634,
+            "w1": -61.242457280678764,
+            "w2": 31.44802346466923
+          },
+          "position_error_mm": 2.7060113833404084e-07,
+          "orientation_error_deg": 2.2671978441965674e-08,
+          "min_margin_deg": 12.509440672408083,
+          "min_margin_joint": "sh3",
+          "condition": 6.20922115651742,
+          "within_limits": true,
+          "arm_bed_m": 0.21806404225329062,
+          "arm_torso_m": 0.1295628989917117,
+          "arm_base_m": 0.748628776596427,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        }
+      ]
+    },
+    {
+      "operation": "P6",
+      "side": "L",
+      "clearance_m": 0.15,
+      "finger": null,
+      "bed": {
+        "x_near": 0.485,
+        "x_far": 1.4849999999999999,
+        "height_m": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.15
+      },
+      "seconds": 56.9,
+      "states": [
+        {
+          "label": "S0_ready",
+          "reachable": true,
+          "position_floor": [
+            0.75,
+            0.35,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": -123.60772028328681,
+            "sh2": -5.881982026569411,
+            "sh1": -78.08126181719867,
+            "el": 96.17357852665899,
+            "rad": 3.774722237073387,
+            "w1": -62.10346405462247,
+            "w2": -9.819331784377813
+          },
+          "position_error_mm": 3.098908682892792e-07,
+          "orientation_error_deg": 9.250860960176902e-08,
+          "min_margin_deg": 11.918738182801334,
+          "min_margin_joint": "sh1",
+          "condition": 4.898119896774329,
+          "within_limits": true,
+          "arm_bed_m": 0.22493463528431773,
+          "arm_torso_m": 0.10620586772909556,
+          "arm_base_m": 0.7617938702866045,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S1_above",
+          "reachable": true,
+          "position_floor": [
+            0.935,
+            0.35,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": -114.74476434808092,
+            "sh2": 26.688715906950222,
+            "sh1": -63.1479668708065,
+            "el": 53.630321595658394,
+            "rad": 41.11740832986929,
+            "w1": -32.763382324764414,
+            "w2": 8.365508124136678
+          },
+          "position_error_mm": 3.741190525206454e-07,
+          "orientation_error_deg": 2.4558358594385752e-08,
+          "min_margin_deg": 26.8520331291935,
+          "min_margin_joint": "sh1",
+          "condition": 8.57529544128945,
+          "within_limits": true,
+          "arm_bed_m": 0.17493463560128125,
+          "arm_torso_m": 0.12685330945608037,
+          "arm_base_m": 0.7427689011382204,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S2_grasp",
+          "reachable": true,
+          "position_floor": [
+            0.935,
+            0.35,
+            0.7799999999999999
+          ],
+          "q_deg": {
+            "sh3": -116.86594772467903,
+            "sh2": 45.137332014819506,
+            "sh1": -47.58684044625521,
+            "el": 46.22454929213445,
+            "rad": 64.48290571017962,
+            "w1": -31.23769327054938,
+            "w2": 12.3334309292769
+          },
+          "position_error_mm": 1.4740918211367692e-06,
+          "orientation_error_deg": 9.620638987465472e-08,
+          "min_margin_deg": 25.517094289820378,
+          "min_margin_joint": "rad",
+          "condition": 10.019735834445994,
+          "within_limits": true,
+          "arm_bed_m": 0.05493463552188242,
+          "arm_torso_m": 0.12694439115763362,
+          "arm_base_m": 0.706532801126583,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S3_tension",
+          "reachable": true,
+          "position_floor": [
+            0.885,
+            0.35,
+            0.7799999999999999
+          ],
+          "q_deg": {
+            "sh3": -94.31104103138084,
+            "sh2": 3.450812739871304,
+            "sh1": -77.73026831877155,
+            "el": 55.89432707788433,
+            "rad": 6.993097751601437,
+            "w1": -52.19767769951867,
+            "w2": -6.4736092449429545
+          },
+          "position_error_mm": 3.718507086369183e-07,
+          "orientation_error_deg": 2.0602130203850142e-08,
+          "min_margin_deg": 12.26973168122845,
+          "min_margin_joint": "sh1",
+          "condition": 7.848507755108728,
+          "within_limits": true,
+          "arm_bed_m": 0.05493463541851622,
+          "arm_torso_m": 0.11590767077925888,
+          "arm_base_m": 0.6801307568473083,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S4_lift",
+          "reachable": true,
+          "position_floor": [
+            0.885,
+            0.35,
+            0.8799999999999999
+          ],
+          "q_deg": {
+            "sh3": -108.99671719778807,
+            "sh2": 8.45054425472297,
+            "sh1": -72.87062902767688,
+            "el": 64.78994151323298,
+            "rad": 19.582304418148656,
+            "w1": -46.980558103351115,
+            "w2": 0.7448341537437263
+          },
+          "position_error_mm": 9.120333865142319e-08,
+          "orientation_error_deg": 4.316513283200116e-09,
+          "min_margin_deg": 17.129370972323116,
+          "min_margin_joint": "sh1",
+          "condition": 6.878708028905197,
+          "within_limits": true,
+          "arm_bed_m": 0.1549346356585461,
+          "arm_torso_m": 0.11975728727172864,
+          "arm_base_m": 0.7567231673283383,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S5_ready",
+          "reachable": true,
+          "position_floor": [
+            0.75,
+            0.35,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": -131.522412305964,
+            "sh2": 9.492605364854299,
+            "sh1": -58.85689460076184,
+            "el": 96.08227192074408,
+            "rad": 46.71557773899134,
+            "w1": -51.96533957242276,
+            "w2": 20.72490590957762
+          },
+          "position_error_mm": 1.3166183867737826e-07,
+          "orientation_error_deg": 9.05869907546894e-09,
+          "min_margin_deg": 24.27509409042238,
+          "min_margin_joint": "w2",
+          "condition": 5.497439304273186,
+          "within_limits": true,
+          "arm_bed_m": 0.22493463568725142,
+          "arm_torso_m": 0.12927540783088226,
+          "arm_base_m": 0.757176083732046,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        }
+      ]
+    },
+    {
+      "operation": "P6",
+      "side": "R",
+      "clearance_m": 0.15,
+      "finger": null,
+      "bed": {
+        "x_near": 0.485,
+        "x_far": 1.4849999999999999,
+        "height_m": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.15
+      },
+      "seconds": 44.0,
+      "states": [
+        {
+          "label": "S0_ready",
+          "reachable": true,
+          "position_floor": [
+            0.75,
+            -0.35,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": 46.487328854516555,
+            "sh2": 10.289154455281139,
+            "sh1": -58.14560487273239,
+            "el": 104.54456599063924,
+            "rad": 55.884246909470974,
+            "w1": -55.123934449565674,
+            "w2": 32.03420511512998
+          },
+          "position_error_mm": 2.387717835872353e-07,
+          "orientation_error_deg": 1.9387529359525087e-08,
+          "min_margin_deg": 12.965794884870022,
+          "min_margin_joint": "w2",
+          "condition": 5.897793095936657,
+          "within_limits": true,
+          "arm_bed_m": 0.21806404222520998,
+          "arm_torso_m": 0.13385181294375664,
+          "arm_base_m": 0.7599343523280032,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S1_above",
+          "reachable": true,
+          "position_floor": [
+            0.935,
+            -0.35,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": 41.366322861082594,
+            "sh2": 40.480175403254904,
+            "sh1": -36.47154684960431,
+            "el": 69.47304512381764,
+            "rad": 72.48432935024724,
+            "w1": -25.804875341976878,
+            "w2": 25.917223449970614
+          },
+          "position_error_mm": 5.85959050982364e-07,
+          "orientation_error_deg": 3.8961254669638264e-08,
+          "min_margin_deg": 17.515670649752764,
+          "min_margin_joint": "rad",
+          "condition": 6.640276576209463,
+          "within_limits": true,
+          "arm_bed_m": 0.1680640419744836,
+          "arm_torso_m": 0.14424863729552206,
+          "arm_base_m": 0.7459361808229512,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S2_grasp",
+          "reachable": true,
+          "position_floor": [
+            0.935,
+            -0.35,
+            0.7799999999999999
+          ],
+          "q_deg": {
+            "sh3": 48.70649509981762,
+            "sh2": 46.12430979557255,
+            "sh1": -32.47381117282882,
+            "el": 61.61185454510862,
+            "rad": 79.48363912898081,
+            "w1": -30.45796263487716,
+            "w2": 24.404643397231002
+          },
+          "position_error_mm": 1.0554628214688736e-06,
+          "orientation_error_deg": 6.583558021469492e-08,
+          "min_margin_deg": 10.516360871019188,
+          "min_margin_joint": "rad",
+          "condition": 7.674621512496195,
+          "within_limits": true,
+          "arm_bed_m": 0.04806404192711071,
+          "arm_torso_m": 0.14012801240596873,
+          "arm_base_m": 0.7056158050479737,
+          "arm_arm_parked_m": 0.18387828919323806,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S3_tension",
+          "reachable": true,
+          "position_floor": [
+            0.885,
+            -0.35,
+            0.7799999999999999
+          ],
+          "q_deg": {
+            "sh3": 50.56011595920528,
+            "sh2": 39.67337189102025,
+            "sh1": -34.5942416635485,
+            "el": 72.23221364743132,
+            "rad": 80.2218389442596,
+            "w1": -35.44106141125705,
+            "w2": 30.590543348226756
+          },
+          "position_error_mm": 4.545639972982119e-05,
+          "orientation_error_deg": 2.2080395640073178e-06,
+          "min_margin_deg": 9.439884040794723,
+          "min_margin_joint": "sh3",
+          "condition": 6.654540486040321,
+          "within_limits": true,
+          "arm_bed_m": 0.04806403070865166,
+          "arm_torso_m": 0.14349831683410197,
+          "arm_base_m": 0.6813634527897434,
+          "arm_arm_parked_m": 0.18387828919323806,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S4_lift",
+          "reachable": true,
+          "position_floor": [
+            0.885,
+            -0.35,
+            0.8799999999999999
+          ],
+          "q_deg": {
+            "sh3": 42.55099138869909,
+            "sh2": 35.502706230051366,
+            "sh1": -36.39311009096222,
+            "el": 78.94452218173004,
+            "rad": 74.80916114002991,
+            "w1": -31.138771516984303,
+            "w2": 31.271506240625833
+          },
+          "position_error_mm": 4.06141218792103e-07,
+          "orientation_error_deg": 3.0887957403326326e-08,
+          "min_margin_deg": 13.728493759374167,
+          "min_margin_joint": "w2",
+          "condition": 5.926709761724369,
+          "within_limits": true,
+          "arm_bed_m": 0.1480640419804295,
+          "arm_torso_m": 0.14640568027378448,
+          "arm_base_m": 0.7477927985301265,
+          "arm_arm_parked_m": 0.18387828919323806,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S5_ready",
+          "reachable": true,
+          "position_floor": [
+            0.75,
+            -0.35,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": 46.487328854516555,
+            "sh2": 10.289154455281139,
+            "sh1": -58.14560487273239,
+            "el": 104.54456599063924,
+            "rad": 55.884246909470974,
+            "w1": -55.123934449565674,
+            "w2": 32.03420511512998
+          },
+          "position_error_mm": 2.387717835872353e-07,
+          "orientation_error_deg": 1.9387529359525087e-08,
+          "min_margin_deg": 12.965794884870022,
+          "min_margin_joint": "w2",
+          "condition": 5.897793095936657,
+          "within_limits": true,
+          "arm_bed_m": 0.21806404222520998,
+          "arm_torso_m": 0.13385181294375664,
+          "arm_base_m": 0.7599343523280032,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        }
+      ]
+    },
+    {
+      "operation": "P6",
+      "side": "L",
+      "clearance_m": 0.2,
+      "finger": null,
+      "bed": {
+        "x_near": 0.535,
+        "x_far": 1.5350000000000001,
+        "height_m": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.2
+      },
+      "seconds": 68.2,
+      "states": [
+        {
+          "label": "S0_ready",
+          "reachable": true,
+          "position_floor": [
+            0.8,
+            0.35,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": -124.92415268948147,
+            "sh2": 6.465854605979014,
+            "sh1": -67.58115090296545,
+            "el": 86.77384473952405,
+            "rad": 29.394556742813727,
+            "w1": -51.776443986525514,
+            "w2": 8.467423879441105
+          },
+          "position_error_mm": 1.0645212751406509e-07,
+          "orientation_error_deg": 4.7310184533254294e-09,
+          "min_margin_deg": 22.418849097034553,
+          "min_margin_joint": "sh1",
+          "condition": 5.404589334277048,
+          "within_limits": true,
+          "arm_bed_m": 0.2249346357317749,
+          "arm_torso_m": 0.12148946810017212,
+          "arm_base_m": 0.7588733215046486,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S1_above",
+          "reachable": true,
+          "position_floor": [
+            0.9850000000000001,
+            0.35,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": -120.06863727007726,
+            "sh2": 44.869111056079255,
+            "sh1": -54.25661005468553,
+            "el": 39.0288070138045,
+            "rad": 57.2013300383608,
+            "w1": -20.327355412345685,
+            "w2": 7.51523694003501
+          },
+          "position_error_mm": 1.3363157941186716e-06,
+          "orientation_error_deg": 1.210002534188061e-07,
+          "min_margin_deg": 32.51523694003501,
+          "min_margin_joint": "w2",
+          "condition": 12.257559338969857,
+          "within_limits": true,
+          "arm_bed_m": 0.17493463574338802,
+          "arm_torso_m": 0.12516217866243362,
+          "arm_base_m": 0.7322422816196856,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S2_grasp",
+          "reachable": true,
+          "position_floor": [
+            0.9850000000000001,
+            0.35,
+            0.7799999999999999
+          ],
+          "q_deg": {
+            "sh3": -115.35567260905317,
+            "sh2": 56.55273682819735,
+            "sh1": -48.187992391002,
+            "el": 27.6486417387962,
+            "rad": 67.21229487065517,
+            "w1": -23.184126969493427,
+            "w2": 3.848643258885507
+          },
+          "position_error_mm": 6.053182250014565e-07,
+          "orientation_error_deg": 3.8251198515174074e-08,
+          "min_margin_deg": 22.78770512934483,
+          "min_margin_joint": "rad",
+          "condition": 16.90053540750935,
+          "within_limits": true,
+          "arm_bed_m": 0.05493463588330798,
+          "arm_torso_m": 0.11617672753774232,
+          "arm_base_m": 0.6985601417880973,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S3_tension",
+          "reachable": true,
+          "position_floor": [
+            0.935,
+            0.35,
+            0.7799999999999999
+          ],
+          "q_deg": {
+            "sh3": -132.12040084073718,
+            "sh2": 51.47349551653701,
+            "sh1": -30.86219203917419,
+            "el": 48.72983168347899,
+            "rad": 77.79259053391607,
+            "w1": -26.671369633425535,
+            "w2": 15.268210955581921
+          },
+          "position_error_mm": 2.1614391256351025e-06,
+          "orientation_error_deg": 1.317174389731626e-07,
+          "min_margin_deg": 12.20740946608393,
+          "min_margin_joint": "rad",
+          "condition": 9.216582344039125,
+          "within_limits": true,
+          "arm_bed_m": 0.05493463556876492,
+          "arm_torso_m": 0.13108661443367792,
+          "arm_base_m": 0.6978086408043275,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S4_lift",
+          "reachable": true,
+          "position_floor": [
+            0.935,
+            0.35,
+            0.8799999999999999
+          ],
+          "q_deg": {
+            "sh3": -100.0796625969691,
+            "sh2": 0.6384173936010464,
+            "sh1": -79.74438808235104,
+            "el": 49.7542085177019,
+            "rad": 3.1349734451154356,
+            "w1": -39.89985536461223,
+            "w2": -7.980777564068888
+          },
+          "position_error_mm": 5.014383803407669e-07,
+          "orientation_error_deg": 2.399263660526705e-08,
+          "min_margin_deg": 10.255611917648963,
+          "min_margin_joint": "sh1",
+          "condition": 8.82872216938061,
+          "within_limits": true,
+          "arm_bed_m": 0.1549346353145999,
+          "arm_torso_m": 0.11294575545798403,
+          "arm_base_m": 0.7634718707051333,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S5_ready",
+          "reachable": true,
+          "position_floor": [
+            0.8,
+            0.35,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": -127.86642446064151,
+            "sh2": 11.35826501176955,
+            "sh1": -62.074139052653294,
+            "el": 86.88507974848872,
+            "rad": 39.745660276851886,
+            "w1": -48.359210003354995,
+            "w2": 14.975696460349425
+          },
+          "position_error_mm": 9.995751267159713e-08,
+          "orientation_error_deg": 5.663376581483297e-09,
+          "min_margin_deg": 27.925860947346706,
+          "min_margin_joint": "sh1",
+          "condition": 5.485094786533634,
+          "within_limits": true,
+          "arm_bed_m": 0.224934635716786,
+          "arm_torso_m": 0.12728826685138367,
+          "arm_base_m": 0.7555772230859055,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        }
+      ]
+    },
+    {
+      "operation": "P6",
+      "side": "R",
+      "clearance_m": 0.2,
+      "finger": null,
+      "bed": {
+        "x_near": 0.535,
+        "x_far": 1.5350000000000001,
+        "height_m": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.2
+      },
+      "seconds": 54.2,
+      "states": [
+        {
+          "label": "S0_ready",
+          "reachable": true,
+          "position_floor": [
+            0.8,
+            -0.35,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": 46.055509285144886,
+            "sh2": 16.31825998074914,
+            "sh1": -54.96774495720304,
+            "el": 96.3126416210675,
+            "rad": 56.49475670934434,
+            "w1": -47.4365050366964,
+            "w2": 30.16057878821299
+          },
+          "position_error_mm": 1.5459087180201343e-07,
+          "orientation_error_deg": 1.2303631572336813e-08,
+          "min_margin_deg": 13.944490714855114,
+          "min_margin_joint": "sh3",
+          "condition": 5.559903881280629,
+          "within_limits": true,
+          "arm_bed_m": 0.21806404215759295,
+          "arm_torso_m": 0.13756716959578003,
+          "arm_base_m": 0.7575616680420034,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S1_above",
+          "reachable": true,
+          "position_floor": [
+            0.9850000000000001,
+            -0.35,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": 41.92937578593842,
+            "sh2": 47.05813410894347,
+            "sh1": -36.115513932107326,
+            "el": 57.38234834484199,
+            "rad": 72.41285157866221,
+            "w1": -21.104181185341012,
+            "w2": 20.0563705974508
+          },
+          "position_error_mm": 1.0619448512960917e-06,
+          "orientation_error_deg": 6.52700507614069e-08,
+          "min_margin_deg": 17.587148421337787,
+          "min_margin_joint": "rad",
+          "condition": 8.169954109177912,
+          "within_limits": true,
+          "arm_bed_m": 0.1680640419292309,
+          "arm_torso_m": 0.14067424071553064,
+          "arm_base_m": 0.7428306742572173,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S2_grasp",
+          "reachable": true,
+          "position_floor": [
+            0.9850000000000001,
+            -0.35,
+            0.7799999999999999
+          ],
+          "q_deg": {
+            "sh3": 48.519919689527086,
+            "sh2": 53.15436616591407,
+            "sh1": -32.19939579563965,
+            "el": 48.57051909275342,
+            "rad": 78.34420318847336,
+            "w1": -26.039638877638275,
+            "w2": 17.10317542028411
+          },
+          "position_error_mm": 1.7448366759166279e-06,
+          "orientation_error_deg": 1.065301641760629e-07,
+          "min_margin_deg": 11.480080310472914,
+          "min_margin_joint": "sh3",
+          "condition": 9.839477625452403,
+          "within_limits": true,
+          "arm_bed_m": 0.048064041930569276,
+          "arm_torso_m": 0.13473625224513286,
+          "arm_base_m": 0.713525511421549,
+          "arm_arm_parked_m": 0.18387828919323806,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S3_tension",
+          "reachable": true,
+          "position_floor": [
+            0.935,
+            -0.35,
+            0.7799999999999999
+          ],
+          "q_deg": {
+            "sh3": 48.70649509981762,
+            "sh2": 46.12430979557255,
+            "sh1": -32.47381117282882,
+            "el": 61.61185454510862,
+            "rad": 79.48363912898081,
+            "w1": -30.45796263487716,
+            "w2": 24.404643397231002
+          },
+          "position_error_mm": 1.0554628214688736e-06,
+          "orientation_error_deg": 6.583558021469492e-08,
+          "min_margin_deg": 10.516360871019188,
+          "min_margin_joint": "rad",
+          "condition": 7.674621512496195,
+          "within_limits": true,
+          "arm_bed_m": 0.04806404192711071,
+          "arm_torso_m": 0.14012801240596873,
+          "arm_base_m": 0.7056158050479737,
+          "arm_arm_parked_m": 0.18387828919323806,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S4_lift",
+          "reachable": true,
+          "position_floor": [
+            0.935,
+            -0.35,
+            0.8799999999999999
+          ],
+          "q_deg": {
+            "sh3": 43.1185928360148,
+            "sh2": 41.01594956570499,
+            "sh1": -36.41891679765619,
+            "el": 68.47232680811643,
+            "rad": 73.27100843607617,
+            "w1": -26.948242000483464,
+            "w2": 25.77972657889693
+          },
+          "position_error_mm": 6.453186401738013e-07,
+          "orientation_error_deg": 4.2255462827857576e-08,
+          "min_margin_deg": 16.728991563923827,
+          "min_margin_joint": "rad",
+          "condition": 6.765504104777047,
+          "within_limits": true,
+          "arm_bed_m": 0.1480640419631944,
+          "arm_torso_m": 0.14375847848923973,
+          "arm_base_m": 0.7449082948763484,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S5_ready",
+          "reachable": true,
+          "position_floor": [
+            0.8,
+            -0.35,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": 46.055509285144886,
+            "sh2": 16.31825998074914,
+            "sh1": -54.96774495720304,
+            "el": 96.3126416210675,
+            "rad": 56.49475670934434,
+            "w1": -47.4365050366964,
+            "w2": 30.16057878821299
+          },
+          "position_error_mm": 1.5459087180201343e-07,
+          "orientation_error_deg": 1.2303631572336813e-08,
+          "min_margin_deg": 13.944490714855114,
+          "min_margin_joint": "sh3",
+          "condition": 5.559903881280629,
+          "within_limits": true,
+          "arm_bed_m": 0.21806404215759295,
+          "arm_torso_m": 0.13756716959578003,
+          "arm_base_m": 0.7575616680420034,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        }
+      ]
+    },
+    {
+      "operation": "P7",
+      "side": "L",
+      "clearance_m": 0.05,
+      "finger": [
+        0.984807753012208,
+        0.17364817766693041,
+        0.0
+      ],
+      "bed": {
+        "x_near": 0.385,
+        "x_far": 1.385,
+        "height_m": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.05
+      },
+      "seconds": 61.6,
+      "states": [
+        {
+          "label": "S0_ready",
+          "reachable": true,
+          "position_floor": [
+            0.75,
+            0.25,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": -127.6201723702251,
+            "sh2": 9.34261337762952,
+            "sh1": -77.80763039417323,
+            "el": 99.16118979509208,
+            "rad": 30.180074568154172,
+            "w1": -59.5724305389058,
+            "w2": 32.45546660517948
+          },
+          "position_error_mm": 1.476116401320255e-07,
+          "orientation_error_deg": 1.6983175377555622e-08,
+          "min_margin_deg": 12.19236960582677,
+          "min_margin_joint": "sh1",
+          "condition": 5.137425419539669,
+          "within_limits": true,
+          "arm_bed_m": 0.2249346356560195,
+          "arm_torso_m": 0.11008122113433226,
+          "arm_base_m": 0.756966456930741,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S1_above",
+          "reachable": true,
+          "position_floor": [
+            0.935,
+            0.12,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": -104.57322228598869,
+            "sh2": 36.367741701347114,
+            "sh1": -83.27283070618144,
+            "el": 52.68620107193204,
+            "rad": 44.1399715744455,
+            "w1": -30.603338487785066,
+            "w2": 38.78269190494817
+          },
+          "position_error_mm": 4.636973009381544e-05,
+          "orientation_error_deg": 1.9003979547996082e-06,
+          "min_margin_deg": 6.217308095051827,
+          "min_margin_joint": "w2",
+          "condition": 9.70626512033361,
+          "within_limits": true,
+          "arm_bed_m": 0.17493461185819198,
+          "arm_torso_m": 0.10525257639251821,
+          "arm_base_m": 0.7343861643642273,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S2_contact",
+          "reachable": true,
+          "position_floor": [
+            0.935,
+            0.12,
+            0.7999999999999999
+          ],
+          "q_deg": {
+            "sh3": -93.26196814640986,
+            "sh2": 43.10366718856502,
+            "sh1": -82.58469953209038,
+            "el": 44.13630619281616,
+            "rad": 53.76604828304568,
+            "w1": -32.025818737765626,
+            "w2": 38.78303868003876
+          },
+          "position_error_mm": 4.450051361035143e-05,
+          "orientation_error_deg": 2.0700944664280912e-06,
+          "min_margin_deg": 6.216961319961243,
+          "min_margin_joint": "w2",
+          "condition": 12.396590443921877,
+          "within_limits": true,
+          "arm_bed_m": 0.07493461991335597,
+          "arm_torso_m": 0.10016891474044175,
+          "arm_base_m": 0.7290030007433219,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S3_manip",
+          "reachable": true,
+          "position_floor": [
+            0.935,
+            0.22,
+            0.7999999999999999
+          ],
+          "q_deg": {
+            "sh3": -96.05286846053562,
+            "sh2": 27.289543230950684,
+            "sh1": -79.84248690387143,
+            "el": 47.090398109782036,
+            "rad": 37.06282476597957,
+            "w1": -39.15038404254041,
+            "w2": 27.18328431612672
+          },
+          "position_error_mm": 5.358649157034471e-07,
+          "orientation_error_deg": 3.556739485014755e-08,
+          "min_margin_deg": 10.157513096128568,
+          "min_margin_joint": "sh1",
+          "condition": 10.203193510757972,
+          "within_limits": true,
+          "arm_bed_m": 0.07493463547785144,
+          "arm_torso_m": 0.11024034320337305,
+          "arm_base_m": 0.7294431351735502,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S4_lift",
+          "reachable": true,
+          "position_floor": [
+            0.935,
+            0.22,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": -107.93831860207398,
+            "sh2": 24.902208489639065,
+            "sh1": -78.89267809141104,
+            "el": 55.60408544333815,
+            "rad": 33.90434735968076,
+            "w1": -35.797548543908036,
+            "w2": 27.85876948968382
+          },
+          "position_error_mm": 4.107765724449367e-07,
+          "orientation_error_deg": 2.7637412882952468e-08,
+          "min_margin_deg": 11.107321908588958,
+          "min_margin_joint": "sh1",
+          "condition": 8.499721585224105,
+          "within_limits": true,
+          "arm_bed_m": 0.17493463549260818,
+          "arm_torso_m": 0.11278304093757145,
+          "arm_base_m": 0.7432580933091146,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S5_ready",
+          "reachable": true,
+          "position_floor": [
+            0.75,
+            0.25,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": -127.62132567180835,
+            "sh2": 9.346093887241038,
+            "sh1": -77.8032783679725,
+            "el": 99.16112595749172,
+            "rad": 30.189496569520788,
+            "w1": -59.569907993649196,
+            "w2": 32.46229780701522
+          },
+          "position_error_mm": 1.4761888560683717e-07,
+          "orientation_error_deg": 1.7013813172664827e-08,
+          "min_margin_deg": 12.196721632027504,
+          "min_margin_joint": "sh1",
+          "condition": 5.137651550938355,
+          "within_limits": true,
+          "arm_bed_m": 0.2249346356559005,
+          "arm_torso_m": 0.11008665355469123,
+          "arm_base_m": 0.7569640969431997,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        }
+      ]
+    },
+    {
+      "operation": "P7",
+      "side": "R",
+      "clearance_m": 0.05,
+      "finger": [
+        0.984807753012208,
+        0.17364817766693041,
+        0.0
+      ],
+      "bed": {
+        "x_near": 0.385,
+        "x_far": 1.385,
+        "height_m": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.05
+      },
+      "seconds": 51.8,
+      "states": [
+        {
+          "label": "S0_ready",
+          "reachable": true,
+          "position_floor": [
+            0.75,
+            -0.25,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": 47.20696356187709,
+            "sh2": 16.36193073245644,
+            "sh1": -65.35001225040135,
+            "el": 106.64124272472327,
+            "rad": 56.88664514197864,
+            "w1": -55.76491932609353,
+            "w2": 33.114811638387856
+          },
+          "position_error_mm": 2.6285816430020015e-07,
+          "orientation_error_deg": 2.093037406338664e-08,
+          "min_margin_deg": 11.885188361612144,
+          "min_margin_joint": "w2",
+          "condition": 5.969996659669352,
+          "within_limits": true,
+          "arm_bed_m": 0.2180640422489421,
+          "arm_torso_m": 0.12784836843565311,
+          "arm_base_m": 0.7573192834570093,
+          "arm_arm_parked_m": 0.18387828919323806,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S1_above",
+          "reachable": true,
+          "position_floor": [
+            0.935,
+            -0.12,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": 49.92298824416141,
+            "sh2": 55.459639250436105,
+            "sh1": -49.41815687906674,
+            "el": 70.19826354318873,
+            "rad": 76.15267565382523,
+            "w1": -22.423747862525435,
+            "w2": 34.687696332503656
+          },
+          "position_error_mm": 1.154649972965813e-06,
+          "orientation_error_deg": 8.084371716604268e-08,
+          "min_margin_deg": 10.07701175583859,
+          "min_margin_joint": "sh3",
+          "condition": 6.86083187289797,
+          "within_limits": true,
+          "arm_bed_m": 0.16806404186522966,
+          "arm_torso_m": 0.1287345840935108,
+          "arm_base_m": 0.7354555159097171,
+          "arm_arm_parked_m": 0.18387828919323806,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S2_contact",
+          "reachable": true,
+          "position_floor": [
+            0.935,
+            -0.12,
+            0.7999999999999999
+          ],
+          "q_deg": {
+            "sh3": 54.25372001393046,
+            "sh2": 60.56731744042881,
+            "sh1": -42.98506765659792,
+            "el": 64.48576876791765,
+            "rad": 85.93683458987137,
+            "w1": -24.273655600765366,
+            "w2": 33.81808992246929
+          },
+          "position_error_mm": 4.364861717404716e-05,
+          "orientation_error_deg": 2.5501253352051235e-06,
+          "min_margin_deg": 4.063165410128633,
+          "min_margin_joint": "rad",
+          "condition": 7.454258116844506,
+          "within_limits": true,
+          "arm_bed_m": 0.06806403853937663,
+          "arm_torso_m": 0.12455823320870942,
+          "arm_base_m": 0.7209217807043503,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S3_manip",
+          "reachable": true,
+          "position_floor": [
+            0.935,
+            -0.22,
+            0.7999999999999999
+          ],
+          "q_deg": {
+            "sh3": 51.56386610743474,
+            "sh2": 51.7804902077267,
+            "sh1": -39.712785234136526,
+            "el": 65.79230317250415,
+            "rad": 81.56602871371534,
+            "w1": -28.24509723616126,
+            "w2": 26.290991259259457
+          },
+          "position_error_mm": 4.006795384906053e-05,
+          "orientation_error_deg": 2.1953429377020867e-06,
+          "min_margin_deg": 8.43397128628466,
+          "min_margin_joint": "rad",
+          "condition": 7.237784566621411,
+          "within_limits": true,
+          "arm_bed_m": 0.06806403567786738,
+          "arm_torso_m": 0.13357676848602984,
+          "arm_base_m": 0.7231428109288169,
+          "arm_arm_parked_m": 0.18387828919323806,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S4_lift",
+          "reachable": true,
+          "position_floor": [
+            0.935,
+            -0.22,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": 43.45321031964639,
+            "sh2": 48.32921991325578,
+            "sh1": -40.9480050117213,
+            "el": 72.06970763017033,
+            "rad": 75.78177645649464,
+            "w1": -24.08190925130964,
+            "w2": 27.5257341178144
+          },
+          "position_error_mm": 8.423233782991087e-07,
+          "orientation_error_deg": 5.687099819941207e-08,
+          "min_margin_deg": 14.21822354350536,
+          "min_margin_joint": "rad",
+          "condition": 6.488558295840967,
+          "within_limits": true,
+          "arm_bed_m": 0.16806404190783913,
+          "arm_torso_m": 0.13801683679006455,
+          "arm_base_m": 0.7415456481271812,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S5_ready",
+          "reachable": true,
+          "position_floor": [
+            0.75,
+            -0.25,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": 47.20696356187709,
+            "sh2": 16.36193073245644,
+            "sh1": -65.35001225040135,
+            "el": 106.64124272472327,
+            "rad": 56.88664514197864,
+            "w1": -55.76491932609353,
+            "w2": 33.114811638387856
+          },
+          "position_error_mm": 2.6285816430020015e-07,
+          "orientation_error_deg": 2.093037406338664e-08,
+          "min_margin_deg": 11.885188361612144,
+          "min_margin_joint": "w2",
+          "condition": 5.969996659669352,
+          "within_limits": true,
+          "arm_bed_m": 0.2180640422489421,
+          "arm_torso_m": 0.12784836843565311,
+          "arm_base_m": 0.7573192834570093,
+          "arm_arm_parked_m": 0.18387828919323806,
+          "collision_free_parked": true
+        }
+      ]
+    },
+    {
+      "operation": "P7",
+      "side": "L",
+      "clearance_m": 0.1,
+      "finger": [
+        0.984807753012208,
+        0.17364817766693041,
+        0.0
+      ],
+      "bed": {
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "height_m": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1
+      },
+      "seconds": 59.8,
+      "states": [
+        {
+          "label": "S0_ready",
+          "reachable": true,
+          "position_floor": [
+            0.8,
+            0.25,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": -125.04055630726879,
+            "sh2": 12.858543427505685,
+            "sh1": -76.32812148649036,
+            "el": 89.64582577705053,
+            "rad": 31.037140968629117,
+            "w1": -52.656778443562025,
+            "w2": 31.37830055141001
+          },
+          "position_error_mm": 1.2215068983409608e-07,
+          "orientation_error_deg": 2.1421357579894044e-08,
+          "min_margin_deg": 13.62169944858999,
+          "min_margin_joint": "w2",
+          "condition": 5.298926741804088,
+          "within_limits": true,
+          "arm_bed_m": 0.22493463561191168,
+          "arm_torso_m": 0.11317070868812514,
+          "arm_base_m": 0.7542402236400298,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S1_above",
+          "reachable": true,
+          "position_floor": [
+            0.9850000000000001,
+            0.12,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": -100.89913318183402,
+            "sh2": 56.52945191138368,
+            "sh1": -79.11747328278892,
+            "el": 36.069598735208515,
+            "rad": 61.50609103550746,
+            "w1": -17.08371693855317,
+            "w2": 35.19847263866547
+          },
+          "position_error_mm": 7.335653556434982e-06,
+          "orientation_error_deg": 4.87502970206993e-07,
+          "min_margin_deg": 9.801527361334529,
+          "min_margin_joint": "w2",
+          "condition": 18.209042457739624,
+          "within_limits": true,
+          "arm_bed_m": 0.17493463448590235,
+          "arm_torso_m": 0.09739167986620338,
+          "arm_base_m": 0.7218130609082523,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S2_contact",
+          "reachable": true,
+          "position_floor": [
+            0.9850000000000001,
+            0.12,
+            0.7999999999999999
+          ],
+          "q_deg": {
+            "sh3": -100.93231869258021,
+            "sh2": 73.8372865780225,
+            "sh1": -67.44049169563004,
+            "el": 29.50798115502074,
+            "rad": 81.20932065457183,
+            "w1": -17.281257912612475,
+            "w2": 33.45992811634052
+          },
+          "position_error_mm": 4.139960798886101e-05,
+          "orientation_error_deg": 3.085244694115276e-06,
+          "min_margin_deg": 8.790679345428174,
+          "min_margin_joint": "rad",
+          "condition": 20.861342817006054,
+          "within_limits": true,
+          "arm_bed_m": 0.07493464437389889,
+          "arm_torso_m": 0.08784540342269966,
+          "arm_base_m": 0.6869416965575784,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S3_manip",
+          "reachable": true,
+          "position_floor": [
+            0.9850000000000001,
+            0.22,
+            0.7999999999999999
+          ],
+          "q_deg": {
+            "sh3": -82.84175246394281,
+            "sh2": 16.810059949965247,
+            "sh1": -88.88254409736308,
+            "el": 22.855263732836846,
+            "rad": 19.031239623606027,
+            "w1": -29.266433688544186,
+            "w2": 16.260079844906052
+          },
+          "position_error_mm": 0.0003461430103577426,
+          "orientation_error_deg": 2.0711970758464674e-05,
+          "min_margin_deg": 1.1174559026369195,
+          "min_margin_joint": "sh1",
+          "condition": 20.077763366744662,
+          "within_limits": true,
+          "arm_bed_m": 0.07493443275260862,
+          "arm_torso_m": 0.10163008418899756,
+          "arm_base_m": 0.7402477443305522,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S4_lift",
+          "reachable": true,
+          "position_floor": [
+            0.9850000000000001,
+            0.22,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": -101.13090510967541,
+            "sh2": 31.976622572837435,
+            "sh1": -80.40451566496753,
+            "el": 38.11347200623562,
+            "rad": 37.14244059642318,
+            "w1": -25.600853499657724,
+            "w2": 23.832541598762372
+          },
+          "position_error_mm": 8.174115914494549e-06,
+          "orientation_error_deg": 3.8369123179279693e-07,
+          "min_margin_deg": 9.595484335032467,
+          "min_margin_joint": "sh1",
+          "condition": 13.231284172336293,
+          "within_limits": true,
+          "arm_bed_m": 0.17493463177145857,
+          "arm_torso_m": 0.1089463365022328,
+          "arm_base_m": 0.737242888063895,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S5_ready",
+          "reachable": true,
+          "position_floor": [
+            0.8,
+            0.25,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": -125.46672444410159,
+            "sh2": 13.97872954669474,
+            "sh1": -75.10861372017554,
+            "el": 89.67175174305467,
+            "rad": 33.389221197356065,
+            "w1": -51.942937407688156,
+            "w2": 32.925743438344476
+          },
+          "position_error_mm": 1.7090167690726995e-07,
+          "orientation_error_deg": 1.9057242386694086e-08,
+          "min_margin_deg": 12.074256561655524,
+          "min_margin_joint": "w2",
+          "condition": 5.323985511174746,
+          "within_limits": true,
+          "arm_bed_m": 0.224934635587223,
+          "arm_torso_m": 0.11457059425347975,
+          "arm_base_m": 0.7534851289258397,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        }
+      ]
+    },
+    {
+      "operation": "P7",
+      "side": "R",
+      "clearance_m": 0.1,
+      "finger": [
+        0.984807753012208,
+        0.17364817766693041,
+        0.0
+      ],
+      "bed": {
+        "x_near": 0.43500000000000005,
+        "x_far": 1.435,
+        "height_m": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.1
+      },
+      "seconds": 49.7,
+      "states": [
+        {
+          "label": "S0_ready",
+          "reachable": true,
+          "position_floor": [
+            0.8,
+            -0.25,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": 46.34212985469987,
+            "sh2": 23.189857627207434,
+            "sh1": -59.569405609518384,
+            "el": 98.43586351282676,
+            "rad": 59.653428098004966,
+            "w1": -46.384304789217595,
+            "w2": 31.581239107718115
+          },
+          "position_error_mm": 1.5990384761302027e-07,
+          "orientation_error_deg": 1.3691599053206888e-08,
+          "min_margin_deg": 13.418760892281885,
+          "min_margin_joint": "w2",
+          "condition": 5.58190188917458,
+          "within_limits": true,
+          "arm_bed_m": 0.218064042165869,
+          "arm_torso_m": 0.13362455491979863,
+          "arm_base_m": 0.7533022862418837,
+          "arm_arm_parked_m": 0.18387828919323806,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S1_above",
+          "reachable": true,
+          "position_floor": [
+            0.9850000000000001,
+            -0.12,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": 49.1596795296652,
+            "sh2": 62.437517344854946,
+            "sh1": -46.22647365810552,
+            "el": 58.432323444456,
+            "rad": 78.51778490976643,
+            "w1": -17.094704408844915,
+            "w2": 27.945407403420454
+          },
+          "position_error_mm": 2.2348765918458834e-06,
+          "orientation_error_deg": 1.4710058015897556e-07,
+          "min_margin_deg": 10.840320470334802,
+          "min_margin_joint": "sh3",
+          "condition": 8.450772098333545,
+          "within_limits": true,
+          "arm_bed_m": 0.16806404193568975,
+          "arm_torso_m": 0.12493082958116743,
+          "arm_base_m": 0.7333853451111918,
+          "arm_arm_parked_m": 0.18387828919323806,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S2_contact",
+          "reachable": true,
+          "position_floor": [
+            0.9850000000000001,
+            -0.12,
+            0.7999999999999999
+          ],
+          "q_deg": {
+            "sh3": 54.89387292658266,
+            "sh2": 66.94385737138977,
+            "sh1": -42.67884627211469,
+            "el": 51.754866884578774,
+            "rad": 85.71622547872782,
+            "w1": -20.662374353785395,
+            "w2": 25.579595323502105
+          },
+          "position_error_mm": 0.0007352786255394882,
+          "orientation_error_deg": 5.7923132544424716e-05,
+          "min_margin_deg": 4.2837745212721785,
+          "min_margin_joint": "rad",
+          "condition": 9.543266968681795,
+          "within_limits": true,
+          "arm_bed_m": 0.06806422873450117,
+          "arm_torso_m": 0.11843178036950795,
+          "arm_base_m": 0.7076475601230977,
+          "arm_arm_parked_m": 0.18387828919323806,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S3_manip",
+          "reachable": true,
+          "position_floor": [
+            0.9850000000000001,
+            -0.22,
+            0.7999999999999999
+          ],
+          "q_deg": {
+            "sh3": 51.1355095350839,
+            "sh2": 58.4977748363343,
+            "sh1": -38.43043021653081,
+            "el": 53.433838691067244,
+            "rad": 81.32572883507116,
+            "w1": -23.8439899080646,
+            "w2": 18.821626134306875
+          },
+          "position_error_mm": 4.0503597429518666e-05,
+          "orientation_error_deg": 2.347659084150836e-06,
+          "min_margin_deg": 8.67427116492884,
+          "min_margin_joint": "rad",
+          "condition": 9.040952763307708,
+          "within_limits": true,
+          "arm_bed_m": 0.06806403865604331,
+          "arm_torso_m": 0.1284728607769446,
+          "arm_base_m": 0.7197016048681438,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S4_lift",
+          "reachable": true,
+          "position_floor": [
+            0.9850000000000001,
+            -0.22,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": 44.282874249012316,
+            "sh2": 54.35689566954717,
+            "sh1": -40.4537164085966,
+            "el": 60.22484532017517,
+            "rad": 75.83106337199136,
+            "w1": -19.687485327375825,
+            "w2": 21.01725293689732
+          },
+          "position_error_mm": 1.5212444447838623e-06,
+          "orientation_error_deg": 9.526539140736882e-08,
+          "min_margin_deg": 14.168936628008638,
+          "min_margin_joint": "rad",
+          "condition": 7.918812680835849,
+          "within_limits": true,
+          "arm_bed_m": 0.1680640418487424,
+          "arm_torso_m": 0.13410106218651563,
+          "arm_base_m": 0.7387702785975123,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S5_ready",
+          "reachable": true,
+          "position_floor": [
+            0.8,
+            -0.25,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": 46.26223900194224,
+            "sh2": 23.29445427388108,
+            "sh1": -59.40786844039534,
+            "el": 98.44377415894209,
+            "rad": 59.8378709221968,
+            "w1": -46.25785872471043,
+            "w2": 31.684300137143406
+          },
+          "position_error_mm": 7.208144394259564e-08,
+          "orientation_error_deg": 6.934655242377829e-09,
+          "min_margin_deg": 13.315699862856594,
+          "min_margin_joint": "w2",
+          "condition": 5.580077270129095,
+          "within_limits": true,
+          "arm_bed_m": 0.21806404199691082,
+          "arm_torso_m": 0.13375321399051449,
+          "arm_base_m": 0.7532604106014422,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        }
+      ]
+    },
+    {
+      "operation": "P7",
+      "side": "L",
+      "clearance_m": 0.12,
+      "finger": [
+        0.984807753012208,
+        0.17364817766693041,
+        0.0
+      ],
+      "bed": {
+        "x_near": 0.455,
+        "x_far": 1.455,
+        "height_m": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.12
+      },
+      "seconds": 63.3,
+      "states": [
+        {
+          "label": "S0_ready",
+          "reachable": true,
+          "position_floor": [
+            0.8200000000000001,
+            0.25,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": -123.91138400138993,
+            "sh2": 14.482492695135745,
+            "sh1": -75.74276251717987,
+            "el": 85.62025644479075,
+            "rad": 31.63549669006234,
+            "w1": -49.79982818192289,
+            "w2": 30.98403502821356
+          },
+          "position_error_mm": 1.4836788027457077e-07,
+          "orientation_error_deg": 1.3171709372150915e-08,
+          "min_margin_deg": 14.015964971786438,
+          "min_margin_joint": "w2",
+          "condition": 5.460273003123167,
+          "within_limits": true,
+          "arm_bed_m": 0.2249346356151251,
+          "arm_torso_m": 0.11432488386078045,
+          "arm_base_m": 0.7529511546574565,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S1_above",
+          "reachable": true,
+          "position_floor": [
+            1.0050000000000001,
+            0.12,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": -88.38465171624442,
+            "sh2": 56.827575378349486,
+            "sh1": -89.9301684026765,
+            "el": 21.223421240586234,
+            "rad": 59.173633300069895,
+            "w1": -13.01635883966056,
+            "w2": 28.08091334772523
+          },
+          "position_error_mm": 0.0032987322612712034,
+          "orientation_error_deg": 0.00030999836459178387,
+          "min_margin_deg": 0.06983159732349975,
+          "min_margin_joint": "sh1",
+          "condition": 43.77550005291224,
+          "within_limits": true,
+          "arm_bed_m": 0.17493607034207054,
+          "arm_torso_m": 0.08546579458756974,
+          "arm_base_m": 0.7211294445312766,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S2_contact",
+          "reachable": true,
+          "position_floor": [
+            1.0050000000000001,
+            0.12,
+            0.7999999999999999
+          ],
+          "q_deg": {
+            "sh3": -110.74576314351653,
+            "sh2": 82.09083629598243,
+            "sh1": -56.222780768432784,
+            "el": 24.005607346963433,
+            "rad": 88.35128644138439,
+            "w1": -14.7034108588931,
+            "w2": 30.14194658942611
+          },
+          "position_error_mm": 2.2696107139985625e-05,
+          "orientation_error_deg": 8.201340098023491e-07,
+          "min_margin_deg": 1.6487135586156114,
+          "min_margin_joint": "rad",
+          "condition": 20.376114164603003,
+          "within_limits": true,
+          "arm_bed_m": 0.0749346435357409,
+          "arm_torso_m": 0.08731763182003534,
+          "arm_base_m": 0.6765295915452484,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S3_manip",
+          "reachable": true,
+          "position_floor": [
+            1.0050000000000001,
+            0.22,
+            0.7999999999999999
+          ],
+          "q_deg": {
+            "sh3": -68.0408361465879,
+            "sh2": -81.48554802419139,
+            "sh1": -88.9338306179418,
+            "el": 4.703372464882357,
+            "rad": -83.35825526352774,
+            "w1": -21.523120387779347,
+            "w2": 4.829136690966857
+          },
+          "position_error_mm": 0.0028270543920599273,
+          "orientation_error_deg": 0.0003216521140385937,
+          "min_margin_deg": 1.0661693820582059,
+          "min_margin_joint": "sh1",
+          "condition": 36.79934251998097,
+          "within_limits": true,
+          "arm_bed_m": 0.07493474294905404,
+          "arm_torso_m": 0.07669751882920735,
+          "arm_base_m": 0.7165149792678756,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S4_lift",
+          "reachable": true,
+          "position_floor": [
+            1.0050000000000001,
+            0.22,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": -92.7083178392864,
+            "sh2": 20.489261577213803,
+            "sh1": -87.53082673587076,
+            "el": 26.084586849490737,
+            "rad": 22.350898914878474,
+            "w1": -22.49178667972447,
+            "w2": 17.316405052735394
+          },
+          "position_error_mm": 0.00047952616803393624,
+          "orientation_error_deg": 2.687918656925148e-05,
+          "min_margin_deg": 2.469173264129239,
+          "min_margin_joint": "sh1",
+          "condition": 18.1865010043064,
+          "within_limits": true,
+          "arm_bed_m": 0.17493435027426146,
+          "arm_torso_m": 0.10385843151491204,
+          "arm_base_m": 0.7461504610755347,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S5_ready",
+          "reachable": true,
+          "position_floor": [
+            0.8200000000000001,
+            0.25,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": -123.9315804163664,
+            "sh2": 14.535117390345015,
+            "sh1": -75.68874886432529,
+            "el": 85.62213799278776,
+            "rad": 31.73828650498594,
+            "w1": -49.76908142186619,
+            "w2": 31.049141776634144
+          },
+          "position_error_mm": 2.2618608430937435e-06,
+          "orientation_error_deg": 1.7198181896704247e-07,
+          "min_margin_deg": 13.950858223365856,
+          "min_margin_joint": "w2",
+          "condition": 5.460937470406588,
+          "within_limits": true,
+          "arm_bed_m": 0.22493463650378492,
+          "arm_torso_m": 0.11438533727013718,
+          "arm_base_m": 0.7529153737334258,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        }
+      ]
+    },
+    {
+      "operation": "P7",
+      "side": "R",
+      "clearance_m": 0.12,
+      "finger": [
+        0.984807753012208,
+        0.17364817766693041,
+        0.0
+      ],
+      "bed": {
+        "x_near": 0.455,
+        "x_far": 1.455,
+        "height_m": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.12
+      },
+      "seconds": 65.5,
+      "states": [
+        {
+          "label": "S0_ready",
+          "reachable": true,
+          "position_floor": [
+            0.8200000000000001,
+            -0.25,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": 45.46374473422741,
+            "sh2": 26.518383594932203,
+            "sh1": -56.502887739749575,
+            "el": 95.07008346042534,
+            "rad": 61.70411948081745,
+            "w1": -42.18162521411612,
+            "w2": 31.228558536063534
+          },
+          "position_error_mm": 1.2562546230561197e-07,
+          "orientation_error_deg": 1.019809264108701e-08,
+          "min_margin_deg": 13.771441463936466,
+          "min_margin_joint": "w2",
+          "condition": 5.496411175875314,
+          "within_limits": true,
+          "arm_bed_m": 0.2180640419752961,
+          "arm_torso_m": 0.13596826153271518,
+          "arm_base_m": 0.751594049337887,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S1_above",
+          "reachable": true,
+          "position_floor": [
+            1.0050000000000001,
+            -0.12,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": 48.46972729735688,
+            "sh2": 65.7034281489089,
+            "sh1": -44.57653255239994,
+            "el": 53.13919592580737,
+            "rad": 79.96938241427152,
+            "w1": -15.001446538829244,
+            "w2": 24.95545771649794
+          },
+          "position_error_mm": 2.7921504478449802e-06,
+          "orientation_error_deg": 1.8190934231451804e-07,
+          "min_margin_deg": 10.030617585728479,
+          "min_margin_joint": "rad",
+          "condition": 9.377298787504866,
+          "within_limits": true,
+          "arm_bed_m": 0.16806404202577235,
+          "arm_torso_m": 0.12297557390010273,
+          "arm_base_m": 0.7327954714492626,
+          "arm_arm_parked_m": 0.18387828919323806,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S2_contact",
+          "reachable": true,
+          "position_floor": [
+            1.0050000000000001,
+            -0.12,
+            0.7999999999999999
+          ],
+          "q_deg": {
+            "sh3": 56.02117191091555,
+            "sh2": 69.9741997830946,
+            "sh1": -43.48403833038453,
+            "el": 45.5607710105566,
+            "rad": 85.76016092316611,
+            "w1": -19.22423505728312,
+            "w2": 21.74909560549127
+          },
+          "position_error_mm": 0.002146187879222619,
+          "orientation_error_deg": 0.00019292141906113164,
+          "min_margin_deg": 3.978828089084452,
+          "min_margin_joint": "sh3",
+          "condition": 11.019523562187763,
+          "within_limits": true,
+          "arm_bed_m": 0.06806495308389408,
+          "arm_torso_m": 0.11481658730205495,
+          "arm_base_m": 0.7019246283324975,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S3_manip",
+          "reachable": true,
+          "position_floor": [
+            1.0050000000000001,
+            -0.22,
+            0.7999999999999999
+          ],
+          "q_deg": {
+            "sh3": 51.12924924940114,
+            "sh2": 61.637577432579945,
+            "sh1": -38.08744308235114,
+            "el": 47.62500971235149,
+            "rad": 81.50439708190922,
+            "w1": -22.07033864023092,
+            "w2": 15.438884973869943
+          },
+          "position_error_mm": 3.8024652943758103e-05,
+          "orientation_error_deg": 2.257750876250585e-06,
+          "min_margin_deg": 8.495602918090782,
+          "min_margin_joint": "rad",
+          "condition": 10.243674874866961,
+          "within_limits": true,
+          "arm_bed_m": 0.06806404033999051,
+          "arm_torso_m": 0.12573798666023955,
+          "arm_base_m": 0.7131603383065518,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S4_lift",
+          "reachable": true,
+          "position_floor": [
+            1.0050000000000001,
+            -0.22,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": 44.49097235796033,
+            "sh2": 57.23663843972854,
+            "sh1": -40.07037932679277,
+            "el": 54.87230534288076,
+            "rad": 76.33471280064732,
+            "w1": -17.784490672188014,
+            "w2": 18.165715768191845
+          },
+          "position_error_mm": 1.9600220900200516e-06,
+          "orientation_error_deg": 1.215239904039642e-07,
+          "min_margin_deg": 13.665287199352676,
+          "min_margin_joint": "rad",
+          "condition": 8.794841069240332,
+          "within_limits": true,
+          "arm_bed_m": 0.16806404184457507,
+          "arm_torso_m": 0.13208273612081645,
+          "arm_base_m": 0.7376387967123663,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S5_ready",
+          "reachable": true,
+          "position_floor": [
+            0.8200000000000001,
+            -0.25,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": 45.46374473422741,
+            "sh2": 26.518383594932203,
+            "sh1": -56.502887739749575,
+            "el": 95.07008346042534,
+            "rad": 61.70411948081745,
+            "w1": -42.18162521411612,
+            "w2": 31.228558536063534
+          },
+          "position_error_mm": 1.2562546230561197e-07,
+          "orientation_error_deg": 1.019809264108701e-08,
+          "min_margin_deg": 13.771441463936466,
+          "min_margin_joint": "w2",
+          "condition": 5.496411175875314,
+          "within_limits": true,
+          "arm_bed_m": 0.2180640419752961,
+          "arm_torso_m": 0.13596826153271518,
+          "arm_base_m": 0.751594049337887,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        }
+      ]
+    },
+    {
+      "operation": "P7",
+      "side": "L",
+      "clearance_m": 0.15,
+      "finger": [
+        0.984807753012208,
+        0.17364817766693041,
+        0.0
+      ],
+      "bed": {
+        "x_near": 0.485,
+        "x_far": 1.4849999999999999,
+        "height_m": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.15
+      },
+      "seconds": 69.2,
+      "states": [
+        {
+          "label": "S0_ready",
+          "reachable": true,
+          "position_floor": [
+            0.8500000000000001,
+            0.25,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": -123.503122443482,
+            "sh2": 20.33711248086115,
+            "sh1": -71.82175398351217,
+            "el": 79.47000374147719,
+            "rad": 38.15703763535945,
+            "w1": -43.581954192195745,
+            "w2": 33.44665610597907
+          },
+          "position_error_mm": 3.834690741501754e-07,
+          "orientation_error_deg": 2.9419861213448984e-08,
+          "min_margin_deg": 11.553343894020927,
+          "min_margin_joint": "w2",
+          "condition": 5.831394285618144,
+          "within_limits": true,
+          "arm_bed_m": 0.22493463545709863,
+          "arm_torso_m": 0.11891644566341926,
+          "arm_base_m": 0.7487185318881253,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S1_above",
+          "reachable": true,
+          "position_floor": [
+            1.0350000000000001,
+            0.12,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": -125.28725231956544,
+            "sh2": 83.68774941618472,
+            "sh1": -48.85607577064088,
+            "el": 23.273174669006234,
+            "rad": 87.49181174517489,
+            "w1": -7.250428977560831,
+            "w2": 29.201798364440947
+          },
+          "position_error_mm": 3.279370604904071e-05,
+          "orientation_error_deg": 4.132227219937767e-06,
+          "min_margin_deg": 2.5081882548251144,
+          "min_margin_joint": "rad",
+          "condition": 19.797896382238722,
+          "within_limits": true,
+          "arm_bed_m": 0.1749346516106431,
+          "arm_torso_m": 0.09536651011665596,
+          "arm_base_m": 0.7169938085801174,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S2_contact",
+          "reachable": true,
+          "position_floor": [
+            1.0350000000000001,
+            0.12,
+            0.7999999999999999
+          ],
+          "q_deg": {
+            "sh3": -27.87956213324852,
+            "sh2": -89.06349905182073,
+            "sh1": -47.233545199856,
+            "el": -9.649753924393869,
+            "rad": -86.17400826816306,
+            "w1": -18.99436217961896,
+            "w2": 19.536910565202216
+          },
+          "position_error_mm": 3.600845240770796e-05,
+          "orientation_error_deg": 3.8222143903351696e-06,
+          "min_margin_deg": 0.3502460756061314,
+          "min_margin_joint": "el",
+          "condition": 44.96317449781665,
+          "within_limits": true,
+          "arm_bed_m": 0.07493464207949689,
+          "arm_torso_m": 0.09623441669300849,
+          "arm_base_m": 0.7141344780356236,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S3_manip",
+          "reachable": true,
+          "position_floor": [
+            1.0350000000000001,
+            0.22,
+            0.7999999999999999
+          ],
+          "q_deg": {
+            "sh3": -36.054419954847404,
+            "sh2": -81.93461327792015,
+            "sh1": -55.81353456525505,
+            "el": -4.0426984483184984,
+            "rad": -83.51473879411853,
+            "w1": -19.552270723982474,
+            "w2": 9.462752264649017
+          },
+          "position_error_mm": 3.157937663172697e-05,
+          "orientation_error_deg": 4.295529569329016e-06,
+          "min_margin_deg": 5.9573015516815016,
+          "min_margin_joint": "el",
+          "condition": 50.52443402612618,
+          "within_limits": true,
+          "arm_bed_m": 0.07493465239368906,
+          "arm_torso_m": 0.09861125888389667,
+          "arm_base_m": 0.7156032455818537,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S4_lift",
+          "reachable": true,
+          "position_floor": [
+            1.0350000000000001,
+            0.22,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": -133.50643091963448,
+            "sh2": 72.68673242294595,
+            "sh1": -40.533867189928735,
+            "el": 28.2153991744515,
+            "rad": 81.0705772118245,
+            "w1": -9.87694616045856,
+            "w2": 24.824231694618803
+          },
+          "position_error_mm": 3.397663244312444e-05,
+          "orientation_error_deg": 2.490288289688512e-06,
+          "min_margin_deg": 8.9294227881755,
+          "min_margin_joint": "rad",
+          "condition": 16.252398855417983,
+          "within_limits": true,
+          "arm_bed_m": 0.1749346420101467,
+          "arm_torso_m": 0.11129944375717667,
+          "arm_base_m": 0.7278313339075679,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S5_ready",
+          "reachable": true,
+          "position_floor": [
+            0.8500000000000001,
+            0.25,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": -120.51891848453117,
+            "sh2": 12.818558751975848,
+            "sh1": -78.92941848582298,
+            "el": 79.06401442139455,
+            "rad": 24.953955705389138,
+            "w1": -47.48940213357451,
+            "w2": 25.652710275827186
+          },
+          "position_error_mm": 1.0372051447703097e-07,
+          "orientation_error_deg": 7.102254916973847e-09,
+          "min_margin_deg": 11.070581514177022,
+          "min_margin_joint": "sh1",
+          "condition": 5.800461646626859,
+          "within_limits": true,
+          "arm_bed_m": 0.22493463570097022,
+          "arm_torso_m": 0.11141967211472524,
+          "arm_base_m": 0.7538483219177912,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        }
+      ]
+    },
+    {
+      "operation": "P7",
+      "side": "R",
+      "clearance_m": 0.15,
+      "finger": [
+        0.984807753012208,
+        0.17364817766693041,
+        0.0
+      ],
+      "bed": {
+        "x_near": 0.485,
+        "x_far": 1.4849999999999999,
+        "height_m": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.15
+      },
+      "seconds": 52.9,
+      "states": [
+        {
+          "label": "S0_ready",
+          "reachable": true,
+          "position_floor": [
+            0.8500000000000001,
+            -0.25,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": 44.37988972977904,
+            "sh2": 31.05465206106184,
+            "sh1": -52.749884867497215,
+            "el": 89.82132308054321,
+            "rad": 63.91515563095131,
+            "w1": -36.73205573424521,
+            "w2": 29.914142297969114
+          },
+          "position_error_mm": 1.3786243300120406e-07,
+          "orientation_error_deg": 1.6924735659402437e-08,
+          "min_margin_deg": 15.085857702030886,
+          "min_margin_joint": "w2",
+          "condition": 5.485420595656238,
+          "within_limits": true,
+          "arm_bed_m": 0.21806404206486535,
+          "arm_torso_m": 0.13816460509939082,
+          "arm_base_m": 0.7494156639535805,
+          "arm_arm_parked_m": 0.18387828919323806,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S1_above",
+          "reachable": true,
+          "position_floor": [
+            1.0350000000000001,
+            -0.12,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": 50.667369007474186,
+            "sh2": 70.54033075003642,
+            "sh1": -45.88791792764193,
+            "el": 43.38379774499387,
+            "rad": 81.09515872536637,
+            "w1": -12.427163601539249,
+            "w2": 19.38066396304973
+          },
+          "position_error_mm": 3.7577856719567856e-05,
+          "orientation_error_deg": 2.3586479343442517e-06,
+          "min_margin_deg": 8.904841274633625,
+          "min_margin_joint": "rad",
+          "condition": 11.854215270614219,
+          "within_limits": true,
+          "arm_bed_m": 0.1680640439030618,
+          "arm_torso_m": 0.1176176664523516,
+          "arm_base_m": 0.730343936404029,
+          "arm_arm_parked_m": 0.18387828919323806,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S2_contact",
+          "reachable": true,
+          "position_floor": [
+            1.0350000000000001,
+            -0.12,
+            0.7999999999999999
+          ],
+          "q_deg": {
+            "sh3": 52.70679776711997,
+            "sh2": 76.28574558770022,
+            "sh1": -39.084185589198846,
+            "el": 35.62824461551426,
+            "rad": 88.4232030402641,
+            "w1": -16.678264600978455,
+            "w2": 15.761171827345757
+          },
+          "position_error_mm": 4.261510460166244e-05,
+          "orientation_error_deg": 2.8120719148173365e-06,
+          "min_margin_deg": 1.5767969597359013,
+          "min_margin_joint": "rad",
+          "condition": 14.027908450944533,
+          "within_limits": true,
+          "arm_bed_m": 0.06806405242538897,
+          "arm_torso_m": 0.11083280134799937,
+          "arm_base_m": 0.6924565321205709,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S3_manip",
+          "reachable": true,
+          "position_floor": [
+            1.0350000000000001,
+            -0.22,
+            0.7999999999999999
+          ],
+          "q_deg": {
+            "sh3": 51.288848903074374,
+            "sh2": 67.25358895347058,
+            "sh1": -37.73010111211991,
+            "el": 37.29866993079048,
+            "rad": 82.26326670811915,
+            "w1": -19.337991552361473,
+            "w2": 9.538831758169486
+          },
+          "position_error_mm": 3.8571489147993764e-05,
+          "orientation_error_deg": 2.395628504798619e-06,
+          "min_margin_deg": 7.736733291880853,
+          "min_margin_joint": "rad",
+          "condition": 13.286116177800883,
+          "within_limits": true,
+          "arm_bed_m": 0.06806404360852707,
+          "arm_torso_m": 0.12044953612888464,
+          "arm_base_m": 0.7027848087014323,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S4_lift",
+          "reachable": true,
+          "position_floor": [
+            1.0350000000000001,
+            -0.22,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": 44.55139136288386,
+            "sh2": 62.27771716717662,
+            "sh1": -39.19674307205967,
+            "el": 45.83225657935332,
+            "rad": 77.7446953459341,
+            "w1": -14.810962768542348,
+            "w2": 13.388612830226013
+          },
+          "position_error_mm": 2.8664936848600094e-06,
+          "orientation_error_deg": 1.7765169526289074e-07,
+          "min_margin_deg": 12.255304654065895,
+          "min_margin_joint": "rad",
+          "condition": 10.733665188708853,
+          "within_limits": true,
+          "arm_bed_m": 0.16806404192116714,
+          "arm_torso_m": 0.1283687669502902,
+          "arm_base_m": 0.7360039513970631,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S5_ready",
+          "reachable": true,
+          "position_floor": [
+            0.8500000000000001,
+            -0.25,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": 44.37988972977904,
+            "sh2": 31.05465206106184,
+            "sh1": -52.749884867497215,
+            "el": 89.82132308054321,
+            "rad": 63.91515563095131,
+            "w1": -36.73205573424521,
+            "w2": 29.914142297969114
+          },
+          "position_error_mm": 1.3786243300120406e-07,
+          "orientation_error_deg": 1.6924735659402437e-08,
+          "min_margin_deg": 15.085857702030886,
+          "min_margin_joint": "w2",
+          "condition": 5.485420595656238,
+          "within_limits": true,
+          "arm_bed_m": 0.21806404206486535,
+          "arm_torso_m": 0.13816460509939082,
+          "arm_base_m": 0.7494156639535805,
+          "arm_arm_parked_m": 0.18387828919323806,
+          "collision_free_parked": true
+        }
+      ]
+    },
+    {
+      "operation": "P7",
+      "side": "L",
+      "clearance_m": 0.2,
+      "finger": [
+        0.984807753012208,
+        0.17364817766693041,
+        0.0
+      ],
+      "bed": {
+        "x_near": 0.535,
+        "x_far": 1.5350000000000001,
+        "height_m": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.2
+      },
+      "seconds": 106.3,
+      "states": [
+        {
+          "label": "S0_ready",
+          "reachable": true,
+          "position_floor": [
+            0.8999999999999999,
+            0.25,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": -117.21245600172271,
+            "sh2": 18.955992247179942,
+            "sh1": -76.69840636037817,
+            "el": 67.42388248252871,
+            "rad": 29.87905681670939,
+            "w1": -39.14636359502378,
+            "w2": 26.203309639408428
+          },
+          "position_error_mm": 1.7283210679483587e-07,
+          "orientation_error_deg": 1.3761316948689605e-08,
+          "min_margin_deg": 13.301593639621828,
+          "min_margin_joint": "sh1",
+          "condition": 6.827503793859938,
+          "within_limits": true,
+          "arm_bed_m": 0.22493463560809784,
+          "arm_torso_m": 0.11488160248162536,
+          "arm_base_m": 0.7488623166915738,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S1_above",
+          "reachable": false,
+          "position_floor": [
+            1.085,
+            0.12,
+            0.8999999999999999
+          ]
+        },
+        {
+          "label": "S2_contact",
+          "reachable": false,
+          "position_floor": [
+            1.085,
+            0.12,
+            0.7999999999999999
+          ]
+        },
+        {
+          "label": "S3_manip",
+          "reachable": false,
+          "position_floor": [
+            1.085,
+            0.22,
+            0.7999999999999999
+          ]
+        },
+        {
+          "label": "S4_lift",
+          "reachable": false,
+          "position_floor": [
+            1.085,
+            0.22,
+            0.8999999999999999
+          ]
+        },
+        {
+          "label": "S5_ready",
+          "reachable": true,
+          "position_floor": [
+            0.8999999999999999,
+            0.25,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": -122.78517689000026,
+            "sh2": 29.985417440626414,
+            "sh1": -66.79452736514763,
+            "el": 68.43294698588093,
+            "rad": 46.12014921948824,
+            "w1": -33.718533662879544,
+            "w2": 34.07701684554
+          },
+          "position_error_mm": 1.0852267232376519e-06,
+          "orientation_error_deg": 6.815269257441461e-08,
+          "min_margin_deg": 10.922983154459999,
+          "min_margin_joint": "w2",
+          "condition": 6.80732065826854,
+          "within_limits": true,
+          "arm_bed_m": 0.22493463522691476,
+          "arm_torso_m": 0.12278450576578838,
+          "arm_base_m": 0.7420113588311268,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        }
+      ]
+    },
+    {
+      "operation": "P7",
+      "side": "R",
+      "clearance_m": 0.2,
+      "finger": [
+        0.984807753012208,
+        0.17364817766693041,
+        0.0
+      ],
+      "bed": {
+        "x_near": 0.535,
+        "x_far": 1.5350000000000001,
+        "height_m": 0.7,
+        "width_m": 1.0,
+        "clearance_m": 0.2
+      },
+      "seconds": 63.7,
+      "states": [
+        {
+          "label": "S0_ready",
+          "reachable": true,
+          "position_floor": [
+            0.8999999999999999,
+            -0.25,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": 39.89713722088665,
+            "sh2": 40.203669451045755,
+            "sh1": -43.39014151682678,
+            "el": 80.7969379670272,
+            "rad": 70.291722027017,
+            "w1": -26.577278046938517,
+            "w2": 27.823474823785354
+          },
+          "position_error_mm": 4.1713400761930534e-07,
+          "orientation_error_deg": 3.152504255191421e-08,
+          "min_margin_deg": 17.176525176214646,
+          "min_margin_joint": "w2",
+          "condition": 5.760696554944113,
+          "within_limits": true,
+          "arm_bed_m": 0.21806404196773593,
+          "arm_torso_m": 0.1412974709106582,
+          "arm_base_m": 0.7467257917261381,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S1_above",
+          "reachable": true,
+          "position_floor": [
+            1.085,
+            -0.12,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": 50.65862568865004,
+            "sh2": 84.39222944724416,
+            "sh1": -43.824679808013116,
+            "el": 20.30153372517386,
+            "rad": 88.23482598061626,
+            "w1": -7.776956255091625,
+            "w2": 6.365967144682064
+          },
+          "position_error_mm": 0.00022676837372317157,
+          "orientation_error_deg": 2.4420575659218376e-05,
+          "min_margin_deg": 1.7651740193837355,
+          "min_margin_joint": "rad",
+          "condition": 24.49541576802754,
+          "within_limits": true,
+          "arm_bed_m": 0.16806419146821477,
+          "arm_torso_m": 0.10517142904387079,
+          "arm_base_m": 0.7209530875471194,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S2_contact",
+          "reachable": false,
+          "position_floor": [
+            1.085,
+            -0.12,
+            0.7999999999999999
+          ]
+        },
+        {
+          "label": "S3_manip",
+          "reachable": true,
+          "position_floor": [
+            1.085,
+            -0.22,
+            0.7999999999999999
+          ],
+          "q_deg": {
+            "sh3": 45.243623188503356,
+            "sh2": 84.9005819757286,
+            "sh1": -30.522431009083565,
+            "el": 6.46498172011197,
+            "rad": 87.96133863590106,
+            "w1": -14.904024723936926,
+            "w2": -7.8609140148529555
+          },
+          "position_error_mm": 0.0003846194002886654,
+          "orientation_error_deg": 5.75168434511068e-05,
+          "min_margin_deg": 2.0386613640989424,
+          "min_margin_joint": "rad",
+          "condition": 58.30343267825811,
+          "within_limits": true,
+          "arm_bed_m": 0.06806421904556263,
+          "arm_torso_m": 0.10642414485397834,
+          "arm_base_m": 0.687254219850197,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S4_lift",
+          "reachable": true,
+          "position_floor": [
+            1.085,
+            -0.22,
+            0.8999999999999999
+          ],
+          "q_deg": {
+            "sh3": 50.426411358625714,
+            "sh2": 74.1210820747595,
+            "sh1": -43.87403235177485,
+            "el": 22.55231782859081,
+            "rad": 80.71215654336848,
+            "w1": -9.595362889925186,
+            "w2": 0.9172908847169506
+          },
+          "position_error_mm": 3.5654876764326466e-05,
+          "orientation_error_deg": 3.1593064070271974e-06,
+          "min_margin_deg": 9.28784345663152,
+          "min_margin_joint": "rad",
+          "condition": 22.66292406997729,
+          "within_limits": true,
+          "arm_bed_m": 0.16806405283364784,
+          "arm_torso_m": 0.11473817887093564,
+          "arm_base_m": 0.7269838982939134,
+          "arm_arm_parked_m": 0.18387828919323806,
+          "collision_free_parked": true
+        },
+        {
+          "label": "S5_ready",
+          "reachable": true,
+          "position_floor": [
+            0.8999999999999999,
+            -0.25,
+            0.95
+          ],
+          "q_deg": {
+            "sh3": 39.89713722088665,
+            "sh2": 40.203669451045755,
+            "sh1": -43.39014151682678,
+            "el": 80.7969379670272,
+            "rad": 70.291722027017,
+            "w1": -26.577278046938517,
+            "w2": 27.823474823785354
+          },
+          "position_error_mm": 4.1713400761930534e-07,
+          "orientation_error_deg": 3.152504255191421e-08,
+          "min_margin_deg": 17.176525176214646,
+          "min_margin_joint": "w2",
+          "condition": 5.760696554944113,
+          "within_limits": true,
+          "arm_bed_m": 0.21806404196773593,
+          "arm_torso_m": 0.1412974709106582,
+          "arm_base_m": 0.7467257917261381,
+          "arm_arm_parked_m": 0.18387828919323762,
+          "collision_free_parked": true
+        }
+      ]
+    }
+  ],
+  "simultaneous": [
+    {
+      "operation": "P6",
+      "clearance_m": 0.05,
+      "label": "S0_ready",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 11.120276884389916,
+      "max_condition": 7.390589999273266
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.05,
+      "label": "S1_above",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 10.544390660116349,
+      "max_condition": 5.843564172305761
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.05,
+      "label": "S2_grasp",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323806,
+      "collision_free": true,
+      "min_margin_deg": 7.772744032425223,
+      "max_condition": 6.736099195616617
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.05,
+      "label": "S3_tension",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 2.596078229801492,
+      "max_condition": 6.51878505769066
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.05,
+      "label": "S4_lift",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323806,
+      "collision_free": true,
+      "min_margin_deg": 7.866603733258366,
+      "max_condition": 6.051935532355279
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.05,
+      "label": "S5_ready",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 11.120276884389916,
+      "max_condition": 7.390589999273266
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.1,
+      "label": "S0_ready",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323806,
+      "collision_free": true,
+      "min_margin_deg": 12.407316893182703,
+      "max_condition": 6.522043864527734
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.1,
+      "label": "S1_above",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 14.1780617832171,
+      "max_condition": 6.59975794485997
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.1,
+      "label": "S2_grasp",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323806,
+      "collision_free": true,
+      "min_margin_deg": 9.439884040794723,
+      "max_condition": 7.792582603456204
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.1,
+      "label": "S3_tension",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323806,
+      "collision_free": true,
+      "min_margin_deg": 7.772744032425223,
+      "max_condition": 6.4263559193103115
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.1,
+      "label": "S4_lift",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 11.08526387126895,
+      "max_condition": 5.984953628379557
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.1,
+      "label": "S5_ready",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 12.150505322725259,
+      "max_condition": 6.4765126063790985
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.12,
+      "label": "S0_ready",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 12.509440672408083,
+      "max_condition": 6.20922115651742
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.12,
+      "label": "S1_above",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323806,
+      "collision_free": true,
+      "min_margin_deg": 16.266744748813142,
+      "max_condition": 7.356822290415315
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.12,
+      "label": "S2_grasp",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 9.672932598574107,
+      "max_condition": 8.843716952401701
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.12,
+      "label": "S3_tension",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323806,
+      "collision_free": true,
+      "min_margin_deg": 8.392251109418446,
+      "max_condition": 6.821760884983734
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.12,
+      "label": "S4_lift",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 10.484675960072423,
+      "max_condition": 6.293533121966241
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.12,
+      "label": "S5_ready",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 12.509440672408083,
+      "max_condition": 6.20922115651742
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.15,
+      "label": "S0_ready",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 11.918738182801334,
+      "max_condition": 5.897793095936657
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.15,
+      "label": "S1_above",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 17.515670649752764,
+      "max_condition": 8.57529544128945
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.15,
+      "label": "S2_grasp",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323806,
+      "collision_free": true,
+      "min_margin_deg": 10.516360871019188,
+      "max_condition": 10.019735834445994
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.15,
+      "label": "S3_tension",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323806,
+      "collision_free": true,
+      "min_margin_deg": 9.439884040794723,
+      "max_condition": 7.848507755108728
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.15,
+      "label": "S4_lift",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323806,
+      "collision_free": true,
+      "min_margin_deg": 13.728493759374167,
+      "max_condition": 6.878708028905197
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.15,
+      "label": "S5_ready",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 12.965794884870022,
+      "max_condition": 5.897793095936657
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.2,
+      "label": "S0_ready",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 13.944490714855114,
+      "max_condition": 5.559903881280629
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.2,
+      "label": "S1_above",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 17.587148421337787,
+      "max_condition": 12.257559338969857
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.2,
+      "label": "S2_grasp",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323806,
+      "collision_free": true,
+      "min_margin_deg": 11.480080310472914,
+      "max_condition": 16.90053540750935
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.2,
+      "label": "S3_tension",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323806,
+      "collision_free": true,
+      "min_margin_deg": 10.516360871019188,
+      "max_condition": 9.216582344039125
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.2,
+      "label": "S4_lift",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 10.255611917648963,
+      "max_condition": 8.82872216938061
+    },
+    {
+      "operation": "P6",
+      "clearance_m": 0.2,
+      "label": "S5_ready",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 13.944490714855114,
+      "max_condition": 5.559903881280629
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.05,
+      "label": "S0_ready",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323806,
+      "collision_free": true,
+      "min_margin_deg": 11.885188361612144,
+      "max_condition": 5.969996659669352
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.05,
+      "label": "S1_above",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18015476890979068,
+      "collision_free": true,
+      "min_margin_deg": 6.217308095051827,
+      "max_condition": 9.70626512033361
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.05,
+      "label": "S2_contact",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18015472668798227,
+      "collision_free": true,
+      "min_margin_deg": 4.063165410128633,
+      "max_condition": 12.396590443921877
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.05,
+      "label": "S3_manip",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323806,
+      "collision_free": true,
+      "min_margin_deg": 8.43397128628466,
+      "max_condition": 10.203193510757972
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.05,
+      "label": "S4_lift",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 11.107321908588958,
+      "max_condition": 8.499721585224105
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.05,
+      "label": "S5_ready",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323806,
+      "collision_free": true,
+      "min_margin_deg": 11.885188361612144,
+      "max_condition": 5.969996659669352
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.1,
+      "label": "S0_ready",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323806,
+      "collision_free": true,
+      "min_margin_deg": 13.418760892281885,
+      "max_condition": 5.58190188917458
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.1,
+      "label": "S1_above",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18015480075160664,
+      "collision_free": true,
+      "min_margin_deg": 9.801527361334529,
+      "max_condition": 18.209042457739624
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.1,
+      "label": "S2_contact",
+      "reachable_pair": true,
+      "arm_arm_m": 0.1801540883385424,
+      "collision_free": true,
+      "min_margin_deg": 4.2837745212721785,
+      "max_condition": 20.861342817006054
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.1,
+      "label": "S3_manip",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 1.1174559026369195,
+      "max_condition": 20.077763366744662
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.1,
+      "label": "S4_lift",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 9.595484335032467,
+      "max_condition": 13.231284172336293
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.1,
+      "label": "S5_ready",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 12.074256561655524,
+      "max_condition": 5.580077270129095
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.12,
+      "label": "S0_ready",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 13.771441463936466,
+      "max_condition": 5.496411175875314
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.12,
+      "label": "S1_above",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18015246535697996,
+      "collision_free": true,
+      "min_margin_deg": 0.06983159732349975,
+      "max_condition": 43.77550005291224
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.12,
+      "label": "S2_contact",
+      "reachable_pair": true,
+      "arm_arm_m": 0.1801530110789954,
+      "collision_free": true,
+      "min_margin_deg": 1.6487135586156114,
+      "max_condition": 20.376114164603003
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.12,
+      "label": "S3_manip",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 1.0661693820582059,
+      "max_condition": 36.79934251998097
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.12,
+      "label": "S4_lift",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 2.469173264129239,
+      "max_condition": 18.1865010043064
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.12,
+      "label": "S5_ready",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 13.771441463936466,
+      "max_condition": 5.496411175875314
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.15,
+      "label": "S0_ready",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323806,
+      "collision_free": true,
+      "min_margin_deg": 11.553343894020927,
+      "max_condition": 5.831394285618144
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.15,
+      "label": "S1_above",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18015480160002145,
+      "collision_free": true,
+      "min_margin_deg": 2.5081882548251144,
+      "max_condition": 19.797896382238722
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.15,
+      "label": "S2_contact",
+      "reachable_pair": true,
+      "arm_arm_m": 0.174014712929417,
+      "collision_free": true,
+      "min_margin_deg": 0.3502460756061314,
+      "max_condition": 44.96317449781665
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.15,
+      "label": "S3_manip",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 5.9573015516815016,
+      "max_condition": 50.52443402612618
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.15,
+      "label": "S4_lift",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 8.9294227881755,
+      "max_condition": 16.252398855417983
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.15,
+      "label": "S5_ready",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323806,
+      "collision_free": true,
+      "min_margin_deg": 11.070581514177022,
+      "max_condition": 5.800461646626859
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.2,
+      "label": "S0_ready",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 13.301593639621828,
+      "max_condition": 6.827503793859938
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.2,
+      "label": "S1_above",
+      "reachable_pair": false
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.2,
+      "label": "S2_contact",
+      "reachable_pair": false
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.2,
+      "label": "S3_manip",
+      "reachable_pair": false
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.2,
+      "label": "S4_lift",
+      "reachable_pair": false
+    },
+    {
+      "operation": "P7",
+      "clearance_m": 0.2,
+      "label": "S5_ready",
+      "reachable_pair": true,
+      "arm_arm_m": 0.18387828919323762,
+      "collision_free": true,
+      "min_margin_deg": 10.922983154459999,
+      "max_condition": 6.80732065826854
+    }
+  ]
+}

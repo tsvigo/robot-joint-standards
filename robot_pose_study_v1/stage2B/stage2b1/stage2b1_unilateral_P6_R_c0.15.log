@@ -1,0 +1,13 @@
+[as_is] status=valid seconds=112.9
+  S0_ready->S1_above   joint_lerp         n= 72 ori= 3.541 pos=  22.14mm margin= 12.97 cond= 6.64 clr= 133.9mm end=0.000mm/0.0000deg
+  S1_above->S2_grasp   via_lift           n= 33 ori= 0.000 pos= 137.50mm margin= 10.64 cond= 7.69 clr=  48.1mm end=0.000mm/0.0000deg
+  S2_grasp->S3_tension joint_lerp         n= 23 ori= 0.142 pos=   0.89mm margin=  9.44 cond= 7.69 clr=  47.9mm end=0.000mm/0.0000deg
+  S3_tension->S4_lift    joint_lerp         n= 18 ori= 0.088 pos=   2.50mm margin=  9.44 cond= 6.65 clr=  48.1mm end=0.000mm/0.0000deg
+  S4_lift->S5_ready   joint_lerp         n= 53 ori= 2.507 pos=  17.67mm margin= 12.97 cond= 5.93 clr= 133.9mm end=0.000mm/0.0000deg
+[strict_6d] status=valid seconds=109.4
+  S0_ready->S1_above   task_space         n= 21 ori= 0.000 pos=   0.00mm margin=  9.12 cond= 6.85 clr= 133.9mm end=0.000mm/0.0000deg
+  S1_above->S2_grasp   task_space         n= 13 ori= 0.000 pos=   0.00mm margin=  9.58 cond= 7.72 clr=  48.1mm end=0.000mm/0.0000deg
+  S2_grasp->S3_tension task_space         n=  7 ori= 0.000 pos=   0.00mm margin=  9.44 cond= 7.72 clr=  48.1mm end=0.000mm/0.0000deg
+  S3_tension->S4_lift    task_space         n= 11 ori= 0.000 pos=   0.00mm margin=  9.44 cond= 6.65 clr=  48.1mm end=0.000mm/0.0000deg
+  S4_lift->S5_ready   task_space         n= 17 ori= 0.000 pos=   0.00mm margin=  3.22 cond= 5.93 clr= 146.4mm end=0.000mm/0.0000deg
+written: /home/v/projects/робот/robot_pose_study_v1/stage2B/stage2b1/stage2b1_unilateral_P6_R_c0.15.json

@@ -1,0 +1,13 @@
+P8 5d L_shoulder both=both ori_L/R=0.00/0.00 margin=8.10 (L 33.71/R 8.10) arm_arm=183.9mm distal=640.1mm sync_min_distal=638.6mm sync_end_ori=0.00deg sync_cart_ok=True
+P8 5d L_pelvis   both=no   ori_L/R=nan/nan margin=0.00 (L 0.00/R 0.00) arm_arm=nanmm distal=nanmm sync_min_distal=nanmm sync_end_ori=nandeg sync_cart_ok=None
+      left: unreachable (no_converged_solution) dist=0.840 m best pos=155.35399356882434 mm ori=12.989565711845335 deg converged=False within_limits=True collision_free=True
+      right: unreachable (no_converged_solution) dist=0.839 m best pos=137.0040028730861 mm ori=12.787280468890943 deg converged=False within_limits=True collision_free=True
+P8 6d L_shoulder both=both ori_L/R=0.00/0.00 margin=2.60 (L 18.34/R 2.60) arm_arm=183.9mm distal=638.8mm sync_min_distal=617.2mm sync_end_ori=0.00deg sync_cart_ok=True
+P8 6d L_pelvis   both=no   ori_L/R=nan/nan margin=0.00 (L 0.00/R 0.00) arm_arm=nanmm distal=nanmm sync_min_distal=nanmm sync_end_ori=nandeg sync_cart_ok=None
+      left: unreachable (no_converged_solution) dist=0.840 m best pos=501.2818344273177 mm ori=4.32213403301118 deg converged=False within_limits=True collision_free=False
+      right: unreachable (no_converged_solution) dist=0.839 m best pos=207.34408997826557 mm ori=23.150059259177272 deg converged=False within_limits=True collision_free=True
+P9 5d L: 2 segments finger=defined_plus_y ready=study_convention method=task_space ori=0.000 pos_dev=0.00 margin=12.85 (w2) cond=4.94 clr=107.4
+P9 5d R: 2 segments finger=defined_plus_y ready=study_convention method=task_space ori=0.000 pos_dev=0.00 margin=12.29 (sh1) cond=4.47 clr=107.8
+P9 6d L: 2 segments finger=alternative_plus_x ready=study_convention method=task_space ori=0.000 pos_dev=0.00 margin=1.64 (sh1) cond=5.14 clr=95.3
+P9 6d R: 2 segments finger=defined_plus_y ready=behind_above method=task_space ori=0.000 pos_dev=0.00 margin=0.00 (w2) cond=4.51 clr=143.1
+written: /home/v/projects/робот/robot_pose_study_v1/stage2B/stage2b1/stage2b1_p8_p9.json

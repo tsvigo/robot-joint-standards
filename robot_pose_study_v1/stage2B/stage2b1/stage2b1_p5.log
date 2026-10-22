@@ -1,0 +1,40 @@
+original P5 L c=0.05: reachable=False required extension=0.38986072422802637
+original P5 R c=0.05: reachable=False required extension=0.17207187448687536
+variant E local L c=0.05: reachable=False
+variant E local R c=0.05: reachable=False
+variant E world L c=0.05: reachable=False
+variant E world R c=0.05: reachable=False
+original P5 L c=0.10: reachable=False required extension=0.25569691109872644
+original P5 R c=0.10: reachable=False required extension=0.2205486256008668
+variant E local L c=0.10: reachable=False
+variant E local R c=0.10: reachable=False
+variant E world L c=0.10: reachable=False
+variant E world R c=0.10: reachable=False
+original P5 L c=0.12: reachable=False required extension=0.4731600770004598
+original P5 R c=0.12: reachable=False required extension=0.2399793559382899
+variant E local L c=0.12: reachable=False
+variant E local R c=0.12: reachable=False
+variant E world L c=0.12: reachable=False
+variant E world R c=0.12: reachable=False
+original P5 L c=0.15: reachable=False required extension=0.3146355371605388
+original P5 R c=0.15: reachable=False required extension=0.2691937982528311
+variant E local L c=0.15: reachable=False
+variant E local R c=0.15: reachable=False
+variant E world L c=0.15: reachable=False
+variant E world R c=0.15: reachable=False
+original P5 L c=0.20: reachable=False required extension=0.5657558585495717
+original P5 R c=0.20: reachable=False required extension=0.31800570360725294
+variant E local L c=0.20: reachable=True
+variant E local R c=0.20: reachable=False
+variant E world L c=0.20: reachable=False
+variant E world R c=0.20: reachable=False
+trajectory: c=0.20 local L computed
+
+clearance | E local L/R | E world L/R | required extension L/R (mm)
+     0.05 | no/no      | no/no      |   389.9/172.1  
+     0.10 | no/no      | no/no      |   255.7/220.5  
+     0.12 | no/no      | no/no      |   473.2/240.0  
+     0.15 | no/no      | no/no      |   314.6/269.2  
+     0.20 | OK/no      | no/no      |   565.8/318.0  
+
+written: /home/v/projects/робот/robot_pose_study_v1/stage2B/stage2b1/stage2b1_p5.json

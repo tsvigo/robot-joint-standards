@@ -1,0 +1,9 @@
+operation_status=valid transitions=5/5 plan_seconds=52.7
+transition                   method              n  max|dP|mm  max ori  min mar max cond min clr mm   end dP  end ori
+S0_ready->S1_above           joint_lerp        110      34.58    7.856    13.53     6.60      106.6    0.000   0.0000
+S1_above->S2_grasp           joint_lerp         32       3.39    0.090    24.96     7.79       54.9    0.000   0.0000
+S2_grasp->S3_tension         via_lift           23     100.00    0.000    22.08     7.79       54.9    0.000   0.0000
+S3_tension->S4_lift          joint_lerp         54       7.81    0.459    22.08     6.76       54.9    0.000   0.0000
+S4_lift->S5_ready            task_space         17       0.00    0.000    25.20     5.98      121.6    0.000   0.0000
+OVERALL samples=236 max|dP|=100.00 mm max_ori=7.856 deg min_margin=13.53 deg max_cond=7.79 min_clear=54.9 mm
+written: /home/v/projects/робот/robot_pose_study_v1/stage2B/stage2b1/stage2b1_control_p6_L.json
