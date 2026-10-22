@@ -1,0 +1,107 @@
+{
+  "check": "rerun of P6 L, clearance c=0.10, with the current stage2b1_unilateral.py",
+  "tolerances": {
+    "content_numeric": "exact equality (delta = 0.0)",
+    "service_fields": "excluded from content comparison",
+    "service_field_list": [
+      "metadata.created_utc",
+      "metadata.git_head",
+      "metadata.script_sha256",
+      "metadata.seconds",
+      "policies.<policy>.seconds"
+    ]
+  },
+  "script": {
+    "verified_version": "stage2b1_unilateral.py @ sha256 6234dffc…",
+    "original_version_sha256": "97bc121a…",
+    "reconstructed_version": "verification/stage2b1_unilateral_at_0755.py",
+    "reconstruction_hash_match": true
+  },
+  "original": {
+    "file": "stage2b1_unilateral_P6_L_c0.10.json",
+    "sha256": "980fbe8d96969b4d0d189bbe0a61ace3f5b3f8f0967d1575d3b17d274d1a1614",
+    "script_sha256": "97bc121a6c5c2f0709f614996dbd5860ec88f78c8bf4736b9ac7ff968a5b586e",
+    "git_head": "13f833a428acab2059ef1825a352f2fa23585b66",
+    "created_utc": "2026-10-22T04:55:48.845380+00:00"
+  },
+  "rerun": {
+    "file": "verification/stage2b1_reverify_unilateral_P6_L_c0.10.json",
+    "sha256": "9a73dd35cfd9ffcb499aa173c71388f4312ee20b45b771d02de8675609b291c9",
+    "script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd",
+    "git_head": "fdbce3a952c6143988b701c3b29efa411b68578f",
+    "created_utc": "2026-10-22T07:02:40.028938+00:00"
+  },
+  "content": {
+    "nodes_compared": {
+      "float": 5740,
+      "int": 60,
+      "str": 480,
+      "bool": 786,
+      "null": 62,
+      "list": 31
+    },
+    "differences": 0,
+    "max_abs_delta": 0.0,
+    "items": []
+  },
+  "service_fields": {
+    "differences": 6,
+    "items": [
+      {
+        "path": "metadata.created_utc",
+        "old": "2026-10-22T04:55:48.845380+00:00",
+        "new": "2026-10-22T07:02:40.028938+00:00"
+      },
+      {
+        "path": "metadata.git_head",
+        "old": "13f833a428acab2059ef1825a352f2fa23585b66",
+        "new": "fdbce3a952c6143988b701c3b29efa411b68578f"
+      },
+      {
+        "path": "metadata.script_sha256",
+        "old": "97bc121a6c5c2f0709f614996dbd5860ec88f78c8bf4736b9ac7ff968a5b586e",
+        "new": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+      },
+      {
+        "path": "metadata.seconds",
+        "old": 105.9,
+        "new": 124.8,
+        "delta": 18.89999999999999
+      },
+      {
+        "path": "policies.as_is.seconds",
+        "old": 52.3,
+        "new": 60.2,
+        "delta": 7.900000000000006
+      },
+      {
+        "path": "policies.strict_6d.seconds",
+        "old": 53.6,
+        "new": 64.6,
+        "delta": 10.999999999999993
+      }
+    ]
+  },
+  "path_files": {
+    "as_is": {
+      "sha256": "b7b8628c8921e68bd813f0c01e41a4618682b99fd3bf3d90005aa1b5f4ffd959",
+      "byte_identical": true
+    },
+    "strict_6d": {
+      "sha256": "01de2361f13dd187f5d1fe074843ddb0aae3c6489122eb6f37f12764cdd2dbef",
+      "byte_identical": true
+    }
+  },
+  "statuses": {
+    "original": {
+      "as_is": "valid",
+      "strict_6d": "valid"
+    },
+    "rerun": {
+      "as_is": "valid",
+      "strict_6d": "valid"
+    },
+    "equal": true
+  },
+  "conclusion": "content is identical; only wall-clock timing fields differ"
+}

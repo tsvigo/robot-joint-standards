@@ -1,0 +1,525 @@
+{
+  "generated_utc": "2026-10-22T07:09:47.516085+00:00",
+  "scope": "stage 2B.1 JSON artifacts without an embedded metadata.script_sha256",
+  "status_levels": {
+    "confirmed_reproduced_byte_identical": "rerun of the current generator gave the same SHA256",
+    "confirmed_by_generator_hash": "same run wrote a sibling artifact whose recorded generator SHA256 matches current bytes",
+    "script_identified_not_confirmed": "generator identified from code only; no hash evidence"
+  },
+  "generators": {
+    "stage2b1_unilateral.py": {
+      "sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd",
+      "writes": [
+        "stage2b1_unilateral_{tag}.json",
+        "stage2b1_path_{tag}_{policy}.json"
+      ],
+      "evidence": "stage2b1_unilateral.py, lines 409 and 415"
+    },
+    "stage2b1_force_candidates.py": {
+      "sha256": "eda36bca0522d446419eb0b550a39b8888da0cceac88846e1c7a984611107986",
+      "writes": [
+        "stage2b1_force_candidates.json"
+      ],
+      "evidence": "stage2b1_force_candidates.py, line 21 (OUT) and line 172 (write_text)"
+    }
+  },
+  "summary": {
+    "total": 30,
+    "confirmed_reproduced_byte_identical": 3,
+    "confirmed_by_generator_hash": 27
+  },
+  "files": [
+    {
+      "path": "stage2b1_force_candidates.json",
+      "bytes": 45613,
+      "sha256": "a964198ba9715270c3c9a6f3b401dcb4ce47a14ccd918a49e0d5c41564af50dd",
+      "generator": "stage2b1_force_candidates.py",
+      "provenance_status": "confirmed_reproduced_byte_identical",
+      "basis": "rerun of the current generator in an isolated directory produced an identical SHA256",
+      "config": null
+    },
+    {
+      "path": "stage2b1_path_P6_L_c0.05_as_is.json",
+      "bytes": 31612,
+      "sha256": "b14db3eadd7a0e43e22370b1d1ba97deaa786653f6dd1368f23c3ff849726bba",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P6_L_c0.05.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P6",
+        "side": "L",
+        "clearance_m": 0.05,
+        "policy": "as_is"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P6_L_c0.05.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P6_L_c0.05_strict_6d.json",
+      "bytes": 25541,
+      "sha256": "6746539cc8ececd94940bd5c57b66a485fcea1f49f3739a4af082144e96c6cb9",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P6_L_c0.05.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P6",
+        "side": "L",
+        "clearance_m": 0.05,
+        "policy": "strict_6d"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P6_L_c0.05.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P6_L_c0.10_as_is.json",
+      "bytes": 89716,
+      "sha256": "b7b8628c8921e68bd813f0c01e41a4618682b99fd3bf3d90005aa1b5f4ffd959",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_reproduced_byte_identical",
+      "basis": "rerun of the current generator produced an identical SHA256; reproduced copy kept in verification/stage2b1_reverify_path_P6_L_c0.10_as_is.json",
+      "config": {
+        "operation": "P6",
+        "side": "L",
+        "clearance_m": 0.1,
+        "policy": "as_is"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P6_L_c0.10.json",
+      "sibling_script_sha256": "97bc121a6c5c2f0709f614996dbd5860ec88f78c8bf4736b9ac7ff968a5b586e"
+    },
+    {
+      "path": "stage2b1_path_P6_L_c0.10_strict_6d.json",
+      "bytes": 25569,
+      "sha256": "01de2361f13dd187f5d1fe074843ddb0aae3c6489122eb6f37f12764cdd2dbef",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_reproduced_byte_identical",
+      "basis": "rerun of the current generator produced an identical SHA256; reproduced copy kept in verification/stage2b1_reverify_path_P6_L_c0.10_strict_6d.json",
+      "config": {
+        "operation": "P6",
+        "side": "L",
+        "clearance_m": 0.1,
+        "policy": "strict_6d"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P6_L_c0.10.json",
+      "sibling_script_sha256": "97bc121a6c5c2f0709f614996dbd5860ec88f78c8bf4736b9ac7ff968a5b586e"
+    },
+    {
+      "path": "stage2b1_path_P6_L_c0.12_as_is.json",
+      "bytes": 58226,
+      "sha256": "4283b12c82fe8ea0002bcec02c4a47bae387e63d10ca1e06027ebe57cd949195",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P6_L_c0.12.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P6",
+        "side": "L",
+        "clearance_m": 0.12,
+        "policy": "as_is"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P6_L_c0.12.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P6_L_c0.12_strict_6d.json",
+      "bytes": 25522,
+      "sha256": "9c30d1f21236619c03fa4bef5ffbc59c744b5010dfa87e1a1106c0913fa6a7f1",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P6_L_c0.12.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P6",
+        "side": "L",
+        "clearance_m": 0.12,
+        "policy": "strict_6d"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P6_L_c0.12.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P6_L_c0.15_as_is.json",
+      "bytes": 56230,
+      "sha256": "e055bb2bcb135b3ae8b791fa016a0f74428a0fafb543cfa0dc7e7872aff42cb0",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P6_L_c0.15.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P6",
+        "side": "L",
+        "clearance_m": 0.15,
+        "policy": "as_is"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P6_L_c0.15.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P6_L_c0.15_strict_6d.json",
+      "bytes": 25563,
+      "sha256": "2b75d0ec917b1aceff046778a56d818a99b301407a5ea249d887f36482906e3a",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P6_L_c0.15.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P6",
+        "side": "L",
+        "clearance_m": 0.15,
+        "policy": "strict_6d"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P6_L_c0.15.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P6_R_c0.05_as_is.json",
+      "bytes": 80248,
+      "sha256": "7b429674df35c8ab54e8752e99e3cba5152d61d4086acc98898a23b9fe9fd494",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P6_R_c0.05.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P6",
+        "side": "R",
+        "clearance_m": 0.05,
+        "policy": "as_is"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P6_R_c0.05.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P6_R_c0.05_strict_6d.json",
+      "bytes": 29654,
+      "sha256": "6d5ab46848553ccbdbc5c20b36e40b2432c4a2f64e252e028e9b61570bb3c357",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P6_R_c0.05.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P6",
+        "side": "R",
+        "clearance_m": 0.05,
+        "policy": "strict_6d"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P6_R_c0.05.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P6_R_c0.10_as_is.json",
+      "bytes": 64215,
+      "sha256": "e711ad8a3b6fdcdff43dc208145c9e5bd3aed521a147148861948dae62a848fe",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P6_R_c0.10.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P6",
+        "side": "R",
+        "clearance_m": 0.1,
+        "policy": "as_is"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P6_R_c0.10.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P6_R_c0.10_strict_6d.json",
+      "bytes": 30424,
+      "sha256": "15e0ddd1717976701545dbfaca525926a31869784305895319385e7040b3dcc8",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P6_R_c0.10.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P6",
+        "side": "R",
+        "clearance_m": 0.1,
+        "policy": "strict_6d"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P6_R_c0.10.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P6_R_c0.12_as_is.json",
+      "bytes": 66127,
+      "sha256": "707b6b69653d468e41e08b4d5c9c2293b58656ac406eb46fdfd3f262d582ed00",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P6_R_c0.12.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P6",
+        "side": "R",
+        "clearance_m": 0.12,
+        "policy": "as_is"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P6_R_c0.12.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P6_R_c0.12_strict_6d.json",
+      "bytes": 30485,
+      "sha256": "189611fe9cf3ed8792ed0b17998f505151dc3021873a78f65ac769fd6b4b7633",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P6_R_c0.12.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P6",
+        "side": "R",
+        "clearance_m": 0.12,
+        "policy": "strict_6d"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P6_R_c0.12.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P6_R_c0.15_as_is.json",
+      "bytes": 74988,
+      "sha256": "542dffa39d32cf3e050634e71cc29c3a10ad083ad79264d9315184564e840119",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P6_R_c0.15.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P6",
+        "side": "R",
+        "clearance_m": 0.15,
+        "policy": "as_is"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P6_R_c0.15.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P6_R_c0.15_strict_6d.json",
+      "bytes": 25388,
+      "sha256": "b60a7cd7d39df049982d6358d496807eea12a41b25f16d3d10189bc4955570ab",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P6_R_c0.15.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P6",
+        "side": "R",
+        "clearance_m": 0.15,
+        "policy": "strict_6d"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P6_R_c0.15.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P7_L_c0.05_as_is.json",
+      "bytes": 59605,
+      "sha256": "3f8a2a95c8f7d94d1e766a0ea66ed18b9a28d8484c4fe405ea9471ecb1505932",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P7_L_c0.05.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P7",
+        "side": "L",
+        "clearance_m": 0.05,
+        "policy": "as_is"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P7_L_c0.05.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P7_L_c0.05_strict_6d.json",
+      "bytes": 29196,
+      "sha256": "83534b9ebda88db9515cde4c861d630316905322c15c17787851cd24ecc6e0ee",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P7_L_c0.05.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P7",
+        "side": "L",
+        "clearance_m": 0.05,
+        "policy": "strict_6d"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P7_L_c0.05.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P7_L_c0.10_as_is.json",
+      "bytes": 96501,
+      "sha256": "d8c61aa2124719c39b3486fcb1975b12ecce21ff2328c263b1bff5114ba14b25",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P7_L_c0.10.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P7",
+        "side": "L",
+        "clearance_m": 0.1,
+        "policy": "as_is"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P7_L_c0.10.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P7_L_c0.10_strict_6d.json",
+      "bytes": 29206,
+      "sha256": "57e58f0c845eb0466035488b82000e598aca1396dcb15f3ed34a06162e8288e6",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P7_L_c0.10.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P7",
+        "side": "L",
+        "clearance_m": 0.1,
+        "policy": "strict_6d"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P7_L_c0.10.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P7_L_c0.12_as_is.json",
+      "bytes": 123926,
+      "sha256": "24169459ff5e01bccfc50ace422270b9556f9beacb69ea6fe81358663c9ef732",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P7_L_c0.12.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P7",
+        "side": "L",
+        "clearance_m": 0.12,
+        "policy": "as_is"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P7_L_c0.12.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P7_R_c0.05_as_is.json",
+      "bytes": 80357,
+      "sha256": "3ba0d9684e4fea63d25d0b26ac975b7890233455d87143732c80f8728a5ac400",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P7_R_c0.05.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P7",
+        "side": "R",
+        "clearance_m": 0.05,
+        "policy": "as_is"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P7_R_c0.05.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P7_R_c0.05_strict_6d.json",
+      "bytes": 29089,
+      "sha256": "f5e769d6712c72dc905322856ee1fff05acc1197009eb03fc8ebceb3278f932b",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P7_R_c0.05.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P7",
+        "side": "R",
+        "clearance_m": 0.05,
+        "policy": "strict_6d"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P7_R_c0.05.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P7_R_c0.10_as_is.json",
+      "bytes": 81618,
+      "sha256": "f070b6a2d87c1852c1ed56779c21d4b69e6e9acd986eda5bfc350281e2cc98ab",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P7_R_c0.10.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P7",
+        "side": "R",
+        "clearance_m": 0.1,
+        "policy": "as_is"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P7_R_c0.10.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P7_R_c0.10_strict_6d.json",
+      "bytes": 29121,
+      "sha256": "11c2429afe8ce16f40769b1bfa1c4ae5b233ddc10e61529fcd71d933a53c92d7",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P7_R_c0.10.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P7",
+        "side": "R",
+        "clearance_m": 0.1,
+        "policy": "strict_6d"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P7_R_c0.10.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P7_R_c0.12_as_is.json",
+      "bytes": 84615,
+      "sha256": "776bb9619d873cfb3805301723116b4e5aaefa7a7c408305835de01aee682be2",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P7_R_c0.12.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P7",
+        "side": "R",
+        "clearance_m": 0.12,
+        "policy": "as_is"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P7_R_c0.12.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P7_R_c0.12_strict_6d.json",
+      "bytes": 29116,
+      "sha256": "38a4709b29adebd8c5d2f6d95810e8b758771c071ede3f291f37bfb0f23cc88f",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P7_R_c0.12.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P7",
+        "side": "R",
+        "clearance_m": 0.12,
+        "policy": "strict_6d"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P7_R_c0.12.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P7_R_c0.15_as_is.json",
+      "bytes": 65073,
+      "sha256": "ec23de37d1853847c5f171edda0bd412401ee40650fa12929fd3a0a77a4f78fd",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P7_R_c0.15.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P7",
+        "side": "R",
+        "clearance_m": 0.15,
+        "policy": "as_is"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P7_R_c0.15.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    },
+    {
+      "path": "stage2b1_path_P7_R_c0.15_strict_6d.json",
+      "bytes": 29110,
+      "sha256": "04c16279361b7c225a54219b97c65501e5ac8cfd52a1ca5ce2c945f2ab597140",
+      "generator": "stage2b1_unilateral.py",
+      "provenance_status": "confirmed_by_generator_hash",
+      "basis": "written by the same run that wrote the sibling artifact stage2b1_unilateral_P7_R_c0.15.json, whose metadata.script_sha256 equals the current SHA256 of stage2b1_unilateral.py",
+      "config": {
+        "operation": "P7",
+        "side": "R",
+        "clearance_m": 0.15,
+        "policy": "strict_6d"
+      },
+      "sibling_artifact": "stage2b1_unilateral_P7_R_c0.15.json",
+      "sibling_script_sha256": "6234dffccceacd3bfa929c63f9ec0b1d0b98ff232cca79cbf3f795d1b02f11cd"
+    }
+  ],
+  "expected_absent": [
+    {
+      "artifact": "stage2b1_path_P7_L_c0.12_strict_6d.json",
+      "reason": "strict_6d planning failed (0/5 transitions), no path file written"
+    },
+    {
+      "artifact": "stage2b1_path_P7_L_c0.15_as_is.json",
+      "reason": "as_is planning failed (0/5 transitions), no path file written"
+    },
+    {
+      "artifact": "stage2b1_path_P7_L_c0.15_strict_6d.json",
+      "reason": "strict_6d planning failed (0/5 transitions), no path file written"
+    }
+  ],
+  "limitations": [
+    "No artifact in this manifest embeds its own generator hash.",
+    "confirmed_by_generator_hash relies on two files being written by the same run; it is not a byte-level rerun of this artifact.",
+    "Only P6 L c=0.10 path files and the force-candidate list were rerun; the remaining path files were not reproduced."
+  ]
+}
