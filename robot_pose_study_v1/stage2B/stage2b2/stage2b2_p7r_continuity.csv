@@ -1,0 +1,11 @@
+policy,from,to,method,samples,max_step_deg,max_step_joint,max_step_t,median_step_deg,p95_step_deg,endpoint_jump_deg,endpoint_jump_joint,endpoint_jump_euclid_deg,endpoint_margin_before_deg,endpoint_margin_after_deg,boundary_step_deg
+as_is,S0_ready,S1_above,joint_lerp,80,0.495,sh2,0.962,0.495,0.495,0.495,sh2,0.859,10.111,10.077,0.0
+as_is,S1_above,S2_contact,joint_lerp,21,0.489,rad,0.05,0.489,0.489,0.489,rad,0.74,4.552,4.063,0.0
+as_is,S2_contact,S3_manip,via_lift,25,0.882,rad,0.1667,0.758,0.863,0.657,el,1.178,8.715,8.342,0.0
+as_is,S3_manip,S4_lift,joint_lerp,17,0.5,sh3,0.0625,0.5,0.5,0.5,sh3,0.815,13.851,14.218,0.0
+as_is,S4_lift,S5_ready,joint_lerp,71,0.494,el,0.0286,0.494,0.494,0.494,el,0.928,11.965,11.885,0.0
+strict_6d,S0_ready,S1_above,task_space,25,8.418,sh1,1.0,1.692,2.329,8.418,sh1,14.001,4.293,9.686,0.0
+strict_6d,S1_above,S2_contact,task_space,11,1.422,rad,0.1,0.853,1.422,0.851,rad,1.482,4.912,4.061,0.0
+strict_6d,S2_contact,S3_manip,task_space,11,0.95,sh2,0.1,0.874,0.95,0.854,w2,1.332,7.724,8.103,0.0
+strict_6d,S3_manip,S4_lift,task_space,11,0.763,el,0.1,0.747,0.763,0.754,sh3,1.242,14.023,14.694,0.0
+strict_6d,S4_lift,S5_ready,task_space,21,2.122,el,0.05,1.765,2.122,1.51,el,2.448,2.097,1.562,0.0
