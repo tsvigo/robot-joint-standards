@@ -1,0 +1,103 @@
+{
+  "P6_c0.05": {
+    "operation": "P6",
+    "clearance": 0.05,
+    "bilateral_min": {
+      "arm_arm": 0.18387828919323762,
+      "palm_palm": 0.5999999898428764,
+      "arm_bed": 0.048064041069058414,
+      "arm_torso": 0.06384380549840074,
+      "arm_base": 0.5480640410690584
+    },
+    "unilateral_L_min": {
+      "arm_bed_m": 0.0549346356992028,
+      "arm_arm_m": 0.18387828919323762,
+      "arm_torso_m": 0.10592485890248833,
+      "arm_base_m": 0.6323668055571726
+    },
+    "unilateral_R_min": {
+      "arm_bed_m": 0.048064041069058414,
+      "arm_arm_m": 0.18387828919323762,
+      "arm_torso_m": 0.14513946331803484,
+      "arm_base_m": 0.6387920740815431
+    },
+    "samples_L_count": 65,
+    "samples_R_count": 65
+  },
+  "P7_c0.05": {
+    "operation": "P7",
+    "clearance": 0.05,
+    "bilateral_min": {
+      "arm_arm": 0.18012097638946642,
+      "palm_palm": 0.13999995057214262,
+      "arm_bed": 0.06806403648092012,
+      "arm_torso": 0.046161091546245814,
+      "arm_base": 0.5680640364809201
+    },
+    "unilateral_L_min": {
+      "arm_bed_m": 0.07493463559776796,
+      "arm_arm_m": 0.18387828919323762,
+      "arm_torso_m": 0.10678986817784207,
+      "arm_base_m": 0.7235610915462458
+    },
+    "unilateral_R_min": {
+      "arm_bed_m": 0.06806403648092012,
+      "arm_arm_m": 0.18387828919323762,
+      "arm_torso_m": 0.12704747114535503,
+      "arm_base_m": 0.7220922565479977
+    },
+    "samples_L_count": 75,
+    "samples_R_count": 75
+  },
+  "P6_c0.10": {
+    "operation": "P6",
+    "clearance": 0.1,
+    "bilateral_min": {
+      "arm_arm": 0.18387828919323762,
+      "palm_palm": 0.5999999969139379,
+      "arm_bed": 0.048064042048458086,
+      "arm_torso": 0.05859055330646701,
+      "arm_base": 0.548064042048458
+    },
+    "unilateral_L_min": {
+      "arm_bed_m": 0.05493463518924273,
+      "arm_arm_m": 0.18387828919323762,
+      "arm_torso_m": 0.10709140391721612,
+      "arm_base_m": 0.654302616326117
+    },
+    "unilateral_R_min": {
+      "arm_bed_m": 0.048064042048458086,
+      "arm_arm_m": 0.18387828919323762,
+      "arm_torso_m": 0.13752492209945189,
+      "arm_base_m": 0.6632542850610379
+    },
+    "samples_L_count": 65,
+    "samples_R_count": 65
+  },
+  "P7_c0.10": {
+    "operation": "P7",
+    "clearance": 0.1,
+    "bilateral_min": {
+      "arm_arm": 0.18013750651807328,
+      "palm_palm": 0.13999990889581224,
+      "arm_bed": 0.06806403580905844,
+      "arm_torso": 0.04055328574455874,
+      "arm_base": 0.5680640358090584
+    },
+    "unilateral_L_min": {
+      "arm_bed_m": 0.07493463459669229,
+      "arm_arm_m": 0.18387828919323762,
+      "arm_torso_m": 0.09697093165011926,
+      "arm_base_m": 0.6920109765518445
+    },
+    "unilateral_R_min": {
+      "arm_bed_m": 0.06806403580905844,
+      "arm_arm_m": 0.18387828919323762,
+      "arm_torso_m": 0.12101159920543962,
+      "arm_base_m": 0.7084134024250256
+    },
+    "samples_L_count": 75,
+    "samples_R_count": 75,
+    "note": "Left arm P7 L c=0.10 uses new policy with 1.402° min margin (w2 limit) — geometric 6D limit in S3_tension"
+  }
+}
