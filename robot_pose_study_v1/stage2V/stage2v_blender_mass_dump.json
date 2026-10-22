@@ -1,0 +1,5206 @@
+{
+  "blender_version": "5.0.1",
+  "filepath": "/home/v/projects/робот/robot_scaled_4-2-21-LTS-ARCH-02-MANUAL-01.blend",
+  "scene": {
+    "name": "Scene",
+    "unit_system": "METRIC",
+    "scale_length": 1.0,
+    "gravity": [
+      0.0,
+      0.0,
+      -9.8100004196167
+    ]
+  },
+  "objects": {
+    "atlanto_axial_joint_empty": {
+      "type": "EMPTY",
+      "parent": "atlanto_occipital_joint_empty",
+      "location_local": [
+        3.6455025672912598,
+        -1.863135576248169,
+        -4.158014297485352
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991433024406433,
+        1.0001474618911743,
+        1.0024317502975464
+      ],
+      "matrix_world_translation": [
+        3.7454581260681152,
+        -1.863257884979248,
+        -4.529799461364746
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "atlanto_occipital_joint_empty": {
+      "type": "EMPTY",
+      "parent": "torso_link",
+      "location_local": [
+        0.09995532035827637,
+        -2.384185791015625e-07,
+        0.05116987228393555
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.999143660068512,
+        1.0001473426818848,
+        1.0024316310882568
+      ],
+      "matrix_world_translation": [
+        3.708353042602539,
+        -1.8647600412368774,
+        -4.510311126708984
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "AXLE_GUIDE_BL": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.3484392166137695,
+        -1.6023316383361816,
+        -5.554299354553223
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.009999999776482582,
+        0.009999999776482582,
+        0.09000000357627869
+      ],
+      "matrix_world_translation": [
+        3.3484392166137695,
+        -1.6023316383361816,
+        -5.554299354553223
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "AXLE_GUIDE_BR": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.3484392166137695,
+        -2.121899127960205,
+        -5.554299354553223
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.009999999776482582,
+        0.009999999776482582,
+        0.09000000357627869
+      ],
+      "matrix_world_translation": [
+        3.3484392166137695,
+        -2.121899127960205,
+        -5.554299354553223
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "AXLE_GUIDE_FL": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.8683295249938965,
+        -1.6031615734100342,
+        -5.554299354553223
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.009999999776482582,
+        0.009999999776482582,
+        0.09000000357627869
+      ],
+      "matrix_world_translation": [
+        3.8683295249938965,
+        -1.6031615734100342,
+        -5.554299354553223
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "AXLE_GUIDE_FR": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.8713266849517822,
+        -2.1169192790985107,
+        -5.554299354553223
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.009999999776482582,
+        0.009999999776482582,
+        0.09000000357627869
+      ],
+      "matrix_world_translation": [
+        3.8713266849517822,
+        -2.1169192790985107,
+        -5.554299354553223
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "base_link": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.60839581489563,
+        -1.8603522777557373,
+        -5.474048137664795
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995713829994202,
+        1.000073790550232,
+        1.0012152194976807
+      ],
+      "matrix_world_translation": [
+        3.60839581489563,
+        -1.8603522777557373,
+        -5.474048137664795
+      ],
+      "mass": 213.13395369522755,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 213.13395369522755
+      }
+    },
+    "Camera": {
+      "type": "CAMERA",
+      "parent": null,
+      "location_local": [
+        7.358891487121582,
+        -6.925790786743164,
+        4.958309173583984
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        7.358891487121582,
+        -6.925790786743164,
+        4.958309173583984
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "Camera_001": {
+      "type": "CAMERA",
+      "parent": null,
+      "location_local": [
+        4.000919342041016,
+        -2.2309060096740723,
+        -3.923682451248169
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.053340014070272446,
+        0.053340014070272446,
+        0.053340017795562744
+      ],
+      "matrix_world_translation": [
+        4.000919342041016,
+        -2.2309060096740723,
+        -3.923682451248169
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "Camera_Left": {
+      "type": "CAMERA",
+      "parent": null,
+      "location_local": [
+        3.712061882019043,
+        -1.8912553787231445,
+        -4.003057956695557
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0012152194976807,
+        1.0000736713409424,
+        0.9995718598365784
+      ],
+      "matrix_world_translation": [
+        3.712061882019043,
+        -1.8912553787231445,
+        -4.003057956695557
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "Camera_Right": {
+      "type": "CAMERA",
+      "parent": null,
+      "location_local": [
+        3.710615634918213,
+        -1.8310086727142334,
+        -4.002822399139404
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0012152194976807,
+        1.0000736713409424,
+        0.9995718598365784
+      ],
+      "matrix_world_translation": [
+        3.710615634918213,
+        -1.8310086727142334,
+        -4.002822399139404
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "first_phalanx_index_finger_right_hand_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.708355665206909,
+        -2.9808578491210938,
+        -4.532029628753662
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.2536319494247437,
+        1.2548900842666626,
+        1.257755994796753
+      ],
+      "matrix_world_translation": [
+        3.708355665206909,
+        -2.9808578491210938,
+        -4.532029628753662
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "first_phalanx_left_thumb_link": {
+      "type": "MESH",
+      "parent": "left_thumb_ip_joint_empty",
+      "location_local": [
+        3.608401298522949,
+        -0.9729481935501099,
+        -4.177829742431641
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991444945335388,
+        1.0001473426818848,
+        1.0024315118789673
+      ],
+      "matrix_world_translation": [
+        3.7922515869140625,
+        -0.6133965849876404,
+        -4.483664512634277
+      ],
+      "mass": 0.00697436649506324,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.00697436649506324
+      }
+    },
+    "first_phalanx_left_thumb_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.708359479904175,
+        -0.8399146199226379,
+        -4.471466541290283
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.2536319494247437,
+        1.2548900842666626,
+        1.2577561140060425
+      ],
+      "matrix_world_translation": [
+        3.708359479904175,
+        -0.8399146199226379,
+        -4.471466541290283
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "first_phalanx_middle_finger_left_hand_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.708359479904175,
+        -0.7449037432670593,
+        -4.549402236938477
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.2536319494247437,
+        1.2548900842666626,
+        1.2577561140060425
+      ],
+      "matrix_world_translation": [
+        3.708359479904175,
+        -0.7449037432670593,
+        -4.549402236938477
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "first_phalanx_middle_finger_right_hand_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.7083580493927,
+        -2.9793272018432617,
+        -4.563605308532715
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.2536319494247437,
+        1.2548900842666626,
+        1.2577561140060425
+      ],
+      "matrix_world_translation": [
+        3.7083580493927,
+        -2.9793272018432617,
+        -4.563605308532715
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "first_phalanx_of_index_finger_of_left_hand_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.708359479904175,
+        -0.7498483061790466,
+        -4.521999359130859
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.2536319494247437,
+        1.2548900842666626,
+        1.2577561140060425
+      ],
+      "matrix_world_translation": [
+        3.708359479904175,
+        -0.7498483061790466,
+        -4.521999359130859
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "first_phalanx_right_thumb_link": {
+      "type": "MESH",
+      "parent": "right_thumb_ip_joint_empty",
+      "location_local": [
+        3.6084017753601074,
+        -2.769763708114624,
+        -4.175992488861084
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.999144434928894,
+        1.0001473426818848,
+        1.0024316310882568
+      ],
+      "matrix_world_translation": [
+        3.7795393466949463,
+        -3.1176400184631348,
+        -4.466367721557617
+      ],
+      "mass": 0.018057303850582684,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.018057303850582684
+      }
+    },
+    "first_phalanx_right_thumb_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.7083580493927,
+        -2.876448154449463,
+        -4.481726169586182
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.253631830215454,
+        1.2548900842666626,
+        1.2577561140060425
+      ],
+      "matrix_world_translation": [
+        3.7083580493927,
+        -2.876448154449463,
+        -4.481726169586182
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "first_phalanx_ring_finger_left_hand_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.708359479904175,
+        -0.7386614084243774,
+        -4.58931827545166
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.2536319494247437,
+        1.2548900842666626,
+        1.2577561140060425
+      ],
+      "matrix_world_translation": [
+        3.708359479904175,
+        -0.7386614084243774,
+        -4.58931827545166
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "first_phalanx_ring_finger_right_hand_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.7083580493927,
+        -2.9793267250061035,
+        -4.599387168884277
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.2536319494247437,
+        1.2548900842666626,
+        1.2577561140060425
+      ],
+      "matrix_world_translation": [
+        3.7083580493927,
+        -2.9793267250061035,
+        -4.599387168884277
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "fisheye_camera": {
+      "type": "CAMERA",
+      "parent": "head_link",
+      "location_local": [
+        0.07254398614168167,
+        3.1720021054226777e-10,
+        0.0339110791683197
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.04998781159520149,
+        0.04996286705136299,
+        0.04998089000582695
+      ],
+      "matrix_world_translation": [
+        3.7808656692504883,
+        -1.8647600412368774,
+        -4.3767266273498535
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "head_link": {
+      "type": "MESH",
+      "parent": "intervertebral_joints_C2_C7_empty",
+      "location_local": [
+        3.6083972454071045,
+        -1.864637851715088,
+        -4.038893222808838
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995718598365784,
+        1.000073790550232,
+        1.0012152194976807
+      ],
+      "matrix_world_translation": [
+        3.70835280418396,
+        -1.8647600412368774,
+        -4.410678863525391
+      ],
+      "mass": 7.9935840563848615,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 7.9935840563848615
+      }
+    },
+    "head_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.7083523273468018,
+        -1.864759922027588,
+        -4.410677909851074
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995719790458679,
+        1.000073790550232,
+        1.0012152194976807
+      ],
+      "matrix_world_translation": [
+        3.7083523273468018,
+        -1.864759922027588,
+        -4.410677909851074
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "intervertebral_joints_C2_C7_empty": {
+      "type": "EMPTY",
+      "parent": "atlanto_axial_joint_empty",
+      "location_local": [
+        3.6455025672912598,
+        -1.8635470867156982,
+        -4.178936958312988
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991433024406433,
+        1.0001474618911743,
+        1.0024317502975464
+      ],
+      "matrix_world_translation": [
+        3.745457887649536,
+        -1.863669514656067,
+        -4.550722122192383
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_digit2_dip_joint_empty": {
+      "type": "EMPTY",
+      "parent": "left_digit2_middle_phalanx",
+      "location_local": [
+        3.6084039211273193,
+        -0.9417754411697388,
+        -4.214720726013184
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9987175464630127,
+        1.1125959157943726,
+        1.0036498308181763
+      ],
+      "matrix_world_translation": [
+        3.7922520637512207,
+        -0.5508027076721191,
+        -4.532937526702881
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_digit2_distal_phalanx": {
+      "type": "MESH",
+      "parent": "left_digit2_mcp2_joint_empty",
+      "location_local": [
+        4.291534423828125e-06,
+        0.03018524870276451,
+        0.000591278076171875
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991449117660522,
+        0.9873763918876648,
+        1.00243079662323
+      ],
+      "matrix_world_translation": [
+        3.792253255844116,
+        -0.6282840371131897,
+        -4.535190582275391
+      ],
+      "mass": 0.01883078738798957,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.01883078738798957
+      }
+    },
+    "left_digit2_mcp2_joint_empty": {
+      "type": "EMPTY",
+      "parent": "left_digit2_mcp_joint_empty",
+      "location_local": [
+        3.6084001064300537,
+        -1.0301191806793213,
+        -4.215432643890381
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        0.915539562702179,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.792247772216797,
+        -0.6608471274375916,
+        -4.535932540893555
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_digit2_mcp_joint_empty": {
+      "type": "EMPTY",
+      "parent": "left_palm_link",
+      "location_local": [
+        -4.7596353169865324e-07,
+        0.0546271987259388,
+        0.024620987474918365
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.000856637954712,
+        0.9389621019363403,
+        0.7908862233161926
+      ],
+      "matrix_world_translation": [
+        3.792247772216797,
+        -0.6683655381202698,
+        -4.5363945960998535
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_digit2_middle_phalanx": {
+      "type": "MESH",
+      "parent": "left_digit2_pip_joint_empty",
+      "location_local": [
+        3.6084022521972656,
+        -0.9630358815193176,
+        -4.2152628898620605
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991446137428284,
+        0.8526118993759155,
+        1.0024315118789673
+      ],
+      "matrix_world_translation": [
+        3.792250156402588,
+        -0.5681372880935669,
+        -4.534326076507568
+      ],
+      "mass": 0.01883078738798957,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.01883078738798957
+      }
+    },
+    "left_digit2_pip_joint_empty": {
+      "type": "EMPTY",
+      "parent": "left_digit2_distal_phalanx",
+      "location_local": [
+        -9.535664275972522e-07,
+        0.033395346254110336,
+        0.00037835328839719296
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995726346969604,
+        1.054638147354126,
+        1.0012158155441284
+      ],
+      "matrix_world_translation": [
+        3.7922520637512207,
+        -0.5927127599716187,
+        -4.534714698791504
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_digit2_proximal_phalanx": {
+      "type": "MESH",
+      "parent": "left_digit2_dip_joint_empty",
+      "location_local": [
+        -7.152557373046875e-07,
+        0.03216427564620972,
+        -0.0013709068298339844
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0004278421401978,
+        1.023637294769287,
+        0.9987863302230835
+      ],
+      "matrix_world_translation": [
+        3.7922511100769043,
+        -0.5165401697158813,
+        -4.534663677215576
+      ],
+      "mass": 0.018830789536670747,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.018830789536670747
+      }
+    },
+    "left_digit3_dip_joint_empty": {
+      "type": "EMPTY",
+      "parent": "left_digit3_middle_phalanx",
+      "location_local": [
+        3.608402967453003,
+        -0.9378686547279358,
+        -4.238703727722168
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9987175464630127,
+        1.0002210140228271,
+        1.0036497116088867
+      ],
+      "matrix_world_translation": [
+        3.7922489643096924,
+        -0.5330355763435364,
+        -4.567378997802734
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_digit3_distal_phalanx": {
+      "type": "MESH",
+      "parent": "left_digit3_mcp2_joint_empty",
+      "location_local": [
+        1.6689301673977752e-06,
+        0.02373461052775383,
+        0.00027359469095245004
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991443753242493,
+        1.0001471042633057,
+        1.00243079662323
+      ],
+      "matrix_world_translation": [
+        3.7922475337982178,
+        -0.6289068460464478,
+        -4.566670894622803
+      ],
+      "mass": 0.01883078738798957,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.01883078738798957
+      }
+    },
+    "left_digit3_mcp2_joint_empty": {
+      "type": "EMPTY",
+      "parent": "left_digit3_mcp_joint_empty",
+      "location_local": [
+        3.6083996295928955,
+        -1.0046848058700562,
+        -4.238999843597412
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9999998807907104,
+        0.9999997615814209,
+        0.9999998807907104
+      ],
+      "matrix_world_translation": [
+        3.792245388031006,
+        -0.6586867570877075,
+        -4.567014217376709
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_digit3_mcp_joint_empty": {
+      "type": "EMPTY",
+      "parent": "left_palm_link",
+      "location_local": [
+        -1.9073486328125e-06,
+        0.05702561140060425,
+        0.005319118499755859
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.000856637954712,
+        0.99985271692276,
+        0.7908862829208374
+      ],
+      "matrix_world_translation": [
+        3.792245864868164,
+        -0.6653558015823364,
+        -4.567016124725342
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_digit3_middle_phalanx": {
+      "type": "MESH",
+      "parent": "left_digit3_pip_joint_empty",
+      "location_local": [
+        3.6084022521972656,
+        -0.9587915539741516,
+        -4.237981796264648
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991445541381836,
+        1.0001472234725952,
+        1.0024313926696777
+      ],
+      "matrix_world_translation": [
+        3.792248487472534,
+        -0.5566614270210266,
+        -4.566553115844727
+      ],
+      "mass": 0.01883078738798957,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.01883078738798957
+      }
+    },
+    "left_digit3_pip_joint_empty": {
+      "type": "EMPTY",
+      "parent": "left_digit3_distal_phalanx",
+      "location_local": [
+        -1.9072516579399235e-06,
+        0.03256654366850853,
+        0.0009725526906549931
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0008562803268433,
+        0.9998528361320496,
+        0.9975749850273132
+      ],
+      "matrix_world_translation": [
+        3.7922451496124268,
+        -0.5880394577980042,
+        -4.565447807312012
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_digit3_proximal_phalanx": {
+      "type": "MESH",
+      "parent": "left_digit3_dip_joint_empty",
+      "location_local": [
+        -1.192000013361394e-06,
+        0.025596633553504944,
+        0.000981285353191197
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0004277229309082,
+        0.9999264478683472,
+        0.9987865686416626
+      ],
+      "matrix_world_translation": [
+        3.7922475337982178,
+        -0.5009123086929321,
+        -4.56614351272583
+      ],
+      "mass": 0.018830789536670747,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.018830789536670747
+      }
+    },
+    "left_digit4_dip_joint_empty": {
+      "type": "EMPTY",
+      "parent": "left_digit4_middle_phalanx",
+      "location_local": [
+        3.6084039211273193,
+        -0.9431267976760864,
+        -4.268415451049805
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9987173080444336,
+        1.0002208948135376,
+        1.0036495923995972
+      ],
+      "matrix_world_translation": [
+        3.7922513484954834,
+        -0.5411116480827332,
+        -4.595526695251465
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_digit4_distal_phalanx": {
+      "type": "MESH",
+      "parent": "left_digit4_mcp2_joint_empty",
+      "location_local": [
+        5.245208740234375e-06,
+        0.023359239101409912,
+        0.0003540515899658203
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991449117660522,
+        1.0001472234725952,
+        1.0024309158325195
+      ],
+      "matrix_world_translation": [
+        3.7922523021698,
+        -0.6307700872421265,
+        -4.59719705581665
+      ],
+      "mass": 0.01883078738798957,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.01883078738798957
+      }
+    },
+    "left_digit4_mcp2_joint_empty": {
+      "type": "EMPTY",
+      "parent": "left_digit4_mcp_joint_empty",
+      "location_local": [
+        3.608400344848633,
+        -1.03410005569458,
+        -4.270100116729736
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        0.9999999403953552,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.792245626449585,
+        -0.6600790023803711,
+        -4.597641468048096
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_digit4_mcp_joint_empty": {
+      "type": "EMPTY",
+      "parent": "left_palm_link",
+      "location_local": [
+        -2.145306325473939e-06,
+        0.05653121694922447,
+        -0.014301544055342674
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.000856637954712,
+        0.99985271692276,
+        0.7908862233161926
+      ],
+      "matrix_world_translation": [
+        3.792245626449585,
+        -0.6659761667251587,
+        -4.598143577575684
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_digit4_middle_phalanx": {
+      "type": "MESH",
+      "parent": "left_digit4_pip_joint_empty",
+      "location_local": [
+        3.608402729034424,
+        -0.9585943222045898,
+        -4.270240783691406
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991446137428284,
+        1.0001474618911743,
+        1.0024316310882568
+      ],
+      "matrix_world_translation": [
+        3.7922494411468506,
+        -0.5605188012123108,
+        -4.597816467285156
+      ],
+      "mass": 0.01883078738798957,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.01883078738798957
+      }
+    },
+    "left_digit4_pip_joint_empty": {
+      "type": "EMPTY",
+      "parent": "left_digit4_distal_phalanx",
+      "location_local": [
+        -1.1920928955078125e-06,
+        0.02920854091644287,
+        0.0013020038604736328
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995719194412231,
+        1.0000736713409424,
+        1.0012158155441284
+      ],
+      "matrix_world_translation": [
+        3.792250871658325,
+        -0.5941166281700134,
+        -4.595559597015381
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_digit4_proximal_phalanx": {
+      "type": "MESH",
+      "parent": "left_digit4_dip_joint_empty",
+      "location_local": [
+        -3.0994415283203125e-06,
+        0.025070905685424805,
+        -0.0013294219970703125
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0004277229309082,
+        0.9999263882637024,
+        0.9987865090370178
+      ],
+      "matrix_world_translation": [
+        3.7922475337982178,
+        -0.5096481442451477,
+        -4.597200870513916
+      ],
+      "mass": 0.018830789536670747,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.018830789536670747
+      }
+    },
+    "left_digit5_dip_joint_empty": {
+      "type": "EMPTY",
+      "parent": "left_digit5_middle_phalanx",
+      "location_local": [
+        3.608400344848633,
+        -0.9502795338630676,
+        -4.2910003662109375
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        0.9999999403953552
+      ],
+      "matrix_world_translation": [
+        3.792250156402588,
+        -0.5588607788085938,
+        -4.621161460876465
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_digit5_distal_phalanx": {
+      "type": "MESH",
+      "parent": "left_digit5_mcp2_joint_empty",
+      "location_local": [
+        4.291534423828125e-06,
+        0.02953791618347168,
+        0.0007498264312744141
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.000000238418579,
+        0.9999999403953552,
+        0.9999999403953552
+      ],
+      "matrix_world_translation": [
+        3.792253017425537,
+        -0.624927282333374,
+        -4.620219707489014
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_digit5_mcp2_joint_empty": {
+      "type": "EMPTY",
+      "parent": "left_digit5_mcp_joint_empty",
+      "location_local": [
+        3.6084001064300537,
+        -1.034999966621399,
+        -4.290999889373779
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.7922475337982178,
+        -0.6619886159896851,
+        -4.621160507202148
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_digit5_mcp_joint_empty": {
+      "type": "EMPTY",
+      "parent": "left_palm_link",
+      "location_local": [
+        -4.764977461491071e-07,
+        0.054709672927856445,
+        -0.02881028689444065
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.000856637954712,
+        0.9998525381088257,
+        0.7908862233161926
+      ],
+      "matrix_world_translation": [
+        3.7922475337982178,
+        -0.6682620048522949,
+        -4.621160984039307
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_digit5_middle_phalanx": {
+      "type": "MESH",
+      "parent": "left_digit5_pip_joint_empty",
+      "location_local": [
+        3.6084024906158447,
+        -0.9604283571243286,
+        -4.291161060333252
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0000001192092896,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.792252540588379,
+        -0.5715944766998291,
+        -4.621363162994385
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_digit5_pip_joint_empty": {
+      "type": "EMPTY",
+      "parent": "left_digit5_distal_phalanx",
+      "location_local": [
+        -3.337860107421875e-06,
+        0.01793462038040161,
+        -0.0007503032684326172
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9999998211860657,
+        1.0000001192092896,
+        0.9999998807907104
+      ],
+      "matrix_world_translation": [
+        3.7922487258911133,
+        -0.6024246215820312,
+        -4.621160984039307
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_digit5_proximal_phalanx": {
+      "type": "MESH",
+      "parent": "left_digit5_dip_joint_empty",
+      "location_local": [
+        7.152557373046875e-07,
+        0.025618314743041992,
+        0.000331878662109375
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9999998211860657,
+        0.9999998211860657,
+        0.9999998211860657
+      ],
+      "matrix_world_translation": [
+        3.7922511100769043,
+        -0.5267173647880554,
+        -4.6207451820373535
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_elbow_joint_empty": {
+      "type": "EMPTY",
+      "parent": "left_shoulder_link",
+      "location_local": [
+        3.608397960662842,
+        -1.438367486000061,
+        -4.231314182281494
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991435408592224,
+        1.0001474618911743,
+        1.0024317502975464
+      ],
+      "matrix_world_translation": [
+        3.792201280593872,
+        -1.2093570232391357,
+        -4.5593390464782715
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_forearm_link": {
+      "type": "MESH",
+      "parent": "left_elbow_joint_empty",
+      "location_local": [
+        3.6084001064300537,
+        -1.0433872938156128,
+        -4.234588623046875
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991438388824463,
+        1.0001473426818848,
+        1.0024313926696777
+      ],
+      "matrix_world_translation": [
+        3.7922041416168213,
+        -1.027197003364563,
+        -4.5614142417907715
+      ],
+      "mass": 2.722734652343206,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 2.722734652343206
+      }
+    },
+    "left_forearm_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.7083566188812256,
+        -1.2546435594558716,
+        -4.565587997436523
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.253631353378296,
+        1.2548900842666626,
+        1.2577561140060425
+      ],
+      "matrix_world_translation": [
+        3.7083566188812256,
+        -1.2546435594558716,
+        -4.565587997436523
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_palm_link": {
+      "type": "MESH",
+      "parent": "left_wrist_joint_2_empty",
+      "location_local": [
+        3.6084351539611816,
+        -0.9774781465530396,
+        -4.222323894500732
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991446137428284,
+        1.0001475811004639,
+        1.2644047737121582
+      ],
+      "matrix_world_translation": [
+        3.792248249053955,
+        -0.7369166016578674,
+        -4.5754547119140625
+      ],
+      "mass": 0.335472656805222,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.335472656805222
+      }
+    },
+    "left_palm_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.7083585262298584,
+        -0.9573531746864319,
+        -4.558626174926758
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.2536317110061646,
+        1.2548900842666626,
+        1.2577561140060425
+      ],
+      "matrix_world_translation": [
+        3.7083585262298584,
+        -0.9573531746864319,
+        -4.558626174926758
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_proximal_radioulnar_joint_empty": {
+      "type": "EMPTY",
+      "parent": "left_forearm_link",
+      "location_local": [
+        3.6075711250305176,
+        -1.2518399953842163,
+        -4.236109733581543
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991437196731567,
+        1.0001474618911743,
+        1.0024317502975464
+      ],
+      "matrix_world_translation": [
+        3.7911641597747803,
+        -0.9574815034866333,
+        -4.560871601104736
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_radioulnar_link": {
+      "type": "EMPTY",
+      "parent": "left_proximal_radioulnar_joint_empty",
+      "location_local": [
+        2.384185791015625e-07,
+        0.0,
+        0.0
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.7911641597747803,
+        -0.9574816226959229,
+        -4.5608720779418945
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_shoulder_2_link": {
+      "type": "EMPTY",
+      "parent": "left_shoulder_joint_empty_2",
+      "location_local": [
+        2.384185791015625e-07,
+        0.025765419006347656,
+        0.000255584716796875
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        0.9999998807907104,
+        0.9999998807907104
+      ],
+      "matrix_world_translation": [
+        3.7723512649536133,
+        -1.6367363929748535,
+        -4.561041831970215
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_shoulder_3_link": {
+      "type": "EMPTY",
+      "parent": "left_shoulder_joint_empty_3",
+      "location_local": [
+        0.0,
+        0.024234652519226074,
+        0.000255584716796875
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        0.9999998211860657,
+        0.9999998211860657
+      ],
+      "matrix_world_translation": [
+        3.772350549697876,
+        -1.6867364645004272,
+        -4.561553478240967
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_shoulder_joint_empty_1": {
+      "type": "EMPTY",
+      "parent": "left_shoulder_2_link",
+      "location_local": [
+        -7.152557373046875e-07,
+        0.025765299797058105,
+        0.0002541542053222656
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991433024406433,
+        1.0001471042633057,
+        1.0024313926696777
+      ],
+      "matrix_world_translation": [
+        3.772350549697876,
+        -1.6109710931777954,
+        -4.560787677764893
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_shoulder_joint_empty_2": {
+      "type": "EMPTY",
+      "parent": "left_shoulder_3_link",
+      "location_local": [
+        4.76837158203125e-07,
+        0.024234652519226074,
+        0.0002560615539550781
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.772351026535034,
+        -1.6625018119812012,
+        -4.561297416687012
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_shoulder_joint_empty_3": {
+      "type": "EMPTY",
+      "parent": "torso_link",
+      "location_local": [
+        0.16395291686058044,
+        0.1537887305021286,
+        -0.0003281896933913231
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        0.9999999403953552,
+        0.9999999403953552
+      ],
+      "matrix_world_translation": [
+        3.772350549697876,
+        -1.7109711170196533,
+        -4.561809062957764
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_shoulder_link": {
+      "type": "MESH",
+      "parent": "left_shoulder_joint_empty_1",
+      "location_local": [
+        3.6242175102233887,
+        -1.5011658668518066,
+        -4.240342140197754
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995718598365784,
+        1.000073790550232,
+        1.0012152194976807
+      ],
+      "matrix_world_translation": [
+        3.792201280593872,
+        -1.3725031614303589,
+        -4.561741828918457
+      ],
+      "mass": 2.722734652343206,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 2.722734652343206
+      }
+    },
+    "left_shoulder_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.7083523273468018,
+        -1.587702989578247,
+        -4.561324596405029
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.254168152809143,
+        1.2547978162765503,
+        1.2562298774719238
+      ],
+      "matrix_world_translation": [
+        3.7083523273468018,
+        -1.587702989578247,
+        -4.561324596405029
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_thumb_cmc_joint_empty_1": {
+      "type": "EMPTY",
+      "parent": "left_palm_link",
+      "location_local": [
+        3.6084039211273193,
+        -1.08521568775177,
+        -4.205381393432617
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9987176656723022,
+        1.0002210140228271,
+        1.0036497116088867
+      ],
+      "matrix_world_translation": [
+        3.7922520637512207,
+        -0.7512406706809998,
+        -4.517239093780518
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_thumb_cmc_joint_empty_2": {
+      "type": "EMPTY",
+      "parent": "left_thumb_cmc_joint_empty_1",
+      "location_local": [
+        3.608400344848633,
+        -1.0759000778198242,
+        -4.2021002769470215
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0000001192092896,
+        1.0000001192092896,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.7922472953796387,
+        -0.7512409090995789,
+        -4.510965824127197
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_thumb_cmc_joint_empty_3": {
+      "type": "EMPTY",
+      "parent": "left_thumb_cmc_joint_empty_2",
+      "location_local": [
+        3.6084001064300537,
+        -1.0758999586105347,
+        -4.1971001625061035
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        0.9999999403953552
+      ],
+      "matrix_world_translation": [
+        3.792247772216797,
+        -0.7512406706809998,
+        -4.504693984985352
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_thumb_ip_joint_empty": {
+      "type": "EMPTY",
+      "parent": "second_phalanx_left_thumb_link",
+      "location_local": [
+        3.608403205871582,
+        -1.022634506225586,
+        -4.173982620239258
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9987170696258545,
+        1.0002210140228271,
+        1.0036498308181763
+      ],
+      "matrix_world_translation": [
+        3.792253017425537,
+        -0.6554117798805237,
+        -4.481358528137207
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_thumb_mcp_joint_empty_1": {
+      "type": "EMPTY",
+      "parent": "third_phalanx_left_thumb_link",
+      "location_local": [
+        3.6084039211273193,
+        -1.049140214920044,
+        -4.182438373565674
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9987175464630127,
+        1.0002210140228271,
+        1.0036497116088867
+      ],
+      "matrix_world_translation": [
+        3.7922520637512207,
+        -0.7208165526390076,
+        -4.48251485824585
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_thumb_mcp_joint_empty_2": {
+      "type": "EMPTY",
+      "parent": "left_thumb_mcp_joint_empty_1",
+      "location_local": [
+        3.6083998680114746,
+        -1.0547047853469849,
+        -4.174902439117432
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.7922468185424805,
+        -0.7120396494865417,
+        -4.483145713806152
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_wrist_joint_1_empty": {
+      "type": "EMPTY",
+      "parent": "left_radioulnar_link",
+      "location_local": [
+        0.0008277918095700443,
+        0.08758677542209625,
+        0.001394089893437922
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995729327201843,
+        1.0000735521316528,
+        1.001214861869812
+      ],
+      "matrix_world_translation": [
+        3.7922019958496094,
+        -0.8475697636604309,
+        -4.559118747711182
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_wrist_joint_2_empty": {
+      "type": "EMPTY",
+      "parent": "left_wrist_pitch_link",
+      "location_local": [
+        4.053065822517965e-06,
+        0.029068991541862488,
+        -0.007324914447963238
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0000003576278687,
+        1.0000001192092896,
+        1.0000001192092896
+      ],
+      "matrix_world_translation": [
+        3.7922072410583496,
+        -0.8110888600349426,
+        -4.568343639373779
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "left_wrist_pitch_link": {
+      "type": "EMPTY",
+      "parent": "left_wrist_joint_1_empty",
+      "location_local": [
+        2.384185791015625e-07,
+        0.0,
+        -2.384185791015625e-07
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        0.9999999403953552,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.7922022342681885,
+        -0.84757000207901,
+        -4.559118747711182
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "lift_brake": {
+      "type": "MESH",
+      "parent": "base_link",
+      "location_local": [
+        0.1599999964237213,
+        0.0,
+        0.054999999701976776
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.768327236175537,
+        -1.8603522777557373,
+        -5.418981075286865
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "lift_catcher_placeholder": {
+      "type": "MESH",
+      "parent": "base_link",
+      "location_local": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.608396053314209,
+        -1.8603523969650269,
+        -4.674047946929932
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "lift_guide_block_left": {
+      "type": "MESH",
+      "parent": "torso_link",
+      "location_local": [
+        2.384185791015625e-07,
+        -0.19059240818023682,
+        4.76837158203125e-07
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.608397960662842,
+        -2.055352210998535,
+        -4.561480522155762
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "lift_guide_block_right": {
+      "type": "MESH",
+      "parent": "torso_link",
+      "location_local": [
+        2.384185791015625e-07,
+        0.19940757751464844,
+        4.76837158203125e-07
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.608397960662842,
+        -1.66535222530365,
+        -4.561480522155762
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "lift_guide_left": {
+      "type": "MESH",
+      "parent": "base_link",
+      "location_local": [
+        2.1735661448474275e-06,
+        -0.20440711081027985,
+        0.800000011920929
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.608397960662842,
+        -2.064774513244629,
+        -4.673076152801514
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "lift_guide_right": {
+      "type": "MESH",
+      "parent": "base_link",
+      "location_local": [
+        2.1735661448474275e-06,
+        0.19559288024902344,
+        0.800000011920929
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.608397960662842,
+        -1.6647449731826782,
+        -4.673076152801514
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "lift_motor": {
+      "type": "MESH",
+      "parent": "base_link",
+      "location_local": [
+        0.1599999964237213,
+        0.0,
+        -0.019999999552965164
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.768327236175537,
+        -1.8603522777557373,
+        -5.494072437286377
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "lift_nut_mount_left": {
+      "type": "MESH",
+      "parent": "torso_link",
+      "location_local": [
+        4.76837158203125e-07,
+        -0.1455925703048706,
+        4.76837158203125e-07
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.608398199081421,
+        -2.010352373123169,
+        -4.561480522155762
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "lift_nut_mount_right": {
+      "type": "MESH",
+      "parent": "torso_link",
+      "location_local": [
+        4.76837158203125e-07,
+        0.15440750122070312,
+        4.76837158203125e-07
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.608398199081421,
+        -1.7103523015975952,
+        -4.561480522155762
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "lift_screw_left": {
+      "type": "MESH",
+      "parent": "base_link",
+      "location_local": [
+        2.41198472394899e-06,
+        -0.15000000596046448,
+        0.75
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.608398199081421,
+        -2.0103633403778076,
+        -4.723136901855469
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "lift_screw_right": {
+      "type": "MESH",
+      "parent": "base_link",
+      "location_local": [
+        2.41198472394899e-06,
+        0.15000000596046448,
+        0.75
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.608398199081421,
+        -1.710341215133667,
+        -4.723136901855469
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "lift_stop_top": {
+      "type": "MESH",
+      "parent": "base_link",
+      "location_local": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.608396053314209,
+        -1.8603523969650269,
+        -3.8964810371398926
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "lift_sync_shaft": {
+      "type": "MESH",
+      "parent": "base_link",
+      "location_local": [
+        2.41198472394899e-06,
+        0.0,
+        -0.029999999329447746
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.608398199081421,
+        -1.8603522777557373,
+        -5.504084587097168
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "Light": {
+      "type": "LIGHT",
+      "parent": null,
+      "location_local": [
+        4.0762457847595215,
+        1.0054537057876587,
+        5.903861999511719
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        0.9999999403953552,
+        0.9999999403953552
+      ],
+      "matrix_world_translation": [
+        4.0762457847595215,
+        1.0054537057876587,
+        5.903861999511719
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "Light_001": {
+      "type": "LIGHT",
+      "parent": null,
+      "location_local": [
+        7.512707233428955,
+        -1.8215233087539673,
+        -4.479395389556885
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.05334002524614334,
+        0.053340014070272446,
+        0.053340014070272446
+      ],
+      "matrix_world_translation": [
+        7.512707233428955,
+        -1.8215233087539673,
+        -4.479395389556885
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "odor_sensor": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.785351037979126,
+        -1.8638896942138672,
+        -4.41658353805542
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.999572217464447,
+        1.000073790550232,
+        1.0012152194976807
+      ],
+      "matrix_world_translation": [
+        3.785351037979126,
+        -1.8638896942138672,
+        -4.41658353805542
+      ],
+      "mass": 0.0037457337879412034,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.0037457337879412034
+      }
+    },
+    "right_digit2_dip_joint_empty": {
+      "type": "EMPTY",
+      "parent": "right_digit2_middle_phalanx",
+      "location_local": [
+        3.60840106010437,
+        -2.805262327194214,
+        -4.2170538902282715
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9987173080444336,
+        1.0002208948135376,
+        1.0036494731903076
+      ],
+      "matrix_world_translation": [
+        3.779539108276367,
+        -3.187760591506958,
+        -4.512204647064209
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_digit2_distal_phalanx": {
+      "type": "MESH",
+      "parent": "right_digit2_mcp2_joint_empty",
+      "location_local": [
+        7.152557941481064e-07,
+        -0.023139959201216698,
+        0.0006754121277481318
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991448521614075,
+        1.0001471042633057,
+        1.0024309158325195
+      ],
+      "matrix_world_translation": [
+        3.7795398235321045,
+        -3.1160058975219727,
+        -4.512049674987793
+      ],
+      "mass": 0.01805730732939992,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.01805730732939992
+      }
+    },
+    "right_digit2_mcp2_joint_empty": {
+      "type": "EMPTY",
+      "parent": "right_digit2_mcp_joint_empty",
+      "location_local": [
+        3.608401298522949,
+        -2.720968723297119,
+        -4.216475009918213
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        0.9999999403953552
+      ],
+      "matrix_world_translation": [
+        3.779538869857788,
+        -3.0869719982147217,
+        -4.51289701461792
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_digit2_mcp_joint_empty": {
+      "type": "EMPTY",
+      "parent": "right_palm_link",
+      "location_local": [
+        -4.530495971266646e-06,
+        -0.04872803017497063,
+        0.03656720370054245
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995724558830261,
+        1.000074028968811,
+        1.0012151002883911
+      ],
+      "matrix_world_translation": [
+        3.7795379161834717,
+        -3.079340934753418,
+        -4.5123395919799805
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_digit2_middle_phalanx": {
+      "type": "MESH",
+      "parent": "right_digit2_pip_joint_empty",
+      "location_local": [
+        3.608400583267212,
+        -2.7888264656066895,
+        -4.21591854095459
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991446137428284,
+        1.0001473426818848,
+        1.0024315118789673
+      ],
+      "matrix_world_translation": [
+        3.7795395851135254,
+        -3.1745803356170654,
+        -4.511489391326904
+      ],
+      "mass": 0.018057303850582684,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.018057303850582684
+      }
+    },
+    "right_digit2_pip_joint_empty": {
+      "type": "EMPTY",
+      "parent": "right_digit2_distal_phalanx",
+      "location_local": [
+        -2.3849435137890396e-07,
+        -0.02526039257645607,
+        -0.0001678466796875
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995725154876709,
+        1.000073790550232,
+        1.0012158155441284
+      ],
+      "matrix_world_translation": [
+        3.7795395851135254,
+        -3.147704839706421,
+        -4.512260913848877
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_digit2_proximal_phalanx": {
+      "type": "MESH",
+      "parent": "right_digit2_dip_joint_empty",
+      "location_local": [
+        -7.155842354222841e-07,
+        -0.003139849752187729,
+        0.0001226481981575489
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0004277229309082,
+        0.9999262690544128,
+        0.9987862706184387
+      ],
+      "matrix_world_translation": [
+        3.779538154602051,
+        -3.1917009353637695,
+        -4.512050151824951
+      ],
+      "mass": 0.018057303850582684,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.018057303850582684
+      }
+    },
+    "right_digit3_dip_joint_empty": {
+      "type": "EMPTY",
+      "parent": "right_digit3_middle_phalanx",
+      "location_local": [
+        3.6084024906158447,
+        -2.8051247596740723,
+        -4.241801738739014
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9987170696258545,
+        1.000220775604248,
+        1.0036497116088867
+      ],
+      "matrix_world_translation": [
+        3.7795398235321045,
+        -3.193939685821533,
+        -4.542547225952148
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_digit3_distal_phalanx": {
+      "type": "MESH",
+      "parent": "right_digit3_mcp2_joint_empty",
+      "location_local": [
+        7.152557373046875e-07,
+        -0.022930622100830078,
+        -9.179115295410156e-05
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0004281997680664,
+        0.999925971031189,
+        0.9987859129905701
+      ],
+      "matrix_world_translation": [
+        3.7795419692993164,
+        -3.1146199703216553,
+        -4.542208671569824
+      ],
+      "mass": 0.01805730732939992,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.01805730732939992
+      }
+    },
+    "right_digit3_mcp2_joint_empty": {
+      "type": "EMPTY",
+      "parent": "right_digit3_mcp_joint_empty",
+      "location_local": [
+        3.608402967453003,
+        -2.7147023677825928,
+        -4.2414398193359375
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9987171292304993,
+        1.0002210140228271,
+        1.0036497116088867
+      ],
+      "matrix_world_translation": [
+        3.779541015625,
+        -3.0858423709869385,
+        -4.542093276977539
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_digit3_mcp_joint_empty": {
+      "type": "EMPTY",
+      "parent": "right_palm_link",
+      "location_local": [
+        -2.384648951192503e-06,
+        -0.04891033470630646,
+        0.012911126017570496
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995724558830261,
+        1.000074028968811,
+        1.0012153387069702
+      ],
+      "matrix_world_translation": [
+        3.779540538787842,
+        -3.0795695781707764,
+        -4.542092800140381
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_digit3_middle_phalanx": {
+      "type": "MESH",
+      "parent": "right_digit3_pip_joint_empty",
+      "location_local": [
+        3.6084022521972656,
+        -2.786308526992798,
+        -4.241930961608887
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991445541381836,
+        1.0001473426818848,
+        1.0024315118789673
+      ],
+      "matrix_world_translation": [
+        3.7795403003692627,
+        -3.177419662475586,
+        -4.542354583740234
+      ],
+      "mass": 0.01805730732939992,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.01805730732939992
+      }
+    },
+    "right_digit3_pip_joint_empty": {
+      "type": "EMPTY",
+      "parent": "right_digit3_distal_phalanx",
+      "location_local": [
+        4.767361190260999e-07,
+        -0.028611507266759872,
+        0.001015830785036087
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995724558830261,
+        1.0000739097595215,
+        1.0012154579162598
+      ],
+      "matrix_world_translation": [
+        3.7795426845550537,
+        -3.150524139404297,
+        -4.540931224822998
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_digit3_proximal_phalanx": {
+      "type": "MESH",
+      "parent": "right_digit3_dip_joint_empty",
+      "location_local": [
+        -4.76837158203125e-07,
+        -0.01420140266418457,
+        -0.0007958412170410156
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0004278421401978,
+        0.9999261498451233,
+        0.9987863898277283
+      ],
+      "matrix_world_translation": [
+        3.779539108276367,
+        -3.2117621898651123,
+        -4.543549537658691
+      ],
+      "mass": 0.018057303850582684,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.018057303850582684
+      }
+    },
+    "right_digit4_dip_joint_empty": {
+      "type": "EMPTY",
+      "parent": "right_digit4_middle_phalanx",
+      "location_local": [
+        3.6084036827087402,
+        -2.8045947551727295,
+        -4.2682108879089355
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9987172484397888,
+        1.000220775604248,
+        1.0036495923995972
+      ],
+      "matrix_world_translation": [
+        3.7795417308807373,
+        -3.1882145404815674,
+        -4.570012092590332
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_digit4_distal_phalanx": {
+      "type": "MESH",
+      "parent": "right_digit4_mcp2_joint_empty",
+      "location_local": [
+        3.337860107421875e-06,
+        -0.023402690887451172,
+        0.0004360675811767578
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991447925567627,
+        1.0001471042633057,
+        1.0024309158325195
+      ],
+      "matrix_world_translation": [
+        3.7795419692993164,
+        -3.1142661571502686,
+        -4.571258068084717
+      ],
+      "mass": 0.01805730732939992,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.01805730732939992
+      }
+    },
+    "right_digit4_mcp2_joint_empty": {
+      "type": "EMPTY",
+      "parent": "right_digit4_mcp_joint_empty",
+      "location_local": [
+        3.6084001064300537,
+        -2.714235782623291,
+        -4.2704854011535645
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        0.9999999403953552,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.7795376777648926,
+        -3.084902763366699,
+        -4.571805000305176
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_digit4_mcp_joint_empty": {
+      "type": "EMPTY",
+      "parent": "right_palm_link",
+      "location_local": [
+        -1.6693973066139733e-06,
+        -0.04849396273493767,
+        -0.011088717728853226
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0000001192092896,
+        1.0000005960464478,
+        1.0000003576278687
+      ],
+      "matrix_world_translation": [
+        3.779541492462158,
+        -3.079047203063965,
+        -4.57227897644043
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_digit4_middle_phalanx": {
+      "type": "MESH",
+      "parent": "right_digit4_pip_joint_empty",
+      "location_local": [
+        3.6084022521972656,
+        -2.784331798553467,
+        -4.271296977996826
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991445541381836,
+        1.0001473426818848,
+        1.0024315118789673
+      ],
+      "matrix_world_translation": [
+        3.779540777206421,
+        -3.1723597049713135,
+        -4.572468280792236
+      ],
+      "mass": 0.01805730732939992,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.01805730732939992
+      }
+    },
+    "right_digit4_pip_joint_empty": {
+      "type": "EMPTY",
+      "parent": "right_digit4_distal_phalanx",
+      "location_local": [
+        4.7675717951278784e-07,
+        -0.026344625279307365,
+        0.0013412722619250417
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.99957275390625,
+        1.0000743865966797,
+        1.0012160539627075
+      ],
+      "matrix_world_translation": [
+        3.7795426845550537,
+        -3.1473257541656494,
+        -4.569571018218994
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_digit4_proximal_phalanx": {
+      "type": "MESH",
+      "parent": "right_digit4_dip_joint_empty",
+      "location_local": [
+        -4.766897632180189e-07,
+        -0.01284169964492321,
+        -0.002928751753643155
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0004277229309082,
+        0.9999262094497681,
+        0.9987866282463074
+      ],
+      "matrix_world_translation": [
+        3.779541015625,
+        -3.2043306827545166,
+        -4.573700428009033
+      ],
+      "mass": 0.018057303850582684,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.018057303850582684
+      }
+    },
+    "right_digit5_dip_joint_empty": {
+      "type": "EMPTY",
+      "parent": "right_digit5_middle_phalanx",
+      "location_local": [
+        3.608403205871582,
+        -2.7989606857299805,
+        -4.29457950592041
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991443157196045,
+        1.0001473426818848,
+        1.0024315118789673
+      ],
+      "matrix_world_translation": [
+        3.77954363822937,
+        -3.171025276184082,
+        -4.597781658172607
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_digit5_distal_phalanx": {
+      "type": "MESH",
+      "parent": "right_digit5_mcp2_joint_empty",
+      "location_local": [
+        2.1457672119140625e-06,
+        -0.021620772778987885,
+        -0.000883700093254447
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995724558830261,
+        1.0000736713409424,
+        1.001214861869812
+      ],
+      "matrix_world_translation": [
+        3.7795441150665283,
+        -3.1114304065704346,
+        -4.59902286529541
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_digit5_mcp2_joint_empty": {
+      "type": "EMPTY",
+      "parent": "right_digit5_mcp_joint_empty",
+      "location_local": [
+        3.608403205871582,
+        -2.712627649307251,
+        -4.291013717651367
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0000001192092896,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.779541492462158,
+        -3.0843026638031006,
+        -4.597914218902588
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_digit5_mcp_joint_empty": {
+      "type": "EMPTY",
+      "parent": "right_palm_link",
+      "location_local": [
+        -2.384636218266678e-06,
+        -0.0476837232708931,
+        -0.03147057443857193
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995724558830261,
+        1.000074028968811,
+        1.0012153387069702
+      ],
+      "matrix_world_translation": [
+        3.779540538787842,
+        -3.0780303478240967,
+        -4.597914218902588
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_digit5_middle_phalanx": {
+      "type": "MESH",
+      "parent": "right_digit5_pip_joint_empty",
+      "location_local": [
+        3.608402729034424,
+        -2.785173177719116,
+        -4.2951202392578125
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995720386505127,
+        1.0000736713409424,
+        1.0012151002883911
+      ],
+      "matrix_world_translation": [
+        3.77954363822937,
+        -3.1622300148010254,
+        -4.599169731140137
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_digit5_pip_joint_empty": {
+      "type": "EMPTY",
+      "parent": "right_digit5_distal_phalanx",
+      "location_local": [
+        -7.153399224080204e-07,
+        -0.019688421860337257,
+        0.0004956059856340289
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995721578598022,
+        1.000073790550232,
+        1.0012154579162598
+      ],
+      "matrix_world_translation": [
+        3.779543161392212,
+        -3.1361353397369385,
+        -4.598400115966797
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_digit5_proximal_phalanx": {
+      "type": "MESH",
+      "parent": "right_digit5_dip_joint_empty",
+      "location_local": [
+        -2.861006123566767e-06,
+        -0.011401082389056683,
+        -0.0015352480113506317
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0004277229309082,
+        0.9999263882637024,
+        0.9987867474555969
+      ],
+      "matrix_world_translation": [
+        3.7795400619506836,
+        -3.1853322982788086,
+        -4.59971284866333
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_elbow_joint_empty": {
+      "type": "EMPTY",
+      "parent": "right_shoulder_link",
+      "location_local": [
+        3.6083974838256836,
+        -2.310488700866699,
+        -4.2375569343566895
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991436004638672,
+        1.0001474618911743,
+        1.0024317502975464
+      ],
+      "matrix_world_translation": [
+        3.7795374393463135,
+        -2.544408082962036,
+        -4.557244777679443
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_forearm_link": {
+      "type": "MESH",
+      "parent": "right_elbow_joint_empty",
+      "location_local": [
+        3.624321699142456,
+        -2.4760828018188477,
+        -4.235756874084473
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991440773010254,
+        1.0001472234725952,
+        1.0024315118789673
+      ],
+      "matrix_world_translation": [
+        3.799517869949341,
+        -2.757077217102051,
+        -4.553149223327637
+      ],
+      "mass": 3.361016971757635,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 3.361016971757635
+      }
+    },
+    "right_forearm_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.708355665206909,
+        -2.47175931930542,
+        -4.565652370452881
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.253631353378296,
+        1.2548900842666626,
+        1.2577561140060425
+      ],
+      "matrix_world_translation": [
+        3.708355665206909,
+        -2.47175931930542,
+        -4.565652370452881
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_palm_link": {
+      "type": "MESH",
+      "parent": "right_wrist_joint_2_empty",
+      "location_local": [
+        3.608405113220215,
+        -2.632880926132202,
+        -4.24429988861084
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.999144434928894,
+        1.0001474618911743,
+        1.0024315118789673
+      ],
+      "matrix_world_translation": [
+        3.77954363822937,
+        -3.0181925296783447,
+        -4.5583319664001465
+      ],
+      "mass": 0.566312564075381,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.566312564075381
+      }
+    },
+    "right_palm_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.708357095718384,
+        -2.7716574668884277,
+        -4.563678741455078
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.2536317110061646,
+        1.2548900842666626,
+        1.2577561140060425
+      ],
+      "matrix_world_translation": [
+        3.708357095718384,
+        -2.7716574668884277,
+        -4.563678741455078
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_proximal_radioulnar_joint_empty": {
+      "type": "EMPTY",
+      "parent": "right_forearm_link",
+      "location_local": [
+        3.5916366577148438,
+        -2.491433620452881,
+        -4.242656707763672
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995718598365784,
+        1.0000734329223633,
+        1.0012151002883911
+      ],
+      "matrix_world_translation": [
+        3.778484582901001,
+        -2.8206946849823,
+        -4.552513122558594
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_radioulnar_link": {
+      "type": "EMPTY",
+      "parent": "right_proximal_radioulnar_joint_empty",
+      "location_local": [
+        -2.384185791015625e-07,
+        1.1920928955078125e-07,
+        0.0
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.7784841060638428,
+        -2.8206944465637207,
+        -4.5525126457214355
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_shoulder_2_link": {
+      "type": "EMPTY",
+      "parent": "right_shoulder_joint_empty_2",
+      "location_local": [
+        -2.384185791015625e-07,
+        -0.02576148509979248,
+        0.00025463104248046875
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.7796642780303955,
+        -2.0889804363250732,
+        -4.557981014251709
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_shoulder_3_link": {
+      "type": "EMPTY",
+      "parent": "right_shoulder_joint_empty_3",
+      "location_local": [
+        0.0,
+        -0.02423107624053955,
+        0.00025463104248046875
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.7796642780303955,
+        -2.038980484008789,
+        -4.558492183685303
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_shoulder_joint_empty_1": {
+      "type": "EMPTY",
+      "parent": "right_shoulder_2_link",
+      "location_local": [
+        0.0,
+        -0.02576160430908203,
+        0.00025463104248046875
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.7796642780303955,
+        -2.114745855331421,
+        -4.55772590637207
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_shoulder_joint_empty_2": {
+      "type": "EMPTY",
+      "parent": "right_shoulder_3_link",
+      "location_local": [
+        2.384185791015625e-07,
+        -0.0242311954498291,
+        0.000255584716796875
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0000001192092896,
+        1.0000001192092896
+      ],
+      "matrix_world_translation": [
+        3.7796645164489746,
+        -2.0632152557373047,
+        -4.558236122131348
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_shoulder_joint_empty_3": {
+      "type": "EMPTY",
+      "parent": "torso_link",
+      "location_local": [
+        0.1712665855884552,
+        -0.14998626708984375,
+        0.002733608242124319
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991433024406433,
+        1.0001473426818848,
+        1.0024316310882568
+      ],
+      "matrix_world_translation": [
+        3.7796642780303955,
+        -2.0147459506988525,
+        -4.558747291564941
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_shoulder_link": {
+      "type": "MESH",
+      "parent": "right_shoulder_joint_empty_1",
+      "location_local": [
+        3.6082959175109863,
+        -2.2571592330932617,
+        -4.240738868713379
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995718598365784,
+        1.000073790550232,
+        1.0012152194976807
+      ],
+      "matrix_world_translation": [
+        3.7795374393463135,
+        -2.3708152770996094,
+        -4.559963703155518
+      ],
+      "mass": 3.361016971757635,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 3.361016971757635
+      }
+    },
+    "right_shoulder_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.7083518505096436,
+        -2.1347508430480957,
+        -4.561336994171143
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.254168152809143,
+        1.2547978162765503,
+        1.2562298774719238
+      ],
+      "matrix_world_translation": [
+        3.7083518505096436,
+        -2.1347508430480957,
+        -4.561336994171143
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_thumb_cmc_joint_empty_1": {
+      "type": "EMPTY",
+      "parent": "right_palm_link",
+      "location_local": [
+        3.6083993911743164,
+        -2.6584646701812744,
+        -4.19574499130249
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.998717188835144,
+        1.0002210140228271,
+        1.0036497116088867
+      ],
+      "matrix_world_translation": [
+        3.779541254043579,
+        -2.9914863109588623,
+        -4.497640132904053
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_thumb_cmc_joint_empty_2": {
+      "type": "EMPTY",
+      "parent": "right_thumb_cmc_joint_empty_1",
+      "location_local": [
+        3.608403205871582,
+        -2.669844150543213,
+        -4.200422286987305
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.998717188835144,
+        1.0002210140228271,
+        1.0036497116088867
+      ],
+      "matrix_world_translation": [
+        3.779540777206421,
+        -2.9914870262145996,
+        -4.491352558135986
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_thumb_cmc_joint_empty_3": {
+      "type": "EMPTY",
+      "parent": "right_thumb_cmc_joint_empty_2",
+      "location_local": [
+        3.608402967453003,
+        -2.669844150543213,
+        -4.195409774780273
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9987171292304993,
+        1.0002208948135376,
+        1.0036495923995972
+      ],
+      "matrix_world_translation": [
+        3.779540777206421,
+        -2.991487503051758,
+        -4.485061168670654
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_thumb_ip_joint_empty": {
+      "type": "EMPTY",
+      "parent": "second_phalanx_right_thumb_link",
+      "location_local": [
+        3.608403205871582,
+        -2.7220520973205566,
+        -4.174694061279297
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.998717188835144,
+        1.0002210140228271,
+        1.0036497116088867
+      ],
+      "matrix_world_translation": [
+        3.779540777206421,
+        -3.078253746032715,
+        -4.464385032653809
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_thumb_mcp_joint_empty_1": {
+      "type": "EMPTY",
+      "parent": "third_phalanx_right_thumb_link",
+      "location_local": [
+        3.6084039211273193,
+        -2.693713426589966,
+        -4.180260181427002
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9987174272537231,
+        1.0002210140228271,
+        1.0036497116088867
+      ],
+      "matrix_world_translation": [
+        3.779543161392212,
+        -3.0214357376098633,
+        -4.466055870056152
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_thumb_mcp_joint_empty_2": {
+      "type": "EMPTY",
+      "parent": "right_thumb_mcp_joint_empty_1",
+      "location_local": [
+        3.6084036827087402,
+        -2.6881582736968994,
+        -4.177999973297119
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9987174272537231,
+        1.0002208948135376,
+        1.0036497116088867
+      ],
+      "matrix_world_translation": [
+        3.7795417308807373,
+        -3.0272223949432373,
+        -4.466407775878906
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_wrist_joint_1_empty": {
+      "type": "EMPTY",
+      "parent": "right_radioulnar_link",
+      "location_local": [
+        0.0008373260498046875,
+        -0.07419289648532867,
+        0.0020005800761282444
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995716214179993,
+        1.0000736713409424,
+        1.0012149810791016
+      ],
+      "matrix_world_translation": [
+        3.779534101486206,
+        -2.9137914180755615,
+        -4.549998760223389
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_wrist_joint_2_empty": {
+      "type": "EMPTY",
+      "parent": "right_wrist_pitch_link",
+      "location_local": [
+        4.291534423828125e-06,
+        -0.026027441024780273,
+        -0.000659942626953125
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995730519294739,
+        1.000073790550232,
+        1.0012149810791016
+      ],
+      "matrix_world_translation": [
+        3.7795393466949463,
+        -2.94645357131958,
+        -4.550827980041504
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "right_wrist_pitch_link": {
+      "type": "EMPTY",
+      "parent": "right_wrist_joint_1_empty",
+      "location_local": [
+        0.0,
+        -4.76837158203125e-07,
+        0.0
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0000001192092896,
+        1.0000001192092896,
+        1.0000001192092896
+      ],
+      "matrix_world_translation": [
+        3.779534101486206,
+        -2.9137918949127197,
+        -4.549999237060547
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "second_phalanx_index_finger_right_hand_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.7083561420440674,
+        -2.9159579277038574,
+        -4.5321760177612305
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.2536321878433228,
+        1.2548900842666626,
+        1.257755994796753
+      ],
+      "matrix_world_translation": [
+        3.7083561420440674,
+        -2.9159579277038574,
+        -4.5321760177612305
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "second_phalanx_left_thumb_link": {
+      "type": "MESH",
+      "parent": "left_thumb_mcp_joint_empty_2",
+      "location_local": [
+        3.6084024906158447,
+        -1.0168381929397583,
+        -4.173638343811035
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991446733474731,
+        1.0001473426818848,
+        1.0024316310882568
+      ],
+      "matrix_world_translation": [
+        3.7922515869140625,
+        -0.6657893061637878,
+        -4.482189178466797
+      ],
+      "mass": 0.006974365699255396,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.006974365699255396
+      }
+    },
+    "second_phalanx_left_thumb_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.708359956741333,
+        -0.9044387936592102,
+        -4.469990253448486
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.2536321878433228,
+        1.2548900842666626,
+        1.2577561140060425
+      ],
+      "matrix_world_translation": [
+        3.708359956741333,
+        -0.9044387936592102,
+        -4.469990253448486
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "second_phalanx_middle_finger_left_hand_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.708359956741333,
+        -0.8113313317298889,
+        -4.549543380737305
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.2536321878433228,
+        1.2548900842666626,
+        1.2577561140060425
+      ],
+      "matrix_world_translation": [
+        3.708359956741333,
+        -0.8113313317298889,
+        -4.549543380737305
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "second_phalanx_middle_finger_right_hand_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.7083585262298584,
+        -2.912444591522217,
+        -4.563751697540283
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.2536321878433228,
+        1.2548900842666626,
+        1.2577561140060425
+      ],
+      "matrix_world_translation": [
+        3.7083585262298584,
+        -2.912444591522217,
+        -4.563751697540283
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "second_phalanx_of_index_finger_of_left_hand_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.708359956741333,
+        -0.8153240084648132,
+        -4.521664619445801
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.2536321878433228,
+        1.2548900842666626,
+        1.2577561140060425
+      ],
+      "matrix_world_translation": [
+        3.708359956741333,
+        -0.8153240084648132,
+        -4.521664619445801
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "second_phalanx_right_thumb_link": {
+      "type": "MESH",
+      "parent": "right_thumb_mcp_joint_empty_2",
+      "location_local": [
+        3.6084022521972656,
+        -2.7245543003082275,
+        -4.177753925323486
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991446137428284,
+        1.0001473426818848,
+        1.0024315118789673
+      ],
+      "matrix_world_translation": [
+        3.7795403003692627,
+        -3.0686357021331787,
+        -4.466452121734619
+      ],
+      "mass": 0.01805730732939992,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.01805730732939992
+      }
+    },
+    "second_phalanx_right_thumb_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.7083585262298584,
+        -2.8151168823242188,
+        -4.481810569763184
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.2536320686340332,
+        1.2548900842666626,
+        1.2577561140060425
+      ],
+      "matrix_world_translation": [
+        3.7083585262298584,
+        -2.8151168823242188,
+        -4.481810569763184
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "second_phalanx_ring_finger_left_hand_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.708359956741333,
+        -0.8027098178863525,
+        -4.58993673324585
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.2536321878433228,
+        1.2548900842666626,
+        1.2577561140060425
+      ],
+      "matrix_world_translation": [
+        3.708359956741333,
+        -0.8027098178863525,
+        -4.58993673324585
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "second_phalanx_ring_finger_right_hand_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.7083585262298584,
+        -2.912444591522217,
+        -4.599533557891846
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.2536321878433228,
+        1.2548900842666626,
+        1.2577561140060425
+      ],
+      "matrix_world_translation": [
+        3.7083585262298584,
+        -2.912444591522217,
+        -4.599533557891846
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "speaker": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.7608323097229004,
+        -1.8639612197875977,
+        -4.454727649688721
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.999572217464447,
+        1.000073790550232,
+        1.0012152194976807
+      ],
+      "matrix_world_translation": [
+        3.7608323097229004,
+        -1.8639612197875977,
+        -4.454727649688721
+      ],
+      "mass": 0.11705420446831037,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.11705420446831037
+      }
+    },
+    "stereo_microphone_1": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.6934566497802734,
+        -1.8213109970092773,
+        -4.396221160888672
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995720982551575,
+        1.000073790550232,
+        1.0012152194976807
+      ],
+      "matrix_world_translation": [
+        3.6934566497802734,
+        -1.8213109970092773,
+        -4.396221160888672
+      ],
+      "mass": 0.03291761305955574,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.03291761305955574
+      }
+    },
+    "stereo_microphone_2": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.6934571266174316,
+        -1.9081072807312012,
+        -4.396222114562988
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995720982551575,
+        1.000073790550232,
+        1.0012152194976807
+      ],
+      "matrix_world_translation": [
+        3.6934571266174316,
+        -1.9081072807312012,
+        -4.396222114562988
+      ],
+      "mass": 0.03291762204798134,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.03291762204798134
+      }
+    },
+    "third_phalanx_index_finger_right_hand_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.708357572555542,
+        -2.8478031158447266,
+        -4.532029628753662
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.2536324262619019,
+        1.2548900842666626,
+        1.257755994796753
+      ],
+      "matrix_world_translation": [
+        3.708357572555542,
+        -2.8478031158447266,
+        -4.532029628753662
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "third_phalanx_left_thumb_link": {
+      "type": "MESH",
+      "parent": "left_thumb_cmc_joint_empty_3",
+      "location_local": [
+        3.608403444290161,
+        -1.0783469676971436,
+        -4.179986953735352
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991447329521179,
+        1.0001473426818848,
+        1.0024315118789673
+      ],
+      "matrix_world_translation": [
+        3.7922520637512207,
+        -0.7543105483055115,
+        -4.483221530914307
+      ],
+      "mass": 0.034676924796637344,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.034676924796637344
+      }
+    },
+    "third_phalanx_left_thumb_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.7083613872528076,
+        -0.960812509059906,
+        -4.480477809906006
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.2536324262619019,
+        1.2548900842666626,
+        1.2577561140060425
+      ],
+      "matrix_world_translation": [
+        3.7083613872528076,
+        -0.960812509059906,
+        -4.480477809906006
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "third_phalanx_middle_finger_right_hand_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.708359956741333,
+        -2.8442912101745605,
+        -4.563607215881348
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.2536324262619019,
+        1.2548900842666626,
+        1.2577561140060425
+      ],
+      "matrix_world_translation": [
+        3.708359956741333,
+        -2.8442912101745605,
+        -4.563607215881348
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "third_phalanx_of_index_finger_of_left_hand_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.7083613872528076,
+        -0.8793262839317322,
+        -4.522000789642334
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.2536324262619019,
+        1.2548900842666626,
+        1.2577561140060425
+      ],
+      "matrix_world_translation": [
+        3.7083613872528076,
+        -0.8793262839317322,
+        -4.522000789642334
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "third_phalanx_of_the_middle_finger_of_the_hand_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.7083590030670166,
+        -0.8772361874580383,
+        -4.551786422729492
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.2536319494247437,
+        1.2548900842666626,
+        1.2577561140060425
+      ],
+      "matrix_world_translation": [
+        3.7083590030670166,
+        -0.8772361874580383,
+        -4.551786422729492
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "third_phalanx_right_thumb_link": {
+      "type": "MESH",
+      "parent": "right_thumb_cmc_joint_empty_3",
+      "location_local": [
+        3.608403444290161,
+        -2.6694021224975586,
+        -4.181675434112549
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9991447329521179,
+        1.0001473426818848,
+        1.0024315118789673
+      ],
+      "matrix_world_translation": [
+        3.7795422077178955,
+        -2.9909324645996094,
+        -4.467828273773193
+      ],
+      "mass": 0.04352909329105894,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.04352909329105894
+      }
+    },
+    "third_phalanx_right_thumb_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.708359956741333,
+        -2.758674144744873,
+        -4.488502025604248
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.2536323070526123,
+        1.2548900842666626,
+        1.2577561140060425
+      ],
+      "matrix_world_translation": [
+        3.708359956741333,
+        -2.758674144744873,
+        -4.488502025604248
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "third_phalanx_ring_finger_left_hand_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.7083613872528076,
+        -0.8681391477584839,
+        -4.58931827545166
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.2536324262619019,
+        1.2548900842666626,
+        1.2577561140060425
+      ],
+      "matrix_world_translation": [
+        3.7083613872528076,
+        -0.8681391477584839,
+        -4.58931827545166
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "third_phalanx_ring_finger_right_hand_link_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.708359956741333,
+        -2.8442912101745605,
+        -4.599387168884277
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.2536324262619019,
+        1.2548900842666626,
+        1.2577561140060425
+      ],
+      "matrix_world_translation": [
+        3.708359956741333,
+        -2.8442912101745605,
+        -4.599387168884277
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "ToF_Lens_001": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.78285551071167,
+        -1.8607431650161743,
+        -4.360816478729248
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.999572217464447,
+        1.000073790550232,
+        1.0012152194976807
+      ],
+      "matrix_world_translation": [
+        3.78285551071167,
+        -1.8607431650161743,
+        -4.360816478729248
+      ],
+      "mass": 0.00011705418339891274,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 0.00011705418339891274
+      }
+    },
+    "torso_link": {
+      "type": "MESH",
+      "parent": "vertical_lift_joint",
+      "location_local": [
+        -2.384185791015625e-07,
+        -1.1920928955078125e-07,
+        0.019999980926513672
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        0.9999999403953552,
+        0.9999999403953552
+      ],
+      "matrix_world_translation": [
+        3.6083977222442627,
+        -1.8647598028182983,
+        -4.56148099899292
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "vertical_lift_joint": {
+      "type": "EMPTY",
+      "parent": "base_link",
+      "location_local": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.608397960662842,
+        -1.8647596836090088,
+        -4.581480979919434
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "void_SM": {
+      "type": "EMPTY",
+      "parent": "head_link",
+      "location_local": [
+        3.5995960235595703,
+        -1.866644024848938,
+        -3.8410844802856445
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995719790458679,
+        1.000073790550232,
+        1.0012152194976807
+      ],
+      "matrix_world_translation": [
+        3.699551582336426,
+        -1.8667662143707275,
+        -4.212869644165039
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "wheel_BL": {
+      "type": "MESH",
+      "parent": "wheel_BL_joint",
+      "location_local": [
+        3.237785506371438e-07,
+        -2.384185791015625e-07,
+        -2.3401125304189918e-07
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995715022087097,
+        1.000073790550232,
+        1.0012153387069702
+      ],
+      "matrix_world_translation": [
+        3.3498334884643555,
+        -1.6021368503570557,
+        -5.555208683013916
+      ],
+      "mass": 2.558046901224469,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 2.558046901224469
+      }
+    },
+    "wheel_BL_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.3498339653015137,
+        -1.6021368503570557,
+        -5.555208206176758
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995716214179993,
+        1.000073790550232,
+        1.0012152194976807
+      ],
+      "matrix_world_translation": [
+        3.3498339653015137,
+        -1.6021368503570557,
+        -5.555208206176758
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "wheel_BL_joint": {
+      "type": "EMPTY",
+      "parent": "base_link",
+      "location_local": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.3498339653015137,
+        -1.6021368503570557,
+        -5.555208206176758
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "wheel_BR": {
+      "type": "MESH",
+      "parent": "wheel_BR_joint",
+      "location_local": [
+        3.078639565501362e-07,
+        -2.384185791015625e-07,
+        -3.53220514170971e-07
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995715022087097,
+        1.000073790550232,
+        1.0012153387069702
+      ],
+      "matrix_world_translation": [
+        3.348778247833252,
+        -2.11808443069458,
+        -5.555209636688232
+      ],
+      "mass": 2.558046901224469,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 2.558046901224469
+      }
+    },
+    "wheel_BR_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.3498196601867676,
+        -2.11808443069458,
+        -5.555209159851074
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995716214179993,
+        1.000073790550232,
+        1.0012152194976807
+      ],
+      "matrix_world_translation": [
+        3.3498196601867676,
+        -2.11808443069458,
+        -5.555209159851074
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "wheel_BR_joint": {
+      "type": "EMPTY",
+      "parent": "base_link",
+      "location_local": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.34877872467041,
+        -2.11808443069458,
+        -5.555209159851074
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "wheel_FL": {
+      "type": "MESH",
+      "parent": "wheel_FL_joint",
+      "location_local": [
+        3.0777948722970905e-07,
+        -2.384185791015625e-07,
+        -3.5322054259268043e-07
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995715022087097,
+        1.000073790550232,
+        1.0012153387069702
+      ],
+      "matrix_world_translation": [
+        3.8661704063415527,
+        -1.6034249067306519,
+        -5.555208683013916
+      ],
+      "mass": 2.558046901224469,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 2.558046901224469
+      }
+    },
+    "wheel_FL_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.8651297092437744,
+        -1.6023836135864258,
+        -5.555208206176758
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995716214179993,
+        1.000073790550232,
+        1.0012152194976807
+      ],
+      "matrix_world_translation": [
+        3.8651297092437744,
+        -1.6023836135864258,
+        -5.555208206176758
+      ],
+      "mass": 1.0,
+      "mass_source": "rigid_body.mass",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": true
+    },
+    "wheel_FL_joint": {
+      "type": "EMPTY",
+      "parent": "base_link",
+      "location_local": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.866170883178711,
+        -1.6034250259399414,
+        -5.555208206176758
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "wheel_FR": {
+      "type": "MESH",
+      "parent": "wheel_FR_joint",
+      "location_local": [
+        -1.8497624409974378e-07,
+        -2.384185791015625e-07,
+        -4.7242980372175225e-07
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995715022087097,
+        1.000073790550232,
+        1.0012153387069702
+      ],
+      "matrix_world_translation": [
+        3.8669772148132324,
+        -2.11763858795166,
+        -5.555208683013916
+      ],
+      "mass": 2.558046901224469,
+      "mass_source": "obj[\"mass\"]",
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false,
+      "custom_props": {
+        "mass": 2.558046901224469
+      }
+    },
+    "wheel_FR_collision": {
+      "type": "MESH",
+      "parent": null,
+      "location_local": [
+        3.865936756134033,
+        -2.119720935821533,
+        -5.555208683013916
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        0.9995716214179993,
+        1.000073790550232,
+        1.0012152194976807
+      ],
+      "matrix_world_translation": [
+        3.865936756134033,
+        -2.119720935821533,
+        -5.555208683013916
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    },
+    "wheel_FR_joint": {
+      "type": "EMPTY",
+      "parent": "base_link",
+      "location_local": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_mode": "XYZ",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world_translation": [
+        3.8669776916503906,
+        -2.11763858795166,
+        -5.555208683013916
+      ],
+      "mass": null,
+      "mass_source": null,
+      "center_of_mass_local": null,
+      "com_source": null,
+      "inertia_tensor_local": null,
+      "volume_local": null,
+      "rigid_body_enabled": false
+    }
+  },
+  "totals": {
+    "objects_with_mass": 42,
+    "total_kg": 246.076028,
+    "total_kg_by_prefix": {
+      "base": 213.133954,
+      "first": 0.025032,
+      "head": 7.993584,
+      "left": 5.950419,
+      "odor": 0.003746,
+      "right": 7.450862,
+      "second": 0.025032,
+      "speaker": 0.117054,
+      "stereo": 0.065835,
+      "third": 0.078206,
+      "ToF": 0.000117,
+      "wheel": 11.232188
+    },
+    "no_mass_objects": [
+      "atlanto_axial_joint_empty",
+      "atlanto_occipital_joint_empty",
+      "AXLE_GUIDE_BL",
+      "AXLE_GUIDE_BR",
+      "AXLE_GUIDE_FL",
+      "AXLE_GUIDE_FR",
+      "first_phalanx_index_finger_right_hand_link_collision",
+      "first_phalanx_left_thumb_link_collision",
+      "first_phalanx_middle_finger_left_hand_link_collision",
+      "first_phalanx_middle_finger_right_hand_link_collision",
+      "first_phalanx_of_index_finger_of_left_hand_link_collision",
+      "first_phalanx_right_thumb_link_collision",
+      "first_phalanx_ring_finger_left_hand_link_collision",
+      "first_phalanx_ring_finger_right_hand_link_collision",
+      "head_link_collision",
+      "intervertebral_joints_C2_C7_empty",
+      "left_digit2_dip_joint_empty",
+      "left_digit2_mcp2_joint_empty",
+      "left_digit2_mcp_joint_empty",
+      "left_digit2_pip_joint_empty",
+      "left_digit3_dip_joint_empty",
+      "left_digit3_mcp2_joint_empty",
+      "left_digit3_mcp_joint_empty",
+      "left_digit3_pip_joint_empty",
+      "left_digit4_dip_joint_empty",
+      "left_digit4_mcp2_joint_empty",
+      "left_digit4_mcp_joint_empty",
+      "left_digit4_pip_joint_empty",
+      "left_digit5_dip_joint_empty",
+      "left_digit5_distal_phalanx",
+      "left_digit5_mcp2_joint_empty",
+      "left_digit5_mcp_joint_empty",
+      "left_digit5_middle_phalanx",
+      "left_digit5_pip_joint_empty",
+      "left_digit5_proximal_phalanx",
+      "left_elbow_joint_empty",
+      "left_forearm_link_collision",
+      "left_palm_link_collision",
+      "left_proximal_radioulnar_joint_empty",
+      "left_radioulnar_link",
+      "left_shoulder_2_link",
+      "left_shoulder_3_link",
+      "left_shoulder_joint_empty_1",
+      "left_shoulder_joint_empty_2",
+      "left_shoulder_joint_empty_3",
+      "left_shoulder_link_collision",
+      "left_thumb_cmc_joint_empty_1",
+      "left_thumb_cmc_joint_empty_2",
+      "left_thumb_cmc_joint_empty_3",
+      "left_thumb_ip_joint_empty",
+      "left_thumb_mcp_joint_empty_1",
+      "left_thumb_mcp_joint_empty_2",
+      "left_wrist_joint_1_empty",
+      "left_wrist_joint_2_empty",
+      "left_wrist_pitch_link",
+      "lift_brake",
+      "lift_catcher_placeholder",
+      "lift_guide_block_left",
+      "lift_guide_block_right",
+      "lift_guide_left",
+      "lift_guide_right",
+      "lift_motor",
+      "lift_nut_mount_left",
+      "lift_nut_mount_right",
+      "lift_screw_left",
+      "lift_screw_right",
+      "lift_stop_top",
+      "lift_sync_shaft",
+      "right_digit2_dip_joint_empty",
+      "right_digit2_mcp2_joint_empty",
+      "right_digit2_mcp_joint_empty",
+      "right_digit2_pip_joint_empty",
+      "right_digit3_dip_joint_empty",
+      "right_digit3_mcp2_joint_empty",
+      "right_digit3_mcp_joint_empty",
+      "right_digit3_pip_joint_empty",
+      "right_digit4_dip_joint_empty",
+      "right_digit4_mcp2_joint_empty",
+      "right_digit4_mcp_joint_empty",
+      "right_digit4_pip_joint_empty",
+      "right_digit5_dip_joint_empty",
+      "right_digit5_distal_phalanx",
+      "right_digit5_mcp2_joint_empty",
+      "right_digit5_mcp_joint_empty",
+      "right_digit5_middle_phalanx",
+      "right_digit5_pip_joint_empty",
+      "right_digit5_proximal_phalanx",
+      "right_elbow_joint_empty",
+      "right_forearm_link_collision",
+      "right_palm_link_collision",
+      "right_proximal_radioulnar_joint_empty",
+      "right_radioulnar_link",
+      "right_shoulder_2_link",
+      "right_shoulder_3_link",
+      "right_shoulder_joint_empty_1",
+      "right_shoulder_joint_empty_2",
+      "right_shoulder_joint_empty_3",
+      "right_shoulder_link_collision",
+      "right_thumb_cmc_joint_empty_1",
+      "right_thumb_cmc_joint_empty_2",
+      "right_thumb_cmc_joint_empty_3",
+      "right_thumb_ip_joint_empty",
+      "right_thumb_mcp_joint_empty_1",
+      "right_thumb_mcp_joint_empty_2",
+      "right_wrist_joint_1_empty",
+      "right_wrist_joint_2_empty",
+      "right_wrist_pitch_link",
+      "second_phalanx_index_finger_right_hand_link_collision",
+      "second_phalanx_left_thumb_link_collision",
+      "second_phalanx_middle_finger_left_hand_link_collision",
+      "second_phalanx_middle_finger_right_hand_link_collision",
+      "second_phalanx_of_index_finger_of_left_hand_link_collision",
+      "second_phalanx_right_thumb_link_collision",
+      "second_phalanx_ring_finger_left_hand_link_collision",
+      "second_phalanx_ring_finger_right_hand_link_collision",
+      "third_phalanx_index_finger_right_hand_link_collision",
+      "third_phalanx_left_thumb_link_collision",
+      "third_phalanx_middle_finger_right_hand_link_collision",
+      "third_phalanx_of_index_finger_of_left_hand_link_collision",
+      "third_phalanx_of_the_middle_finger_of_the_hand_link_collision",
+      "third_phalanx_right_thumb_link_collision",
+      "third_phalanx_ring_finger_left_hand_link_collision",
+      "third_phalanx_ring_finger_right_hand_link_collision",
+      "torso_link",
+      "vertical_lift_joint",
+      "void_SM",
+      "wheel_BL_collision",
+      "wheel_BL_joint",
+      "wheel_BR_collision",
+      "wheel_BR_joint",
+      "wheel_FL_joint",
+      "wheel_FR_collision",
+      "wheel_FR_joint"
+    ]
+  }
+}
