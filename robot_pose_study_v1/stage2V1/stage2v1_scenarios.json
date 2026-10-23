@@ -1,0 +1,2100 @@
+{
+  "metadata": {
+    "stage": "2V.1",
+    "kind": "mass_model_scenarios",
+    "blend_sha256": "1ae88879af076b1a0a1cfc6499d04a037dbb2103d2a7cb6440708289829cd280",
+    "read_only": true,
+    "configuration": "rest pose (q=0, lift=0); arm COM moves with q (see stage2V/stage2v2_mass_distribution for configs)",
+    "constraints": "no moments/dynamics/patient forces/stability; no fabricated exact values for unknown data"
+  },
+  "scenario_axes": {
+    "fixed_recipe": "base/head/wheels/sensors: stored = rho*V_local (unchanged)",
+    "torso": "designed part m = 2700*|V| (no stored mass)",
+    "lift_material": "light=all aluminum 2700; nominal=steel 7800 for transmission+motor+brake, aluminum for brackets; heavy=all steel 7800 (engineering assumption)",
+    "arms_hands_fingers": "light=min(stored, 2700*|V|), nominal=stored, heavy=max(stored, 2700*|V|)",
+    "non_geometric": "cables/fasteners/finger drives -> parametric addendum only, excluded from totals"
+  },
+  "parametric_constants": {
+    "cable_lambda_kg_per_m": {
+      "light": 0.08,
+      "nominal": 0.15,
+      "heavy": 0.3
+    },
+    "cable_track_m": 2.5,
+    "fastener_fraction": {
+      "light": 0.02,
+      "nominal": 0.035,
+      "heavy": 0.05
+    },
+    "finger_drives": "symbolic: delta_M >= 0 (no data, not estimated)"
+  },
+  "scenarios": {
+    "light": {
+      "scenario": "light",
+      "subsystems": {
+        "head": {
+          "mass_kg": 7.993584,
+          "com_world": [
+            3.708353,
+            -1.86476,
+            -4.410679
+          ],
+          "I_com_world": [
+            [
+              0.02750446,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.02749064,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0274592
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "head_link",
+              "mass_kg": 7.993584,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            }
+          ],
+          "component_count": 1
+        },
+        "left_arm": {
+          "mass_kg": 5.445469,
+          "com_world": [
+            3.792203,
+            -1.2141,
+            -4.561685
+          ],
+          "I_com_world": [
+            [
+              0.24469519,
+              -1.91e-06,
+              -0.0
+            ],
+            [
+              -1.91e-06,
+              0.00789411,
+              -6.402e-05
+            ],
+            [
+              -0.0,
+              -6.402e-05,
+              0.24467613
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "left_shoulder_link",
+              "mass_kg": 2.722735,
+              "basis": "stored (unverified, category 3)"
+            },
+            {
+              "link_id": "left_forearm_link",
+              "mass_kg": 2.722735,
+              "basis": "stored (unverified, category 3)"
+            }
+          ],
+          "component_count": 2
+        },
+        "left_fingers": {
+          "mass_kg": 0.240527,
+          "com_world": [
+            3.79225,
+            -0.579212,
+            -4.582613
+          ],
+          "I_com_world": [
+            [
+              0.00069022,
+              1e-08,
+              0.0
+            ],
+            [
+              1e-08,
+              0.0002727,
+              -5.892e-05
+            ],
+            [
+              0.0,
+              -5.892e-05,
+              0.00043411
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "left_digit5_distal_phalanx",
+              "mass_kg": 0.034584,
+              "basis": "no stored mass: solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "left_digit5_middle_phalanx",
+              "mass_kg": 0.021409,
+              "basis": "no stored mass: solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "left_digit3_proximal_phalanx",
+              "mass_kg": 0.018831,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "left_digit3_distal_phalanx",
+              "mass_kg": 0.018831,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "left_digit2_middle_phalanx",
+              "mass_kg": 0.018831,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "left_digit3_middle_phalanx",
+              "mass_kg": 0.018831,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "left_digit4_distal_phalanx",
+              "mass_kg": 0.018831,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "left_digit2_distal_phalanx",
+              "mass_kg": 0.018831,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "left_digit4_middle_phalanx",
+              "mass_kg": 0.018831,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "left_digit4_proximal_phalanx",
+              "mass_kg": 0.018142,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "left_digit2_proximal_phalanx",
+              "mass_kg": 0.018107,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "left_digit5_proximal_phalanx",
+              "mass_kg": 0.016469,
+              "basis": "no stored mass: solid aluminum 2700*|V|"
+            }
+          ],
+          "component_count": 12
+        },
+        "left_hand": {
+          "mass_kg": 0.384098,
+          "com_world": [
+            3.792213,
+            -0.734988,
+            -4.563804
+          ],
+          "I_com_world": [
+            [
+              0.00111874,
+              -3e-08,
+              -1.8e-07
+            ],
+            [
+              -3e-08,
+              0.00074554,
+              -6.009e-05
+            ],
+            [
+              -1.8e-07,
+              -6.009e-05,
+              0.0004876
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "left_palm_link",
+              "mass_kg": 0.335473,
+              "basis": "stored (unverified, category 3)"
+            },
+            {
+              "link_id": "third_phalanx_left_thumb_link",
+              "mass_kg": 0.034677,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "first_phalanx_left_thumb_link",
+              "mass_kg": 0.006974,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "second_phalanx_left_thumb_link",
+              "mass_kg": 0.006974,
+              "basis": "stored placeholder (category 3)"
+            }
+          ],
+          "component_count": 4
+        },
+        "lift": {
+          "mass_kg": 46.261711,
+          "com_world": [
+            3.628399,
+            -1.862824,
+            -4.757103
+          ],
+          "I_com_world": [
+            [
+              12.28882756,
+              -0.00228668,
+              0.67786116
+            ],
+            [
+              -0.00228668,
+              10.97403107,
+              0.00960659
+            ],
+            [
+              0.67786116,
+              0.00960659,
+              1.61952165
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "lift_guide_right",
+              "mass_kg": 12.971144,
+              "basis": "designed part: m = 2700*|V| (aluminum_2700)"
+            },
+            {
+              "link_id": "lift_guide_left",
+              "mass_kg": 12.971082,
+              "basis": "designed part: m = 2700*|V| (aluminum_2700)"
+            },
+            {
+              "link_id": "lift_motor",
+              "mass_kg": 5.447875,
+              "basis": "designed part: m = 2700*|V| (aluminum_2700)"
+            },
+            {
+              "link_id": "lift_guide_block_right",
+              "mass_kg": 2.551495,
+              "basis": "designed part: m = 2700*|V| (aluminum_2700)"
+            },
+            {
+              "link_id": "lift_guide_block_left",
+              "mass_kg": 2.551495,
+              "basis": "designed part: m = 2700*|V| (aluminum_2700)"
+            },
+            {
+              "link_id": "lift_screw_right",
+              "mass_kg": 1.938995,
+              "basis": "designed part: m = 2700*|V| (aluminum_2700)"
+            },
+            {
+              "link_id": "lift_screw_left",
+              "mass_kg": 1.938987,
+              "basis": "designed part: m = 2700*|V| (aluminum_2700)"
+            },
+            {
+              "link_id": "lift_nut_mount_left",
+              "mass_kg": 1.530896,
+              "basis": "designed part: m = 2700*|V| (aluminum_2700)"
+            },
+            {
+              "link_id": "lift_nut_mount_right",
+              "mass_kg": 1.530894,
+              "basis": "designed part: m = 2700*|V| (aluminum_2700)"
+            },
+            {
+              "link_id": "lift_catcher_placeholder",
+              "mass_kg": 1.101589,
+              "basis": "designed part: m = 2700*|V| (aluminum_2700)"
+            },
+            {
+              "link_id": "lift_stop_top",
+              "mass_kg": 0.793807,
+              "basis": "designed part: m = 2700*|V| (aluminum_2700)"
+            },
+            {
+              "link_id": "lift_sync_shaft",
+              "mass_kg": 0.595656,
+              "basis": "designed part: m = 2700*|V| (aluminum_2700)"
+            },
+            {
+              "link_id": "lift_brake",
+              "mass_kg": 0.337795,
+              "basis": "designed part: m = 2700*|V| (aluminum_2700)"
+            }
+          ],
+          "component_count": 13
+        },
+        "mobile_base": {
+          "mass_kg": 213.133954,
+          "com_world": [
+            3.608395,
+            -1.860352,
+            -5.474048
+          ],
+          "I_com_world": [
+            [
+              8.52315108,
+              7.1e-07,
+              0.0
+            ],
+            [
+              7.1e-07,
+              8.52315534,
+              -0.0
+            ],
+            [
+              0.0,
+              -0.0,
+              15.94597134
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "base_link",
+              "mass_kg": 213.133954,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            }
+          ],
+          "component_count": 1
+        },
+        "right_arm": {
+          "mass_kg": 6.722034,
+          "com_world": [
+            3.779539,
+            -2.54052,
+            -4.556376
+          ],
+          "I_com_world": [
+            [
+              0.34454132,
+              2.91e-06,
+              -5e-08
+            ],
+            [
+              2.91e-06,
+              0.01129448,
+              0.00461858
+            ],
+            [
+              -5e-08,
+              0.00461858,
+              0.34443336
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "right_shoulder_link",
+              "mass_kg": 3.361017,
+              "basis": "stored (unverified, category 3)"
+            },
+            {
+              "link_id": "right_forearm_link",
+              "mass_kg": 3.361017,
+              "basis": "stored (unverified, category 3)"
+            }
+          ],
+          "component_count": 2
+        },
+        "right_fingers": {
+          "mass_kg": 0.233684,
+          "com_world": [
+            3.779541,
+            -3.156925,
+            -4.559842
+          ],
+          "I_com_world": [
+            [
+              0.00059583,
+              -1e-08,
+              1e-08
+            ],
+            [
+              -1e-08,
+              0.00027244,
+              6.452e-05
+            ],
+            [
+              1e-08,
+              6.452e-05,
+              0.00034023
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "right_digit5_distal_phalanx",
+              "mass_kg": 0.034266,
+              "basis": "no stored mass: solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "right_digit5_middle_phalanx",
+              "mass_kg": 0.021212,
+              "basis": "no stored mass: solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "right_digit4_distal_phalanx",
+              "mass_kg": 0.018057,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "right_digit2_distal_phalanx",
+              "mass_kg": 0.018057,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "right_digit3_distal_phalanx",
+              "mass_kg": 0.018057,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "right_digit4_middle_phalanx",
+              "mass_kg": 0.018057,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "right_digit3_middle_phalanx",
+              "mass_kg": 0.018057,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "right_digit3_proximal_phalanx",
+              "mass_kg": 0.018057,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "right_digit2_middle_phalanx",
+              "mass_kg": 0.018057,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "right_digit4_proximal_phalanx",
+              "mass_kg": 0.017875,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "right_digit2_proximal_phalanx",
+              "mass_kg": 0.017616,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "right_digit5_proximal_phalanx",
+              "mass_kg": 0.016313,
+              "basis": "no stored mass: solid aluminum 2700*|V|"
+            }
+          ],
+          "component_count": 12
+        },
+        "right_hand": {
+          "mass_kg": 0.645956,
+          "com_world": [
+            3.779543,
+            -3.020106,
+            -4.547095
+          ],
+          "I_com_world": [
+            [
+              0.00194161,
+              -1e-08,
+              1e-08
+            ],
+            [
+              -1e-08,
+              0.00122764,
+              0.00010107
+            ],
+            [
+              1e-08,
+              0.00010107,
+              0.00081516
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "right_palm_link",
+              "mass_kg": 0.566313,
+              "basis": "stored (unverified, category 3)"
+            },
+            {
+              "link_id": "third_phalanx_right_thumb_link",
+              "mass_kg": 0.043529,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "second_phalanx_right_thumb_link",
+              "mass_kg": 0.018057,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "first_phalanx_right_thumb_link",
+              "mass_kg": 0.018057,
+              "basis": "stored placeholder (category 3)"
+            }
+          ],
+          "component_count": 4
+        },
+        "sensors": {
+          "mass_kg": 0.186752,
+          "com_world": [
+            3.737586,
+            -1.864221,
+            -4.433279
+          ],
+          "I_com_world": [
+            [
+              0.00033667,
+              -2.2e-06,
+              0.00016265
+            ],
+            [
+              -2.2e-06,
+              0.000419,
+              1.79e-06
+            ],
+            [
+              0.00016265,
+              1.79e-06,
+              0.00042436
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "speaker",
+              "mass_kg": 0.117054,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            },
+            {
+              "link_id": "stereo_microphone_2",
+              "mass_kg": 0.032918,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            },
+            {
+              "link_id": "stereo_microphone_1",
+              "mass_kg": 0.032918,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            },
+            {
+              "link_id": "odor_sensor",
+              "mass_kg": 0.003746,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            },
+            {
+              "link_id": "ToF_Lens_001",
+              "mass_kg": 0.000117,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            }
+          ],
+          "component_count": 5
+        },
+        "torso": {
+          "mass_kg": 22.46408,
+          "com_world": [
+            3.688398,
+            -1.86476,
+            -4.561481
+          ],
+          "I_com_world": [
+            [
+              0.14526785,
+              0.0,
+              -0.0
+            ],
+            [
+              0.0,
+              0.21041361,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              0.31824105
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "torso_link",
+              "mass_kg": 22.46408,
+              "basis": "designed part: m = 2700*|V| (mesh geometry, no stored mass)"
+            }
+          ],
+          "component_count": 1
+        },
+        "wheels": {
+          "mass_kg": 10.232188,
+          "com_world": [
+            3.60794,
+            -1.860321,
+            -5.555209
+          ],
+          "I_com_world": [
+            [
+              0.69439099,
+              0.00162735,
+              -1e-06
+            ],
+            [
+              0.00162735,
+              0.70015827,
+              -2.7e-07
+            ],
+            [
+              -1e-06,
+              -2.7e-07,
+              1.38005123
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "wheel_BL",
+              "mass_kg": 2.558047,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            },
+            {
+              "link_id": "wheel_BR",
+              "mass_kg": 2.558047,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            },
+            {
+              "link_id": "wheel_FR",
+              "mass_kg": 2.558047,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            },
+            {
+              "link_id": "wheel_FL",
+              "mass_kg": 2.558047,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            }
+          ],
+          "component_count": 4
+        }
+      },
+      "total_known_kg": 313.944037,
+      "total_known_com_world": [
+        3.627372,
+        -1.865492,
+        -5.238196
+      ],
+      "total_known_I_com_world": [
+        [
+          75.57743682,
+          0.16214435,
+          -3.30714123
+        ],
+        [
+          0.16214435,
+          66.8021705,
+          1.13244164
+        ],
+        [
+          -3.30714123,
+          1.13244164,
+          27.96235244
+        ]
+      ],
+      "parametric_addendum": {
+        "cables": {
+          "formula": "m = lambda * L, L = 2.5 m (geometric estimate: 2 arms ~1.0 m each + torso/lift routing ~0.5 m)",
+          "lambda_kg_per_m": 0.08,
+          "mass_kg": 0.2,
+          "source": "parametric method from arm_mass_budget (density reused, not totals)"
+        },
+        "fasteners_connectors": {
+          "formula": "m = p * (links + hands + lift mass)",
+          "p_fraction": 0.02,
+          "mass_kg": 1.1892,
+          "source": "engineering assumption (stated, not measured)"
+        },
+        "finger_drives": {
+          "formula": "symbolic: delta_M >= 0 (no data, not estimated)",
+          "mass_kg": null,
+          "source": "no data - parametric symbol only, excluded from totals"
+        }
+      },
+      "unclassified_skipped": []
+    },
+    "nominal": {
+      "scenario": "nominal",
+      "subsystems": {
+        "head": {
+          "mass_kg": 7.993584,
+          "com_world": [
+            3.708353,
+            -1.86476,
+            -4.410679
+          ],
+          "I_com_world": [
+            [
+              0.02750446,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.02749064,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0274592
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "head_link",
+              "mass_kg": 7.993584,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            }
+          ],
+          "component_count": 1
+        },
+        "left_arm": {
+          "mass_kg": 5.445469,
+          "com_world": [
+            3.792203,
+            -1.2141,
+            -4.561685
+          ],
+          "I_com_world": [
+            [
+              0.24469519,
+              -1.91e-06,
+              -0.0
+            ],
+            [
+              -1.91e-06,
+              0.00789411,
+              -6.402e-05
+            ],
+            [
+              -0.0,
+              -6.402e-05,
+              0.24467613
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "left_shoulder_link",
+              "mass_kg": 2.722735,
+              "basis": "stored (unverified, category 3)"
+            },
+            {
+              "link_id": "left_forearm_link",
+              "mass_kg": 2.722735,
+              "basis": "stored (unverified, category 3)"
+            }
+          ],
+          "component_count": 2
+        },
+        "left_fingers": {
+          "mass_kg": 0.24194,
+          "com_world": [
+            3.79225,
+            -0.578929,
+            -4.582511
+          ],
+          "I_com_world": [
+            [
+              0.00069543,
+              1e-08,
+              0.0
+            ],
+            [
+              1e-08,
+              0.00027458,
+              -5.992e-05
+            ],
+            [
+              0.0,
+              -5.992e-05,
+              0.00043754
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "left_digit5_distal_phalanx",
+              "mass_kg": 0.034584,
+              "basis": "no stored mass: solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "left_digit5_middle_phalanx",
+              "mass_kg": 0.021409,
+              "basis": "no stored mass: solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "left_digit2_proximal_phalanx",
+              "mass_kg": 0.018831,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "left_digit3_proximal_phalanx",
+              "mass_kg": 0.018831,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "left_digit4_proximal_phalanx",
+              "mass_kg": 0.018831,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "left_digit3_distal_phalanx",
+              "mass_kg": 0.018831,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "left_digit2_middle_phalanx",
+              "mass_kg": 0.018831,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "left_digit3_middle_phalanx",
+              "mass_kg": 0.018831,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "left_digit4_distal_phalanx",
+              "mass_kg": 0.018831,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "left_digit2_distal_phalanx",
+              "mass_kg": 0.018831,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "left_digit4_middle_phalanx",
+              "mass_kg": 0.018831,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "left_digit5_proximal_phalanx",
+              "mass_kg": 0.016469,
+              "basis": "no stored mass: solid aluminum 2700*|V|"
+            }
+          ],
+          "component_count": 12
+        },
+        "left_hand": {
+          "mass_kg": 0.384098,
+          "com_world": [
+            3.792213,
+            -0.734988,
+            -4.563804
+          ],
+          "I_com_world": [
+            [
+              0.00111874,
+              -3e-08,
+              -1.8e-07
+            ],
+            [
+              -3e-08,
+              0.00074554,
+              -6.009e-05
+            ],
+            [
+              -1.8e-07,
+              -6.009e-05,
+              0.0004876
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "left_palm_link",
+              "mass_kg": 0.335473,
+              "basis": "stored (unverified, category 3)"
+            },
+            {
+              "link_id": "third_phalanx_left_thumb_link",
+              "mass_kg": 0.034677,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "first_phalanx_left_thumb_link",
+              "mass_kg": 0.006974,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "second_phalanx_left_thumb_link",
+              "mass_kg": 0.006974,
+              "basis": "stored placeholder (category 3)"
+            }
+          ],
+          "component_count": 4
+        },
+        "lift": {
+          "mass_kg": 130.064751,
+          "com_world": [
+            3.62895,
+            -1.862892,
+            -4.768353
+          ],
+          "I_com_world": [
+            [
+              34.27874637,
+              -0.0067878,
+              1.92819019
+            ],
+            [
+              -0.0067878,
+              30.55873984,
+              0.03146802
+            ],
+            [
+              1.92819019,
+              0.03146802,
+              4.59560029
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "lift_guide_right",
+              "mass_kg": 37.472195,
+              "basis": "designed part: m = 7800*|V| (steel_7800)"
+            },
+            {
+              "link_id": "lift_guide_left",
+              "mass_kg": 37.472016,
+              "basis": "designed part: m = 7800*|V| (steel_7800)"
+            },
+            {
+              "link_id": "lift_motor",
+              "mass_kg": 15.738307,
+              "basis": "designed part: m = 7800*|V| (steel_7800)"
+            },
+            {
+              "link_id": "lift_guide_block_right",
+              "mass_kg": 7.370985,
+              "basis": "designed part: m = 7800*|V| (steel_7800)"
+            },
+            {
+              "link_id": "lift_guide_block_left",
+              "mass_kg": 7.370985,
+              "basis": "designed part: m = 7800*|V| (steel_7800)"
+            },
+            {
+              "link_id": "lift_screw_right",
+              "mass_kg": 5.601541,
+              "basis": "designed part: m = 7800*|V| (steel_7800)"
+            },
+            {
+              "link_id": "lift_screw_left",
+              "mass_kg": 5.601517,
+              "basis": "designed part: m = 7800*|V| (steel_7800)"
+            },
+            {
+              "link_id": "lift_nut_mount_left",
+              "mass_kg": 4.42259,
+              "basis": "designed part: m = 7800*|V| (steel_7800)"
+            },
+            {
+              "link_id": "lift_nut_mount_right",
+              "mass_kg": 4.422584,
+              "basis": "designed part: m = 7800*|V| (steel_7800)"
+            },
+            {
+              "link_id": "lift_sync_shaft",
+              "mass_kg": 1.720783,
+              "basis": "designed part: m = 7800*|V| (steel_7800)"
+            },
+            {
+              "link_id": "lift_catcher_placeholder",
+              "mass_kg": 1.101589,
+              "basis": "designed part: m = 2700*|V| (aluminum_2700)"
+            },
+            {
+              "link_id": "lift_brake",
+              "mass_kg": 0.975852,
+              "basis": "designed part: m = 7800*|V| (steel_7800)"
+            },
+            {
+              "link_id": "lift_stop_top",
+              "mass_kg": 0.793807,
+              "basis": "designed part: m = 2700*|V| (aluminum_2700)"
+            }
+          ],
+          "component_count": 13
+        },
+        "mobile_base": {
+          "mass_kg": 213.133954,
+          "com_world": [
+            3.608395,
+            -1.860352,
+            -5.474048
+          ],
+          "I_com_world": [
+            [
+              8.52315108,
+              7.1e-07,
+              0.0
+            ],
+            [
+              7.1e-07,
+              8.52315534,
+              -0.0
+            ],
+            [
+              0.0,
+              -0.0,
+              15.94597134
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "base_link",
+              "mass_kg": 213.133954,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            }
+          ],
+          "component_count": 1
+        },
+        "right_arm": {
+          "mass_kg": 6.722034,
+          "com_world": [
+            3.779539,
+            -2.54052,
+            -4.556376
+          ],
+          "I_com_world": [
+            [
+              0.34454132,
+              2.91e-06,
+              -5e-08
+            ],
+            [
+              2.91e-06,
+              0.01129448,
+              0.00461858
+            ],
+            [
+              -5e-08,
+              0.00461858,
+              0.34443336
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "right_shoulder_link",
+              "mass_kg": 3.361017,
+              "basis": "stored (unverified, category 3)"
+            },
+            {
+              "link_id": "right_forearm_link",
+              "mass_kg": 3.361017,
+              "basis": "stored (unverified, category 3)"
+            }
+          ],
+          "component_count": 2
+        },
+        "right_fingers": {
+          "mass_kg": 0.234307,
+          "com_world": [
+            3.779541,
+            -3.157047,
+            -4.559762
+          ],
+          "I_com_world": [
+            [
+              0.00059823,
+              -1e-08,
+              1e-08
+            ],
+            [
+              -1e-08,
+              0.00027352,
+              6.536e-05
+            ],
+            [
+              1e-08,
+              6.536e-05,
+              0.00034159
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "right_digit5_distal_phalanx",
+              "mass_kg": 0.034266,
+              "basis": "no stored mass: solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "right_digit5_middle_phalanx",
+              "mass_kg": 0.021212,
+              "basis": "no stored mass: solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "right_digit4_distal_phalanx",
+              "mass_kg": 0.018057,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "right_digit2_distal_phalanx",
+              "mass_kg": 0.018057,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "right_digit3_distal_phalanx",
+              "mass_kg": 0.018057,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "right_digit4_middle_phalanx",
+              "mass_kg": 0.018057,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "right_digit3_middle_phalanx",
+              "mass_kg": 0.018057,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "right_digit3_proximal_phalanx",
+              "mass_kg": 0.018057,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "right_digit2_middle_phalanx",
+              "mass_kg": 0.018057,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "right_digit2_proximal_phalanx",
+              "mass_kg": 0.018057,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "right_digit4_proximal_phalanx",
+              "mass_kg": 0.018057,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "right_digit5_proximal_phalanx",
+              "mass_kg": 0.016313,
+              "basis": "no stored mass: solid aluminum 2700*|V|"
+            }
+          ],
+          "component_count": 12
+        },
+        "right_hand": {
+          "mass_kg": 0.645956,
+          "com_world": [
+            3.779543,
+            -3.020106,
+            -4.547095
+          ],
+          "I_com_world": [
+            [
+              0.00194161,
+              -1e-08,
+              1e-08
+            ],
+            [
+              -1e-08,
+              0.00122764,
+              0.00010107
+            ],
+            [
+              1e-08,
+              0.00010107,
+              0.00081516
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "right_palm_link",
+              "mass_kg": 0.566313,
+              "basis": "stored (unverified, category 3)"
+            },
+            {
+              "link_id": "third_phalanx_right_thumb_link",
+              "mass_kg": 0.043529,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "second_phalanx_right_thumb_link",
+              "mass_kg": 0.018057,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "first_phalanx_right_thumb_link",
+              "mass_kg": 0.018057,
+              "basis": "stored placeholder (category 3)"
+            }
+          ],
+          "component_count": 4
+        },
+        "sensors": {
+          "mass_kg": 0.186752,
+          "com_world": [
+            3.737586,
+            -1.864221,
+            -4.433279
+          ],
+          "I_com_world": [
+            [
+              0.00033667,
+              -2.2e-06,
+              0.00016265
+            ],
+            [
+              -2.2e-06,
+              0.000419,
+              1.79e-06
+            ],
+            [
+              0.00016265,
+              1.79e-06,
+              0.00042436
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "speaker",
+              "mass_kg": 0.117054,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            },
+            {
+              "link_id": "stereo_microphone_2",
+              "mass_kg": 0.032918,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            },
+            {
+              "link_id": "stereo_microphone_1",
+              "mass_kg": 0.032918,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            },
+            {
+              "link_id": "odor_sensor",
+              "mass_kg": 0.003746,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            },
+            {
+              "link_id": "ToF_Lens_001",
+              "mass_kg": 0.000117,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            }
+          ],
+          "component_count": 5
+        },
+        "torso": {
+          "mass_kg": 22.46408,
+          "com_world": [
+            3.688398,
+            -1.86476,
+            -4.561481
+          ],
+          "I_com_world": [
+            [
+              0.14526785,
+              0.0,
+              -0.0
+            ],
+            [
+              0.0,
+              0.21041361,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              0.31824105
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "torso_link",
+              "mass_kg": 22.46408,
+              "basis": "designed part: m = 2700*|V| (mesh geometry, no stored mass)"
+            }
+          ],
+          "component_count": 1
+        },
+        "wheels": {
+          "mass_kg": 10.232188,
+          "com_world": [
+            3.60794,
+            -1.860321,
+            -5.555209
+          ],
+          "I_com_world": [
+            [
+              0.69439099,
+              0.00162735,
+              -1e-06
+            ],
+            [
+              0.00162735,
+              0.70015827,
+              -2.7e-07
+            ],
+            [
+              -1e-06,
+              -2.7e-07,
+              1.38005123
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "wheel_BL",
+              "mass_kg": 2.558047,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            },
+            {
+              "link_id": "wheel_BR",
+              "mass_kg": 2.558047,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            },
+            {
+              "link_id": "wheel_FR",
+              "mass_kg": 2.558047,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            },
+            {
+              "link_id": "wheel_FL",
+              "mass_kg": 2.558047,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            }
+          ],
+          "component_count": 4
+        }
+      },
+      "total_known_kg": 397.749113,
+      "total_known_com_world": [
+        3.62777,
+        -1.86495,
+        -5.140508
+      ],
+      "total_known_I_com_world": [
+        [
+          111.78149224,
+          0.15713798,
+          -2.11515829
+        ],
+        [
+          0.15713798,
+          100.59721645,
+          1.07519269
+        ],
+        [
+          -2.11515829,
+          1.07519269,
+          30.94276066
+        ]
+      ],
+      "parametric_addendum": {
+        "cables": {
+          "formula": "m = lambda * L, L = 2.5 m (geometric estimate: 2 arms ~1.0 m each + torso/lift routing ~0.5 m)",
+          "lambda_kg_per_m": 0.15,
+          "mass_kg": 0.375,
+          "source": "parametric method from arm_mass_budget (density reused, not totals)"
+        },
+        "fasteners_connectors": {
+          "formula": "m = p * (links + hands + lift mass)",
+          "p_fraction": 0.035,
+          "mass_kg": 5.0142,
+          "source": "engineering assumption (stated, not measured)"
+        },
+        "finger_drives": {
+          "formula": "symbolic: delta_M >= 0 (no data, not estimated)",
+          "mass_kg": null,
+          "source": "no data - parametric symbol only, excluded from totals"
+        }
+      },
+      "unclassified_skipped": []
+    },
+    "heavy": {
+      "scenario": "heavy",
+      "subsystems": {
+        "head": {
+          "mass_kg": 7.993584,
+          "com_world": [
+            3.708353,
+            -1.86476,
+            -4.410679
+          ],
+          "I_com_world": [
+            [
+              0.02750446,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.02749064,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0274592
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "head_link",
+              "mass_kg": 7.993584,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            }
+          ],
+          "component_count": 1
+        },
+        "left_arm": {
+          "mass_kg": 15.764559,
+          "com_world": [
+            3.792202,
+            -1.22733,
+            -4.561695
+          ],
+          "I_com_world": [
+            [
+              0.7071266,
+              -5.52e-06,
+              -0.0
+            ],
+            [
+              -5.52e-06,
+              0.02285274,
+              -0.00018905
+            ],
+            [
+              -0.0,
+              -0.00018905,
+              0.70707274
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "left_shoulder_link",
+              "mass_kg": 8.4415,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "left_forearm_link",
+              "mass_kg": 7.323059,
+              "basis": "solid aluminum 2700*|V|"
+            }
+          ],
+          "component_count": 2
+        },
+        "left_fingers": {
+          "mass_kg": 0.334442,
+          "com_world": [
+            3.79225,
+            -0.587434,
+            -4.578349
+          ],
+          "I_com_world": [
+            [
+              0.00091775,
+              1e-08,
+              0.0
+            ],
+            [
+              1e-08,
+              0.00034957,
+              -3.032e-05
+            ],
+            [
+              0.0,
+              -3.032e-05,
+              0.00059125
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "left_digit3_distal_phalanx",
+              "mass_kg": 0.044536,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "left_digit4_distal_phalanx",
+              "mass_kg": 0.041237,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "left_digit2_distal_phalanx",
+              "mass_kg": 0.039587,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "left_digit5_distal_phalanx",
+              "mass_kg": 0.034584,
+              "basis": "no stored mass: solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "left_digit3_middle_phalanx",
+              "mass_kg": 0.028041,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "left_digit4_middle_phalanx",
+              "mass_kg": 0.026392,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "left_digit2_middle_phalanx",
+              "mass_kg": 0.024742,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "left_digit5_middle_phalanx",
+              "mass_kg": 0.021409,
+              "basis": "no stored mass: solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "left_digit3_proximal_phalanx",
+              "mass_kg": 0.019784,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "left_digit2_proximal_phalanx",
+              "mass_kg": 0.018831,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "left_digit4_proximal_phalanx",
+              "mass_kg": 0.018831,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "left_digit5_proximal_phalanx",
+              "mass_kg": 0.016469,
+              "basis": "no stored mass: solid aluminum 2700*|V|"
+            }
+          ],
+          "component_count": 12
+        },
+        "left_hand": {
+          "mass_kg": 1.532557,
+          "com_world": [
+            3.792212,
+            -0.734534,
+            -4.565642
+          ],
+          "I_com_world": [
+            [
+              0.00432825,
+              -1.5e-07,
+              -6.1e-07
+            ],
+            [
+              -1.5e-07,
+              0.00280496,
+              -0.00030282
+            ],
+            [
+              -6.1e-07,
+              -0.00030282,
+              0.00198396
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "left_palm_link",
+              "mass_kg": 1.369122,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "third_phalanx_left_thumb_link",
+              "mass_kg": 0.102408,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "second_phalanx_left_thumb_link",
+              "mass_kg": 0.032988,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "first_phalanx_left_thumb_link",
+              "mass_kg": 0.028039,
+              "basis": "solid aluminum 2700*|V|"
+            }
+          ],
+          "component_count": 4
+        },
+        "lift": {
+          "mass_kg": 133.644944,
+          "com_world": [
+            3.628399,
+            -1.862824,
+            -4.757103
+          ],
+          "I_com_world": [
+            [
+              35.50105739,
+              -0.00660595,
+              1.95826559
+            ],
+            [
+              -0.00660595,
+              31.70275641,
+              0.02775237
+            ],
+            [
+              1.95826559,
+              0.02775237,
+              4.67861809
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "lift_guide_right",
+              "mass_kg": 37.472195,
+              "basis": "designed part: m = 7800*|V| (steel_7800)"
+            },
+            {
+              "link_id": "lift_guide_left",
+              "mass_kg": 37.472016,
+              "basis": "designed part: m = 7800*|V| (steel_7800)"
+            },
+            {
+              "link_id": "lift_motor",
+              "mass_kg": 15.738307,
+              "basis": "designed part: m = 7800*|V| (steel_7800)"
+            },
+            {
+              "link_id": "lift_guide_block_right",
+              "mass_kg": 7.370985,
+              "basis": "designed part: m = 7800*|V| (steel_7800)"
+            },
+            {
+              "link_id": "lift_guide_block_left",
+              "mass_kg": 7.370985,
+              "basis": "designed part: m = 7800*|V| (steel_7800)"
+            },
+            {
+              "link_id": "lift_screw_right",
+              "mass_kg": 5.601541,
+              "basis": "designed part: m = 7800*|V| (steel_7800)"
+            },
+            {
+              "link_id": "lift_screw_left",
+              "mass_kg": 5.601517,
+              "basis": "designed part: m = 7800*|V| (steel_7800)"
+            },
+            {
+              "link_id": "lift_nut_mount_left",
+              "mass_kg": 4.42259,
+              "basis": "designed part: m = 7800*|V| (steel_7800)"
+            },
+            {
+              "link_id": "lift_nut_mount_right",
+              "mass_kg": 4.422584,
+              "basis": "designed part: m = 7800*|V| (steel_7800)"
+            },
+            {
+              "link_id": "lift_catcher_placeholder",
+              "mass_kg": 3.182368,
+              "basis": "designed part: m = 7800*|V| (steel_7800)"
+            },
+            {
+              "link_id": "lift_stop_top",
+              "mass_kg": 2.293221,
+              "basis": "designed part: m = 7800*|V| (steel_7800)"
+            },
+            {
+              "link_id": "lift_sync_shaft",
+              "mass_kg": 1.720783,
+              "basis": "designed part: m = 7800*|V| (steel_7800)"
+            },
+            {
+              "link_id": "lift_brake",
+              "mass_kg": 0.975852,
+              "basis": "designed part: m = 7800*|V| (steel_7800)"
+            }
+          ],
+          "component_count": 13
+        },
+        "mobile_base": {
+          "mass_kg": 213.133954,
+          "com_world": [
+            3.608395,
+            -1.860352,
+            -5.474048
+          ],
+          "I_com_world": [
+            [
+              8.52315108,
+              7.1e-07,
+              0.0
+            ],
+            [
+              7.1e-07,
+              8.52315534,
+              -0.0
+            ],
+            [
+              0.0,
+              -0.0,
+              15.94597134
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "base_link",
+              "mass_kg": 213.133954,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            }
+          ],
+          "component_count": 1
+        },
+        "right_arm": {
+          "mass_kg": 18.546743,
+          "com_world": [
+            3.779539,
+            -2.524477,
+            -4.556651
+          ],
+          "I_com_world": [
+            [
+              0.94816893,
+              8.03e-06,
+              -1.4e-07
+            ],
+            [
+              8.03e-06,
+              0.03116017,
+              0.01265367
+            ],
+            [
+              -1.4e-07,
+              0.01265367,
+              0.94787448
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "right_shoulder_link",
+              "mass_kg": 10.01236,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "right_forearm_link",
+              "mass_kg": 8.534383,
+              "basis": "solid aluminum 2700*|V|"
+            }
+          ],
+          "component_count": 2
+        },
+        "right_fingers": {
+          "mass_kg": 0.329845,
+          "com_world": [
+            3.779541,
+            -3.149998,
+            -4.554901
+          ],
+          "I_com_world": [
+            [
+              0.0007838,
+              -1e-08,
+              1e-08
+            ],
+            [
+              -1e-08,
+              0.0003496,
+              3.695e-05
+            ],
+            [
+              1e-08,
+              3.695e-05,
+              0.00045797
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "right_digit3_distal_phalanx",
+              "mass_kg": 0.044089,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "right_digit4_distal_phalanx",
+              "mass_kg": 0.040823,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "right_digit2_distal_phalanx",
+              "mass_kg": 0.03919,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "right_digit5_distal_phalanx",
+              "mass_kg": 0.034266,
+              "basis": "no stored mass: solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "right_digit3_middle_phalanx",
+              "mass_kg": 0.02776,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "right_digit4_middle_phalanx",
+              "mass_kg": 0.026127,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "right_digit2_middle_phalanx",
+              "mass_kg": 0.024494,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "right_digit5_middle_phalanx",
+              "mass_kg": 0.021212,
+              "basis": "no stored mass: solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "right_digit3_proximal_phalanx",
+              "mass_kg": 0.019456,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "right_digit2_proximal_phalanx",
+              "mass_kg": 0.018057,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "right_digit4_proximal_phalanx",
+              "mass_kg": 0.018057,
+              "basis": "stored placeholder (category 3)"
+            },
+            {
+              "link_id": "right_digit5_proximal_phalanx",
+              "mass_kg": 0.016313,
+              "basis": "no stored mass: solid aluminum 2700*|V|"
+            }
+          ],
+          "component_count": 12
+        },
+        "right_hand": {
+          "mass_kg": 1.21401,
+          "com_world": [
+            3.779543,
+            -3.01881,
+            -4.543955
+          ],
+          "I_com_world": [
+            [
+              0.00379645,
+              -1e-08,
+              3e-08
+            ],
+            [
+              -1e-08,
+              0.00251651,
+              6.204e-05
+            ],
+            [
+              3e-08,
+              6.204e-05,
+              0.00147808
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "right_palm_link",
+              "mass_kg": 1.022077,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "third_phalanx_right_thumb_link",
+              "mass_kg": 0.13158,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "second_phalanx_right_thumb_link",
+              "mass_kg": 0.032607,
+              "basis": "solid aluminum 2700*|V|"
+            },
+            {
+              "link_id": "first_phalanx_right_thumb_link",
+              "mass_kg": 0.027746,
+              "basis": "solid aluminum 2700*|V|"
+            }
+          ],
+          "component_count": 4
+        },
+        "sensors": {
+          "mass_kg": 0.186752,
+          "com_world": [
+            3.737586,
+            -1.864221,
+            -4.433279
+          ],
+          "I_com_world": [
+            [
+              0.00033667,
+              -2.2e-06,
+              0.00016265
+            ],
+            [
+              -2.2e-06,
+              0.000419,
+              1.79e-06
+            ],
+            [
+              0.00016265,
+              1.79e-06,
+              0.00042436
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "speaker",
+              "mass_kg": 0.117054,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            },
+            {
+              "link_id": "stereo_microphone_2",
+              "mass_kg": 0.032918,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            },
+            {
+              "link_id": "stereo_microphone_1",
+              "mass_kg": 0.032918,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            },
+            {
+              "link_id": "odor_sensor",
+              "mass_kg": 0.003746,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            },
+            {
+              "link_id": "ToF_Lens_001",
+              "mass_kg": 0.000117,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            }
+          ],
+          "component_count": 5
+        },
+        "torso": {
+          "mass_kg": 22.46408,
+          "com_world": [
+            3.688398,
+            -1.86476,
+            -4.561481
+          ],
+          "I_com_world": [
+            [
+              0.14526785,
+              0.0,
+              -0.0
+            ],
+            [
+              0.0,
+              0.21041361,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              0.31824105
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "torso_link",
+              "mass_kg": 22.46408,
+              "basis": "designed part: m = 2700*|V| (mesh geometry, no stored mass)"
+            }
+          ],
+          "component_count": 1
+        },
+        "wheels": {
+          "mass_kg": 10.232188,
+          "com_world": [
+            3.60794,
+            -1.860321,
+            -5.555209
+          ],
+          "I_com_world": [
+            [
+              0.69439099,
+              0.00162735,
+              -1e-06
+            ],
+            [
+              0.00162735,
+              0.70015827,
+              -2.7e-07
+            ],
+            [
+              -1e-06,
+              -2.7e-07,
+              1.38005123
+            ]
+          ],
+          "components": [
+            {
+              "link_id": "wheel_BL",
+              "mass_kg": 2.558047,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            },
+            {
+              "link_id": "wheel_BR",
+              "mass_kg": 2.558047,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            },
+            {
+              "link_id": "wheel_FR",
+              "mass_kg": 2.558047,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            },
+            {
+              "link_id": "wheel_FL",
+              "mass_kg": 2.558047,
+              "basis": "fixed geometric recipe (stored = rho*V_local)"
+            }
+          ],
+          "component_count": 4
+        }
+      },
+      "total_known_kg": 425.377658,
+      "total_known_com_world": [
+        3.636531,
+        -1.866191,
+        -5.100964
+      ],
+      "total_known_I_com_world": [
+        [
+          134.79846556,
+          0.13513775,
+          -4.12003565
+        ],
+        [
+          0.13513775,
+          111.44723577,
+          1.42444961
+        ],
+        [
+          -4.12003565,
+          1.42444961,
+          44.28437755
+        ]
+      ],
+      "parametric_addendum": {
+        "cables": {
+          "formula": "m = lambda * L, L = 2.5 m (geometric estimate: 2 arms ~1.0 m each + torso/lift routing ~0.5 m)",
+          "lambda_kg_per_m": 0.3,
+          "mass_kg": 0.75,
+          "source": "parametric method from arm_mass_budget (density reused, not totals)"
+        },
+        "fasteners_connectors": {
+          "formula": "m = p * (links + hands + lift mass)",
+          "p_fraction": 0.05,
+          "mass_kg": 8.5351,
+          "source": "engineering assumption (stated, not measured)"
+        },
+        "finger_drives": {
+          "formula": "symbolic: delta_M >= 0 (no data, not estimated)",
+          "mass_kg": null,
+          "source": "no data - parametric symbol only, excluded from totals"
+        }
+      },
+      "unclassified_skipped": []
+    }
+  }
+}

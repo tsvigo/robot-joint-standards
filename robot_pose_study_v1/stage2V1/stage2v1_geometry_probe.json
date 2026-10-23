@@ -1,0 +1,1691 @@
+{
+  "objects": {
+    "AXLE_GUIDE_BL": {
+      "scale": [
+        0.01,
+        0.01,
+        0.09
+      ],
+      "volume_world": 5.618587147172458e-05,
+      "volume_local": 6.2428901109333585,
+      "com_world": [
+        3.3484392109112426,
+        -1.6023316323109786,
+        -5.554299354880685
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "AXLE_GUIDE_BR": {
+      "scale": [
+        0.01,
+        0.01,
+        0.09
+      ],
+      "volume_world": 5.61857812912321e-05,
+      "volume_local": 6.2428901109333585,
+      "com_world": [
+        3.3484392171742945,
+        -2.1218991274013415,
+        -5.554299354553114
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "AXLE_GUIDE_FL": {
+      "scale": [
+        0.01,
+        0.01,
+        0.09
+      ],
+      "volume_world": 5.618587147224238e-05,
+      "volume_local": 6.2428901109333585,
+      "com_world": [
+        3.868329519283194,
+        -1.603161567381009,
+        -5.554299354868046
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "AXLE_GUIDE_FR": {
+      "scale": [
+        0.01,
+        0.01,
+        0.09
+      ],
+      "volume_world": 5.618578129134009e-05,
+      "volume_local": 6.2428901109333585,
+      "com_world": [
+        3.8713266855106183,
+        -2.1169192785388056,
+        -5.554299354550486
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "base_link": {
+      "scale": [
+        0.99957138,
+        1.00007379,
+        1.00121522
+      ],
+      "volume_world": 0.07900623594017536,
+      "volume_local": 0.0789385022305855,
+      "com_world": [
+        3.608395089705779,
+        -1.8603523671627016,
+        -5.47404813766479
+      ],
+      "stored_mass": 213.13395369522755,
+      "parent": null,
+      "implied_density_world": 2697.6852036922196,
+      "implied_density_local": 2699.9999705168802
+    },
+    "first_phalanx_index_finger_right_hand_link_collision": {
+      "scale": [
+        1.25363195,
+        1.25489008,
+        1.25775599
+      ],
+      "volume_world": 1.3233006397282091e-05,
+      "volume_local": 6.687891387322216e-06,
+      "com_world": [
+        3.7083556652023493,
+        -2.980857849117441,
+        -4.532029628748055
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "first_phalanx_left_thumb_link": {
+      "scale": [
+        0.99914449,
+        1.00014734,
+        1.00243151
+      ],
+      "volume_world": -1.0384894031495212e-05,
+      "volume_local": -5.248399373096193e-06,
+      "com_world": [
+        3.792251229288097,
+        -0.6316566566628011,
+        -4.483662128449683
+      ],
+      "stored_mass": 0.00697436649506324,
+      "parent": "left_thumb_ip_joint_empty",
+      "implied_density_world": -671.5876420030329,
+      "implied_density_local": -1328.8559042999896
+    },
+    "first_phalanx_left_thumb_link_collision": {
+      "scale": [
+        1.25363195,
+        1.25489008,
+        1.25775611
+      ],
+      "volume_world": 1.3799912754633046e-05,
+      "volume_local": 6.974369523378614e-06,
+      "com_world": [
+        3.7083594799073505,
+        -0.8399146199233715,
+        -4.471466541294078
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "first_phalanx_middle_finger_left_hand_link_collision": {
+      "scale": [
+        1.25363195,
+        1.25489008,
+        1.25775611
+      ],
+      "volume_world": 1.3799912754665355e-05,
+      "volume_local": 6.974369523378614e-06,
+      "com_world": [
+        3.7083594799051576,
+        -0.7449037432672704,
+        -4.5494022369397396
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "first_phalanx_middle_finger_right_hand_link_collision": {
+      "scale": [
+        1.25363195,
+        1.25489008,
+        1.25775611
+      ],
+      "volume_world": 1.3233006397272984e-05,
+      "volume_local": 6.687891387322216e-06,
+      "com_world": [
+        3.708358049388758,
+        -2.9793272018400745,
+        -4.563605308527831
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "first_phalanx_of_index_finger_of_left_hand_link_collision": {
+      "scale": [
+        1.25363195,
+        1.25489008,
+        1.25775611
+      ],
+      "volume_world": 1.3799912754697882e-05,
+      "volume_local": 6.974369523378614e-06,
+      "com_world": [
+        3.708359479902985,
+        -0.7498483061787965,
+        -4.521999359129373
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "first_phalanx_right_thumb_link": {
+      "scale": [
+        0.99914443,
+        1.00014734,
+        1.00243163
+      ],
+      "volume_world": 1.027618036202548e-05,
+      "volume_local": 5.193472315348186e-06,
+      "com_world": [
+        3.7795393466951515,
+        -3.100998467996033,
+        -4.466345327440545
+      ],
+      "stored_mass": 0.018057303850582684,
+      "parent": "right_thumb_ip_joint_empty",
+      "implied_density_world": 1757.1999725998883,
+      "implied_density_local": 3476.9230977159964
+    },
+    "first_phalanx_right_thumb_link_collision": {
+      "scale": [
+        1.25363183,
+        1.25489008,
+        1.25775611
+      ],
+      "volume_world": 1.3233006397217473e-05,
+      "volume_local": 6.687891387322216e-06,
+      "com_world": [
+        3.70835804939268,
+        -2.876448154449431,
+        -4.481726169586024
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "first_phalanx_ring_finger_left_hand_link_collision": {
+      "scale": [
+        1.25363195,
+        1.25489008,
+        1.25775611
+      ],
+      "volume_world": 1.3799912754697665e-05,
+      "volume_local": 6.974369523378614e-06,
+      "com_world": [
+        3.708359479902949,
+        -0.7386614084241313,
+        -4.589318275450235
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "first_phalanx_ring_finger_right_hand_link_collision": {
+      "scale": [
+        1.25363195,
+        1.25489008,
+        1.25775611
+      ],
+      "volume_world": 1.323300639720804e-05,
+      "volume_local": 6.687891387322216e-06,
+      "com_world": [
+        3.7083580493933077,
+        -2.979326725006605,
+        -4.59938716888506
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "head_link": {
+      "scale": [
+        0.99957186,
+        1.00007379,
+        1.00121522
+      ],
+      "volume_world": 0.0029631388656983296,
+      "volume_local": 0.002960586496184385,
+      "com_world": [
+        3.708352804183932,
+        -1.8647600412368623,
+        -4.4106788635253595
+      ],
+      "stored_mass": 7.9935840563848615,
+      "parent": "intervertebral_joints_C2_C7_empty",
+      "implied_density_world": 2697.674465722684,
+      "implied_density_local": 2700.0001745218465
+    },
+    "head_link_collision": {
+      "scale": [
+        0.99957198,
+        1.00007379,
+        1.00121522
+      ],
+      "volume_world": 0.0029631388656982827,
+      "volume_local": 0.002960586496184385,
+      "com_world": [
+        3.708352327346796,
+        -1.864759922027584,
+        -4.410677909851058
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "left_digit2_distal_phalanx": {
+      "scale": [
+        0.99914491,
+        0.98737639,
+        1.0024308
+      ],
+      "volume_world": -1.4661963513555197e-05,
+      "volume_local": -8.72997786232369e-06,
+      "com_world": [
+        3.7922532558452744,
+        -0.6234576106073314,
+        -4.5351905822767415
+      ],
+      "stored_mass": 0.01883078738798957,
+      "parent": "left_digit2_mcp2_joint_empty",
+      "implied_density_world": -1284.3291671391921,
+      "implied_density_local": -2157.0257891784977
+    },
+    "left_digit2_middle_phalanx": {
+      "scale": [
+        0.99914461,
+        0.8526119,
+        1.00243151
+      ],
+      "volume_world": -9.163722644330572e-06,
+      "volume_local": -6.069237025009977e-06,
+      "com_world": [
+        3.7922501564002364,
+        -0.57037431001628,
+        -4.534326076504761
+      ],
+      "stored_mass": 0.01883078738798957,
+      "parent": "left_digit2_pip_joint_empty",
+      "implied_density_world": -2054.927688109355,
+      "implied_density_local": -3102.661390615011
+    },
+    "left_digit2_proximal_phalanx": {
+      "scale": [
+        1.00042784,
+        1.02363729,
+        0.99878633
+      ],
+      "volume_world": -6.7062935734449455e-06,
+      "volume_local": -3.900530707963183e-06,
+      "com_world": [
+        3.792250692843572,
+        -0.5351196282875059,
+        -4.534648656725967
+      ],
+      "stored_mass": 0.018830789536670747,
+      "parent": "left_digit2_dip_joint_empty",
+      "implied_density_world": -2807.928005304663,
+      "implied_density_local": -4827.75061819831
+    },
+    "left_digit3_distal_phalanx": {
+      "scale": [
+        0.99914438,
+        1.0001471,
+        1.0024308
+      ],
+      "volume_world": -1.6494695297748557e-05,
+      "volume_local": -8.3362979817536e-06,
+      "com_world": [
+        3.792247535669138,
+        -0.6244957596063362,
+        -4.566670894622665
+      ],
+      "stored_mass": 0.01883078738798957,
+      "parent": "left_digit3_mcp2_joint_empty",
+      "implied_density_world": -1141.6268714318037,
+      "implied_density_local": -2258.8908684893695
+    },
+    "left_digit3_middle_phalanx": {
+      "scale": [
+        0.99914455,
+        1.00014722,
+        1.00243139
+      ],
+      "volume_world": -1.0385555971554076e-05,
+      "volume_local": -5.248780250827138e-06,
+      "com_world": [
+        3.7922484874727242,
+        -0.5622503459453807,
+        -4.566553115844912
+      ],
+      "stored_mass": 0.01883078738798957,
+      "parent": "left_digit3_pip_joint_empty",
+      "implied_density_world": -1813.1708537864404,
+      "implied_density_local": -3587.650175490218
+    },
+    "left_digit3_proximal_phalanx": {
+      "scale": [
+        1.00042772,
+        0.99992645,
+        0.99878657
+      ],
+      "volume_world": -7.327421894577494e-06,
+      "volume_local": -3.703213144922225e-06,
+      "com_world": [
+        3.7922474156428083,
+        -0.5105161226058227,
+        -4.566135884059863
+      ],
+      "stored_mass": 0.018830789536670747,
+      "parent": "left_digit3_dip_joint_empty",
+      "implied_density_world": -2569.9065520720296,
+      "implied_density_local": -5084.986685816657
+    },
+    "left_digit4_distal_phalanx": {
+      "scale": [
+        0.99914491,
+        1.00014722,
+        1.00243092
+      ],
+      "volume_world": -1.52728710738439e-05,
+      "volume_local": -7.718794507736409e-06,
+      "com_world": [
+        3.792252302170013,
+        -0.6283590197563595,
+        -4.5971970558168564
+      ],
+      "stored_mass": 0.01883078738798957,
+      "parent": "left_digit4_mcp2_joint_empty",
+      "implied_density_world": -1232.9566128688734,
+      "implied_density_local": -2439.6021126246865
+    },
+    "left_digit4_middle_phalanx": {
+      "scale": [
+        0.99914461,
+        1.00014746,
+        1.00243163
+      ],
+      "volume_world": -9.774648411263963e-06,
+      "volume_local": -4.940028513818543e-06,
+      "com_world": [
+        3.792249441148553,
+        -0.567107707262292,
+        -4.597816467287133
+      ],
+      "stored_mass": 0.01883078738798957,
+      "parent": "left_digit4_pip_joint_empty",
+      "implied_density_world": -1926.4925545853523,
+      "implied_density_local": -3811.878278701219
+    },
+    "left_digit4_proximal_phalanx": {
+      "scale": [
+        1.00042772,
+        0.99992639,
+        0.99878651
+      ],
+      "volume_world": -6.719372984560204e-06,
+      "volume_local": -3.395895563675266e-06,
+      "com_world": [
+        3.7922475315020683,
+        -0.5261962761469369,
+        -4.597197292538934
+      ],
+      "stored_mass": 0.018830789536670747,
+      "parent": "left_digit4_dip_joint_empty",
+      "implied_density_world": -2802.4623100905687,
+      "implied_density_local": -5545.161558587744
+    },
+    "left_digit5_distal_phalanx": {
+      "scale": [
+        1.00000024,
+        0.99999994,
+        0.99999994
+      ],
+      "volume_world": -1.2809062191927842e-05,
+      "volume_local": -6.484745591249838e-06,
+      "com_world": [
+        3.79225301742576,
+        -0.6265128552913932,
+        -4.620219707489308
+      ],
+      "stored_mass": null,
+      "parent": "left_digit5_mcp2_joint_empty"
+    },
+    "left_digit5_middle_phalanx": {
+      "scale": [
+        1.00000012,
+        1.0,
+        1.0
+      ],
+      "volume_world": -7.929427242758802e-06,
+      "volume_local": -4.014366299062015e-06,
+      "com_world": [
+        3.792252540588184,
+        -0.5811800360679223,
+        -4.621363162994161
+      ],
+      "stored_mass": null,
+      "parent": "left_digit5_pip_joint_empty"
+    },
+    "left_digit5_proximal_phalanx": {
+      "scale": [
+        0.99999982,
+        0.99999982,
+        0.99999982
+      ],
+      "volume_world": -6.099445199836059e-06,
+      "volume_local": -3.08795049692429e-06,
+      "com_world": [
+        3.7922508741864593,
+        -0.547524919113019,
+        -4.620744230223897
+      ],
+      "stored_mass": null,
+      "parent": "left_digit5_dip_joint_empty"
+    },
+    "left_forearm_link": {
+      "scale": [
+        0.99914384,
+        1.00014734,
+        1.00243139
+      ],
+      "volume_world": 0.002712244083659901,
+      "volume_local": 0.00137074742248568,
+      "com_world": [
+        3.79220431821599,
+        -1.02762645525004,
+        -4.5615412017157935
+      ],
+      "stored_mass": 2.722734652343206,
+      "parent": "left_elbow_joint_empty",
+      "implied_density_world": 1003.8678556795483,
+      "implied_density_local": 1986.3138953826121
+    },
+    "left_forearm_link_collision": {
+      "scale": [
+        1.25363135,
+        1.25489008,
+        1.25775611
+      ],
+      "volume_world": 0.001995332757782544,
+      "volume_local": 0.0010084203289287264,
+      "com_world": [
+        3.7083566188811994,
+        -1.2546435594558578,
+        -4.565587997436482
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "left_palm_link": {
+      "scale": [
+        0.99914461,
+        1.00014758,
+        1.26440477
+      ],
+      "volume_world": -0.0005070824001795243,
+      "volume_local": -0.00020317742981973175,
+      "com_world": [
+        3.7922069712079503,
+        -0.7369315209165366,
+        -4.57549601719545
+      ],
+      "stored_mass": 0.335472656805222,
+      "parent": "left_wrist_joint_2_empty",
+      "implied_density_world": -661.5742464862777,
+      "implied_density_local": -1651.1315115210807
+    },
+    "left_palm_link_collision": {
+      "scale": [
+        1.25363171,
+        1.25489008,
+        1.25775611
+      ],
+      "volume_world": 0.00024584743607051476,
+      "volume_local": 0.00012424917503433923,
+      "com_world": [
+        3.7083585262300347,
+        -0.957353174686481,
+        -4.5586261749269825
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "left_shoulder_link": {
+      "scale": [
+        0.99957186,
+        1.00007379,
+        1.00121522
+      ],
+      "volume_world": 0.0031264816507186217,
+      "volume_local": 0.0015814614252145183,
+      "com_world": [
+        3.7922008946963675,
+        -1.4005736359055927,
+        -4.56182900988488
+      ],
+      "stored_mass": 2.722734652343206,
+      "parent": "left_shoulder_joint_empty_1",
+      "implied_density_world": 870.8621884019008,
+      "implied_density_local": 1721.6573284257497
+    },
+    "left_shoulder_link_collision": {
+      "scale": [
+        1.25416815,
+        1.25479782,
+        1.25622988
+      ],
+      "volume_world": 0.0019936110688826246,
+      "volume_local": 0.0010084203289287264,
+      "com_world": [
+        3.708352327346789,
+        -1.587702989578241,
+        -4.561324596405014
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "lift_brake": {
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "volume_world": -0.00012510925733557124,
+      "volume_local": -0.00012500000558793555,
+      "com_world": [
+        3.7683272361753914,
+        -1.8603522777556691,
+        -5.418981075286692
+      ],
+      "stored_mass": null,
+      "parent": "base_link"
+    },
+    "lift_catcher_placeholder": {
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "volume_world": -0.0004079958763169751,
+      "volume_local": -0.0004079999860525131,
+      "com_world": [
+        3.6083960533136765,
+        -1.8603523969647473,
+        -4.674047946929242
+      ],
+      "stored_mass": null,
+      "parent": "base_link"
+    },
+    "lift_guide_block_left": {
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "volume_world": -0.0009449980831060505,
+      "volume_local": -0.0009450000791251678,
+      "com_world": [
+        3.608397960662822,
+        -2.0553522109985236,
+        -4.561480522155736
+      ],
+      "stored_mass": null,
+      "parent": "torso_link"
+    },
+    "lift_guide_block_right": {
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "volume_world": -0.0009449980831060479,
+      "volume_local": -0.0009450000791251678,
+      "com_world": [
+        3.608397960662828,
+        -1.6653522253036466,
+        -4.561480522155759
+      ],
+      "stored_mass": null,
+      "parent": "torso_link"
+    },
+    "lift_guide_left": {
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "volume_world": -0.0048041046124845665,
+      "volume_local": -0.004800000035762784,
+      "com_world": [
+        3.608397960662897,
+        -2.064774513244658,
+        -4.673076033592274
+      ],
+      "stored_mass": null,
+      "parent": "base_link"
+    },
+    "lift_guide_right": {
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "volume_world": -0.004804127518624475,
+      "volume_local": -0.004800000035762784,
+      "com_world": [
+        3.6083979606627845,
+        -1.6647449731826527,
+        -4.6730760335921655
+      ],
+      "stored_mass": null,
+      "parent": "base_link"
+    },
+    "lift_motor": {
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "volume_world": -0.002017731654091885,
+      "volume_local": -0.0020159999184608465,
+      "com_world": [
+        3.768327236175506,
+        -1.8603522777557184,
+        -5.494072437286312
+      ],
+      "stored_mass": null,
+      "parent": "base_link"
+    },
+    "lift_nut_mount_left": {
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "volume_world": -0.0005669986996603709,
+      "volume_local": -0.0005670000474751006,
+      "com_world": [
+        3.608398199081331,
+        -2.010352432727772,
+        -4.561480522155642
+      ],
+      "stored_mass": null,
+      "parent": "torso_link"
+    },
+    "lift_nut_mount_right": {
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "volume_world": -0.0005669979486438628,
+      "volume_local": -0.0005670000474751006,
+      "com_world": [
+        3.6083981990813183,
+        -1.7103523015975488,
+        -4.561480522155626
+      ],
+      "stored_mass": null,
+      "parent": "torso_link"
+    },
+    "lift_screw_left": {
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "volume_world": 0.0007181431672702888,
+      "volume_local": 0.0007175314469757433,
+      "com_world": [
+        3.6083981990816407,
+        -2.0103633299977384,
+        -4.723136782646436
+      ],
+      "stored_mass": null,
+      "parent": "base_link"
+    },
+    "lift_screw_right": {
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "volume_world": 0.0007181463142180104,
+      "volume_local": 0.0007175314469757433,
+      "com_world": [
+        3.6083981990815754,
+        -1.7103412151337491,
+        -4.723136782646371
+      ],
+      "stored_mass": null,
+      "parent": "base_link"
+    },
+    "lift_stop_top": {
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "volume_world": -0.0002940027470636768,
+      "volume_local": -0.0002939999646395451,
+      "com_world": [
+        3.6083960533140265,
+        -1.8603522564682566,
+        -3.8964810371397234
+      ],
+      "stored_mass": null,
+      "parent": "base_link"
+    },
+    "lift_sync_shaft": {
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "volume_world": 0.000220613255608456,
+      "volume_local": 0.000220425649984586,
+      "com_world": [
+        3.608398199081127,
+        -1.8603522181508498,
+        -5.504084587096642
+      ],
+      "stored_mass": null,
+      "parent": "base_link"
+    },
+    "odor_sensor": {
+      "scale": [
+        0.99957222,
+        1.00007379,
+        1.00121522
+      ],
+      "volume_world": 3.1241944198902713e-06,
+      "volume_local": 3.12144482759951e-06,
+      "com_world": [
+        3.7853510379784487,
+        -1.8638896942134926,
+        -4.416583538054562
+      ],
+      "stored_mass": 0.0037457337879412034,
+      "parent": null,
+      "implied_density_world": 1198.9438826514395,
+      "implied_density_local": 1199.999998341086
+    },
+    "right_digit2_distal_phalanx": {
+      "scale": [
+        0.99914485,
+        1.0001471,
+        1.00243092
+      ],
+      "volume_world": 1.4514880443720402e-05,
+      "volume_local": 7.335765589306228e-06,
+      "com_world": [
+        3.779539823533155,
+        -3.1181254386910413,
+        -4.512049674989131
+      ],
+      "stored_mass": 0.01805730732939992,
+      "parent": "right_digit2_mcp2_joint_empty",
+      "implied_density_world": 1244.054844227951,
+      "implied_density_local": 2461.5436670608865
+    },
+    "right_digit2_middle_phalanx": {
+      "scale": [
+        0.99914461,
+        1.00014734,
+        1.00243151
+      ],
+      "volume_world": 9.07181830144449e-06,
+      "volume_local": 4.584852576470152e-06,
+      "com_world": [
+        3.7795395851126488,
+        -3.1676999330513134,
+        -4.51148939132584
+      ],
+      "stored_mass": 0.018057303850582684,
+      "parent": "right_digit2_pip_joint_empty",
+      "implied_density_world": 1990.4834125378648,
+      "implied_density_local": 3938.4698961214763
+    },
+    "right_digit2_proximal_phalanx": {
+      "scale": [
+        1.00042772,
+        0.99992627,
+        0.99878627
+      ],
+      "volume_world": 6.524390815888705e-06,
+      "volume_local": 3.297372393854662e-06,
+      "com_world": [
+        3.779537599018191,
+        -3.202384432910467,
+        -4.511894703210563
+      ],
+      "stored_mass": 0.018057303850582684,
+      "parent": "right_digit2_dip_joint_empty",
+      "implied_density_world": 2767.661282124322,
+      "implied_density_local": 5476.27070701393
+    },
+    "right_digit3_distal_phalanx": {
+      "scale": [
+        1.0004282,
+        0.99992597,
+        0.99878591
+      ],
+      "volume_world": 1.632925852336042e-05,
+      "volume_local": 8.252736421928773e-06,
+      "com_world": [
+        3.7795419692960346,
+        -3.119739532468026,
+        -4.542208671565854
+      ],
+      "stored_mass": 0.01805730732939992,
+      "parent": "right_digit3_mcp2_joint_empty",
+      "implied_density_world": 1105.8253075954046,
+      "implied_density_local": 2188.0387796487616
+    },
+    "right_digit3_middle_phalanx": {
+      "scale": [
+        0.99914455,
+        1.00014734,
+        1.00243151
+      ],
+      "volume_world": 1.0281379655696643e-05,
+      "volume_local": 5.196167456153239e-06,
+      "com_world": [
+        3.77954030036771,
+        -3.172539234160067,
+        -4.5423545837384225
+      ],
+      "stored_mass": 0.01805730732939992,
+      "parent": "right_digit3_pip_joint_empty",
+      "implied_density_world": 1756.3116949382215,
+      "implied_density_local": 3475.1203616459034
+    },
+    "right_digit3_proximal_phalanx": {
+      "scale": [
+        1.00042784,
+        0.99992615,
+        0.99878639
+      ],
+      "volume_world": 7.20603907788627e-06,
+      "volume_local": 3.6418091581273933e-06,
+      "com_world": [
+        3.7795388014934224,
+        -3.2117623518131,
+        -4.543549531739829
+      ],
+      "stored_mass": 0.018057303850582684,
+      "parent": "right_digit3_dip_joint_empty",
+      "implied_density_world": 2505.8570534257206,
+      "implied_density_local": 4958.333363044123
+    },
+    "right_digit4_distal_phalanx": {
+      "scale": [
+        0.99914479,
+        1.0001471,
+        1.00243092
+      ],
+      "volume_world": 1.511969716905281e-05,
+      "volume_local": 7.641422771663554e-06,
+      "com_world": [
+        3.7795419692997427,
+        -3.1173857450488898,
+        -4.571258068085246
+      ],
+      "stored_mass": 0.01805730732939992,
+      "parent": "right_digit4_mcp2_joint_empty",
+      "implied_density_world": 1194.2902776095177,
+      "implied_density_local": 2363.0818329226936
+    },
+    "right_digit4_middle_phalanx": {
+      "scale": [
+        0.99914455,
+        1.00014734,
+        1.00243151
+      ],
+      "volume_world": 9.676635026776626e-06,
+      "volume_local": 4.890510452408272e-06,
+      "com_world": [
+        3.779540777204794,
+        -3.166479349134934,
+        -4.572468280790218
+      ],
+      "stored_mass": 0.01805730732939992,
+      "parent": "right_digit4_pip_joint_empty",
+      "implied_density_world": 1866.072997424495,
+      "implied_density_local": 3692.315455640795
+    },
+    "right_digit4_proximal_phalanx": {
+      "scale": [
+        1.00042772,
+        0.99992621,
+        0.99878663
+      ],
+      "volume_world": 6.620480684457991e-06,
+      "volume_local": 3.3458824488929988e-06,
+      "com_world": [
+        3.7795407081188466,
+        -3.204330681748498,
+        -4.573700182917685
+      ],
+      "stored_mass": 0.018057303850582684,
+      "parent": "right_digit4_dip_joint_empty",
+      "implied_density_world": 2727.491357685459,
+      "implied_density_local": 5396.873358942132
+    },
+    "right_digit5_distal_phalanx": {
+      "scale": [
+        0.99957246,
+        1.00007367,
+        1.00121486
+      ],
+      "volume_world": 1.2691113833331654e-05,
+      "volume_local": 6.419284511765249e-06,
+      "com_world": [
+        3.7795441150636164,
+        -3.1105517148947466,
+        -4.5990228652918645
+      ],
+      "stored_mass": null,
+      "parent": "right_digit5_mcp2_joint_empty"
+    },
+    "right_digit5_middle_phalanx": {
+      "scale": [
+        0.99957204,
+        1.00007367,
+        1.0012151
+      ],
+      "volume_world": 7.856400370959192e-06,
+      "volume_local": 3.97384290356709e-06,
+      "com_world": [
+        3.7795436382291867,
+        -3.153351306915083,
+        -4.599169731139898
+      ],
+      "stored_mass": null,
+      "parent": "right_digit5_pip_joint_empty"
+    },
+    "right_digit5_proximal_phalanx": {
+      "scale": [
+        1.00042772,
+        0.99992639,
+        0.99878675
+      ],
+      "volume_world": 6.041898770891077e-06,
+      "volume_local": 3.0561222514955488e-06,
+      "com_world": [
+        3.779540300368283,
+        -3.185332119415887,
+        -4.599713101516423
+      ],
+      "stored_mass": null,
+      "parent": "right_digit5_dip_joint_empty"
+    },
+    "right_forearm_link": {
+      "scale": [
+        0.99914408,
+        1.00014722,
+        1.00243151
+      ],
+      "volume_world": 0.0031608827097656805,
+      "volume_local": 0.0015974832661279918,
+      "com_world": [
+        3.7795414924790767,
+        -2.741846585025599,
+        -4.552919506165605
+      ],
+      "stored_mass": 3.361016971757635,
+      "parent": "right_elbow_joint_empty",
+      "implied_density_world": 1063.3159406306445,
+      "implied_density_local": 2103.945025918254
+    },
+    "right_forearm_link_collision": {
+      "scale": [
+        1.25363135,
+        1.25489008,
+        1.25775611
+      ],
+      "volume_world": 0.002463087519444431,
+      "volume_local": 0.0012448211995827263,
+      "com_world": [
+        3.7083556652068626,
+        -2.471759319305395,
+        -4.565652370452831
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "right_palm_link": {
+      "scale": [
+        0.99914443,
+        1.00014746,
+        1.00243151
+      ],
+      "volume_world": 0.0003785468666379823,
+      "volume_local": 0.00019131411294611176,
+      "com_world": [
+        3.779543519019995,
+        -3.018192529678298,
+        -4.558331966400064
+      ],
+      "stored_mass": 0.566312564075381,
+      "parent": "right_wrist_joint_2_empty",
+      "implied_density_world": 1496.017043028296,
+      "implied_density_local": 2960.1191221836134
+    },
+    "right_palm_link_collision": {
+      "scale": [
+        1.25363171,
+        1.25489008,
+        1.25775611
+      ],
+      "volume_world": 0.00012301014045846713,
+      "volume_local": 6.216818650214883e-05,
+      "com_world": [
+        3.708362340927555,
+        -2.7716562747958537,
+        -4.565656423569317
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "right_shoulder_link": {
+      "scale": [
+        0.99957186,
+        1.00007379,
+        1.00121522
+      ],
+      "volume_world": 0.0037082814651957265,
+      "volume_local": 0.001875747596009986,
+      "com_world": [
+        3.7795373051744017,
+        -2.33919419404391,
+        -4.559832432822847
+      ],
+      "stored_mass": 3.361016971757635,
+      "parent": "right_shoulder_joint_empty_1",
+      "implied_density_world": 906.3543324050883,
+      "implied_density_local": 1791.8279511097621
+    },
+    "right_shoulder_link_collision": {
+      "scale": [
+        1.25416815,
+        1.25479782,
+        1.25622988
+      ],
+      "volume_world": 0.0024609515164181577,
+      "volume_local": 0.0012448211995827263,
+      "com_world": [
+        3.708351850509726,
+        -2.1347508430481366,
+        -4.561336994171235
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "second_phalanx_index_finger_right_hand_link_collision": {
+      "scale": [
+        1.25363219,
+        1.25489008,
+        1.25775599
+      ],
+      "volume_world": 1.3233006397254661e-05,
+      "volume_local": 6.687891387322216e-06,
+      "com_world": [
+        3.70835614204138,
+        -2.915957927701772,
+        -4.532176017757968
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "second_phalanx_left_thumb_link": {
+      "scale": [
+        0.99914467,
+        1.00014734,
+        1.00243163
+      ],
+      "volume_world": -1.221761794463266e-05,
+      "volume_local": -6.174602769620126e-06,
+      "com_world": [
+        3.792251351022108,
+        -0.6815715034803567,
+        -4.48219013214153
+      ],
+      "stored_mass": 0.006974365699255396,
+      "parent": "left_thumb_mcp_joint_empty_2",
+      "implied_density_world": -570.8449659222905,
+      "implied_density_local": -1129.524596071218
+    },
+    "second_phalanx_left_thumb_link_collision": {
+      "scale": [
+        1.25363219,
+        1.25489008,
+        1.25775611
+      ],
+      "volume_world": 1.379991275466297e-05,
+      "volume_local": 6.974368722755699e-06,
+      "com_world": [
+        3.708359956742453,
+        -0.9044387936595037,
+        -4.469990253449926
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "second_phalanx_middle_finger_left_hand_link_collision": {
+      "scale": [
+        1.25363219,
+        1.25489008,
+        1.25775611
+      ],
+      "volume_world": 1.379991275470005e-05,
+      "volume_local": 6.974368722755699e-06,
+      "com_world": [
+        3.7083599567399994,
+        -0.8113313317295985,
+        -4.549543380735751
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "second_phalanx_middle_finger_right_hand_link_collision": {
+      "scale": [
+        1.25363219,
+        1.25489008,
+        1.25775611
+      ],
+      "volume_world": 1.3233006397236121e-05,
+      "volume_local": 6.687892852952499e-06,
+      "com_world": [
+        3.7083585262284497,
+        -2.9124445915211394,
+        -4.563751697538605
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "second_phalanx_of_index_finger_of_left_hand_link_collision": {
+      "scale": [
+        1.25363219,
+        1.25489008,
+        1.25775611
+      ],
+      "volume_world": 1.3799912754658091e-05,
+      "volume_local": 6.974368722755699e-06,
+      "com_world": [
+        3.7083599567428527,
+        -0.8153240084651503,
+        -4.521664619447683
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "second_phalanx_right_thumb_link": {
+      "scale": [
+        0.99914461,
+        1.00014734,
+        1.00243151
+      ],
+      "volume_world": 1.2076805078469247e-05,
+      "volume_local": 6.1035740168010984e-06,
+      "com_world": [
+        3.779540831608116,
+        -3.052990762251036,
+        -4.466448192269739
+      ],
+      "stored_mass": 0.01805730732939992,
+      "parent": "right_thumb_mcp_joint_empty_2",
+      "implied_density_world": 1495.205661768345,
+      "implied_density_local": 2958.480929320131
+    },
+    "second_phalanx_right_thumb_link_collision": {
+      "scale": [
+        1.25363207,
+        1.25489008,
+        1.25775611
+      ],
+      "volume_world": 1.3233006397171177e-05,
+      "volume_local": 6.687892852952499e-06,
+      "com_world": [
+        3.7083585262330487,
+        -2.81511688232669,
+        -4.4818105697670205
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "second_phalanx_ring_finger_left_hand_link_collision": {
+      "scale": [
+        1.25363219,
+        1.25489008,
+        1.25775611
+      ],
+      "volume_world": 1.379991275463077e-05,
+      "volume_local": 6.974368722755699e-06,
+      "com_world": [
+        3.7083599567445535,
+        -0.8027098178870723,
+        -4.589936733249851
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "second_phalanx_ring_finger_right_hand_link_collision": {
+      "scale": [
+        1.25363219,
+        1.25489008,
+        1.25775611
+      ],
+      "volume_world": 1.3233006397217473e-05,
+      "volume_local": 6.687892852952499e-06,
+      "com_world": [
+        3.708358526229743,
+        -2.912444591522163,
+        -4.599533557891772
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "speaker": {
+      "scale": [
+        0.99957222,
+        1.00007379,
+        1.00121522
+      ],
+      "volume_world": 9.76296063647042e-05,
+      "volume_local": 9.754516983448707e-05,
+      "com_world": [
+        3.760832309722924,
+        -1.8639612207555032,
+        -4.454727649688781
+      ],
+      "stored_mass": 0.11705420446831037,
+      "parent": null,
+      "implied_density_world": 1198.9621675933408,
+      "implied_density_local": 1200.000006837098
+    },
+    "stereo_microphone_1": {
+      "scale": [
+        0.9995721,
+        1.00007379,
+        1.00121522
+      ],
+      "volume_world": -2.7454726788757485e-05,
+      "volume_local": -2.7431344905683192e-05,
+      "com_world": [
+        3.6934566467100005,
+        -1.8213110003240982,
+        -4.39622116112027
+      ],
+      "stored_mass": 0.03291761305955574,
+      "parent": null,
+      "implied_density_world": -1198.9779870268194,
+      "implied_density_local": -1199.9999698423794
+    },
+    "stereo_microphone_2": {
+      "scale": [
+        0.9995721,
+        1.00007379,
+        1.00121522
+      ],
+      "volume_world": 2.7454753519500406e-05,
+      "volume_local": 2.7431351998828694e-05,
+      "com_world": [
+        3.693457125983357,
+        -1.9081072795177123,
+        -4.396222114547866
+      ],
+      "stored_mass": 0.03291762204798134,
+      "parent": null,
+      "implied_density_world": 1198.9771470576416,
+      "implied_density_local": 1199.9999872185267
+    },
+    "third_phalanx_index_finger_right_hand_link_collision": {
+      "scale": [
+        1.25363243,
+        1.25489008,
+        1.25775599
+      ],
+      "volume_world": 1.3233006397254336e-05,
+      "volume_local": 6.687892852952499e-06,
+      "com_world": [
+        3.7083575725528735,
+        -2.847803115842693,
+        -4.532029628750416
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "third_phalanx_left_thumb_link": {
+      "scale": [
+        0.99914473,
+        1.00014734,
+        1.00243151
+      ],
+      "volume_world": -3.792878006367252e-05,
+      "volume_local": -1.9168857713403706e-05,
+      "com_world": [
+        3.7922521849288997,
+        -0.7477142661809546,
+        -4.4832243900743505
+      ],
+      "stored_mass": 0.034676924796637344,
+      "parent": "left_thumb_cmc_joint_empty_3",
+      "implied_density_world": -914.2641745509305,
+      "implied_density_local": -1809.024059497803
+    },
+    "third_phalanx_left_thumb_link_collision": {
+      "scale": [
+        1.25363243,
+        1.25489008,
+        1.25775611
+      ],
+      "volume_world": 2.541220174915248e-05,
+      "volume_local": 1.2843311476845463e-05,
+      "com_world": [
+        3.7083613872520425,
+        -0.9608125090597115,
+        -4.480477809905083
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "third_phalanx_middle_finger_right_hand_link_collision": {
+      "scale": [
+        1.25363243,
+        1.25489008,
+        1.25775611
+      ],
+      "volume_world": 1.3233006397235687e-05,
+      "volume_local": 6.687892852952499e-06,
+      "com_world": [
+        3.7083599567399737,
+        -2.8442912101735547,
+        -4.563607215879704
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "third_phalanx_of_index_finger_of_left_hand_link_collision": {
+      "scale": [
+        1.25363243,
+        1.25489008,
+        1.25775611
+      ],
+      "volume_world": 1.3799912754667632e-05,
+      "volume_local": 6.974368722755699e-06,
+      "com_world": [
+        3.7083613872536927,
+        -0.8793262839319405,
+        -4.5220007896433865
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "third_phalanx_of_the_middle_finger_of_the_hand_link_collision": {
+      "scale": [
+        1.25363195,
+        1.25489008,
+        1.25775611
+      ],
+      "volume_world": 1.379991275466774e-05,
+      "volume_local": 6.974368722755699e-06,
+      "com_world": [
+        3.7083590030677365,
+        -0.8772361874582326,
+        -4.551786422730495
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "third_phalanx_right_thumb_link": {
+      "scale": [
+        0.99914473,
+        1.00014734,
+        1.00243151
+      ],
+      "volume_world": -4.873346228923751e-05,
+      "volume_local": -2.4629316120883997e-05,
+      "com_world": [
+        3.779542177246332,
+        -2.9978043635719405,
+        -4.46785401569996
+      ],
+      "stored_mass": 0.04352909329105894,
+      "parent": "right_thumb_cmc_joint_empty_3",
+      "implied_density_world": -893.2074850891945,
+      "implied_density_local": -1767.3691416120648
+    },
+    "third_phalanx_right_thumb_link_collision": {
+      "scale": [
+        1.25363231,
+        1.25489008,
+        1.25775611
+      ],
+      "volume_world": 3.189904991609204e-05,
+      "volume_local": 1.612189342818053e-05,
+      "com_world": [
+        3.708359956741796,
+        -2.75867414474522,
+        -4.488502025604817
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "third_phalanx_ring_finger_left_hand_link_collision": {
+      "scale": [
+        1.25363243,
+        1.25489008,
+        1.25775611
+      ],
+      "volume_world": 1.3799912754660368e-05,
+      "volume_local": 6.974368722755699e-06,
+      "com_world": [
+        3.708361387254215,
+        -0.8681391477587954,
+        -4.589318275453398
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "third_phalanx_ring_finger_right_hand_link_collision": {
+      "scale": [
+        1.25363243,
+        1.25489008,
+        1.25775611
+      ],
+      "volume_world": 1.3233006397180501e-05,
+      "volume_local": 6.687892852952499e-06,
+      "com_world": [
+        3.708359956743837,
+        -2.844291210176518,
+        -4.5993871688874215
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "ToF_Lens_001": {
+      "scale": [
+        0.99957222,
+        1.00007379,
+        1.00121522
+      ],
+      "volume_world": 9.762708943815853e-08,
+      "volume_local": 9.754515034497757e-08,
+      "com_world": [
+        3.7828555107248043,
+        -1.8607431650225923,
+        -4.360816478744899
+      ],
+      "stored_mass": 0.00011705418339891274,
+      "parent": null,
+      "implied_density_world": 1198.9928622532602,
+      "implied_density_local": 1200.000030600595
+    },
+    "torso_link": {
+      "scale": [
+        1.0,
+        0.99999994,
+        0.99999994
+      ],
+      "volume_world": -0.008320029697410277,
+      "volume_local": -0.008320000407695751,
+      "com_world": [
+        3.6883977651596243,
+        -1.8647598028183123,
+        -4.561480998992946
+      ],
+      "stored_mass": null,
+      "parent": "vertical_lift_joint"
+    },
+    "wheel_BL": {
+      "scale": [
+        0.9995715,
+        1.00007379,
+        1.00121534
+      ],
+      "volume_world": 0.0009482392902294568,
+      "volume_local": 0.0009474247870532984,
+      "com_world": [
+        3.3498334881123606,
+        -1.6021368507911047,
+        -5.555208678148524
+      ],
+      "stored_mass": 2.558046901224469,
+      "parent": "wheel_BL_joint",
+      "implied_density_world": 2697.6807727567034,
+      "implied_density_local": 2699.999974858757
+    },
+    "wheel_BL_collision": {
+      "scale": [
+        0.99957162,
+        1.00007379,
+        1.00121522
+      ],
+      "volume_world": 0.002430754188901669,
+      "volume_local": 0.002428674988131026,
+      "com_world": [
+        3.349833965301484,
+        -1.602136850357042,
+        -5.55520820617671
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "wheel_BR": {
+      "scale": [
+        0.9995715,
+        1.00007379,
+        1.00121534
+      ],
+      "volume_world": 0.0009482394491738417,
+      "volume_local": 0.0009474247870532984,
+      "com_world": [
+        3.3487782391340706,
+        -2.118084423551486,
+        -5.555209636106276
+      ],
+      "stored_mass": 2.558046901224469,
+      "parent": "wheel_BR_joint",
+      "implied_density_world": 2697.6803205700626,
+      "implied_density_local": 2699.999974858757
+    },
+    "wheel_BR_collision": {
+      "scale": [
+        0.99957162,
+        1.00007379,
+        1.00121522
+      ],
+      "volume_world": 0.0024307541889016272,
+      "volume_local": 0.002428674988131026,
+      "com_world": [
+        3.3498196601867614,
+        -2.1180844306945774,
+        -5.555209159851053
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "wheel_FL": {
+      "scale": [
+        0.9995715,
+        1.00007379,
+        1.00121534
+      ],
+      "volume_world": 0.000948239290229435,
+      "volume_local": 0.0009474247870532984,
+      "com_world": [
+        3.8661704059894983,
+        -1.6034249071646938,
+        -5.5552086781484755
+      ],
+      "stored_mass": 2.558046901224469,
+      "parent": "wheel_FL_joint",
+      "implied_density_world": 2697.6807727567652,
+      "implied_density_local": 2699.999974858757
+    },
+    "wheel_FL_collision": {
+      "scale": [
+        0.99957162,
+        1.00007379,
+        1.00121522
+      ],
+      "volume_world": 0.002430754188901374,
+      "volume_local": 0.002428674988131026,
+      "com_world": [
+        3.865129709243864,
+        -1.6023836135864609,
+        -5.555208206176887
+      ],
+      "stored_mass": null,
+      "parent": null
+    },
+    "wheel_FR": {
+      "scale": [
+        0.9995715,
+        1.00007379,
+        1.00121534
+      ],
+      "volume_world": 0.0009482394491738177,
+      "volume_local": 0.0009474247870532984,
+      "com_world": [
+        3.8669772061140333,
+        -2.1176385808085625,
+        -5.555208682431985
+      ],
+      "stored_mass": 2.558046901224469,
+      "parent": "wheel_FR_joint",
+      "implied_density_world": 2697.680320570131,
+      "implied_density_local": 2699.999974858757
+    },
+    "wheel_FR_collision": {
+      "scale": [
+        0.99957162,
+        1.00007379,
+        1.00121522
+      ],
+      "volume_world": 0.002430754188901714,
+      "volume_local": 0.002428674988131026,
+      "com_world": [
+        3.8659367561339786,
+        -2.119720935821505,
+        -5.555208683013839
+      ],
+      "stored_mass": null,
+      "parent": null
+    }
+  },
+  "summary": {
+    "meshes": 100,
+    "with_volume": 100,
+    "api_note": "Blender 5.0.1 has no Mesh.calc_volume/calc_center_of_mass/calc_inertia; tetrahedron decomposition used (scale-aware, world and local space)"
+  }
+}

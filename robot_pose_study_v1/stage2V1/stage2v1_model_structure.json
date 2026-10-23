@@ -1,0 +1,1858 @@
+{
+  "metadata": {
+    "stage": "2V.1",
+    "kind": "component_mass_model_structure",
+    "status": "STRUCTURE_BEFORE_FILLING - control result for approval",
+    "blend_sha256": "1ae88879af076b1a0a1cfc6499d04a037dbb2103d2a7cb6440708289829cd280",
+    "read_only": true
+  },
+  "unified_ids": {
+    "principle": "Canonical IDs = Blender object names (stable in model, ASCII snake_case, side-prefixed).",
+    "physical_links": [
+      "AXLE_GUIDE_BL",
+      "AXLE_GUIDE_BR",
+      "AXLE_GUIDE_FL",
+      "AXLE_GUIDE_FR",
+      "ToF_Lens_001",
+      "base_link",
+      "first_phalanx_left_thumb_link",
+      "first_phalanx_right_thumb_link",
+      "head_link",
+      "left_digit2_distal_phalanx",
+      "left_digit2_middle_phalanx",
+      "left_digit2_proximal_phalanx",
+      "left_digit3_distal_phalanx",
+      "left_digit3_middle_phalanx",
+      "left_digit3_proximal_phalanx",
+      "left_digit4_distal_phalanx",
+      "left_digit4_middle_phalanx",
+      "left_digit4_proximal_phalanx",
+      "left_digit5_distal_phalanx",
+      "left_digit5_middle_phalanx",
+      "left_digit5_proximal_phalanx",
+      "left_forearm_link",
+      "left_palm_link",
+      "left_shoulder_link",
+      "lift_brake",
+      "lift_catcher_placeholder",
+      "lift_guide_block_left",
+      "lift_guide_block_right",
+      "lift_guide_left",
+      "lift_guide_right",
+      "lift_motor",
+      "lift_nut_mount_left",
+      "lift_nut_mount_right",
+      "lift_screw_left",
+      "lift_screw_right",
+      "lift_stop_top",
+      "lift_sync_shaft",
+      "odor_sensor",
+      "right_digit2_distal_phalanx",
+      "right_digit2_middle_phalanx",
+      "right_digit2_proximal_phalanx",
+      "right_digit3_distal_phalanx",
+      "right_digit3_middle_phalanx",
+      "right_digit3_proximal_phalanx",
+      "right_digit4_distal_phalanx",
+      "right_digit4_middle_phalanx",
+      "right_digit4_proximal_phalanx",
+      "right_digit5_distal_phalanx",
+      "right_digit5_middle_phalanx",
+      "right_digit5_proximal_phalanx",
+      "right_forearm_link",
+      "right_palm_link",
+      "right_shoulder_link",
+      "second_phalanx_left_thumb_link",
+      "second_phalanx_right_thumb_link",
+      "speaker",
+      "stereo_microphone_1",
+      "stereo_microphone_2",
+      "third_phalanx_left_thumb_link",
+      "third_phalanx_right_thumb_link",
+      "torso_link",
+      "wheel_BL",
+      "wheel_BR",
+      "wheel_FL",
+      "wheel_FR"
+    ],
+    "joints": [
+      "atlanto_axial_joint_empty",
+      "atlanto_occipital_joint_empty",
+      "intervertebral_joints_C2_C7_empty",
+      "left_digit2_dip_joint_empty",
+      "left_digit2_mcp2_joint_empty",
+      "left_digit2_mcp_joint_empty",
+      "left_digit2_pip_joint_empty",
+      "left_digit3_dip_joint_empty",
+      "left_digit3_mcp2_joint_empty",
+      "left_digit3_mcp_joint_empty",
+      "left_digit3_pip_joint_empty",
+      "left_digit4_dip_joint_empty",
+      "left_digit4_mcp2_joint_empty",
+      "left_digit4_mcp_joint_empty",
+      "left_digit4_pip_joint_empty",
+      "left_digit5_dip_joint_empty",
+      "left_digit5_mcp2_joint_empty",
+      "left_digit5_mcp_joint_empty",
+      "left_digit5_pip_joint_empty",
+      "left_elbow_joint_empty",
+      "left_proximal_radioulnar_joint_empty",
+      "left_radioulnar_link",
+      "left_shoulder_2_link",
+      "left_shoulder_3_link",
+      "left_shoulder_joint_empty_1",
+      "left_shoulder_joint_empty_2",
+      "left_shoulder_joint_empty_3",
+      "left_thumb_cmc_joint_empty_1",
+      "left_thumb_cmc_joint_empty_2",
+      "left_thumb_cmc_joint_empty_3",
+      "left_thumb_ip_joint_empty",
+      "left_thumb_mcp_joint_empty_1",
+      "left_thumb_mcp_joint_empty_2",
+      "left_wrist_joint_1_empty",
+      "left_wrist_joint_2_empty",
+      "left_wrist_pitch_link",
+      "right_digit2_dip_joint_empty",
+      "right_digit2_mcp2_joint_empty",
+      "right_digit2_mcp_joint_empty",
+      "right_digit2_pip_joint_empty",
+      "right_digit3_dip_joint_empty",
+      "right_digit3_mcp2_joint_empty",
+      "right_digit3_mcp_joint_empty",
+      "right_digit3_pip_joint_empty",
+      "right_digit4_dip_joint_empty",
+      "right_digit4_mcp2_joint_empty",
+      "right_digit4_mcp_joint_empty",
+      "right_digit4_pip_joint_empty",
+      "right_digit5_dip_joint_empty",
+      "right_digit5_mcp2_joint_empty",
+      "right_digit5_mcp_joint_empty",
+      "right_digit5_pip_joint_empty",
+      "right_elbow_joint_empty",
+      "right_proximal_radioulnar_joint_empty",
+      "right_radioulnar_link",
+      "right_shoulder_2_link",
+      "right_shoulder_3_link",
+      "right_shoulder_joint_empty_1",
+      "right_shoulder_joint_empty_2",
+      "right_shoulder_joint_empty_3",
+      "right_thumb_cmc_joint_empty_1",
+      "right_thumb_cmc_joint_empty_2",
+      "right_thumb_cmc_joint_empty_3",
+      "right_thumb_ip_joint_empty",
+      "right_thumb_mcp_joint_empty_1",
+      "right_thumb_mcp_joint_empty_2",
+      "right_wrist_joint_1_empty",
+      "right_wrist_joint_2_empty",
+      "right_wrist_pitch_link",
+      "vertical_lift_joint",
+      "wheel_BL_joint",
+      "wheel_BR_joint",
+      "wheel_FL_joint",
+      "wheel_FR_joint"
+    ],
+    "non_physical_excluded": {
+      "kinematic_empty_non_joint": [
+        "left_radioulnar_link",
+        "left_shoulder_2_link",
+        "left_shoulder_3_link",
+        "left_wrist_pitch_link",
+        "right_radioulnar_link",
+        "right_shoulder_2_link",
+        "right_shoulder_3_link",
+        "right_wrist_pitch_link",
+        "void_SM"
+      ],
+      "collision_duplicates": 35,
+      "cameras_lights": 7
+    },
+    "joint_counts": {
+      "blend": 66,
+      "inventory_rows": 69,
+      "inventory_composition": "66 in_blend + 3 documented legs (ankle/knee/hip)",
+      "value_67": "NOT FOUND in any project source; hypotheses: external count, double-count of vertical_lift_joint, or older inventory revision; requires user clarification",
+      "verification": "joint_limits_audit.txt blend_total=66; model_key_facts by_category sum 3+44+14+1+4=66"
+    }
+  },
+  "physical_registry": {
+    "AXLE_GUIDE_BL": {
+      "mass_kg": null,
+      "parent": null,
+      "source": "absent",
+      "category": 4,
+      "note": "no stored mass in Blender"
+    },
+    "AXLE_GUIDE_BR": {
+      "mass_kg": null,
+      "parent": null,
+      "source": "absent",
+      "category": 4,
+      "note": "no stored mass in Blender"
+    },
+    "AXLE_GUIDE_FL": {
+      "mass_kg": null,
+      "parent": null,
+      "source": "absent",
+      "category": 4,
+      "note": "no stored mass in Blender"
+    },
+    "AXLE_GUIDE_FR": {
+      "mass_kg": null,
+      "parent": null,
+      "source": "absent",
+      "category": 4,
+      "note": "no stored mass in Blender"
+    },
+    "ToF_Lens_001": {
+      "mass_kg": 0.00011705418339891274,
+      "parent": null,
+      "source": "geometric_calc",
+      "category": 2,
+      "formula": "m = 1200 kg/m^3 * V_local (assumed density)",
+      "rho_local": 1200.000030600595
+    },
+    "base_link": {
+      "mass_kg": 213.13395369522755,
+      "parent": null,
+      "source": "geometric_calc",
+      "category": 2,
+      "formula": "m = 2700 kg/m^3 * V_local (aluminum)",
+      "rho_local": 2699.9999705168802
+    },
+    "first_phalanx_left_thumb_link": {
+      "mass_kg": 0.00697436649506324,
+      "parent": "left_thumb_ip_joint_empty",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": -1328.8559042999896,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "first_phalanx_right_thumb_link": {
+      "mass_kg": 0.018057303850582684,
+      "parent": "right_thumb_ip_joint_empty",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": 3476.9230977159964,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "head_link": {
+      "mass_kg": 7.9935840563848615,
+      "parent": "intervertebral_joints_C2_C7_empty",
+      "source": "geometric_calc",
+      "category": 2,
+      "formula": "m = 2700 kg/m^3 * V_local (aluminum)",
+      "rho_local": 2700.0001745218465
+    },
+    "left_digit2_distal_phalanx": {
+      "mass_kg": 0.01883078738798957,
+      "parent": "left_digit2_mcp2_joint_empty",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": -2157.0257891784977,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "left_digit2_middle_phalanx": {
+      "mass_kg": 0.01883078738798957,
+      "parent": "left_digit2_pip_joint_empty",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": -3102.661390615011,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "left_digit2_proximal_phalanx": {
+      "mass_kg": 0.018830789536670747,
+      "parent": "left_digit2_dip_joint_empty",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": -4827.75061819831,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "left_digit3_distal_phalanx": {
+      "mass_kg": 0.01883078738798957,
+      "parent": "left_digit3_mcp2_joint_empty",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": -2258.8908684893695,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "left_digit3_middle_phalanx": {
+      "mass_kg": 0.01883078738798957,
+      "parent": "left_digit3_pip_joint_empty",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": -3587.650175490218,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "left_digit3_proximal_phalanx": {
+      "mass_kg": 0.018830789536670747,
+      "parent": "left_digit3_dip_joint_empty",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": -5084.986685816657,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "left_digit4_distal_phalanx": {
+      "mass_kg": 0.01883078738798957,
+      "parent": "left_digit4_mcp2_joint_empty",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": -2439.6021126246865,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "left_digit4_middle_phalanx": {
+      "mass_kg": 0.01883078738798957,
+      "parent": "left_digit4_pip_joint_empty",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": -3811.878278701219,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "left_digit4_proximal_phalanx": {
+      "mass_kg": 0.018830789536670747,
+      "parent": "left_digit4_dip_joint_empty",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": -5545.161558587744,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "left_digit5_distal_phalanx": {
+      "mass_kg": null,
+      "parent": "left_digit5_mcp2_joint_empty",
+      "source": "absent",
+      "category": 4,
+      "note": "no stored mass in Blender"
+    },
+    "left_digit5_middle_phalanx": {
+      "mass_kg": null,
+      "parent": "left_digit5_pip_joint_empty",
+      "source": "absent",
+      "category": 4,
+      "note": "no stored mass in Blender"
+    },
+    "left_digit5_proximal_phalanx": {
+      "mass_kg": null,
+      "parent": "left_digit5_dip_joint_empty",
+      "source": "absent",
+      "category": 4,
+      "note": "no stored mass in Blender"
+    },
+    "left_forearm_link": {
+      "mass_kg": 2.722734652343206,
+      "parent": "left_elbow_joint_empty",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": 1986.3138953826121,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "left_palm_link": {
+      "mass_kg": 0.335472656805222,
+      "parent": "left_wrist_joint_2_empty",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": -1651.1315115210807,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "left_shoulder_link": {
+      "mass_kg": 2.722734652343206,
+      "parent": "left_shoulder_joint_empty_1",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": 1721.6573284257497,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "lift_brake": {
+      "mass_kg": null,
+      "parent": "base_link",
+      "source": "absent",
+      "category": 4,
+      "note": "no stored mass in Blender"
+    },
+    "lift_catcher_placeholder": {
+      "mass_kg": null,
+      "parent": "base_link",
+      "source": "absent",
+      "category": 4,
+      "note": "no stored mass in Blender"
+    },
+    "lift_guide_block_left": {
+      "mass_kg": null,
+      "parent": "torso_link",
+      "source": "absent",
+      "category": 4,
+      "note": "no stored mass in Blender"
+    },
+    "lift_guide_block_right": {
+      "mass_kg": null,
+      "parent": "torso_link",
+      "source": "absent",
+      "category": 4,
+      "note": "no stored mass in Blender"
+    },
+    "lift_guide_left": {
+      "mass_kg": null,
+      "parent": "base_link",
+      "source": "absent",
+      "category": 4,
+      "note": "no stored mass in Blender"
+    },
+    "lift_guide_right": {
+      "mass_kg": null,
+      "parent": "base_link",
+      "source": "absent",
+      "category": 4,
+      "note": "no stored mass in Blender"
+    },
+    "lift_motor": {
+      "mass_kg": null,
+      "parent": "base_link",
+      "source": "absent",
+      "category": 4,
+      "note": "no stored mass in Blender"
+    },
+    "lift_nut_mount_left": {
+      "mass_kg": null,
+      "parent": "torso_link",
+      "source": "absent",
+      "category": 4,
+      "note": "no stored mass in Blender"
+    },
+    "lift_nut_mount_right": {
+      "mass_kg": null,
+      "parent": "torso_link",
+      "source": "absent",
+      "category": 4,
+      "note": "no stored mass in Blender"
+    },
+    "lift_screw_left": {
+      "mass_kg": null,
+      "parent": "base_link",
+      "source": "absent",
+      "category": 4,
+      "note": "no stored mass in Blender"
+    },
+    "lift_screw_right": {
+      "mass_kg": null,
+      "parent": "base_link",
+      "source": "absent",
+      "category": 4,
+      "note": "no stored mass in Blender"
+    },
+    "lift_stop_top": {
+      "mass_kg": null,
+      "parent": "base_link",
+      "source": "absent",
+      "category": 4,
+      "note": "no stored mass in Blender"
+    },
+    "lift_sync_shaft": {
+      "mass_kg": null,
+      "parent": "base_link",
+      "source": "absent",
+      "category": 4,
+      "note": "no stored mass in Blender"
+    },
+    "odor_sensor": {
+      "mass_kg": 0.0037457337879412034,
+      "parent": null,
+      "source": "geometric_calc",
+      "category": 2,
+      "formula": "m = 1200 kg/m^3 * V_local (assumed density)",
+      "rho_local": 1199.999998341086
+    },
+    "right_digit2_distal_phalanx": {
+      "mass_kg": 0.01805730732939992,
+      "parent": "right_digit2_mcp2_joint_empty",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": 2461.5436670608865,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "right_digit2_middle_phalanx": {
+      "mass_kg": 0.018057303850582684,
+      "parent": "right_digit2_pip_joint_empty",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": 3938.4698961214763,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "right_digit2_proximal_phalanx": {
+      "mass_kg": 0.018057303850582684,
+      "parent": "right_digit2_dip_joint_empty",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": 5476.27070701393,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "right_digit3_distal_phalanx": {
+      "mass_kg": 0.01805730732939992,
+      "parent": "right_digit3_mcp2_joint_empty",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": 2188.0387796487616,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "right_digit3_middle_phalanx": {
+      "mass_kg": 0.01805730732939992,
+      "parent": "right_digit3_pip_joint_empty",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": 3475.1203616459034,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "right_digit3_proximal_phalanx": {
+      "mass_kg": 0.018057303850582684,
+      "parent": "right_digit3_dip_joint_empty",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": 4958.333363044123,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "right_digit4_distal_phalanx": {
+      "mass_kg": 0.01805730732939992,
+      "parent": "right_digit4_mcp2_joint_empty",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": 2363.0818329226936,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "right_digit4_middle_phalanx": {
+      "mass_kg": 0.01805730732939992,
+      "parent": "right_digit4_pip_joint_empty",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": 3692.315455640795,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "right_digit4_proximal_phalanx": {
+      "mass_kg": 0.018057303850582684,
+      "parent": "right_digit4_dip_joint_empty",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": 5396.873358942132,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "right_digit5_distal_phalanx": {
+      "mass_kg": null,
+      "parent": "right_digit5_mcp2_joint_empty",
+      "source": "absent",
+      "category": 4,
+      "note": "no stored mass in Blender"
+    },
+    "right_digit5_middle_phalanx": {
+      "mass_kg": null,
+      "parent": "right_digit5_pip_joint_empty",
+      "source": "absent",
+      "category": 4,
+      "note": "no stored mass in Blender"
+    },
+    "right_digit5_proximal_phalanx": {
+      "mass_kg": null,
+      "parent": "right_digit5_dip_joint_empty",
+      "source": "absent",
+      "category": 4,
+      "note": "no stored mass in Blender"
+    },
+    "right_forearm_link": {
+      "mass_kg": 3.361016971757635,
+      "parent": "right_elbow_joint_empty",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": 2103.945025918254,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "right_palm_link": {
+      "mass_kg": 0.566312564075381,
+      "parent": "right_wrist_joint_2_empty",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": 2960.1191221836134,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "right_shoulder_link": {
+      "mass_kg": 3.361016971757635,
+      "parent": "right_shoulder_joint_empty_1",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": 1791.8279511097621,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "second_phalanx_left_thumb_link": {
+      "mass_kg": 0.006974365699255396,
+      "parent": "left_thumb_mcp_joint_empty_2",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": -1129.524596071218,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "second_phalanx_right_thumb_link": {
+      "mass_kg": 0.01805730732939992,
+      "parent": "right_thumb_mcp_joint_empty_2",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": 2958.480929320131,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "speaker": {
+      "mass_kg": 0.11705420446831037,
+      "parent": null,
+      "source": "geometric_calc",
+      "category": 2,
+      "formula": "m = 1200 kg/m^3 * V_local (assumed density)",
+      "rho_local": 1200.000006837098
+    },
+    "stereo_microphone_1": {
+      "mass_kg": 0.03291761305955574,
+      "parent": null,
+      "source": "geometric_calc",
+      "category": 2,
+      "formula": "m = 1200 kg/m^3 * V_local (assumed density)",
+      "rho_local": -1199.9999698423794
+    },
+    "stereo_microphone_2": {
+      "mass_kg": 0.03291762204798134,
+      "parent": null,
+      "source": "geometric_calc",
+      "category": 2,
+      "formula": "m = 1200 kg/m^3 * V_local (assumed density)",
+      "rho_local": 1199.9999872185267
+    },
+    "third_phalanx_left_thumb_link": {
+      "mass_kg": 0.034676924796637344,
+      "parent": "left_thumb_cmc_joint_empty_3",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": -1809.024059497803,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "third_phalanx_right_thumb_link": {
+      "mass_kg": 0.04352909329105894,
+      "parent": "right_thumb_cmc_joint_empty_3",
+      "source": "stored_unknown",
+      "category": 3,
+      "rho_local": -1767.3691416120648,
+      "note": "not volume-based; origin unknown (possible SW export); shoulder==forearm duplicate within each arm"
+    },
+    "torso_link": {
+      "mass_kg": null,
+      "parent": "vertical_lift_joint",
+      "source": "absent",
+      "category": 4,
+      "note": "no stored mass in Blender"
+    },
+    "wheel_BL": {
+      "mass_kg": 2.558046901224469,
+      "parent": "wheel_BL_joint",
+      "source": "geometric_calc",
+      "category": 2,
+      "formula": "m = 2700 kg/m^3 * V_local (aluminum)",
+      "rho_local": 2699.999974858757
+    },
+    "wheel_BR": {
+      "mass_kg": 2.558046901224469,
+      "parent": "wheel_BR_joint",
+      "source": "geometric_calc",
+      "category": 2,
+      "formula": "m = 2700 kg/m^3 * V_local (aluminum)",
+      "rho_local": 2699.999974858757
+    },
+    "wheel_FL": {
+      "mass_kg": 2.558046901224469,
+      "parent": "wheel_FL_joint",
+      "source": "geometric_calc",
+      "category": 2,
+      "formula": "m = 2700 kg/m^3 * V_local (aluminum)",
+      "rho_local": 2699.999974858757
+    },
+    "wheel_FR": {
+      "mass_kg": 2.558046901224469,
+      "parent": "wheel_FR_joint",
+      "source": "geometric_calc",
+      "category": 2,
+      "formula": "m = 2700 kg/m^3 * V_local (aluminum)",
+      "rho_local": 2699.999974858757
+    }
+  },
+  "double_counts": [
+    {
+      "collision_object": "wheel_FL_collision",
+      "collision_mass": 1.0,
+      "visual_object": "wheel_FL",
+      "visual_mass": 2.558046901224469,
+      "verdict": "EXCLUDE collision mass (rigid_body default 1.0 kg, double-counts the visual wheel)"
+    }
+  ],
+  "subsystems": {
+    "mobile_base": {
+      "components": [
+        {
+          "link_id": "base_link",
+          "mass_kg": 213.13395369522755,
+          "source": "geometric_calc",
+          "category": 2,
+          "formula": "m = 2700 kg/m^3 * V_local (aluminum)",
+          "volume_local": 0.0789385022305855,
+          "volume_world": 0.07900623594017536,
+          "implied_rho_local": 2699.9999705168802,
+          "com_world_geom": [
+            3.608395089705779,
+            -1.8603523671627016,
+            -5.47404813766479
+          ]
+        }
+      ],
+      "stored_subtotal_kg": 213.133954
+    },
+    "wheels": {
+      "components": [
+        {
+          "link_id": "wheel_BL",
+          "mass_kg": 2.558046901224469,
+          "source": "geometric_calc",
+          "category": 2,
+          "formula": "m = 2700 kg/m^3 * V_local (aluminum)",
+          "volume_local": 0.0009474247870532984,
+          "volume_world": 0.0009482392902294568,
+          "implied_rho_local": 2699.999974858757,
+          "com_world_geom": [
+            3.3498334881123606,
+            -1.6021368507911047,
+            -5.555208678148524
+          ]
+        },
+        {
+          "link_id": "wheel_BR",
+          "mass_kg": 2.558046901224469,
+          "source": "geometric_calc",
+          "category": 2,
+          "formula": "m = 2700 kg/m^3 * V_local (aluminum)",
+          "volume_local": 0.0009474247870532984,
+          "volume_world": 0.0009482394491738417,
+          "implied_rho_local": 2699.999974858757,
+          "com_world_geom": [
+            3.3487782391340706,
+            -2.118084423551486,
+            -5.555209636106276
+          ]
+        },
+        {
+          "link_id": "wheel_FL",
+          "mass_kg": 2.558046901224469,
+          "source": "geometric_calc",
+          "category": 2,
+          "formula": "m = 2700 kg/m^3 * V_local (aluminum)",
+          "volume_local": 0.0009474247870532984,
+          "volume_world": 0.000948239290229435,
+          "implied_rho_local": 2699.999974858757,
+          "com_world_geom": [
+            3.8661704059894983,
+            -1.6034249071646938,
+            -5.5552086781484755
+          ]
+        },
+        {
+          "link_id": "wheel_FR",
+          "mass_kg": 2.558046901224469,
+          "source": "geometric_calc",
+          "category": 2,
+          "formula": "m = 2700 kg/m^3 * V_local (aluminum)",
+          "volume_local": 0.0009474247870532984,
+          "volume_world": 0.0009482394491738177,
+          "implied_rho_local": 2699.999974858757,
+          "com_world_geom": [
+            3.8669772061140333,
+            -2.1176385808085625,
+            -5.555208682431985
+          ]
+        }
+      ],
+      "stored_subtotal_kg": 10.232188
+    },
+    "lift": {
+      "components": [
+        {
+          "link_id": "lift_brake",
+          "mass_kg": null,
+          "source": "absent",
+          "category": 4,
+          "formula": null,
+          "volume_local": -0.00012500000558793555,
+          "volume_world": -0.00012510925733557124,
+          "implied_rho_local": null,
+          "com_world_geom": [
+            3.7683272361753914,
+            -1.8603522777556691,
+            -5.418981075286692
+          ]
+        },
+        {
+          "link_id": "lift_catcher_placeholder",
+          "mass_kg": null,
+          "source": "absent",
+          "category": 4,
+          "formula": null,
+          "volume_local": -0.0004079999860525131,
+          "volume_world": -0.0004079958763169751,
+          "implied_rho_local": null,
+          "com_world_geom": [
+            3.6083960533136765,
+            -1.8603523969647473,
+            -4.674047946929242
+          ]
+        },
+        {
+          "link_id": "lift_guide_block_left",
+          "mass_kg": null,
+          "source": "absent",
+          "category": 4,
+          "formula": null,
+          "volume_local": -0.0009450000791251678,
+          "volume_world": -0.0009449980831060505,
+          "implied_rho_local": null,
+          "com_world_geom": [
+            3.608397960662822,
+            -2.0553522109985236,
+            -4.561480522155736
+          ]
+        },
+        {
+          "link_id": "lift_guide_block_right",
+          "mass_kg": null,
+          "source": "absent",
+          "category": 4,
+          "formula": null,
+          "volume_local": -0.0009450000791251678,
+          "volume_world": -0.0009449980831060479,
+          "implied_rho_local": null,
+          "com_world_geom": [
+            3.608397960662828,
+            -1.6653522253036466,
+            -4.561480522155759
+          ]
+        },
+        {
+          "link_id": "lift_guide_left",
+          "mass_kg": null,
+          "source": "absent",
+          "category": 4,
+          "formula": null,
+          "volume_local": -0.004800000035762784,
+          "volume_world": -0.0048041046124845665,
+          "implied_rho_local": null,
+          "com_world_geom": [
+            3.608397960662897,
+            -2.064774513244658,
+            -4.673076033592274
+          ]
+        },
+        {
+          "link_id": "lift_guide_right",
+          "mass_kg": null,
+          "source": "absent",
+          "category": 4,
+          "formula": null,
+          "volume_local": -0.004800000035762784,
+          "volume_world": -0.004804127518624475,
+          "implied_rho_local": null,
+          "com_world_geom": [
+            3.6083979606627845,
+            -1.6647449731826527,
+            -4.6730760335921655
+          ]
+        },
+        {
+          "link_id": "lift_motor",
+          "mass_kg": null,
+          "source": "absent",
+          "category": 4,
+          "formula": null,
+          "volume_local": -0.0020159999184608465,
+          "volume_world": -0.002017731654091885,
+          "implied_rho_local": null,
+          "com_world_geom": [
+            3.768327236175506,
+            -1.8603522777557184,
+            -5.494072437286312
+          ]
+        },
+        {
+          "link_id": "lift_nut_mount_left",
+          "mass_kg": null,
+          "source": "absent",
+          "category": 4,
+          "formula": null,
+          "volume_local": -0.0005670000474751006,
+          "volume_world": -0.0005669986996603709,
+          "implied_rho_local": null,
+          "com_world_geom": [
+            3.608398199081331,
+            -2.010352432727772,
+            -4.561480522155642
+          ]
+        },
+        {
+          "link_id": "lift_nut_mount_right",
+          "mass_kg": null,
+          "source": "absent",
+          "category": 4,
+          "formula": null,
+          "volume_local": -0.0005670000474751006,
+          "volume_world": -0.0005669979486438628,
+          "implied_rho_local": null,
+          "com_world_geom": [
+            3.6083981990813183,
+            -1.7103523015975488,
+            -4.561480522155626
+          ]
+        },
+        {
+          "link_id": "lift_screw_left",
+          "mass_kg": null,
+          "source": "absent",
+          "category": 4,
+          "formula": null,
+          "volume_local": 0.0007175314469757433,
+          "volume_world": 0.0007181431672702888,
+          "implied_rho_local": null,
+          "com_world_geom": [
+            3.6083981990816407,
+            -2.0103633299977384,
+            -4.723136782646436
+          ]
+        },
+        {
+          "link_id": "lift_screw_right",
+          "mass_kg": null,
+          "source": "absent",
+          "category": 4,
+          "formula": null,
+          "volume_local": 0.0007175314469757433,
+          "volume_world": 0.0007181463142180104,
+          "implied_rho_local": null,
+          "com_world_geom": [
+            3.6083981990815754,
+            -1.7103412151337491,
+            -4.723136782646371
+          ]
+        },
+        {
+          "link_id": "lift_stop_top",
+          "mass_kg": null,
+          "source": "absent",
+          "category": 4,
+          "formula": null,
+          "volume_local": -0.0002939999646395451,
+          "volume_world": -0.0002940027470636768,
+          "implied_rho_local": null,
+          "com_world_geom": [
+            3.6083960533140265,
+            -1.8603522564682566,
+            -3.8964810371397234
+          ]
+        },
+        {
+          "link_id": "lift_sync_shaft",
+          "mass_kg": null,
+          "source": "absent",
+          "category": 4,
+          "formula": null,
+          "volume_local": 0.000220425649984586,
+          "volume_world": 0.000220613255608456,
+          "implied_rho_local": null,
+          "com_world_geom": [
+            3.608398199081127,
+            -1.8603522181508498,
+            -5.504084587096642
+          ]
+        }
+      ],
+      "stored_subtotal_kg": 0
+    },
+    "torso": {
+      "components": [
+        {
+          "link_id": "torso_link",
+          "mass_kg": null,
+          "source": "absent",
+          "category": 4,
+          "formula": null,
+          "volume_local": -0.008320000407695751,
+          "volume_world": -0.008320029697410277,
+          "implied_rho_local": null,
+          "com_world_geom": [
+            3.6883977651596243,
+            -1.8647598028183123,
+            -4.561480998992946
+          ]
+        }
+      ],
+      "stored_subtotal_kg": 0
+    },
+    "neck": {
+      "components": [],
+      "stored_subtotal_kg": 0
+    },
+    "head": {
+      "components": [
+        {
+          "link_id": "head_link",
+          "mass_kg": 7.9935840563848615,
+          "source": "geometric_calc",
+          "category": 2,
+          "formula": "m = 2700 kg/m^3 * V_local (aluminum)",
+          "volume_local": 0.002960586496184385,
+          "volume_world": 0.0029631388656983296,
+          "implied_rho_local": 2700.0001745218465,
+          "com_world_geom": [
+            3.708352804183932,
+            -1.8647600412368623,
+            -4.4106788635253595
+          ]
+        }
+      ],
+      "stored_subtotal_kg": 7.993584
+    },
+    "left_arm_links": {
+      "components": [
+        {
+          "link_id": "left_shoulder_link",
+          "mass_kg": 2.722734652343206,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": 0.0015814614252145183,
+          "volume_world": 0.0031264816507186217,
+          "implied_rho_local": 1721.6573284257497,
+          "com_world_geom": [
+            3.7922008946963675,
+            -1.4005736359055927,
+            -4.56182900988488
+          ]
+        },
+        {
+          "link_id": "left_forearm_link",
+          "mass_kg": 2.722734652343206,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": 0.00137074742248568,
+          "volume_world": 0.002712244083659901,
+          "implied_rho_local": 1986.3138953826121,
+          "com_world_geom": [
+            3.79220431821599,
+            -1.02762645525004,
+            -4.5615412017157935
+          ]
+        }
+      ],
+      "stored_subtotal_kg": 5.445469
+    },
+    "right_arm_links": {
+      "components": [
+        {
+          "link_id": "right_shoulder_link",
+          "mass_kg": 3.361016971757635,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": 0.001875747596009986,
+          "volume_world": 0.0037082814651957265,
+          "implied_rho_local": 1791.8279511097621,
+          "com_world_geom": [
+            3.7795373051744017,
+            -2.33919419404391,
+            -4.559832432822847
+          ]
+        },
+        {
+          "link_id": "right_forearm_link",
+          "mass_kg": 3.361016971757635,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": 0.0015974832661279918,
+          "volume_world": 0.0031608827097656805,
+          "implied_rho_local": 2103.945025918254,
+          "com_world_geom": [
+            3.7795414924790767,
+            -2.741846585025599,
+            -4.552919506165605
+          ]
+        }
+      ],
+      "stored_subtotal_kg": 6.722034
+    },
+    "left_hand": {
+      "components": [
+        {
+          "link_id": "left_palm_link",
+          "mass_kg": 0.335472656805222,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": -0.00020317742981973175,
+          "volume_world": -0.0005070824001795243,
+          "implied_rho_local": -1651.1315115210807,
+          "com_world_geom": [
+            3.7922069712079503,
+            -0.7369315209165366,
+            -4.57549601719545
+          ]
+        }
+      ],
+      "stored_subtotal_kg": 0.335473
+    },
+    "right_hand": {
+      "components": [
+        {
+          "link_id": "right_palm_link",
+          "mass_kg": 0.566312564075381,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": 0.00019131411294611176,
+          "volume_world": 0.0003785468666379823,
+          "implied_rho_local": 2960.1191221836134,
+          "com_world_geom": [
+            3.779543519019995,
+            -3.018192529678298,
+            -4.558331966400064
+          ]
+        }
+      ],
+      "stored_subtotal_kg": 0.566313
+    },
+    "left_fingers": {
+      "components": [
+        {
+          "link_id": "left_digit2_distal_phalanx",
+          "mass_kg": 0.01883078738798957,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": -8.72997786232369e-06,
+          "volume_world": -1.4661963513555197e-05,
+          "implied_rho_local": -2157.0257891784977,
+          "com_world_geom": [
+            3.7922532558452744,
+            -0.6234576106073314,
+            -4.5351905822767415
+          ]
+        },
+        {
+          "link_id": "left_digit2_middle_phalanx",
+          "mass_kg": 0.01883078738798957,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": -6.069237025009977e-06,
+          "volume_world": -9.163722644330572e-06,
+          "implied_rho_local": -3102.661390615011,
+          "com_world_geom": [
+            3.7922501564002364,
+            -0.57037431001628,
+            -4.534326076504761
+          ]
+        },
+        {
+          "link_id": "left_digit2_proximal_phalanx",
+          "mass_kg": 0.018830789536670747,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": -3.900530707963183e-06,
+          "volume_world": -6.7062935734449455e-06,
+          "implied_rho_local": -4827.75061819831,
+          "com_world_geom": [
+            3.792250692843572,
+            -0.5351196282875059,
+            -4.534648656725967
+          ]
+        },
+        {
+          "link_id": "left_digit3_distal_phalanx",
+          "mass_kg": 0.01883078738798957,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": -8.3362979817536e-06,
+          "volume_world": -1.6494695297748557e-05,
+          "implied_rho_local": -2258.8908684893695,
+          "com_world_geom": [
+            3.792247535669138,
+            -0.6244957596063362,
+            -4.566670894622665
+          ]
+        },
+        {
+          "link_id": "left_digit3_middle_phalanx",
+          "mass_kg": 0.01883078738798957,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": -5.248780250827138e-06,
+          "volume_world": -1.0385555971554076e-05,
+          "implied_rho_local": -3587.650175490218,
+          "com_world_geom": [
+            3.7922484874727242,
+            -0.5622503459453807,
+            -4.566553115844912
+          ]
+        },
+        {
+          "link_id": "left_digit3_proximal_phalanx",
+          "mass_kg": 0.018830789536670747,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": -3.703213144922225e-06,
+          "volume_world": -7.327421894577494e-06,
+          "implied_rho_local": -5084.986685816657,
+          "com_world_geom": [
+            3.7922474156428083,
+            -0.5105161226058227,
+            -4.566135884059863
+          ]
+        },
+        {
+          "link_id": "left_digit4_distal_phalanx",
+          "mass_kg": 0.01883078738798957,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": -7.718794507736409e-06,
+          "volume_world": -1.52728710738439e-05,
+          "implied_rho_local": -2439.6021126246865,
+          "com_world_geom": [
+            3.792252302170013,
+            -0.6283590197563595,
+            -4.5971970558168564
+          ]
+        },
+        {
+          "link_id": "left_digit4_middle_phalanx",
+          "mass_kg": 0.01883078738798957,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": -4.940028513818543e-06,
+          "volume_world": -9.774648411263963e-06,
+          "implied_rho_local": -3811.878278701219,
+          "com_world_geom": [
+            3.792249441148553,
+            -0.567107707262292,
+            -4.597816467287133
+          ]
+        },
+        {
+          "link_id": "left_digit4_proximal_phalanx",
+          "mass_kg": 0.018830789536670747,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": -3.395895563675266e-06,
+          "volume_world": -6.719372984560204e-06,
+          "implied_rho_local": -5545.161558587744,
+          "com_world_geom": [
+            3.7922475315020683,
+            -0.5261962761469369,
+            -4.597197292538934
+          ]
+        },
+        {
+          "link_id": "left_digit5_distal_phalanx",
+          "mass_kg": null,
+          "source": "absent",
+          "category": 4,
+          "formula": null,
+          "volume_local": -6.484745591249838e-06,
+          "volume_world": -1.2809062191927842e-05,
+          "implied_rho_local": null,
+          "com_world_geom": [
+            3.79225301742576,
+            -0.6265128552913932,
+            -4.620219707489308
+          ]
+        },
+        {
+          "link_id": "left_digit5_middle_phalanx",
+          "mass_kg": null,
+          "source": "absent",
+          "category": 4,
+          "formula": null,
+          "volume_local": -4.014366299062015e-06,
+          "volume_world": -7.929427242758802e-06,
+          "implied_rho_local": null,
+          "com_world_geom": [
+            3.792252540588184,
+            -0.5811800360679223,
+            -4.621363162994161
+          ]
+        },
+        {
+          "link_id": "left_digit5_proximal_phalanx",
+          "mass_kg": null,
+          "source": "absent",
+          "category": 4,
+          "formula": null,
+          "volume_local": -3.08795049692429e-06,
+          "volume_world": -6.099445199836059e-06,
+          "implied_rho_local": null,
+          "com_world_geom": [
+            3.7922508741864593,
+            -0.547524919113019,
+            -4.620744230223897
+          ]
+        }
+      ],
+      "stored_subtotal_kg": 0.169477
+    },
+    "right_fingers": {
+      "components": [
+        {
+          "link_id": "right_digit2_distal_phalanx",
+          "mass_kg": 0.01805730732939992,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": 7.335765589306228e-06,
+          "volume_world": 1.4514880443720402e-05,
+          "implied_rho_local": 2461.5436670608865,
+          "com_world_geom": [
+            3.779539823533155,
+            -3.1181254386910413,
+            -4.512049674989131
+          ]
+        },
+        {
+          "link_id": "right_digit2_middle_phalanx",
+          "mass_kg": 0.018057303850582684,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": 4.584852576470152e-06,
+          "volume_world": 9.07181830144449e-06,
+          "implied_rho_local": 3938.4698961214763,
+          "com_world_geom": [
+            3.7795395851126488,
+            -3.1676999330513134,
+            -4.51148939132584
+          ]
+        },
+        {
+          "link_id": "right_digit2_proximal_phalanx",
+          "mass_kg": 0.018057303850582684,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": 3.297372393854662e-06,
+          "volume_world": 6.524390815888705e-06,
+          "implied_rho_local": 5476.27070701393,
+          "com_world_geom": [
+            3.779537599018191,
+            -3.202384432910467,
+            -4.511894703210563
+          ]
+        },
+        {
+          "link_id": "right_digit3_distal_phalanx",
+          "mass_kg": 0.01805730732939992,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": 8.252736421928773e-06,
+          "volume_world": 1.632925852336042e-05,
+          "implied_rho_local": 2188.0387796487616,
+          "com_world_geom": [
+            3.7795419692960346,
+            -3.119739532468026,
+            -4.542208671565854
+          ]
+        },
+        {
+          "link_id": "right_digit3_middle_phalanx",
+          "mass_kg": 0.01805730732939992,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": 5.196167456153239e-06,
+          "volume_world": 1.0281379655696643e-05,
+          "implied_rho_local": 3475.1203616459034,
+          "com_world_geom": [
+            3.77954030036771,
+            -3.172539234160067,
+            -4.5423545837384225
+          ]
+        },
+        {
+          "link_id": "right_digit3_proximal_phalanx",
+          "mass_kg": 0.018057303850582684,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": 3.6418091581273933e-06,
+          "volume_world": 7.20603907788627e-06,
+          "implied_rho_local": 4958.333363044123,
+          "com_world_geom": [
+            3.7795388014934224,
+            -3.2117623518131,
+            -4.543549531739829
+          ]
+        },
+        {
+          "link_id": "right_digit4_distal_phalanx",
+          "mass_kg": 0.01805730732939992,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": 7.641422771663554e-06,
+          "volume_world": 1.511969716905281e-05,
+          "implied_rho_local": 2363.0818329226936,
+          "com_world_geom": [
+            3.7795419692997427,
+            -3.1173857450488898,
+            -4.571258068085246
+          ]
+        },
+        {
+          "link_id": "right_digit4_middle_phalanx",
+          "mass_kg": 0.01805730732939992,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": 4.890510452408272e-06,
+          "volume_world": 9.676635026776626e-06,
+          "implied_rho_local": 3692.315455640795,
+          "com_world_geom": [
+            3.779540777204794,
+            -3.166479349134934,
+            -4.572468280790218
+          ]
+        },
+        {
+          "link_id": "right_digit4_proximal_phalanx",
+          "mass_kg": 0.018057303850582684,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": 3.3458824488929988e-06,
+          "volume_world": 6.620480684457991e-06,
+          "implied_rho_local": 5396.873358942132,
+          "com_world_geom": [
+            3.7795407081188466,
+            -3.204330681748498,
+            -4.573700182917685
+          ]
+        },
+        {
+          "link_id": "right_digit5_distal_phalanx",
+          "mass_kg": null,
+          "source": "absent",
+          "category": 4,
+          "formula": null,
+          "volume_local": 6.419284511765249e-06,
+          "volume_world": 1.2691113833331654e-05,
+          "implied_rho_local": null,
+          "com_world_geom": [
+            3.7795441150636164,
+            -3.1105517148947466,
+            -4.5990228652918645
+          ]
+        },
+        {
+          "link_id": "right_digit5_middle_phalanx",
+          "mass_kg": null,
+          "source": "absent",
+          "category": 4,
+          "formula": null,
+          "volume_local": 3.97384290356709e-06,
+          "volume_world": 7.856400370959192e-06,
+          "implied_rho_local": null,
+          "com_world_geom": [
+            3.7795436382291867,
+            -3.153351306915083,
+            -4.599169731139898
+          ]
+        },
+        {
+          "link_id": "right_digit5_proximal_phalanx",
+          "mass_kg": null,
+          "source": "absent",
+          "category": 4,
+          "formula": null,
+          "volume_local": 3.0561222514955488e-06,
+          "volume_world": 6.041898770891077e-06,
+          "implied_rho_local": null,
+          "com_world_geom": [
+            3.779540300368283,
+            -3.185332119415887,
+            -4.599713101516423
+          ]
+        }
+      ],
+      "stored_subtotal_kg": 0.162516
+    },
+    "sensors": {
+      "components": [
+        {
+          "link_id": "speaker",
+          "mass_kg": 0.11705420446831037,
+          "source": "geometric_calc",
+          "category": 2,
+          "formula": "m = 1200 kg/m^3 * V_local (assumed density)",
+          "volume_local": 9.754516983448707e-05,
+          "volume_world": 9.76296063647042e-05,
+          "implied_rho_local": 1200.000006837098,
+          "com_world_geom": [
+            3.760832309722924,
+            -1.8639612207555032,
+            -4.454727649688781
+          ]
+        },
+        {
+          "link_id": "stereo_microphone_1",
+          "mass_kg": 0.03291761305955574,
+          "source": "geometric_calc",
+          "category": 2,
+          "formula": "m = 1200 kg/m^3 * V_local (assumed density)",
+          "volume_local": -2.7431344905683192e-05,
+          "volume_world": -2.7454726788757485e-05,
+          "implied_rho_local": -1199.9999698423794,
+          "com_world_geom": [
+            3.6934566467100005,
+            -1.8213110003240982,
+            -4.39622116112027
+          ]
+        },
+        {
+          "link_id": "stereo_microphone_2",
+          "mass_kg": 0.03291762204798134,
+          "source": "geometric_calc",
+          "category": 2,
+          "formula": "m = 1200 kg/m^3 * V_local (assumed density)",
+          "volume_local": 2.7431351998828694e-05,
+          "volume_world": 2.7454753519500406e-05,
+          "implied_rho_local": 1199.9999872185267,
+          "com_world_geom": [
+            3.693457125983357,
+            -1.9081072795177123,
+            -4.396222114547866
+          ]
+        },
+        {
+          "link_id": "odor_sensor",
+          "mass_kg": 0.0037457337879412034,
+          "source": "geometric_calc",
+          "category": 2,
+          "formula": "m = 1200 kg/m^3 * V_local (assumed density)",
+          "volume_local": 3.12144482759951e-06,
+          "volume_world": 3.1241944198902713e-06,
+          "implied_rho_local": 1199.999998341086,
+          "com_world_geom": [
+            3.7853510379784487,
+            -1.8638896942134926,
+            -4.416583538054562
+          ]
+        },
+        {
+          "link_id": "ToF_Lens_001",
+          "mass_kg": 0.00011705418339891274,
+          "source": "geometric_calc",
+          "category": 2,
+          "formula": "m = 1200 kg/m^3 * V_local (assumed density)",
+          "volume_local": 9.754515034497757e-08,
+          "volume_world": 9.762708943815853e-08,
+          "implied_rho_local": 1200.000030600595,
+          "com_world_geom": [
+            3.7828555107248043,
+            -1.8607431650225923,
+            -4.360816478744899
+          ]
+        }
+      ],
+      "stored_subtotal_kg": 0.186752
+    },
+    "thumb_fingers": {
+      "components": [
+        {
+          "link_id": "first_phalanx_left_thumb_link",
+          "mass_kg": 0.00697436649506324,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": -5.248399373096193e-06,
+          "implied_rho_local": null
+        },
+        {
+          "link_id": "first_phalanx_right_thumb_link",
+          "mass_kg": 0.018057303850582684,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": 5.193472315348186e-06,
+          "implied_rho_local": null
+        },
+        {
+          "link_id": "second_phalanx_left_thumb_link",
+          "mass_kg": 0.006974365699255396,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": -6.174602769620126e-06,
+          "implied_rho_local": null
+        },
+        {
+          "link_id": "second_phalanx_right_thumb_link",
+          "mass_kg": 0.01805730732939992,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": 6.1035740168010984e-06,
+          "implied_rho_local": null
+        },
+        {
+          "link_id": "third_phalanx_left_thumb_link",
+          "mass_kg": 0.034676924796637344,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": -1.9168857713403706e-05,
+          "implied_rho_local": null
+        },
+        {
+          "link_id": "third_phalanx_right_thumb_link",
+          "mass_kg": 0.04352909329105894,
+          "source": "stored_unknown",
+          "category": 3,
+          "formula": null,
+          "volume_local": -2.4629316120883997e-05,
+          "implied_rho_local": null
+        }
+      ],
+      "stored_subtotal_kg": 0.128269,
+      "note": "filled below"
+    }
+  },
+  "no_mass_components": [
+    "AXLE_GUIDE_BL",
+    "AXLE_GUIDE_BR",
+    "AXLE_GUIDE_FL",
+    "AXLE_GUIDE_FR",
+    "left_digit5_distal_phalanx",
+    "left_digit5_middle_phalanx",
+    "left_digit5_proximal_phalanx",
+    "lift_brake",
+    "lift_catcher_placeholder",
+    "lift_guide_block_left",
+    "lift_guide_block_right",
+    "lift_guide_left",
+    "lift_guide_right",
+    "lift_motor",
+    "lift_nut_mount_left",
+    "lift_nut_mount_right",
+    "lift_screw_left",
+    "lift_screw_right",
+    "lift_stop_top",
+    "lift_sync_shaft",
+    "right_digit5_distal_phalanx",
+    "right_digit5_middle_phalanx",
+    "right_digit5_proximal_phalanx",
+    "torso_link"
+  ],
+  "base_link_analysis": {
+    "mass_kg": 213.13395369522755,
+    "volume_local_m3": 0.0789385022305855,
+    "volume_world_m3": 0.07900623594017536,
+    "implied_rho_local": 2699.9999705168802,
+    "verdict": "mass = 2700 kg/m^3 x V_local EXACTLY (0.089143 m^3 solid box); provenance = geometric calculation with aluminum density, NOT a weighed value and NOT identified content",
+    "content_established": false,
+    "batteries_or_ballast": "NOT established - do not assume",
+    "com_world": [
+      3.608395089705779,
+      -1.8603523671627016,
+      -5.47404813766479
+    ],
+    "com_equals_bbox_center": true,
+    "note": "0.09% world/local difference = parent scale factor 1.00086"
+  },
+  "geometry_capabilities": {
+    "api": "Blender 5.0.1 has NO Mesh.calc_volume / calc_center_of_mass / calc_inertia; tetrahedron decomposition used (scale-aware)",
+    "volume": "COMPUTED for 100/100 meshes (world and local)",
+    "com": "COMPUTED (world) - base COM matches bbox center exactly",
+    "inertia": "COMPUTED and VALIDATED: base_link Ixx=8.5305 vs analytic box 8.5232 kg m^2 (delta 0.09% = local/world scale factor); all diagonal elements positive after barycentric fix",
+    "scale_handling": "world-space computation includes matrix_parent_inverse scales (arm chains det=1.977-1.979, palm 2.496); obj.scale ALONE DOES NOT reveal this (reports ~1.0)",
+    "inverted_normals_negative_volume": [
+      "first_phalanx_left_thumb_link",
+      "left_digit2_distal_phalanx",
+      "left_digit2_middle_phalanx",
+      "left_digit2_proximal_phalanx",
+      "left_digit3_distal_phalanx",
+      "left_digit3_middle_phalanx",
+      "left_digit3_proximal_phalanx",
+      "left_digit4_distal_phalanx",
+      "left_digit4_middle_phalanx",
+      "left_digit4_proximal_phalanx",
+      "left_digit5_distal_phalanx",
+      "left_digit5_middle_phalanx",
+      "left_digit5_proximal_phalanx",
+      "left_palm_link",
+      "lift_brake",
+      "lift_catcher_placeholder",
+      "lift_guide_block_left",
+      "lift_guide_block_right",
+      "lift_guide_left",
+      "lift_guide_right",
+      "lift_motor",
+      "lift_nut_mount_left",
+      "lift_nut_mount_right",
+      "lift_stop_top",
+      "second_phalanx_left_thumb_link",
+      "stereo_microphone_1",
+      "third_phalanx_left_thumb_link",
+      "third_phalanx_right_thumb_link",
+      "torso_link"
+    ],
+    "parametric_rule": "unknown thickness/material -> keep m = rho*A(t), I = f(rho, t) symbolic, no fabricated numbers"
+  },
+  "uncertainties_ranked": [
+    {
+      "rank": 1,
+      "id": "U1",
+      "issue": "Three mutually inconsistent mass baselines: stored 245.076 kg / stability scenarios 68.54 kg / arm budget 105-433 kg",
+      "impact": "blocks all moment and stability calculations",
+      "status": "open"
+    },
+    {
+      "rank": 2,
+      "id": "U2",
+      "issue": "base_link 213.134 kg provenance = 2700*V_local; actual composition (electronics? battery? structure?) not established",
+      "impact": "86.6% of total mass; COM and stability depend on it",
+      "status": "open"
+    },
+    {
+      "rank": 3,
+      "id": "U3",
+      "issue": "No COM and no inertia stored in model (0/182); computable from geometry only for watertight meshes",
+      "impact": "dynamic calculations blocked; static moments need COM",
+      "status": "open"
+    },
+    {
+      "rank": 4,
+      "id": "U4",
+      "issue": "Arm link masses are stored_unknown (not volume-based); shoulder==forearm duplicates per arm; left!=right (2.723 vs 3.361)",
+      "impact": "arm masses unverifiable; actuator sizing unreliable",
+      "status": "open"
+    },
+    {
+      "rank": 5,
+      "id": "U5",
+      "issue": "Torso, 13 lift parts, digit5 phalanges (6), dummy-link empties have no mass; finger drives/fasteners/cables unaccounted",
+      "impact": "lift assembly and hands underestimated",
+      "status": "open"
+    },
+    {
+      "rank": 6,
+      "id": "U6",
+      "issue": "Finger phalanx masses are repeated placeholders (same value x9 per hand), not volume-based",
+      "impact": "finger inertia unknowable from model",
+      "status": "open"
+    },
+    {
+      "rank": 7,
+      "id": "U7",
+      "issue": "Scale anomalies: 133/182 non-unit scale; arm chains carry parent-inverse scale 1.2546 (obj.scale hides it); 10 meshes with inverted normals (negative volume)",
+      "impact": "any geometry-derived mass/inertia must be computed in world space with full parent chain; naive obj.scale handling is wrong",
+      "status": "open"
+    },
+    {
+      "rank": 8,
+      "id": "U8",
+      "issue": "Joint count inconsistency 66/67/69: 66 (blend) and 69 (inventory) verified; 67 not found in project sources",
+      "impact": "identifier bookkeeping only, no mass impact",
+      "status": "open"
+    },
+    {
+      "rank": 9,
+      "id": "U9",
+      "issue": "wheel_FL_collision 1.0 kg rigid-body default double-counts wheel_FL 2.558 kg",
+      "impact": "+1.0 kg spurious if included",
+      "status": "resolved_in_registry"
+    }
+  ],
+  "control_result": {
+    "phase": "structure + uncertainties, BEFORE full mass filling",
+    "physical_registry": {
+      "physical_links": 65,
+      "excluded": {
+        "kinematic_empties": 75,
+        "cameras_lights": 7,
+        "collision_duplicates": 35
+      },
+      "stage2v_total_incl_collision_kg": 246.076028,
+      "double_count_excluded_kg": 1.0,
+      "registry_total_kg": 245.076028
+    },
+    "recipes_identified": {
+      "geometric_2700_aluminum": [
+        "base_link",
+        "head_link",
+        "wheel_BL",
+        "wheel_BR",
+        "wheel_FL",
+        "wheel_FR"
+      ],
+      "geometric_1200_assumed": [
+        "speaker",
+        "stereo_microphone_1",
+        "stereo_microphone_2",
+        "odor_sensor",
+        "ToF_Lens_001"
+      ],
+      "stored_unknown": [
+        "left_shoulder_link",
+        "left_forearm_link",
+        "right_shoulder_link",
+        "right_forearm_link",
+        "left_palm_link",
+        "right_palm_link"
+      ],
+      "repeated_placeholder": "18 finger phalanges (9 per hand identical values)",
+      "rigid_body_default": [
+        "wheel_FL_collision (EXCLUDE)"
+      ],
+      "absent": [
+        "AXLE_GUIDE_BL",
+        "AXLE_GUIDE_BR",
+        "AXLE_GUIDE_FL",
+        "AXLE_GUIDE_FR",
+        "left_digit5_distal_phalanx",
+        "left_digit5_middle_phalanx",
+        "left_digit5_proximal_phalanx",
+        "lift_brake",
+        "lift_catcher_placeholder",
+        "lift_guide_block_left",
+        "lift_guide_block_right",
+        "lift_guide_left",
+        "lift_guide_right",
+        "lift_motor",
+        "lift_nut_mount_left",
+        "lift_nut_mount_right",
+        "lift_screw_left",
+        "lift_screw_right",
+        "lift_stop_top",
+        "lift_sync_shaft",
+        "right_digit5_distal_phalanx",
+        "right_digit5_middle_phalanx",
+        "right_digit5_proximal_phalanx",
+        "torso_link"
+      ]
+    },
+    "geometry_capabilities": "volume/COM/inertia all computable and validated (0.09% vs analytic box)",
+    "scenarios_ready_for": "3 scenarios (light/nominal/heavy) can be built from recipes + parametric dependencies after user approval",
+    "blocking_uncertainties": [
+      "U1",
+      "U2",
+      "U3",
+      "U4"
+    ]
+  }
+}
