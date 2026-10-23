@@ -1,0 +1,39 @@
+{
+  "object": "base_link",
+  "vertices": 8,
+  "polygons": 6,
+  "triangles": 0,
+  "quads": 6,
+  "ngons": 0,
+  "aabb_local": {
+    "min": [
+      -0.33514437079429626,
+      -0.33497539162635803,
+      -0.08789318054914474
+    ],
+    "max": [
+      0.33514294028282166,
+      0.33497515320777893,
+      0.08789318054914474
+    ]
+  },
+  "dims_local": [
+    0.6702873110771179,
+    0.669950544834137,
+    0.1757863610982895
+  ],
+  "box_volume_aabb": 0.07893850892209126,
+  "volume_local_tetra": 0.0789385022305855,
+  "volume_world_tetra": 0.07900623594017536,
+  "vol_vs_box_ratio": 0.9999999152314144,
+  "boundary_edges_open": 0,
+  "nonmanifold_edges": 0,
+  "duplicate_vertices": 0,
+  "duplicate_faces": 0,
+  "materials": [
+    "Mat_base_link"
+  ],
+  "verts_on_aabb_min": 7,
+  "verts_on_aabb_max": 7,
+  "interpretation": null
+}
