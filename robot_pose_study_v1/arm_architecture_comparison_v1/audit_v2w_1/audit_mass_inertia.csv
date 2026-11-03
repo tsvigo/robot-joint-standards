@@ -1,0 +1,181 @@
+side,сценарий,звено,класс,масса_кг,COM_x,COM_y,COM_z,Ixx,Iyy,Izz,статус,примечание
+L,lean,left_shoulder_link,shell,0.7967,3.792201,-1.400343,-4.561807,0.011488,0.002092,0.011482,ASSUMED,"полая оболочка 2 мм, ρ=2700 кг/м³"
+L,lean,left_forearm_link,shell,0.7047,3.792204,-1.027626,-4.561541,0.008052,0.001843,0.008039,ASSUMED,"полая оболочка 2 мм, ρ=2700 кг/м³"
+L,lean,left_palm_link,shell,0.2158,3.792207,-0.736954,-4.575504,0.000578,0.000356,0.000356,ASSUMED,"полая оболочка 2 мм, ρ=2700 кг/м³"
+L,lean,first_phalanx_left_thumb_link,hand,0.0124,3.792251,-0.631657,-4.483662,,,,DERIVED,доля бюджета пальцев 0.220 кг по объёму bbox (5.6 %); мешей 15
+L,lean,left_digit2_distal_phalanx,hand,0.0175,3.792253,-0.623458,-4.535191,,,,DERIVED,доля бюджета пальцев 0.220 кг по объёму bbox (8.0 %); мешей 15
+L,lean,left_digit2_middle_phalanx,hand,0.011,3.79225,-0.570374,-4.534326,,,,DERIVED,доля бюджета пальцев 0.220 кг по объёму bbox (5.0 %); мешей 15
+L,lean,left_digit2_proximal_phalanx,hand,0.008,3.792251,-0.53512,-4.534648,,,,DERIVED,доля бюджета пальцев 0.220 кг по объёму bbox (3.7 %); мешей 15
+L,lean,left_digit3_distal_phalanx,hand,0.0197,3.792248,-0.624496,-4.566671,,,,DERIVED,доля бюджета пальцев 0.220 кг по объёму bbox (9.0 %); мешей 15
+L,lean,left_digit3_middle_phalanx,hand,0.0124,3.792248,-0.56225,-4.566553,,,,DERIVED,доля бюджета пальцев 0.220 кг по объёму bbox (5.6 %); мешей 15
+L,lean,left_digit3_proximal_phalanx,hand,0.0088,3.792248,-0.510516,-4.566136,,,,DERIVED,доля бюджета пальцев 0.220 кг по объёму bbox (4.0 %); мешей 15
+L,lean,left_digit4_distal_phalanx,hand,0.0183,3.792252,-0.628359,-4.597197,,,,DERIVED,доля бюджета пальцев 0.220 кг по объёму bbox (8.3 %); мешей 15
+L,lean,left_digit4_middle_phalanx,hand,0.0117,3.792249,-0.567108,-4.597816,,,,DERIVED,доля бюджета пальцев 0.220 кг по объёму bbox (5.3 %); мешей 15
+L,lean,left_digit4_proximal_phalanx,hand,0.008,3.792248,-0.526196,-4.597197,,,,DERIVED,доля бюджета пальцев 0.220 кг по объёму bbox (3.7 %); мешей 15
+L,lean,left_digit5_distal_phalanx,hand,0.0153,3.792253,-0.626513,-4.62022,,,,DERIVED,доля бюджета пальцев 0.220 кг по объёму bbox (7.0 %); мешей 15
+L,lean,left_digit5_middle_phalanx,hand,0.0095,3.792253,-0.58118,-4.621363,,,,DERIVED,доля бюджета пальцев 0.220 кг по объёму bbox (4.3 %); мешей 15
+L,lean,left_digit5_proximal_phalanx,hand,0.0073,3.792251,-0.547525,-4.620744,,,,DERIVED,доля бюджета пальцев 0.220 кг по объёму bbox (3.3 %); мешей 15
+L,lean,second_phalanx_left_thumb_link,hand,0.0146,3.792251,-0.681571,-4.48219,,,,DERIVED,доля бюджета пальцев 0.220 кг по объёму bbox (6.6 %); мешей 15
+L,lean,third_phalanx_left_thumb_link,hand,0.0454,3.792252,-0.747714,-4.483224,,,,DERIVED,доля бюджета пальцев 0.220 кг по объёму bbox (20.6 %); мешей 15
+L,lean,L_hand_unknown,hand_unknown,0.0,3.792207,-0.736954,-4.575504,,,,UNKNOWN,механизмы/приводы пальцев и захватные поверхности — UNKNOWN
+L,lean,left_shoulder_link__ribs,ribs,0.05,3.792201,-1.400343,-4.561807,,,,ASSUMED,A04: перегородки+рёбра
+L,lean,left_forearm_link__ribs,ribs,0.05,3.792204,-1.027626,-4.561541,,,,ASSUMED,A04: перегородки+рёбра
+L,lean,left_shoulder_link__cable,cable,0.06,3.792201,-1.400343,-4.561807,,,,ASSUMED,A14: половина трассы
+L,lean,left_forearm_link__cable,cable,0.06,3.792204,-1.027626,-4.561541,,,,ASSUMED,A14: половина трассы
+L,lean,L_act_sh3,actuator,12.81,3.772351,-1.710971,-4.561809,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+L,lean,L_act_sh2,actuator,12.07,3.772351,-1.662502,-4.561297,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+L,lean,L_act_sh1,actuator,12.07,3.772351,-1.610971,-4.560788,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+L,lean,L_act_el,actuator,12.81,3.792201,-1.209357,-4.559339,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+L,lean,L_act_rad,actuator,0.3,3.791164,-0.957482,-4.560872,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+L,lean,L_act_w1,actuator,0.3,3.792202,-0.84757,-4.559119,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+L,lean,L_act_w2,actuator,0.3,3.792207,-0.811089,-4.568344,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+L,nominal,left_shoulder_link,shell,1.1776,3.792201,-1.400343,-4.561807,0.016846,0.003028,0.016837,ASSUMED,"полая оболочка 3 мм, ρ=2700 кг/м³"
+L,nominal,left_forearm_link,shell,1.0412,3.792204,-1.027626,-4.561541,0.011789,0.002667,0.011771,ASSUMED,"полая оболочка 3 мм, ρ=2700 кг/м³"
+L,nominal,left_palm_link,shell,0.3156,3.792207,-0.736954,-4.575504,0.000828,0.000508,0.000508,ASSUMED,"полая оболочка 3 мм, ρ=2700 кг/м³"
+L,nominal,first_phalanx_left_thumb_link,hand,0.0169,3.792251,-0.631657,-4.483662,,,,DERIVED,доля бюджета пальцев 0.300 кг по объёму bbox (5.6 %); мешей 15
+L,nominal,left_digit2_distal_phalanx,hand,0.0239,3.792253,-0.623458,-4.535191,,,,DERIVED,доля бюджета пальцев 0.300 кг по объёму bbox (8.0 %); мешей 15
+L,nominal,left_digit2_middle_phalanx,hand,0.0149,3.79225,-0.570374,-4.534326,,,,DERIVED,доля бюджета пальцев 0.300 кг по объёму bbox (5.0 %); мешей 15
+L,nominal,left_digit2_proximal_phalanx,hand,0.011,3.792251,-0.53512,-4.534648,,,,DERIVED,доля бюджета пальцев 0.300 кг по объёму bbox (3.7 %); мешей 15
+L,nominal,left_digit3_distal_phalanx,hand,0.0269,3.792248,-0.624496,-4.566671,,,,DERIVED,доля бюджета пальцев 0.300 кг по объёму bbox (9.0 %); мешей 15
+L,nominal,left_digit3_middle_phalanx,hand,0.0169,3.792248,-0.56225,-4.566553,,,,DERIVED,доля бюджета пальцев 0.300 кг по объёму bbox (5.6 %); мешей 15
+L,nominal,left_digit3_proximal_phalanx,hand,0.012,3.792248,-0.510516,-4.566136,,,,DERIVED,доля бюджета пальцев 0.300 кг по объёму bbox (4.0 %); мешей 15
+L,nominal,left_digit4_distal_phalanx,hand,0.0249,3.792252,-0.628359,-4.597197,,,,DERIVED,доля бюджета пальцев 0.300 кг по объёму bbox (8.3 %); мешей 15
+L,nominal,left_digit4_middle_phalanx,hand,0.0159,3.792249,-0.567108,-4.597816,,,,DERIVED,доля бюджета пальцев 0.300 кг по объёму bbox (5.3 %); мешей 15
+L,nominal,left_digit4_proximal_phalanx,hand,0.011,3.792248,-0.526196,-4.597197,,,,DERIVED,доля бюджета пальцев 0.300 кг по объёму bbox (3.7 %); мешей 15
+L,nominal,left_digit5_distal_phalanx,hand,0.0209,3.792253,-0.626513,-4.62022,,,,DERIVED,доля бюджета пальцев 0.300 кг по объёму bbox (7.0 %); мешей 15
+L,nominal,left_digit5_middle_phalanx,hand,0.0129,3.792253,-0.58118,-4.621363,,,,DERIVED,доля бюджета пальцев 0.300 кг по объёму bbox (4.3 %); мешей 15
+L,nominal,left_digit5_proximal_phalanx,hand,0.01,3.792251,-0.547525,-4.620744,,,,DERIVED,доля бюджета пальцев 0.300 кг по объёму bbox (3.3 %); мешей 15
+L,nominal,second_phalanx_left_thumb_link,hand,0.0199,3.792251,-0.681571,-4.48219,,,,DERIVED,доля бюджета пальцев 0.300 кг по объёму bbox (6.6 %); мешей 15
+L,nominal,third_phalanx_left_thumb_link,hand,0.0619,3.792252,-0.747714,-4.483224,,,,DERIVED,доля бюджета пальцев 0.300 кг по объёму bbox (20.6 %); мешей 15
+L,nominal,L_hand_unknown,hand_unknown,0.0,3.792207,-0.736954,-4.575504,,,,UNKNOWN,механизмы/приводы пальцев и захватные поверхности — UNKNOWN
+L,nominal,left_shoulder_link__ribs,ribs,0.45,3.792201,-1.400343,-4.561807,,,,ASSUMED,A04: перегородки+рёбра
+L,nominal,left_forearm_link__ribs,ribs,0.41,3.792204,-1.027626,-4.561541,,,,ASSUMED,A04: перегородки+рёбра
+L,nominal,left_shoulder_link__cable,cable,0.115,3.792201,-1.400343,-4.561807,,,,ASSUMED,A14: половина трассы
+L,nominal,left_forearm_link__cable,cable,0.115,3.792204,-1.027626,-4.561541,,,,ASSUMED,A14: половина трассы
+L,nominal,L_act_sh3,actuator,25.61,3.772351,-1.710971,-4.561809,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+L,nominal,L_act_sh2,actuator,24.14,3.772351,-1.662502,-4.561297,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+L,nominal,L_act_sh1,actuator,24.14,3.772351,-1.610971,-4.560788,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+L,nominal,L_act_el,actuator,25.61,3.792201,-1.209357,-4.559339,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+L,nominal,L_act_rad,actuator,0.6,3.791164,-0.957482,-4.560872,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+L,nominal,L_act_w1,actuator,0.6,3.792202,-0.84757,-4.559119,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+L,nominal,L_act_w2,actuator,0.6,3.792207,-0.811089,-4.568344,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+L,heavy,left_shoulder_link,shell,3.4238,3.792201,-1.400343,-4.561807,0.048979,0.008804,0.048952,ASSUMED,"полая оболочка 3 мм, ρ=7850 кг/м³"
+L,heavy,left_forearm_link,shell,3.0272,3.792204,-1.027626,-4.561541,0.034274,0.007753,0.034222,ASSUMED,"полая оболочка 3 мм, ρ=7850 кг/м³"
+L,heavy,left_palm_link,shell,0.9175,3.792207,-0.736954,-4.575504,0.002409,0.001477,0.001477,ASSUMED,"полая оболочка 3 мм, ρ=7850 кг/м³"
+L,heavy,first_phalanx_left_thumb_link,hand,0.0497,3.792251,-0.631657,-4.483662,,,,DERIVED,доля бюджета пальцев 0.880 кг по объёму bbox (5.6 %); мешей 15
+L,heavy,left_digit2_distal_phalanx,hand,0.0702,3.792253,-0.623458,-4.535191,,,,DERIVED,доля бюджета пальцев 0.880 кг по объёму bbox (8.0 %); мешей 15
+L,heavy,left_digit2_middle_phalanx,hand,0.0438,3.79225,-0.570374,-4.534326,,,,DERIVED,доля бюджета пальцев 0.880 кг по объёму bbox (5.0 %); мешей 15
+L,heavy,left_digit2_proximal_phalanx,hand,0.0322,3.792251,-0.53512,-4.534648,,,,DERIVED,доля бюджета пальцев 0.880 кг по объёму bbox (3.7 %); мешей 15
+L,heavy,left_digit3_distal_phalanx,hand,0.0789,3.792248,-0.624496,-4.566671,,,,DERIVED,доля бюджета пальцев 0.880 кг по объёму bbox (9.0 %); мешей 15
+L,heavy,left_digit3_middle_phalanx,hand,0.0497,3.792248,-0.56225,-4.566553,,,,DERIVED,доля бюджета пальцев 0.880 кг по объёму bbox (5.6 %); мешей 15
+L,heavy,left_digit3_proximal_phalanx,hand,0.0351,3.792248,-0.510516,-4.566136,,,,DERIVED,доля бюджета пальцев 0.880 кг по объёму bbox (4.0 %); мешей 15
+L,heavy,left_digit4_distal_phalanx,hand,0.0731,3.792252,-0.628359,-4.597197,,,,DERIVED,доля бюджета пальцев 0.880 кг по объёму bbox (8.3 %); мешей 15
+L,heavy,left_digit4_middle_phalanx,hand,0.0468,3.792249,-0.567108,-4.597816,,,,DERIVED,доля бюджета пальцев 0.880 кг по объёму bbox (5.3 %); мешей 15
+L,heavy,left_digit4_proximal_phalanx,hand,0.0322,3.792248,-0.526196,-4.597197,,,,DERIVED,доля бюджета пальцев 0.880 кг по объёму bbox (3.7 %); мешей 15
+L,heavy,left_digit5_distal_phalanx,hand,0.0613,3.792253,-0.626513,-4.62022,,,,DERIVED,доля бюджета пальцев 0.880 кг по объёму bbox (7.0 %); мешей 15
+L,heavy,left_digit5_middle_phalanx,hand,0.0379,3.792253,-0.58118,-4.621363,,,,DERIVED,доля бюджета пальцев 0.880 кг по объёму bbox (4.3 %); мешей 15
+L,heavy,left_digit5_proximal_phalanx,hand,0.0292,3.792251,-0.547525,-4.620744,,,,DERIVED,доля бюджета пальцев 0.880 кг по объёму bbox (3.3 %); мешей 15
+L,heavy,second_phalanx_left_thumb_link,hand,0.0585,3.792251,-0.681571,-4.48219,,,,DERIVED,доля бюджета пальцев 0.880 кг по объёму bbox (6.6 %); мешей 15
+L,heavy,third_phalanx_left_thumb_link,hand,0.1815,3.792252,-0.747714,-4.483224,,,,DERIVED,доля бюджета пальцев 0.880 кг по объёму bbox (20.6 %); мешей 15
+L,heavy,L_hand_unknown,hand_unknown,0.0,3.792207,-0.736954,-4.575504,,,,UNKNOWN,механизмы/приводы пальцев и захватные поверхности — UNKNOWN
+L,heavy,left_shoulder_link__ribs,ribs,2.61,3.792201,-1.400343,-4.561807,,,,ASSUMED,A04: перегородки+рёбра
+L,heavy,left_forearm_link__ribs,ribs,2.35,3.792204,-1.027626,-4.561541,,,,ASSUMED,A04: перегородки+рёбра
+L,heavy,left_shoulder_link__cable,cable,0.23,3.792201,-1.400343,-4.561807,,,,ASSUMED,A14: половина трассы
+L,heavy,left_forearm_link__cable,cable,0.23,3.792204,-1.027626,-4.561541,,,,ASSUMED,A14: половина трассы
+L,heavy,L_act_sh3,actuator,51.22,3.772351,-1.710971,-4.561809,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+L,heavy,L_act_sh2,actuator,48.28,3.772351,-1.662502,-4.561297,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+L,heavy,L_act_sh1,actuator,48.28,3.772351,-1.610971,-4.560788,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+L,heavy,L_act_el,actuator,51.22,3.792201,-1.209357,-4.559339,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+L,heavy,L_act_rad,actuator,1.2,3.791164,-0.957482,-4.560872,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+L,heavy,L_act_w1,actuator,1.2,3.792202,-0.84757,-4.559119,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+L,heavy,L_act_w2,actuator,1.2,3.792207,-0.811089,-4.568344,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+R,lean,right_shoulder_link,shell,0.8874,3.779537,-2.339234,-4.559845,0.013783,0.00269,0.01377,ASSUMED,"полая оболочка 2 мм, ρ=2700 кг/м³"
+R,lean,right_forearm_link,shell,0.7703,3.779542,-2.741847,-4.552919,0.009204,0.00231,0.009193,ASSUMED,"полая оболочка 2 мм, ρ=2700 кг/м³"
+R,lean,right_palm_link,shell,0.1979,3.779544,-3.018193,-4.558332,0.000536,0.000298,0.000298,ASSUMED,"полая оболочка 2 мм, ρ=2700 кг/м³"
+R,lean,first_phalanx_right_thumb_link,hand,0.0123,3.779539,-3.100998,-4.466346,,,,DERIVED,доля бюджета пальцев 0.230 кг по объёму bbox (5.3 %); мешей 15
+R,lean,right_digit2_distal_phalanx,hand,0.0172,3.77954,-3.118125,-4.51205,,,,DERIVED,доля бюджета пальцев 0.230 кг по объёму bbox (7.5 %); мешей 15
+R,lean,right_digit2_middle_phalanx,hand,0.0108,3.77954,-3.1677,-4.511489,,,,DERIVED,доля бюджета пальцев 0.230 кг по объёму bbox (4.7 %); мешей 15
+R,lean,right_digit2_proximal_phalanx,hand,0.0079,3.779538,-3.202384,-4.511895,,,,DERIVED,доля бюджета пальцев 0.230 кг по объёму bbox (3.4 %); мешей 15
+R,lean,right_digit3_distal_phalanx,hand,0.0194,3.779542,-3.11974,-4.542209,,,,DERIVED,доля бюджета пальцев 0.230 кг по объёму bbox (8.4 %); мешей 15
+R,lean,right_digit3_middle_phalanx,hand,0.0122,3.77954,-3.172539,-4.542355,,,,DERIVED,доля бюджета пальцев 0.230 кг по объёму bbox (5.3 %); мешей 15
+R,lean,right_digit3_proximal_phalanx,hand,0.0087,3.779539,-3.211762,-4.54355,,,,DERIVED,доля бюджета пальцев 0.230 кг по объёму bbox (3.8 %); мешей 15
+R,lean,right_digit4_distal_phalanx,hand,0.018,3.779542,-3.117386,-4.571258,,,,DERIVED,доля бюджета пальцев 0.230 кг по объёму bbox (7.8 %); мешей 15
+R,lean,right_digit4_middle_phalanx,hand,0.0115,3.779541,-3.166479,-4.572468,,,,DERIVED,доля бюджета пальцев 0.230 кг по объёму bbox (5.0 %); мешей 15
+R,lean,right_digit4_proximal_phalanx,hand,0.0079,3.779541,-3.204331,-4.5737,,,,DERIVED,доля бюджета пальцев 0.230 кг по объёму bbox (3.4 %); мешей 15
+R,lean,right_digit5_distal_phalanx,hand,0.0151,3.779544,-3.110552,-4.599023,,,,DERIVED,доля бюджета пальцев 0.230 кг по объёму bbox (6.6 %); мешей 15
+R,lean,right_digit5_middle_phalanx,hand,0.0093,3.779544,-3.153351,-4.59917,,,,DERIVED,доля бюджета пальцев 0.230 кг по объёму bbox (4.1 %); мешей 15
+R,lean,right_digit5_proximal_phalanx,hand,0.0072,3.77954,-3.185332,-4.599713,,,,DERIVED,доля бюджета пальцев 0.230 кг по объёму bbox (3.1 %); мешей 15
+R,lean,second_phalanx_right_thumb_link,hand,0.0145,3.779541,-3.05299,-4.466449,,,,DERIVED,доля бюджета пальцев 0.230 кг по объёму bbox (6.3 %); мешей 15
+R,lean,third_phalanx_right_thumb_link,hand,0.0581,3.779542,-2.997804,-4.467854,,,,DERIVED,доля бюджета пальцев 0.230 кг по объёму bbox (25.3 %); мешей 15
+R,lean,R_hand_unknown,hand_unknown,0.0,3.779544,-3.018193,-4.558332,,,,UNKNOWN,механизмы/приводы пальцев и захватные поверхности — UNKNOWN
+R,lean,right_shoulder_link__ribs,ribs,0.05,3.779537,-2.339234,-4.559845,,,,ASSUMED,A04: перегородки+рёбра
+R,lean,right_forearm_link__ribs,ribs,0.05,3.779542,-2.741847,-4.552919,,,,ASSUMED,A04: перегородки+рёбра
+R,lean,right_shoulder_link__cable,cable,0.065,3.779537,-2.339234,-4.559845,,,,ASSUMED,A14: половина трассы
+R,lean,right_forearm_link__cable,cable,0.065,3.779542,-2.741847,-4.552919,,,,ASSUMED,A14: половина трассы
+R,lean,R_act_sh3,actuator,13.16,3.779664,-2.014746,-4.558747,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+R,lean,R_act_sh2,actuator,12.47,3.779665,-2.063215,-4.558236,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+R,lean,R_act_sh1,actuator,12.47,3.779664,-2.114746,-4.557726,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+R,lean,R_act_el,actuator,13.16,3.779537,-2.544408,-4.557245,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+R,lean,R_act_rad,actuator,0.3,3.778485,-2.820695,-4.552513,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+R,lean,R_act_w1,actuator,0.23,3.779534,-2.913791,-4.549999,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+R,lean,R_act_w2,actuator,0.23,3.779539,-2.946454,-4.550828,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+R,nominal,right_shoulder_link,shell,1.3128,3.779537,-2.339234,-4.559845,0.020234,0.003903,0.020215,ASSUMED,"полая оболочка 3 мм, ρ=2700 кг/м³"
+R,nominal,right_forearm_link,shell,1.139,3.779542,-2.741847,-4.552919,0.013489,0.00335,0.013473,ASSUMED,"полая оболочка 3 мм, ρ=2700 кг/м³"
+R,nominal,right_palm_link,shell,0.2889,3.779544,-3.018193,-4.558332,0.000765,0.000424,0.000424,ASSUMED,"полая оболочка 3 мм, ρ=2700 кг/м³"
+R,nominal,first_phalanx_right_thumb_link,hand,0.0165,3.779539,-3.100998,-4.466346,,,,DERIVED,доля бюджета пальцев 0.310 кг по объёму bbox (5.3 %); мешей 15
+R,nominal,right_digit2_distal_phalanx,hand,0.0232,3.77954,-3.118125,-4.51205,,,,DERIVED,доля бюджета пальцев 0.310 кг по объёму bbox (7.5 %); мешей 15
+R,nominal,right_digit2_middle_phalanx,hand,0.0145,3.77954,-3.1677,-4.511489,,,,DERIVED,доля бюджета пальцев 0.310 кг по объёму bbox (4.7 %); мешей 15
+R,nominal,right_digit2_proximal_phalanx,hand,0.0107,3.779538,-3.202384,-4.511895,,,,DERIVED,доля бюджета пальцев 0.310 кг по объёму bbox (3.4 %); мешей 15
+R,nominal,right_digit3_distal_phalanx,hand,0.0261,3.779542,-3.11974,-4.542209,,,,DERIVED,доля бюджета пальцев 0.310 кг по объёму bbox (8.4 %); мешей 15
+R,nominal,right_digit3_middle_phalanx,hand,0.0165,3.77954,-3.172539,-4.542355,,,,DERIVED,доля бюджета пальцев 0.310 кг по объёму bbox (5.3 %); мешей 15
+R,nominal,right_digit3_proximal_phalanx,hand,0.0117,3.779539,-3.211762,-4.54355,,,,DERIVED,доля бюджета пальцев 0.310 кг по объёму bbox (3.8 %); мешей 15
+R,nominal,right_digit4_distal_phalanx,hand,0.0242,3.779542,-3.117386,-4.571258,,,,DERIVED,доля бюджета пальцев 0.310 кг по объёму bbox (7.8 %); мешей 15
+R,nominal,right_digit4_middle_phalanx,hand,0.0155,3.779541,-3.166479,-4.572468,,,,DERIVED,доля бюджета пальцев 0.310 кг по объёму bbox (5.0 %); мешей 15
+R,nominal,right_digit4_proximal_phalanx,hand,0.0107,3.779541,-3.204331,-4.5737,,,,DERIVED,доля бюджета пальцев 0.310 кг по объёму bbox (3.4 %); мешей 15
+R,nominal,right_digit5_distal_phalanx,hand,0.0203,3.779544,-3.110552,-4.599023,,,,DERIVED,доля бюджета пальцев 0.310 кг по объёму bbox (6.6 %); мешей 15
+R,nominal,right_digit5_middle_phalanx,hand,0.0126,3.779544,-3.153351,-4.59917,,,,DERIVED,доля бюджета пальцев 0.310 кг по объёму bbox (4.1 %); мешей 15
+R,nominal,right_digit5_proximal_phalanx,hand,0.0097,3.77954,-3.185332,-4.599713,,,,DERIVED,доля бюджета пальцев 0.310 кг по объёму bbox (3.1 %); мешей 15
+R,nominal,second_phalanx_right_thumb_link,hand,0.0195,3.779541,-3.05299,-4.466449,,,,DERIVED,доля бюджета пальцев 0.310 кг по объёму bbox (6.3 %); мешей 15
+R,nominal,third_phalanx_right_thumb_link,hand,0.0783,3.779542,-2.997804,-4.467854,,,,DERIVED,доля бюджета пальцев 0.310 кг по объёму bbox (25.3 %); мешей 15
+R,nominal,R_hand_unknown,hand_unknown,0.0,3.779544,-3.018193,-4.558332,,,,UNKNOWN,механизмы/приводы пальцев и захватные поверхности — UNKNOWN
+R,nominal,right_shoulder_link__ribs,ribs,0.5,3.779537,-2.339234,-4.559845,,,,ASSUMED,A04: перегородки+рёбра
+R,nominal,right_forearm_link__ribs,ribs,0.45,3.779542,-2.741847,-4.552919,,,,ASSUMED,A04: перегородки+рёбра
+R,nominal,right_shoulder_link__cable,cable,0.12,3.779537,-2.339234,-4.559845,,,,ASSUMED,A14: половина трассы
+R,nominal,right_forearm_link__cable,cable,0.12,3.779542,-2.741847,-4.552919,,,,ASSUMED,A14: половина трассы
+R,nominal,R_act_sh3,actuator,26.33,3.779664,-2.014746,-4.558747,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+R,nominal,R_act_sh2,actuator,24.94,3.779665,-2.063215,-4.558236,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+R,nominal,R_act_sh1,actuator,24.94,3.779664,-2.114746,-4.557726,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+R,nominal,R_act_el,actuator,26.33,3.779537,-2.544408,-4.557245,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+R,nominal,R_act_rad,actuator,0.6,3.778485,-2.820695,-4.552513,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+R,nominal,R_act_w1,actuator,0.46,3.779534,-2.913791,-4.549999,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+R,nominal,R_act_w2,actuator,0.46,3.779539,-2.946454,-4.550828,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+R,heavy,right_shoulder_link,shell,3.817,3.779537,-2.339234,-4.559845,0.058828,0.011347,0.058772,ASSUMED,"полая оболочка 3 мм, ρ=7850 кг/м³"
+R,heavy,right_forearm_link,shell,3.3116,3.779542,-2.741847,-4.552919,0.039217,0.00974,0.039172,ASSUMED,"полая оболочка 3 мм, ρ=7850 кг/м³"
+R,heavy,right_palm_link,shell,0.84,3.779544,-3.018193,-4.558332,0.002225,0.001234,0.001234,ASSUMED,"полая оболочка 3 мм, ρ=7850 кг/м³"
+R,heavy,first_phalanx_right_thumb_link,hand,0.0485,3.779539,-3.100998,-4.466346,,,,DERIVED,доля бюджета пальцев 0.910 кг по объёму bbox (5.3 %); мешей 15
+R,heavy,right_digit2_distal_phalanx,hand,0.0682,3.77954,-3.118125,-4.51205,,,,DERIVED,доля бюджета пальцев 0.910 кг по объёму bbox (7.5 %); мешей 15
+R,heavy,right_digit2_middle_phalanx,hand,0.0426,3.77954,-3.1677,-4.511489,,,,DERIVED,доля бюджета пальцев 0.910 кг по объёму bbox (4.7 %); мешей 15
+R,heavy,right_digit2_proximal_phalanx,hand,0.0314,3.779538,-3.202384,-4.511895,,,,DERIVED,доля бюджета пальцев 0.910 кг по объёму bbox (3.4 %); мешей 15
+R,heavy,right_digit3_distal_phalanx,hand,0.0768,3.779542,-3.11974,-4.542209,,,,DERIVED,доля бюджета пальцев 0.910 кг по объёму bbox (8.4 %); мешей 15
+R,heavy,right_digit3_middle_phalanx,hand,0.0483,3.77954,-3.172539,-4.542355,,,,DERIVED,доля бюджета пальцев 0.910 кг по объёму bbox (5.3 %); мешей 15
+R,heavy,right_digit3_proximal_phalanx,hand,0.0343,3.779539,-3.211762,-4.54355,,,,DERIVED,доля бюджета пальцев 0.910 кг по объёму bbox (3.8 %); мешей 15
+R,heavy,right_digit4_distal_phalanx,hand,0.0711,3.779542,-3.117386,-4.571258,,,,DERIVED,доля бюджета пальцев 0.910 кг по объёму bbox (7.8 %); мешей 15
+R,heavy,right_digit4_middle_phalanx,hand,0.0455,3.779541,-3.166479,-4.572468,,,,DERIVED,доля бюджета пальцев 0.910 кг по объёму bbox (5.0 %); мешей 15
+R,heavy,right_digit4_proximal_phalanx,hand,0.0313,3.779541,-3.204331,-4.5737,,,,DERIVED,доля бюджета пальцев 0.910 кг по объёму bbox (3.4 %); мешей 15
+R,heavy,right_digit5_distal_phalanx,hand,0.0597,3.779544,-3.110552,-4.599023,,,,DERIVED,доля бюджета пальцев 0.910 кг по объёму bbox (6.6 %); мешей 15
+R,heavy,right_digit5_middle_phalanx,hand,0.0369,3.779544,-3.153351,-4.59917,,,,DERIVED,доля бюджета пальцев 0.910 кг по объёму bbox (4.1 %); мешей 15
+R,heavy,right_digit5_proximal_phalanx,hand,0.0285,3.77954,-3.185332,-4.599713,,,,DERIVED,доля бюджета пальцев 0.910 кг по объёму bbox (3.1 %); мешей 15
+R,heavy,second_phalanx_right_thumb_link,hand,0.0572,3.779541,-3.05299,-4.466449,,,,DERIVED,доля бюджета пальцев 0.910 кг по объёму bbox (6.3 %); мешей 15
+R,heavy,third_phalanx_right_thumb_link,hand,0.2298,3.779542,-2.997804,-4.467854,,,,DERIVED,доля бюджета пальцев 0.910 кг по объёму bbox (25.3 %); мешей 15
+R,heavy,R_hand_unknown,hand_unknown,0.0,3.779544,-3.018193,-4.558332,,,,UNKNOWN,механизмы/приводы пальцев и захватные поверхности — UNKNOWN
+R,heavy,right_shoulder_link__ribs,ribs,2.93,3.779537,-2.339234,-4.559845,,,,ASSUMED,A04: перегородки+рёбра
+R,heavy,right_forearm_link__ribs,ribs,2.6,3.779542,-2.741847,-4.552919,,,,ASSUMED,A04: перегородки+рёбра
+R,heavy,right_shoulder_link__cable,cable,0.24,3.779537,-2.339234,-4.559845,,,,ASSUMED,A14: половина трассы
+R,heavy,right_forearm_link__cable,cable,0.24,3.779542,-2.741847,-4.552919,,,,ASSUMED,A14: половина трассы
+R,heavy,R_act_sh3,actuator,52.66,3.779664,-2.014746,-4.558747,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+R,heavy,R_act_sh2,actuator,49.88,3.779665,-2.063215,-4.558236,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+R,heavy,R_act_sh1,actuator,49.88,3.779664,-2.114746,-4.557726,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+R,heavy,R_act_el,actuator,52.66,3.779537,-2.544408,-4.557245,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+R,heavy,R_act_rad,actuator,1.2,3.778485,-2.820695,-4.552513,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+R,heavy,R_act_w1,actuator,0.92,3.779534,-2.913791,-4.549999,,,,ASSUMED,A05 k·T*; узел целиком у сустава
+R,heavy,R_act_w2,actuator,0.92,3.779539,-2.946454,-4.550828,,,,ASSUMED,A05 k·T*; узел целиком у сустава
