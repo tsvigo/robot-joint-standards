@@ -1,0 +1,161 @@
+{
+ "results": [
+  {
+   "id": "SHA_stage2g_base.FCStd",
+   "ok": true,
+   "detail": "6fbfa072e403ff6c == 6fbfa072e403ff6c"
+  },
+  {
+   "id": "SHA_stage2g_base_v2.FCStd",
+   "ok": true,
+   "detail": "396d75aa1d9c3331 == 396d75aa1d9c3331"
+  },
+  {
+   "id": "SHA_stage2g_v3_layout.FCStd",
+   "ok": true,
+   "detail": "60f7ae157c61f8ba == 60f7ae157c61f8ba"
+  },
+  {
+   "id": "SHA_stage2g_v4_round.FCStd",
+   "ok": true,
+   "detail": "b485de27a27cc03f == b485de27a27cc03f"
+  },
+  {
+   "id": "SHA_stage2g_v5_compare.FCStd",
+   "ok": true,
+   "detail": "f39201567df7d09b == f39201567df7d09b"
+  },
+  {
+   "id": "SHA_stage2g_v6_variants.FCStd",
+   "ok": true,
+   "detail": "85f504b0ba8dbc9b == 85f504b0ba8dbc9b"
+  },
+  {
+   "id": "SHA_blender",
+   "ok": true,
+   "detail": "1ae88879af076b1a == 1ae88879af076b1a"
+  },
+  {
+   "id": "K_checks",
+   "ok": true,
+   "detail": "5/5 проверок SI"
+  },
+  {
+   "id": "K_SI_scale",
+   "ok": true,
+   "detail": "ω(1 м/с) = [-8.333333, 8.333333, 8.333333, -8.333333] == ±v/r = ±8.333 (ловушка v7 0.0083 закрыта)"
+  },
+  {
+   "id": "K_rotate",
+   "ok": true,
+   "detail": "ω_вращение == R_C/r = 1.846 (значение −2.87 отчёта v7 признано ошибкой ввода)"
+  },
+  {
+   "id": "K_rank16",
+   "ok": true,
+   "detail": "сингулярны только LRLR/RLRL; LLLL/RRRR ранг 3, cond 1.129"
+  },
+  {
+   "id": "P_24V",
+   "ok": true,
+   "detail": "24В: P_out=217.0≈220 (Δ1.4%), η_calc=0.706≈0.70 — точка согласована"
+  },
+  {
+   "id": "P_440_as_elec_absurd",
+   "ok": true,
+   "detail": "электрическая трактовка 220/330/440 дала бы η=0.99-1.01 => трактовка отвергнута"
+  },
+  {
+   "id": "P_180_incompatible",
+   "ok": true,
+   "detail": "180 Вт (P2) несовместим с 74 Н·м×56 об/мин при любой трактовке"
+  },
+  {
+   "id": "P_error_fix",
+   "ok": true,
+   "detail": "ошибка v7 «440≥493 при η=88%» зафиксирована и исправлена"
+  },
+  {
+   "id": "P_encoder_conflict",
+   "ok": true,
+   "detail": "противоречие энкодеров 4096/4384 в таблице"
+  },
+  {
+   "id": "P_peak",
+   "ok": true,
+   "detail": "140 Н·м vs 4×37.1=148.4: отношение 0.943 ≈ η_редуктора 94%"
+  },
+  {
+   "id": "M_no_cabin",
+   "ok": true,
+   "detail": "кабина 1100×2100 исключена из бюджета робота"
+  },
+  {
+   "id": "M_confusion",
+   "ok": true,
+   "detail": "величины A (больничный лифт) / B (подъёмник робота) / C (масса) / D (нагрузка) разделены"
+  },
+  {
+   "id": "M_old_range_retired",
+   "ok": true,
+   "detail": "диапазон 263-663 кг признан неподтверждённым"
+  },
+  {
+   "id": "M_confirmed_only_modules",
+   "ok": true,
+   "detail": "подтверждено только 100 кг (4 модуля); итог массы не определён"
+  },
+  {
+   "id": "S_checks",
+   "ok": true,
+   "detail": "4/4 проверок"
+  },
+  {
+   "id": "S_hold_etalon",
+   "ok": true,
+   "detail": "эталон удержания τ = F·r/4 = 5.89 Н·м (виртуальная работа)"
+  },
+  {
+   "id": "S_hold_118_explained",
+   "ok": true,
+   "detail": "11.8 Н·м = F·r/2: все три гипотезы ×2 дают ровно 11.77"
+  },
+  {
+   "id": "S_84_is_model",
+   "ok": true,
+   "detail": "84 мм (v7) и 110.8 мм — результаты моделей контуров, не универсальные пределы"
+  },
+  {
+   "id": "S_terms",
+   "ok": true,
+   "detail": "термин «гарантированный» отозван -> «консервативный по модели»"
+  },
+  {
+   "id": "S_no_power",
+   "ok": true,
+   "detail": "торможение без питания: 3 сценария по типу редуктора (все — в запрос RoboCT)"
+  },
+  {
+   "id": "C_scenarios",
+   "ok": true,
+   "detail": "4 сценария (все+30 / одиночный / диагональный / разнокрайний) — пересечений нет, min 10 мм"
+  },
+  {
+   "id": "C_clearance",
+   "ok": true,
+   "detail": "просвет транспорта = 8 мм (блоки аутригеров) — риск для перепадов пола, не закрыт"
+  },
+  {
+   "id": "C_cables",
+   "ok": true,
+   "detail": "кабели/крепления — пробел, в запрос RoboCT"
+  },
+  {
+   "id": "MIT_text",
+   "ok": true,
+   "detail": "текст тезиса извлечён (55333 байт) из локального PDF пользователя"
+  }
+ ],
+ "passed": 31,
+ "failed": 0
+}

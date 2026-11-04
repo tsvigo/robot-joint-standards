@@ -1,0 +1,249 @@
+side,сценарий,звено,класс,масса_кг,масса_stored_кг,COM_x_м,COM_y_м,COM_z_м,COM_источник,dims_x_мм,dims_y_мм,dims_z_мм,Ixx_кгм2,Iyy_кгм2,Izz_кгм2,статус,примечание
+L,lean,left_shoulder_link,shell,0.7967,2.7227,3.792201,-1.400343,-4.561807,"центр bbox (ASSUMED, A03)",93.2,360.1,93.5,0.009188,0.001157,0.009184,ASSUMED,оболочка Al 2 мм по bbox; stored=2.722734652343206 кг (категория ③)
+L,lean,left_forearm_link,shell,0.7047,2.7227,3.792204,-1.027626,-4.561541,"центр bbox (ASSUMED, A03)",93.1,312.7,93.9,0.006259,0.001027,0.00625,ASSUMED,оболочка Al 2 мм по bbox; stored=2.722734652343206 кг (категория ③)
+L,lean,left_palm_link,shell,0.2158,0.3355,3.792207,-0.736954,-4.575504,"центр bbox (ASSUMED, A03)",43.9,107.5,107.5,0.000416,0.000242,0.000242,ASSUMED,оболочка Al 2 мм по bbox; stored=0.335472656805222 кг (категория ③)
+L,lean,first_phalanx_left_thumb_link,hand,0.0062,,3.792251,-0.631657,-4.483662,"центр bbox (ASSUMED, A03)",20.3,34.0,15.0,,,,DERIVED,доля массы пальцев 0.220 кг по объёму bbox (2.8 %); механизмы/приводы пальцев UNKNOWN
+L,lean,first_phalanx_left_thumb_link_collision,hand,0.0083,,3.708359,-0.839915,-4.471467,"центр bbox (ASSUMED, A03)",20.3,45.2,15.0,,,,DERIVED,доля массы пальцев 0.220 кг по объёму bbox (3.8 %); механизмы/приводы пальцев UNKNOWN
+L,lean,first_phalanx_right_thumb_link,hand,0.0062,,3.779539,-3.100998,-4.466346,"центр bbox (ASSUMED, A03)",20.8,34.0,14.6,,,,DERIVED,доля массы пальцев 0.220 кг по объёму bbox (2.8 %); механизмы/приводы пальцев UNKNOWN
+L,lean,first_phalanx_right_thumb_link_collision,hand,0.0079,,3.708358,-2.876448,-4.481726,"центр bbox (ASSUMED, A03)",20.8,43.8,14.5,,,,DERIVED,доля массы пальцев 0.220 кг по объёму bbox (3.6 %); механизмы/приводы пальцев UNKNOWN
+L,lean,left_digit2_distal_phalanx,hand,0.0088,,3.792253,-0.623458,-4.535191,"центр bbox (ASSUMED, A03)",20.3,48.0,15.0,,,,DERIVED,доля массы пальцев 0.220 кг по объёму bbox (4.0 %); механизмы/приводы пальцев UNKNOWN
+L,lean,left_digit2_middle_phalanx,hand,0.0055,,3.79225,-0.570374,-4.534326,"центр bbox (ASSUMED, A03)",20.3,30.0,15.0,,,,DERIVED,доля массы пальцев 0.220 кг по объёму bbox (2.5 %); механизмы/приводы пальцев UNKNOWN
+L,lean,left_digit2_proximal_phalanx,hand,0.004,,3.792251,-0.53512,-4.534648,"центр bbox (ASSUMED, A03)",20.3,22.0,15.0,,,,DERIVED,доля массы пальцев 0.220 кг по объёму bbox (1.8 %); механизмы/приводы пальцев UNKNOWN
+L,lean,left_digit3_distal_phalanx,hand,0.0099,,3.792248,-0.624496,-4.566671,"центр bbox (ASSUMED, A03)",20.3,54.0,15.0,,,,DERIVED,доля массы пальцев 0.220 кг по объёму bbox (4.5 %); механизмы/приводы пальцев UNKNOWN
+L,lean,left_digit3_middle_phalanx,hand,0.0062,,3.792248,-0.56225,-4.566553,"центр bbox (ASSUMED, A03)",20.3,34.0,15.0,,,,DERIVED,доля массы пальцев 0.220 кг по объёму bbox (2.8 %); механизмы/приводы пальцев UNKNOWN
+L,lean,left_digit3_proximal_phalanx,hand,0.0044,,3.792248,-0.510516,-4.566136,"центр bbox (ASSUMED, A03)",20.3,24.0,15.0,,,,DERIVED,доля массы пальцев 0.220 кг по объёму bbox (2.0 %); механизмы/приводы пальцев UNKNOWN
+L,lean,left_digit4_distal_phalanx,hand,0.0092,,3.792252,-0.628359,-4.597197,"центр bbox (ASSUMED, A03)",20.3,50.0,15.0,,,,DERIVED,доля массы пальцев 0.220 кг по объёму bbox (4.2 %); механизмы/приводы пальцев UNKNOWN
+L,lean,left_digit4_middle_phalanx,hand,0.0059,,3.792249,-0.567108,-4.597816,"центр bbox (ASSUMED, A03)",20.3,32.0,15.0,,,,DERIVED,доля массы пальцев 0.220 кг по объёму bbox (2.7 %); механизмы/приводы пальцев UNKNOWN
+L,lean,left_digit4_proximal_phalanx,hand,0.004,,3.792248,-0.526196,-4.597197,"центр bbox (ASSUMED, A03)",20.3,22.0,15.0,,,,DERIVED,доля массы пальцев 0.220 кг по объёму bbox (1.8 %); механизмы/приводы пальцев UNKNOWN
+L,lean,left_digit5_distal_phalanx,hand,0.0077,,3.792253,-0.626513,-4.62022,"центр bbox (ASSUMED, A03)",20.4,42.0,15.0,,,,DERIVED,доля массы пальцев 0.220 кг по объёму bbox (3.5 %); механизмы/приводы пальцев UNKNOWN
+L,lean,left_digit5_middle_phalanx,hand,0.0048,,3.792253,-0.58118,-4.621363,"центр bbox (ASSUMED, A03)",20.4,26.0,15.0,,,,DERIVED,доля массы пальцев 0.220 кг по объёму bbox (2.2 %); механизмы/приводы пальцев UNKNOWN
+L,lean,left_digit5_proximal_phalanx,hand,0.0037,,3.792251,-0.547525,-4.620744,"центр bbox (ASSUMED, A03)",20.4,20.0,15.0,,,,DERIVED,доля массы пальцев 0.220 кг по объёму bbox (1.7 %); механизмы/приводы пальцев UNKNOWN
+L,lean,second_phalanx_left_thumb_link,hand,0.0073,,3.792251,-0.681571,-4.48219,"центр bbox (ASSUMED, A03)",20.3,40.0,15.0,,,,DERIVED,доля массы пальцев 0.220 кг по объёму bbox (3.3 %); механизмы/приводы пальцев UNKNOWN
+L,lean,second_phalanx_left_thumb_link_collision,hand,0.0083,,3.70836,-0.904439,-4.46999,"центр bbox (ASSUMED, A03)",20.3,45.2,15.0,,,,DERIVED,доля массы пальцев 0.220 кг по объёму bbox (3.8 %); механизмы/приводы пальцев UNKNOWN
+L,lean,second_phalanx_right_thumb_link,hand,0.0073,,3.779541,-3.05299,-4.466449,"центр bbox (ASSUMED, A03)",20.8,40.0,14.6,,,,DERIVED,доля массы пальцев 0.220 кг по объёму bbox (3.3 %); механизмы/приводы пальцев UNKNOWN
+L,lean,second_phalanx_right_thumb_link_collision,hand,0.0079,,3.708359,-2.815117,-4.481811,"центр bbox (ASSUMED, A03)",20.8,43.8,14.5,,,,DERIVED,доля массы пальцев 0.220 кг по объёму bbox (3.6 %); механизмы/приводы пальцев UNKNOWN
+L,lean,third_phalanx_left_thumb_link,hand,0.0228,,3.792252,-0.747714,-4.483224,"центр bbox (ASSUMED, A03)",31.7,40.0,30.0,,,,DERIVED,доля массы пальцев 0.220 кг по объёму bbox (10.3 %); механизмы/приводы пальцев UNKNOWN
+L,lean,third_phalanx_left_thumb_link_collision,hand,0.0152,,3.708361,-0.960813,-4.480478,"центр bbox (ASSUMED, A03)",31.7,26.8,30.0,,,,DERIVED,доля массы пальцев 0.220 кг по объёму bbox (6.9 %); механизмы/приводы пальцев UNKNOWN
+L,lean,third_phalanx_right_thumb_link,hand,0.0293,,3.779542,-2.997804,-4.467854,"центр bbox (ASSUMED, A03)",42.4,39.7,29.1,,,,DERIVED,доля массы пальцев 0.220 кг по объёму bbox (13.3 %); механизмы/приводы пальцев UNKNOWN
+L,lean,third_phalanx_right_thumb_link_collision,hand,0.0191,,3.70836,-2.758674,-4.488502,"центр bbox (ASSUMED, A03)",42.4,25.9,29.0,,,,DERIVED,доля массы пальцев 0.220 кг по объёму bbox (8.7 %); механизмы/приводы пальцев UNKNOWN
+L,lean,L_hand_unknown,hand_unknown,0.0,,3.792207,-0.736954,-4.575504,"центр bbox (ASSUMED, A03)",,,,,,,UNKNOWN,"механизм/приводы пальцев, digit5-меш без массы (E7), захватные поверхности, датчики кисти — НЕ учтены"
+L,lean,left_shoulder_link__ribs,ribs,0.05,,3.792201,-1.400343,-4.561807,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A04: перегородки+рёбра (lean 1+0 / nominal 2+2 / heavy 3+3)
+L,lean,left_forearm_link__ribs,ribs,0.05,,3.792204,-1.027626,-4.561541,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A04: перегородки+рёбра (lean 1+0 / nominal 2+2 / heavy 3+3)
+L,lean,left_shoulder_link__cable,cable,0.06,,3.792201,-1.400343,-4.561807,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,"A14: половина трассы на плечо, половина на предплечье"
+L,lean,left_forearm_link__cable,cable,0.06,,3.792204,-1.027626,-4.561541,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,"A14: половина трассы на плечо, половина на предплечье"
+L,lean,L_act_sh3,actuator,12.81,,3.772351,-1.710971,-4.561809,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+L,lean,L_act_sh2,actuator,12.07,,3.772351,-1.662502,-4.561297,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+L,lean,L_act_sh1,actuator,12.07,,3.772351,-1.610971,-4.560788,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+L,lean,L_act_el,actuator,12.81,,3.792201,-1.209357,-4.559339,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+L,lean,L_act_rad,actuator,0.3,,3.791164,-0.957482,-4.560872,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+L,lean,L_act_w1,actuator,0.3,,3.792202,-0.84757,-4.559119,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+L,lean,L_act_w2,actuator,0.3,,3.792207,-0.811089,-4.568344,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+L,nominal,left_shoulder_link,shell,1.1776,2.7227,3.792201,-1.400343,-4.561807,"центр bbox (ASSUMED, A03)",93.2,360.1,93.5,0.013582,0.00171,0.013575,ASSUMED,оболочка Al 3 мм по bbox; stored=2.722734652343206 кг (категория ③)
+L,nominal,left_forearm_link,shell,1.0412,2.7227,3.792204,-1.027626,-4.561541,"центр bbox (ASSUMED, A03)",93.1,312.7,93.9,0.009247,0.001518,0.009234,ASSUMED,оболочка Al 3 мм по bbox; stored=2.722734652343206 кг (категория ③)
+L,nominal,left_palm_link,shell,0.3156,0.3355,3.792207,-0.736954,-4.575504,"центр bbox (ASSUMED, A03)",43.9,107.5,107.5,0.000608,0.000355,0.000355,ASSUMED,оболочка Al 3 мм по bbox; stored=0.335472656805222 кг (категория ③)
+L,nominal,first_phalanx_left_thumb_link,hand,0.0085,,3.792251,-0.631657,-4.483662,"центр bbox (ASSUMED, A03)",20.3,34.0,15.0,,,,DERIVED,доля массы пальцев 0.300 кг по объёму bbox (2.8 %); механизмы/приводы пальцев UNKNOWN
+L,nominal,first_phalanx_left_thumb_link_collision,hand,0.0113,,3.708359,-0.839915,-4.471467,"центр bbox (ASSUMED, A03)",20.3,45.2,15.0,,,,DERIVED,доля массы пальцев 0.300 кг по объёму bbox (3.8 %); механизмы/приводы пальцев UNKNOWN
+L,nominal,first_phalanx_right_thumb_link,hand,0.0084,,3.779539,-3.100998,-4.466346,"центр bbox (ASSUMED, A03)",20.8,34.0,14.6,,,,DERIVED,доля массы пальцев 0.300 кг по объёму bbox (2.8 %); механизмы/приводы пальцев UNKNOWN
+L,nominal,first_phalanx_right_thumb_link_collision,hand,0.0108,,3.708358,-2.876448,-4.481726,"центр bbox (ASSUMED, A03)",20.8,43.8,14.5,,,,DERIVED,доля массы пальцев 0.300 кг по объёму bbox (3.6 %); механизмы/приводы пальцев UNKNOWN
+L,nominal,left_digit2_distal_phalanx,hand,0.012,,3.792253,-0.623458,-4.535191,"центр bbox (ASSUMED, A03)",20.3,48.0,15.0,,,,DERIVED,доля массы пальцев 0.300 кг по объёму bbox (4.0 %); механизмы/приводы пальцев UNKNOWN
+L,nominal,left_digit2_middle_phalanx,hand,0.0075,,3.79225,-0.570374,-4.534326,"центр bbox (ASSUMED, A03)",20.3,30.0,15.0,,,,DERIVED,доля массы пальцев 0.300 кг по объёму bbox (2.5 %); механизмы/приводы пальцев UNKNOWN
+L,nominal,left_digit2_proximal_phalanx,hand,0.0055,,3.792251,-0.53512,-4.534648,"центр bbox (ASSUMED, A03)",20.3,22.0,15.0,,,,DERIVED,доля массы пальцев 0.300 кг по объёму bbox (1.8 %); механизмы/приводы пальцев UNKNOWN
+L,nominal,left_digit3_distal_phalanx,hand,0.0135,,3.792248,-0.624496,-4.566671,"центр bbox (ASSUMED, A03)",20.3,54.0,15.0,,,,DERIVED,доля массы пальцев 0.300 кг по объёму bbox (4.5 %); механизмы/приводы пальцев UNKNOWN
+L,nominal,left_digit3_middle_phalanx,hand,0.0085,,3.792248,-0.56225,-4.566553,"центр bbox (ASSUMED, A03)",20.3,34.0,15.0,,,,DERIVED,доля массы пальцев 0.300 кг по объёму bbox (2.8 %); механизмы/приводы пальцев UNKNOWN
+L,nominal,left_digit3_proximal_phalanx,hand,0.006,,3.792248,-0.510516,-4.566136,"центр bbox (ASSUMED, A03)",20.3,24.0,15.0,,,,DERIVED,доля массы пальцев 0.300 кг по объёму bbox (2.0 %); механизмы/приводы пальцев UNKNOWN
+L,nominal,left_digit4_distal_phalanx,hand,0.0125,,3.792252,-0.628359,-4.597197,"центр bbox (ASSUMED, A03)",20.3,50.0,15.0,,,,DERIVED,доля массы пальцев 0.300 кг по объёму bbox (4.2 %); механизмы/приводы пальцев UNKNOWN
+L,nominal,left_digit4_middle_phalanx,hand,0.008,,3.792249,-0.567108,-4.597816,"центр bbox (ASSUMED, A03)",20.3,32.0,15.0,,,,DERIVED,доля массы пальцев 0.300 кг по объёму bbox (2.7 %); механизмы/приводы пальцев UNKNOWN
+L,nominal,left_digit4_proximal_phalanx,hand,0.0055,,3.792248,-0.526196,-4.597197,"центр bbox (ASSUMED, A03)",20.3,22.0,15.0,,,,DERIVED,доля массы пальцев 0.300 кг по объёму bbox (1.8 %); механизмы/приводы пальцев UNKNOWN
+L,nominal,left_digit5_distal_phalanx,hand,0.0105,,3.792253,-0.626513,-4.62022,"центр bbox (ASSUMED, A03)",20.4,42.0,15.0,,,,DERIVED,доля массы пальцев 0.300 кг по объёму bbox (3.5 %); механизмы/приводы пальцев UNKNOWN
+L,nominal,left_digit5_middle_phalanx,hand,0.0065,,3.792253,-0.58118,-4.621363,"центр bbox (ASSUMED, A03)",20.4,26.0,15.0,,,,DERIVED,доля массы пальцев 0.300 кг по объёму bbox (2.2 %); механизмы/приводы пальцев UNKNOWN
+L,nominal,left_digit5_proximal_phalanx,hand,0.005,,3.792251,-0.547525,-4.620744,"центр bbox (ASSUMED, A03)",20.4,20.0,15.0,,,,DERIVED,доля массы пальцев 0.300 кг по объёму bbox (1.7 %); механизмы/приводы пальцев UNKNOWN
+L,nominal,second_phalanx_left_thumb_link,hand,0.01,,3.792251,-0.681571,-4.48219,"центр bbox (ASSUMED, A03)",20.3,40.0,15.0,,,,DERIVED,доля массы пальцев 0.300 кг по объёму bbox (3.3 %); механизмы/приводы пальцев UNKNOWN
+L,nominal,second_phalanx_left_thumb_link_collision,hand,0.0113,,3.70836,-0.904439,-4.46999,"центр bbox (ASSUMED, A03)",20.3,45.2,15.0,,,,DERIVED,доля массы пальцев 0.300 кг по объёму bbox (3.8 %); механизмы/приводы пальцев UNKNOWN
+L,nominal,second_phalanx_right_thumb_link,hand,0.01,,3.779541,-3.05299,-4.466449,"центр bbox (ASSUMED, A03)",20.8,40.0,14.6,,,,DERIVED,доля массы пальцев 0.300 кг по объёму bbox (3.3 %); механизмы/приводы пальцев UNKNOWN
+L,nominal,second_phalanx_right_thumb_link_collision,hand,0.0108,,3.708359,-2.815117,-4.481811,"центр bbox (ASSUMED, A03)",20.8,43.8,14.5,,,,DERIVED,доля массы пальцев 0.300 кг по объёму bbox (3.6 %); механизмы/приводы пальцев UNKNOWN
+L,nominal,third_phalanx_left_thumb_link,hand,0.031,,3.792252,-0.747714,-4.483224,"центр bbox (ASSUMED, A03)",31.7,40.0,30.0,,,,DERIVED,доля массы пальцев 0.300 кг по объёму bbox (10.3 %); механизмы/приводы пальцев UNKNOWN
+L,nominal,third_phalanx_left_thumb_link_collision,hand,0.0208,,3.708361,-0.960813,-4.480478,"центр bbox (ASSUMED, A03)",31.7,26.8,30.0,,,,DERIVED,доля массы пальцев 0.300 кг по объёму bbox (6.9 %); механизмы/приводы пальцев UNKNOWN
+L,nominal,third_phalanx_right_thumb_link,hand,0.04,,3.779542,-2.997804,-4.467854,"центр bbox (ASSUMED, A03)",42.4,39.7,29.1,,,,DERIVED,доля массы пальцев 0.300 кг по объёму bbox (13.3 %); механизмы/приводы пальцев UNKNOWN
+L,nominal,third_phalanx_right_thumb_link_collision,hand,0.0261,,3.70836,-2.758674,-4.488502,"центр bbox (ASSUMED, A03)",42.4,25.9,29.0,,,,DERIVED,доля массы пальцев 0.300 кг по объёму bbox (8.7 %); механизмы/приводы пальцев UNKNOWN
+L,nominal,L_hand_unknown,hand_unknown,0.0,,3.792207,-0.736954,-4.575504,"центр bbox (ASSUMED, A03)",,,,,,,UNKNOWN,"механизм/приводы пальцев, digit5-меш без массы (E7), захватные поверхности, датчики кисти — НЕ учтены"
+L,nominal,left_shoulder_link__ribs,ribs,0.45,,3.792201,-1.400343,-4.561807,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A04: перегородки+рёбра (lean 1+0 / nominal 2+2 / heavy 3+3)
+L,nominal,left_forearm_link__ribs,ribs,0.41,,3.792204,-1.027626,-4.561541,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A04: перегородки+рёбра (lean 1+0 / nominal 2+2 / heavy 3+3)
+L,nominal,left_shoulder_link__cable,cable,0.115,,3.792201,-1.400343,-4.561807,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,"A14: половина трассы на плечо, половина на предплечье"
+L,nominal,left_forearm_link__cable,cable,0.115,,3.792204,-1.027626,-4.561541,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,"A14: половина трассы на плечо, половина на предплечье"
+L,nominal,L_act_sh3,actuator,25.61,,3.772351,-1.710971,-4.561809,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+L,nominal,L_act_sh2,actuator,24.14,,3.772351,-1.662502,-4.561297,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+L,nominal,L_act_sh1,actuator,24.14,,3.772351,-1.610971,-4.560788,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+L,nominal,L_act_el,actuator,25.61,,3.792201,-1.209357,-4.559339,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+L,nominal,L_act_rad,actuator,0.6,,3.791164,-0.957482,-4.560872,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+L,nominal,L_act_w1,actuator,0.6,,3.792202,-0.84757,-4.559119,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+L,nominal,L_act_w2,actuator,0.6,,3.792207,-0.811089,-4.568344,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+L,heavy,left_shoulder_link,shell,3.4238,2.7227,3.792201,-1.400343,-4.561807,"центр bbox (ASSUMED, A03)",93.2,360.1,93.5,0.039487,0.004972,0.039468,ASSUMED,оболочка Al 3 мм по bbox; stored=2.722734652343206 кг (категория ③)
+L,heavy,left_forearm_link,shell,3.0272,2.7227,3.792204,-1.027626,-4.561541,"центр bbox (ASSUMED, A03)",93.1,312.7,93.9,0.026886,0.004414,0.026848,ASSUMED,оболочка Al 3 мм по bbox; stored=2.722734652343206 кг (категория ③)
+L,heavy,left_palm_link,shell,0.9175,0.3355,3.792207,-0.736954,-4.575504,"центр bbox (ASSUMED, A03)",43.9,107.5,107.5,0.001768,0.001031,0.001031,ASSUMED,оболочка Al 3 мм по bbox; stored=0.335472656805222 кг (категория ③)
+L,heavy,first_phalanx_left_thumb_link,hand,0.0249,,3.792251,-0.631657,-4.483662,"центр bbox (ASSUMED, A03)",20.3,34.0,15.0,,,,DERIVED,доля массы пальцев 0.880 кг по объёму bbox (2.8 %); механизмы/приводы пальцев UNKNOWN
+L,heavy,first_phalanx_left_thumb_link_collision,hand,0.0331,,3.708359,-0.839915,-4.471467,"центр bbox (ASSUMED, A03)",20.3,45.2,15.0,,,,DERIVED,доля массы пальцев 0.880 кг по объёму bbox (3.8 %); механизмы/приводы пальцев UNKNOWN
+L,heavy,first_phalanx_right_thumb_link,hand,0.0247,,3.779539,-3.100998,-4.466346,"центр bbox (ASSUMED, A03)",20.8,34.0,14.6,,,,DERIVED,доля массы пальцев 0.880 кг по объёму bbox (2.8 %); механизмы/приводы пальцев UNKNOWN
+L,heavy,first_phalanx_right_thumb_link_collision,hand,0.0318,,3.708358,-2.876448,-4.481726,"центр bbox (ASSUMED, A03)",20.8,43.8,14.5,,,,DERIVED,доля массы пальцев 0.880 кг по объёму bbox (3.6 %); механизмы/приводы пальцев UNKNOWN
+L,heavy,left_digit2_distal_phalanx,hand,0.0352,,3.792253,-0.623458,-4.535191,"центр bbox (ASSUMED, A03)",20.3,48.0,15.0,,,,DERIVED,доля массы пальцев 0.880 кг по объёму bbox (4.0 %); механизмы/приводы пальцев UNKNOWN
+L,heavy,left_digit2_middle_phalanx,hand,0.022,,3.79225,-0.570374,-4.534326,"центр bbox (ASSUMED, A03)",20.3,30.0,15.0,,,,DERIVED,доля массы пальцев 0.880 кг по объёму bbox (2.5 %); механизмы/приводы пальцев UNKNOWN
+L,heavy,left_digit2_proximal_phalanx,hand,0.0161,,3.792251,-0.53512,-4.534648,"центр bbox (ASSUMED, A03)",20.3,22.0,15.0,,,,DERIVED,доля массы пальцев 0.880 кг по объёму bbox (1.8 %); механизмы/приводы пальцев UNKNOWN
+L,heavy,left_digit3_distal_phalanx,hand,0.0396,,3.792248,-0.624496,-4.566671,"центр bbox (ASSUMED, A03)",20.3,54.0,15.0,,,,DERIVED,доля массы пальцев 0.880 кг по объёму bbox (4.5 %); механизмы/приводы пальцев UNKNOWN
+L,heavy,left_digit3_middle_phalanx,hand,0.0249,,3.792248,-0.56225,-4.566553,"центр bbox (ASSUMED, A03)",20.3,34.0,15.0,,,,DERIVED,доля массы пальцев 0.880 кг по объёму bbox (2.8 %); механизмы/приводы пальцев UNKNOWN
+L,heavy,left_digit3_proximal_phalanx,hand,0.0176,,3.792248,-0.510516,-4.566136,"центр bbox (ASSUMED, A03)",20.3,24.0,15.0,,,,DERIVED,доля массы пальцев 0.880 кг по объёму bbox (2.0 %); механизмы/приводы пальцев UNKNOWN
+L,heavy,left_digit4_distal_phalanx,hand,0.0367,,3.792252,-0.628359,-4.597197,"центр bbox (ASSUMED, A03)",20.3,50.0,15.0,,,,DERIVED,доля массы пальцев 0.880 кг по объёму bbox (4.2 %); механизмы/приводы пальцев UNKNOWN
+L,heavy,left_digit4_middle_phalanx,hand,0.0235,,3.792249,-0.567108,-4.597816,"центр bbox (ASSUMED, A03)",20.3,32.0,15.0,,,,DERIVED,доля массы пальцев 0.880 кг по объёму bbox (2.7 %); механизмы/приводы пальцев UNKNOWN
+L,heavy,left_digit4_proximal_phalanx,hand,0.0161,,3.792248,-0.526196,-4.597197,"центр bbox (ASSUMED, A03)",20.3,22.0,15.0,,,,DERIVED,доля массы пальцев 0.880 кг по объёму bbox (1.8 %); механизмы/приводы пальцев UNKNOWN
+L,heavy,left_digit5_distal_phalanx,hand,0.0307,,3.792253,-0.626513,-4.62022,"центр bbox (ASSUMED, A03)",20.4,42.0,15.0,,,,DERIVED,доля массы пальцев 0.880 кг по объёму bbox (3.5 %); механизмы/приводы пальцев UNKNOWN
+L,heavy,left_digit5_middle_phalanx,hand,0.019,,3.792253,-0.58118,-4.621363,"центр bbox (ASSUMED, A03)",20.4,26.0,15.0,,,,DERIVED,доля массы пальцев 0.880 кг по объёму bbox (2.2 %); механизмы/приводы пальцев UNKNOWN
+L,heavy,left_digit5_proximal_phalanx,hand,0.0146,,3.792251,-0.547525,-4.620744,"центр bbox (ASSUMED, A03)",20.4,20.0,15.0,,,,DERIVED,доля массы пальцев 0.880 кг по объёму bbox (1.7 %); механизмы/приводы пальцев UNKNOWN
+L,heavy,second_phalanx_left_thumb_link,hand,0.0293,,3.792251,-0.681571,-4.48219,"центр bbox (ASSUMED, A03)",20.3,40.0,15.0,,,,DERIVED,доля массы пальцев 0.880 кг по объёму bbox (3.3 %); механизмы/приводы пальцев UNKNOWN
+L,heavy,second_phalanx_left_thumb_link_collision,hand,0.0331,,3.70836,-0.904439,-4.46999,"центр bbox (ASSUMED, A03)",20.3,45.2,15.0,,,,DERIVED,доля массы пальцев 0.880 кг по объёму bbox (3.8 %); механизмы/приводы пальцев UNKNOWN
+L,heavy,second_phalanx_right_thumb_link,hand,0.0292,,3.779541,-3.05299,-4.466449,"центр bbox (ASSUMED, A03)",20.8,40.0,14.6,,,,DERIVED,доля массы пальцев 0.880 кг по объёму bbox (3.3 %); механизмы/приводы пальцев UNKNOWN
+L,heavy,second_phalanx_right_thumb_link_collision,hand,0.0318,,3.708359,-2.815117,-4.481811,"центр bbox (ASSUMED, A03)",20.8,43.8,14.5,,,,DERIVED,доля массы пальцев 0.880 кг по объёму bbox (3.6 %); механизмы/приводы пальцев UNKNOWN
+L,heavy,third_phalanx_left_thumb_link,hand,0.0911,,3.792252,-0.747714,-4.483224,"центр bbox (ASSUMED, A03)",31.7,40.0,30.0,,,,DERIVED,доля массы пальцев 0.880 кг по объёму bbox (10.3 %); механизмы/приводы пальцев UNKNOWN
+L,heavy,third_phalanx_left_thumb_link_collision,hand,0.061,,3.708361,-0.960813,-4.480478,"центр bbox (ASSUMED, A03)",31.7,26.8,30.0,,,,DERIVED,доля массы пальцев 0.880 кг по объёму bbox (6.9 %); механизмы/приводы пальцев UNKNOWN
+L,heavy,third_phalanx_right_thumb_link,hand,0.1173,,3.779542,-2.997804,-4.467854,"центр bbox (ASSUMED, A03)",42.4,39.7,29.1,,,,DERIVED,доля массы пальцев 0.880 кг по объёму bbox (13.3 %); механизмы/приводы пальцев UNKNOWN
+L,heavy,third_phalanx_right_thumb_link_collision,hand,0.0766,,3.70836,-2.758674,-4.488502,"центр bbox (ASSUMED, A03)",42.4,25.9,29.0,,,,DERIVED,доля массы пальцев 0.880 кг по объёму bbox (8.7 %); механизмы/приводы пальцев UNKNOWN
+L,heavy,L_hand_unknown,hand_unknown,0.0,,3.792207,-0.736954,-4.575504,"центр bbox (ASSUMED, A03)",,,,,,,UNKNOWN,"механизм/приводы пальцев, digit5-меш без массы (E7), захватные поверхности, датчики кисти — НЕ учтены"
+L,heavy,left_shoulder_link__ribs,ribs,2.61,,3.792201,-1.400343,-4.561807,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A04: перегородки+рёбра (lean 1+0 / nominal 2+2 / heavy 3+3)
+L,heavy,left_forearm_link__ribs,ribs,2.35,,3.792204,-1.027626,-4.561541,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A04: перегородки+рёбра (lean 1+0 / nominal 2+2 / heavy 3+3)
+L,heavy,left_shoulder_link__cable,cable,0.23,,3.792201,-1.400343,-4.561807,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,"A14: половина трассы на плечо, половина на предплечье"
+L,heavy,left_forearm_link__cable,cable,0.23,,3.792204,-1.027626,-4.561541,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,"A14: половина трассы на плечо, половина на предплечье"
+L,heavy,L_act_sh3,actuator,51.22,,3.772351,-1.710971,-4.561809,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+L,heavy,L_act_sh2,actuator,48.28,,3.772351,-1.662502,-4.561297,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+L,heavy,L_act_sh1,actuator,48.28,,3.772351,-1.610971,-4.560788,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+L,heavy,L_act_el,actuator,51.22,,3.792201,-1.209357,-4.559339,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+L,heavy,L_act_rad,actuator,1.2,,3.791164,-0.957482,-4.560872,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+L,heavy,L_act_w1,actuator,1.2,,3.792202,-0.84757,-4.559119,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+L,heavy,L_act_w2,actuator,1.2,,3.792207,-0.811089,-4.568344,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+R,lean,right_shoulder_link,shell,0.8874,3.361,3.779537,-2.339234,-4.559845,"центр bbox (ASSUMED, A03)",99.9,370.9,100.6,0.010922,0.001487,0.010912,ASSUMED,оболочка Al 2 мм по bbox; stored=3.361016971757635 кг (категория ③)
+R,lean,right_forearm_link,shell,0.7703,3.361,3.779542,-2.741847,-4.552919,"центр bbox (ASSUMED, A03)",99.9,316.0,100.5,0.00706,0.001289,0.007052,ASSUMED,оболочка Al 2 мм по bbox; stored=3.361016971757635 кг (категория ③)
+R,lean,right_palm_link,shell,0.1979,0.5663,3.779544,-3.018193,-4.558332,"центр bbox (ASSUMED, A03)",30.1,112.1,112.1,0.000415,0.000222,0.000222,ASSUMED,оболочка Al 2 мм по bbox; stored=0.566312564075381 кг (категория ③)
+R,lean,first_phalanx_left_thumb_link,hand,0.0065,,3.792251,-0.631657,-4.483662,"центр bbox (ASSUMED, A03)",20.3,34.0,15.0,,,,DERIVED,доля массы пальцев 0.230 кг по объёму bbox (2.8 %); механизмы/приводы пальцев UNKNOWN
+R,lean,first_phalanx_left_thumb_link_collision,hand,0.0087,,3.708359,-0.839915,-4.471467,"центр bbox (ASSUMED, A03)",20.3,45.2,15.0,,,,DERIVED,доля массы пальцев 0.230 кг по объёму bbox (3.8 %); механизмы/приводы пальцев UNKNOWN
+R,lean,first_phalanx_right_thumb_link,hand,0.0065,,3.779539,-3.100998,-4.466346,"центр bbox (ASSUMED, A03)",20.8,34.0,14.6,,,,DERIVED,доля массы пальцев 0.230 кг по объёму bbox (2.8 %); механизмы/приводы пальцев UNKNOWN
+R,lean,first_phalanx_right_thumb_link_collision,hand,0.0083,,3.708358,-2.876448,-4.481726,"центр bbox (ASSUMED, A03)",20.8,43.8,14.5,,,,DERIVED,доля массы пальцев 0.230 кг по объёму bbox (3.6 %); механизмы/приводы пальцев UNKNOWN
+R,lean,right_digit2_distal_phalanx,hand,0.0091,,3.77954,-3.118125,-4.51205,"центр bbox (ASSUMED, A03)",20.8,48.0,14.5,,,,DERIVED,доля массы пальцев 0.230 кг по объёму bbox (4.0 %); механизмы/приводы пальцев UNKNOWN
+R,lean,right_digit2_middle_phalanx,hand,0.0057,,3.77954,-3.1677,-4.511489,"центр bbox (ASSUMED, A03)",20.8,30.0,14.5,,,,DERIVED,доля массы пальцев 0.230 кг по объёму bbox (2.5 %); механизмы/приводы пальцев UNKNOWN
+R,lean,right_digit2_proximal_phalanx,hand,0.0042,,3.779538,-3.202384,-4.511895,"центр bbox (ASSUMED, A03)",20.8,21.6,14.9,,,,DERIVED,доля массы пальцев 0.230 кг по объёму bbox (1.8 %); механизмы/приводы пальцев UNKNOWN
+R,lean,right_digit3_distal_phalanx,hand,0.0103,,3.779542,-3.11974,-4.542209,"центр bbox (ASSUMED, A03)",20.8,54.0,14.5,,,,DERIVED,доля массы пальцев 0.230 кг по объёму bbox (4.5 %); механизмы/приводы пальцев UNKNOWN
+R,lean,right_digit3_middle_phalanx,hand,0.0065,,3.77954,-3.172539,-4.542355,"центр bbox (ASSUMED, A03)",20.8,34.0,14.5,,,,DERIVED,доля массы пальцев 0.230 кг по объёму bbox (2.8 %); механизмы/приводы пальцев UNKNOWN
+R,lean,right_digit3_proximal_phalanx,hand,0.0046,,3.779539,-3.211762,-4.54355,"центр bbox (ASSUMED, A03)",20.8,23.8,14.7,,,,DERIVED,доля массы пальцев 0.230 кг по объёму bbox (2.0 %); механизмы/приводы пальцев UNKNOWN
+R,lean,right_digit4_distal_phalanx,hand,0.0095,,3.779542,-3.117386,-4.571258,"центр bbox (ASSUMED, A03)",20.8,50.0,14.5,,,,DERIVED,доля массы пальцев 0.230 кг по объёму bbox (4.1 %); механизмы/приводы пальцев UNKNOWN
+R,lean,right_digit4_middle_phalanx,hand,0.0061,,3.779541,-3.166479,-4.572468,"центр bbox (ASSUMED, A03)",20.8,32.0,14.5,,,,DERIVED,доля массы пальцев 0.230 кг по объёму bbox (2.6 %); механизмы/приводы пальцев UNKNOWN
+R,lean,right_digit4_proximal_phalanx,hand,0.0042,,3.779541,-3.204331,-4.5737,"центр bbox (ASSUMED, A03)",20.8,21.9,14.6,,,,DERIVED,доля массы пальцев 0.230 кг по объёму bbox (1.8 %); механизмы/приводы пальцев UNKNOWN
+R,lean,right_digit5_distal_phalanx,hand,0.008,,3.779544,-3.110552,-4.599023,"центр bbox (ASSUMED, A03)",20.8,42.0,14.5,,,,DERIVED,доля массы пальцев 0.230 кг по объёму bbox (3.5 %); механизмы/приводы пальцев UNKNOWN
+R,lean,right_digit5_middle_phalanx,hand,0.0049,,3.779544,-3.153351,-4.59917,"центр bbox (ASSUMED, A03)",20.8,26.0,14.5,,,,DERIVED,доля массы пальцев 0.230 кг по объёму bbox (2.1 %); механизмы/приводы пальцев UNKNOWN
+R,lean,right_digit5_proximal_phalanx,hand,0.0038,,3.77954,-3.185332,-4.599713,"центр bbox (ASSUMED, A03)",20.8,20.0,14.6,,,,DERIVED,доля массы пальцев 0.230 кг по объёму bbox (1.7 %); механизмы/приводы пальцев UNKNOWN
+R,lean,second_phalanx_left_thumb_link,hand,0.0077,,3.792251,-0.681571,-4.48219,"центр bbox (ASSUMED, A03)",20.3,40.0,15.0,,,,DERIVED,доля массы пальцев 0.230 кг по объёму bbox (3.3 %); механизмы/приводы пальцев UNKNOWN
+R,lean,second_phalanx_left_thumb_link_collision,hand,0.0087,,3.70836,-0.904439,-4.46999,"центр bbox (ASSUMED, A03)",20.3,45.2,15.0,,,,DERIVED,доля массы пальцев 0.230 кг по объёму bbox (3.8 %); механизмы/приводы пальцев UNKNOWN
+R,lean,second_phalanx_right_thumb_link,hand,0.0077,,3.779541,-3.05299,-4.466449,"центр bbox (ASSUMED, A03)",20.8,40.0,14.6,,,,DERIVED,доля массы пальцев 0.230 кг по объёму bbox (3.3 %); механизмы/приводы пальцев UNKNOWN
+R,lean,second_phalanx_right_thumb_link_collision,hand,0.0083,,3.708359,-2.815117,-4.481811,"центр bbox (ASSUMED, A03)",20.8,43.8,14.5,,,,DERIVED,доля массы пальцев 0.230 кг по объёму bbox (3.6 %); механизмы/приводы пальцев UNKNOWN
+R,lean,third_phalanx_left_thumb_link,hand,0.0239,,3.792252,-0.747714,-4.483224,"центр bbox (ASSUMED, A03)",31.7,40.0,30.0,,,,DERIVED,доля массы пальцев 0.230 кг по объёму bbox (10.4 %); механизмы/приводы пальцев UNKNOWN
+R,lean,third_phalanx_left_thumb_link_collision,hand,0.016,,3.708361,-0.960813,-4.480478,"центр bbox (ASSUMED, A03)",31.7,26.8,30.0,,,,DERIVED,доля массы пальцев 0.230 кг по объёму bbox (7.0 %); механизмы/приводы пальцев UNKNOWN
+R,lean,third_phalanx_right_thumb_link,hand,0.0308,,3.779542,-2.997804,-4.467854,"центр bbox (ASSUMED, A03)",42.4,39.7,29.1,,,,DERIVED,доля массы пальцев 0.230 кг по объёму bbox (13.4 %); механизмы/приводы пальцев UNKNOWN
+R,lean,third_phalanx_right_thumb_link_collision,hand,0.0201,,3.70836,-2.758674,-4.488502,"центр bbox (ASSUMED, A03)",42.4,25.9,29.0,,,,DERIVED,доля массы пальцев 0.230 кг по объёму bbox (8.7 %); механизмы/приводы пальцев UNKNOWN
+R,lean,R_hand_unknown,hand_unknown,0.0,,3.779544,-3.018193,-4.558332,"центр bbox (ASSUMED, A03)",,,,,,,UNKNOWN,"механизм/приводы пальцев, digit5-меш без массы (E7), захватные поверхности, датчики кисти — НЕ учтены"
+R,lean,right_shoulder_link__ribs,ribs,0.05,,3.779537,-2.339234,-4.559845,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A04: перегородки+рёбра (lean 1+0 / nominal 2+2 / heavy 3+3)
+R,lean,right_forearm_link__ribs,ribs,0.05,,3.779542,-2.741847,-4.552919,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A04: перегородки+рёбра (lean 1+0 / nominal 2+2 / heavy 3+3)
+R,lean,right_shoulder_link__cable,cable,0.065,,3.779537,-2.339234,-4.559845,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,"A14: половина трассы на плечо, половина на предплечье"
+R,lean,right_forearm_link__cable,cable,0.065,,3.779542,-2.741847,-4.552919,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,"A14: половина трассы на плечо, половина на предплечье"
+R,lean,R_act_sh3,actuator,13.16,,3.779664,-2.014746,-4.558747,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+R,lean,R_act_sh2,actuator,12.47,,3.779665,-2.063215,-4.558236,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+R,lean,R_act_sh1,actuator,12.47,,3.779664,-2.114746,-4.557726,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+R,lean,R_act_el,actuator,13.16,,3.779537,-2.544408,-4.557245,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+R,lean,R_act_rad,actuator,0.3,,3.778485,-2.820695,-4.552513,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+R,lean,R_act_w1,actuator,0.23,,3.779534,-2.913791,-4.549999,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+R,lean,R_act_w2,actuator,0.23,,3.779539,-2.946454,-4.550828,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+R,nominal,right_shoulder_link,shell,1.3128,3.361,3.779537,-2.339234,-4.559845,"центр bbox (ASSUMED, A03)",99.9,370.9,100.6,0.016159,0.0022,0.016145,ASSUMED,оболочка Al 3 мм по bbox; stored=3.361016971757635 кг (категория ③)
+R,nominal,right_forearm_link,shell,1.139,3.361,3.779542,-2.741847,-4.552919,"центр bbox (ASSUMED, A03)",99.9,316.0,100.5,0.010439,0.001906,0.010428,ASSUMED,оболочка Al 3 мм по bbox; stored=3.361016971757635 кг (категория ③)
+R,nominal,right_palm_link,shell,0.2889,0.5663,3.779544,-3.018193,-4.558332,"центр bbox (ASSUMED, A03)",30.1,112.1,112.1,0.000605,0.000325,0.000325,ASSUMED,оболочка Al 3 мм по bbox; stored=0.566312564075381 кг (категория ③)
+R,nominal,first_phalanx_left_thumb_link,hand,0.0088,,3.792251,-0.631657,-4.483662,"центр bbox (ASSUMED, A03)",20.3,34.0,15.0,,,,DERIVED,доля массы пальцев 0.310 кг по объёму bbox (2.8 %); механизмы/приводы пальцев UNKNOWN
+R,nominal,first_phalanx_left_thumb_link_collision,hand,0.0117,,3.708359,-0.839915,-4.471467,"центр bbox (ASSUMED, A03)",20.3,45.2,15.0,,,,DERIVED,доля массы пальцев 0.310 кг по объёму bbox (3.8 %); механизмы/приводы пальцев UNKNOWN
+R,nominal,first_phalanx_right_thumb_link,hand,0.0087,,3.779539,-3.100998,-4.466346,"центр bbox (ASSUMED, A03)",20.8,34.0,14.6,,,,DERIVED,доля массы пальцев 0.310 кг по объёму bbox (2.8 %); механизмы/приводы пальцев UNKNOWN
+R,nominal,first_phalanx_right_thumb_link_collision,hand,0.0112,,3.708358,-2.876448,-4.481726,"центр bbox (ASSUMED, A03)",20.8,43.8,14.5,,,,DERIVED,доля массы пальцев 0.310 кг по объёму bbox (3.6 %); механизмы/приводы пальцев UNKNOWN
+R,nominal,right_digit2_distal_phalanx,hand,0.0123,,3.77954,-3.118125,-4.51205,"центр bbox (ASSUMED, A03)",20.8,48.0,14.5,,,,DERIVED,доля массы пальцев 0.310 кг по объёму bbox (4.0 %); механизмы/приводы пальцев UNKNOWN
+R,nominal,right_digit2_middle_phalanx,hand,0.0077,,3.77954,-3.1677,-4.511489,"центр bbox (ASSUMED, A03)",20.8,30.0,14.5,,,,DERIVED,доля массы пальцев 0.310 кг по объёму bbox (2.5 %); механизмы/приводы пальцев UNKNOWN
+R,nominal,right_digit2_proximal_phalanx,hand,0.0057,,3.779538,-3.202384,-4.511895,"центр bbox (ASSUMED, A03)",20.8,21.6,14.9,,,,DERIVED,доля массы пальцев 0.310 кг по объёму bbox (1.8 %); механизмы/приводы пальцев UNKNOWN
+R,nominal,right_digit3_distal_phalanx,hand,0.0138,,3.779542,-3.11974,-4.542209,"центр bbox (ASSUMED, A03)",20.8,54.0,14.5,,,,DERIVED,доля массы пальцев 0.310 кг по объёму bbox (4.5 %); механизмы/приводы пальцев UNKNOWN
+R,nominal,right_digit3_middle_phalanx,hand,0.0087,,3.77954,-3.172539,-4.542355,"центр bbox (ASSUMED, A03)",20.8,34.0,14.5,,,,DERIVED,доля массы пальцев 0.310 кг по объёму bbox (2.8 %); механизмы/приводы пальцев UNKNOWN
+R,nominal,right_digit3_proximal_phalanx,hand,0.0062,,3.779539,-3.211762,-4.54355,"центр bbox (ASSUMED, A03)",20.8,23.8,14.7,,,,DERIVED,доля массы пальцев 0.310 кг по объёму bbox (2.0 %); механизмы/приводы пальцев UNKNOWN
+R,nominal,right_digit4_distal_phalanx,hand,0.0128,,3.779542,-3.117386,-4.571258,"центр bbox (ASSUMED, A03)",20.8,50.0,14.5,,,,DERIVED,доля массы пальцев 0.310 кг по объёму bbox (4.1 %); механизмы/приводы пальцев UNKNOWN
+R,nominal,right_digit4_middle_phalanx,hand,0.0082,,3.779541,-3.166479,-4.572468,"центр bbox (ASSUMED, A03)",20.8,32.0,14.5,,,,DERIVED,доля массы пальцев 0.310 кг по объёму bbox (2.6 %); механизмы/приводы пальцев UNKNOWN
+R,nominal,right_digit4_proximal_phalanx,hand,0.0056,,3.779541,-3.204331,-4.5737,"центр bbox (ASSUMED, A03)",20.8,21.9,14.6,,,,DERIVED,доля массы пальцев 0.310 кг по объёму bbox (1.8 %); механизмы/приводы пальцев UNKNOWN
+R,nominal,right_digit5_distal_phalanx,hand,0.0108,,3.779544,-3.110552,-4.599023,"центр bbox (ASSUMED, A03)",20.8,42.0,14.5,,,,DERIVED,доля массы пальцев 0.310 кг по объёму bbox (3.5 %); механизмы/приводы пальцев UNKNOWN
+R,nominal,right_digit5_middle_phalanx,hand,0.0067,,3.779544,-3.153351,-4.59917,"центр bbox (ASSUMED, A03)",20.8,26.0,14.5,,,,DERIVED,доля массы пальцев 0.310 кг по объёму bbox (2.1 %); механизмы/приводы пальцев UNKNOWN
+R,nominal,right_digit5_proximal_phalanx,hand,0.0051,,3.77954,-3.185332,-4.599713,"центр bbox (ASSUMED, A03)",20.8,20.0,14.6,,,,DERIVED,доля массы пальцев 0.310 кг по объёму bbox (1.7 %); механизмы/приводы пальцев UNKNOWN
+R,nominal,second_phalanx_left_thumb_link,hand,0.0104,,3.792251,-0.681571,-4.48219,"центр bbox (ASSUMED, A03)",20.3,40.0,15.0,,,,DERIVED,доля массы пальцев 0.310 кг по объёму bbox (3.3 %); механизмы/приводы пальцев UNKNOWN
+R,nominal,second_phalanx_left_thumb_link_collision,hand,0.0117,,3.70836,-0.904439,-4.46999,"центр bbox (ASSUMED, A03)",20.3,45.2,15.0,,,,DERIVED,доля массы пальцев 0.310 кг по объёму bbox (3.8 %); механизмы/приводы пальцев UNKNOWN
+R,nominal,second_phalanx_right_thumb_link,hand,0.0103,,3.779541,-3.05299,-4.466449,"центр bbox (ASSUMED, A03)",20.8,40.0,14.6,,,,DERIVED,доля массы пальцев 0.310 кг по объёму bbox (3.3 %); механизмы/приводы пальцев UNKNOWN
+R,nominal,second_phalanx_right_thumb_link_collision,hand,0.0112,,3.708359,-2.815117,-4.481811,"центр bbox (ASSUMED, A03)",20.8,43.8,14.5,,,,DERIVED,доля массы пальцев 0.310 кг по объёму bbox (3.6 %); механизмы/приводы пальцев UNKNOWN
+R,nominal,third_phalanx_left_thumb_link,hand,0.0322,,3.792252,-0.747714,-4.483224,"центр bbox (ASSUMED, A03)",31.7,40.0,30.0,,,,DERIVED,доля массы пальцев 0.310 кг по объёму bbox (10.4 %); механизмы/приводы пальцев UNKNOWN
+R,nominal,third_phalanx_left_thumb_link_collision,hand,0.0216,,3.708361,-0.960813,-4.480478,"центр bbox (ASSUMED, A03)",31.7,26.8,30.0,,,,DERIVED,доля массы пальцев 0.310 кг по объёму bbox (7.0 %); механизмы/приводы пальцев UNKNOWN
+R,nominal,third_phalanx_right_thumb_link,hand,0.0415,,3.779542,-2.997804,-4.467854,"центр bbox (ASSUMED, A03)",42.4,39.7,29.1,,,,DERIVED,доля массы пальцев 0.310 кг по объёму bbox (13.4 %); механизмы/приводы пальцев UNKNOWN
+R,nominal,third_phalanx_right_thumb_link_collision,hand,0.0271,,3.70836,-2.758674,-4.488502,"центр bbox (ASSUMED, A03)",42.4,25.9,29.0,,,,DERIVED,доля массы пальцев 0.310 кг по объёму bbox (8.7 %); механизмы/приводы пальцев UNKNOWN
+R,nominal,R_hand_unknown,hand_unknown,0.0,,3.779544,-3.018193,-4.558332,"центр bbox (ASSUMED, A03)",,,,,,,UNKNOWN,"механизм/приводы пальцев, digit5-меш без массы (E7), захватные поверхности, датчики кисти — НЕ учтены"
+R,nominal,right_shoulder_link__ribs,ribs,0.5,,3.779537,-2.339234,-4.559845,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A04: перегородки+рёбра (lean 1+0 / nominal 2+2 / heavy 3+3)
+R,nominal,right_forearm_link__ribs,ribs,0.45,,3.779542,-2.741847,-4.552919,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A04: перегородки+рёбра (lean 1+0 / nominal 2+2 / heavy 3+3)
+R,nominal,right_shoulder_link__cable,cable,0.12,,3.779537,-2.339234,-4.559845,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,"A14: половина трассы на плечо, половина на предплечье"
+R,nominal,right_forearm_link__cable,cable,0.12,,3.779542,-2.741847,-4.552919,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,"A14: половина трассы на плечо, половина на предплечье"
+R,nominal,R_act_sh3,actuator,26.33,,3.779664,-2.014746,-4.558747,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+R,nominal,R_act_sh2,actuator,24.94,,3.779665,-2.063215,-4.558236,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+R,nominal,R_act_sh1,actuator,24.94,,3.779664,-2.114746,-4.557726,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+R,nominal,R_act_el,actuator,26.33,,3.779537,-2.544408,-4.557245,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+R,nominal,R_act_rad,actuator,0.6,,3.778485,-2.820695,-4.552513,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+R,nominal,R_act_w1,actuator,0.46,,3.779534,-2.913791,-4.549999,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+R,nominal,R_act_w2,actuator,0.46,,3.779539,-2.946454,-4.550828,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+R,heavy,right_shoulder_link,shell,3.817,3.361,3.779537,-2.339234,-4.559845,"центр bbox (ASSUMED, A03)",99.9,370.9,100.6,0.04698,0.006395,0.046939,ASSUMED,оболочка Al 3 мм по bbox; stored=3.361016971757635 кг (категория ③)
+R,heavy,right_forearm_link,shell,3.3116,3.361,3.779542,-2.741847,-4.552919,"центр bbox (ASSUMED, A03)",99.9,316.0,100.5,0.030351,0.005541,0.030319,ASSUMED,оболочка Al 3 мм по bbox; stored=3.361016971757635 кг (категория ③)
+R,heavy,right_palm_link,shell,0.84,0.5663,3.779544,-3.018193,-4.558332,"центр bbox (ASSUMED, A03)",30.1,112.1,112.1,0.00176,0.000944,0.000944,ASSUMED,оболочка Al 3 мм по bbox; stored=0.566312564075381 кг (категория ③)
+R,heavy,first_phalanx_left_thumb_link,hand,0.0259,,3.792251,-0.631657,-4.483662,"центр bbox (ASSUMED, A03)",20.3,34.0,15.0,,,,DERIVED,доля массы пальцев 0.910 кг по объёму bbox (2.8 %); механизмы/приводы пальцев UNKNOWN
+R,heavy,first_phalanx_left_thumb_link_collision,hand,0.0344,,3.708359,-0.839915,-4.471467,"центр bbox (ASSUMED, A03)",20.3,45.2,15.0,,,,DERIVED,доля массы пальцев 0.910 кг по объёму bbox (3.8 %); механизмы/приводы пальцев UNKNOWN
+R,heavy,first_phalanx_right_thumb_link,hand,0.0257,,3.779539,-3.100998,-4.466346,"центр bbox (ASSUMED, A03)",20.8,34.0,14.6,,,,DERIVED,доля массы пальцев 0.910 кг по объёму bbox (2.8 %); механизмы/приводы пальцев UNKNOWN
+R,heavy,first_phalanx_right_thumb_link_collision,hand,0.0329,,3.708358,-2.876448,-4.481726,"центр bbox (ASSUMED, A03)",20.8,43.8,14.5,,,,DERIVED,доля массы пальцев 0.910 кг по объёму bbox (3.6 %); механизмы/приводы пальцев UNKNOWN
+R,heavy,right_digit2_distal_phalanx,hand,0.0361,,3.77954,-3.118125,-4.51205,"центр bbox (ASSUMED, A03)",20.8,48.0,14.5,,,,DERIVED,доля массы пальцев 0.910 кг по объёму bbox (4.0 %); механизмы/приводы пальцев UNKNOWN
+R,heavy,right_digit2_middle_phalanx,hand,0.0226,,3.77954,-3.1677,-4.511489,"центр bbox (ASSUMED, A03)",20.8,30.0,14.5,,,,DERIVED,доля массы пальцев 0.910 кг по объёму bbox (2.5 %); механизмы/приводы пальцев UNKNOWN
+R,heavy,right_digit2_proximal_phalanx,hand,0.0166,,3.779538,-3.202384,-4.511895,"центр bbox (ASSUMED, A03)",20.8,21.6,14.9,,,,DERIVED,доля массы пальцев 0.910 кг по объёму bbox (1.8 %); механизмы/приводы пальцев UNKNOWN
+R,heavy,right_digit3_distal_phalanx,hand,0.0407,,3.779542,-3.11974,-4.542209,"центр bbox (ASSUMED, A03)",20.8,54.0,14.5,,,,DERIVED,доля массы пальцев 0.910 кг по объёму bbox (4.5 %); механизмы/приводы пальцев UNKNOWN
+R,heavy,right_digit3_middle_phalanx,hand,0.0256,,3.77954,-3.172539,-4.542355,"центр bbox (ASSUMED, A03)",20.8,34.0,14.5,,,,DERIVED,доля массы пальцев 0.910 кг по объёму bbox (2.8 %); механизмы/приводы пальцев UNKNOWN
+R,heavy,right_digit3_proximal_phalanx,hand,0.0181,,3.779539,-3.211762,-4.54355,"центр bbox (ASSUMED, A03)",20.8,23.8,14.7,,,,DERIVED,доля массы пальцев 0.910 кг по объёму bbox (2.0 %); механизмы/приводы пальцев UNKNOWN
+R,heavy,right_digit4_distal_phalanx,hand,0.0376,,3.779542,-3.117386,-4.571258,"центр bbox (ASSUMED, A03)",20.8,50.0,14.5,,,,DERIVED,доля массы пальцев 0.910 кг по объёму bbox (4.1 %); механизмы/приводы пальцев UNKNOWN
+R,heavy,right_digit4_middle_phalanx,hand,0.0241,,3.779541,-3.166479,-4.572468,"центр bbox (ASSUMED, A03)",20.8,32.0,14.5,,,,DERIVED,доля массы пальцев 0.910 кг по объёму bbox (2.6 %); механизмы/приводы пальцев UNKNOWN
+R,heavy,right_digit4_proximal_phalanx,hand,0.0166,,3.779541,-3.204331,-4.5737,"центр bbox (ASSUMED, A03)",20.8,21.9,14.6,,,,DERIVED,доля массы пальцев 0.910 кг по объёму bbox (1.8 %); механизмы/приводы пальцев UNKNOWN
+R,heavy,right_digit5_distal_phalanx,hand,0.0316,,3.779544,-3.110552,-4.599023,"центр bbox (ASSUMED, A03)",20.8,42.0,14.5,,,,DERIVED,доля массы пальцев 0.910 кг по объёму bbox (3.5 %); механизмы/приводы пальцев UNKNOWN
+R,heavy,right_digit5_middle_phalanx,hand,0.0196,,3.779544,-3.153351,-4.59917,"центр bbox (ASSUMED, A03)",20.8,26.0,14.5,,,,DERIVED,доля массы пальцев 0.910 кг по объёму bbox (2.1 %); механизмы/приводы пальцев UNKNOWN
+R,heavy,right_digit5_proximal_phalanx,hand,0.0151,,3.77954,-3.185332,-4.599713,"центр bbox (ASSUMED, A03)",20.8,20.0,14.6,,,,DERIVED,доля массы пальцев 0.910 кг по объёму bbox (1.7 %); механизмы/приводы пальцев UNKNOWN
+R,heavy,second_phalanx_left_thumb_link,hand,0.0304,,3.792251,-0.681571,-4.48219,"центр bbox (ASSUMED, A03)",20.3,40.0,15.0,,,,DERIVED,доля массы пальцев 0.910 кг по объёму bbox (3.3 %); механизмы/приводы пальцев UNKNOWN
+R,heavy,second_phalanx_left_thumb_link_collision,hand,0.0344,,3.70836,-0.904439,-4.46999,"центр bbox (ASSUMED, A03)",20.3,45.2,15.0,,,,DERIVED,доля массы пальцев 0.910 кг по объёму bbox (3.8 %); механизмы/приводы пальцев UNKNOWN
+R,heavy,second_phalanx_right_thumb_link,hand,0.0303,,3.779541,-3.05299,-4.466449,"центр bbox (ASSUMED, A03)",20.8,40.0,14.6,,,,DERIVED,доля массы пальцев 0.910 кг по объёму bbox (3.3 %); механизмы/приводы пальцев UNKNOWN
+R,heavy,second_phalanx_right_thumb_link_collision,hand,0.0329,,3.708359,-2.815117,-4.481811,"центр bbox (ASSUMED, A03)",20.8,43.8,14.5,,,,DERIVED,доля массы пальцев 0.910 кг по объёму bbox (3.6 %); механизмы/приводы пальцев UNKNOWN
+R,heavy,third_phalanx_left_thumb_link,hand,0.0945,,3.792252,-0.747714,-4.483224,"центр bbox (ASSUMED, A03)",31.7,40.0,30.0,,,,DERIVED,доля массы пальцев 0.910 кг по объёму bbox (10.4 %); механизмы/приводы пальцев UNKNOWN
+R,heavy,third_phalanx_left_thumb_link_collision,hand,0.0633,,3.708361,-0.960813,-4.480478,"центр bbox (ASSUMED, A03)",31.7,26.8,30.0,,,,DERIVED,доля массы пальцев 0.910 кг по объёму bbox (7.0 %); механизмы/приводы пальцев UNKNOWN
+R,heavy,third_phalanx_right_thumb_link,hand,0.1217,,3.779542,-2.997804,-4.467854,"центр bbox (ASSUMED, A03)",42.4,39.7,29.1,,,,DERIVED,доля массы пальцев 0.910 кг по объёму bbox (13.4 %); механизмы/приводы пальцев UNKNOWN
+R,heavy,third_phalanx_right_thumb_link_collision,hand,0.0794,,3.70836,-2.758674,-4.488502,"центр bbox (ASSUMED, A03)",42.4,25.9,29.0,,,,DERIVED,доля массы пальцев 0.910 кг по объёму bbox (8.7 %); механизмы/приводы пальцев UNKNOWN
+R,heavy,R_hand_unknown,hand_unknown,0.0,,3.779544,-3.018193,-4.558332,"центр bbox (ASSUMED, A03)",,,,,,,UNKNOWN,"механизм/приводы пальцев, digit5-меш без массы (E7), захватные поверхности, датчики кисти — НЕ учтены"
+R,heavy,right_shoulder_link__ribs,ribs,2.93,,3.779537,-2.339234,-4.559845,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A04: перегородки+рёбра (lean 1+0 / nominal 2+2 / heavy 3+3)
+R,heavy,right_forearm_link__ribs,ribs,2.6,,3.779542,-2.741847,-4.552919,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A04: перегородки+рёбра (lean 1+0 / nominal 2+2 / heavy 3+3)
+R,heavy,right_shoulder_link__cable,cable,0.24,,3.779537,-2.339234,-4.559845,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,"A14: половина трассы на плечо, половина на предплечье"
+R,heavy,right_forearm_link__cable,cable,0.24,,3.779542,-2.741847,-4.552919,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,"A14: половина трассы на плечо, половина на предплечье"
+R,heavy,R_act_sh3,actuator,52.66,,3.779664,-2.014746,-4.558747,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+R,heavy,R_act_sh2,actuator,49.88,,3.779665,-2.063215,-4.558236,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+R,heavy,R_act_sh1,actuator,49.88,,3.779664,-2.114746,-4.557726,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+R,heavy,R_act_el,actuator,52.66,,3.779537,-2.544408,-4.557245,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+R,heavy,R_act_rad,actuator,1.2,,3.778485,-2.820695,-4.552513,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+R,heavy,R_act_w1,actuator,0.92,,3.779534,-2.913791,-4.549999,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+R,heavy,R_act_w2,actuator,0.92,,3.779539,-2.946454,-4.550828,"центр bbox (ASSUMED, A03)",,,,,,,ASSUMED,A05 k·T* (ASSUMED); COM=фрейм сустава (A13)
+L,все,"EMPTY-звенья (shoulder_3, shoulder_2, radioulnar, wrist_pitch)",UNKNOWN,,,,,,UNKNOWN,,,,,,,UNKNOWN,"в .blend тип EMPTY, геометрии и массы нет (E8)"
+L,все,"Крепёж, разъёмы, датчики, кожухи",UNKNOWN,,,,,,UNKNOWN,,,,,,,UNKNOWN,не учтены нигде (A15/A17)
+L,все,Тормоза суставов,UNKNOWN,,,,,,UNKNOWN,,,,,,,UNKNOWN,наличие не определено (A16)
+L,все,Приводы и механизмы пальцев,UNKNOWN,,,,,,UNKNOWN,,,,,,,UNKNOWN,схема захвата не задана (A15)
+L,все,Компенсатор (масса узла),UNKNOWN,,,,,,UNKNOWN,,,,,,,UNKNOWN,параметр 1.5 кг/сустав — ASSUMED
+L,все,Реальный COM звеньев,UNKNOWN,,,,,,UNKNOWN,,,,,,,UNKNOWN,0/182 объектов в .blend (E1)
+L,все,Тензор инерции из .blend,UNKNOWN,,,,,,UNKNOWN,,,,,,,UNKNOWN,0/182 объектов в .blend (E1)
+R,все,"EMPTY-звенья (shoulder_3, shoulder_2, radioulnar, wrist_pitch)",UNKNOWN,,,,,,UNKNOWN,,,,,,,UNKNOWN,"в .blend тип EMPTY, геометрии и массы нет (E8)"
+R,все,"Крепёж, разъёмы, датчики, кожухи",UNKNOWN,,,,,,UNKNOWN,,,,,,,UNKNOWN,не учтены нигде (A15/A17)
+R,все,Тормоза суставов,UNKNOWN,,,,,,UNKNOWN,,,,,,,UNKNOWN,наличие не определено (A16)
+R,все,Приводы и механизмы пальцев,UNKNOWN,,,,,,UNKNOWN,,,,,,,UNKNOWN,схема захвата не задана (A15)
+R,все,Компенсатор (масса узла),UNKNOWN,,,,,,UNKNOWN,,,,,,,UNKNOWN,параметр 1.5 кг/сустав — ASSUMED
+R,все,Реальный COM звеньев,UNKNOWN,,,,,,UNKNOWN,,,,,,,UNKNOWN,0/182 объектов в .blend (E1)
+R,все,Тензор инерции из .blend,UNKNOWN,,,,,,UNKNOWN,,,,,,,UNKNOWN,0/182 объектов в .blend (E1)

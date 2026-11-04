@@ -1,0 +1,19 @@
+PASS | box Length = L(50) | 50.0
+PASS | box по Z от Z=L/2=25 | ZMin=25.0
+PASS | cylinder R=W/2=15 | 30.0
+PASS | boolean cut: четверть выреза цилиндра | V=74018.3, ожидалось 74018.3
+PASS | App::Part содержит cutf и cyl (auto-тянет зависимости: 4) | 4 объектов
+PASS | пользовательское свойство bom_status
+PASS | пересчёт: L=50 -> 80 меняет геометрию | XLength=80.0
+PASS | пересчёт: Z=L/2=40 (формула-ячейка) | ZMin=40.0
+PASS | FCStd сохранён | 6837 байт
+PASS | повторное открытие: объекты на месте
+PASS | после открытия: выражения живы (Length=80) | 80.0
+PASS | после открытия: bom_status сохранён | part_mass_pending
+STEP: начато (Import.export, объекты doc2)
+STEP: Import.export выполнен
+PASS | STEP экспорт | 13220 байт
+PASS | STEP имеет заголовок ISO-10303 | ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION((
+TEST_RESULT: PASS

@@ -1,0 +1,3894 @@
+{
+ "params": {
+  "lift_R": 120.0,
+  "lift_gap": 10.0,
+  "dia_extra": 10.0,
+  "asm_extra": 30.0,
+  "hub_extra": 60.0,
+  "gap_transport": 10.0,
+  "well_clr": 10.0,
+  "S_inline": 150.0,
+  "S_belt": 60.0,
+  "S_hub": 0.0,
+  "pod_half_tan": 70.0,
+  "pod_depth": 100.0,
+  "pod_r_out_off": 30.0,
+  "bat_Rout_margin": 140.0,
+  "stroke": [
+   200.0,
+   300.0,
+   400.0
+  ],
+  "drive_w_m": 60.0,
+  "cg_heights": [
+   300.0,
+   500.0,
+   700.0,
+   900.0
+  ]
+ },
+ "lift_clear_R": 130.0,
+ "cases": [
+  {
+   "layout": "R",
+   "wheel": "D152",
+   "Dp": 600.0,
+   "drive": "hub",
+   "D_asm": 162.4,
+   "W_eff": 140.0,
+   "S_req": 0.0,
+   "r_c": 208.4,
+   "corner_R": 290.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 128.4,
+   "lift_margin": -1.6,
+   "band_mm": -1.6,
+   "band_margin": -1.6,
+   "wheels_gap": 37.2,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.1234,
+    "inradius": 175.6
+   },
+   "pod_corner_R": 278.9,
+   "pod_gap_to_contour": 21.1,
+   "pads": {
+    "200": {
+     "pad_r": 420.0,
+     "area_m2": 0.3528,
+     "inradius": 297.0
+    },
+    "300": {
+     "pad_r": 520.0,
+     "area_m2": 0.5408,
+     "inradius": 367.7
+    },
+    "400": {
+     "pad_r": 620.0,
+     "area_m2": 0.7688,
+     "inradius": 438.4
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5408,
+    "inradius": 367.7
+   },
+   "tip_angles_deg": {
+    "h300": 30.3,
+    "h500": 19.4,
+    "h700": 14.1,
+    "h900": 11.0
+   },
+   "tip_angles_working_deg": {
+    "h300": 50.8,
+    "h500": 36.3,
+    "h700": 27.7,
+    "h900": 22.2
+   },
+   "battery_half_tan": 15.0,
+   "battery_radial": 30.0,
+   "pass": false
+  },
+  {
+   "layout": "R",
+   "wheel": "D152",
+   "Dp": 600.0,
+   "drive": "belt",
+   "D_asm": 162.4,
+   "W_eff": 110.0,
+   "S_req": 60.0,
+   "r_c": 223.4,
+   "corner_R": 290.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 158.4,
+   "lift_margin": 28.4,
+   "band_mm": 28.4,
+   "band_margin": -31.6,
+   "wheels_gap": 67.2,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.1388,
+    "inradius": 186.3
+   },
+   "pod_corner_R": 278.9,
+   "pod_gap_to_contour": 21.1,
+   "pads": {
+    "200": {
+     "pad_r": 420.0,
+     "area_m2": 0.3528,
+     "inradius": 297.0
+    },
+    "300": {
+     "pad_r": 520.0,
+     "area_m2": 0.5408,
+     "inradius": 367.7
+    },
+    "400": {
+     "pad_r": 620.0,
+     "area_m2": 0.7688,
+     "inradius": 438.4
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5408,
+    "inradius": 367.7
+   },
+   "tip_angles_deg": {
+    "h300": 31.8,
+    "h500": 20.4,
+    "h700": 14.9,
+    "h900": 11.7
+   },
+   "tip_angles_working_deg": {
+    "h300": 50.8,
+    "h500": 36.3,
+    "h700": 27.7,
+    "h900": 22.2
+   },
+   "battery_half_tan": 45.0,
+   "battery_radial": 30.0,
+   "pass": false
+  },
+  {
+   "layout": "R",
+   "wheel": "D152",
+   "Dp": 600.0,
+   "drive": "inline",
+   "D_asm": 162.4,
+   "W_eff": 110.0,
+   "S_req": 150.0,
+   "r_c": 223.4,
+   "corner_R": 290.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 158.4,
+   "lift_margin": 28.4,
+   "band_mm": 28.4,
+   "band_margin": -121.6,
+   "wheels_gap": 67.2,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.1388,
+    "inradius": 186.3
+   },
+   "pod_corner_R": 278.9,
+   "pod_gap_to_contour": 21.1,
+   "pads": {
+    "200": {
+     "pad_r": 420.0,
+     "area_m2": 0.3528,
+     "inradius": 297.0
+    },
+    "300": {
+     "pad_r": 520.0,
+     "area_m2": 0.5408,
+     "inradius": 367.7
+    },
+    "400": {
+     "pad_r": 620.0,
+     "area_m2": 0.7688,
+     "inradius": 438.4
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5408,
+    "inradius": 367.7
+   },
+   "tip_angles_deg": {
+    "h300": 31.8,
+    "h500": 20.4,
+    "h700": 14.9,
+    "h900": 11.7
+   },
+   "tip_angles_working_deg": {
+    "h300": 50.8,
+    "h500": 36.3,
+    "h700": 27.7,
+    "h900": 22.2
+   },
+   "battery_half_tan": 45.0,
+   "battery_radial": 30.0,
+   "pass": false
+  },
+  {
+   "layout": "R",
+   "wheel": "D203",
+   "Dp": 600.0,
+   "drive": "hub",
+   "D_asm": 213.0,
+   "W_eff": 163.0,
+   "S_req": 0.0,
+   "r_c": 188.2,
+   "corner_R": 290.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 96.7,
+   "lift_margin": -33.3,
+   "band_mm": -33.3,
+   "band_margin": -33.3,
+   "wheels_gap": -19.8,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.1149,
+    "inradius": 169.5
+   },
+   "pod_corner_R": 278.9,
+   "pod_gap_to_contour": 21.1,
+   "pads": {
+    "200": {
+     "pad_r": 420.0,
+     "area_m2": 0.3528,
+     "inradius": 297.0
+    },
+    "300": {
+     "pad_r": 520.0,
+     "area_m2": 0.5408,
+     "inradius": 367.7
+    },
+    "400": {
+     "pad_r": 620.0,
+     "area_m2": 0.7688,
+     "inradius": 438.4
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5408,
+    "inradius": 367.7
+   },
+   "tip_angles_deg": {
+    "h300": 29.5,
+    "h500": 18.7,
+    "h700": 13.6,
+    "h900": 10.7
+   },
+   "tip_angles_working_deg": {
+    "h300": 50.8,
+    "h500": 36.3,
+    "h700": 27.7,
+    "h900": 22.2
+   },
+   "battery_half_tan": 0.0,
+   "battery_radial": 30.0,
+   "pass": false
+  },
+  {
+   "layout": "R",
+   "wheel": "D203",
+   "Dp": 600.0,
+   "drive": "belt",
+   "D_asm": 213.0,
+   "W_eff": 133.0,
+   "S_req": 60.0,
+   "r_c": 203.2,
+   "corner_R": 290.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 126.7,
+   "lift_margin": -3.3,
+   "band_mm": -3.3,
+   "band_margin": -63.3,
+   "wheels_gap": 10.2,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.1298,
+    "inradius": 180.1
+   },
+   "pod_corner_R": 278.9,
+   "pod_gap_to_contour": 21.1,
+   "pads": {
+    "200": {
+     "pad_r": 420.0,
+     "area_m2": 0.3528,
+     "inradius": 297.0
+    },
+    "300": {
+     "pad_r": 520.0,
+     "area_m2": 0.5408,
+     "inradius": 367.7
+    },
+    "400": {
+     "pad_r": 620.0,
+     "area_m2": 0.7688,
+     "inradius": 438.4
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5408,
+    "inradius": 367.7
+   },
+   "tip_angles_deg": {
+    "h300": 31.0,
+    "h500": 19.8,
+    "h700": 14.4,
+    "h900": 11.3
+   },
+   "tip_angles_working_deg": {
+    "h300": 50.8,
+    "h500": 36.3,
+    "h700": 27.7,
+    "h900": 22.2
+   },
+   "battery_half_tan": 5.0,
+   "battery_radial": 30.0,
+   "pass": false
+  },
+  {
+   "layout": "R",
+   "wheel": "D203",
+   "Dp": 600.0,
+   "drive": "inline",
+   "D_asm": 213.0,
+   "W_eff": 133.0,
+   "S_req": 150.0,
+   "r_c": 203.2,
+   "corner_R": 290.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 126.7,
+   "lift_margin": -3.3,
+   "band_mm": -3.3,
+   "band_margin": -153.3,
+   "wheels_gap": 10.2,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.1298,
+    "inradius": 180.1
+   },
+   "pod_corner_R": 278.9,
+   "pod_gap_to_contour": 21.1,
+   "pads": {
+    "200": {
+     "pad_r": 420.0,
+     "area_m2": 0.3528,
+     "inradius": 297.0
+    },
+    "300": {
+     "pad_r": 520.0,
+     "area_m2": 0.5408,
+     "inradius": 367.7
+    },
+    "400": {
+     "pad_r": 620.0,
+     "area_m2": 0.7688,
+     "inradius": 438.4
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5408,
+    "inradius": 367.7
+   },
+   "tip_angles_deg": {
+    "h300": 31.0,
+    "h500": 19.8,
+    "h700": 14.4,
+    "h900": 11.3
+   },
+   "tip_angles_working_deg": {
+    "h300": 50.8,
+    "h500": 36.3,
+    "h700": 27.7,
+    "h900": 22.2
+   },
+   "battery_half_tan": 5.0,
+   "battery_radial": 30.0,
+   "pass": false
+  },
+  {
+   "layout": "R",
+   "wheel": "D230",
+   "Dp": 600.0,
+   "drive": "hub",
+   "D_asm": 240.0,
+   "W_eff": 173.0,
+   "S_req": 0.0,
+   "r_c": 177.5,
+   "corner_R": 290.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 81.0,
+   "lift_margin": -49.0,
+   "band_mm": -49.0,
+   "band_margin": -49.0,
+   "wheels_gap": -49.0,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.1095,
+    "inradius": 165.5
+   },
+   "pod_corner_R": 278.9,
+   "pod_gap_to_contour": 21.1,
+   "pads": {
+    "200": {
+     "pad_r": 420.0,
+     "area_m2": 0.3528,
+     "inradius": 297.0
+    },
+    "300": {
+     "pad_r": 520.0,
+     "area_m2": 0.5408,
+     "inradius": 367.7
+    },
+    "400": {
+     "pad_r": 620.0,
+     "area_m2": 0.7688,
+     "inradius": 438.4
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5408,
+    "inradius": 367.7
+   },
+   "tip_angles_deg": {
+    "h300": 28.9,
+    "h500": 18.3,
+    "h700": 13.3,
+    "h900": 10.4
+   },
+   "tip_angles_working_deg": {
+    "h300": 50.8,
+    "h500": 36.3,
+    "h700": 27.7,
+    "h900": 22.2
+   },
+   "battery_half_tan": 0.0,
+   "battery_radial": 30.0,
+   "pass": false
+  },
+  {
+   "layout": "R",
+   "wheel": "D230",
+   "Dp": 600.0,
+   "drive": "belt",
+   "D_asm": 240.0,
+   "W_eff": 143.0,
+   "S_req": 60.0,
+   "r_c": 192.5,
+   "corner_R": 290.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 111.0,
+   "lift_margin": -19.0,
+   "band_mm": -19.0,
+   "band_margin": -79.0,
+   "wheels_gap": -19.0,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.124,
+    "inradius": 176.1
+   },
+   "pod_corner_R": 278.9,
+   "pod_gap_to_contour": 21.1,
+   "pads": {
+    "200": {
+     "pad_r": 420.0,
+     "area_m2": 0.3528,
+     "inradius": 297.0
+    },
+    "300": {
+     "pad_r": 520.0,
+     "area_m2": 0.5408,
+     "inradius": 367.7
+    },
+    "400": {
+     "pad_r": 620.0,
+     "area_m2": 0.7688,
+     "inradius": 438.4
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5408,
+    "inradius": 367.7
+   },
+   "tip_angles_deg": {
+    "h300": 30.4,
+    "h500": 19.4,
+    "h700": 14.1,
+    "h900": 11.1
+   },
+   "tip_angles_working_deg": {
+    "h300": 50.8,
+    "h500": 36.3,
+    "h700": 27.7,
+    "h900": 22.2
+   },
+   "battery_half_tan": 0.0,
+   "battery_radial": 30.0,
+   "pass": false
+  },
+  {
+   "layout": "R",
+   "wheel": "D230",
+   "Dp": 600.0,
+   "drive": "inline",
+   "D_asm": 240.0,
+   "W_eff": 143.0,
+   "S_req": 150.0,
+   "r_c": 192.5,
+   "corner_R": 290.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 111.0,
+   "lift_margin": -19.0,
+   "band_mm": -19.0,
+   "band_margin": -169.0,
+   "wheels_gap": -19.0,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.124,
+    "inradius": 176.1
+   },
+   "pod_corner_R": 278.9,
+   "pod_gap_to_contour": 21.1,
+   "pads": {
+    "200": {
+     "pad_r": 420.0,
+     "area_m2": 0.3528,
+     "inradius": 297.0
+    },
+    "300": {
+     "pad_r": 520.0,
+     "area_m2": 0.5408,
+     "inradius": 367.7
+    },
+    "400": {
+     "pad_r": 620.0,
+     "area_m2": 0.7688,
+     "inradius": 438.4
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5408,
+    "inradius": 367.7
+   },
+   "tip_angles_deg": {
+    "h300": 30.4,
+    "h500": 19.4,
+    "h700": 14.1,
+    "h900": 11.1
+   },
+   "tip_angles_working_deg": {
+    "h300": 50.8,
+    "h500": 36.3,
+    "h700": 27.7,
+    "h900": 22.2
+   },
+   "battery_half_tan": 0.0,
+   "battery_radial": 30.0,
+   "pass": false
+  },
+  {
+   "layout": "R",
+   "wheel": "D152",
+   "Dp": 620.0,
+   "drive": "hub",
+   "D_asm": 162.4,
+   "W_eff": 140.0,
+   "S_req": 0.0,
+   "r_c": 218.8,
+   "corner_R": 300.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 138.8,
+   "lift_margin": 8.8,
+   "band_mm": 8.8,
+   "band_margin": 8.8,
+   "wheels_gap": 47.6,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.134,
+    "inradius": 183.0
+   },
+   "pod_corner_R": 288.6,
+   "pod_gap_to_contour": 21.4,
+   "pads": {
+    "200": {
+     "pad_r": 430.0,
+     "area_m2": 0.3698,
+     "inradius": 304.1
+    },
+    "300": {
+     "pad_r": 530.0,
+     "area_m2": 0.5618,
+     "inradius": 374.8
+    },
+    "400": {
+     "pad_r": 630.0,
+     "area_m2": 0.7938,
+     "inradius": 445.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5618,
+    "inradius": 374.8
+   },
+   "tip_angles_deg": {
+    "h300": 31.4,
+    "h500": 20.1,
+    "h700": 14.7,
+    "h900": 11.5
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.3,
+    "h500": 36.9,
+    "h700": 28.2,
+    "h900": 22.6
+   },
+   "battery_half_tan": 20.0,
+   "battery_radial": 40.0,
+   "pass": true
+  },
+  {
+   "layout": "R",
+   "wheel": "D152",
+   "Dp": 620.0,
+   "drive": "belt",
+   "D_asm": 162.4,
+   "W_eff": 110.0,
+   "S_req": 60.0,
+   "r_c": 233.8,
+   "corner_R": 300.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 168.8,
+   "lift_margin": 38.8,
+   "band_mm": 38.8,
+   "band_margin": -21.2,
+   "wheels_gap": 77.6,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.1499,
+    "inradius": 193.6
+   },
+   "pod_corner_R": 288.6,
+   "pod_gap_to_contour": 21.4,
+   "pads": {
+    "200": {
+     "pad_r": 430.0,
+     "area_m2": 0.3698,
+     "inradius": 304.1
+    },
+    "300": {
+     "pad_r": 530.0,
+     "area_m2": 0.5618,
+     "inradius": 374.8
+    },
+    "400": {
+     "pad_r": 630.0,
+     "area_m2": 0.7938,
+     "inradius": 445.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5618,
+    "inradius": 374.8
+   },
+   "tip_angles_deg": {
+    "h300": 32.8,
+    "h500": 21.2,
+    "h700": 15.5,
+    "h900": 12.1
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.3,
+    "h500": 36.9,
+    "h700": 28.2,
+    "h900": 22.6
+   },
+   "battery_half_tan": 50.0,
+   "battery_radial": 40.0,
+   "pass": false
+  },
+  {
+   "layout": "R",
+   "wheel": "D152",
+   "Dp": 620.0,
+   "drive": "inline",
+   "D_asm": 162.4,
+   "W_eff": 110.0,
+   "S_req": 150.0,
+   "r_c": 233.8,
+   "corner_R": 300.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 168.8,
+   "lift_margin": 38.8,
+   "band_mm": 38.8,
+   "band_margin": -111.2,
+   "wheels_gap": 77.6,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.1499,
+    "inradius": 193.6
+   },
+   "pod_corner_R": 288.6,
+   "pod_gap_to_contour": 21.4,
+   "pads": {
+    "200": {
+     "pad_r": 430.0,
+     "area_m2": 0.3698,
+     "inradius": 304.1
+    },
+    "300": {
+     "pad_r": 530.0,
+     "area_m2": 0.5618,
+     "inradius": 374.8
+    },
+    "400": {
+     "pad_r": 630.0,
+     "area_m2": 0.7938,
+     "inradius": 445.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5618,
+    "inradius": 374.8
+   },
+   "tip_angles_deg": {
+    "h300": 32.8,
+    "h500": 21.2,
+    "h700": 15.5,
+    "h900": 12.1
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.3,
+    "h500": 36.9,
+    "h700": 28.2,
+    "h900": 22.6
+   },
+   "battery_half_tan": 50.0,
+   "battery_radial": 40.0,
+   "pass": false
+  },
+  {
+   "layout": "R",
+   "wheel": "D203",
+   "Dp": 620.0,
+   "drive": "hub",
+   "D_asm": 213.0,
+   "W_eff": 163.0,
+   "S_req": 0.0,
+   "r_c": 199.0,
+   "corner_R": 300.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 107.5,
+   "lift_margin": -22.5,
+   "band_mm": -22.5,
+   "band_margin": -22.5,
+   "wheels_gap": -9.0,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.1255,
+    "inradius": 177.1
+   },
+   "pod_corner_R": 288.6,
+   "pod_gap_to_contour": 21.4,
+   "pads": {
+    "200": {
+     "pad_r": 430.0,
+     "area_m2": 0.3698,
+     "inradius": 304.1
+    },
+    "300": {
+     "pad_r": 530.0,
+     "area_m2": 0.5618,
+     "inradius": 374.8
+    },
+    "400": {
+     "pad_r": 630.0,
+     "area_m2": 0.7938,
+     "inradius": 445.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5618,
+    "inradius": 374.8
+   },
+   "tip_angles_deg": {
+    "h300": 30.6,
+    "h500": 19.5,
+    "h700": 14.2,
+    "h900": 11.1
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.3,
+    "h500": 36.9,
+    "h700": 28.2,
+    "h900": 22.6
+   },
+   "battery_half_tan": 0.0,
+   "battery_radial": 40.0,
+   "pass": false
+  },
+  {
+   "layout": "R",
+   "wheel": "D203",
+   "Dp": 620.0,
+   "drive": "belt",
+   "D_asm": 213.0,
+   "W_eff": 133.0,
+   "S_req": 60.0,
+   "r_c": 214.0,
+   "corner_R": 300.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 137.5,
+   "lift_margin": 7.5,
+   "band_mm": 7.5,
+   "band_margin": -52.5,
+   "wheels_gap": 21.0,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.1409,
+    "inradius": 187.7
+   },
+   "pod_corner_R": 288.6,
+   "pod_gap_to_contour": 21.4,
+   "pads": {
+    "200": {
+     "pad_r": 430.0,
+     "area_m2": 0.3698,
+     "inradius": 304.1
+    },
+    "300": {
+     "pad_r": 530.0,
+     "area_m2": 0.5618,
+     "inradius": 374.8
+    },
+    "400": {
+     "pad_r": 630.0,
+     "area_m2": 0.7938,
+     "inradius": 445.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5618,
+    "inradius": 374.8
+   },
+   "tip_angles_deg": {
+    "h300": 32.0,
+    "h500": 20.6,
+    "h700": 15.0,
+    "h900": 11.8
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.3,
+    "h500": 36.9,
+    "h700": 28.2,
+    "h900": 22.6
+   },
+   "battery_half_tan": 10.0,
+   "battery_radial": 40.0,
+   "pass": false
+  },
+  {
+   "layout": "R",
+   "wheel": "D203",
+   "Dp": 620.0,
+   "drive": "inline",
+   "D_asm": 213.0,
+   "W_eff": 133.0,
+   "S_req": 150.0,
+   "r_c": 214.0,
+   "corner_R": 300.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 137.5,
+   "lift_margin": 7.5,
+   "band_mm": 7.5,
+   "band_margin": -142.5,
+   "wheels_gap": 21.0,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.1409,
+    "inradius": 187.7
+   },
+   "pod_corner_R": 288.6,
+   "pod_gap_to_contour": 21.4,
+   "pads": {
+    "200": {
+     "pad_r": 430.0,
+     "area_m2": 0.3698,
+     "inradius": 304.1
+    },
+    "300": {
+     "pad_r": 530.0,
+     "area_m2": 0.5618,
+     "inradius": 374.8
+    },
+    "400": {
+     "pad_r": 630.0,
+     "area_m2": 0.7938,
+     "inradius": 445.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5618,
+    "inradius": 374.8
+   },
+   "tip_angles_deg": {
+    "h300": 32.0,
+    "h500": 20.6,
+    "h700": 15.0,
+    "h900": 11.8
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.3,
+    "h500": 36.9,
+    "h700": 28.2,
+    "h900": 22.6
+   },
+   "battery_half_tan": 10.0,
+   "battery_radial": 40.0,
+   "pass": false
+  },
+  {
+   "layout": "R",
+   "wheel": "D230",
+   "Dp": 620.0,
+   "drive": "hub",
+   "D_asm": 240.0,
+   "W_eff": 173.0,
+   "S_req": 0.0,
+   "r_c": 188.5,
+   "corner_R": 300.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 92.0,
+   "lift_margin": -38.0,
+   "band_mm": -38.0,
+   "band_margin": -38.0,
+   "wheels_gap": -38.0,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.12,
+    "inradius": 173.2
+   },
+   "pod_corner_R": 288.6,
+   "pod_gap_to_contour": 21.4,
+   "pads": {
+    "200": {
+     "pad_r": 430.0,
+     "area_m2": 0.3698,
+     "inradius": 304.1
+    },
+    "300": {
+     "pad_r": 530.0,
+     "area_m2": 0.5618,
+     "inradius": 374.8
+    },
+    "400": {
+     "pad_r": 630.0,
+     "area_m2": 0.7938,
+     "inradius": 445.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5618,
+    "inradius": 374.8
+   },
+   "tip_angles_deg": {
+    "h300": 30.0,
+    "h500": 19.1,
+    "h700": 13.9,
+    "h900": 10.9
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.3,
+    "h500": 36.9,
+    "h700": 28.2,
+    "h900": 22.6
+   },
+   "battery_half_tan": 0.0,
+   "battery_radial": 40.0,
+   "pass": false
+  },
+  {
+   "layout": "R",
+   "wheel": "D230",
+   "Dp": 620.0,
+   "drive": "belt",
+   "D_asm": 240.0,
+   "W_eff": 143.0,
+   "S_req": 60.0,
+   "r_c": 203.5,
+   "corner_R": 300.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 122.0,
+   "lift_margin": -8.0,
+   "band_mm": -8.0,
+   "band_margin": -68.0,
+   "wheels_gap": -8.0,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.1352,
+    "inradius": 183.8
+   },
+   "pod_corner_R": 288.6,
+   "pod_gap_to_contour": 21.4,
+   "pads": {
+    "200": {
+     "pad_r": 430.0,
+     "area_m2": 0.3698,
+     "inradius": 304.1
+    },
+    "300": {
+     "pad_r": 530.0,
+     "area_m2": 0.5618,
+     "inradius": 374.8
+    },
+    "400": {
+     "pad_r": 630.0,
+     "area_m2": 0.7938,
+     "inradius": 445.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5618,
+    "inradius": 374.8
+   },
+   "tip_angles_deg": {
+    "h300": 31.5,
+    "h500": 20.2,
+    "h700": 14.7,
+    "h900": 11.5
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.3,
+    "h500": 36.9,
+    "h700": 28.2,
+    "h900": 22.6
+   },
+   "battery_half_tan": 0.0,
+   "battery_radial": 40.0,
+   "pass": false
+  },
+  {
+   "layout": "R",
+   "wheel": "D230",
+   "Dp": 620.0,
+   "drive": "inline",
+   "D_asm": 240.0,
+   "W_eff": 143.0,
+   "S_req": 150.0,
+   "r_c": 203.5,
+   "corner_R": 300.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 122.0,
+   "lift_margin": -8.0,
+   "band_mm": -8.0,
+   "band_margin": -158.0,
+   "wheels_gap": -8.0,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.1352,
+    "inradius": 183.8
+   },
+   "pod_corner_R": 288.6,
+   "pod_gap_to_contour": 21.4,
+   "pads": {
+    "200": {
+     "pad_r": 430.0,
+     "area_m2": 0.3698,
+     "inradius": 304.1
+    },
+    "300": {
+     "pad_r": 530.0,
+     "area_m2": 0.5618,
+     "inradius": 374.8
+    },
+    "400": {
+     "pad_r": 630.0,
+     "area_m2": 0.7938,
+     "inradius": 445.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5618,
+    "inradius": 374.8
+   },
+   "tip_angles_deg": {
+    "h300": 31.5,
+    "h500": 20.2,
+    "h700": 14.7,
+    "h900": 11.5
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.3,
+    "h500": 36.9,
+    "h700": 28.2,
+    "h900": 22.6
+   },
+   "battery_half_tan": 0.0,
+   "battery_radial": 40.0,
+   "pass": false
+  },
+  {
+   "layout": "R",
+   "wheel": "D152",
+   "Dp": 640.0,
+   "drive": "hub",
+   "D_asm": 162.4,
+   "W_eff": 140.0,
+   "S_req": 0.0,
+   "r_c": 229.2,
+   "corner_R": 310.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 149.2,
+   "lift_margin": 19.2,
+   "band_mm": 19.2,
+   "band_margin": 19.2,
+   "wheels_gap": 58.0,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.1449,
+    "inradius": 190.3
+   },
+   "pod_corner_R": 298.3,
+   "pod_gap_to_contour": 21.7,
+   "pads": {
+    "200": {
+     "pad_r": 440.0,
+     "area_m2": 0.3872,
+     "inradius": 311.1
+    },
+    "300": {
+     "pad_r": 540.0,
+     "area_m2": 0.5832,
+     "inradius": 381.8
+    },
+    "400": {
+     "pad_r": 640.0,
+     "area_m2": 0.8192,
+     "inradius": 452.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5832,
+    "inradius": 381.8
+   },
+   "tip_angles_deg": {
+    "h300": 32.4,
+    "h500": 20.8,
+    "h700": 15.2,
+    "h900": 11.9
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.8,
+    "h500": 37.4,
+    "h700": 28.6,
+    "h900": 23.0
+   },
+   "battery_half_tan": 30.0,
+   "battery_radial": 50.0,
+   "pass": true
+  },
+  {
+   "layout": "R",
+   "wheel": "D152",
+   "Dp": 640.0,
+   "drive": "belt",
+   "D_asm": 162.4,
+   "W_eff": 110.0,
+   "S_req": 60.0,
+   "r_c": 244.2,
+   "corner_R": 310.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 179.2,
+   "lift_margin": 49.2,
+   "band_mm": 49.2,
+   "band_margin": -10.8,
+   "wheels_gap": 88.0,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.1615,
+    "inradius": 200.9
+   },
+   "pod_corner_R": 298.3,
+   "pod_gap_to_contour": 21.7,
+   "pads": {
+    "200": {
+     "pad_r": 440.0,
+     "area_m2": 0.3872,
+     "inradius": 311.1
+    },
+    "300": {
+     "pad_r": 540.0,
+     "area_m2": 0.5832,
+     "inradius": 381.8
+    },
+    "400": {
+     "pad_r": 640.0,
+     "area_m2": 0.8192,
+     "inradius": 452.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5832,
+    "inradius": 381.8
+   },
+   "tip_angles_deg": {
+    "h300": 33.8,
+    "h500": 21.9,
+    "h700": 16.0,
+    "h900": 12.6
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.8,
+    "h500": 37.4,
+    "h700": 28.6,
+    "h900": 23.0
+   },
+   "battery_half_tan": 55.0,
+   "battery_radial": 50.0,
+   "pass": false
+  },
+  {
+   "layout": "R",
+   "wheel": "D152",
+   "Dp": 640.0,
+   "drive": "inline",
+   "D_asm": 162.4,
+   "W_eff": 110.0,
+   "S_req": 150.0,
+   "r_c": 244.2,
+   "corner_R": 310.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 179.2,
+   "lift_margin": 49.2,
+   "band_mm": 49.2,
+   "band_margin": -100.8,
+   "wheels_gap": 88.0,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.1615,
+    "inradius": 200.9
+   },
+   "pod_corner_R": 298.3,
+   "pod_gap_to_contour": 21.7,
+   "pads": {
+    "200": {
+     "pad_r": 440.0,
+     "area_m2": 0.3872,
+     "inradius": 311.1
+    },
+    "300": {
+     "pad_r": 540.0,
+     "area_m2": 0.5832,
+     "inradius": 381.8
+    },
+    "400": {
+     "pad_r": 640.0,
+     "area_m2": 0.8192,
+     "inradius": 452.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5832,
+    "inradius": 381.8
+   },
+   "tip_angles_deg": {
+    "h300": 33.8,
+    "h500": 21.9,
+    "h700": 16.0,
+    "h900": 12.6
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.8,
+    "h500": 37.4,
+    "h700": 28.6,
+    "h900": 23.0
+   },
+   "battery_half_tan": 55.0,
+   "battery_radial": 50.0,
+   "pass": false
+  },
+  {
+   "layout": "R",
+   "wheel": "D203",
+   "Dp": 640.0,
+   "drive": "hub",
+   "D_asm": 213.0,
+   "W_eff": 163.0,
+   "S_req": 0.0,
+   "r_c": 209.6,
+   "corner_R": 310.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 118.1,
+   "lift_margin": -11.9,
+   "band_mm": -11.9,
+   "band_margin": -11.9,
+   "wheels_gap": 1.6,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.1364,
+    "inradius": 184.6
+   },
+   "pod_corner_R": 298.3,
+   "pod_gap_to_contour": 21.7,
+   "pads": {
+    "200": {
+     "pad_r": 440.0,
+     "area_m2": 0.3872,
+     "inradius": 311.1
+    },
+    "300": {
+     "pad_r": 540.0,
+     "area_m2": 0.5832,
+     "inradius": 381.8
+    },
+    "400": {
+     "pad_r": 640.0,
+     "area_m2": 0.8192,
+     "inradius": 452.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5832,
+    "inradius": 381.8
+   },
+   "tip_angles_deg": {
+    "h300": 31.6,
+    "h500": 20.3,
+    "h700": 14.8,
+    "h900": 11.6
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.8,
+    "h500": 37.4,
+    "h700": 28.6,
+    "h900": 23.0
+   },
+   "battery_half_tan": 0.0,
+   "battery_radial": 50.0,
+   "pass": false
+  },
+  {
+   "layout": "R",
+   "wheel": "D203",
+   "Dp": 640.0,
+   "drive": "belt",
+   "D_asm": 213.0,
+   "W_eff": 133.0,
+   "S_req": 60.0,
+   "r_c": 224.6,
+   "corner_R": 310.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 148.1,
+   "lift_margin": 18.1,
+   "band_mm": 18.1,
+   "band_margin": -41.9,
+   "wheels_gap": 31.6,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.1525,
+    "inradius": 195.3
+   },
+   "pod_corner_R": 298.3,
+   "pod_gap_to_contour": 21.7,
+   "pads": {
+    "200": {
+     "pad_r": 440.0,
+     "area_m2": 0.3872,
+     "inradius": 311.1
+    },
+    "300": {
+     "pad_r": 540.0,
+     "area_m2": 0.5832,
+     "inradius": 381.8
+    },
+    "400": {
+     "pad_r": 640.0,
+     "area_m2": 0.8192,
+     "inradius": 452.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5832,
+    "inradius": 381.8
+   },
+   "tip_angles_deg": {
+    "h300": 33.1,
+    "h500": 21.3,
+    "h700": 15.6,
+    "h900": 12.2
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.8,
+    "h500": 37.4,
+    "h700": 28.6,
+    "h900": 23.0
+   },
+   "battery_half_tan": 15.0,
+   "battery_radial": 50.0,
+   "pass": false
+  },
+  {
+   "layout": "R",
+   "wheel": "D203",
+   "Dp": 640.0,
+   "drive": "inline",
+   "D_asm": 213.0,
+   "W_eff": 133.0,
+   "S_req": 150.0,
+   "r_c": 224.6,
+   "corner_R": 310.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 148.1,
+   "lift_margin": 18.1,
+   "band_mm": 18.1,
+   "band_margin": -131.9,
+   "wheels_gap": 31.6,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.1525,
+    "inradius": 195.3
+   },
+   "pod_corner_R": 298.3,
+   "pod_gap_to_contour": 21.7,
+   "pads": {
+    "200": {
+     "pad_r": 440.0,
+     "area_m2": 0.3872,
+     "inradius": 311.1
+    },
+    "300": {
+     "pad_r": 540.0,
+     "area_m2": 0.5832,
+     "inradius": 381.8
+    },
+    "400": {
+     "pad_r": 640.0,
+     "area_m2": 0.8192,
+     "inradius": 452.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5832,
+    "inradius": 381.8
+   },
+   "tip_angles_deg": {
+    "h300": 33.1,
+    "h500": 21.3,
+    "h700": 15.6,
+    "h900": 12.2
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.8,
+    "h500": 37.4,
+    "h700": 28.6,
+    "h900": 23.0
+   },
+   "battery_half_tan": 15.0,
+   "battery_radial": 50.0,
+   "pass": false
+  },
+  {
+   "layout": "R",
+   "wheel": "D230",
+   "Dp": 640.0,
+   "drive": "hub",
+   "D_asm": 240.0,
+   "W_eff": 173.0,
+   "S_req": 0.0,
+   "r_c": 199.3,
+   "corner_R": 310.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 102.8,
+   "lift_margin": -27.2,
+   "band_mm": -27.2,
+   "band_margin": -27.2,
+   "wheels_gap": -27.2,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.1309,
+    "inradius": 180.9
+   },
+   "pod_corner_R": 298.3,
+   "pod_gap_to_contour": 21.7,
+   "pads": {
+    "200": {
+     "pad_r": 440.0,
+     "area_m2": 0.3872,
+     "inradius": 311.1
+    },
+    "300": {
+     "pad_r": 540.0,
+     "area_m2": 0.5832,
+     "inradius": 381.8
+    },
+    "400": {
+     "pad_r": 640.0,
+     "area_m2": 0.8192,
+     "inradius": 452.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5832,
+    "inradius": 381.8
+   },
+   "tip_angles_deg": {
+    "h300": 31.1,
+    "h500": 19.9,
+    "h700": 14.5,
+    "h900": 11.4
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.8,
+    "h500": 37.4,
+    "h700": 28.6,
+    "h900": 23.0
+   },
+   "battery_half_tan": 0.0,
+   "battery_radial": 50.0,
+   "pass": false
+  },
+  {
+   "layout": "R",
+   "wheel": "D230",
+   "Dp": 640.0,
+   "drive": "belt",
+   "D_asm": 240.0,
+   "W_eff": 143.0,
+   "S_req": 60.0,
+   "r_c": 214.3,
+   "corner_R": 310.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 132.8,
+   "lift_margin": 2.8,
+   "band_mm": 2.8,
+   "band_margin": -57.2,
+   "wheels_gap": 2.8,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.1467,
+    "inradius": 191.5
+   },
+   "pod_corner_R": 298.3,
+   "pod_gap_to_contour": 21.7,
+   "pads": {
+    "200": {
+     "pad_r": 440.0,
+     "area_m2": 0.3872,
+     "inradius": 311.1
+    },
+    "300": {
+     "pad_r": 540.0,
+     "area_m2": 0.5832,
+     "inradius": 381.8
+    },
+    "400": {
+     "pad_r": 640.0,
+     "area_m2": 0.8192,
+     "inradius": 452.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5832,
+    "inradius": 381.8
+   },
+   "tip_angles_deg": {
+    "h300": 32.6,
+    "h500": 21.0,
+    "h700": 15.3,
+    "h900": 12.0
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.8,
+    "h500": 37.4,
+    "h700": 28.6,
+    "h900": 23.0
+   },
+   "battery_half_tan": 0.0,
+   "battery_radial": 50.0,
+   "pass": false
+  },
+  {
+   "layout": "R",
+   "wheel": "D230",
+   "Dp": 640.0,
+   "drive": "inline",
+   "D_asm": 240.0,
+   "W_eff": 143.0,
+   "S_req": 150.0,
+   "r_c": 214.3,
+   "corner_R": 310.0,
+   "gap_to_contour": 10.0,
+   "well_inner": 132.8,
+   "lift_margin": 2.8,
+   "band_mm": 2.8,
+   "band_margin": -147.2,
+   "wheels_gap": 2.8,
+   "supp_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "pad_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "supp_transport": {
+    "area_m2": 0.1467,
+    "inradius": 191.5
+   },
+   "pod_corner_R": 298.3,
+   "pod_gap_to_contour": 21.7,
+   "pads": {
+    "200": {
+     "pad_r": 440.0,
+     "area_m2": 0.3872,
+     "inradius": 311.1
+    },
+    "300": {
+     "pad_r": 540.0,
+     "area_m2": 0.5832,
+     "inradius": 381.8
+    },
+    "400": {
+     "pad_r": 640.0,
+     "area_m2": 0.8192,
+     "inradius": 452.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5832,
+    "inradius": 381.8
+   },
+   "tip_angles_deg": {
+    "h300": 32.6,
+    "h500": 21.0,
+    "h700": 15.3,
+    "h900": 12.0
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.8,
+    "h500": 37.4,
+    "h700": 28.6,
+    "h900": 23.0
+   },
+   "battery_half_tan": 0.0,
+   "battery_radial": 50.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D152",
+   "Dp": 600.0,
+   "drive": "hub",
+   "D_asm": 162.4,
+   "W_eff": 140.0,
+   "S_req": 0.0,
+   "u": 129.4,
+   "corner_R": 290.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 76.5,
+   "lift_margin": -53.5,
+   "band_mm": -34.4,
+   "band_margin": -34.4,
+   "wheels_gap": 96.4,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.0877,
+    "inradius": 129.4
+   },
+   "pod_corner_R": 278.9,
+   "pod_gap_to_contour": 21.1,
+   "pads": {
+    "200": {
+     "pad_r": 420.0,
+     "area_m2": 0.3528,
+     "inradius": 297.0
+    },
+    "300": {
+     "pad_r": 520.0,
+     "area_m2": 0.5408,
+     "inradius": 367.7
+    },
+    "400": {
+     "pad_r": 620.0,
+     "area_m2": 0.7688,
+     "inradius": 438.4
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5408,
+    "inradius": 367.7
+   },
+   "tip_angles_deg": {
+    "h300": 23.3,
+    "h500": 14.5,
+    "h700": 10.5,
+    "h900": 8.2
+   },
+   "tip_angles_working_deg": {
+    "h300": 50.8,
+    "h500": 36.3,
+    "h700": 27.7,
+    "h900": 22.2
+   },
+   "battery_half_tan": 35.0,
+   "battery_radial": 30.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D152",
+   "Dp": 600.0,
+   "drive": "belt",
+   "D_asm": 162.4,
+   "W_eff": 110.0,
+   "S_req": 60.0,
+   "u": 136.5,
+   "corner_R": 290.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 98.5,
+   "lift_margin": -31.5,
+   "band_mm": -2.9,
+   "band_margin": -62.9,
+   "wheels_gap": 110.7,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.0964,
+    "inradius": 136.5
+   },
+   "pod_corner_R": 278.9,
+   "pod_gap_to_contour": 21.1,
+   "pads": {
+    "200": {
+     "pad_r": 420.0,
+     "area_m2": 0.3528,
+     "inradius": 297.0
+    },
+    "300": {
+     "pad_r": 520.0,
+     "area_m2": 0.5408,
+     "inradius": 367.7
+    },
+    "400": {
+     "pad_r": 620.0,
+     "area_m2": 0.7688,
+     "inradius": 438.4
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5408,
+    "inradius": 367.7
+   },
+   "tip_angles_deg": {
+    "h300": 24.5,
+    "h500": 15.3,
+    "h700": 11.0,
+    "h900": 8.6
+   },
+   "tip_angles_working_deg": {
+    "h300": 50.8,
+    "h500": 36.3,
+    "h700": 27.7,
+    "h900": 22.2
+   },
+   "battery_half_tan": 60.0,
+   "battery_radial": 30.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D152",
+   "Dp": 600.0,
+   "drive": "inline",
+   "D_asm": 162.4,
+   "W_eff": 110.0,
+   "S_req": 150.0,
+   "u": 136.5,
+   "corner_R": 290.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 98.5,
+   "lift_margin": -31.5,
+   "band_mm": -2.9,
+   "band_margin": -152.9,
+   "wheels_gap": 110.7,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.0964,
+    "inradius": 136.5
+   },
+   "pod_corner_R": 278.9,
+   "pod_gap_to_contour": 21.1,
+   "pads": {
+    "200": {
+     "pad_r": 420.0,
+     "area_m2": 0.3528,
+     "inradius": 297.0
+    },
+    "300": {
+     "pad_r": 520.0,
+     "area_m2": 0.5408,
+     "inradius": 367.7
+    },
+    "400": {
+     "pad_r": 620.0,
+     "area_m2": 0.7688,
+     "inradius": 438.4
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5408,
+    "inradius": 367.7
+   },
+   "tip_angles_deg": {
+    "h300": 24.5,
+    "h500": 15.3,
+    "h700": 11.0,
+    "h900": 8.6
+   },
+   "tip_angles_working_deg": {
+    "h300": 50.8,
+    "h500": 36.3,
+    "h700": 27.7,
+    "h900": 22.2
+   },
+   "battery_half_tan": 60.0,
+   "battery_radial": 30.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D203",
+   "Dp": 600.0,
+   "drive": "hub",
+   "D_asm": 213.0,
+   "W_eff": 163.0,
+   "S_req": 0.0,
+   "u": 110.7,
+   "corner_R": 290.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 29.5,
+   "lift_margin": -100.5,
+   "band_mm": -82.8,
+   "band_margin": -82.8,
+   "wheels_gap": 8.4,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.0718,
+    "inradius": 110.7
+   },
+   "pod_corner_R": 278.9,
+   "pod_gap_to_contour": 21.1,
+   "pads": {
+    "200": {
+     "pad_r": 420.0,
+     "area_m2": 0.3528,
+     "inradius": 297.0
+    },
+    "300": {
+     "pad_r": 520.0,
+     "area_m2": 0.5408,
+     "inradius": 367.7
+    },
+    "400": {
+     "pad_r": 620.0,
+     "area_m2": 0.7688,
+     "inradius": 438.4
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5408,
+    "inradius": 367.7
+   },
+   "tip_angles_deg": {
+    "h300": 20.3,
+    "h500": 12.5,
+    "h700": 9.0,
+    "h900": 7.0
+   },
+   "tip_angles_working_deg": {
+    "h300": 50.8,
+    "h500": 36.3,
+    "h700": 27.7,
+    "h900": 22.2
+   },
+   "battery_half_tan": 5.0,
+   "battery_radial": 30.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D203",
+   "Dp": 600.0,
+   "drive": "belt",
+   "D_asm": 213.0,
+   "W_eff": 133.0,
+   "S_req": 60.0,
+   "u": 117.6,
+   "corner_R": 290.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 52.3,
+   "lift_margin": -77.7,
+   "band_mm": -55.0,
+   "band_margin": -115.0,
+   "wheels_gap": 22.2,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.0795,
+    "inradius": 117.6
+   },
+   "pod_corner_R": 278.9,
+   "pod_gap_to_contour": 21.1,
+   "pads": {
+    "200": {
+     "pad_r": 420.0,
+     "area_m2": 0.3528,
+     "inradius": 297.0
+    },
+    "300": {
+     "pad_r": 520.0,
+     "area_m2": 0.5408,
+     "inradius": 367.7
+    },
+    "400": {
+     "pad_r": 620.0,
+     "area_m2": 0.7688,
+     "inradius": 438.4
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5408,
+    "inradius": 367.7
+   },
+   "tip_angles_deg": {
+    "h300": 21.4,
+    "h500": 13.2,
+    "h700": 9.5,
+    "h900": 7.4
+   },
+   "tip_angles_working_deg": {
+    "h300": 50.8,
+    "h500": 36.3,
+    "h700": 27.7,
+    "h900": 22.2
+   },
+   "battery_half_tan": 30.0,
+   "battery_radial": 30.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D203",
+   "Dp": 600.0,
+   "drive": "inline",
+   "D_asm": 213.0,
+   "W_eff": 133.0,
+   "S_req": 150.0,
+   "u": 117.6,
+   "corner_R": 290.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 52.3,
+   "lift_margin": -77.7,
+   "band_mm": -55.0,
+   "band_margin": -205.0,
+   "wheels_gap": 22.2,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.0795,
+    "inradius": 117.6
+   },
+   "pod_corner_R": 278.9,
+   "pod_gap_to_contour": 21.1,
+   "pads": {
+    "200": {
+     "pad_r": 420.0,
+     "area_m2": 0.3528,
+     "inradius": 297.0
+    },
+    "300": {
+     "pad_r": 520.0,
+     "area_m2": 0.5408,
+     "inradius": 367.7
+    },
+    "400": {
+     "pad_r": 620.0,
+     "area_m2": 0.7688,
+     "inradius": 438.4
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5408,
+    "inradius": 367.7
+   },
+   "tip_angles_deg": {
+    "h300": 21.4,
+    "h500": 13.2,
+    "h700": 9.5,
+    "h900": 7.4
+   },
+   "tip_angles_working_deg": {
+    "h300": 50.8,
+    "h500": 36.3,
+    "h700": 27.7,
+    "h900": 22.2
+   },
+   "battery_half_tan": 30.0,
+   "battery_radial": 30.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D230",
+   "Dp": 600.0,
+   "drive": "hub",
+   "D_asm": 240.0,
+   "W_eff": 173.0,
+   "S_req": 0.0,
+   "u": 101.1,
+   "corner_R": 290.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 14.6,
+   "lift_margin": -115.4,
+   "band_mm": -104.2,
+   "band_margin": -104.2,
+   "wheels_gap": -37.7,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.0638,
+    "inradius": 101.1
+   },
+   "pod_corner_R": 278.9,
+   "pod_gap_to_contour": 21.1,
+   "pads": {
+    "200": {
+     "pad_r": 420.0,
+     "area_m2": 0.3528,
+     "inradius": 297.0
+    },
+    "300": {
+     "pad_r": 520.0,
+     "area_m2": 0.5408,
+     "inradius": 367.7
+    },
+    "400": {
+     "pad_r": 620.0,
+     "area_m2": 0.7688,
+     "inradius": 438.4
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5408,
+    "inradius": 367.7
+   },
+   "tip_angles_deg": {
+    "h300": 18.6,
+    "h500": 11.4,
+    "h700": 8.2,
+    "h900": 6.4
+   },
+   "tip_angles_working_deg": {
+    "h300": 50.8,
+    "h500": 36.3,
+    "h700": 27.7,
+    "h900": 22.2
+   },
+   "battery_half_tan": 0.0,
+   "battery_radial": 30.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D230",
+   "Dp": 600.0,
+   "drive": "belt",
+   "D_asm": 240.0,
+   "W_eff": 143.0,
+   "S_req": 60.0,
+   "u": 107.9,
+   "corner_R": 290.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 36.4,
+   "lift_margin": -93.6,
+   "band_mm": -77.7,
+   "band_margin": -137.7,
+   "wheels_gap": -24.3,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.0709,
+    "inradius": 107.9
+   },
+   "pod_corner_R": 278.9,
+   "pod_gap_to_contour": 21.1,
+   "pads": {
+    "200": {
+     "pad_r": 420.0,
+     "area_m2": 0.3528,
+     "inradius": 297.0
+    },
+    "300": {
+     "pad_r": 520.0,
+     "area_m2": 0.5408,
+     "inradius": 367.7
+    },
+    "400": {
+     "pad_r": 620.0,
+     "area_m2": 0.7688,
+     "inradius": 438.4
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5408,
+    "inradius": 367.7
+   },
+   "tip_angles_deg": {
+    "h300": 19.8,
+    "h500": 12.2,
+    "h700": 8.8,
+    "h900": 6.8
+   },
+   "tip_angles_working_deg": {
+    "h300": 50.8,
+    "h500": 36.3,
+    "h700": 27.7,
+    "h900": 22.2
+   },
+   "battery_half_tan": 15.0,
+   "battery_radial": 30.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D230",
+   "Dp": 600.0,
+   "drive": "inline",
+   "D_asm": 240.0,
+   "W_eff": 143.0,
+   "S_req": 150.0,
+   "u": 107.9,
+   "corner_R": 290.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 36.4,
+   "lift_margin": -93.6,
+   "band_mm": -77.7,
+   "band_margin": -227.7,
+   "wheels_gap": -24.3,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.0709,
+    "inradius": 107.9
+   },
+   "pod_corner_R": 278.9,
+   "pod_gap_to_contour": 21.1,
+   "pads": {
+    "200": {
+     "pad_r": 420.0,
+     "area_m2": 0.3528,
+     "inradius": 297.0
+    },
+    "300": {
+     "pad_r": 520.0,
+     "area_m2": 0.5408,
+     "inradius": 367.7
+    },
+    "400": {
+     "pad_r": 620.0,
+     "area_m2": 0.7688,
+     "inradius": 438.4
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5408,
+    "inradius": 367.7
+   },
+   "tip_angles_deg": {
+    "h300": 19.8,
+    "h500": 12.2,
+    "h700": 8.8,
+    "h900": 6.8
+   },
+   "tip_angles_working_deg": {
+    "h300": 50.8,
+    "h500": 36.3,
+    "h700": 27.7,
+    "h900": 22.2
+   },
+   "battery_half_tan": 15.0,
+   "battery_radial": 30.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D152",
+   "Dp": 620.0,
+   "drive": "hub",
+   "D_asm": 162.4,
+   "W_eff": 140.0,
+   "S_req": 0.0,
+   "u": 136.5,
+   "corner_R": 300.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 86.4,
+   "lift_margin": -43.6,
+   "band_mm": -18.2,
+   "band_margin": -18.2,
+   "wheels_gap": 110.5,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.0963,
+    "inradius": 136.5
+   },
+   "pod_corner_R": 288.6,
+   "pod_gap_to_contour": 21.4,
+   "pads": {
+    "200": {
+     "pad_r": 430.0,
+     "area_m2": 0.3698,
+     "inradius": 304.1
+    },
+    "300": {
+     "pad_r": 530.0,
+     "area_m2": 0.5618,
+     "inradius": 374.8
+    },
+    "400": {
+     "pad_r": 630.0,
+     "area_m2": 0.7938,
+     "inradius": 445.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5618,
+    "inradius": 374.8
+   },
+   "tip_angles_deg": {
+    "h300": 24.5,
+    "h500": 15.3,
+    "h700": 11.0,
+    "h900": 8.6
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.3,
+    "h500": 36.9,
+    "h700": 28.2,
+    "h900": 22.6
+   },
+   "battery_half_tan": 45.0,
+   "battery_radial": 40.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D152",
+   "Dp": 620.0,
+   "drive": "belt",
+   "D_asm": 162.4,
+   "W_eff": 110.0,
+   "S_req": 60.0,
+   "u": 143.6,
+   "corner_R": 300.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 108.4,
+   "lift_margin": -21.6,
+   "band_mm": 15.5,
+   "band_margin": -44.5,
+   "wheels_gap": 124.9,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.1055,
+    "inradius": 143.6
+   },
+   "pod_corner_R": 288.6,
+   "pod_gap_to_contour": 21.4,
+   "pads": {
+    "200": {
+     "pad_r": 430.0,
+     "area_m2": 0.3698,
+     "inradius": 304.1
+    },
+    "300": {
+     "pad_r": 530.0,
+     "area_m2": 0.5618,
+     "inradius": 374.8
+    },
+    "400": {
+     "pad_r": 630.0,
+     "area_m2": 0.7938,
+     "inradius": 445.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5618,
+    "inradius": 374.8
+   },
+   "tip_angles_deg": {
+    "h300": 25.6,
+    "h500": 16.0,
+    "h700": 11.6,
+    "h900": 9.1
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.3,
+    "h500": 36.9,
+    "h700": 28.2,
+    "h900": 22.6
+   },
+   "battery_half_tan": 65.0,
+   "battery_radial": 40.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D152",
+   "Dp": 620.0,
+   "drive": "inline",
+   "D_asm": 162.4,
+   "W_eff": 110.0,
+   "S_req": 150.0,
+   "u": 143.6,
+   "corner_R": 300.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 108.4,
+   "lift_margin": -21.6,
+   "band_mm": 15.5,
+   "band_margin": -134.5,
+   "wheels_gap": 124.9,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.1055,
+    "inradius": 143.6
+   },
+   "pod_corner_R": 288.6,
+   "pod_gap_to_contour": 21.4,
+   "pads": {
+    "200": {
+     "pad_r": 430.0,
+     "area_m2": 0.3698,
+     "inradius": 304.1
+    },
+    "300": {
+     "pad_r": 530.0,
+     "area_m2": 0.5618,
+     "inradius": 374.8
+    },
+    "400": {
+     "pad_r": 630.0,
+     "area_m2": 0.7938,
+     "inradius": 445.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5618,
+    "inradius": 374.8
+   },
+   "tip_angles_deg": {
+    "h300": 25.6,
+    "h500": 16.0,
+    "h700": 11.6,
+    "h900": 9.1
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.3,
+    "h500": 36.9,
+    "h700": 28.2,
+    "h900": 22.6
+   },
+   "battery_half_tan": 65.0,
+   "battery_radial": 40.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D203",
+   "Dp": 620.0,
+   "drive": "hub",
+   "D_asm": 213.0,
+   "W_eff": 163.0,
+   "S_req": 0.0,
+   "u": 117.8,
+   "corner_R": 300.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 38.0,
+   "lift_margin": -92.0,
+   "band_mm": -69.6,
+   "band_margin": -69.6,
+   "wheels_gap": 22.5,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.0797,
+    "inradius": 117.8
+   },
+   "pod_corner_R": 288.6,
+   "pod_gap_to_contour": 21.4,
+   "pads": {
+    "200": {
+     "pad_r": 430.0,
+     "area_m2": 0.3698,
+     "inradius": 304.1
+    },
+    "300": {
+     "pad_r": 530.0,
+     "area_m2": 0.5618,
+     "inradius": 374.8
+    },
+    "400": {
+     "pad_r": 630.0,
+     "area_m2": 0.7938,
+     "inradius": 445.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5618,
+    "inradius": 374.8
+   },
+   "tip_angles_deg": {
+    "h300": 21.4,
+    "h500": 13.3,
+    "h700": 9.6,
+    "h900": 7.5
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.3,
+    "h500": 36.9,
+    "h700": 28.2,
+    "h900": 22.6
+   },
+   "battery_half_tan": 15.0,
+   "battery_radial": 40.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D203",
+   "Dp": 620.0,
+   "drive": "belt",
+   "D_asm": 213.0,
+   "W_eff": 133.0,
+   "S_req": 60.0,
+   "u": 124.7,
+   "corner_R": 300.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 61.0,
+   "lift_margin": -69.0,
+   "band_mm": -40.9,
+   "band_margin": -100.9,
+   "wheels_gap": 36.4,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.0879,
+    "inradius": 124.7
+   },
+   "pod_corner_R": 288.6,
+   "pod_gap_to_contour": 21.4,
+   "pads": {
+    "200": {
+     "pad_r": 430.0,
+     "area_m2": 0.3698,
+     "inradius": 304.1
+    },
+    "300": {
+     "pad_r": 530.0,
+     "area_m2": 0.5618,
+     "inradius": 374.8
+    },
+    "400": {
+     "pad_r": 630.0,
+     "area_m2": 0.7938,
+     "inradius": 445.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5618,
+    "inradius": 374.8
+   },
+   "tip_angles_deg": {
+    "h300": 22.6,
+    "h500": 14.0,
+    "h700": 10.1,
+    "h900": 7.9
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.3,
+    "h500": 36.9,
+    "h700": 28.2,
+    "h900": 22.6
+   },
+   "battery_half_tan": 35.0,
+   "battery_radial": 40.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D203",
+   "Dp": 620.0,
+   "drive": "inline",
+   "D_asm": 213.0,
+   "W_eff": 133.0,
+   "S_req": 150.0,
+   "u": 124.7,
+   "corner_R": 300.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 61.0,
+   "lift_margin": -69.0,
+   "band_mm": -40.9,
+   "band_margin": -190.9,
+   "wheels_gap": 36.4,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.0879,
+    "inradius": 124.7
+   },
+   "pod_corner_R": 288.6,
+   "pod_gap_to_contour": 21.4,
+   "pads": {
+    "200": {
+     "pad_r": 430.0,
+     "area_m2": 0.3698,
+     "inradius": 304.1
+    },
+    "300": {
+     "pad_r": 530.0,
+     "area_m2": 0.5618,
+     "inradius": 374.8
+    },
+    "400": {
+     "pad_r": 630.0,
+     "area_m2": 0.7938,
+     "inradius": 445.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5618,
+    "inradius": 374.8
+   },
+   "tip_angles_deg": {
+    "h300": 22.6,
+    "h500": 14.0,
+    "h700": 10.1,
+    "h900": 7.9
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.3,
+    "h500": 36.9,
+    "h700": 28.2,
+    "h900": 22.6
+   },
+   "battery_half_tan": 35.0,
+   "battery_radial": 40.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D230",
+   "Dp": 620.0,
+   "drive": "hub",
+   "D_asm": 240.0,
+   "W_eff": 173.0,
+   "S_req": 0.0,
+   "u": 108.2,
+   "corner_R": 300.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 21.7,
+   "lift_margin": -108.3,
+   "band_mm": -92.1,
+   "band_margin": -92.1,
+   "wheels_gap": -23.6,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.0713,
+    "inradius": 108.2
+   },
+   "pod_corner_R": 288.6,
+   "pod_gap_to_contour": 21.4,
+   "pads": {
+    "200": {
+     "pad_r": 430.0,
+     "area_m2": 0.3698,
+     "inradius": 304.1
+    },
+    "300": {
+     "pad_r": 530.0,
+     "area_m2": 0.5618,
+     "inradius": 374.8
+    },
+    "400": {
+     "pad_r": 630.0,
+     "area_m2": 0.7938,
+     "inradius": 445.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5618,
+    "inradius": 374.8
+   },
+   "tip_angles_deg": {
+    "h300": 19.8,
+    "h500": 12.2,
+    "h700": 8.8,
+    "h900": 6.9
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.3,
+    "h500": 36.9,
+    "h700": 28.2,
+    "h900": 22.6
+   },
+   "battery_half_tan": 0.0,
+   "battery_radial": 40.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D230",
+   "Dp": 620.0,
+   "drive": "belt",
+   "D_asm": 240.0,
+   "W_eff": 143.0,
+   "S_req": 60.0,
+   "u": 115.0,
+   "corner_R": 300.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 43.5,
+   "lift_margin": -86.5,
+   "band_mm": -64.9,
+   "band_margin": -124.9,
+   "wheels_gap": -10.0,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.0789,
+    "inradius": 115.0
+   },
+   "pod_corner_R": 288.6,
+   "pod_gap_to_contour": 21.4,
+   "pads": {
+    "200": {
+     "pad_r": 430.0,
+     "area_m2": 0.3698,
+     "inradius": 304.1
+    },
+    "300": {
+     "pad_r": 530.0,
+     "area_m2": 0.5618,
+     "inradius": 374.8
+    },
+    "400": {
+     "pad_r": 630.0,
+     "area_m2": 0.7938,
+     "inradius": 445.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5618,
+    "inradius": 374.8
+   },
+   "tip_angles_deg": {
+    "h300": 21.0,
+    "h500": 13.0,
+    "h700": 9.3,
+    "h900": 7.3
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.3,
+    "h500": 36.9,
+    "h700": 28.2,
+    "h900": 22.6
+   },
+   "battery_half_tan": 20.0,
+   "battery_radial": 40.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D230",
+   "Dp": 620.0,
+   "drive": "inline",
+   "D_asm": 240.0,
+   "W_eff": 143.0,
+   "S_req": 150.0,
+   "u": 115.0,
+   "corner_R": 300.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 43.5,
+   "lift_margin": -86.5,
+   "band_mm": -64.9,
+   "band_margin": -214.9,
+   "wheels_gap": -10.0,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.0789,
+    "inradius": 115.0
+   },
+   "pod_corner_R": 288.6,
+   "pod_gap_to_contour": 21.4,
+   "pads": {
+    "200": {
+     "pad_r": 430.0,
+     "area_m2": 0.3698,
+     "inradius": 304.1
+    },
+    "300": {
+     "pad_r": 530.0,
+     "area_m2": 0.5618,
+     "inradius": 374.8
+    },
+    "400": {
+     "pad_r": 630.0,
+     "area_m2": 0.7938,
+     "inradius": 445.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5618,
+    "inradius": 374.8
+   },
+   "tip_angles_deg": {
+    "h300": 21.0,
+    "h500": 13.0,
+    "h700": 9.3,
+    "h900": 7.3
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.3,
+    "h500": 36.9,
+    "h700": 28.2,
+    "h900": 22.6
+   },
+   "battery_half_tan": 20.0,
+   "battery_radial": 40.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D152",
+   "Dp": 640.0,
+   "drive": "hub",
+   "D_asm": 162.4,
+   "W_eff": 140.0,
+   "S_req": 0.0,
+   "u": 143.5,
+   "corner_R": 310.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 96.4,
+   "lift_margin": -33.6,
+   "band_mm": 0.2,
+   "band_margin": 0.2,
+   "wheels_gap": 124.7,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.1054,
+    "inradius": 143.5
+   },
+   "pod_corner_R": 298.3,
+   "pod_gap_to_contour": 21.7,
+   "pads": {
+    "200": {
+     "pad_r": 440.0,
+     "area_m2": 0.3872,
+     "inradius": 311.1
+    },
+    "300": {
+     "pad_r": 540.0,
+     "area_m2": 0.5832,
+     "inradius": 381.8
+    },
+    "400": {
+     "pad_r": 640.0,
+     "area_m2": 0.8192,
+     "inradius": 452.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5832,
+    "inradius": 381.8
+   },
+   "tip_angles_deg": {
+    "h300": 25.6,
+    "h500": 16.0,
+    "h700": 11.6,
+    "h900": 9.1
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.8,
+    "h500": 37.4,
+    "h700": 28.6,
+    "h900": 23.0
+   },
+   "battery_half_tan": 50.0,
+   "battery_radial": 50.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D152",
+   "Dp": 640.0,
+   "drive": "belt",
+   "D_asm": 162.4,
+   "W_eff": 110.0,
+   "S_req": 60.0,
+   "u": 150.7,
+   "corner_R": 310.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 118.3,
+   "lift_margin": -11.7,
+   "band_mm": 37.5,
+   "band_margin": -22.5,
+   "wheels_gap": 139.0,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.115,
+    "inradius": 150.7
+   },
+   "pod_corner_R": 298.3,
+   "pod_gap_to_contour": 21.7,
+   "pads": {
+    "200": {
+     "pad_r": 440.0,
+     "area_m2": 0.3872,
+     "inradius": 311.1
+    },
+    "300": {
+     "pad_r": 540.0,
+     "area_m2": 0.5832,
+     "inradius": 381.8
+    },
+    "400": {
+     "pad_r": 640.0,
+     "area_m2": 0.8192,
+     "inradius": 452.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5832,
+    "inradius": 381.8
+   },
+   "tip_angles_deg": {
+    "h300": 26.7,
+    "h500": 16.8,
+    "h700": 12.1,
+    "h900": 9.5
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.8,
+    "h500": 37.4,
+    "h700": 28.6,
+    "h900": 23.0
+   },
+   "battery_half_tan": 75.0,
+   "battery_radial": 50.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D152",
+   "Dp": 640.0,
+   "drive": "inline",
+   "D_asm": 162.4,
+   "W_eff": 110.0,
+   "S_req": 150.0,
+   "u": 150.7,
+   "corner_R": 310.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 118.3,
+   "lift_margin": -11.7,
+   "band_mm": 37.5,
+   "band_margin": -112.5,
+   "wheels_gap": 139.0,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.115,
+    "inradius": 150.7
+   },
+   "pod_corner_R": 298.3,
+   "pod_gap_to_contour": 21.7,
+   "pads": {
+    "200": {
+     "pad_r": 440.0,
+     "area_m2": 0.3872,
+     "inradius": 311.1
+    },
+    "300": {
+     "pad_r": 540.0,
+     "area_m2": 0.5832,
+     "inradius": 381.8
+    },
+    "400": {
+     "pad_r": 640.0,
+     "area_m2": 0.8192,
+     "inradius": 452.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5832,
+    "inradius": 381.8
+   },
+   "tip_angles_deg": {
+    "h300": 26.7,
+    "h500": 16.8,
+    "h700": 12.1,
+    "h900": 9.5
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.8,
+    "h500": 37.4,
+    "h700": 28.6,
+    "h900": 23.0
+   },
+   "battery_half_tan": 75.0,
+   "battery_radial": 50.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D203",
+   "Dp": 640.0,
+   "drive": "hub",
+   "D_asm": 213.0,
+   "W_eff": 163.0,
+   "S_req": 0.0,
+   "u": 124.8,
+   "corner_R": 310.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 47.1,
+   "lift_margin": -82.9,
+   "band_mm": -55.6,
+   "band_margin": -55.6,
+   "wheels_gap": 36.7,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.0881,
+    "inradius": 124.8
+   },
+   "pod_corner_R": 298.3,
+   "pod_gap_to_contour": 21.7,
+   "pads": {
+    "200": {
+     "pad_r": 440.0,
+     "area_m2": 0.3872,
+     "inradius": 311.1
+    },
+    "300": {
+     "pad_r": 540.0,
+     "area_m2": 0.5832,
+     "inradius": 381.8
+    },
+    "400": {
+     "pad_r": 640.0,
+     "area_m2": 0.8192,
+     "inradius": 452.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5832,
+    "inradius": 381.8
+   },
+   "tip_angles_deg": {
+    "h300": 22.6,
+    "h500": 14.0,
+    "h700": 10.1,
+    "h900": 7.9
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.8,
+    "h500": 37.4,
+    "h700": 28.6,
+    "h900": 23.0
+   },
+   "battery_half_tan": 20.0,
+   "battery_radial": 50.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D203",
+   "Dp": 640.0,
+   "drive": "belt",
+   "D_asm": 213.0,
+   "W_eff": 133.0,
+   "S_req": 60.0,
+   "u": 131.8,
+   "corner_R": 310.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 70.0,
+   "lift_margin": -60.0,
+   "band_mm": -25.6,
+   "band_margin": -85.6,
+   "wheels_gap": 50.6,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.0966,
+    "inradius": 131.8
+   },
+   "pod_corner_R": 298.3,
+   "pod_gap_to_contour": 21.7,
+   "pads": {
+    "200": {
+     "pad_r": 440.0,
+     "area_m2": 0.3872,
+     "inradius": 311.1
+    },
+    "300": {
+     "pad_r": 540.0,
+     "area_m2": 0.5832,
+     "inradius": 381.8
+    },
+    "400": {
+     "pad_r": 640.0,
+     "area_m2": 0.8192,
+     "inradius": 452.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5832,
+    "inradius": 381.8
+   },
+   "tip_angles_deg": {
+    "h300": 23.7,
+    "h500": 14.8,
+    "h700": 10.7,
+    "h900": 8.3
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.8,
+    "h500": 37.4,
+    "h700": 28.6,
+    "h900": 23.0
+   },
+   "battery_half_tan": 45.0,
+   "battery_radial": 50.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D203",
+   "Dp": 640.0,
+   "drive": "inline",
+   "D_asm": 213.0,
+   "W_eff": 133.0,
+   "S_req": 150.0,
+   "u": 131.8,
+   "corner_R": 310.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 70.0,
+   "lift_margin": -60.0,
+   "band_mm": -25.6,
+   "band_margin": -175.6,
+   "wheels_gap": 50.6,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.0966,
+    "inradius": 131.8
+   },
+   "pod_corner_R": 298.3,
+   "pod_gap_to_contour": 21.7,
+   "pads": {
+    "200": {
+     "pad_r": 440.0,
+     "area_m2": 0.3872,
+     "inradius": 311.1
+    },
+    "300": {
+     "pad_r": 540.0,
+     "area_m2": 0.5832,
+     "inradius": 381.8
+    },
+    "400": {
+     "pad_r": 640.0,
+     "area_m2": 0.8192,
+     "inradius": 452.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5832,
+    "inradius": 381.8
+   },
+   "tip_angles_deg": {
+    "h300": 23.7,
+    "h500": 14.8,
+    "h700": 10.7,
+    "h900": 8.3
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.8,
+    "h500": 37.4,
+    "h700": 28.6,
+    "h900": 23.0
+   },
+   "battery_half_tan": 45.0,
+   "battery_radial": 50.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D230",
+   "Dp": 640.0,
+   "drive": "hub",
+   "D_asm": 240.0,
+   "W_eff": 173.0,
+   "S_req": 0.0,
+   "u": 115.3,
+   "corner_R": 310.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 28.8,
+   "lift_margin": -101.2,
+   "band_mm": -79.3,
+   "band_margin": -79.3,
+   "wheels_gap": -9.4,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.0792,
+    "inradius": 115.3
+   },
+   "pod_corner_R": 298.3,
+   "pod_gap_to_contour": 21.7,
+   "pads": {
+    "200": {
+     "pad_r": 440.0,
+     "area_m2": 0.3872,
+     "inradius": 311.1
+    },
+    "300": {
+     "pad_r": 540.0,
+     "area_m2": 0.5832,
+     "inradius": 381.8
+    },
+    "400": {
+     "pad_r": 640.0,
+     "area_m2": 0.8192,
+     "inradius": 452.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5832,
+    "inradius": 381.8
+   },
+   "tip_angles_deg": {
+    "h300": 21.0,
+    "h500": 13.0,
+    "h700": 9.4,
+    "h900": 7.3
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.8,
+    "h500": 37.4,
+    "h700": 28.6,
+    "h900": 23.0
+   },
+   "battery_half_tan": 5.0,
+   "battery_radial": 50.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D230",
+   "Dp": 640.0,
+   "drive": "belt",
+   "D_asm": 240.0,
+   "W_eff": 143.0,
+   "S_req": 60.0,
+   "u": 122.1,
+   "corner_R": 310.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 50.7,
+   "lift_margin": -79.3,
+   "band_mm": -51.1,
+   "band_margin": -111.1,
+   "wheels_gap": 4.2,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.0872,
+    "inradius": 122.1
+   },
+   "pod_corner_R": 298.3,
+   "pod_gap_to_contour": 21.7,
+   "pads": {
+    "200": {
+     "pad_r": 440.0,
+     "area_m2": 0.3872,
+     "inradius": 311.1
+    },
+    "300": {
+     "pad_r": 540.0,
+     "area_m2": 0.5832,
+     "inradius": 381.8
+    },
+    "400": {
+     "pad_r": 640.0,
+     "area_m2": 0.8192,
+     "inradius": 452.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5832,
+    "inradius": 381.8
+   },
+   "tip_angles_deg": {
+    "h300": 22.1,
+    "h500": 13.7,
+    "h700": 9.9,
+    "h900": 7.7
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.8,
+    "h500": 37.4,
+    "h700": 28.6,
+    "h900": 23.0
+   },
+   "battery_half_tan": 30.0,
+   "battery_radial": 50.0,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "wheel": "D230",
+   "Dp": 640.0,
+   "drive": "inline",
+   "D_asm": 240.0,
+   "W_eff": 143.0,
+   "S_req": 150.0,
+   "u": 122.1,
+   "corner_R": 310.0,
+   "gap_to_contour": 10.0,
+   "inner_corner_R": 50.7,
+   "lift_margin": -79.3,
+   "band_mm": -51.1,
+   "band_margin": -201.1,
+   "wheels_gap": 4.2,
+   "supp_dir_deg": [
+    45,
+    135,
+    225,
+    315
+   ],
+   "pad_dir_deg": [
+    0,
+    90,
+    180,
+    270
+   ],
+   "supp_transport": {
+    "area_m2": 0.0872,
+    "inradius": 122.1
+   },
+   "pod_corner_R": 298.3,
+   "pod_gap_to_contour": 21.7,
+   "pads": {
+    "200": {
+     "pad_r": 440.0,
+     "area_m2": 0.3872,
+     "inradius": 311.1
+    },
+    "300": {
+     "pad_r": 540.0,
+     "area_m2": 0.5832,
+     "inradius": 381.8
+    },
+    "400": {
+     "pad_r": 640.0,
+     "area_m2": 0.8192,
+     "inradius": 452.5
+    }
+   },
+   "supp_working": {
+    "area_m2": 0.5832,
+    "inradius": 381.8
+   },
+   "tip_angles_deg": {
+    "h300": 22.1,
+    "h500": 13.7,
+    "h700": 9.9,
+    "h900": 7.7
+   },
+   "tip_angles_working_deg": {
+    "h300": 51.8,
+    "h500": 37.4,
+    "h700": 28.6,
+    "h900": 23.0
+   },
+   "battery_half_tan": 30.0,
+   "battery_radial": 50.0,
+   "pass": false
+  }
+ ],
+ "min_diameter_mm": {
+  "R_D152_hub": 603.0,
+  "R_D152_belt": 661.0,
+  "R_D152_inline": 836.5,
+  "R_D203_hub": 662.5,
+  "R_D203_belt": 719.5,
+  "R_D203_inline": 892.5,
+  "R_D230_hub": 709.5,
+  "R_D230_belt": 747.0,
+  "R_D230_inline": 919.0,
+  "P_D152_hub": 707.5,
+  "P_D152_belt": 664.0,
+  "P_D152_inline": 821.5,
+  "P_D203_hub": 810.5,
+  "P_D203_belt": 765.5,
+  "P_D203_inline": 907.0,
+  "P_D230_hub": 861.0,
+  "P_D230_belt": 815.5,
+  "P_D230_inline": 948.0
+ },
+ "notes": [
+  "D_asm = D + 10 (ролики + торцевой крепёж); W_asm = W + 30; W_hub = W + 60 — параметры, требуют проверки по чертежам.",
+  "Зазор до транспортного контура 10 мм: касание max_r = R НЕ принимается как готовая конструкция.",
+  "Ø600/620/640 — внешний габарит сборки: панель = ØDp, все реальные элементы ≤ R − 10 мм.",
+  "Полосы приводов (0/60/150 мм) — условные, hub=OK не подтверждает существование мотор-колеса (см. задачу 6).",
+  "Углы опрокидывания — геометрия (ЦМ в центре на заданной высоте); массы/ЦМ не вводились."
+ ]
+}

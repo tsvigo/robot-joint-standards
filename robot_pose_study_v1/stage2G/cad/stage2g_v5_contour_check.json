@@ -1,0 +1,150 @@
+{
+ "gap_required": 10.0,
+ "status": "PASS 18/18",
+ "groups": [
+  {
+   "group": "R600_D152",
+   "status": "PASS",
+   "panel_r": 300.0,
+   "real_max_r": 280.5,
+   "worst": "R600_D152_hub0",
+   "gap_mm": 19.5
+  },
+  {
+   "group": "R600_D203",
+   "status": "PASS",
+   "panel_r": 300.0,
+   "real_max_r": 278.9,
+   "worst": "R600_D203_pod135",
+   "gap_mm": 21.1
+  },
+  {
+   "group": "R600_D230",
+   "status": "PASS",
+   "panel_r": 300.0,
+   "real_max_r": 278.9,
+   "worst": "R600_D230_pod135",
+   "gap_mm": 21.1
+  },
+  {
+   "group": "R620_D152",
+   "status": "PASS",
+   "panel_r": 310.0,
+   "real_max_r": 290.8,
+   "worst": "R620_D152_hub0",
+   "gap_mm": 19.2
+  },
+  {
+   "group": "R620_D203",
+   "status": "PASS",
+   "panel_r": 310.0,
+   "real_max_r": 288.6,
+   "worst": "R620_D203_pod135",
+   "gap_mm": 21.4
+  },
+  {
+   "group": "R620_D230",
+   "status": "PASS",
+   "panel_r": 310.0,
+   "real_max_r": 288.6,
+   "worst": "R620_D230_pod135",
+   "gap_mm": 21.4
+  },
+  {
+   "group": "R640_D152",
+   "status": "PASS",
+   "panel_r": 320.0,
+   "real_max_r": 301.2,
+   "worst": "R640_D152_hub0",
+   "gap_mm": 18.8
+  },
+  {
+   "group": "R640_D203",
+   "status": "PASS",
+   "panel_r": 320.0,
+   "real_max_r": 298.3,
+   "worst": "R640_D203_pod135",
+   "gap_mm": 21.7
+  },
+  {
+   "group": "R640_D230",
+   "status": "PASS",
+   "panel_r": 320.0,
+   "real_max_r": 298.3,
+   "worst": "R640_D230_pod135",
+   "gap_mm": 21.7
+  },
+  {
+   "group": "P600_D152",
+   "status": "PASS",
+   "panel_r": 300.0,
+   "real_max_r": 278.9,
+   "worst": "P600_D152_pod0",
+   "gap_mm": 21.1
+  },
+  {
+   "group": "P600_D203",
+   "status": "PASS",
+   "panel_r": 300.0,
+   "real_max_r": 278.9,
+   "worst": "P600_D203_pod0",
+   "gap_mm": 21.1
+  },
+  {
+   "group": "P600_D230",
+   "status": "PASS",
+   "panel_r": 300.0,
+   "real_max_r": 278.9,
+   "worst": "P600_D230_pod0",
+   "gap_mm": 21.1
+  },
+  {
+   "group": "P620_D152",
+   "status": "PASS",
+   "panel_r": 310.0,
+   "real_max_r": 288.6,
+   "worst": "P620_D152_pod0",
+   "gap_mm": 21.4
+  },
+  {
+   "group": "P620_D203",
+   "status": "PASS",
+   "panel_r": 310.0,
+   "real_max_r": 288.6,
+   "worst": "P620_D203_pod0",
+   "gap_mm": 21.4
+  },
+  {
+   "group": "P620_D230",
+   "status": "PASS",
+   "panel_r": 310.0,
+   "real_max_r": 288.6,
+   "worst": "P620_D230_pod0",
+   "gap_mm": 21.4
+  },
+  {
+   "group": "P640_D152",
+   "status": "PASS",
+   "panel_r": 320.0,
+   "real_max_r": 298.3,
+   "worst": "P640_D152_pod0",
+   "gap_mm": 21.7
+  },
+  {
+   "group": "P640_D203",
+   "status": "PASS",
+   "panel_r": 320.0,
+   "real_max_r": 298.3,
+   "worst": "P640_D203_pod0",
+   "gap_mm": 21.7
+  },
+  {
+   "group": "P640_D230",
+   "status": "PASS",
+   "panel_r": 320.0,
+   "real_max_r": 298.3,
+   "worst": "P640_D230_pod0",
+   "gap_mm": 21.7
+  }
+ ]
+}

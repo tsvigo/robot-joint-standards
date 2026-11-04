@@ -1,0 +1,103 @@
+{
+ "products": {
+  "CTM1000-10R": {
+   "vendor": "RoboCT (Hangzhou)",
+   "D": 240.0,
+   "W": 106.9,
+   "kg_per_wheel": 25.0,
+   "payload_set_kg": 1000.0,
+   "gear_ratio": 37.1,
+   "tau_rated_Nm": 74.0,
+   "n_rated_rpm": 56.0,
+   "voltage": "24-48V",
+   "power_W": "220-440",
+   "IP": "IP44",
+   "integrated": "колесо+мотор-редуктор+энкодер+амортизатор",
+   "source": "roboct-global.com (heavy-duty-mecanum-wheel)"
+  },
+  "TZ-MW152": {
+   "vendor": "Zhejiang Tongzhu (TZBOT)",
+   "D": 152.4,
+   "W": 80.0,
+   "rollers": 8,
+   "payload_set_kg": 600.0,
+   "payload_suggested_kg": 500.0,
+   "hub": "шпоночное отверстие или фланец (размеры под заказ)",
+   "motor": "НЕ ПРИВЯЗАН — размеры редуктора/ступицы не опубликованы",
+   "source": "tongzhutech.en.made-in-china.com (TZ-MW152)"
+  }
+ },
+ "ctm240_layout": [
+  {
+   "layout": "R",
+   "Dp": 620.0,
+   "D": 240.0,
+   "W": 106.9,
+   "r_c_or_u": 221.5,
+   "corner_R": 300.0,
+   "gap_to_contour": 10.0,
+   "lift_margin": 28.1,
+   "free_central_D_low_z": 316.1,
+   "supp_transport_m2": 0.0981,
+   "inradius": 156.6,
+   "pass": true
+  },
+  {
+   "layout": "R",
+   "Dp": 640.0,
+   "D": 240.0,
+   "W": 106.9,
+   "r_c_or_u": 232.4,
+   "corner_R": 310.0,
+   "gap_to_contour": 10.0,
+   "lift_margin": 38.9,
+   "free_central_D_low_z": 337.9,
+   "supp_transport_m2": 0.108,
+   "inradius": 164.3,
+   "pass": true
+  },
+  {
+   "layout": "P",
+   "Dp": 620.0,
+   "D": 240.0,
+   "W": 106.9,
+   "r_c_or_u": 122.8,
+   "corner_R": 300.0,
+   "gap_to_contour": 10.0,
+   "lift_margin": -60.6,
+   "free_central_D_low_z": 5.6,
+   "supp_transport_m2": 0.0603,
+   "inradius": 122.8,
+   "pass": false
+  },
+  {
+   "layout": "P",
+   "Dp": 640.0,
+   "D": 240.0,
+   "W": 106.9,
+   "r_c_or_u": 129.9,
+   "corner_R": 310.0,
+   "gap_to_contour": 10.0,
+   "lift_margin": -52.9,
+   "free_central_D_low_z": 19.9,
+   "supp_transport_m2": 0.0675,
+   "inradius": 129.9,
+   "pass": false
+  }
+ ],
+ "min_diameter_ctm240": {
+  "R_CTM240": 569.5,
+  "P_CTM240": 759.0
+ },
+ "traction": {
+  "k": 2.12,
+  "f_i_rated_N": 617.0,
+  "c_i_rated_N": 1308.0,
+  "v_rated_mps": 0.7
+ },
+ "notes": [
+  "CTM1000-10R — единственный найденный модуль с ПОЛНЫМИ проверяемыми размерами и паспортом.",
+  "Для D152/D203: колёса с размерами найдены (TZ-MW152), но мотор-редуктор/ступица/крепление — без размеров.",
+  "Ширина модуля 106.9 мм МЕНЬШЕ условных W+60 (173 мм) — прежние допущения консервативны."
+ ]
+}

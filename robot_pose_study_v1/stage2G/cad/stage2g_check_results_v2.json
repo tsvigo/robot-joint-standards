@@ -1,0 +1,230 @@
+{
+  "checks": {
+    "C1": {
+      "name": "габарит деталей = 670x670x176 (база-локальный, центр)",
+      "ok": true,
+      "detail": "X -335.000..335.000, Y -335.000..335.000, Z -88.000..88.000"
+    },
+    "C2.1": {
+      "name": "ось лифта = (+0.003, -4.41) мм",
+      "ok": true,
+      "detail": "(0.003, -4.41)"
+    },
+    "C2.2": {
+      "name": "центры геометрии 4 колёс = подтверждённым центрам joints (±258)",
+      "ok": true,
+      "detail": "FL:ok; FR:ok; BL:ok; BR:ok"
+    },
+    "C2.3": {
+      "name": "нижняя точка обода диска = пол (-134.55)",
+      "ok": true,
+      "detail": "ZMin=-134.550 (ось диска z=-59.150)"
+    },
+    "C3": {
+      "name": "нет пересечений между физическими деталями",
+      "ok": true,
+      "detail": "0 пересечений"
+    },
+    "C4": {
+      "name": "компонентовочные зоны не пересекают детали/колёса",
+      "ok": true,
+      "detail": "0 пересечений"
+    },
+    "C5": {
+      "name": "опорный контур: площадь и центр vs подтверждённые",
+      "ok": true,
+      "detail": "площадь=0.266435 м^2 (подтв. 0.266435), центр=(-0.45,0.02) (подтв. (-0.6, -0.12))"
+    },
+    "C6": {
+      "name": "подъезд c=0.05/0.10: колёса внутри контура, выступов за габарит нет",
+      "ok": true,
+      "detail": "{\"0.05\": {\"gap_bed_to_base_mm\": 50.0, \"front_edge_x_mm\": 335.0000000000003, \"wheel_reach_x_mm\": 334.0, \"wheel_behind_bed_line_mm\": 51.000000000000284}, \"0.1\": {\"gap_bed_to_base_mm\": 100.0, \"front_edge_x_mm\": 335.0000000000003, \"wheel_reach_x_mm\": 334.0, \"wheel_behind_bed_line_mm\": 101.00000000000028}}"
+    },
+    "C7": {
+      "name": "объёмы посчитаны только у физических деталей; масса = не рассчитана; массы пустых объёмов не считались",
+      "ok": true,
+      "detail": "суммарный объём деталей = 13.796 дм^3 (масса не утверждена)"
+    },
+    "C2.4": {
+      "name": "оси WHL_* горизонтальны (∥Y — ось качения диска)",
+      "ok": true,
+      "detail": "FL:(0.000,1.000,-0.000); FR:(0.000,1.000,-0.000); BL:(0.000,1.000,-0.000); BR:(0.000,1.000,-0.000)"
+    },
+    "C3b": {
+      "name": "диски колёс (в покое и при поворотах steering 45/90°) не пересекают детали",
+      "ok": true,
+      "detail": "0 пересечений (вкл. повороты)"
+    },
+    "C6b": {
+      "name": "радиус ниши >= требуемого для диска при любом повороте",
+      "ok": true,
+      "detail": "well_r=95.4 >= 92.4 (зазор +3.0 мм)"
+    }
+  },
+  "volumes": {
+    "FRM_front": {
+      "volume_mm3": 2652952.6,
+      "volume_dm3": 2.653,
+      "material": "не утверждён",
+      "mass_kg": "не рассчитана (нет утверждённого материала/сечения)",
+      "bom_status": "part_mass_pending"
+    },
+    "FRM_back": {
+      "volume_mm3": 2659934.1,
+      "volume_dm3": 2.6599,
+      "material": "не утверждён",
+      "mass_kg": "не рассчитана (нет утверждённого материала/сечения)",
+      "bom_status": "part_mass_pending"
+    },
+    "FRM_left": {
+      "volume_mm3": 2562728.7,
+      "volume_dm3": 2.5627,
+      "material": "не утверждён",
+      "mass_kg": "не рассчитана (нет утверждённого материала/сечения)",
+      "bom_status": "part_mass_pending"
+    },
+    "FRM_right": {
+      "volume_mm3": 2560569.5,
+      "volume_dm3": 2.5606,
+      "material": "не утверждён",
+      "mass_kg": "не рассчитана (нет утверждённого материала/сечения)",
+      "bom_status": "part_mass_pending"
+    },
+    "FRM_cross_1": {
+      "volume_mm3": 944000.0,
+      "volume_dm3": 0.944,
+      "material": "не утверждён",
+      "mass_kg": "не рассчитана (нет утверждённого материала/сечения)",
+      "bom_status": "part_mass_pending"
+    },
+    "FRM_cross_2": {
+      "volume_mm3": 944000.0,
+      "volume_dm3": 0.944,
+      "material": "не утверждён",
+      "mass_kg": "не рассчитана (нет утверждённого материала/сечения)",
+      "bom_status": "part_mass_pending"
+    },
+    "FRM_lift_plate": {
+      "volume_mm3": 203575.2,
+      "volume_dm3": 0.2036,
+      "material": "не утверждён",
+      "mass_kg": "не рассчитана (нет утверждённого материала/сечения)",
+      "bom_status": "part_mass_pending"
+    },
+    "PNL_top": {
+      "volume_mm3": 908583.2,
+      "volume_dm3": 0.9086,
+      "material": "не утверждён",
+      "mass_kg": "не рассчитана (нет утверждённого материала/сечения)",
+      "bom_status": "part_mass_pending"
+    },
+    "WLM_FL": {
+      "volume_mm3": 90000.0,
+      "volume_dm3": 0.09,
+      "material": "не утверждён",
+      "mass_kg": "не рассчитана (нет утверждённого материала/сечения)",
+      "bom_status": "part_mass_pending"
+    },
+    "WLM_FR": {
+      "volume_mm3": 90000.0,
+      "volume_dm3": 0.09,
+      "material": "не утверждён",
+      "mass_kg": "не рассчитана (нет утверждённого материала/сечения)",
+      "bom_status": "part_mass_pending"
+    },
+    "WLM_BL": {
+      "volume_mm3": 90000.0,
+      "volume_dm3": 0.09,
+      "material": "не утверждён",
+      "mass_kg": "не рассчитана (нет утверждённого материала/сечения)",
+      "bom_status": "part_mass_pending"
+    },
+    "WLM_BR": {
+      "volume_mm3": 90000.0,
+      "volume_dm3": 0.09,
+      "material": "не утверждён",
+      "mass_kg": "не рассчитана (нет утверждённого материала/сечения)",
+      "bom_status": "part_mass_pending"
+    },
+    "WHL_FL": {
+      "volume_mm3": null,
+      "note": "компонентовочный объём — масса/объём материала НЕ считаются",
+      "bom_status": "envelope_no_mass (dims confirmed; roll axis //Y v2; mass from vendor spec)"
+    },
+    "WHL_FR": {
+      "volume_mm3": null,
+      "note": "компонентовочный объём — масса/объём материала НЕ считаются",
+      "bom_status": "envelope_no_mass (dims confirmed; roll axis //Y v2; mass from vendor spec)"
+    },
+    "WHL_BL": {
+      "volume_mm3": null,
+      "note": "компонентовочный объём — масса/объём материала НЕ считаются",
+      "bom_status": "envelope_no_mass (dims confirmed; roll axis //Y v2; mass from vendor spec)"
+    },
+    "WHL_BR": {
+      "volume_mm3": null,
+      "note": "компонентовочный объём — масса/объём материала НЕ считаются",
+      "bom_status": "envelope_no_mass (dims confirmed; roll axis //Y v2; mass from vendor spec)"
+    },
+    "ZN_lift_column": {
+      "volume_mm3": null,
+      "note": "компонентовочный объём — масса/объём материала НЕ считаются",
+      "bom_status": "envelope_no_mass (component zone)"
+    },
+    "ZN_bat": {
+      "volume_mm3": null,
+      "note": "компонентовочный объём — масса/объём материала НЕ считаются",
+      "bom_status": "envelope_no_mass (component zone)"
+    },
+    "ZN_ele": {
+      "volume_mm3": null,
+      "note": "компонентовочный объём — масса/объём материала НЕ считаются",
+      "bom_status": "envelope_no_mass (component zone)"
+    },
+    "ZN_pwr": {
+      "volume_mm3": null,
+      "note": "компонентовочный объём — масса/объём материала НЕ считаются",
+      "bom_status": "envelope_no_mass (component zone)"
+    },
+    "ZN_cbl": {
+      "volume_mm3": null,
+      "note": "компонентовочный объём — масса/объём материала НЕ считаются",
+      "bom_status": "envelope_no_mass (component zone)"
+    }
+  },
+  "meta": {
+    "freecad": "1.1.4",
+    "n_parts": 12,
+    "n_components": 9,
+    "n_params": null,
+    "part_names": [
+      "FRM_front",
+      "FRM_back",
+      "FRM_left",
+      "FRM_right",
+      "FRM_cross_1",
+      "FRM_cross_2",
+      "FRM_lift_plate",
+      "PNL_top",
+      "WLM_FL",
+      "WLM_FR",
+      "WLM_BL",
+      "WLM_BR"
+    ],
+    "component_names": [
+      "WHL_FL",
+      "WHL_FR",
+      "WHL_BL",
+      "WHL_BR",
+      "ZN_lift_column",
+      "ZN_bat",
+      "ZN_ele",
+      "ZN_pwr",
+      "ZN_cbl"
+    ]
+  },
+  "summary": {
+    "passed": 12,
+    "failed": 0
+  }
+}

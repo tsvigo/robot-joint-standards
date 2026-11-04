@@ -1,0 +1,74 @@
+{
+  "источник": "Nabtesco en_cat_RVW.pdf Rev.005.1 CAT.210125_B (Issued on September 3, 2026)",
+  "соответствие_страниц": "печатная = 2*PDF-3 (левая половина разворота), 2*PDF-2 (правая)",
+  "страницы": {
+    "Gearheads_Rating_Table": "печатная 16 (PDF 9, правая половина)",
+    "Gearheads_External_Dimensions": "печатная 16 (PDF 9, правая половина)",
+    "Product_category_code_взрыв-схема": "печатная 15 (PDF 9, левая половина)",
+    "Actuators_Rating_Table": "печатная 17 (PDF 10, левая половина)",
+    "RVW-7PG_Body_чертёж": "печатная 18-19 (PDF 10 правая / PDF 11 левая)",
+    "RVW-7PG_Motor_Flange_чертёж": "печатная 20-21 (PDF 11 правая / PDF 12 левая)",
+    "RVW-7PG_Input_Shaft": "печатная 22 (PDF 12, правая половина)",
+    "Design_Points_внешнее_удержание": "печатная 55-56 (PDF 29)"
+  },
+  "RVW-7PG_рейтинг": {
+    "ratio": "30 [30]",
+    "allowable_withstand_load_per_wheel_kgf": 200,
+    "wheel_diameter_mm": 178,
+    "wheel_thickness_mm": 96,
+    "max_wheel_speed_m_min": 60,
+    "max_wheel_rotation_speed_rpm": 107.3,
+    "backlash_arc_min": 12,
+    "lost_motion_arc_min": 12,
+    "rated_torque_Nm": 7,
+    "allowable_accel_decel_torque_Nm": 27,
+    "rolling_resistance_coefficient": 0.05,
+    "mass_guideline_kg": 12,
+    "total_length_c_mm": 124,
+    "note_mass": "Mass (guideline) — Differs according to the motor used",
+    "note_length": "Total length (c) — Differs according to the motor used",
+    "рекомендация_по_массе": "суммарная масса машины с грузом рекомендована в пределах allowable load/wheel x число колёс x 3/4 = 200 x 4 x 0.75 = 600 кг"
+  },
+  "RVW-7PG_чертёж_body": {
+    "model_code": "RVW-7PGLA-30",
+    "speed_ratio": 30,
+    "mass_kg_штамп": 11.7,
+    "volume_cm3_штамп": 8763,
+    "размеры_мм": {
+      "wheel_diameter": 178,
+      "wheel_thickness": 96,
+      "length_113_pm04": "от наружного торца колеса до привалочной плоскости фланца",
+      "boss_G": "11±0.4 (фланец 0A) -> итого 124 мм",
+      "ø140": "наружный корпус",
+      "ø150h7": "центровочная поверхность",
+      "ø78": "внутренний",
+      "68": "выступающая часть"
+    },
+    "крепёж": "6-M6 THRU, 8-M6 THRU, 2-M6 DEPTH10, 2-M6 DEPTH7, 2-M5 DEPTH17, P.C.D 128 / 48 / 82, 60°, 22.5°, 15°"
+  },
+  "RVW-7PG_motor_flange_варианты": [
+    {"code": "0A", "D": "ø50H7 +0.025/0", "E": "M4 DEPTH8", "F": 70.7, "G": "11±0.4", "H": 5, "mass_kg": 0.22, "length_113_pm04": true},
+    {"code": "0B", "D": "ø83H7", "E": "M8 DEPTH15", "F": 104, "G": 20, "H": 5, "mass_kg": 2.26, "length_129_pm05": true, "ø148_ø123pm03_PCD136": true},
+    {"code": "0G", "D": "ø83H7", "E": "M8 DEPTH15", "F": 104, "G": 5, "H": 5, "mass_kg": 1.42, "length_129_pm05": true, "ø148_ø123pm03_PCD136": true}
+  ],
+  "RVW-7PG_input_shaft": {
+    "тип_1_без_шпонки": {"A_mm": 61, "øB_mm": 48, "øC_mm": "14H7 +0.018/0", "L_mm": 32},
+    "тип_2_с_шпонкой": {"A_mm": 28, "øB_mm": 25, "øC_mm": "14H7 +0.018/0", "L_mm": 24, "E_mm": 5, "F_mm": 16.3},
+    "тип_3_с_шпонкой": {"A_mm": 37, "øB_mm": 25, "øC_mm": "14 +0.028/+0.010", "L_mm": 28, "E_mm": 5, "F_mm": 16.3},
+    "тип_4_D-вырез": {"A_mm": 30, "øB_mm": 25, "øC_mm": "14H7 +0.018/0", "L_mm": 25}
+  },
+  "RVW-7PG_взрыв_схема_печатная_15": "Hexagon socket head cap screw + Serrated lock washer + Wheel + Reduction gear + Motor flange + Input shaft (input spline or input gear); PA = PG + Motor",
+  "RVW-7PA_для_сравнения": {
+    "колонна_Ø240": "коллизия с мотором 434971 мм3 (200 Вт) / 524071 мм3 (400 Вт); колесо/корпус/фланец — 0.0 мм3",
+    "масса_200_кг": 15.4,
+    "масса_400_кг": 15.9,
+    "длина_233_244_мм": true,
+    "сдвиг_для_освобождения_колонны_мм": {"200W": 56.1, "400W": 67.1}
+  },
+  "известные_неизвестные": [
+    "допустимая радиальная и осевая нагрузка на ВХОДНОЙ вал RVW-7PG каталогом НЕ приведена",
+    "схема и момент выходного вала, КПД, тепловые данные, IP, back-driving — UNK",
+    "габарит/масса приводного мотора для отдельной установки — берутся из таблицы actuator (BLMR5200/5400KM-K-B)",
+    "стоимость в каталоге отсутствует"
+  ]
+}

@@ -1,0 +1,324 @@
+{
+ "requirements": {
+  "transport_width_max": 640.0,
+  "transport_width_pref": [
+   600.0,
+   620.0
+  ],
+  "transport_height_max": 1900.0,
+  "passage_height_min": 2000.0,
+  "door_bathroom": 700.0,
+  "door_ward": 900.0,
+  "lift_capacity_min": 500.0,
+  "cabin_width": 1100.0,
+  "cabin_depth": 2100.0,
+  "cabin_door_width": 1100.0
+ },
+ "params": {
+  "wheelbase": 1500.0,
+  "well_margin": 4.0,
+  "stroke_study_mm": [
+   200.0,
+   300.0,
+   400.0
+  ],
+  "mass_person_plan_kg": 100.0
+ },
+ "options": [
+  {
+   "variant": "A",
+   "wheel": "MX152",
+   "D": 152.4,
+   "W": 80.0,
+   "load_set_kg": 300,
+   "src": "MECAWHEEL MX152 / TZ-MW152",
+   "x_c": 750.0,
+   "y_c": 280.0,
+   "length_L": 1652.4,
+   "width_W": 640.0,
+   "height_H": 1900.0,
+   "wheelbase_B": 1500.0,
+   "track_T": 560.0,
+   "support_area_A": 0.84,
+   "diag": 1772.0,
+   "alpha_max_door700": 2.1,
+   "alpha_max_door900": 9.35,
+   "well_R_req": 90.1,
+   "cabin_slack_width": 460.0,
+   "cabin_slack_depth": 447.6,
+   "cabin_diag_possible": true,
+   "height_margin_vs_passage": 100.0,
+   "support_B": {}
+  },
+  {
+   "variant": "A",
+   "wheel": "MX203",
+   "D": 203.0,
+   "W": 103.0,
+   "load_set_kg": 600,
+   "src": "MECAWHEEL MX203",
+   "x_c": 750.0,
+   "y_c": 268.5,
+   "length_L": 1703.0,
+   "width_W": 640.0,
+   "height_H": 1900.0,
+   "wheelbase_B": 1500.0,
+   "track_T": 537.0,
+   "support_area_A": 0.8055,
+   "diag": 1819.3,
+   "alpha_max_door700": 2.03,
+   "alpha_max_door900": 9.05,
+   "well_R_req": 117.8,
+   "cabin_slack_width": 460.0,
+   "cabin_slack_depth": 397.0,
+   "cabin_diag_possible": true,
+   "height_margin_vs_passage": 100.0,
+   "support_B": {}
+  },
+  {
+   "variant": "A",
+   "wheel": "MX230",
+   "D": 230.0,
+   "W": 113.0,
+   "load_set_kg": 800,
+   "src": "MECAWHEEL MX230",
+   "x_c": 750.0,
+   "y_c": 263.5,
+   "length_L": 1730.0,
+   "width_W": 640.0,
+   "height_H": 1900.0,
+   "wheelbase_B": 1500.0,
+   "track_T": 527.0,
+   "support_area_A": 0.7905,
+   "diag": 1844.6,
+   "alpha_max_door700": 2.0,
+   "alpha_max_door900": 8.9,
+   "well_R_req": 132.1,
+   "cabin_slack_width": 460.0,
+   "cabin_slack_depth": 370.0,
+   "cabin_diag_possible": true,
+   "height_margin_vs_passage": 100.0,
+   "support_B": {}
+  },
+  {
+   "variant": "B",
+   "wheel": "MX152",
+   "D": 152.4,
+   "W": 80.0,
+   "load_set_kg": 300,
+   "src": "MECAWHEEL MX152 / TZ-MW152",
+   "x_c": 750.0,
+   "y_c": 280.0,
+   "length_L": 1652.4,
+   "width_W": 640.0,
+   "height_H": 1900.0,
+   "wheelbase_B": 1500.0,
+   "track_T": 560.0,
+   "support_area_A": 0.84,
+   "diag": 1772.0,
+   "alpha_max_door700": 2.1,
+   "alpha_max_door900": 9.35,
+   "well_R_req": 90.1,
+   "cabin_slack_width": 460.0,
+   "cabin_slack_depth": 447.6,
+   "cabin_diag_possible": true,
+   "height_margin_vs_passage": 100.0,
+   "support_B": {
+    "200": {
+     "track": 960.0,
+     "area": 1.44,
+     "pad_y": 480.0
+    },
+    "300": {
+     "track": 1160.0,
+     "area": 1.74,
+     "pad_y": 580.0
+    },
+    "400": {
+     "track": 1360.0,
+     "area": 2.04,
+     "pad_y": 680.0
+    }
+   }
+  },
+  {
+   "variant": "B",
+   "wheel": "MX203",
+   "D": 203.0,
+   "W": 103.0,
+   "load_set_kg": 600,
+   "src": "MECAWHEEL MX203",
+   "x_c": 750.0,
+   "y_c": 268.5,
+   "length_L": 1703.0,
+   "width_W": 640.0,
+   "height_H": 1900.0,
+   "wheelbase_B": 1500.0,
+   "track_T": 537.0,
+   "support_area_A": 0.8055,
+   "diag": 1819.3,
+   "alpha_max_door700": 2.03,
+   "alpha_max_door900": 9.05,
+   "well_R_req": 117.8,
+   "cabin_slack_width": 460.0,
+   "cabin_slack_depth": 397.0,
+   "cabin_diag_possible": true,
+   "height_margin_vs_passage": 100.0,
+   "support_B": {
+    "200": {
+     "track": 937.0,
+     "area": 1.4055,
+     "pad_y": 468.5
+    },
+    "300": {
+     "track": 1137.0,
+     "area": 1.7055,
+     "pad_y": 568.5
+    },
+    "400": {
+     "track": 1337.0,
+     "area": 2.0055,
+     "pad_y": 668.5
+    }
+   }
+  },
+  {
+   "variant": "B",
+   "wheel": "MX230",
+   "D": 230.0,
+   "W": 113.0,
+   "load_set_kg": 800,
+   "src": "MECAWHEEL MX230",
+   "x_c": 750.0,
+   "y_c": 263.5,
+   "length_L": 1730.0,
+   "width_W": 640.0,
+   "height_H": 1900.0,
+   "wheelbase_B": 1500.0,
+   "track_T": 527.0,
+   "support_area_A": 0.7905,
+   "diag": 1844.6,
+   "alpha_max_door700": 2.0,
+   "alpha_max_door900": 8.9,
+   "well_R_req": 132.1,
+   "cabin_slack_width": 460.0,
+   "cabin_slack_depth": 370.0,
+   "cabin_diag_possible": true,
+   "height_margin_vs_passage": 100.0,
+   "support_B": {
+    "200": {
+     "track": 927.0,
+     "area": 1.3905,
+     "pad_y": 463.5
+    },
+    "300": {
+     "track": 1127.0,
+     "area": 1.6905,
+     "pad_y": 563.5
+    },
+    "400": {
+     "track": 1327.0,
+     "area": 1.9905,
+     "pad_y": 663.5
+    }
+   }
+  }
+ ],
+ "lift_budget_500kg": [
+  {
+   "M_robot": 300.0,
+   "remaining_for_outriggers_eq_payload_people": 200.0,
+   "people_at_100kg": 2
+  },
+  {
+   "M_robot": 375.0,
+   "remaining_for_outriggers_eq_payload_people": 125.0,
+   "people_at_100kg": 1
+  },
+  {
+   "M_robot": 450.0,
+   "remaining_for_outriggers_eq_payload_people": 50.0,
+   "people_at_100kg": 0
+  }
+ ],
+ "wheel_reaction_separate": [
+  {
+   "M_robot": 300.0,
+   "k=1.5": {
+    "F_per_wheel_N": 1104.0,
+    "F_per_wheel_kgf": 112.0,
+    "set_kgf": 450.0
+   },
+   "k=2.0": {
+    "F_per_wheel_N": 1472.0,
+    "F_per_wheel_kgf": 150.0,
+    "set_kgf": 600.0
+   },
+   "k=2.5": {
+    "F_per_wheel_N": 1839.0,
+    "F_per_wheel_kgf": 188.0,
+    "set_kgf": 750.0
+   }
+  },
+  {
+   "M_robot": 375.0,
+   "k=1.5": {
+    "F_per_wheel_N": 1380.0,
+    "F_per_wheel_kgf": 141.0,
+    "set_kgf": 562.0
+   },
+   "k=2.0": {
+    "F_per_wheel_N": 1839.0,
+    "F_per_wheel_kgf": 188.0,
+    "set_kgf": 750.0
+   },
+   "k=2.5": {
+    "F_per_wheel_N": 2299.0,
+    "F_per_wheel_kgf": 234.0,
+    "set_kgf": 938.0
+   }
+  },
+  {
+   "M_robot": 450.0,
+   "k=1.5": {
+    "F_per_wheel_N": 1655.0,
+    "F_per_wheel_kgf": 169.0,
+    "set_kgf": 675.0
+   },
+   "k=2.0": {
+    "F_per_wheel_N": 2207.0,
+    "F_per_wheel_kgf": 225.0,
+    "set_kgf": 900.0
+   },
+   "k=2.5": {
+    "F_per_wheel_N": 2759.0,
+    "F_per_wheel_kgf": 281.0,
+    "set_kgf": 1125.0
+   }
+  }
+ ],
+ "wheel_class_fit_vs_tiers": {
+  "MX152": {
+   "низкий (300 кг, k=1.5)": "OK",
+   "расчётный (375 кг, k=2.0)": "НЕТ",
+   "верхний (450 кг, k=2.5)": "НЕТ"
+  },
+  "MX203": {
+   "низкий (300 кг, k=1.5)": "OK",
+   "расчётный (375 кг, k=2.0)": "НЕТ",
+   "верхний (450 кг, k=2.5)": "НЕТ"
+  },
+  "MX230": {
+   "низкий (300 кг, k=1.5)": "OK",
+   "расчётный (375 кг, k=2.0)": "OK",
+   "верхний (450 кг, k=2.5)": "НЕТ"
+  }
+ },
+ "notes": [
+  "Габарит 640x(1652..1730)x1900 — прямоугольная компоновка, колёса у бортов, оси || Y.",
+  "Методика ниши v3: R >= sqrt((D/2)^2+(W/2)^2)+зазор; свиверные повороты исключены (Mecanum не рулится).",
+  "Бюджет лифта (500 кг) и реакция колеса — независимые проверки.",
+  "313-425 кг — НЕ подтверждённая масса; диапазон 300-450 и коэф. k=1.5..2.5 — на согласование.",
+  "Высота проёма кабины лифта не задана — не выдумывалась."
+ ]
+}

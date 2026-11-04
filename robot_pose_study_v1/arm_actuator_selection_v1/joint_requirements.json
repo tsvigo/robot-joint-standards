@@ -1,0 +1,830 @@
+{
+  "detail": {
+    "L": {
+      "grid_0kg": {
+        "sh3": {
+          "value": 160.15,
+          "pose": {
+            "sh3": 0.0,
+            "sh2": -90.0,
+            "sh1": 0.0,
+            "el": 0.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        },
+        "sh2": {
+          "value": 160.15,
+          "pose": {
+            "sh3": -90.0,
+            "sh2": 0.0,
+            "sh1": 0.0,
+            "el": 0.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        },
+        "sh1": {
+          "value": -132.11,
+          "pose": {
+            "sh3": 10.0,
+            "sh2": -90.0,
+            "sh1": 10.0,
+            "el": 0.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        },
+        "el": {
+          "value": 11.92,
+          "pose": {
+            "sh3": -80.0,
+            "sh2": -90.0,
+            "sh1": 10.0,
+            "el": 90.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        },
+        "rad": {
+          "value": 0.04,
+          "pose": {
+            "sh3": -60.0,
+            "sh2": 70.0,
+            "sh1": 120.0,
+            "el": 70.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        },
+        "w1": {
+          "value": 1.2,
+          "pose": {
+            "sh3": 40.0,
+            "sh2": -90.0,
+            "sh1": 130.0,
+            "el": 90.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        },
+        "w2": {
+          "value": -0.76,
+          "pose": {
+            "sh3": -10.0,
+            "sh2": -80.0,
+            "sh1": -10.0,
+            "el": 30.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        }
+      },
+      "grid_100kg": {
+        "sh3": {
+          "value": 1068.15,
+          "pose": {
+            "sh3": 0.0,
+            "sh2": -90.0,
+            "sh1": 0.0,
+            "el": 0.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        },
+        "sh2": {
+          "value": 1068.15,
+          "pose": {
+            "sh3": -90.0,
+            "sh2": 0.0,
+            "sh1": 0.0,
+            "el": 0.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        },
+        "sh1": {
+          "value": -989.55,
+          "pose": {
+            "sh3": 10.0,
+            "sh2": -90.0,
+            "sh1": 10.0,
+            "el": 0.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        },
+        "el": {
+          "value": -475.38,
+          "pose": {
+            "sh3": -140.0,
+            "sh2": -90.0,
+            "sh1": 130.0,
+            "el": 90.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        },
+        "rad": {
+          "value": -14.38,
+          "pose": {
+            "sh3": 30.0,
+            "sh2": -10.0,
+            "sh1": -90.0,
+            "el": 60.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        },
+        "w1": {
+          "value": 109.75,
+          "pose": {
+            "sh3": -40.0,
+            "sh2": 90.0,
+            "sh1": 130.0,
+            "el": 90.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        },
+        "w2": {
+          "value": -73.66,
+          "pose": {
+            "sh3": 10.0,
+            "sh2": -70.0,
+            "sh1": 10.0,
+            "el": 30.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        }
+      },
+      "working_0kg": {
+        "sh3": {
+          "max_abs": 129.09,
+          "median_abs": 109.78,
+          "n_poses": 12
+        },
+        "sh2": {
+          "max_abs": 85.5,
+          "median_abs": 45.85,
+          "n_poses": 12
+        },
+        "sh1": {
+          "max_abs": 88.17,
+          "median_abs": 44.07,
+          "n_poses": 12
+        },
+        "el": {
+          "max_abs": 8.22,
+          "median_abs": 5.87,
+          "n_poses": 12
+        },
+        "rad": {
+          "max_abs": 0.37,
+          "median_abs": 0.19,
+          "n_poses": 12
+        },
+        "w1": {
+          "max_abs": 1.2,
+          "median_abs": 1.09,
+          "n_poses": 12
+        },
+        "w2": {
+          "max_abs": 0.0,
+          "median_abs": 0.0,
+          "n_poses": 12
+        }
+      },
+      "working_25kg": {
+        "sh3": {
+          "max_abs": 318.2,
+          "median_abs": 268.24,
+          "n_poses": 12
+        },
+        "sh2": {
+          "max_abs": 119.04,
+          "median_abs": 66.64,
+          "n_poses": 12
+        },
+        "sh1": {
+          "max_abs": 216.05,
+          "median_abs": 94.43,
+          "n_poses": 12
+        },
+        "el": {
+          "max_abs": 91.05,
+          "median_abs": 69.19,
+          "n_poses": 12
+        },
+        "rad": {
+          "max_abs": 7.43,
+          "median_abs": 3.46,
+          "n_poses": 12
+        },
+        "w1": {
+          "max_abs": 28.33,
+          "median_abs": 26.98,
+          "n_poses": 12
+        },
+        "w2": {
+          "max_abs": 0.0,
+          "median_abs": 0.0,
+          "n_poses": 12
+        }
+      },
+      "working_100kg": {
+        "sh3": {
+          "max_abs": 885.51,
+          "median_abs": 743.59,
+          "n_poses": 12
+        },
+        "sh2": {
+          "max_abs": 219.69,
+          "median_abs": 125.27,
+          "n_poses": 12
+        },
+        "sh1": {
+          "max_abs": 599.69,
+          "median_abs": 237.52,
+          "n_poses": 12
+        },
+        "el": {
+          "max_abs": 339.53,
+          "median_abs": 259.47,
+          "n_poses": 12
+        },
+        "rad": {
+          "max_abs": 28.61,
+          "median_abs": 13.27,
+          "n_poses": 12
+        },
+        "w1": {
+          "max_abs": 109.79,
+          "median_abs": 104.63,
+          "n_poses": 12
+        },
+        "w2": {
+          "max_abs": 0.0,
+          "median_abs": 0.0,
+          "n_poses": 12
+        }
+      },
+      "dynamic": {
+        "A|0": {
+          "sh3": 111.86,
+          "sh2": 85.5,
+          "sh1": 80.87,
+          "el": 3.76,
+          "rad": 0.2,
+          "w1": 1.12,
+          "w2": 0.0
+        },
+        "A|25": {
+          "sh3": 274.05,
+          "sh2": 119.27,
+          "sh1": 171.56,
+          "el": 43.9,
+          "rad": 3.42,
+          "w1": 27.43,
+          "w2": 0.08
+        },
+        "B1|0": {
+          "sh3": 71.3,
+          "sh2": 58.96,
+          "sh1": 48.38,
+          "el": 3.76,
+          "rad": 0.2,
+          "w1": 1.12,
+          "w2": 0.0
+        },
+        "B1|25": {
+          "sh3": 233.48,
+          "sh2": 92.5,
+          "sh1": 139.06,
+          "el": 43.9,
+          "rad": 3.42,
+          "w1": 27.43,
+          "w2": 0.08
+        }
+      },
+      "bearing_at_worst_pose_100kg": {
+        "sh3": {
+          "radial_N": 1762.0,
+          "axial_N": 0.0,
+          "drive_torque_Nm": 1068.15,
+          "bending_overturning_Nm": 59.79
+        },
+        "sh2": {
+          "radial_N": 0.0,
+          "axial_N": -1525.2,
+          "drive_torque_Nm": 0.0,
+          "bending_overturning_Nm": 1068.45
+        },
+        "sh1": {
+          "radial_N": 1288.4,
+          "axial_N": 0.0,
+          "drive_torque_Nm": -989.55,
+          "bending_overturning_Nm": 25.62
+        },
+        "el": {
+          "radial_N": 0.0,
+          "axial_N": -1020.1,
+          "drive_torque_Nm": 0.0,
+          "bending_overturning_Nm": 475.38
+        },
+        "rad": {
+          "radial_N": 998.8,
+          "axial_N": 0.0,
+          "drive_torque_Nm": 1.08,
+          "bending_overturning_Nm": 219.53
+        },
+        "w1": {
+          "radial_N": 0.0,
+          "axial_N": -992.9,
+          "drive_torque_Nm": 0.0,
+          "bending_overturning_Nm": 109.75
+        },
+        "w2": {
+          "radial_N": 987.0,
+          "axial_N": 0.0,
+          "drive_torque_Nm": -73.53,
+          "bending_overturning_Nm": 0.04
+        }
+      },
+      "worst_pose_q_deg": {
+        "sh3": 0.0,
+        "sh2": -90.0,
+        "sh1": 0.0,
+        "el": 0.0,
+        "rad": 0.0,
+        "w1": 0.0,
+        "w2": 0.0
+      }
+    },
+    "R": {
+      "grid_0kg": {
+        "sh3": {
+          "value": -171.66,
+          "pose": {
+            "sh3": -180.0,
+            "sh2": 90.0,
+            "sh1": 0.0,
+            "el": 0.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        },
+        "sh2": {
+          "value": -171.66,
+          "pose": {
+            "sh3": -90.0,
+            "sh2": 0.0,
+            "sh1": 0.0,
+            "el": 0.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        },
+        "sh1": {
+          "value": 142.83,
+          "pose": {
+            "sh3": 30.0,
+            "sh2": 90.0,
+            "sh1": -30.0,
+            "el": 0.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        },
+        "el": {
+          "value": 11.46,
+          "pose": {
+            "sh3": -40.0,
+            "sh2": 90.0,
+            "sh1": -50.0,
+            "el": 90.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        },
+        "rad": {
+          "value": -0.09,
+          "pose": {
+            "sh3": -80.0,
+            "sh2": -10.0,
+            "sh1": 90.0,
+            "el": 10.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        },
+        "w1": {
+          "value": 1.02,
+          "pose": {
+            "sh3": -160.0,
+            "sh2": -90.0,
+            "sh1": 110.0,
+            "el": 90.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        },
+        "w2": {
+          "value": 0.68,
+          "pose": {
+            "sh3": 60.0,
+            "sh2": 90.0,
+            "sh1": -50.0,
+            "el": -10.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        }
+      },
+      "grid_100kg": {
+        "sh3": {
+          "value": -1108.49,
+          "pose": {
+            "sh3": -180.0,
+            "sh2": 90.0,
+            "sh1": 0.0,
+            "el": 0.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        },
+        "sh2": {
+          "value": -1108.49,
+          "pose": {
+            "sh3": -90.0,
+            "sh2": 0.0,
+            "sh1": 0.0,
+            "el": 0.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        },
+        "sh1": {
+          "value": 1029.11,
+          "pose": {
+            "sh3": 30.0,
+            "sh2": 90.0,
+            "sh1": -30.0,
+            "el": 0.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        },
+        "el": {
+          "value": -476.24,
+          "pose": {
+            "sh3": -180.0,
+            "sh2": -70.0,
+            "sh1": -90.0,
+            "el": 90.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        },
+        "rad": {
+          "value": -5.71,
+          "pose": {
+            "sh3": -60.0,
+            "sh2": 90.0,
+            "sh1": -40.0,
+            "el": 90.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        },
+        "w1": {
+          "value": -103.44,
+          "pose": {
+            "sh3": -180.0,
+            "sh2": -30.0,
+            "sh1": -90.0,
+            "el": 90.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        },
+        "w2": {
+          "value": 71.24,
+          "pose": {
+            "sh3": 40.0,
+            "sh2": 90.0,
+            "sh1": -50.0,
+            "el": 0.0,
+            "rad": 0.0,
+            "w1": 0.0,
+            "w2": 0.0
+          }
+        }
+      },
+      "working_0kg": {
+        "sh3": {
+          "max_abs": 150.5,
+          "median_abs": 117.21,
+          "n_poses": 12
+        },
+        "sh2": {
+          "max_abs": 84.15,
+          "median_abs": 61.56,
+          "n_poses": 12
+        },
+        "sh1": {
+          "max_abs": 129.42,
+          "median_abs": 104.7,
+          "n_poses": 12
+        },
+        "el": {
+          "max_abs": 4.3,
+          "median_abs": 2.92,
+          "n_poses": 12
+        },
+        "rad": {
+          "max_abs": 0.25,
+          "median_abs": 0.19,
+          "n_poses": 12
+        },
+        "w1": {
+          "max_abs": 1.0,
+          "median_abs": 0.95,
+          "n_poses": 12
+        },
+        "w2": {
+          "max_abs": 0.0,
+          "median_abs": 0.0,
+          "n_poses": 12
+        }
+      },
+      "working_25kg": {
+        "sh3": {
+          "max_abs": 350.07,
+          "median_abs": 286.12,
+          "n_poses": 12
+        },
+        "sh2": {
+          "max_abs": 112.66,
+          "median_abs": 79.07,
+          "n_poses": 12
+        },
+        "sh1": {
+          "max_abs": 301.01,
+          "median_abs": 211.47,
+          "n_poses": 12
+        },
+        "el": {
+          "max_abs": 53.58,
+          "median_abs": 35.16,
+          "n_poses": 12
+        },
+        "rad": {
+          "max_abs": 9.26,
+          "median_abs": 7.88,
+          "n_poses": 12
+        },
+        "w1": {
+          "max_abs": 25.07,
+          "median_abs": 23.06,
+          "n_poses": 12
+        },
+        "w2": {
+          "max_abs": 0.0,
+          "median_abs": 0.0,
+          "n_poses": 12
+        }
+      },
+      "working_100kg": {
+        "sh3": {
+          "max_abs": 948.77,
+          "median_abs": 792.86,
+          "n_poses": 12
+        },
+        "sh2": {
+          "max_abs": 198.18,
+          "median_abs": 129.58,
+          "n_poses": 12
+        },
+        "sh1": {
+          "max_abs": 815.79,
+          "median_abs": 530.74,
+          "n_poses": 12
+        },
+        "el": {
+          "max_abs": 201.4,
+          "median_abs": 131.9,
+          "n_poses": 12
+        },
+        "rad": {
+          "max_abs": 36.38,
+          "median_abs": 30.93,
+          "n_poses": 12
+        },
+        "w1": {
+          "max_abs": 97.28,
+          "median_abs": 89.38,
+          "n_poses": 12
+        },
+        "w2": {
+          "max_abs": 0.0,
+          "median_abs": 0.0,
+          "n_poses": 12
+        }
+      },
+      "dynamic": {
+        "A|0": {
+          "sh3": 123.63,
+          "sh2": 84.15,
+          "sh1": 108.72,
+          "el": 1.71,
+          "rad": 0.25,
+          "w1": 0.96,
+          "w2": 0.0
+        },
+        "A|25": {
+          "sh3": 296.11,
+          "sh2": 112.66,
+          "sh1": 227.84,
+          "el": 24.45,
+          "rad": 9.06,
+          "w1": 23.17,
+          "w2": 0.08
+        },
+        "B1|0": {
+          "sh3": 80.83,
+          "sh2": 55.66,
+          "sh1": 64.53,
+          "el": 1.71,
+          "rad": 0.25,
+          "w1": 0.96,
+          "w2": 0.0
+        },
+        "B1|25": {
+          "sh3": 253.31,
+          "sh2": 84.17,
+          "sh1": 183.65,
+          "el": 24.45,
+          "rad": 9.06,
+          "w1": 23.17,
+          "w2": 0.08
+        }
+      },
+      "bearing_at_worst_pose_100kg": {
+        "sh3": {
+          "radial_N": 1785.1,
+          "axial_N": 0.0,
+          "drive_torque_Nm": -1108.49,
+          "bending_overturning_Nm": 86.69
+        },
+        "sh2": {
+          "radial_N": 0.0,
+          "axial_N": 1540.5,
+          "drive_torque_Nm": -0.0,
+          "bending_overturning_Nm": 1108.49
+        },
+        "sh1": {
+          "radial_N": 1295.8,
+          "axial_N": -0.0,
+          "drive_torque_Nm": -1029.11,
+          "bending_overturning_Nm": 0.16
+        },
+        "el": {
+          "radial_N": 0.0,
+          "axial_N": 1018.6,
+          "drive_torque_Nm": -0.0,
+          "bending_overturning_Nm": 476.24
+        },
+        "rad": {
+          "radial_N": 995.9,
+          "axial_N": 0.0,
+          "drive_torque_Nm": -1.05,
+          "bending_overturning_Nm": 196.15
+        },
+        "w1": {
+          "radial_N": 0.0,
+          "axial_N": 991.4,
+          "drive_torque_Nm": 0.0,
+          "bending_overturning_Nm": 103.44
+        },
+        "w2": {
+          "radial_N": 986.9,
+          "axial_N": 0.0,
+          "drive_torque_Nm": -71.05,
+          "bending_overturning_Nm": 0.0
+        }
+      },
+      "worst_pose_q_deg": {
+        "sh3": -180.0,
+        "sh2": 90.0,
+        "sh1": 0.0,
+        "el": 0.0,
+        "rad": 0.0,
+        "w1": 0.0,
+        "w2": 0.0
+      }
+    }
+  },
+  "limits": {
+    "el": {
+      "empty": "left_elbow_joint_empty",
+      "axis": "Z",
+      "lower": -10.0,
+      "upper": 150.0,
+      "confidence": "high"
+    },
+    "rad": {
+      "empty": "left_proximal_radioulnar_joint_empty",
+      "axis": "Y",
+      "lower": -90.0,
+      "upper": 90.0,
+      "confidence": "high"
+    },
+    "sh1": {
+      "empty": "left_shoulder_joint_empty_1",
+      "axis": "X",
+      "lower": -90.0,
+      "upper": 130.0,
+      "confidence": "high"
+    },
+    "sh2": {
+      "empty": "left_shoulder_joint_empty_2",
+      "axis": "Z",
+      "lower": -90.0,
+      "upper": 90.0,
+      "confidence": "high"
+    },
+    "sh3": {
+      "empty": "left_shoulder_joint_empty_3",
+      "axis": "Y",
+      "lower": -180.0,
+      "upper": 60.0,
+      "confidence": "high"
+    },
+    "w1": {
+      "empty": "left_wrist_joint_1_empty",
+      "axis": "Z",
+      "lower": -90.0,
+      "upper": 90.0,
+      "confidence": "high"
+    },
+    "w2": {
+      "empty": "left_wrist_joint_2_empty",
+      "axis": "X",
+      "lower": -25.0,
+      "upper": 45.0,
+      "confidence": "high"
+    }
+  },
+  "grid_size": 14040,
+  "checks": [
+    {
+      "id": "R1_LIMITS_LOADED",
+      "ok": true,
+      "detail": "лимиты загружены для 7/7 суставов"
+    },
+    {
+      "id": "R2_PREV_MAXIMA_SAME_ORDER",
+      "ok": true,
+      "detail": "sh3 в сетке 2W.2 того же порядка, что прежний 1203.5 Н·м (разные массовые модели — числа НЕ отождествляются)"
+    },
+    {
+      "id": "R3_BEARING_TORQUE_MATCHES_TG_TEXT",
+      "ok": true,
+      "detail": "max|осевой момент опоры − (Tg+Text)| = 0.0049 Н·м (независимая сверка реакции и Якоби)"
+    },
+    {
+      "id": "R4_SPEED_ACCEL_UNKNOWN",
+      "ok": true,
+      "detail": "скорость/ускорение UNKNOWN для 14/14 строк (Stage 2B §7.2: не заданы как исходные данные)"
+    }
+  ]
+}

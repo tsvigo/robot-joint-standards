@@ -1,0 +1,131 @@
+{
+  "metadata": {
+    "stage": "2G",
+    "kind": "base_layout_parameters",
+    "date": "2026-10-23",
+    "frame": "base-local: origin = center of base_link; +X = forward (to bed), +Y = left, +Z = up; units mm",
+    "source_geometry": "model_key_facts.json + STAGE2G_SOURCE_DATA.md (all confirmed values measured from Blender)",
+    "note": "Parameters marked confirmed = measured from Blender. Parameters marked parametric = design freedom, no value invented. NO mass assigned to solid block."
+  },
+
+  "envelope_confirmed": {
+    "W_x_mm": 670.0,
+    "H_y_mm": 670.0,
+    "T_z_mm": 176.0,
+    "bottom_z_mm": -88.0,
+    "top_z_mm": 88.0,
+    "floor_z_mm": -134.55,
+    "ground_clearance_mm": 46.55,
+    "bbox_local_mm": [[-335.14, -334.98, -88.0], [335.14, 334.98, 88.0]],
+    "status": "confirmed (Blender gabarit limit, NOT an approved frame design)"
+  },
+
+  "lift_interface_confirmed": {
+    "axis_offset_xy_mm": [0.003, -4.41],
+    "axis_direction": "[0,0,1] explicit",
+    "travel_lower_mm": -774.567,
+    "travel_upper_mm": 427.315,
+    "travel_range_mm": 1201.882,
+    "guides_top_above_floor_mm": 1736.5,
+    "proxy_nodes_in_blender": ["lift_motor", "lift_brake", "lift_screw_left", "lift_screw_right",
+                                "lift_guide_left", "lift_guide_right", "lift_sync_shaft",
+                                "lift_stop_top", "lift_catcher_placeholder"],
+    "real_sizes_known": false,
+    "status": "axis/travel confirmed; real node dimensions parametric (assumption A6)"
+  },
+
+  "wheels_confirmed": {
+    "count": 4,
+    "center_xy_mm": {
+      "BL": [-258.6, 258.2],
+      "BR": [-259.6, -257.7],
+      "FL": [257.8, 256.9],
+      "FR": [258.6, -257.3]
+    },
+    "wheel_diameter_mm": 150.8,
+    "wheel_width_mm": 106.8,
+    "wheel_center_z_mm": -81.16,
+    "wheel_bottom_z_mm": -134.55,
+    "wheel_top_z_mm": -27.75,
+    "outer_edge_margin_mm": 1.6,
+    "support_polygon_sides_mm": [518.2, 514.2, 516.3, 515.9],
+    "support_polygon_area_m2": 0.266435,
+    "support_polygon_center_xy_mm": [-0.60, -0.12],
+    "status": "confirmed (wheel bodies fit inside 670mm envelope with ~1.6mm margin)"
+  },
+
+  "zones_parametric": {
+    "frame": {
+      "type": "perimeter rectangle band",
+      "position": "along envelope edges",
+      "profile_width_mm": {"value": null, "range_suggestion": [30, 60], "unit": "mm", "status": "parametric"},
+      "profile_type": {"value": null, "options": ["aluminium_extrusion", "welded_section", "hybrid"], "status": "parametric"}
+    },
+    "wheel_wells": {
+      "type": "4 cylindrical cutouts at wheel centers",
+      "well_diameter_mm": {"formula": "d_wheel + 2*clr_wheel", "d_wheel": 150.8, "clr_wheel": {"value": null, "range_suggestion": [5, 15], "status": "parametric"}},
+      "mounting_zone": {"note": "brackets/pivot bearings above wheel top (-27.75); drive units if motorized castors", "status": "parametric"}
+    },
+    "lift_column_zone": {
+      "type": "central through-zone for screws/guides/motor/brake/shaft",
+      "center_xy_mm": [0.003, -4.41],
+      "radius_mm": {"value": null, "constraint": "must contain 2 screws + 2 guides + motor + brake + sync shaft of unknown sizes", "status": "parametric"},
+      "pass_through": "moving column of lift passes vertically; opening diameter parameter"
+    },
+    "battery_zone": {
+      "type": "rectangular compartment",
+      "volume": {"L": null, "W": null, "H": null, "unit": "mm", "status": "parametric"},
+      "candidate_placement": ["rear half (X<0) between lift zone and rear frame", "under floor level if ground clearance increased (not allowed by current envelope)"],
+      "mass": "parametric m_battery (NOT part of 213.134 kg recipe — composition of base unknown, audit 2V.1 U2)"
+    },
+    "control_electronics_zone": {
+      "type": "rectangular compartment (controller, drivers, sensors hub)",
+      "volume": {"L": null, "W": null, "H": null, "status": "parametric"},
+      "candidate_placement": ["front half (X>0) near arm wiring", "side bays"]
+    },
+    "power_equipment_zone": {
+      "type": "compartment (power supply, contactors, charging)",
+      "volume": {"L": null, "W": null, "H": null, "status": "parametric"},
+      "candidate_placement": ["rear alongside battery"]
+    },
+    "lift_mount_zone": {
+      "type": "bolting interface ring/plate around axis (0.003, -4.41)",
+      "plate_diameter_mm": {"value": null, "constraint": "within lift_column_zone radius", "status": "parametric"},
+      "height_position": {"value": null, "options": ["base top face (+88)", "internal mid-plane"], "status": "parametric"}
+    },
+    "cable_trays": {
+      "type": "channels along frame and from base to lift column",
+      "cross_section": {"W": null, "H": null, "unit": "mm", "status": "parametric"},
+      "routing": "wheel wells -> frame corners -> central column -> up"
+    },
+    "service_access": {
+      "type": "removable top cover panels + side hatches",
+      "panel_thickness_mm": {"value": null, "range_suggestion": [2, 6], "status": "parametric"},
+      "openings": ["top: access to lift drive, battery; sides: electronics, connectors"],
+      "hatch_clearance_mm": {"value": null, "status": "parametric"}
+    }
+  },
+
+  "vertical_stack_mm": {
+    "note": "base-local Z budget inside 176mm slab",
+    "floor": -134.55,
+    "base_bottom": -88.0,
+    "wheel_top_in_base": -27.75,
+    "base_top": 88.0,
+    "free_height_above_wheels": 115.75
+  },
+
+  "explicit_prohibitions": [
+    "no solid aluminium block assignment (213.134 kg is recipe on gabarit block, NOT a part — audit 2V.1)",
+    "no invented purchased-component dimensions (battery/controller/drive sizes stay parametric)",
+    "no mass computed for empty component envelopes",
+    "no final material or wall thickness without calculation"
+  ],
+
+  "bed_approach_constraints": {
+    "tested_c_m": [0.05, 0.10],
+    "arm_bed_clearance_m": [0.0481, 0.0681],
+    "rule": "base front face must reach bed_edge - c; front of base = +335.14mm from center; no protrusions beyond envelope allowed",
+    "source": "stage2B.2 bilateral trajectories"
+  }
+}

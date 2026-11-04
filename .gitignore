@@ -1,3 +1,7 @@
 .opencode/*.log
 *.blend1
 **/__pycache__/
+robot_pose_study_v1/arm_actuator_selection_v1/sources/*.pdf
+robot_pose_study_v1/arm_actuator_selection_v1/sources/rvn_cat.bin
+robot_pose_study_v1/arm_architecture_comparison_v1/run.log
+robot_pose_study_v1/arm_actuator_selection_v1/req_run.log
