@@ -1,0 +1,3 @@
+runs/
+.matplotlib/
+__pycache__/
