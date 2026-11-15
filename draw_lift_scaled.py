@@ -7,7 +7,7 @@ os.environ['MPLCONFIGDIR'] = str(ROOT / '.work' / 'matplotlib')
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-from matplotlib.patches import Rectangle, Polygon
+from matplotlib.patches import Rectangle, Polygon, Circle
 
 fig, ax = plt.subplots(figsize=(7, 13))
 blue = '#1677c8'
@@ -23,9 +23,13 @@ for cx in (-221.50454169735046, 221.50454169735046):
     box(cx-53.45, 0, 106.9, 240, '#343c43')
     for z in range(10, 220, 30):
         ax.plot([cx-48, cx+48], [z, z+20], color='#69747e', lw=2)
-box(-120, 0, 240, 240, '#293137')
-for z in range(10, 220, 30):
-    ax.plot([-110, 110], [z, z+20], color='#69747e', lw=2)
+# Центральное колесо видно вдоль оси: круг Ø240 мм, центр на высоте 120 мм.
+ax.add_patch(Circle((0, 120), 120, facecolor='#293137',
+                    edgecolor='#39444d', linewidth=0.9, zorder=4))
+ax.add_patch(Circle((0, 120), 98, facecolor='#343c43',
+                    edgecolor='#aab4bc', linewidth=1.1, zorder=5))
+ax.add_patch(Circle((0, 120), 15, facecolor='#aab4bc',
+                    edgecolor='#39444d', linewidth=0.9, zorder=6))
 box(-163, 16, 326, 8, '#b5bec5')
 for x in (-208, 138):
     box(x, 252, 70, 10, '#cbd1d5')
