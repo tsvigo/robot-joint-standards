@@ -1,0 +1,34 @@
+{
+  "received_date": "2026-11-16",
+  "archive": "/media/v/2TB-VNESHNIY/Downloads_real/Attachments-回复：Request for STEP CAD model — RoboCT CTM1000-10R.zip",
+  "files": [
+    {
+      "name": "temp4cj.png",
+      "size_bytes": 142484,
+      "sha256": "7ff266fe6b447132731bb46d00aa044fa7f12b6e52b06a9199027d7815dcd83f"
+    },
+    {
+      "name": "CTM1000-10R Mecanum module V1.2.pdf",
+      "size_bytes": 3498046,
+      "sha256": "d8d5261fb83d7818c33fc0805ea209e03ec4dee3a9b675a493882311c42b55ea"
+    },
+    {
+      "name": "CTM1000-10R V1.2  3D.STEP",
+      "size_bytes": 15927426,
+      "sha256": "94bc25a7f08dd5087a16693dd89b899af6cfc9545449b3ae544e2188505a7cf6"
+    },
+    {
+      "name": "CTM1000-10R-ZY麦轮组件（左）.PDF",
+      "size_bytes": 161806,
+      "sha256": "573418882c506c89ccbb8ad1ae51958b0d42d9c251ec8ff745efedcf574d0a97"
+    }
+  ],
+  "step_entities": {
+    "MANIFOLD_SOLID_BREP": 0,
+    "SHELL_BASED_SURFACE_MODEL": 1,
+    "CLOSED_SHELL": 499,
+    "OPEN_SHELL": 2,
+    "ADVANCED_FACE": 3922,
+    "PRODUCT (": 1
+  }
+}
